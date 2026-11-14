@@ -36,6 +36,8 @@ final class ListDemoContent: UIView {
     func bind(id: Int, savedDraft: String, changed: @escaping (Int, String) -> Void) {
         if itemID != id { draft.text = savedDraft }
         itemID = id
+        heading.accessibilityIdentifier = "list.heading.\(id)"
+        draft.accessibilityIdentifier = "list.draft.\(id)"
         draftChanged = changed
     }
 

@@ -463,6 +463,198 @@ final class LanguageTests: XCTestCase {
             LanguageResources.resolve(.system, preferences: Bundle.main.preferredLocalizations))
     }
 
+    @MainActor
+    func testActivityRestoresNavigationPagerDraftsAndTableAnchor() throws {
+        let original = LanguageService.shared.selection
+        defer { LanguageService.shared.setSelection(original) }
+        LanguageService.shared.setSelection(.english)
+        let old = try RestoredSceneHarness()
+        let first = old.coordinator.tabs.navigationControllers[0]
+        let detail = DetailViewController()
+        detail.draftField.text = "detail survives relaunch"
+        let pager = ContainerDemos.makePager(initialPageID: "page-3")
+        (pager.restorationPages[0].controller as? DemoPageViewController)?.draft.text = "page one draft"
+        (pager.restorationPages[2].controller as? DemoPageViewController)?.draft.text = "page three draft"
+        first.setViewControllers([first.viewControllers[0], detail, pager], animated: false)
+        old.coordinator.tabs.selectedIndex = 1
+        old.window.layoutIfNeeded()
+        let tablePage = try XCTUnwrap(old.coordinator.tabs.navigationControllers[1].topViewController as? SettingsViewController)
+        tablePage.loadViewIfNeeded()
+        old.window.layoutIfNeeded()
+        let path = IndexPath(row: 30, section: 0)
+        tablePage.tableView.scrollToRow(at: path, at: .top, animated: false)
+        tablePage.tableView.layoutIfNeeded()
+        let cell = try XCTUnwrap(tablePage.tableView.cellForRow(at: path) as? DemoTableCell)
+        cell.localizedContent.draft.text = "table row draft"
+        tablePage.tableView.selectRow(at: path, animated: false, scrollPosition: .none)
+        let activity = try XCTUnwrap(old.coordinator.activity())
+        let saved = try XCTUnwrap(SceneStateCodec.decode(activity)).stacks[1][0].list!
+        old.close()
+
+        LanguageService.shared.setSelection(.arabic)
+        let new = try RestoredSceneHarness(activity: activity)
+        defer { new.close() }
+        XCTAssertEqual(new.coordinator.restorationOrigin, "activity")
+        XCTAssertEqual(new.coordinator.tabs.selectedIndex, 1)
+        let restoredTable = try XCTUnwrap(new.coordinator.tabs.navigationControllers[1].topViewController as? SettingsViewController)
+        new.window.layoutIfNeeded()
+        ListStateRestoration.applyIfNeeded(restoredTable)
+        let restoredCell = try XCTUnwrap(restoredTable.tableView.cellForRow(at: path) as? DemoTableCell)
+        XCTAssertEqual(restoredCell.localizedContent.draft.text, "table row draft")
+        XCTAssertTrue(restoredTable.tableView.indexPathsForSelectedRows?.contains(path) == true)
+        let anchor = IndexPath(row: try XCTUnwrap(saved.anchorID), section: 0)
+        XCTAssertEqual(restoredTable.tableView.rectForRow(at: anchor).minY - restoredTable.tableView.contentOffset.y
+            - restoredTable.tableView.adjustedContentInset.top, saved.distance, accuracy: 2)
+        let stack = new.coordinator.tabs.navigationControllers[0].viewControllers
+        XCTAssertEqual(stack.count, 3)
+        XCTAssertFalse(stack[1] === detail)
+        XCTAssertEqual((stack[1] as? DetailViewController)?.draftField.text, "detail survives relaunch")
+        let restoredPager = try XCTUnwrap(stack[2] as? LocalizedPageContainerController)
+        XCTAssertEqual(restoredPager.currentPageID, "page-3")
+        XCTAssertEqual((restoredPager.restorationPages[0].controller as? DemoPageViewController)?.draft.text, "page one draft")
+        XCTAssertEqual((restoredPager.restorationPages[2].controller as? DemoPageViewController)?.draft.text, "page three draft")
+        new.coordinator.tabs.selectedIndex = 0
+        new.window.layoutIfNeeded()
+        XCTAssertEqual(restoredPager.title, LanguageService.shared.context.text("pages.title"))
+        XCTAssertEqual(LanguageService.shared.context.language, .arabic)
+        XCTAssertFalse(new.coordinator.restoreInteractionState(activity), "Duplicate delivery must not rewind edits")
+    }
+
+    @MainActor
+    func testActivityRestoresAllCollectionLayouts() throws {
+        let original = LanguageService.shared.selection
+        defer { LanguageService.shared.setSelection(original) }
+        for route in [SavedPageState.Route.verticalCollection, .horizontalCollection, .compositionalGrid, .compositionalCarousel] {
+            LanguageService.shared.setSelection(.english)
+            let old = try RestoredSceneHarness()
+            let controller: UIViewController
+            switch route {
+            case .verticalCollection: controller = CollectionDemoViewController()
+            case .horizontalCollection: controller = CollectionDemoViewController(axis: .horizontal)
+            case .compositionalGrid: controller = CompositionalDemoViewController()
+            default: controller = CompositionalDemoViewController(mode: .orthogonal)
+            }
+            old.coordinator.tabs.navigationControllers[0].pushViewController(controller, animated: false)
+            old.window.layoutIfNeeded()
+            let page = try XCTUnwrap(controller as? any ListStateRestorable)
+            let collection = try XCTUnwrap(page.restorationScrollView as? UICollectionView)
+            if route == .compositionalCarousel {
+                collection.scrollToItem(at: IndexPath(item: 12, section: 0), at: .centeredHorizontally, animated: false)
+                collection.layoutIfNeeded()
+            }
+            let section = route == .compositionalCarousel ? 1 : 0
+            let item = route == .horizontalCollection ? 25 : 30
+            let path = IndexPath(item: item, section: section)
+            collection.scrollToItem(at: path, at: route == .horizontalCollection ? .left : .top, animated: false)
+            collection.layoutIfNeeded()
+            let cell = try XCTUnwrap(collection.cellForItem(at: path) as? DemoCollectionCell)
+            cell.localizedContent.draft.text = "draft \(route.rawValue)"
+            collection.selectItem(at: path, animated: false, scrollPosition: [])
+            let activity = try XCTUnwrap(old.coordinator.activity())
+            let saved = try XCTUnwrap(SceneStateCodec.decode(activity)).stacks[0].last!.list!
+            old.close()
+            LanguageService.shared.setSelection(.arabic)
+            let new = try RestoredSceneHarness(activity: activity)
+            let restored = try XCTUnwrap(new.coordinator.tabs.navigationControllers[0].topViewController as? any ListStateRestorable)
+            new.window.layoutIfNeeded()
+            ListStateRestoration.applyIfNeeded(restored)
+            let view = try XCTUnwrap(restored.restorationScrollView as? UICollectionView)
+            let restoredCell = try XCTUnwrap(view.cellForItem(at: path) as? DemoCollectionCell)
+            XCTAssertEqual(restoredCell.localizedContent.draft.text, "draft \(route.rawValue)", route.rawValue)
+            XCTAssertTrue(view.indexPathsForSelectedItems?.contains(path) == true)
+            let frame = restoredCell.convert(restoredCell.bounds, to: view)
+            if route == .horizontalCollection {
+                XCTAssertEqual(view.bounds.maxX - view.adjustedContentInset.right - frame.maxX, saved.distance, accuracy: 2)
+            } else {
+                XCTAssertEqual(frame.minY - view.bounds.minY - view.adjustedContentInset.top, saved.distance, accuracy: 2)
+            }
+            if route == .compositionalCarousel {
+                view.setContentOffset(.zero, animated: false)
+                view.layoutIfNeeded()
+                let centered = try XCTUnwrap(view.cellForItem(at: IndexPath(item: 12, section: 0)))
+                XCTAssertEqual(centered.convert(centered.bounds, to: view).midX, view.bounds.midX, accuracy: 2)
+            }
+            new.close()
+        }
+    }
+
+    @MainActor
+    func testSceneActivityValidationIsolationAndLateDelivery() throws {
+        let scene = try RestoredSceneHarness()
+        defer { scene.close() }
+        let detail = DetailViewController()
+        detail.draftField.text = "saved business state"
+        scene.coordinator.tabs.navigationControllers[0].pushViewController(detail, animated: false)
+        let activity = try XCTUnwrap(scene.coordinator.activity())
+        var saved = try XCTUnwrap(SceneStateCodec.decode(activity))
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: directory) }
+        let store = SceneCheckpointStore(directory: directory)
+        store.save(activity, sceneID: "scene-a")
+        XCTAssertEqual(SceneStateCodec.decode(try XCTUnwrap(store.load(sceneID: "scene-a"))), saved)
+        XCTAssertNil(store.load(sceneID: "scene-b"))
+        store.remove(sceneID: "scene-a")
+        XCTAssertNil(store.load(sceneID: "scene-a"))
+        saved.version = 99
+        XCTAssertNil(SceneStateCodec.activity(for: saved))
+        let wrongType = NSUserActivity(activityType: "com.other.activity")
+        wrongType.userInfo = activity.userInfo
+        XCTAssertNil(SceneStateCodec.decode(wrongType))
+        XCTAssertNil(SceneStateCodec.decode(Data(repeating: 0, count: SceneStateCodec.maximumBytes + 1)))
+        let hidden = CollectionDemoViewController()
+        let pending = SavedListState(anchorID: 30, distance: -12, selectedIDs: [30], drafts: [30: "hidden draft"])
+        hidden.pendingListState = pending
+        hidden.drafts = pending.drafts
+        hidden.loadViewIfNeeded()
+        XCTAssertEqual(ListStateRestoration.capture(hidden), pending,
+            "Loading a hidden page must not replace its pending restoration geometry")
+        let fresh = try RestoredSceneHarness()
+        defer { fresh.close() }
+        XCTAssertTrue(fresh.coordinator.restoreInteractionState(activity))
+        let restored = try XCTUnwrap(fresh.coordinator.tabs.navigationControllers[0].topViewController as? DetailViewController)
+        restored.draftField.text = "new edit after restore"
+        XCTAssertFalse(fresh.coordinator.restoreInteractionState(activity))
+        XCTAssertEqual(restored.draftField.text, "new edit after restore")
+        let active = try RestoredSceneHarness()
+        defer { active.close() }
+        active.coordinator.tabs.selectedIndex = 1
+        XCTAssertFalse(active.coordinator.restoreInteractionState(activity), "Late state must not overwrite a user tab change")
+    }
+
+    @MainActor
+    func testActivityRestoresSplitColumnsAndDrafts() throws {
+        let old = try RestoredSceneHarness()
+        let split = ContainerDemos.makeSplit()
+        let primaryDetail = DetailViewController()
+        primaryDetail.draftField.text = "primary draft"
+        split.restorationPrimary?.pushViewController(primaryDetail, animated: false)
+        (split.restorationSecondary?.topViewController as? DetailViewController)?.draftField.text = "secondary draft"
+        old.coordinator.tabs.present(split, animated: false)
+        old.window.layoutIfNeeded()
+        split.show(.secondary)
+        old.window.layoutIfNeeded()
+        XCTAssertTrue(split.restorationShowsSecondary)
+        if split.isCollapsed {
+            split.show(.primary)
+            old.window.layoutIfNeeded()
+            XCTAssertFalse(split.restorationShowsSecondary)
+            split.show(.secondary)
+            old.window.layoutIfNeeded()
+            XCTAssertTrue(split.restorationShowsSecondary)
+        }
+        let activity = try XCTUnwrap(old.coordinator.activity())
+        XCTAssertNotNil(SceneStateCodec.decode(activity)?.split)
+        old.close()
+        let new = try RestoredSceneHarness(activity: activity)
+        defer { new.close() }
+        new.window.layoutIfNeeded()
+        let restored = try XCTUnwrap(new.coordinator.tabs.presentedViewController as? LocalizedSplitViewController)
+        XCTAssertEqual(restored.restorationPrimary?.viewControllers.count, 2)
+        XCTAssertEqual((restored.restorationPrimary?.viewControllers.last as? DetailViewController)?.draftField.text, "primary draft")
+        XCTAssertEqual((restored.restorationSecondary?.viewControllers.first as? DetailViewController)?.draftField.text, "secondary draft")
+        XCTAssertTrue(restored.restorationShowsSecondary)
+    }
+
 }
 
 @MainActor
@@ -496,5 +688,27 @@ private final class ContainerTestWindow {
 private final class LocalizedTestSheet: LocalizedViewController {
     override func applyLocalization(_ context: LanguageContext) {
         title = context.text("detail.title")
+    }
+}
+
+@MainActor
+private final class RestoredSceneHarness {
+    let window: UIWindow
+    let coordinator = SceneStateCoordinator()
+    private let previous: UIWindow?
+    private var closed = false
+    init(activity: NSUserActivity? = nil) throws {
+        let scene = try XCTUnwrap(UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first)
+        previous = scene.windows.first(where: \.isKeyWindow)
+        window = UIWindow(windowScene: scene)
+        coordinator.connect(window: window, activity: activity)
+        window.layoutIfNeeded()
+    }
+    func close() {
+        guard !closed else { return }; closed = true
+        window.rootViewController?.dismiss(animated: false)
+        LanguageService.shared.unregister(window: window)
+        window.isHidden = true
+        previous?.makeKeyAndVisible()
     }
 }

@@ -24,6 +24,18 @@ class LocalizedViewController: UIViewController, LocalizationUpdatable {
         refreshIfNeeded()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // Observe the demo's business columns without replacing the split delegate.
+        // This also records the native compact Back gesture returning to primary.
+        if let split = splitViewController as? LocalizedSplitViewController, split.isCollapsed {
+            if navigationController === split.restorationPrimary { split.restorationShowsSecondary = false }
+            if navigationController === split.restorationSecondary { split.restorationShowsSecondary = true }
+        }
+    }
+
+    @objc private func openSystemSettings() { SystemLanguageSettings.open(from: self) }
+
     func buildUI() {}
     func applyLocalization(_ context: LanguageContext) {}
 
@@ -34,6 +46,15 @@ class LocalizedViewController: UIViewController, LocalizationUpdatable {
         let context = LanguageService.shared.context
         guard context.revision != renderedRevision else { return }
         renderedRevision = context.revision
+        if navigationItem.rightBarButtonItem == nil {
+            let item = UIBarButtonItem(title: context.text("system.settings"), style: .plain,
+                target: self, action: #selector(openSystemSettings))
+            item.accessibilityIdentifier = "system.language.settings"
+            navigationItem.rightBarButtonItem = item
+        }
+        if navigationItem.rightBarButtonItem?.accessibilityIdentifier == "system.language.settings" {
+            navigationItem.rightBarButtonItem?.title = context.text("system.settings")
+        }
         LayoutDirection.applyBoundary(context, to: view)
         applyLocalization(context)
         view.setNeedsLayout()
@@ -74,7 +95,7 @@ final class LocalizedNavigationController: UINavigationController {
 
 @MainActor
 final class LocalizedTabBarController: UITabBarController {
-    private let navigationControllers: [LocalizedNavigationController]
+    let navigationControllers: [LocalizedNavigationController]
 
     init(navigationControllers: [LocalizedNavigationController]) {
         self.navigationControllers = navigationControllers

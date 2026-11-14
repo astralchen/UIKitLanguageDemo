@@ -8,7 +8,8 @@ final class CompositionalDemoViewController: LocalizedViewController, UICollecti
     let itemIDsBySection: [[Int]]
     private let languagePicker = LanguagePickerView()
     private let stack = UIStackView()
-    private var drafts: [Int: String] = [:]
+    var drafts: [Int: String] = [:]
+    var pendingListState: SavedListState?
     private var renderedRTL = LanguageService.shared.context.isRTL
     private(set) var localization: CollectionLocalizationCoordinator!
     private(set) var orthogonalLocalization: OrthogonalLocalizationCoordinator?
@@ -85,6 +86,7 @@ final class CompositionalDemoViewController: LocalizedViewController, UICollecti
         super.viewDidAppear(animated)
         localization.refreshAfterAppearance()
         orthogonalLocalization?.refreshAfterAppearance()
+        ListStateRestoration.applyIfNeeded(self)
     }
 
     private func makeLayout() -> UICollectionViewCompositionalLayout {
@@ -147,6 +149,7 @@ final class CompositionalDemoViewController: LocalizedViewController, UICollecti
     }
     private func render(_ cell: UICollectionViewCell, at path: IndexPath, context: LanguageContext) {
         guard let cell = cell as? DemoCollectionCell, let id = id(at: path) else { return }
+        cell.accessibilityIdentifier = "list.cell.\(id)"
         cell.localizedContent.bind(id: id, savedDraft: drafts[id] ?? "") { [weak self] id, value in self?.drafts[id] = value }
         cell.localizedContent.render(id: id, context: context)
         LayoutDirection.applyBoundary(context, to: cell)

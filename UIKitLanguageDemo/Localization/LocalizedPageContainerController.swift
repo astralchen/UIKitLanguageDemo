@@ -13,6 +13,7 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
     let pageViewController = UIPageViewController(transitionStyle: .scroll,
                                                  navigationOrientation: .horizontal)
     private let pages: [Page]
+    var restorationPages: [Page] { pages }
     private let hosts: [LocalizedPageContentHost]
     private let titleKey: String?
     private var pagingIsRTL: Bool
@@ -93,7 +94,18 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
         else { updatePagingDirection(context) }
     }
 
+    @objc private func openSystemSettings() { SystemLanguageSettings.open(from: self) }
+
     func applyLocalization(_ context: LanguageContext) {
+        if navigationItem.rightBarButtonItem == nil {
+            let item = UIBarButtonItem(title: context.text("system.settings"), style: .plain,
+                target: self, action: #selector(openSystemSettings))
+            item.accessibilityIdentifier = "system.language.settings"
+            navigationItem.rightBarButtonItem = item
+        }
+        if navigationItem.rightBarButtonItem?.accessibilityIdentifier == "system.language.settings" {
+            navigationItem.rightBarButtonItem?.title = context.text("system.settings")
+        }
         if let titleKey { title = context.text(titleKey) }
     }
 

@@ -1,0 +1,48 @@
+[
+  {
+    "attachments": [
+      {
+        "configurationName": "Configuration 1",
+        "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "ABDB43D7-9101-47A8-BD40-330E194BDDFF.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "Compositional grid after system-language restart_0_1F9D60CE-1F1E-4F7F-A4D2-D22442E78936.png",
+        "timestamp": 1794622456.674,
+        "publishedFileName": "english-compositional-grid.png"
+      },
+      {
+        "configurationName": "Configuration 1",
+        "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "FE9E07B5-78C8-479D-8CFE-E999C2D60BF4.txt",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "public.plain-text_0_5403FCDF-D58B-4CA5-B6B9-DFF358478965.txt",
+        "timestamp": 1794622456.263,
+        "publishedFileName": "list-anchor.txt"
+      },
+      {
+        "configurationName": "Configuration 1",
+        "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "FD554349-59DE-47B6-93CB-1DE22DBD3752.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "Arabic detail after system-language restart_0_59A7AF64-F274-4FFC-B388-9955407A602A.png",
+        "timestamp": 1794622421.208,
+        "publishedFileName": "arabic-detail.png"
+      },
+      {
+        "configurationName": "Configuration 1",
+        "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+        "deviceName": "iPhone 17 Pro",
+        "exportedFileName": "307AC7F7-BFBD-4688-AA07-41A47598EA24.txt",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "public.plain-text_0_2B286C25-3A8E-4F61-AD1D-F4CB905E5BF8.txt",
+        "timestamp": 1794622420.859,
+        "publishedFileName": "activity-source.txt"
+      }
+    ],
+    "testIdentifier": "UIKitLanguageDemoUITests/testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft()",
+    "testIdentifierURL": "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests/testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft"
+  }
+]

@@ -12,7 +12,7 @@ if let url = URL(string: UIApplication.openSettingsURLString) {
 }
 ```
 
-这个 URL 打开 App 设置入口，不保证直接定位“语言”子项。根据讲座介绍，系统语言选择变化后，App 会以目标语言重新启动；通过状态恢复 API（例如 NSUserActivity）重新建立用户所在位置、业务 ID 和草稿。跨进程恢复会重新创建控制器，并非保留原控制器实例。本示例尚未实现跨进程的业务状态恢复流程。
+这个 URL 打开 App 设置入口，不保证直接定位“语言”子项。根据讲座介绍，系统语言选择变化后，App 会以目标语言重新启动；通过状态恢复 API（例如 NSUserActivity）重新建立用户所在位置、业务 ID 和草稿。跨进程恢复会重新创建控制器，并非保留原控制器实例。本工程现已实现这一流程，接入代码与测试见 [STATE_RESTORATION.md](STATE_RESTORATION.md)。
 
 不要写入 AppleLanguages 或通过 swizzling 替换系统 Bundle 行为。
 
@@ -20,7 +20,7 @@ if let url = URL(string: UIApplication.openSettingsURLString) {
 
 用户要求在 App 内即时刷新，并保留当前页面和导航栈。因此 LanguageService 提供的是应用自有 UI 的内容语言选择：显式读取指定语言 Bundle，刷新文案、格式化策略和业务布局方向，并保留当前进程的页面与业务状态。
 
-它不会改变系统的单 App 语言设置，不保证系统权限提示、系统控件内建字符串、系统菜单、键盘或第三方 SDK 文案随之切换。手动读取语言资源 Bundle 也不应被理解为 Apple 推荐的系统 App 语言切换方案。若产品要求系统 UI 和 App 文案统一，应采用上面的系统设置路径，并实现跨进程状态恢复。
+它不会改变系统的单 App 语言设置，不保证系统权限提示、系统控件内建字符串、系统菜单、键盘或第三方 SDK 文案随之切换。手动读取语言资源 Bundle 也不应被理解为 Apple 推荐的系统 App 语言切换方案。若产品要求系统 UI 和 App 文案统一，应采用上面的系统设置路径，并使用本工程新增的跨进程状态恢复。
 
 ## “跟随系统”的正确含义
 
@@ -40,4 +40,4 @@ Bundle.main.preferredLocalizations
 
 新增 `testSystemSelectionUsesAppBundlePreferences`，通过可注入的 Bundle 偏好提供器验证初始化、显式选择优先级、切回跟随、偏好变化和重新实例化，并检查默认路径与主 Bundle 匹配。测试不修改 AppleLanguages，也不改变模拟器系统语言。
 
-此测试与既有运行时状态保留测试区分：它没有代替系统设置切换后的真实重启与状态恢复测试。
+另有 `testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft` UI 测试，实际从系统设置将此 App 由 English 改为 العربية，再切回 English。每次都断言原进程已经终止，然后验证 `activity|语言` 恢复来源、详情导航与草稿、组合网格阅读锚点与列表草稿，最后恢复原 App 语言选项。单元测试还覆盖 Page、Split、Table、Flow 纵横布局与正交分页的重新创建恢复。

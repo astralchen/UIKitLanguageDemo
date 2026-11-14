@@ -11,7 +11,14 @@
       "containerPath": "container:UIKitLanguageDemo.xcodeproj",
       "identifier": "33E9D85030A7CB4B00AD1742",
       "name": "UIKitLanguageDemo"
-    }
+    },
+    "environmentVariableEntries": [
+      {
+        "key": "DYLD_LIBRARY_PATH",
+        "value": "$(PLATFORM_DIR)/Developer/usr/lib",
+        "isEnabled": true
+      }
+    ]
   },
   "testTargets": [
     {
@@ -20,6 +27,14 @@
         "containerPath": "container:UIKitLanguageDemo.xcodeproj",
         "identifier": "33E9D86630A7CB5200AD1742",
         "name": "UIKitLanguageDemoTests"
+      }
+    },
+    {
+      "parallelizable": false,
+      "target": {
+        "containerPath": "container:UIKitLanguageDemo.xcodeproj",
+        "identifier": "33E9D87030A7CB5200AD1742",
+        "name": "UIKitLanguageDemoUITests"
       }
     }
   ],

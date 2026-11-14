@@ -73,3 +73,7 @@ localization = CollectionLocalizationCoordinator(
 新增四项 XCTest：Table 同一 Cell 的草稿/选择和自动行高；Table 多次切换后的阅读锚点与复用草稿；Collection 网格 RTL 镜像、Header、草稿/选择及滚动锚点；横向 Collection 改变卡片宽度后的逻辑起始项保留。原六项容器、导航、资源测试保留。实际官方 MCP 结果见 verification/。
 
 组合布局扩展：新增两项 XCTest，当前共十二项；Compositional 默认 reconfigure 分支使用普通数据源，Diffable 需自行通过 snapshot 刷新，详见 COMPOSITIONAL_LAYOUT.md。
+
+## 系统语言重启恢复
+
+新增 `NSUserActivity` 桥接：保存稳定业务项、相对阅读距离、选择、草稿；正交分区还保存中心业务项 ID。重启后的新列表在进入窗口并完成测量后应用 pending 状态。接入和已测范围见 [STATE_RESTORATION.md](STATE_RESTORATION.md)。

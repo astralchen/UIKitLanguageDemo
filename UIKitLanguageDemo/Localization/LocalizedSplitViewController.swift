@@ -4,6 +4,9 @@ import UIKit
 /// Language changes never call setViewController, show/hide, or change display mode.
 @MainActor
 class LocalizedSplitViewController: UISplitViewController, LocalizationUpdatable {
+    var restorationPrimary: LocalizedNavigationController?
+    var restorationSecondary: LocalizedNavigationController?
+    var restorationShowsSecondary = false
     private var renderedRevision = -1
 
     override init(style: UISplitViewController.Style) {
@@ -13,6 +16,13 @@ class LocalizedSplitViewController: UISplitViewController, LocalizationUpdatable
         primaryEdge = .leading
     }
     required init?(coder: NSCoder) { fatalError("Use init(style:)") }
+
+    override func show(_ column: UISplitViewController.Column) {
+        // Persist the requested business column even before UIKit completes a transition.
+        super.show(column)
+        if column == .secondary { restorationShowsSecondary = true }
+        if column == .primary { restorationShowsSecondary = false }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

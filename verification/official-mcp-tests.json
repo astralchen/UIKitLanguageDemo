@@ -4,12 +4,12 @@
     "expectedFailures": 0,
     "failed": 0,
     "notRun": 0,
-    "passed": 13,
+    "passed": 18,
     "skipped": 0,
-    "total": 13
+    "total": 18
   },
-  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T09-26-10+08-00.txt",
-  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/DFFE188D-CC5D-480F-A225-F5559661B087.txt",
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T10-12-29+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/80D45E6A-58F4-4868-8304-E49B791B5F8A.txt",
   "results": [
     {
       "displayName": "testLanguageSwitchPreservesNavigationAndDraft()",
@@ -101,10 +101,45 @@
       "identifier": "LanguageTests/testSystemSelectionUsesAppBundlePreferences()",
       "state": "Passed",
       "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testActivityRestoresNavigationPagerDraftsAndTableAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testActivityRestoresNavigationPagerDraftsAndTableAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testActivityRestoresAllCollectionLayouts()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testActivityRestoresAllCollectionLayouts()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testSceneActivityValidationIsolationAndLateDelivery()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testSceneActivityValidationIsolationAndLateDelivery()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testActivityRestoresSplitColumnsAndDrafts()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testActivityRestoresSplitColumnsAndDrafts()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft()",
+      "errorMessages": [],
+      "identifier": "UIKitLanguageDemoUITests/testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
     }
   ],
   "schemeName": "UIKitLanguageDemo",
-  "summary": "13 tests: 13 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
-  "totalResults": 13,
+  "summary": "18 tests: 18 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 18,
   "truncated": false
 }

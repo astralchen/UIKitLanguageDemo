@@ -49,5 +49,10 @@ final class OrthogonalLocalizationCoordinator: ListLocalizationObserver {
         self.pendingCenters = nil
     }
 
+    func centersForRestoration() -> [Int: LocalizationItemID] { pendingCenters ?? observedCenters }
+    func restoreCenters(_ centers: [Int: LocalizationItemID]) {
+        pendingCenters = centers
+        finishLayout()
+    }
     func refreshAfterAppearance() { finishLayout() }
 }

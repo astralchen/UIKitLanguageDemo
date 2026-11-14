@@ -4,7 +4,7 @@ import UIKit
 typealias LocalizationItemID = AnyHashable
 
 @MainActor
-private struct ListReadingState {
+struct ListReadingState {
     let anchorID: LocalizationItemID?
     let distanceFromLeadingEdge: CGFloat
     let selectedIDs: [LocalizationItemID]
@@ -50,10 +50,12 @@ final class TableLocalizationCoordinator: ListLocalizationObserver {
         super.init(languageService: .shared)
     }
 
-    override func captureState() {
+    override func captureState() { captureState(allowMoving: false) }
+
+    private func captureState(allowMoving: Bool) {
         guard let tableView else { return }
         let top = tableView.indexPathsForVisibleRows?.min()
-        let canAnchor = !tableView.isTracking && !tableView.isDragging && !tableView.isDecelerating
+        let canAnchor = allowMoving || (!tableView.isTracking && !tableView.isDragging && !tableView.isDecelerating)
         let anchor = canAnchor ? top : nil
         readingState = ListReadingState(
             anchorID: anchor.flatMap(itemID),
@@ -100,6 +102,18 @@ final class TableLocalizationCoordinator: ListLocalizationObserver {
         }
         readingState = nil
         needsMeasurement = false
+    }
+
+    func readingStateForRestoration() -> ListReadingState? {
+        if needsMeasurement, let readingState { return readingState }
+        // A restart snapshot reads the current viewport even during deceleration; it never scrolls the live view.
+        captureState(allowMoving: true)
+        return readingState
+    }
+    func restoreReadingState(_ state: ListReadingState) {
+        readingState = state
+        updateContent(LanguageService.shared.context)
+        finishLayout()
     }
 
     /// Call after reappearing, or after a business-owned batch update finishes.
@@ -155,7 +169,9 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
         super.init(languageService: .shared)
     }
 
-    override func captureState() {
+    override func captureState() { captureState(allowMoving: false) }
+
+    private func captureState(allowMoving: Bool) {
         guard let collectionView else { return }
         let rtl = collectionView.effectiveUserInterfaceLayoutDirection == .rightToLeft
         let viewport = collectionView.bounds.inset(by: collectionView.adjustedContentInset)
@@ -169,7 +185,7 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
             if abs(a.1.minX - b.1.minX) > 0.5 { return rtl ? a.1.maxX > b.1.maxX : a.1.minX < b.1.minX }
             return a.1.minY < b.1.minY
         }
-        let canAnchor = !collectionView.isTracking && !collectionView.isDragging && !collectionView.isDecelerating
+        let canAnchor = allowMoving || (!collectionView.isTracking && !collectionView.isDragging && !collectionView.isDecelerating)
         let first = canAnchor ? visible.first : nil
         fallbackOffset = canAnchor && first == nil ? collectionView.contentOffset : nil
         let distance: CGFloat
@@ -230,6 +246,22 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
         readingState = nil
         fallbackOffset = nil
         needsMeasurement = false
+    }
+
+    func readingStateForRestoration() -> ListReadingState? {
+        if needsMeasurement, let readingState { return readingState }
+        // A restart snapshot reads the current viewport even during deceleration; it never scrolls the live view.
+        captureState(allowMoving: true)
+        return readingState
+    }
+    func restoreReadingState(_ state: ListReadingState, startDistance: CGFloat) {
+        readingState = state
+        if let collectionView, state.anchorID == nil {
+            fallbackOffset = CGPoint(x: collectionView.contentOffset.x,
+                y: startDistance - collectionView.adjustedContentInset.top)
+        }
+        updateContent(LanguageService.shared.context)
+        finishLayout()
     }
 
     func refreshAfterAppearance() {

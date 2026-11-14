@@ -2,11 +2,11 @@
 
 工程由 Xcode 原生 iOS App 模板创建，源码与资源通过 Apple 官方 `xcrun mcpbridge` 的 MCP 工具迁入。完整 UIKit / Swift 6 工程，应用最低部署版本 iOS 15.0，模板测试目标为 iOS 15.6。包含中文、英文、阿拉伯语、跟随系统、运行时刷新通知、LTR/RTL 切换，以及 XCTest 回归测试。
 
-语言切换沿用现有 UIWindow、根控制器、UITab、导航控制器、页面和输入框实例。根控制器只在 Scene 创建时设置一次，切换时不重新创建页面，也不重设导航栈或选中的 Tab。
+App 内热切换沿用现有 UIWindow、根控制器、UITab、导航控制器、页面和输入框实例，不重新创建页面，也不重设导航栈或选中的 Tab。系统语言引发进程重启时，则按保存的业务路由重建控制器图。
 
 ## 系统 App 语言与热切换边界
 
-Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/403/) 推荐通过系统设置切换单 App 语言，并配合重新启动后的状态恢复。本工程为满足 App 内即时刷新要求，提供应用自有 UI 的内容语言热切换；它不改变系统单 App 语言设置，也不统一控制系统或第三方内建文案。跨进程状态恢复尚未实现。
+Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/403/) 推荐通过系统设置切换单 App 语言，并配合重新启动后的状态恢复。本工程为满足 App 内即时刷新要求，提供应用自有 UI 的内容语言热切换；它不改变系统单 App 语言设置，也不统一控制系统或第三方内建文案。现已提供 `NSUserActivity` 的跨进程状态恢复，重新建立导航栈、当前 Tab／Page／Split、草稿和列表阅读位置。
 
 “跟随系统”现在读取资源 Bundle 的 preferredLocalizations（默认 Bundle.main），尊重系统为 App 匹配的语言；不再以 Locale.preferredLanguages 代替当前 App 语言。完整说明见 [系统语言与热切换](SYSTEM_LANGUAGE.md)。
 
@@ -17,9 +17,8 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 3. 首页点击“打开详情”，输入草稿，再点击详情页中的语言按钮。
 4. 验证详情页仍在、返回按钮仍可返回首页、草稿不变，中文/阿拉伯语切换时方向改变。
 5. 设置 Tab 演示可变行高 Table；首页可进入 FlowLayout 网格/横向列表，以及 Compositional 网格/正交分页分区，滚动、选择、编辑草稿后切换语言。
-6. 使用 Product → Test 运行随工程附带的十三项 XCTest。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
-
-测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
+6. 在任意示例页点击导航栏“系统 App 语言设置”，在系统中选择语言并返回 App，验证当前位置、草稿和滚动位置恢复。该入口先切回“跟随系统”，以便新进程采用系统选择。
+7. 使用 Product → Test 运行随工程附带的十八项 XCTest（17 项单元测试和 1 项真实系统设置重启 UI 测试）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
 
 测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
 
@@ -46,8 +45,12 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 | `Screens/ListDemoContent.swift` | Cell 内容、草稿绑定和 supplementary 示例 |
 | `Screens/CompositionalDemoViewController.swift` | 自适应组合网格、正交分页分区及运行时镜像 |
 | `Localization/OrthogonalLocalizationCoordinator.swift` | 正交 section 中心业务页与外层阅读位置保留 |
-| `SceneDelegate.swift` | 创建并注册每个 Scene 的窗口 |
-| `UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift` | 导航栈、草稿、选区、弹层、持久化、回退和方向回归测试 |
+| `Localization/SceneState.swift` | 版本化业务 DTO、NSUserActivity 编解码与输入校验 |
+| `Localization/SceneStateCoordinator.swift` | 重建导航／Page／Split、按 Scene 隔离的持久化检查点、系统设置入口 |
+| `Localization/ListStateRestoration.swift` | 列表草稿、选择、逻辑阅读锚点及正交中心页的持久化桥接 |
+| `SceneDelegate.swift` | Scene 生命周期、NSUserActivity 保存与恢复、窗口注册 |
+| `UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift` | 热切换与新控制器图的恢复回归测试 |
+| `UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift` | 系统设置改语言、进程终止、导航和组合列表恢复 |
 
 ## 切换语言
 
@@ -122,7 +125,7 @@ final class ProfileViewController: LocalizedViewController {
 
 ## 多窗口与容器接入
 
-`SceneDelegate` 展示了完整启动代码。`LocalizationHostController` 只在窗口创建时包裹实际根控制器，iOS 15/16 通过该容器覆盖子控制器的布局 Trait。每个业务窗口，包括自建悬浮窗口，都需注册：
+`SceneDelegate` 展示了完整启动代码。`LocalizationHostController` 在创建或恢复 Scene 时包裹业务根控制器，热切换不替换它，iOS 15/16 通过该容器覆盖子控制器的布局 Trait。每个业务窗口，包括自建悬浮窗口，都需注册：
 
 ```swift
 LanguageService.shared.register(window: window)
@@ -204,11 +207,19 @@ pager.previousPage()
 
 完整实现与边界见 [Compositional Layout 接入说明](COMPOSITIONAL_LAYOUT.md)。本例使用普通数据源；正交恢复范围为每组一项的居中分页，不承诺连续滚动的小数偏移。
 
+## 系统语言重启后的状态恢复
+
+`SceneDelegate` 在离开前把稳定路由、业务 ID 和用户草稿写入 `NSUserActivity`；新 Scene 优先读取系统交回的 activity，再按当前 Bundle 语言重建页面。仅恢复业务状态，不保存旧语言、翻译文案、控制器或键盘。列表在视图进入窗口并完成测量后恢复锚点；正交分页恢复中心业务 ID。
+
+每个 Scene 另有原子、文件保护的本地检查点，作为系统未交回 activity 时的降级。迟到或重复的 activity 不覆盖已恢复状态或用户新操作。完整生命周期、接入方式和已测边界见 [NSUserActivity 状态恢复](STATE_RESTORATION.md)。
+
 ## 工程创建与迁移记录
 
 当前 Apple 官方 MCP 服务器未提供创建新工程的工具，因此创建步骤使用 Xcode 原生 iOS App 模板（Storyboard / Swift / XCTest）；分组、源码、Info.plist、String Catalog 和测试通过官方 MCP 写入。工程文件由 Xcode 创建与维护，没有复制旧工程的手写 project.pbxproj。
 
-官方 MCP `BuildProject` 已构建成功，`RunSomeTests` 已执行全部十三项测试：13 passed、0 failed、0 skipped、0 not run。原十二项测试保留，并新增 Bundle App 语言偏好回归测试；结果保存在 `verification/official-mcp-tests.json`。测试签名问题已修复，详情见 `SIGNING_FIX.md` 和 `verification/`；源码一致性见 `MIGRATION.json`。
+官方 MCP `BuildProject` 已构建成功，`RunSomeTests` 已执行全部十八项测试：18 passed、0 failed、0 skipped、0 not run。原十三项测试保留，新增四项状态恢复单元测试和一项真实系统语言重启 UI 测试；结果保存在 `verification/official-mcp-tests.json`。测试签名问题已修复，详情见 `SIGNING_FIX.md` 和 `verification/`；源码一致性见 `MIGRATION.json`。
+
+本机 Xcode 的 UI Runner 曾缺少 SDK 自带的 `lib_TestingInterop.dylib`；测试计划用 `$(PLATFORM_DIR)/Developer/usr/lib` 补充测试进程的动态库路径，保持签名启用，详见状态恢复文档。
 
 本机已确认新构建产物包含 en、zh-Hans、ar 三套本地化文件。iOS 15/16 兼容分支尚未在对应系统版本运行。
 

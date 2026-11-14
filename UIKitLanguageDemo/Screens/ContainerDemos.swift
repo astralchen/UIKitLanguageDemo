@@ -8,6 +8,8 @@ enum ContainerDemos {
                                                     tabTitleKey: "split.title", symbol: "sidebar.leading")
         let secondary = LocalizedNavigationController(root: DetailViewController(),
                                                       tabTitleKey: "detail.title", symbol: "doc.text")
+        split.restorationPrimary = primary
+        split.restorationSecondary = secondary
         split.setViewController(primary, for: .primary)
         split.setViewController(secondary, for: .secondary)
         split.preferredDisplayMode = .oneBesideSecondary
@@ -15,15 +17,15 @@ enum ContainerDemos {
         return split
     }
 
-    static func makePager() -> LocalizedPageContainerController {
+    static func makePager(initialPageID: String = "page-2") -> LocalizedPageContainerController {
         LocalizedPageContainerController(pages: (1...3).map { index in
             .init(id: "page-\(index)", controller: DemoPageViewController(number: index))
-        }, initialPageID: "page-2", titleKey: "pages.title")
+        }, initialPageID: initialPageID, titleKey: "pages.title")
     }
 }
 
 @MainActor
-private final class SplitMenuViewController: LocalizedViewController {
+final class SplitMenuViewController: LocalizedViewController {
     private let picker = LanguagePickerView()
     private let showDetail = UIButton(type: .system)
     private let close = UIButton(type: .system)
@@ -34,7 +36,10 @@ private final class SplitMenuViewController: LocalizedViewController {
         stack.spacing = 16
         stack.translatesAutoresizingMaskIntoConstraints = false
         showDetail.configuration = .filled()
-        showDetail.addAction(UIAction { [weak self] _ in self?.splitViewController?.show(.secondary) }, for: .touchUpInside)
+        showDetail.addAction(UIAction { [weak self] _ in
+            (self?.splitViewController as? LocalizedSplitViewController)?.restorationShowsSecondary = true
+            self?.splitViewController?.show(.secondary)
+        }, for: .touchUpInside)
         close.configuration = .tinted()
         close.addAction(UIAction { [weak self] _ in self?.splitViewController?.dismiss(animated: true) }, for: .touchUpInside)
         [picker, showDetail, close].forEach(stack.addArrangedSubview)
@@ -56,10 +61,10 @@ private final class SplitMenuViewController: LocalizedViewController {
 }
 
 @MainActor
-private final class DemoPageViewController: LocalizedViewController {
+final class DemoPageViewController: LocalizedViewController {
     private let number: Int
     private let heading = UILabel()
-    private let draft = UITextField()
+    let draft = UITextField()
     private let picker = LanguagePickerView()
     private let previousButton = UIButton(type: .system)
     private let nextButton = UIButton(type: .system)

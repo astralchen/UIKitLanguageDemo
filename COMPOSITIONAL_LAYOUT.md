@@ -49,3 +49,7 @@ Cell 创建和 willDisplay 始终读取最新 context；Header 也在创建、wi
 新增两项 XCTest 分别验证网格的 RTL 视觉顺序、自适应高度、草稿/选择、阅读锚点及导航栈；正交 section 的中心业务页、相邻项物理方向、宽度变化、草稿/选择、外层锚点和隐藏后恢复。对应官方 MCP 结果见 verification/official-mcp-tests.json。运行环境为现有 iPhone 17 Pro / iOS 26.5；iOS 15/16、iPad 和真机尚未重跑此扩展。
 
 官方参考：[Compositional Layout](https://developer.apple.com/documentation/uikit/uicollectionviewcompositionallayout)、[镜像规则](https://developer.apple.com/documentation/uikit/uicollectionviewlayout/flipshorizontallyinoppositelayoutdirection)、[reconfigureItems](https://developer.apple.com/documentation/uikit/uicollectionview/reconfigureitems(at:))、[正交滚动行为](https://developer.apple.com/documentation/uikit/nscollectionlayoutsection/orthogonalscrollingbehavior)。
+
+## 系统语言重启恢复
+
+新增 `NSUserActivity` 桥接：保存稳定业务项、相对阅读距离、选择、草稿；正交分区还保存中心业务项 ID。重启后的新列表在进入窗口并完成测量后应用 pending 状态。接入和已测范围见 [STATE_RESTORATION.md](STATE_RESTORATION.md)。

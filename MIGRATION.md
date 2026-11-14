@@ -1,21 +1,17 @@
 # Xcode 原生工程与官方 MCP 迁移记录
 
-最新验收：2026-11-14，Apple 官方 MCP RunSomeTests 十三项全部通过，0 failed、0 skipped、0 expected failures、0 not run。本次 RunSomeTests 使用 GetTestList 返回的全部十三个实际测试 ID，原始结果见 verification/official-mcp-tests.json / .txt，控制台见 official-mcp-console.txt。此前列表扩展的 RunAllTests 也有十项通过，但 Xcode 仍将内存中空的 UI 测试目标汇总为 No result；该原始输出另存 official-mcp-runall-with-empty-target.json，不作为最终验收计数。导出的显式计划已移除空目标。历史六项结果单独保存在 official-mcp-original-six-tests.*。
+2026-11-14 最新验收：Apple 官方 `xcrun mcpbridge` / `xcode-tools 24939` 的 `BuildProject` 构建成功；`GetTestList` 发现 18 项、全部启用；`RunSomeTests` 使用这 18 个实际 ID，18 passed、0 failed、0 skipped、0 expected failures、0 not run。结果见 `verification/official-mcp-tests.json`、`.txt` 和 `official-mcp-console.txt`。
 
-工程由 Xcode 原生 iOS App 模板创建（Storyboard、Swift、XCTest）。本机官方 MCP 服务器为 xcode-tools / 24939，通过 xcrun mcpbridge 连接；该版本无创建工程工具，因此创建使用 Xcode 原生 UI，源码、资源和测试通过官方工具迁入。没有复制旧工程的手写 project.pbxproj。
+工程最初由 Xcode 原生 iOS App 模板创建（Storyboard / Swift / XCTest）。该版本官方 MCP 无创建工程工具，因此创建使用 Xcode 原生 UI；随后全部业务源码、资源与测试通过官方 MCP 写入。没有复制旧工程的手写 project.pbxproj。应用最低 iOS 15.0，测试目标 iOS 15.6，Swift 6 / MainActor。
 
-初次迁移的 14 个应用 Swift 文件和六项 XCTest 文件与原版逐字节一致，历史 SHA-256 保留在 MIGRATION.json 的 initialMigrationSourceMatches。随后添加 Table / Collection 支持，有意修改 LanguageService、Home、Settings、测试和 String Catalog，新增协调器与列表视图文件；当前改动及哈希记录在 listExtension。三套文案现在共 25 个 key。
+初始 14 个应用 Swift 文件与六项 XCTest 文件的逐字节迁移哈希保留在 `MIGRATION.json.initialMigrationSourceMatches`。之后依次加入 Table/Flow、Compositional、Bundle App 语言偏好与 Scene 状态恢复。当前全部 Swift 与 String Catalog 的 SHA-256 位于 `currentSourceFiles`；配置哈希在 `currentProjectConfigurationFiles`。String Catalog 当前为 30 个 key，支持 en、zh-Hans、ar。
 
-应用最低 iOS 15.0，测试目标 iOS 15.6，Swift 6，显式 MainActor 隔离。签名修复保留为两个测试目标 Debug/Release 的 OTHER_CODE_SIGN_FLAGS=--verbose=2，没有关闭签名。详情及最初六项验收见 SIGNING_FIX.md。
+当前 17 项单元测试包含最初六项、四项 Table/Flow、两项 Compositional、一项 Bundle 偏好、四项 NSUserActivity 恢复；另有一项真实系统 Settings UI 测试。新恢复测试重新创建 UIWindow 与页面，覆盖两个导航栈、Tab、Page、Split、草稿、选择和列表位置，并检查无效数据、分 Scene 检查点、迟到／重复交付。UI 测试实际改变 App 系统语言、断言旧进程终止，然后验证系统交回 activity 后的详情与组合列表恢复，最后还原原语言选项。截图和文本附件保存在 `verification/restoration-ui/`。
 
-原六项覆盖导航栈与草稿、弹层、持久化和资源回退、Split 各列导航栈、Page 当前页和 RTL 邻接、取消翻页后的方向。新增四项覆盖 Table 自动行高、草稿/选择、复用与滚动锚点，以及 Collection 网格镜像、Header、草稿/选择、纵向和横向尺寸变化后的锚点。
+测试计划包含单元与 UI 两个目标，禁用并行，不附加测试调试器。复用现有 iPhone 17 Pro / iOS 26.5（07EFF63F-CD81-40CE-B872-428175F5D3C2），没有为本次验证创建或重启模拟器。App Run 的 LLDB 配置保留。
 
-当前 Scheme 绑定显式 UIKitLanguageDemo.xctestplan，验收计划只包含有实际测试的单元测试目标并禁用并行，不附加测试调试器，App Run 的 LLDB 设置保留。自动测试计划曾继续使用并行缓存并触发克隆设备等待，之后关闭本工程并加载显式计划；最终官方测试复用现有 iPhone 17 Pro / iOS 26.5（07EFF63F-CD81-40CE-B872-428175F5D3C2）。
+两个测试目标 Debug/Release 的四项 `OTHER_CODE_SIGN_FLAGS=--verbose=2` 继续保留，未关闭签名。UI Runner 的本机 SDK 动态库缺失通过测试环境的 `DYLD_LIBRARY_PATH=$(PLATFORM_DIR)/Developer/usr/lib` 处理，没有修改生产 App 路径。签名校验见 `verification/restoration-signature-verification.json`。
 
-本次未在真机、iOS 15/16、iPad 重跑。Page 支持横向单页 scroll；Collection 验收范围为系统 FlowLayout 的两列网格和横向卡片，最初未包含正交滚动 Compositional Layout；当前扩展范围见下文。列表接入与并发业务更新约束见 LIST_LOCALIZATION.md。
+历史六项、十项、十二项、十三项官方结果分别保存在 `verification/official-mcp-original-six-tests.*`、`official-mcp-list-ten-tests.*`、`official-mcp-compositional-twelve-tests.*` 和 `official-mcp-system-thirteen-tests.*`。历史空 UI 目标的 RunAllTests 输出不是本次验收结果。
 
-2026-11-14 Compositional 扩展：源码、String Catalog 与两项测试通过 Apple 官方 MCP XcodeWrite 写入；BuildProject 构建成功，最终完整 RunSomeTests 12 passed、0 failed、0 skipped、0 not run。复用既有 iPhone 17 Pro / iOS 26.5，签名保持启用且最新严格校验通过。历史十项结果保存在 verification/official-mcp-list-ten-tests.*。当前 String Catalog 为 29 个 key，当前全部 Swift/资源哈希见 MIGRATION.json 的 currentSourceFiles。
-
-新增覆盖 estimated 网格行高、窗口坐标中的 RTL 顺序、连续 LTR/RTL 切换、正交分页中心业务 ID、相邻卡片方向和隐藏后的状态恢复。跨方向仅重建布局对象，保留页面与导航栈；正交实现仅使用公开 API。普通数据源、自适应网格与一组一项的 groupPagingCentered 为已测范围，完整说明见 COMPOSITIONAL_LAYOUT.md。
-
-2026-11-14 WWDC19 Session 403 对照修正：LanguageService 的 system 模式改用资源 Bundle.preferredLocalizations，新增可注入偏好提供器及一项回归测试。官方 MCP BuildProject 构建成功，完整 RunSomeTests 13/13，通过既有 iPhone 17 Pro，签名严格校验通过。此前组合布局 12 项结果保存为 verification/official-mcp-compositional-twelve-tests.*。该验收针对应用自有内容热切换；没有新增系统设置重启后的 NSUserActivity 状态恢复流程，边界见 SYSTEM_LANGUAGE.md。
+本次运行平台为 iPhone 17 Pro / iOS 26.5。真机、iOS 15/16 和 iPad 展开分栏未在本轮验证；Page 仅横向单页 scroll，状态恢复支持示例的双列 Split 和一项一组的正交分页。详细范围见 [STATE_RESTORATION.md](STATE_RESTORATION.md)、[LIST_LOCALIZATION.md](LIST_LOCALIZATION.md)、[COMPOSITIONAL_LAYOUT.md](COMPOSITIONAL_LAYOUT.md) 与 [SYSTEM_LANGUAGE.md](SYSTEM_LANGUAGE.md)。

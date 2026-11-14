@@ -31,17 +31,17 @@
       "zh-Hans",
       "ar"
     ],
-    "keyCount": 29
+    "keyCount": 30
   },
   "officialBuild": {
     "success": true,
-    "elapsedSeconds": 12.474,
+    "elapsedSeconds": 1.664,
     "errors": [],
     "tool": "Apple official MCP BuildProject",
-    "finalSourcesAlsoBuiltBy": "Apple official MCP RunSomeTests (13 tests)"
+    "finalSourcesAlsoBuiltBy": "Apple official MCP RunSomeTests (18 tests)"
   },
   "officialTestDiscovery": {
-    "enabled": 13,
+    "enabled": 18,
     "disabled": 0
   },
   "officialTestRun": {
@@ -51,9 +51,9 @@
       "expectedFailures": 0,
       "failed": 0,
       "notRun": 0,
-      "passed": 13,
+      "passed": 18,
       "skipped": 0,
-      "total": 13
+      "total": 18
     },
     "scheme": "UIKitLanguageDemo",
     "testPlan": "UIKitLanguageDemo",
@@ -110,9 +110,9 @@
     "expectedFailures": 0,
     "failed": 0,
     "notRun": 0,
-    "passed": 13,
+    "passed": 18,
     "skipped": 0,
-    "total": 13
+    "total": 18
   },
   "initialMigrationSourceMatches": [
     {
@@ -237,20 +237,22 @@
     "plan": "UIKitLanguageDemo.xctestplan",
     "parallelizable": false,
     "includedTargets": [
-      "UIKitLanguageDemoTests"
+      "UIKitLanguageDemoTests",
+      "UIKitLanguageDemoUITests"
     ],
-    "emptyUITestTargetRetainedInProject": true,
+    "emptyUITestTargetRetainedInProject": false,
     "debuggerAttached": false,
-    "reason": "Reuse selected existing simulator and avoid debugger attachment during acceptance. App Run debugging remains enabled."
+    "reason": "Reuse the selected existing simulator without parallel clones; provide SDK TestingInterop library for this Xcode UI runner. App Run debugger remains enabled.",
+    "testOnlyLibraryPath": "$(PLATFORM_DIR)/Developer/usr/lib"
   },
   "currentSourceFiles": [
     {
       "file": "UIKitLanguageDemo/AppDelegate.swift",
-      "sha256": "2a2e726cb9a0f0bc52e1279894711d4f496211da31b68c5bf39e6dda8d33054c"
+      "sha256": "ff5540b6319d2572f7088ba63e29d580f7a1b38856a9cf696d0dab1305588a45"
     },
     {
       "file": "UIKitLanguageDemo/Localizable.xcstrings",
-      "sha256": "3de668468013a1bef154cd9100be6d097170aacece81e93a7241f9308623ef1c"
+      "sha256": "e3f55a6b9f210530fc727c9e654a7e00c6adf9c7d8de0399c4b45d753a3f5492"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LanguageContext.swift",
@@ -266,23 +268,35 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift",
-      "sha256": "8d08cf6f2f67ff9c3437f3df7078e0d11bcb59563f47f6e6054775383cbbca4a"
+      "sha256": "06030592fd3ce7636b77d39ca0b0e3feaf2b44e6a656b36829bec3997cf50ff1"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/ListStateRestoration.swift",
+      "sha256": "58c5c48889215886e57380f102c8b47a5045317b56ddb918aef0f48b4add016b"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedControllers.swift",
-      "sha256": "15a9bfeedd37c3823caa7270606a60db52851e0cfcc2e8250ab2cca41fdff3bf"
+      "sha256": "19d55a1eec3635e39bcf9e86cde2bc3657090a4884c7368857d0810227e4470e"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift",
-      "sha256": "7e0a53b78ef936fb4f2ce19d1af36e827b30e6af276a09043df51744d0ba8c52"
+      "sha256": "fc99fd07878126572f458bc4eaa3230cfee72ab1afb3c4d3a956b71838f7a5f0"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift",
-      "sha256": "a2d416bbb45ae419fc9a66443cbf4dc183c36ba6b6982375ba7b307bcb0556cb"
+      "sha256": "5836bde100c49ef0a0ac72135a454d12ab2bd7f481dd9c66a85568d8277578c5"
     },
     {
       "file": "UIKitLanguageDemo/Localization/OrthogonalLocalizationCoordinator.swift",
-      "sha256": "81398b6bb97aa458ca23a4f5ab5b289484dfeef62235e46e5269b55024f6bf36"
+      "sha256": "4619d4ab2ed5b65592f70e7af90c0ad15be561687a340cc94f098ff1abde319d"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/SceneState.swift",
+      "sha256": "17c71935867f171dca29470b33aaeab95c7a538f662293975e41fef7d25ab1cf"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/SceneStateCoordinator.swift",
+      "sha256": "ea951a47a3068636ce17c44740431ffe2f24600c684b840a1f7663141fb40e77"
     },
     {
       "file": "UIKitLanguageDemo/Localization/TextInputSnapshot.swift",
@@ -290,19 +304,19 @@
     },
     {
       "file": "UIKitLanguageDemo/SceneDelegate.swift",
-      "sha256": "113f9f4e4d886e469c68a0584f7f5ff97b80da24e7a3a0ca5046b355d1e355e3"
+      "sha256": "ab6d53ab55d052895193b9b00305a18d48b4fde5ad034657c8599819ed9076fb"
     },
     {
       "file": "UIKitLanguageDemo/Screens/CollectionDemoViewController.swift",
-      "sha256": "7d1369d41ede5ac12318a346e9afd67da7f06e2a4cd6cd2f59198cf91afcc713"
+      "sha256": "10fe02794a7b8292ff241bfeb140101844b967177d164f4f91228462cbd7643c"
     },
     {
       "file": "UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift",
-      "sha256": "01a7ba8f52a4fe2813f8d4eb7692ca8b1e9ffb1ec4a94ffae81026b3ba6abaf8"
+      "sha256": "3141f096b90a8804f3702dda1e119a9d6943ab9b80738702b7d82e5eb19cefa1"
     },
     {
       "file": "UIKitLanguageDemo/Screens/ContainerDemos.swift",
-      "sha256": "5b03ff63454da711a5cf52888ae50a69f57434edf14671a0cee6b76c9a9347a3"
+      "sha256": "4b3684f8c58a259aa3b12a93b97cf1003fb974ff168286d77e556c91ff9ef4e6"
     },
     {
       "file": "UIKitLanguageDemo/Screens/DetailViewController.swift",
@@ -318,19 +332,19 @@
     },
     {
       "file": "UIKitLanguageDemo/Screens/ListDemoContent.swift",
-      "sha256": "31177e9b45a2515495928a599c56e80e6bfe24f5bc31b08aa6ae968f523542a6"
+      "sha256": "22a02dcfaaab760d33ee3332f4c171450fdd13ad3a045a7a45d28dc285d1be31"
     },
     {
       "file": "UIKitLanguageDemo/Screens/SettingsViewController.swift",
-      "sha256": "61aac86cf5039bdb1ff64dca208851ad87dab80d910a44166eab826368f237a2"
+      "sha256": "eb76de91ac8442509ba3f6c7fa167ad5ca9a84e67ade0ae7bfd33831042b6f73"
     },
     {
       "file": "UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
-      "sha256": "d7ca2533558a00c2b5a4459389c5d872513a90cca6a85ab3c50d61a14e36ebb4"
+      "sha256": "cb739e650b3710c3af31b88502e6146d65d90ad0202da66d3b870a2acf0fbcef"
     },
     {
       "file": "UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift",
-      "sha256": "1657ab2f4476e2d0ccf94a85bf1323c1a1d3f2ef576c13235ec8f0d7d572c67c"
+      "sha256": "60b74c4854db545b3a4f88b314cfc9dc4dc1f72869bd34c14ea849a859f3c41a"
     }
   ],
   "compositionalExtension": {
@@ -351,7 +365,60 @@
     "reference": "https://developer.apple.com/videos/play/wwdc2019/403/",
     "systemPreferenceSource": "resourceBundle.preferredLocalizations (Bundle.main by default)",
     "explicitSelectionScope": "App-owned content and layout; does not change system per-app setting",
-    "systemRelaunchStateRestorationImplemented": false,
+    "systemRelaunchStateRestorationImplemented": true,
     "test": "LanguageTests/testSystemSelectionUsesAppBundlePreferences()"
+  },
+  "currentProjectConfigurationFiles": [
+    {
+      "file": "UIKitLanguageDemo/Info.plist",
+      "sha256": "03d5bbc8beb7bef5ff6b1f1fd8a54e4429006c35971ec593953545c64ae4ffa2"
+    },
+    {
+      "file": "UIKitLanguageDemo.xctestplan",
+      "sha256": "b005ce2023fcce16b77dad4e3ada33404a0409ef0711e941df9d523ab8452273"
+    },
+    {
+      "file": "UIKitLanguageDemo.xcodeproj/project.pbxproj",
+      "sha256": "daf1e0234a94d42efa1c1208ab90f72d63c96584be44de2683a3ffcb926d63ac"
+    },
+    {
+      "file": "UIKitLanguageDemo.xcodeproj/xcshareddata/xcschemes/UIKitLanguageDemo.xcscheme",
+      "sha256": "fda33cf146243ab697490eefa2f20903772a210e4fccb9838d2f9406593dbe22"
+    }
+  ],
+  "sceneRestoration": {
+    "sourceEditingTool": "Apple official MCP XcodeWrite",
+    "docs": "STATE_RESTORATION.md",
+    "activityType": "com.example.UIKitLanguageDemo.scene",
+    "version": 1,
+    "routes": "whitelisted business routes",
+    "savedState": [
+      "both navigation stacks",
+      "selected tab",
+      "current page ID and all page drafts",
+      "double-column split business stacks and compact active column",
+      "detail/list drafts",
+      "selection IDs",
+      "vertical and logical-leading horizontal reading anchors",
+      "orthogonal center IDs and outer scroll position"
+    ],
+    "sourcePriority": [
+      "UISceneSession.stateRestorationActivity",
+      "scene-isolated protected atomic checkpoint",
+      "fresh home"
+    ],
+    "validation": "version, UUID, whitelisted routes and page IDs, bounded data and finite coordinates",
+    "realSystemSettingsTest": "UIKitLanguageDemoUITests/testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft()",
+    "assertedNativeActivitySources": [
+      "activity|ar",
+      "activity|en"
+    ],
+    "simulatorUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "simulatorCreatedOrRestarted": false,
+    "tests": {
+      "unit": 17,
+      "ui": 1,
+      "passed": 18
+    }
   }
 }

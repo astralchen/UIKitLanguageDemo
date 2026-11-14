@@ -1,0 +1,40 @@
+{
+  "verifiedAt": "2026-11-14T10:14:16.329580+08:00",
+  "signingEnabled": true,
+  "results": [
+    {
+      "target": "UIKitLanguageDemo.app",
+      "flags": [
+        "--deep",
+        "--strict"
+      ],
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "target": "UIKitLanguageDemo.app/PlugIns/UIKitLanguageDemoTests.xctest",
+      "flags": [
+        "--strict"
+      ],
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "target": "UIKitLanguageDemoUITests-Runner.app",
+      "flags": [
+        "--deep",
+        "--strict"
+      ],
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "target": "UIKitLanguageDemoUITests-Runner.app/PlugIns/UIKitLanguageDemoUITests.xctest",
+      "flags": [
+        "--strict"
+      ],
+      "exitCode": 0,
+      "output": ""
+    }
+  ]
+}
