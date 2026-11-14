@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-11-14",
+  "results": [
+    {
+      "target": "UIKitLanguageDemo.app",
+      "flags": [
+        "--deep",
+        "--strict"
+      ],
+      "exitCode": 0
+    },
+    {
+      "target": "UIKitLanguageDemoTests.xctest",
+      "flags": [
+        "--strict"
+      ],
+      "exitCode": 0
+    }
+  ]
+}

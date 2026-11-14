@@ -435,6 +435,34 @@ final class LanguageTests: XCTestCase {
         XCTAssertEqual(returned.localizedContent.draft.text, "carousel draft")
     }
 
+
+    @MainActor
+    func testSystemSelectionUsesAppBundlePreferences() throws {
+        let name = "UIKitLanguageDemo.system.\(UUID().uuidString)"
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: name))
+        defer { defaults.removePersistentDomain(forName: name) }
+        var appPreferences = ["ar"]
+        let service = LanguageService(defaults: defaults, preferredLocalizations: { appPreferences })
+        XCTAssertEqual(service.selection, .system)
+        XCTAssertEqual(service.context.language, .arabic)
+
+        appPreferences = ["zh-Hans"]
+        service.setSelection(.english)
+        XCTAssertEqual(service.context.language, .english, "An explicit content selection still takes precedence")
+        service.setSelection(.system)
+        XCTAssertEqual(service.context.language, .simplifiedChinese)
+
+        appPreferences = ["ar"]
+        service.setSelection(.system)
+        XCTAssertEqual(service.context.language, .arabic, "Re-read app preferences even when selection is unchanged")
+        let restored = LanguageService(defaults: defaults, preferredLocalizations: { ["zh-Hans"] })
+        XCTAssertEqual(restored.selection, .system)
+        XCTAssertEqual(restored.context.language, .simplifiedChinese)
+        let native = LanguageService(defaults: defaults)
+        XCTAssertEqual(native.context.language,
+            LanguageResources.resolve(.system, preferences: Bundle.main.preferredLocalizations))
+    }
+
 }
 
 @MainActor

@@ -35,13 +35,13 @@
   },
   "officialBuild": {
     "success": true,
-    "elapsedSeconds": 15.726,
+    "elapsedSeconds": 12.474,
     "errors": [],
     "tool": "Apple official MCP BuildProject",
-    "finalSourcesAlsoBuiltBy": "Apple official MCP RunSomeTests (12 tests)"
+    "finalSourcesAlsoBuiltBy": "Apple official MCP RunSomeTests (13 tests)"
   },
   "officialTestDiscovery": {
-    "enabled": 12,
+    "enabled": 13,
     "disabled": 0
   },
   "officialTestRun": {
@@ -51,9 +51,9 @@
       "expectedFailures": 0,
       "failed": 0,
       "notRun": 0,
-      "passed": 12,
+      "passed": 13,
       "skipped": 0,
-      "total": 12
+      "total": 13
     },
     "scheme": "UIKitLanguageDemo",
     "testPlan": "UIKitLanguageDemo",
@@ -110,9 +110,9 @@
     "expectedFailures": 0,
     "failed": 0,
     "notRun": 0,
-    "passed": 12,
+    "passed": 13,
     "skipped": 0,
-    "total": 12
+    "total": 13
   },
   "initialMigrationSourceMatches": [
     {
@@ -258,7 +258,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/LanguageService.swift",
-      "sha256": "306eb89f111d2bbb089bf5105a970f0ba7d1aef2eb4eab11d38a35bd4f68d959"
+      "sha256": "aba78fb431a89a2e99da3c112896520e3febfd59a093aeb52fc061f8fb4b615c"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LayoutDirection.swift",
@@ -326,7 +326,7 @@
     },
     {
       "file": "UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
-      "sha256": "68780438739865d258f2be5de1ef8c3eb7863f8a732b718b7dde605ee36bf763"
+      "sha256": "d7ca2533558a00c2b5a4459389c5d872513a90cca6a85ab3c50d61a14e36ebb4"
     },
     {
       "file": "UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift",
@@ -346,5 +346,12 @@
     "minimumOS": "15.0",
     "runtimeVerified": "iPhone 17 Pro / iOS 26.5",
     "diffableAdapterIncluded": false
+  },
+  "systemLanguageCorrection": {
+    "reference": "https://developer.apple.com/videos/play/wwdc2019/403/",
+    "systemPreferenceSource": "resourceBundle.preferredLocalizations (Bundle.main by default)",
+    "explicitSelectionScope": "App-owned content and layout; does not change system per-app setting",
+    "systemRelaunchStateRestorationImplemented": false,
+    "test": "LanguageTests/testSystemSelectionUsesAppBundlePreferences()"
   }
 }

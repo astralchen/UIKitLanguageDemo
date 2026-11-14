@@ -4,6 +4,12 @@
 
 语言切换沿用现有 UIWindow、根控制器、UITab、导航控制器、页面和输入框实例。根控制器只在 Scene 创建时设置一次，切换时不重新创建页面，也不重设导航栈或选中的 Tab。
 
+## 系统 App 语言与热切换边界
+
+Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/403/) 推荐通过系统设置切换单 App 语言，并配合重新启动后的状态恢复。本工程为满足 App 内即时刷新要求，提供应用自有 UI 的内容语言热切换；它不改变系统单 App 语言设置，也不统一控制系统或第三方内建文案。跨进程状态恢复尚未实现。
+
+“跟随系统”现在读取资源 Bundle 的 preferredLocalizations（默认 Bundle.main），尊重系统为 App 匹配的语言；不再以 Locale.preferredLanguages 代替当前 App 语言。完整说明见 [系统语言与热切换](SYSTEM_LANGUAGE.md)。
+
 ## 运行
 
 1. 用支持 Swift 6 的 Xcode 打开 `UIKitLanguageDemo.xcodeproj`。
@@ -11,7 +17,7 @@
 3. 首页点击“打开详情”，输入草稿，再点击详情页中的语言按钮。
 4. 验证详情页仍在、返回按钮仍可返回首页、草稿不变，中文/阿拉伯语切换时方向改变。
 5. 设置 Tab 演示可变行高 Table；首页可进入 FlowLayout 网格/横向列表，以及 Compositional 网格/正交分页分区，滚动、选择、编辑草稿后切换语言。
-6. 使用 Product → Test 运行随工程附带的十二项 XCTest。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
+6. 使用 Product → Test 运行随工程附带的十三项 XCTest。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
 
 测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
 
@@ -202,7 +208,7 @@ pager.previousPage()
 
 当前 Apple 官方 MCP 服务器未提供创建新工程的工具，因此创建步骤使用 Xcode 原生 iOS App 模板（Storyboard / Swift / XCTest）；分组、源码、Info.plist、String Catalog 和测试通过官方 MCP 写入。工程文件由 Xcode 创建与维护，没有复制旧工程的手写 project.pbxproj。
 
-官方 MCP `BuildProject` 已构建成功，`RunSomeTests` 已执行全部十二项测试：12 passed、0 failed、0 skipped、0 not run。原十项测试保留，并新增两项组合布局回归测试；结果保存在 `verification/official-mcp-tests.json`。测试签名问题已修复，详情见 `SIGNING_FIX.md` 和 `verification/`；源码一致性见 `MIGRATION.json`。
+官方 MCP `BuildProject` 已构建成功，`RunSomeTests` 已执行全部十三项测试：13 passed、0 failed、0 skipped、0 not run。原十二项测试保留，并新增 Bundle App 语言偏好回归测试；结果保存在 `verification/official-mcp-tests.json`。测试签名问题已修复，详情见 `SIGNING_FIX.md` 和 `verification/`；源码一致性见 `MIGRATION.json`。
 
 本机已确认新构建产物包含 en、zh-Hans、ar 三套本地化文件。iOS 15/16 兼容分支尚未在对应系统版本运行。
 

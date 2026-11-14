@@ -1,12 +1,12 @@
 ================================================================================
 TEST RESULTS SUMMARY
 ================================================================================
-Generated: 2026-11-14T01:16:36Z
-Total Results: 12
+Generated: 2026-11-14T01:26:39Z
+Total Results: 13
 ================================================================================
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 1/12
+TEST_RESULT_INDEX: 1/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testLanguageSwitchPreservesNavigationAndDraft()
 TEST_DISPLAY_NAME: testLanguageSwitchPreservesNavigationAndDraft()
@@ -18,7 +18,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 2/12
+TEST_RESULT_INDEX: 2/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testSelectionPersistsAndMissingKeysHaveFallback()
 TEST_DISPLAY_NAME: testSelectionPersistsAndMissingKeysHaveFallback()
@@ -30,7 +30,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 3/12
+TEST_RESULT_INDEX: 3/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testExistingModalSurvivesSwitch()
 TEST_DISPLAY_NAME: testExistingModalSurvivesSwitch()
@@ -42,7 +42,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 4/12
+TEST_RESULT_INDEX: 4/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testSplitPreservesColumnsAndTheirNavigationStacks()
 TEST_DISPLAY_NAME: testSplitPreservesColumnsAndTheirNavigationStacks()
@@ -54,7 +54,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 5/12
+TEST_RESULT_INDEX: 5/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testPagerPreservesPageAndReversesPhysicalNeighbors()
 TEST_DISPLAY_NAME: testPagerPreservesPageAndReversesPhysicalNeighbors()
@@ -66,7 +66,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 6/12
+TEST_RESULT_INDEX: 6/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()
 TEST_DISPLAY_NAME: testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()
@@ -78,7 +78,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 7/12
+TEST_RESULT_INDEX: 7/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight()
 TEST_DISPLAY_NAME: testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight()
@@ -90,7 +90,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 8/12
+TEST_RESULT_INDEX: 8/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testTableKeepsReadingAnchorAndRefreshesReusedRows()
 TEST_DISPLAY_NAME: testTableKeepsReadingAnchorAndRefreshesReusedRows()
@@ -102,7 +102,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 9/12
+TEST_RESULT_INDEX: 9/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()
 TEST_DISPLAY_NAME: testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()
@@ -114,7 +114,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 10/12
+TEST_RESULT_INDEX: 10/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()
 TEST_DISPLAY_NAME: testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()
@@ -126,7 +126,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 11/12
+TEST_RESULT_INDEX: 11/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
 TEST_DISPLAY_NAME: testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
@@ -138,13 +138,25 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 12/12
+TEST_RESULT_INDEX: 12/13
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
 TEST_DISPLAY_NAME: testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
 TEST_LINE_NUMBER: 389
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 13/13
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testSystemSelectionUsesAppBundlePreferences()
+TEST_DISPLAY_NAME: testSystemSelectionUsesAppBundlePreferences()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 439
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0

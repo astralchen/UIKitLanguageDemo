@@ -4,12 +4,12 @@
     "expectedFailures": 0,
     "failed": 0,
     "notRun": 0,
-    "passed": 12,
+    "passed": 13,
     "skipped": 0,
-    "total": 12
+    "total": 13
   },
-  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T09-16-08+08-00.txt",
-  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/84A0F902-87A6-42E0-8C7A-783B6EE0C2CA.txt",
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T09-26-10+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/DFFE188D-CC5D-480F-A225-F5559661B087.txt",
   "results": [
     {
       "displayName": "testLanguageSwitchPreservesNavigationAndDraft()",
@@ -94,10 +94,17 @@
       "identifier": "LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
       "state": "Passed",
       "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testSystemSelectionUsesAppBundlePreferences()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testSystemSelectionUsesAppBundlePreferences()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
     }
   ],
   "schemeName": "UIKitLanguageDemo",
-  "summary": "12 tests: 12 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
-  "totalResults": 12,
+  "summary": "13 tests: 13 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 13,
   "truncated": false
 }

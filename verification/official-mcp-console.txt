@@ -1,29 +1,31 @@
 Test UIKitLanguageDemo
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' started.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (1.972 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (2.759 seconds).
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.319 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.380 seconds).
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
-  2026-11-14 09:16:25.906747+0800 UIKitLanguageDemo[23478:554928] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (1.934 seconds).
+  2026-11-14 09:26:30.763458+0800 UIKitLanguageDemo[24342:574201] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (2.259 seconds).
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' started.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.440 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.519 seconds).
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' started.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.428 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.497 seconds).
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' started.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.639 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.653 seconds).
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' started.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.828 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.639 seconds).
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' started.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.723 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.564 seconds).
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' started.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.020 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.015 seconds).
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' started.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.999 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.656 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' started.
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' passed (0.016 seconds).
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' started.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (2.092 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (1.603 seconds).
   Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' started.
-  Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.697 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.618 seconds).
 
   Launch actions
     Launch UIKitLanguageDemoTests
@@ -59,13 +61,13 @@ Test UIKitLanguageDemo
     Processing source file data
       Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift
       
-      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ListDemoContent.swift
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/AppDelegate.swift
       
       Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift
       
-      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/AppDelegate.swift
-      
       Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageContext.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ListDemoContent.swift
       
       Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift
       
@@ -81,20 +83,20 @@ Test UIKitLanguageDemo
       
       Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedControllers.swift
       
-      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/SceneDelegate.swift
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ContainerDemos.swift
       
       Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift
         notice:Function records indicate zero executable lines for file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift
       
-      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ContainerDemos.swift
-      
       Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/HomeViewController.swift
       
-      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/SceneDelegate.swift
       
       Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/SettingsViewController.swift
       
       Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LayoutDirection.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
       
       Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/DetailViewController.swift
       
@@ -107,225 +109,239 @@ Test UIKitLanguageDemo
     
   Testing Configuration 1
     Test target UIKitLanguageDemoTests
-      UIKitLanguageDemo (23478)
-        Test Suite 'Selected tests' started at 2026-11-14 09:16:22.550.
-        Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 09:16:22.551.
-        Test Suite 'LanguageTests' started at 2026-11-14 09:16:22.551.
+      UIKitLanguageDemo (24342)
+        Test Suite 'Selected tests' started at 2026-11-14 09:26:26.580.
+        Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 09:26:26.582.
+        Test Suite 'LanguageTests' started at 2026-11-14 09:26:26.582.
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' started.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (1.972 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (2.759 seconds).
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.319 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.380 seconds).
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
-        2026-11-14 09:16:25.906747+0800 UIKitLanguageDemo[23478:554928] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (1.934 seconds).
+        2026-11-14 09:26:30.763458+0800 UIKitLanguageDemo[24342:574201] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (2.259 seconds).
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' started.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.440 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.519 seconds).
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' started.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.428 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.497 seconds).
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' started.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.639 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.653 seconds).
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' started.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.828 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.639 seconds).
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' started.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.723 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.564 seconds).
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' started.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.020 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.015 seconds).
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' started.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.999 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.656 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' started.
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' passed (0.016 seconds).
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' started.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (2.092 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (1.603 seconds).
         Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' started.
-        Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.697 seconds).
-        Test Suite 'LanguageTests' passed at 2026-11-14 09:16:34.668.
-        	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.117) seconds
-        Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 09:16:34.670.
-        	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.119) seconds
-        Test Suite 'Selected tests' passed at 2026-11-14 09:16:34.670.
-        	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.121) seconds
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.618 seconds).
+        Test Suite 'LanguageTests' passed at 2026-11-14 09:26:38.782.
+        	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.200) seconds
+        Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 09:26:38.783.
+        	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.201) seconds
+        Test Suite 'Selected tests' passed at 2026-11-14 09:26:38.784.
+        	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.204) seconds
       
         Writing diagnostic log for test runner launch.
-          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_09-16-08-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-29CD2A37-6FF1-4218-8FE6-EF728829C920-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-FC1C6DA8-EF57-49A4-9B59-84FC586C1E60/Session-UIKitLanguageDemoTests-2026-11-14_091617-1iowh2.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_09-16-08-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-29CD2A37-6FF1-4218-8FE6-EF728829C920-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-FC1C6DA8-EF57-49A4-9B59-84FC586C1E60/Session-UIKitLanguageDemoTests-2026-11-14_091617-1iowh2.log
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_09-26-10-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-874B4DFE-78AD-4313-B890-B662CBE512C4-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-F55159B2-F4B6-4F70-9F6B-0428228F8CDC/Session-UIKitLanguageDemoTests-2026-11-14_092621-DbmOMJ.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_09-26-10-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-874B4DFE-78AD-4313-B890-B662CBE512C4-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-F55159B2-F4B6-4F70-9F6B-0428228F8CDC/Session-UIKitLanguageDemoTests-2026-11-14_092621-DbmOMJ.log
         
         Run test suite Selected tests
-          Summary: Test Suite 'Selected tests' passed at 2026-11-14 09:16:34.670.
-	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.121) seconds
+          Summary: Test Suite 'Selected tests' passed at 2026-11-14 09:26:38.784.
+	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.204) seconds
 
-          Test Suite 'Selected tests' started at 2026-11-14 09:16:22.550.
-          Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 09:16:22.551.
-          Test Suite 'LanguageTests' started at 2026-11-14 09:16:22.551.
+          Test Suite 'Selected tests' started at 2026-11-14 09:26:26.580.
+          Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 09:26:26.582.
+          Test Suite 'LanguageTests' started at 2026-11-14 09:26:26.582.
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' started.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (1.972 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (2.759 seconds).
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.319 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.380 seconds).
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
-          2026-11-14 09:16:25.906747+0800 UIKitLanguageDemo[23478:554928] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (1.934 seconds).
+          2026-11-14 09:26:30.763458+0800 UIKitLanguageDemo[24342:574201] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (2.259 seconds).
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' started.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.440 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.519 seconds).
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' started.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.428 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.497 seconds).
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' started.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.639 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.653 seconds).
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' started.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.828 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.639 seconds).
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' started.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.723 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.564 seconds).
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' started.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.020 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.015 seconds).
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' started.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.999 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.656 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' started.
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' passed (0.016 seconds).
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' started.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (2.092 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (1.603 seconds).
           Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' started.
-          Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.697 seconds).
-          Test Suite 'LanguageTests' passed at 2026-11-14 09:16:34.668.
-          	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.117) seconds
-          Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 09:16:34.670.
-          	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.119) seconds
-          Test Suite 'Selected tests' passed at 2026-11-14 09:16:34.670.
-          	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.121) seconds
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.618 seconds).
+          Test Suite 'LanguageTests' passed at 2026-11-14 09:26:38.782.
+          	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.200) seconds
+          Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 09:26:38.783.
+          	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.201) seconds
+          Test Suite 'Selected tests' passed at 2026-11-14 09:26:38.784.
+          	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.204) seconds
         
           Run test suite UIKitLanguageDemoTests.xctest
-            Summary: Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 09:16:34.670.
-	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.119) seconds
+            Summary: Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 09:26:38.783.
+	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.201) seconds
 
-            Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 09:16:22.551.
-            Test Suite 'LanguageTests' started at 2026-11-14 09:16:22.551.
+            Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 09:26:26.582.
+            Test Suite 'LanguageTests' started at 2026-11-14 09:26:26.582.
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' started.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (1.972 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (2.759 seconds).
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.319 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.380 seconds).
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
-            2026-11-14 09:16:25.906747+0800 UIKitLanguageDemo[23478:554928] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (1.934 seconds).
+            2026-11-14 09:26:30.763458+0800 UIKitLanguageDemo[24342:574201] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (2.259 seconds).
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' started.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.440 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.519 seconds).
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' started.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.428 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.497 seconds).
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' started.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.639 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.653 seconds).
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' started.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.828 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.639 seconds).
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' started.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.723 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.564 seconds).
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' started.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.020 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.015 seconds).
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' started.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.999 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.656 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' started.
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' passed (0.016 seconds).
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' started.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (2.092 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (1.603 seconds).
             Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' started.
-            Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.697 seconds).
-            Test Suite 'LanguageTests' passed at 2026-11-14 09:16:34.668.
-            	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.117) seconds
-            Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 09:16:34.670.
-            	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.119) seconds
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.618 seconds).
+            Test Suite 'LanguageTests' passed at 2026-11-14 09:26:38.782.
+            	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.200) seconds
+            Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 09:26:38.783.
+            	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.201) seconds
           
             Run test suite LanguageTests
-              Summary: Test Suite 'LanguageTests' passed at 2026-11-14 09:16:34.668.
-	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.117) seconds
+              Summary: Test Suite 'LanguageTests' passed at 2026-11-14 09:26:38.782.
+	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.200) seconds
 
-              Test Suite 'LanguageTests' started at 2026-11-14 09:16:22.551.
+              Test Suite 'LanguageTests' started at 2026-11-14 09:26:26.582.
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' started.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (1.972 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (2.759 seconds).
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.319 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.380 seconds).
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
-              2026-11-14 09:16:25.906747+0800 UIKitLanguageDemo[23478:554928] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (1.934 seconds).
+              2026-11-14 09:26:30.763458+0800 UIKitLanguageDemo[24342:574201] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (2.259 seconds).
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' started.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.440 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.519 seconds).
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' started.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.428 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.497 seconds).
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' started.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.639 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.653 seconds).
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' started.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.828 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.639 seconds).
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' started.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.723 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.564 seconds).
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' started.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.020 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.015 seconds).
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' started.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.999 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.656 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' started.
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' passed (0.016 seconds).
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' started.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (2.092 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (1.603 seconds).
               Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' started.
-              Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.697 seconds).
-              Test Suite 'LanguageTests' passed at 2026-11-14 09:16:34.668.
-              	 Executed 12 tests, with 0 failures (0 unexpected) in 12.092 (12.117) seconds
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.618 seconds).
+              Test Suite 'LanguageTests' passed at 2026-11-14 09:26:38.782.
+              	 Executed 13 tests, with 0 failures (0 unexpected) in 12.180 (12.200) seconds
             
               Run test case testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()
-                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (1.972 seconds).
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (2.759 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' started.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (1.972 seconds).
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor]' passed (2.759 seconds).
               
               Run test case testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
-                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.319 seconds).
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.380 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.319 seconds).
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (1.380 seconds).
               
               Run test case testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
-                Summary: 2026-11-14 09:16:25.906747+0800 UIKitLanguageDemo[23478:554928] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
-Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (1.934 seconds).
+                Summary: 2026-11-14 09:26:30.763458+0800 UIKitLanguageDemo[24342:574201] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (2.259 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
-                2026-11-14 09:16:25.906747+0800 UIKitLanguageDemo[23478:554928] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (1.934 seconds).
+                2026-11-14 09:26:30.763458+0800 UIKitLanguageDemo[24342:574201] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (2.259 seconds).
               
               Run test case testExistingModalSurvivesSwitch()
-                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.440 seconds).
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.519 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' started.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.440 seconds).
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testExistingModalSurvivesSwitch]' passed (0.519 seconds).
               
               Run test case testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()
-                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.428 seconds).
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.497 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' started.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.428 seconds).
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL]' passed (0.497 seconds).
               
               Run test case testLanguageSwitchPreservesNavigationAndDraft()
-                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.639 seconds).
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.653 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' started.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.639 seconds).
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testLanguageSwitchPreservesNavigationAndDraft]' passed (0.653 seconds).
               
               Run test case testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()
-                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.828 seconds).
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.639 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' started.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.828 seconds).
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds]' passed (0.639 seconds).
               
               Run test case testPagerPreservesPageAndReversesPhysicalNeighbors()
-                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.723 seconds).
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.564 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' started.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.723 seconds).
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testPagerPreservesPageAndReversesPhysicalNeighbors]' passed (0.564 seconds).
               
               Run test case testSelectionPersistsAndMissingKeysHaveFallback()
-                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.020 seconds).
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.015 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' started.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.020 seconds).
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testSelectionPersistsAndMissingKeysHaveFallback]' passed (0.015 seconds).
               
               Run test case testSplitPreservesColumnsAndTheirNavigationStacks()
-                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.999 seconds).
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.656 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' started.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.999 seconds).
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testSplitPreservesColumnsAndTheirNavigationStacks]' passed (0.656 seconds).
+              
+              Run test case testSystemSelectionUsesAppBundlePreferences()
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' passed (0.016 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' started.
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testSystemSelectionUsesAppBundlePreferences]' passed (0.016 seconds).
               
               Run test case testTableKeepsReadingAnchorAndRefreshesReusedRows()
-                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (2.092 seconds).
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (1.603 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' started.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (2.092 seconds).
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableKeepsReadingAnchorAndRefreshesReusedRows]' passed (1.603 seconds).
               
               Run test case testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight()
-                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.697 seconds).
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.618 seconds).
 
                 Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' started.
-                Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.697 seconds).
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight]' passed (0.618 seconds).
               
 ** TEST FINISHED **

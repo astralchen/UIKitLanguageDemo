@@ -13,6 +13,7 @@ final class LanguageService: NSObject {
 
     private let defaults: UserDefaults
     private let resources: [AppLanguage: Bundle]
+    private let preferredLocalizationsProvider: () -> [String]
     private let windows = NSHashTable<UIWindow>.weakObjects()
     private var isApplying = false
     private var deferredSelection: LanguageSelection?
@@ -20,14 +21,19 @@ final class LanguageService: NSObject {
     private(set) var selection: LanguageSelection
     private(set) var context: LanguageContext
 
-    init(resourceBundle: Bundle = .main, defaults: UserDefaults = .standard) {
+    init(resourceBundle: Bundle = .main, defaults: UserDefaults = .standard,
+         preferredLocalizations: (() -> [String])? = nil) {
         self.defaults = defaults
+        // Bundle preferences include the system's per-app language matching.
+        // Locale.preferredLanguages is not the running application's language.
+        let provider = preferredLocalizations ?? { resourceBundle.preferredLocalizations }
+        self.preferredLocalizationsProvider = provider
         let resources = LanguageResources.load(from: resourceBundle)
         self.resources = resources
         let selection = defaults.string(forKey: Self.preferenceKey)
             .flatMap(LanguageSelection.init(rawValue:)) ?? .system
         self.selection = selection
-        let language = LanguageResources.resolve(selection, preferences: Locale.preferredLanguages)
+        let language = LanguageResources.resolve(selection, preferences: provider())
         context = LanguageContext(language: language, bundle: resources[language]!,
                                   fallbackBundle: resources[.english]!, revision: 0)
         super.init()
@@ -64,7 +70,7 @@ final class LanguageService: NSObject {
     }
 
     private func apply(_ newSelection: LanguageSelection, force: Bool) {
-        let language = LanguageResources.resolve(newSelection, preferences: Locale.preferredLanguages)
+        let language = LanguageResources.resolve(newSelection, preferences: preferredLocalizationsProvider())
         guard force || selection != newSelection || context.language != language else { return }
         isApplying = true
         let previous = context

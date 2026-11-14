@@ -1,6 +1,6 @@
 # Xcode 原生工程与官方 MCP 迁移记录
 
-最新验收：2026-11-14，Apple 官方 MCP RunSomeTests 十二项全部通过，0 failed、0 skipped、0 expected failures、0 not run。本次 RunSomeTests 使用 GetTestList 返回的全部十二个实际测试 ID，原始结果见 verification/official-mcp-tests.json / .txt，控制台见 official-mcp-console.txt。此前列表扩展的 RunAllTests 也有十项通过，但 Xcode 仍将内存中空的 UI 测试目标汇总为 No result；该原始输出另存 official-mcp-runall-with-empty-target.json，不作为最终验收计数。导出的显式计划已移除空目标。历史六项结果单独保存在 official-mcp-original-six-tests.*。
+最新验收：2026-11-14，Apple 官方 MCP RunSomeTests 十三项全部通过，0 failed、0 skipped、0 expected failures、0 not run。本次 RunSomeTests 使用 GetTestList 返回的全部十三个实际测试 ID，原始结果见 verification/official-mcp-tests.json / .txt，控制台见 official-mcp-console.txt。此前列表扩展的 RunAllTests 也有十项通过，但 Xcode 仍将内存中空的 UI 测试目标汇总为 No result；该原始输出另存 official-mcp-runall-with-empty-target.json，不作为最终验收计数。导出的显式计划已移除空目标。历史六项结果单独保存在 official-mcp-original-six-tests.*。
 
 工程由 Xcode 原生 iOS App 模板创建（Storyboard、Swift、XCTest）。本机官方 MCP 服务器为 xcode-tools / 24939，通过 xcrun mcpbridge 连接；该版本无创建工程工具，因此创建使用 Xcode 原生 UI，源码、资源和测试通过官方工具迁入。没有复制旧工程的手写 project.pbxproj。
 
@@ -17,3 +17,5 @@
 2026-11-14 Compositional 扩展：源码、String Catalog 与两项测试通过 Apple 官方 MCP XcodeWrite 写入；BuildProject 构建成功，最终完整 RunSomeTests 12 passed、0 failed、0 skipped、0 not run。复用既有 iPhone 17 Pro / iOS 26.5，签名保持启用且最新严格校验通过。历史十项结果保存在 verification/official-mcp-list-ten-tests.*。当前 String Catalog 为 29 个 key，当前全部 Swift/资源哈希见 MIGRATION.json 的 currentSourceFiles。
 
 新增覆盖 estimated 网格行高、窗口坐标中的 RTL 顺序、连续 LTR/RTL 切换、正交分页中心业务 ID、相邻卡片方向和隐藏后的状态恢复。跨方向仅重建布局对象，保留页面与导航栈；正交实现仅使用公开 API。普通数据源、自适应网格与一组一项的 groupPagingCentered 为已测范围，完整说明见 COMPOSITIONAL_LAYOUT.md。
+
+2026-11-14 WWDC19 Session 403 对照修正：LanguageService 的 system 模式改用资源 Bundle.preferredLocalizations，新增可注入偏好提供器及一项回归测试。官方 MCP BuildProject 构建成功，完整 RunSomeTests 13/13，通过既有 iPhone 17 Pro，签名严格校验通过。此前组合布局 12 项结果保存为 verification/official-mcp-compositional-twelve-tests.*。该验收针对应用自有内容热切换；没有新增系统设置重启后的 NSUserActivity 状态恢复流程，边界见 SYSTEM_LANGUAGE.md。
