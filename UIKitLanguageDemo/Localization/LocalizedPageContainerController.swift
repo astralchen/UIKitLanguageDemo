@@ -15,7 +15,7 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
     private let pages: [Page]
     var restorationPages: [Page] { pages }
     private let hosts: [LocalizedPageContentHost]
-    private let titleKey: String?
+    private let titleMessage: AppText?
     private var pagingIsRTL: Bool
     private var pendingContext: LanguageContext?
     private var isTransitioning = false
@@ -26,7 +26,7 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
     }
     var onCurrentPageChanged: ((String) -> Void)?
 
-    init(pages: [Page], initialPageID: String? = nil, titleKey: String? = nil) {
+    init(pages: [Page], initialPageID: String? = nil, titleMessage: AppText? = nil) {
         precondition(!pages.isEmpty, "A pager needs at least one page")
         precondition(Set(pages.map(\.id)).count == pages.count, "Page IDs must be unique")
         precondition(Set(pages.map { ObjectIdentifier($0.controller) }).count == pages.count,
@@ -36,12 +36,12 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
         precondition(pages.contains(where: { $0.id == initialID }), "Unknown initial page ID")
         self.pages = pages
         self.hosts = pages.map { LocalizedPageContentHost(id: $0.id, content: $0.controller) }
-        self.titleKey = titleKey
+        self.titleMessage = titleMessage
         currentPageID = initialID
         pagingIsRTL = LanguageService.shared.context.isRTL
         super.init(nibName: nil, bundle: nil)
     }
-    required init?(coder: NSCoder) { fatalError("Use init(pages:initialPageID:titleKey:)") }
+    required init?(coder: NSCoder) { fatalError("Use init(pages:initialPageID:titleMessage:)") }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,19 +103,19 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
             let item = UIBarButtonItem(image: UIImage(systemName: "globe"), style: .plain,
                 target: self, action: #selector(openSystemSettings))
             item.accessibilityIdentifier = "system.language.settings"
-            item.accessibilityLabel = context.text("system.settings")
+            item.accessibilityLabel = context.text(.systemSettings)
             navigationItem.rightBarButtonItem = item
         }
         if navigationItem.rightBarButtonItem?.accessibilityIdentifier == "system.language.settings" {
-            navigationItem.rightBarButtonItem?.accessibilityLabel = context.text("system.settings")
+            navigationItem.rightBarButtonItem?.accessibilityLabel = context.text(.systemSettings)
         }
         if navigationItem.rightBarButtonItems?.contains(where: { $0.accessibilityIdentifier == "scene.windows" }) != true {
             let windows = UIBarButtonItem(image: UIImage(systemName: "macwindow.on.rectangle"), style: .plain, target: self, action: #selector(showWindows))
             windows.accessibilityIdentifier = "scene.windows"
             navigationItem.rightBarButtonItems = (navigationItem.rightBarButtonItems ?? []) + [windows]
         }
-        navigationItem.rightBarButtonItems?.first(where: { $0.accessibilityIdentifier == "scene.windows" })?.accessibilityLabel = context.text("window.menu")
-        if let titleKey { title = context.text(titleKey) }
+        navigationItem.rightBarButtonItems?.first(where: { $0.accessibilityIdentifier == "scene.windows" })?.accessibilityLabel = context.text(.windowMenu)
+        if let titleMessage { title = context.text(titleMessage) }
     }
 
     private func updatePagingDirection(_ context: LanguageContext) {

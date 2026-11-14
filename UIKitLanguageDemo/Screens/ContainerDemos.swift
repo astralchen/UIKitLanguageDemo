@@ -5,14 +5,14 @@ enum ContainerDemos {
     static func makeSplit(style: UISplitViewController.Style = .doubleColumn) -> LocalizedSplitViewController {
         let split = LocalizedSplitViewController(style: style)
         let primary = LocalizedNavigationController(root: SplitMenuViewController(),
-                                                    tabTitleKey: "split.title", symbol: "sidebar.leading")
+                                                    tabTitle: .splitTitle, symbol: "sidebar.leading")
         let secondary = LocalizedNavigationController(root: DetailViewController(),
-                                                      tabTitleKey: "detail.title", symbol: "doc.text")
+                                                      tabTitle: .detailTitle, symbol: "doc.text")
         split.restorationPrimary = primary
         split.restorationSecondary = secondary
         if style == .tripleColumn {
             let middle = LocalizedNavigationController(root: SplitMenuViewController(column: .supplementary),
-                tabTitleKey: "split.middle", symbol: "list.bullet")
+                tabTitle: .splitMiddle, symbol: "list.bullet")
             split.restorationSupplementary = middle
             split.setViewController(middle, for: .supplementary)
             split.minimumPrimaryColumnWidth = 220
@@ -31,7 +31,7 @@ enum ContainerDemos {
     static func makePager(initialPageID: String = "page-2") -> LocalizedPageContainerController {
         LocalizedPageContainerController(pages: (1...3).map { index in
             .init(id: "page-\(index)", controller: DemoPageViewController(number: index))
-        }, initialPageID: initialPageID, titleKey: "pages.title")
+        }, initialPageID: initialPageID, titleMessage: .pagesTitle)
     }
 }
 
@@ -87,15 +87,15 @@ final class SplitMenuViewController: LocalizedViewController {
     }
 
     override func applyLocalization(_ context: LanguageContext) {
-        title = context.text(column == .primary ? "split.title" : "split.middle")
-        draftField.placeholder = context.text("detail.placeholder")
-        draftField.accessibilityLabel = context.text("detail.draft")
-        middle.setTitle(context.text("split.middle"), for: .normal)
-        push.setTitle(context.text("split.push"), for: .normal)
-        expand.setTitle(context.text("split.toggle"), for: .normal)
+        title = context.text(column == .primary ? .splitTitle : .splitMiddle)
+        draftField.placeholder = context.text(.detailPlaceholder)
+        draftField.accessibilityLabel = context.text(.detailDraft)
+        middle.setTitle(context.text(.splitMiddle), for: .normal)
+        push.setTitle(context.text(.splitPush), for: .normal)
+        expand.setTitle(context.text(.splitToggle), for: .normal)
         picker.applyLocalization(context)
-        showDetail.setTitle(context.text("home.open_detail"), for: .normal)
-        close.setTitle(context.text("common.close"), for: .normal)
+        showDetail.setTitle(context.text(.homeOpenDetail), for: .normal)
+        close.setTitle(context.text(.commonClose), for: .normal)
         LayoutDirection.applyBoundary(context, to: stack)
     }
 }
@@ -143,11 +143,11 @@ final class DemoPageViewController: LocalizedViewController {
     }
 
     override func applyLocalization(_ context: LanguageContext) {
-        heading.text = context.format("pages.number", number)
+        heading.text = context.text(.pagesNumber(number))
         heading.textAlignment = context.isRTL ? .right : .left
-        draft.placeholder = context.text("detail.placeholder")
-        previousButton.setTitle(context.text("pages.previous"), for: .normal)
-        nextButton.setTitle(context.text("pages.next"), for: .normal)
+        draft.placeholder = context.text(.detailPlaceholder)
+        previousButton.setTitle(context.text(.pagesPrevious), for: .normal)
+        nextButton.setTitle(context.text(.pagesNext), for: .normal)
         previousButton.isEnabled = number > 1
         nextButton.isEnabled = number < 3
         picker.applyLocalization(context)

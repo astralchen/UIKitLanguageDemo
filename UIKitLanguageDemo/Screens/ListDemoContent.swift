@@ -42,10 +42,10 @@ final class ListDemoContent: UIView {
     }
 
     func render(id: Int, context: LanguageContext) {
-        heading.text = context.format("list.item", id + 1)
-        detail.text = context.text("list.description")
-        draft.placeholder = context.text("detail.placeholder")
-        draft.accessibilityLabel = context.text("detail.draft")
+        heading.text = context.text(.listItem(id + 1))
+        detail.text = context.text(.listDescription)
+        draft.placeholder = context.text(.detailPlaceholder)
+        draft.accessibilityLabel = context.text(.detailDraft)
         for label in [heading, detail] { label.textAlignment = context.isRTL ? .right : .left }
         // No assignment to draft.text during localization.
         LayoutDirection.applyBoundary(context, to: self)
@@ -116,8 +116,8 @@ final class DemoCollectionHeader: UICollectionReusableView {
         ])
     }
     required init?(coder: NSCoder) { fatalError("Use init(frame:)") }
-    func render(_ context: LanguageContext, titleKey: String = "list.section") {
-        label.text = context.text(titleKey)
+    func render(_ context: LanguageContext, titleMessage: AppText = .listSection) {
+        label.text = context.text(titleMessage)
         label.textAlignment = context.isRTL ? .right : .left
         LayoutDirection.applyBoundary(context, to: self)
     }

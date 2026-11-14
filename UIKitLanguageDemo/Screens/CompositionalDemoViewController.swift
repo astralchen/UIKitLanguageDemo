@@ -72,7 +72,7 @@ final class CompositionalDemoViewController: LocalizedViewController, UICollecti
     }
 
     override func applyLocalization(_ context: LanguageContext) {
-        title = context.text(mode == .grid ? "compositional.title" : "compositional.orthogonal")
+        title = context.text(mode == .grid ? .compositionalTitle : .compositionalOrthogonal)
         languagePicker.applyLocalization(context)
         LayoutDirection.applyBoundary(context, to: stack)
         collectionView.semanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
@@ -145,7 +145,7 @@ final class CompositionalDemoViewController: LocalizedViewController, UICollecti
         if let header = view as? DemoCollectionHeader { render(header, section: path.section, context: LanguageService.shared.context) }
     }
     private func render(_ header: DemoCollectionHeader, section: Int, context: LanguageContext) {
-        header.render(context, titleKey: mode == .orthogonal && section == 0 ? "compositional.carousel_section" : "compositional.grid_section")
+        header.render(context, titleMessage: mode == .orthogonal && section == 0 ? .compositionalCarouselSection : .compositionalGridSection)
     }
     private func render(_ cell: UICollectionViewCell, at path: IndexPath, context: LanguageContext) {
         guard let cell = cell as? DemoCollectionCell, let id = id(at: path) else { return }

@@ -2,15 +2,38 @@
   "activeTestPlanName": "UIKitLanguageDemo",
   "counts": {
     "expectedFailures": 0,
-    "failed": 0,
+    "failed": 1,
     "notRun": 0,
-    "passed": 23,
+    "passed": 24,
     "skipped": 0,
-    "total": 23
+    "total": 25
   },
-  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T13-07-46+08-00.txt",
-  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/99E0E264-D55A-416E-9BFD-F17F73BD6788.txt",
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T18-01-55+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/E909996C-67A2-4AB2-9C5E-9C84FE6EFCE6.txt",
   "results": [
+    {
+      "displayName": "testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift:45 IPadWindowUITests/testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart(): Failed to get matching snapshots: Error getting main window kAXErrorServerNotFound"
+      ],
+      "identifier": "IPadWindowUITests/testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry()",
+      "errorMessages": [],
+      "identifier": "GeneratedSymbolTests/testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testGeneratedResourcesUseExplicitLanguageAndEnglishFallback()",
+      "errorMessages": [],
+      "identifier": "GeneratedSymbolTests/testGeneratedResourcesUseExplicitLanguageAndEnglishFallback()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
     {
       "displayName": "testVersionOneMigrationAndSessionOwnership()",
       "errorMessages": [],
@@ -159,13 +182,6 @@
       "targetName": "UIKitLanguageDemoTests"
     },
     {
-      "displayName": "testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()",
-      "errorMessages": [],
-      "identifier": "IPadWindowUITests/testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()",
-      "state": "Passed",
-      "targetName": "UIKitLanguageDemoUITests"
-    },
-    {
       "displayName": "testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft()",
       "errorMessages": [],
       "identifier": "UIKitLanguageDemoUITests/testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft()",
@@ -174,7 +190,7 @@
     }
   ],
   "schemeName": "UIKitLanguageDemo",
-  "summary": "23 tests: 23 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
-  "totalResults": 23,
+  "summary": "25 tests: 24 passed, 1 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 25,
   "truncated": false
 }

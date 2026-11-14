@@ -148,7 +148,7 @@ final class SceneStateCoordinator {
             list.restorationDrafts = saved.drafts
             list.pendingListState = saved
         }
-        page.navigationItem.backButtonTitle = LanguageService.shared.context.text("common.back")
+        page.navigationItem.backButtonTitle = LanguageService.shared.context.text(.commonBack)
         return page
     }
 
@@ -159,7 +159,7 @@ final class SceneStateCoordinator {
         let navigations = stacks.enumerated().map { index, stack in
             let controllers = stack.map(makePage)
             let navigation = LocalizedNavigationController(root: controllers[0],
-                tabTitleKey: index == 0 ? "home.title" : "settings.title", symbol: index == 0 ? "house" : "gearshape")
+                tabTitle: index == 0 ? .homeTitle : .settingsTitle, symbol: index == 0 ? "house" : "gearshape")
             navigation.setViewControllers(controllers, animated: false)
             return navigation
         }

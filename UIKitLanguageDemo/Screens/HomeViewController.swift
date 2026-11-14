@@ -79,20 +79,20 @@ final class HomeViewController: LocalizedViewController {
     }
 
     override func applyLocalization(_ context: LanguageContext) {
-        title = context.text("home.title")
+        title = context.text(.homeTitle)
         // App-owned back title on the next screen; no reliance on the OS-generated "Back".
-        navigationItem.backButtonTitle = context.text("common.back")
-        heading.text = context.text("home.description")
+        navigationItem.backButtonTitle = context.text(.commonBack)
+        heading.text = context.text(.homeDescription)
         heading.textAlignment = context.isRTL ? .right : .left
         var config = openButton.configuration!
-        config.title = context.text("home.open_detail")
+        config.title = context.text(.homeOpenDetail)
         openButton.configuration = config
-        tripleButton.setTitle(context.text("split.triple"), for: .normal)
-        splitButton.setTitle(context.text("split.title"), for: .normal)
-        pageButton.setTitle(context.text("pages.title"), for: .normal)
-        collectionButton.setTitle(context.text("collection.title"), for: .normal)
-        horizontalButton.setTitle(context.text("collection.horizontal"), for: .normal)
-        compositionalButton.setTitle(context.text("compositional.title"), for: .normal)
-        orthogonalButton.setTitle(context.text("compositional.orthogonal"), for: .normal)
+        tripleButton.setTitle(context.text(.splitTriple), for: .normal)
+        splitButton.setTitle(context.text(.splitTitle), for: .normal)
+        pageButton.setTitle(context.text(.pagesTitle), for: .normal)
+        collectionButton.setTitle(context.text(.collectionTitle), for: .normal)
+        horizontalButton.setTitle(context.text(.collectionHorizontal), for: .normal)
+        compositionalButton.setTitle(context.text(.compositionalTitle), for: .normal)
+        orthogonalButton.setTitle(context.text(.compositionalOrthogonal), for: .normal)
     }
 }

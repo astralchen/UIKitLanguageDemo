@@ -1,0 +1,17 @@
+{
+  "generatedResourceUndefinedReferences": [
+    "                 (undefined) weak external _$s10Foundation23LocalizedStringResourceV17BundleDescriptionO8forClassyAEyXlXpcAEmFWC (from Foundation)",
+    "                 (undefined) weak external _$s10Foundation23LocalizedStringResourceV17BundleDescriptionOMa (from Foundation)",
+    "                 (undefined) weak external _$s10Foundation23LocalizedStringResourceV3keySSvg (from Foundation)",
+    "                 (undefined) weak external _$s10Foundation23LocalizedStringResourceV5tableSSSgvg (from Foundation)",
+    "                 (undefined) weak external _$s10Foundation23LocalizedStringResourceV6localeAA6LocaleVvs (from Foundation)",
+    "                 (undefined) weak external _$s10Foundation23LocalizedStringResourceVMa (from Foundation)",
+    "                 (undefined) weak external _$s10Foundation23LocalizedStringResourceV_12defaultValue5table6locale6bundle7commentACs06StaticC0V_SSAAE012LocalizationF0VSSSgAA6LocaleVAC17BundleDescriptionOAJSgtcfC (from Foundation)",
+    "                 (undefined) weak external _$s10Foundation23LocalizedStringResourceV_5table6locale6bundle7commentACSSAAE17LocalizationValueV_SSSgAA6LocaleVAC17BundleDescriptionOs06StaticC0VSgtcfC (from Foundation)",
+    "                 (undefined) weak external _$sSS10FoundationE9localizedSSAA23LocalizedStringResourceV_tcfC (from Foundation)"
+  ],
+  "allReferencesWeak": true,
+  "minimumDeploymentVersion": "15.0",
+  "runtimeTestVersion": "26.5",
+  "iOS15RuntimeAvailable": false
+}

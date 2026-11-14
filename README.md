@@ -12,13 +12,13 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 
 ## 运行
 
-1. 用支持 Swift 6 的 Xcode 打开 `UIKitLanguageDemo.xcodeproj`。
+1. 用支持 Generate String Catalog Symbols 的 Xcode（本轮为 Xcode 26.5）打开 `UIKitLanguageDemo.xcodeproj`。
 2. 选择 `UIKitLanguageDemo` Scheme 和一个 iOS 模拟器，Run。
 3. 首页点击“打开详情”，输入草稿，再点击详情页中的语言按钮。
 4. 验证详情页仍在、返回按钮仍可返回首页、草稿不变，中文/阿拉伯语切换时方向改变。
 5. 设置 Tab 演示可变行高 Table；首页可进入 FlowLayout 网格/横向列表，以及 Compositional 网格/正交分页分区，滚动、选择、编辑草稿后切换语言。
 6. 在任意示例页点击导航栏地球图标（“系统 App 语言设置”），在系统中选择语言并返回 App，验证当前位置、草稿和滚动位置恢复。该入口先切回“跟随系统”，以便新进程采用系统选择。
-7. 使用 Product → Test 运行随工程附带的二十三项 XCTest（21 项单元测试和 2 项真实系统设置重启 UI 测试）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
+7. 使用 Product → Test 运行随工程附带的二十五项 XCTest（23 项单元测试和 2 项真实系统设置重启 UI 测试）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
 
 测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
 
@@ -45,11 +45,13 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 | `Screens/ListDemoContent.swift` | Cell 内容、草稿绑定和 supplementary 示例 |
 | `Screens/CompositionalDemoViewController.swift` | 自适应组合网格、正交分页分区及运行时镜像 |
 | `Localization/OrthogonalLocalizationCoordinator.swift` | 正交 section 中心业务页与外层阅读位置保留 |
+| `Localization/AppText.swift` | 类型化文案、Xcode 生成符号桥接及 iOS 15 映射 |
 | `Localization/SceneState.swift` | 版本化业务 DTO、NSUserActivity 编解码与输入校验 |
 | `Localization/SceneStateCoordinator.swift` | 重建导航／Page／Split、按 Scene 隔离的持久化检查点、系统设置入口 |
 | `Localization/ListStateRestoration.swift` | 列表草稿、选择、逻辑阅读锚点及正交中心页的持久化桥接 |
 | `Localization/SceneWindowService.swift` | 新窗口副本、已有 session 激活、窗口关闭与全 Scene 检查点 |
 | `SceneDelegate.swift` | Scene 生命周期、NSUserActivity 保存与恢复、窗口注册 |
+| `UIKitLanguageDemoTests/GeneratedSymbolTests.swift` | 38 项生成符号、参数类型、即时语言选择与英文回退／旧路径一致性 |
 | `UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift` | 热切换与新控制器图的恢复回归测试 |
 | `UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift` | 系统设置改语言、进程终止、导航和组合列表恢复 |
 
@@ -76,13 +78,32 @@ await MainActor.run {
 
 ```swift
 let context = LanguageService.shared.context
-label.text = context.text("detail.title")
+label.text = context.text(.detailTitle)
+label.accessibilityLabel = context.text(.pagesNumber(3))
 label.textAlignment = context.isRTL ? .right : .left
 ```
 
-资源查找顺序为当前语言 → 英文兜底 → key。示例 `fallback.example` 故意只提供英文资源，用于测试回退。新增语言要同时添加枚举与 String Catalog 翻译；启动时会校验编译后的 `.lproj` 是否打入 target。
+目录中的条目均提供英文；当前语言缺少翻译时使用英文兜底。iOS 15 的动态查找对未知 key 保留原 key。示例 `fallback.example` 故意只提供英文资源，用于测试回退。新增语言要同时添加枚举与 String Catalog 翻译；启动时会校验编译后的 `.lproj` 是否打入 target。
 
-不要缓存已经翻译好的 `static let String`，应在渲染时通过当前快照读取。动态 key 封装不会自动生成所有翻译项，资源文件需要随工程维护。此原生工程将三套文案合并保存到 `UIKitLanguageDemo/Localizable.xcstrings`，由 Xcode 编译为 en、zh-Hans、ar 的 `.lproj/Localizable.strings`，原有 Bundle 读取逻辑保持不变。新增语言也需要在 String Catalog 中添加翻译。
+不要缓存已经翻译好的 `static let String`，应在渲染时通过当前快照读取。三套文案保存到 `UIKitLanguageDemo/Localizable.xcstrings`，由 Xcode 编译为 en、zh-Hans、ar 的 `.lproj/Localizable.strings`，同时自动生成本地化符号。
+
+## Xcode 生成的本地化符号
+
+按照 [Apple 官方文档](https://developer.apple.com/documentation/xcode/using-generated-localizable-symbols-in-your-code)，工程保持 `STRING_CATALOG_GENERATE_SYMBOLS = YES`。Xcode 为无参数文案生成 `LocalizedStringResource` 静态属性，为参数文案生成带类型参数的函数；例如 `.detailTitle`、`.pagesNumber(Int)`、`.detailNumber(String)`、`.windowName(Int32)`。生成文件位于 DerivedSources，由 Xcode 维护，不复制到仓库。
+
+页面统一接收 `AppText`，而不是原始字符串 key。`AppText.resource` 在 iOS 16+ 返回实际生成的符号，`LanguageContext.text` 每次取一份资源值、设置当前语言的 locale，再调用 `String(localized:)`。带参数的资源保留生成函数的插值和参数类型，现代路径不使用 CVarArg 格式化。Tab、Page、Header 的标题元数据也已改为 AppText。
+
+生成资源在缺少指定语言翻译时可能返回 key，因此解析前先检查当前 `.lproj` 中是否存在该条目；缺失时以英文 locale 解析同一生成资源。资源的 bundle 来自生成代码，不尝试修改只读的 bundle 属性，也不修改进程的 AppleLanguages。即时切换继续使用 LanguageService 的快照和原有刷新通知，导航栈、草稿、列表锚点及多窗口恢复协议不变。
+
+iOS 15 不提供 LocalizedStringResource。相同的 AppText 在旧系统走集中维护的 legacyKey／legacyArguments 适配，使用当前语言 Bundle → 英文 Bundle → key，并保留格式化 Locale。所有 iOS 16 API 均有 availability 保护，最低部署版本仍为 iOS 15.0。`legacyText` 是生产中实际使用的旧路径，测试也会显式运行它，避免只验证新系统分支。
+
+新增文案时：
+
+1. 在 String Catalog 添加 key、英文及其它翻译，构建后从 Xcode 检查生成符号的名称和参数类型。
+2. 在 AppText 添加对应 case；resource 分支引用生成符号，legacyKey／legacyArguments 分支补上 iOS 15 映射。占位符类型变更会使不匹配的生成函数调用编译失败。
+3. 在 GeneratedSymbolTests 的样本文案列表中加入新项，比较三种语言的生成路径和旧路径，并更新目录条目数断言。
+
+当前 iOS 15 适配覆盖目录中的普通字符串、`%@`、`%ld` 和 `%d`。新增复数、性别或其它变体时，需要同时扩展旧系统适配与测试；不把普通 String(format:) 当作完整的 String Catalog 变体解释器。
 
 ## 接入页面
 
@@ -90,7 +111,7 @@ label.textAlignment = context.isRTL ? .right : .left
 
 ```swift
 @MainActor
-final class ProfileViewController: LocalizedViewController {
+final class DraftPreviewViewController: LocalizedViewController {
     private let nameLabel = UILabel()
 
     override func buildUI() {
@@ -104,9 +125,9 @@ final class ProfileViewController: LocalizedViewController {
     }
 
     override func applyLocalization(_ context: LanguageContext) {
-        // 请在 Localizable.xcstrings 中添加这些 key 和三套翻译。
-        title = context.text("profile.title")
-        nameLabel.text = context.text("profile.name")
+        // 使用目录中已有文案；新增条目时同时扩展 AppText。
+        title = context.text(.detailTitle)
+        nameLabel.text = context.text(.detailDraft)
         nameLabel.textAlignment = context.isRTL ? .right : .left
     }
 }
@@ -176,7 +197,7 @@ let pager = LocalizedPageContainerController(pages: [
     .init(id: "overview", controller: overviewController),
     .init(id: "details", controller: detailsController),
     .init(id: "history", controller: historyController)
-], initialPageID: "details", titleKey: "pages.title")
+], initialPageID: "details", titleMessage: .pagesTitle)
 
 pager.onCurrentPageChanged = { id in
     // 同步业务状态或埋点。页 ID 始终按业务定义保持稳定。
@@ -224,12 +245,18 @@ pager.previousPage()
 
 当前 Apple 官方 MCP 服务器未提供创建新工程的工具，因此创建步骤使用 Xcode 原生 iOS App 模板（Storyboard / Swift / XCTest）；分组、源码、Info.plist、String Catalog 和测试通过官方 MCP 写入。工程文件由 Xcode 创建与维护，没有复制旧工程的手写 project.pbxproj。
 
-官方 MCP `BuildProject` 已构建成功，`RunSomeTests` 已执行全部二十三项测试：23 passed、0 failed、0 skipped、0 not run。保留此前十八项测试，新增四项 iPad／多窗口单元测试和一项双窗口三列系统重启 UI 测试；结果保存在 `verification/official-mcp-tests.json`。测试签名问题已修复，详情见 `SIGNING_FIX.md` 和 `verification/`；源码一致性见 `MIGRATION.json`。
+官方 MCP `BuildProject` 构建成功，发现 25 项测试且全部启用。本轮全量结果为 **24 passed / 1 failed / 0 skipped / 0 not run**：23 项单元测试（含新增的两个生成符号测试）及单窗口系统语言重启 UI 测试通过；双窗口 UI 用例在启动时出现 AX 错误，后续单项复验仍发生 UI 查询超时。当前不能宣称 25 项全部通过。原始全量结果见 `verification/official-mcp-tests.json`，最近单项复验见 `verification/official-mcp-symbols-ipad-recheck.json`。测试签名保持启用，源码一致性见 `MIGRATION.json`。
 
 本机 Xcode 的 UI Runner 曾缺少 SDK 自带的 `lib_TestingInterop.dylib`；测试计划用 `$(PLATFORM_DIR)/Developer/usr/lib` 补充测试进程的动态库路径，保持签名启用，详见状态恢复文档。
 
-最新完整验收复用已有 iPad Pro 13-inch (M5) / iOS 26.5，23/23 通过；此前 iPhone 18 项结果保留为历史记录。
+本轮复用已有 iPad Pro 13-inch (M5) / iOS 26.5，未创建、重启或擦除模拟器。曾单独恢复 SpringBoard 界面服务及重开设置 App；桌面界面连接随后也超时。此前完整 iPad 23/23 通过的报告已归档为 `official-mcp-ipad-twenty-three-*`，属于生成符号迁移前的历史记录。
 
 本机已确认新构建产物包含 en、zh-Hans、ar 三套本地化文件。iOS 15/16 兼容分支尚未在对应系统版本运行。
 
 参考：[Apple 官方 MCP 接入说明](https://developer.apple.com/documentation/xcode/giving-external-agents-access-to-xcode)、[Apple UIKit Trait 系统](https://developer.apple.com/videos/play/wwdc2023/10057/)。
+
+测试夹具优先选择前台 Scene，弹层呈现使用可让出 MainActor 的异步等待，并断言完成呈现且仍挂在原窗口。系统设置中的可选确认按钮采用一次标签集合查询，避免无弹窗时重复扫描无障碍树；真实语言更改、旧进程终止和恢复状态断言均保留。
+
+iPad UI 用例通过 Runner 设备类型判断运行条件，并等待设置页的 App 入口或语言行加载完成，再执行选择；不会在 App AX 服务刚启动时读取主窗口尺寸。
+
+iOS 15 兼容已进行最低部署构建、弱链接检查及生产旧路径测试；本轮实际运行系统为 iOS 26.5，未在 iOS 15 运行时执行。最新四项签名校验见 `verification/symbols-signature-verification.json`。

@@ -52,17 +52,17 @@ final class DetailViewController: LocalizedViewController {
     }
 
     override func applyLocalization(_ context: LanguageContext) {
-        title = context.text("detail.title")
-        heading.text = context.text("detail.description")
-        draftLabel.text = context.text("detail.draft")
-        draftField.placeholder = context.text("detail.placeholder")
-        draftField.accessibilityLabel = context.text("detail.draft")
+        title = context.text(.detailTitle)
+        heading.text = context.text(.detailDescription)
+        draftLabel.text = context.text(.detailDraft)
+        draftField.placeholder = context.text(.detailPlaceholder)
+        draftField.accessibilityLabel = context.text(.detailDraft)
         // Never assign draftField.text here. The same input and VC instances survive.
         let formatter = NumberFormatter()
         formatter.locale = context.locale
         formatter.numberStyle = .decimal
         let number = formatter.string(from: NSNumber(value: 12345.67)) ?? "12345.67"
-        numberLabel.text = context.format("detail.number", number)
+        numberLabel.text = context.text(.detailNumber(number))
         for label in [heading, draftLabel, numberLabel] {
             label.textAlignment = context.isRTL ? .right : .left
         }

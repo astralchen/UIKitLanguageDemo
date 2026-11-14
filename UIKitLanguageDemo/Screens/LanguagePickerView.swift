@@ -37,12 +37,12 @@ final class LanguagePickerView: UIView, LocalizationUpdatable {
     func applyLocalization(_ context: LanguageContext) {
         LayoutDirection.applyBoundary(context, to: self)
         LayoutDirection.applyBoundary(context, to: stack)
-        heading.text = context.text("language.title")
+        heading.text = context.text(.languageTitle)
         heading.textAlignment = context.isRTL ? .right : .left
         for (selection, button) in buttons {
             let selected = LanguageService.shared.selection == selection
             var config = button.configuration!
-            config.title = selection.explicitLanguage?.nativeName ?? context.text("language.system")
+            config.title = selection.explicitLanguage?.nativeName ?? context.text(.languageSystem)
             config.image = selected ? UIImage(systemName: "checkmark.circle.fill") : nil
             config.imagePadding = 8
             config.imagePlacement = .trailing

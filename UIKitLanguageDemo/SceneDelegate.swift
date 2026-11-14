@@ -28,7 +28,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         var metadata = session.userInfo ?? [:]
         metadata["windowNumber"] = number
         session.userInfo = metadata
-        scene.title = LanguageService.shared.context.format("window.name", number)
+        scene.title = LanguageService.shared.context.text(.windowName(Int32(clamping: number)))
         // Each Scene owns independent state; no UI language or translated string is restored.
         restoration.connect(window: window, activity: session.stateRestorationActivity,
             fallback: fallback,

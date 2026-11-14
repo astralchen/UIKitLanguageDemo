@@ -1,6 +1,12 @@
 # Xcode 原生工程与官方 MCP 迁移记录
 
-2026-11-14 最新验收：Apple 官方 `xcrun mcpbridge` / `xcode-tools 24939` 的 `BuildProject` 构建成功，`GetTestList` 发现 23 项且全部启用，`RunSomeTests` 按这 23 个 ID 完整执行：23 passed、0 failed、0 skipped、0 expected failures、0 not run。原始结果见 verification/official-mcp-tests.json / .txt 和 official-mcp-console.txt。
+当前生成符号迁移：38 项文案经 AppText 接入 Xcode 原生生成资源，保留 iOS 15 旧路径及英文回退。构建成功；25 项全量验收 24 passed / 1 failed，全部 23 项单元测试与单窗口 UI 用例通过，双窗口 UI 最新复验仍受 AX 超时阻塞。没有将本轮标记为全绿。源码均通过官方 XcodeWrite 写入；当前哈希见 MIGRATION.json。
+
+原始全量与复验见 verification/official-mcp-tests.json 和 official-mcp-symbols-ipad-recheck.json。iOS 15 仅完成最低部署、弱链接和旧路径检查，未在该运行时执行。
+
+以下为生成符号迁移前的 iPad 扩展历史记录：
+
+2026-11-14 历史验收：Apple 官方 `xcrun mcpbridge` / `xcode-tools 24939` 的 `BuildProject` 构建成功，`GetTestList` 发现 23 项且全部启用，`RunSomeTests` 按这 23 个 ID 完整执行：23 passed、0 failed、0 skipped、0 expected failures、0 not run。原始结果见 verification/official-mcp-ipad-twenty-three-tests.json / .txt 和 official-mcp-ipad-twenty-three-console.txt。
 
 本轮复用已有 iPad Pro 13-inch (M5) / iOS 26.5（0CE21EE5-82A1-4D1C-9554-7E17B54341DA）。该设备原为关机状态，由 Xcode 启动一次；未新建设备；结束清点时该 iPad 仍处于 Booted，原 iPhone 17 Pro 为 Shutdown，未由本轮操作重启。首次 UI 测试的强制方向切换遇到 SpringBoard AX 超时；恢复该 iPad 的 SpringBoard 界面服务后，测试移除不必要的强制旋转并继续复用同一设备。未重启或擦除模拟器。
 
@@ -14,4 +20,4 @@
 
 测试计划包含单元及 UI 两个目标，禁用并行，不附加测试调试器。两个测试目标 Debug/Release 的四项 OTHER_CODE_SIGN_FLAGS=--verbose=2 保留，签名保持启用。UI Runner 的 SDK TestingInterop 查找路径仅放在测试计划中。最新严格签名校验见 verification/ipad-signature-verification.json。
 
-历史六项、十项、十二项、十三项和十八项验收分别单独保存在 verification/ 中。最新 iPhone 18 项记录为 official-mcp-restoration-eighteen-tests.*，本轮完整 iPad 23 项使用 official-mcp-tests.*。iOS 15/16 和真机未在本轮运行。
+历史六项、十项、十二项、十三项和十八项验收分别单独保存在 verification/ 中。最新 iPhone 18 项记录为 official-mcp-restoration-eighteen-tests.*，该轮完整 iPad 23 项归档为 official-mcp-ipad-twenty-three-*。iOS 15/16 和真机未在本轮运行。

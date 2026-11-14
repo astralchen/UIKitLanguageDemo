@@ -119,10 +119,10 @@ final class UIKitLanguageDemoUITests: XCTestCase {
         }
         XCTAssertNotNil(target, settings.debugDescription)
         target?.tap()
-        for label in ["Change to Arabic", "Use Arabic", "Change to English", "Use English", "Continue", "更改为阿拉伯语", "使用阿拉伯语", "更改为英语", "使用英语", "继续"] {
-            let button = settings.alerts.buttons[label].firstMatch
-            if button.exists { button.tap(); break }
-        }
+        // One scoped query avoids ten separate full AX snapshots when no alert is shown.
+        let confirmation = settings.alerts.buttons.matching(
+            NSPredicate(format: "label IN %@", ["Change to Arabic", "Use Arabic", "Change to English", "Use English", "Continue", "更改为阿拉伯语", "使用阿拉伯语", "更改为英语", "使用英语", "继续"])).firstMatch
+        if confirmation.exists { confirmation.tap() }
         if let app {
             let stopped = XCTNSPredicateExpectation(predicate: NSPredicate(format: "state == %d", XCUIApplication.State.notRunning.rawValue), object: app)
             XCTAssertEqual(XCTWaiter.wait(for: [stopped], timeout: 15), .completed,

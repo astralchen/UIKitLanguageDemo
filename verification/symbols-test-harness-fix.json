@@ -1,0 +1,13 @@
+{
+  "initialOfficialRun": "Apple MCP RunSomeTests request 146",
+  "counts": {
+    "passed": 24,
+    "failed": 1,
+    "total": 25
+  },
+  "failure": "testExistingModalSurvivesSwitch: 5-second synchronous presentation completion wait timed out",
+  "unitFix": "Asynchronous MainActor-yielding wait; require presentation completion and attachment to the original window; prefer an active scene for window fixtures",
+  "uiQueryFix": "Replace ten sequential optional confirmation-button queries with one equivalent label-IN query, preserving actual Settings language selection and process-termination assertions",
+  "sourceEditingTool": "Apple official MCP XcodeWrite",
+  "iPadStartupFix": "Check runner UIDevice idiom before application AX startup; wait until either the Settings app-directory entry or language row is loaded (up to 30 seconds)"
+}

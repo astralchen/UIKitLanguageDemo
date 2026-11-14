@@ -48,7 +48,7 @@ final class SettingsViewController: LocalizedViewController, UITableViewDataSour
     }
 
     override func applyLocalization(_ context: LanguageContext) {
-        title = context.text("settings.title")
+        title = context.text(.settingsTitle)
         languagePicker.applyLocalization(context)
         LayoutDirection.applyBoundary(context, to: stack)
         // Cells and scroll state are handled by the coordinator after window layout.
@@ -74,7 +74,7 @@ final class SettingsViewController: LocalizedViewController, UITableViewDataSour
 
     private func renderHeader(_ header: UITableViewHeaderFooterView, _ context: LanguageContext) {
         var content = header.defaultContentConfiguration()
-        content.text = context.text("list.section")
+        content.text = context.text(.listSection)
         content.textProperties.alignment = .natural
         header.contentConfiguration = content
         LayoutDirection.applyBoundary(context, to: header)

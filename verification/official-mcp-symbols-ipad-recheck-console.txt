@@ -1,0 +1,292 @@
+Test UIKitLanguageDemo
+  Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' started.
+      t =     0.05s Start Test at 2026-11-14 18:33:12.083
+      t =     0.35s Set Up
+      t =     0.46s Terminate com.example.UIKitLanguageDemo:0
+      t =     0.47s Open com.example.UIKitLanguageDemo
+      t =     0.47s     Launch com.example.UIKitLanguageDemo
+      t =     5.75s         Setting up automation session
+      t =    65.36s         Wait for com.example.UIKitLanguageDemo to idle
+      t =   125.43s             App event loop idle notification not received, will attempt to continue.
+      t =   126.47s Waiting 20.0s for "system.language.settings" Button to exist
+      t =   127.56s     Checking `Expect predicate `existsNoRetry == 1` for object "system.language.settings" Button`
+      t =   127.56s         Checking existence of `"system.language.settings" Button`
+      t =   146.76s         Capturing element debug description
+      t =   146.77s     Checking existence of `"system.language.settings" Button`
+      t =   177.82s     Checking existence of `"system.language.settings" Button` (retry 1)
+      t =   208.87s     Checking existence of `"system.language.settings" Button` (retry 2)
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift:50: error: -[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart] : Failed to get matching snapshots: Timed out while evaluating UI query.
+      t =   243.62s Tear Down
+  Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' failed (243.903 seconds).
+
+  Launch actions
+    Launch UIKitLanguageDemoUITests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 0CE21EE5-82A1-4D1C-9554-7E17B54341DA
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPad Pro 13-inch (M5) (iPad17,4)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPad Pro 13-inch (M5)
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoUITests
+        notice:Launching com.example.UIKitLanguageDemoUITests.xctrunner
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoUITests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 0CE21EE5-82A1-4D1C-9554-7E17B54341DA
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPad Pro 13-inch (M5) (iPad17,4)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPad Pro 13-inch (M5)
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+  Generating coverage report
+    notice:Unable to load coverage tools for toolchain 'com.apple.dt.toolchain.Metal.32023.883': Error Domain=XCTHLLVMCoverageToolsErrorDomain Code=2 "libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain" UserInfo={NSLocalizedDescription=libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain}
+  
+    Downloading profiles from iPad Pro 13-inch (M5)
+      notice:Downloading profiles for com.example.UIKitLanguageDemo from 1 directory
+      notice:Downloading profiles for com.example.UIKitLanguageDemoUITests.xctrunner from 1 directory
+    
+    Merging 2 profiles using llvm-profdata (2100.1.1.101.0)
+    
+    Pre-processing target built products
+    
+    Processing source file data
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/AppDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ListDemoContent.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneWindowService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/LanguagePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/TextInputSnapshot.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CollectionDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/OrthogonalLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ContainerDemos.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageContext.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedControllers.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/SceneDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListStateRestoration.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/AppText.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneState.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/HomeViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/SettingsViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneStateCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LayoutDirection.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/DetailViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift
+      
+    Generating target entries
+      notice:Generating entry for target UIKitLanguageDemo.app
+      notice:Generating entry for target UIKitLanguageDemoTests.xctest
+      notice:Generating entry for target UIKitLanguageDemoUITests.xctest
+    
+  Testing Configuration 1
+    Test target UIKitLanguageDemoUITests
+      UIKitLanguageDemoUITests-Runner (39322)
+        2026-11-14 18:33:01.455514+0800 UIKitLanguageDemoUITests-Runner[39322:1161508] [Default] Running tests...
+        2026-11-14 18:33:01.918750+0800 UIKitLanguageDemoUITests-Runner[39322:1161508] [UIKit App Config] Update the Info.plist: Launch screens will soon be required.
+            t =      nans Interface orientation changed to Landscape Right
+        Test Suite 'Selected tests' started at 2026-11-14 18:33:12.013.
+        Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 18:33:12.018.
+        Test Suite 'IPadWindowUITests' started at 2026-11-14 18:33:12.020.
+        Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' started.
+            t =     0.05s Start Test at 2026-11-14 18:33:12.083
+            t =     0.35s Set Up
+            t =     0.46s Terminate com.example.UIKitLanguageDemo:0
+            t =     0.47s Open com.example.UIKitLanguageDemo
+            t =     0.47s     Launch com.example.UIKitLanguageDemo
+            t =     5.75s         Setting up automation session
+            t =    65.36s         Wait for com.example.UIKitLanguageDemo to idle
+            t =   125.43s             App event loop idle notification not received, will attempt to continue.
+            t =   126.47s Waiting 20.0s for "system.language.settings" Button to exist
+            t =   127.56s     Checking `Expect predicate `existsNoRetry == 1` for object "system.language.settings" Button`
+            t =   127.56s         Checking existence of `"system.language.settings" Button`
+            t =   146.76s         Capturing element debug description
+            t =   146.77s     Checking existence of `"system.language.settings" Button`
+            t =   177.82s     Checking existence of `"system.language.settings" Button` (retry 1)
+            t =   208.87s     Checking existence of `"system.language.settings" Button` (retry 2)
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift:50: error: -[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart] : Failed to get matching snapshots: Timed out while evaluating UI query.
+            t =   243.62s Tear Down
+        Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' failed (243.903 seconds).
+        Test Suite 'IPadWindowUITests' failed at 2026-11-14 18:37:15.942.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.922) seconds
+        Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 18:37:15.943.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.926) seconds
+        Test Suite 'Selected tests' failed at 2026-11-14 18:37:15.945.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.931) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_18-32-36-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-B3248BAA-0AF3-4FF0-B51B-C77031D52E92-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-5924C2FC-434B-4655-B316-A8924FBA1A05/Session-UIKitLanguageDemoUITests-2026-11-14_183252-L2IGsd.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_18-32-36-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-B3248BAA-0AF3-4FF0-B51B-C77031D52E92-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-5924C2FC-434B-4655-B316-A8924FBA1A05/Session-UIKitLanguageDemoUITests-2026-11-14_183252-L2IGsd.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' failed at 2026-11-14 18:37:15.945.
+	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.931) seconds
+
+          2026-11-14 18:33:01.455514+0800 UIKitLanguageDemoUITests-Runner[39322:1161508] [Default] Running tests...
+          2026-11-14 18:33:01.918750+0800 UIKitLanguageDemoUITests-Runner[39322:1161508] [UIKit App Config] Update the Info.plist: Launch screens will soon be required.
+              t =      nans Interface orientation changed to Landscape Right
+          Test Suite 'Selected tests' started at 2026-11-14 18:33:12.013.
+          Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 18:33:12.018.
+          Test Suite 'IPadWindowUITests' started at 2026-11-14 18:33:12.020.
+          Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' started.
+              t =     0.05s Start Test at 2026-11-14 18:33:12.083
+              t =     0.35s Set Up
+              t =     0.46s Terminate com.example.UIKitLanguageDemo:0
+              t =     0.47s Open com.example.UIKitLanguageDemo
+              t =     0.47s     Launch com.example.UIKitLanguageDemo
+              t =     5.75s         Setting up automation session
+              t =    65.36s         Wait for com.example.UIKitLanguageDemo to idle
+              t =   125.43s             App event loop idle notification not received, will attempt to continue.
+              t =   126.47s Waiting 20.0s for "system.language.settings" Button to exist
+              t =   127.56s     Checking `Expect predicate `existsNoRetry == 1` for object "system.language.settings" Button`
+              t =   127.56s         Checking existence of `"system.language.settings" Button`
+              t =   146.76s         Capturing element debug description
+              t =   146.77s     Checking existence of `"system.language.settings" Button`
+              t =   177.82s     Checking existence of `"system.language.settings" Button` (retry 1)
+              t =   208.87s     Checking existence of `"system.language.settings" Button` (retry 2)
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift:50: error: -[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart] : Failed to get matching snapshots: Timed out while evaluating UI query.
+              t =   243.62s Tear Down
+          Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' failed (243.903 seconds).
+          Test Suite 'IPadWindowUITests' failed at 2026-11-14 18:37:15.942.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.922) seconds
+          Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 18:37:15.943.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.926) seconds
+          Test Suite 'Selected tests' failed at 2026-11-14 18:37:15.945.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.931) seconds
+        
+          Run test suite UIKitLanguageDemoUITests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 18:37:15.943.
+	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.926) seconds
+
+            Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 18:33:12.018.
+            Test Suite 'IPadWindowUITests' started at 2026-11-14 18:33:12.020.
+            Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' started.
+                t =     0.05s Start Test at 2026-11-14 18:33:12.083
+                t =     0.35s Set Up
+                t =     0.46s Terminate com.example.UIKitLanguageDemo:0
+                t =     0.47s Open com.example.UIKitLanguageDemo
+                t =     0.47s     Launch com.example.UIKitLanguageDemo
+                t =     5.75s         Setting up automation session
+                t =    65.36s         Wait for com.example.UIKitLanguageDemo to idle
+                t =   125.43s             App event loop idle notification not received, will attempt to continue.
+                t =   126.47s Waiting 20.0s for "system.language.settings" Button to exist
+                t =   127.56s     Checking `Expect predicate `existsNoRetry == 1` for object "system.language.settings" Button`
+                t =   127.56s         Checking existence of `"system.language.settings" Button`
+                t =   146.76s         Capturing element debug description
+                t =   146.77s     Checking existence of `"system.language.settings" Button`
+                t =   177.82s     Checking existence of `"system.language.settings" Button` (retry 1)
+                t =   208.87s     Checking existence of `"system.language.settings" Button` (retry 2)
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift:50: error: -[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart] : Failed to get matching snapshots: Timed out while evaluating UI query.
+                t =   243.62s Tear Down
+            Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' failed (243.903 seconds).
+            Test Suite 'IPadWindowUITests' failed at 2026-11-14 18:37:15.942.
+            	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.922) seconds
+            Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 18:37:15.943.
+            	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.926) seconds
+          
+            Run test suite IPadWindowUITests
+              Summary: Test Suite 'IPadWindowUITests' failed at 2026-11-14 18:37:15.942.
+	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.922) seconds
+
+              Test Suite 'IPadWindowUITests' started at 2026-11-14 18:33:12.020.
+              Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' started.
+                  t =     0.05s Start Test at 2026-11-14 18:33:12.083
+                  t =     0.35s Set Up
+                  t =     0.46s Terminate com.example.UIKitLanguageDemo:0
+                  t =     0.47s Open com.example.UIKitLanguageDemo
+                  t =     0.47s     Launch com.example.UIKitLanguageDemo
+                  t =     5.75s         Setting up automation session
+                  t =    65.36s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =   125.43s             App event loop idle notification not received, will attempt to continue.
+                  t =   126.47s Waiting 20.0s for "system.language.settings" Button to exist
+                  t =   127.56s     Checking `Expect predicate `existsNoRetry == 1` for object "system.language.settings" Button`
+                  t =   127.56s         Checking existence of `"system.language.settings" Button`
+                  t =   146.76s         Capturing element debug description
+                  t =   146.77s     Checking existence of `"system.language.settings" Button`
+                  t =   177.82s     Checking existence of `"system.language.settings" Button` (retry 1)
+                  t =   208.87s     Checking existence of `"system.language.settings" Button` (retry 2)
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift:50: error: -[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart] : Failed to get matching snapshots: Timed out while evaluating UI query.
+                  t =   243.62s Tear Down
+              Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' failed (243.903 seconds).
+              Test Suite 'IPadWindowUITests' failed at 2026-11-14 18:37:15.942.
+              	 Executed 1 test, with 1 failure (0 unexpected) in 243.903 (243.922) seconds
+            
+              Run test case testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()
+                Summary:     t =   243.62s Tear Down
+Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' failed (243.903 seconds).
+
+                Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' started.
+                    t =     0.05s Start Test at 2026-11-14 18:33:12.083
+                    t =     0.35s Set Up
+                    t =     0.46s Terminate com.example.UIKitLanguageDemo:0
+                    t =     0.47s Open com.example.UIKitLanguageDemo
+                    t =     0.47s     Launch com.example.UIKitLanguageDemo
+                    t =     5.75s         Setting up automation session
+                    t =    65.36s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =   125.43s             App event loop idle notification not received, will attempt to continue.
+                    t =   126.47s Waiting 20.0s for "system.language.settings" Button to exist
+                    t =   127.56s     Checking `Expect predicate `existsNoRetry == 1` for object "system.language.settings" Button`
+                    t =   127.56s         Checking existence of `"system.language.settings" Button`
+                    t =   146.76s         Capturing element debug description
+                    t =   146.77s     Checking existence of `"system.language.settings" Button`
+                    t =   177.82s     Checking existence of `"system.language.settings" Button` (retry 1)
+                    t =   208.87s     Checking existence of `"system.language.settings" Button` (retry 2)
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift:50: error: -[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart] : Failed to get matching snapshots: Timed out while evaluating UI query.
+                    t =   243.62s Tear Down
+                Test Case '-[UIKitLanguageDemoUITests.IPadWindowUITests testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart]' failed (243.903 seconds).
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift:test failure:Failed to get matching snapshots: Timed out while evaluating UI query.
+              
+** TEST FINISHED **

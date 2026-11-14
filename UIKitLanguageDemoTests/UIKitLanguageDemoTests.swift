@@ -12,8 +12,8 @@ final class LanguageTests: XCTestCase {
         let previousKeyWindow = scene.windows.first(where: \.isKeyWindow)
         let window = UIWindow(windowScene: scene)
         let home = HomeViewController()
-        let navigation = LocalizedNavigationController(root: home, tabTitleKey: "home.title", symbol: "house")
-        let settings = LocalizedNavigationController(root: SettingsViewController(), tabTitleKey: "settings.title", symbol: "gearshape")
+        let navigation = LocalizedNavigationController(root: home, tabTitle: .homeTitle, symbol: "house")
+        let settings = LocalizedNavigationController(root: SettingsViewController(), tabTitle: .settingsTitle, symbol: "gearshape")
         let tabs = LocalizedTabBarController(navigationControllers: [navigation, settings])
         let host = LocalizationHostController(content: tabs)
         window.rootViewController = host
@@ -58,12 +58,12 @@ final class LanguageTests: XCTestCase {
                 XCTAssertEqual(detail.draftField.offset(from: detail.draftField.beginningOfDocument,
                                                        to: selectedRange.start), 3, "Selection: \(selection.rawValue)")
             }
-            XCTAssertEqual(detail.title, service.context.text("detail.title"))
-            XCTAssertEqual(home.title, service.context.text("home.title"))
+            XCTAssertEqual(detail.title, service.context.text(.detailTitle))
+            XCTAssertEqual(home.title, service.context.text(.homeTitle))
             XCTAssertEqual(navigation.navigationBar.effectiveUserInterfaceLayoutDirection,
                            service.context.isRTL ? .rightToLeft : .leftToRight)
             if #available(iOS 18.0, *) {
-                XCTAssertEqual(tabs.tabs.map(\.title), [service.context.text("home.title"), service.context.text("settings.title")])
+                XCTAssertEqual(tabs.tabs.map(\.title), [service.context.text(.homeTitle), service.context.text(.settingsTitle)])
             }
         }
     }
@@ -77,27 +77,34 @@ final class LanguageTests: XCTestCase {
         service.setSelection(.arabic)
         let restored = LanguageService(defaults: defaults)
         XCTAssertEqual(restored.selection, .arabic)
-        XCTAssertEqual(restored.context.text("detail.title"), "التفاصيل")
-        XCTAssertEqual(restored.context.text("fallback.example"), "English fallback")
-        XCTAssertEqual(restored.context.text("unknown.key"), "unknown.key")
+        XCTAssertEqual(restored.context.text(.detailTitle), "التفاصيل")
+        XCTAssertEqual(restored.context.text(.fallbackExample), "English fallback")
+        XCTAssertEqual(restored.context.legacyLookup("unknown.key"), "unknown.key")
         XCTAssertEqual(LanguageResources.resolve(.system, preferences: ["ar-SA", "en"]), .arabic)
         XCTAssertEqual(LanguageResources.resolve(.simplifiedChinese, preferences: ["ar"]), .simplifiedChinese)
     }
 
     @MainActor
-    func testExistingModalSurvivesSwitch() throws {
+    func testExistingModalSurvivesSwitch() async throws {
         let service = LanguageService.shared
         // Own the presentation host; a restored real scene may already show a split.
         let fixture = try ContainerTestWindow(content: HomeViewController())
         let host = try XCTUnwrap(fixture.window.rootViewController)
         let sheet = LocalizedTestSheet()
         defer { sheet.dismiss(animated: false); fixture.close() }
-        let presented = expectation(description: "sheet presented")
-        host.present(sheet, animated: false) { presented.fulfill() }
-        wait(for: [presented], timeout: 5)
+        var presentationFinished = false
+        host.present(sheet, animated: false) { presentationFinished = true }
+        // Release MainActor while UIKit finishes presentation. A synchronous XCTest
+        // wait can delay UIKit's actor-isolated completion on current systems.
+        let deadline = Date().addingTimeInterval(30)
+        while !presentationFinished && Date() < deadline {
+            try await Task.sleep(nanoseconds: 50_000_000)
+        }
+        XCTAssertTrue(presentationFinished, "UIKit must complete the actual presentation")
+        XCTAssertTrue(sheet.viewIfLoaded?.window === fixture.window)
         service.setSelection(.arabic)
         XCTAssertTrue(host.presentedViewController === sheet)
-        XCTAssertEqual(sheet.title, service.context.text("detail.title"))
+        XCTAssertEqual(sheet.title, service.context.text(.detailTitle))
     }
 
     @MainActor
@@ -110,7 +117,7 @@ final class LanguageTests: XCTestCase {
         split.maximumSupplementaryColumnWidth = 220
         let columns: [UISplitViewController.Column] = [.primary, .supplementary, .secondary]
         let navigations = columns.map { _ in
-            LocalizedNavigationController(root: HomeViewController(), tabTitleKey: "home.title", symbol: "house")
+            LocalizedNavigationController(root: HomeViewController(), tabTitle: .homeTitle, symbol: "house")
         }
         for (column, navigation) in zip(columns, navigations) {
             split.setViewController(navigation, for: column)
@@ -226,11 +233,11 @@ final class LanguageTests: XCTestCase {
         XCTAssertTrue(table.cellForRow(at: path) === cell)
         XCTAssertEqual(cell.localizedContent.draft.text, "table draft survives")
         XCTAssertTrue(table.indexPathsForSelectedRows?.contains(path) == true)
-        XCTAssertEqual(cell.localizedContent.heading.text, LanguageService.shared.context.format("list.item", 1))
+        XCTAssertEqual(cell.localizedContent.heading.text, LanguageService.shared.context.text(.listItem(1)))
         XCTAssertGreaterThan(table.rectForRow(at: path).height, oldHeight)
         let header = try XCTUnwrap(table.headerView(forSection: 0))
         XCTAssertEqual((header.contentConfiguration as? UIListContentConfiguration)?.text,
-                       LanguageService.shared.context.text("list.section"))
+                       LanguageService.shared.context.text(.listSection))
         XCTAssertEqual(table.effectiveUserInterfaceLayoutDirection, .rightToLeft)
     }
 
@@ -258,7 +265,7 @@ final class LanguageTests: XCTestCase {
         table.scrollToRow(at: last, at: .bottom, animated: false)
         table.layoutIfNeeded()
         let lastCell = try XCTUnwrap(table.cellForRow(at: last) as? DemoTableCell)
-        XCTAssertEqual(lastCell.localizedContent.heading.text, LanguageService.shared.context.format("list.item", 80))
+        XCTAssertEqual(lastCell.localizedContent.heading.text, LanguageService.shared.context.text(.listItem(80)))
         lastCell.localizedContent.draft.text = "saved by stable ID"
         lastCell.localizedContent.draft.sendActions(for: .editingChanged)
         table.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
@@ -290,7 +297,7 @@ final class LanguageTests: XCTestCase {
         XCTAssertTrue(collection.indexPathsForSelectedItems?.contains(first) == true)
         XCTAssertGreaterThan(current.frame.minX, try XCTUnwrap(collection.cellForItem(at: second)).frame.minX)
         let header = try XCTUnwrap(collection.visibleSupplementaryViews(ofKind: UICollectionView.elementKindSectionHeader).first as? DemoCollectionHeader)
-        XCTAssertEqual(header.label.text, LanguageService.shared.context.text("list.section"))
+        XCTAssertEqual(header.label.text, LanguageService.shared.context.text(.listSection))
         let anchor = IndexPath(item: 40, section: 0)
         collection.scrollToItem(at: anchor, at: .top, animated: false)
         collection.layoutIfNeeded()
@@ -302,7 +309,7 @@ final class LanguageTests: XCTestCase {
             let frame = try XCTUnwrap(collection.cellForItem(at: anchor)).frame
             XCTAssertEqual(frame.minY - collection.contentOffset.y - collection.adjustedContentInset.top, delta, accuracy: 2)
             let visibleCell = try XCTUnwrap(collection.cellForItem(at: anchor) as? DemoCollectionCell)
-            XCTAssertEqual(visibleCell.localizedContent.heading.text, LanguageService.shared.context.format("list.item", 41))
+            XCTAssertEqual(visibleCell.localizedContent.heading.text, LanguageService.shared.context.text(.listItem(41)))
         }
     }
 
@@ -362,7 +369,7 @@ final class LanguageTests: XCTestCase {
             fixture.window.layoutIfNeeded()
             let cell = try XCTUnwrap(collection.cellForItem(at: path) as? DemoCollectionCell)
             XCTAssertEqual(cell.localizedContent.draft.text, "compositional draft")
-            XCTAssertEqual(cell.localizedContent.heading.text, LanguageService.shared.context.format("list.item", 31))
+            XCTAssertEqual(cell.localizedContent.heading.text, LanguageService.shared.context.text(.listItem(31)))
             XCTAssertTrue(collection.indexPathsForSelectedItems?.contains(path) == true)
             XCTAssertEqual(cell.frame.minY - collection.contentOffset.y - collection.adjustedContentInset.top, distance, accuracy: 2)
             let other = try XCTUnwrap(collection.cellForItem(at: IndexPath(item: 31, section: 0)))
@@ -382,7 +389,7 @@ final class LanguageTests: XCTestCase {
         collection.setContentOffset(CGPoint(x: 0, y: -collection.adjustedContentInset.top), animated: false)
         collection.layoutIfNeeded()
         let header = try XCTUnwrap(collection.visibleSupplementaryViews(ofKind: UICollectionView.elementKindSectionHeader).first as? DemoCollectionHeader)
-        XCTAssertEqual(header.label.text, LanguageService.shared.context.text("compositional.grid_section"))
+        XCTAssertEqual(header.label.text, LanguageService.shared.context.text(.compositionalGridSection))
     }
 
     @MainActor
@@ -411,7 +418,7 @@ final class LanguageTests: XCTestCase {
             else { XCTAssertGreaterThan(nextX, currentX) }
             XCTAssertEqual(page.orthogonalLocalization?.observedCenters[0], AnyHashable(12))
             XCTAssertEqual(cell.localizedContent.draft.text, "carousel draft")
-            XCTAssertEqual(cell.localizedContent.heading.text, LanguageService.shared.context.format("list.item", 13))
+            XCTAssertEqual(cell.localizedContent.heading.text, LanguageService.shared.context.text(.listItem(13)))
             XCTAssertTrue(collection.indexPathsForSelectedItems?.contains(carouselPath) == true)
             XCTAssertEqual(collection.contentOffset.y, 0, accuracy: 2)
             XCTAssertTrue(collection.collectionViewLayout is UICollectionViewCompositionalLayout)
@@ -514,7 +521,7 @@ final class LanguageTests: XCTestCase {
         XCTAssertEqual((restoredPager.restorationPages[2].controller as? DemoPageViewController)?.draft.text, "page three draft")
         new.coordinator.tabs.selectedIndex = 0
         new.window.layoutIfNeeded()
-        XCTAssertEqual(restoredPager.title, LanguageService.shared.context.text("pages.title"))
+        XCTAssertEqual(restoredPager.title, LanguageService.shared.context.text(.pagesTitle))
         XCTAssertEqual(LanguageService.shared.context.language, .arabic)
         XCTAssertFalse(new.coordinator.restoreInteractionState(activity), "Duplicate delivery must not rewind edits")
     }
@@ -665,7 +672,9 @@ private final class ContainerTestWindow {
     init(content: UIViewController) throws {
         originalSelection = LanguageService.shared.selection
         LanguageService.shared.setSelection(.english)
-        let scene = try XCTUnwrap(UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first)
+        let scenes = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }
+        // A restored background scene cannot reliably finish modal presentation.
+        let scene = try XCTUnwrap(scenes.first { $0.activationState == .foregroundActive } ?? scenes.first)
         previousKeyWindow = scene.windows.first(where: \.isKeyWindow)
         window = UIWindow(windowScene: scene)
         // This row-height regression needs a bounded reading width on both phone and iPad.
@@ -691,7 +700,7 @@ private final class ContainerTestWindow {
 @MainActor
 private final class LocalizedTestSheet: LocalizedViewController {
     override func applyLocalization(_ context: LanguageContext) {
-        title = context.text("detail.title")
+        title = context.text(.detailTitle)
     }
 }
 

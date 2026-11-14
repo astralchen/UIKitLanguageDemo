@@ -1,9 +1,14 @@
 import XCTest
+import UIKit
 
 final class IPadWindowUITests: XCTestCase {
     @MainActor
     func testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart() throws {
         continueAfterFailure = false
+        // Device capability is available in the runner before the app's AX server starts.
+        guard UIDevice.current.userInterfaceIdiom == .pad else {
+            throw XCTSkip("Run on the existing iPad simulator")
+        }
         let app = XCUIApplication()
         let settings = XCUIApplication(bundleIdentifier: "com.apple.Preferences")
         if let libraries = ProcessInfo.processInfo.environment["DYLD_LIBRARY_PATH"] {
@@ -35,7 +40,7 @@ final class IPadWindowUITests: XCTestCase {
             let opener = app.buttons["system.language.settings"].firstMatch
             if opener.waitForExistence(timeout: 10), let originalPreference {
                 opener.tap()
-                if settings.wait(for: .runningForeground, timeout: 10) {
+                if settings.wait(for: .runningForeground, timeout: 30) {
                     selectLanguage(in: settings, names: [originalPreference], requireTerminationOf: nil)
                     app.activate()
                 }
@@ -43,9 +48,8 @@ final class IPadWindowUITests: XCTestCase {
         }
         let opener = app.buttons["system.language.settings"].firstMatch
         XCTAssertTrue(opener.waitForExistence(timeout: 20))
-        guard app.windows.firstMatch.frame.width > 700 else { throw XCTSkip("Run on the existing iPad simulator") }
         opener.tap()
-        XCTAssertTrue(settings.wait(for: .runningForeground, timeout: 10))
+        XCTAssertTrue(settings.wait(for: .runningForeground, timeout: 30))
         openLanguageList(in: settings)
         originalPreference = settings.cells.matching(NSPredicate(format: "identifier IN %@", ["English", "简体中文", "العربية"])).allElementsBoundByIndex.first { $0.isSelected }?.identifier
         XCTAssertNotNil(originalPreference)
@@ -75,7 +79,7 @@ final class IPadWindowUITests: XCTestCase {
         bDraft.tap()
         bDraft.typeText(String(repeating: XCUIKeyboardKey.delete.rawValue, count: "detail A".count) + "detail B")
         windowButton("system.language.settings", in: b).tap()
-        XCTAssertTrue(settings.wait(for: .runningForeground, timeout: 10))
+        XCTAssertTrue(settings.wait(for: .runningForeground, timeout: 30))
         selectLanguage(in: settings, names: ["العربية", "Arabic"], requireTerminationOf: app)
         app.activate()
         XCTAssertTrue(bDraft.waitForExistence(timeout: 20))
@@ -118,10 +122,10 @@ final class IPadWindowUITests: XCTestCase {
         }
         XCTAssertNotNil(target, settings.debugDescription)
         target?.tap()
-        for label in ["Change to Arabic", "Use Arabic", "Change to English", "Use English", "Continue", "更改为阿拉伯语", "使用阿拉伯语", "更改为英语", "使用英语", "继续"] {
-            let button = settings.alerts.buttons[label].firstMatch
-            if button.exists { button.tap(); break }
-        }
+        // One scoped query avoids ten separate full AX snapshots when no alert is shown.
+        let confirmation = settings.alerts.buttons.matching(
+            NSPredicate(format: "label IN %@", ["Change to Arabic", "Use Arabic", "Change to English", "Use English", "Continue", "更改为阿拉伯语", "使用阿拉伯语", "更改为英语", "使用英语", "继续"])).firstMatch
+        if confirmation.exists { confirmation.tap() }
         if let app {
             let stopped = XCTNSPredicateExpectation(predicate: NSPredicate(format: "state == %d", XCUIApplication.State.notRunning.rawValue), object: app)
             XCTAssertEqual(XCTWaiter.wait(for: [stopped], timeout: 15), .completed,
@@ -134,9 +138,15 @@ final class IPadWindowUITests: XCTestCase {
         // iPadOS may open the Apps directory before the app-specific preferences page.
         let appEntry = settings.buttons["com.example.UIKitLanguageDemo"].firstMatch
         let currentLanguageRow = settings.staticTexts.matching(NSPredicate(format: "label IN %@", ["Language", "语言", "اللغة"])).firstMatch
-        if !currentLanguageRow.exists, appEntry.waitForExistence(timeout: 3), appEntry.isHittable { appEntry.tap() }
+        // The Apps directory is populated asynchronously. Wait for either destination,
+        // instead of assuming its app entry is ready within three seconds.
+        let destination = settings.descendants(matching: .any).matching(NSPredicate(
+            format: "identifier == %@ OR label IN %@", "com.example.UIKitLanguageDemo",
+            ["Language", "语言", "اللغة"])).firstMatch
+        XCTAssertTrue(destination.waitForExistence(timeout: 30), settings.debugDescription)
+        if !currentLanguageRow.exists { appEntry.tap() }
         let language = settings.staticTexts.matching(NSPredicate(format: "label IN %@", ["Language", "语言", "اللغة"])).firstMatch
-        XCTAssertTrue(language.waitForExistence(timeout: 12), settings.debugDescription)
+        XCTAssertTrue(language.waitForExistence(timeout: 30), settings.debugDescription)
         language.tap()
         XCTAssertTrue(settings.cells["العربية"].firstMatch.waitForExistence(timeout: 10), settings.debugDescription)
     }

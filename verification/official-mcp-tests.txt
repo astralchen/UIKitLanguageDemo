@@ -1,12 +1,36 @@
 ================================================================================
 TEST RESULTS SUMMARY
 ================================================================================
-Generated: 2026-11-14T05:17:52Z
-Total Results: 23
+Generated: 2026-11-14T10:17:44Z
+Total Results: 25
 ================================================================================
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 1/23
+TEST_RESULT_INDEX: 1/25
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: GeneratedSymbolTests/testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry()
+TEST_DISPLAY_NAME: testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+TEST_LINE_NUMBER: 46
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 2/25
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: GeneratedSymbolTests/testGeneratedResourcesUseExplicitLanguageAndEnglishFallback()
+TEST_DISPLAY_NAME: testGeneratedResourcesUseExplicitLanguageAndEnglishFallback()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+TEST_LINE_NUMBER: 69
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 3/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: IPadRestorationTests/testVersionOneMigrationAndSessionOwnership()
 TEST_DISPLAY_NAME: testVersionOneMigrationAndSessionOwnership()
@@ -18,7 +42,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 2/23
+TEST_RESULT_INDEX: 4/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: IPadRestorationTests/testTripleColumnRestoresAllStacksAndPendingLists()
 TEST_DISPLAY_NAME: testTripleColumnRestoresAllStacksAndPendingLists()
@@ -30,7 +54,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 3/23
+TEST_RESULT_INDEX: 5/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: IPadRestorationTests/testSplitActuallyCollapsesExpandsAndRestoresSidebarMode()
 TEST_DISPLAY_NAME: testSplitActuallyCollapsesExpandsAndRestoresSidebarMode()
@@ -42,7 +66,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 4/23
+TEST_RESULT_INDEX: 6/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently()
 TEST_DISPLAY_NAME: testTwoRealSceneSessionsRestoreIndependently()
@@ -54,7 +78,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 5/23
+TEST_RESULT_INDEX: 7/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testLanguageSwitchPreservesNavigationAndDraft()
 TEST_DISPLAY_NAME: testLanguageSwitchPreservesNavigationAndDraft()
@@ -66,7 +90,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 6/23
+TEST_RESULT_INDEX: 8/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testSelectionPersistsAndMissingKeysHaveFallback()
 TEST_DISPLAY_NAME: testSelectionPersistsAndMissingKeysHaveFallback()
@@ -78,7 +102,7 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 7/23
+TEST_RESULT_INDEX: 9/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testExistingModalSurvivesSwitch()
 TEST_DISPLAY_NAME: testExistingModalSurvivesSwitch()
@@ -90,187 +114,190 @@ TEST_TAGS: (none)
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 8/23
+TEST_RESULT_INDEX: 10/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testSplitPreservesColumnsAndTheirNavigationStacks()
 TEST_DISPLAY_NAME: testSplitPreservesColumnsAndTheirNavigationStacks()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 103
+TEST_LINE_NUMBER: 110
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 9/23
+TEST_RESULT_INDEX: 11/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testPagerPreservesPageAndReversesPhysicalNeighbors()
 TEST_DISPLAY_NAME: testPagerPreservesPageAndReversesPhysicalNeighbors()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 150
+TEST_LINE_NUMBER: 157
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 10/23
+TEST_RESULT_INDEX: 12/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()
 TEST_DISPLAY_NAME: testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 187
+TEST_LINE_NUMBER: 194
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 11/23
+TEST_RESULT_INDEX: 13/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight()
 TEST_DISPLAY_NAME: testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 210
+TEST_LINE_NUMBER: 217
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 12/23
+TEST_RESULT_INDEX: 14/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testTableKeepsReadingAnchorAndRefreshesReusedRows()
 TEST_DISPLAY_NAME: testTableKeepsReadingAnchorAndRefreshesReusedRows()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 237
+TEST_LINE_NUMBER: 244
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 13/23
+TEST_RESULT_INDEX: 15/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()
 TEST_DISPLAY_NAME: testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 271
+TEST_LINE_NUMBER: 278
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 14/23
+TEST_RESULT_INDEX: 16/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()
 TEST_DISPLAY_NAME: testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 309
+TEST_LINE_NUMBER: 316
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 15/23
+TEST_RESULT_INDEX: 17/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
 TEST_DISPLAY_NAME: testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 340
+TEST_LINE_NUMBER: 347
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 16/23
+TEST_RESULT_INDEX: 18/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
 TEST_DISPLAY_NAME: testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 388
+TEST_LINE_NUMBER: 395
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 17/23
+TEST_RESULT_INDEX: 19/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testSystemSelectionUsesAppBundlePreferences()
 TEST_DISPLAY_NAME: testSystemSelectionUsesAppBundlePreferences()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 438
+TEST_LINE_NUMBER: 445
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 18/23
+TEST_RESULT_INDEX: 20/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testActivityRestoresNavigationPagerDraftsAndTableAnchor()
 TEST_DISPLAY_NAME: testActivityRestoresNavigationPagerDraftsAndTableAnchor()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 465
+TEST_LINE_NUMBER: 472
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 19/23
+TEST_RESULT_INDEX: 21/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testActivityRestoresAllCollectionLayouts()
 TEST_DISPLAY_NAME: testActivityRestoresAllCollectionLayouts()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 522
+TEST_LINE_NUMBER: 529
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 20/23
+TEST_RESULT_INDEX: 22/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testSceneActivityValidationIsolationAndLateDelivery()
 TEST_DISPLAY_NAME: testSceneActivityValidationIsolationAndLateDelivery()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 580
+TEST_LINE_NUMBER: 587
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 21/23
+TEST_RESULT_INDEX: 23/25
 TEST_TARGET: UIKitLanguageDemoTests
 TEST_IDENTIFIER: LanguageTests/testActivityRestoresSplitColumnsAndDrafts()
 TEST_DISPLAY_NAME: testActivityRestoresSplitColumnsAndDrafts()
 TEST_STATE: Passed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
-TEST_LINE_NUMBER: 623
+TEST_LINE_NUMBER: 630
 TEST_TAGS: (none)
 
 TEST_ISSUE_COUNT: 0
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 22/23
+TEST_RESULT_INDEX: 24/25
 TEST_TARGET: UIKitLanguageDemoUITests
 TEST_IDENTIFIER: IPadWindowUITests/testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()
 TEST_DISPLAY_NAME: testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()
-TEST_STATE: Passed
+TEST_STATE: Failed
 TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift
 TEST_LINE_NUMBER: 4
 TEST_TAGS: (none)
 
-TEST_ISSUE_COUNT: 0
+TEST_ISSUE_COUNT: 1
+
+TEST_ISSUES:
+    UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift:45 IPadWindowUITests/testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart(): Failed to get matching snapshots: Error getting main window kAXErrorServerNotFound
 
 --------------------------------------------------------------------------------
-TEST_RESULT_INDEX: 23/23
+TEST_RESULT_INDEX: 25/25
 TEST_TARGET: UIKitLanguageDemoUITests
 TEST_IDENTIFIER: UIKitLanguageDemoUITests/testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft()
 TEST_DISPLAY_NAME: testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft()

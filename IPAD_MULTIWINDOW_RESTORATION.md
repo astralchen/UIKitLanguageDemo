@@ -63,6 +63,8 @@ SceneDelegate 为每个 session 分配并保存 windowNumber，并把普通恢�
 
 Scene 重建后，旧导航控制器可能暂时仍被 UIKit 过渡或外部业务引用保留。iOS 18+ 的 Tab 标题由稳定 UITab 模型统一更新，导航控制器不再同时写入桥接的 tabBarItem.title；这避免旧 Tab 视图已经释放时，语言刷新访问 UIKit 无主引用而崩溃。iOS 15–17 继续更新传统 tabBarItem，两个路径均保留原导航控制器与栈。
 
-最终官方 MCP 验收：**23 passed / 0 failed / 0 skipped / 0 not run**。结果见 [完整测试 JSON](verification/official-mcp-tests.json)，截图与系统交回状态的文本附件见 [iPad UI 证据目录](verification/ipad-ui/manifest.json)。
+生成符号迁移前的历史官方 MCP 验收：**23 passed / 0 failed / 0 skipped / 0 not run**。结果见 [完整测试 JSON](verification/official-mcp-ipad-twenty-three-tests.json)，截图与系统交回状态的文本附件见 [iPad UI 证据目录](verification/ipad-ui/manifest.json)。
 
 附件说明：原始 XCTest 截图保留了模拟器界面方向不同步时的黑边／截断，不能单独作为三列完整视觉截图。23 项测试的状态断言与文本附件独立有效。验收结束后，通过 Simulator 旋转同步显示方向，并在同一 iPad 手动打开三列页面，确认 RTL 的 primary／supplementary／secondary 均完整显示；补充截图见 [三列视觉核对](verification/ipad-ui/rtl-three-columns-visual-check.jpg)。该补充截图由 MobileBuildMCP 捕获，保留了原始传感器的 180° 方向；Simulator 窗口中显示正常。不对证据图片做旋转或裁切处理，也不计作 Apple 官方 MCP 测试结果。
+
+生成符号迁移后的最新结果见 README：全量 24/25，双窗口 UI 复验受 AX 超时阻塞，尚未完成本轮最终验收。

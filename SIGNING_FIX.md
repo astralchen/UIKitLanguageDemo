@@ -1,6 +1,6 @@
 # 签名修复与官方 MCP 验收
 
-> 六项签名验收为历史记录；列表扩展后的最新验收为官方 MCP RunSomeTests 23/23（含 iPad 双窗口三列系统重启测试），见 verification/official-mcp-tests.json。
+> 六项及 iPad 23/23 签名验收均为历史记录。生成符号迁移后构建成功，四项严格签名校验通过；当前测试为 24/25，通过项包括全部单元测试，剩余双窗口 UI 受 AX 超时阻塞。见 verification/official-mcp-tests.json。
 
 2026-11-14（Asia/Shanghai）。
 
@@ -29,7 +29,7 @@ OTHER_CODE_SIGN_FLAGS = --verbose=2
 
 ## 验证证据
 
-- `verification/official-mcp-original-six-tests.json`：最初六项签名修复验收；`official-mcp-tests.json` 为最新 23 项结果。
+- `verification/official-mcp-original-six-tests.json`：最初六项签名修复验收；`official-mcp-tests.json` 为最新 25 项运行结果（24 passed / 1 failed）。
 - `verification/official-mcp-original-six-tests.txt`：最初六项摘要；`official-mcp-tests.txt` 为最新摘要。
 - `verification/codesign-build-evidence.txt`：官方测试构建实际执行的签名命令与签名成功输出。
 - `verification/signature-verification.json`：测试 bundle 严格签名校验，以及宿主应用 deep / strict 校验，退出码均为 0。

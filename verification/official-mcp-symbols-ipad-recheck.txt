@@ -1,0 +1,26 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-14T10:37:19Z
+Total Results: 1
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/1
+TEST_TARGET: UIKitLanguageDemoUITests
+TEST_IDENTIFIER: IPadWindowUITests/testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()
+TEST_DISPLAY_NAME: testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()
+TEST_STATE: Failed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift
+TEST_LINE_NUMBER: 5
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 1
+
+TEST_ISSUES:
+    UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift:50 IPadWindowUITests/testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart(): Failed to get matching snapshots: Timed out while evaluating UI query.
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

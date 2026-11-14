@@ -1,0 +1,9 @@
+{
+  "existingSimulatorUDID": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+  "newDevicesCreated": 0,
+  "deviceRestarts": 0,
+  "observedIssue": "Settings remained on a blank loading page and the iPad UI test foreground wait expired",
+  "recovery": "Terminate and relaunch only com.apple.Preferences on the existing booted iPad; confirmed General settings UI fully rendered before retry",
+  "productionAppSourcesChangedDuringRecovery": false,
+  "restartedAppBundleID": "com.apple.Preferences"
+}

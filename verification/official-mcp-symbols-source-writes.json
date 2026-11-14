@@ -1,0 +1,85 @@
+{
+  "sourceEditingTool": "Apple official MCP XcodeWrite",
+  "filesMatched": 19,
+  "allSourcesMatchSentContent": true,
+  "generatedSourceFilesCheckedIn": false,
+  "rawLocalizationCallSitesInApp": 0,
+  "files": [
+    {
+      "file": "UIKitLanguageDemo/Localization/AppText.swift",
+      "sha256": "d1087d1a8cc3f5ab715e6ce7b01979edd1a2ae337e8673ef319c02ff21161673"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/LanguageContext.swift",
+      "sha256": "17ea1b8b61a493c6ba0b0b6868a843b2b8c220725b5ac22d6430074a09a82ab0"
+    },
+    {
+      "file": "UIKitLanguageDemo/SceneDelegate.swift",
+      "sha256": "8b128acb1eea960ba3061553dee52ba8a8c33515856274c2ec9bf64a64571430"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/CollectionDemoViewController.swift",
+      "sha256": "738fe70a974d3efcdce6f892c561c8f3d38b5eb19b5887b1f705cbb580efe675"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/DetailViewController.swift",
+      "sha256": "7b80fed8724d16976ea0cdef613831b9626dd9e430963299a8ad3836a03f4797"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift",
+      "sha256": "fa792054a373ee43621c6bae640aa2f47daff72f29847324ad0263b2d824f5f2"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/HomeViewController.swift",
+      "sha256": "ab738f7dfc55b15ccd7a0032d27a0e0714b82d0a5b6a2e7b923ebfa813732a02"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/ListDemoContent.swift",
+      "sha256": "43bf1b6c67a20693faa5f6a4d5759d3e002618714f9f709d28a272e1289b06b9"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/LanguagePickerView.swift",
+      "sha256": "ac9ee5656e000c0908d4d155c3950d3f20856d31d193f035e3b263dd2eb2f8bf"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/ContainerDemos.swift",
+      "sha256": "59d4f657be11322a7ec6a1f11d518b9a2ad886e86b1f5e0941ebde77e1ec59b5"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/SettingsViewController.swift",
+      "sha256": "1f2425c9120dfa91d7a567b6159021821d8624d7ce28f4fbce44ef94da34277f"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift",
+      "sha256": "91cc6070764c0a58ed98f8f44fb885c531700ce9d4ddfbcd343db494ffdadec5"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/SceneStateCoordinator.swift",
+      "sha256": "a1eb4dcbbfd57c528caf1b76898b9d6537f71d2a706112c06db25c4803111d2c"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/LocalizedControllers.swift",
+      "sha256": "cae5061359cd06c118dc74d7efce34d2ef403978c1b7590e2987243876a8cf4e"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/SceneWindowService.swift",
+      "sha256": "9c285b69b5483d78ed0c2dee501cf0e8ef7460acd67849f1969eca2d6f37d582"
+    },
+    {
+      "file": "UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "sha256": "364bdfef48368054ae8aaaf593eea382c36dfcc8126e1dfbb71eda6519b59b3b"
+    },
+    {
+      "file": "UIKitLanguageDemoTests/GeneratedSymbolTests.swift",
+      "sha256": "a7fe3e952a3517fa8a333d92cae46455772c4bedaaeaf61d0321a207d7042eb8"
+    },
+    {
+      "file": "UIKitLanguageDemoUITests/IPadWindowUITests.swift",
+      "sha256": "00d5af12beb8b8d95813533212c1515e3727ea4c05e0fa68ff93bec152cb38f0"
+    },
+    {
+      "file": "UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift",
+      "sha256": "2e34741e0a17dd1a5a53edcae3b468670986b7315a27aff59f93a7c9f1a0fb37"
+    }
+  ]
+}

@@ -35,30 +35,31 @@
   },
   "officialBuild": {
     "success": true,
-    "elapsedSeconds": 7.434,
+    "elapsedSeconds": 6.742,
     "errors": [],
     "tool": "Apple official MCP BuildProject",
-    "finalSourcesAlsoBuiltBy": "Apple official MCP RunSomeTests (23 tests)"
+    "finalSourcesAlsoBuiltBy": "Apple official MCP RunSomeTests (25 tests)"
   },
   "officialTestDiscovery": {
-    "enabled": 23,
+    "enabled": 25,
     "disabled": 0
   },
   "officialTestRun": {
-    "status": "passed",
+    "status": "partial: iPad UI infrastructure failure",
     "tool": "Apple official MCP RunSomeTests",
     "counts": {
       "expectedFailures": 0,
-      "failed": 0,
+      "failed": 1,
       "notRun": 0,
-      "passed": 23,
+      "passed": 24,
       "skipped": 0,
-      "total": 23
+      "total": 25
     },
     "scheme": "UIKitLanguageDemo",
     "testPlan": "UIKitLanguageDemo",
     "evidence": "verification/official-mcp-tests.json",
-    "summary": "verification/official-mcp-tests.txt"
+    "summary": "verification/official-mcp-tests.txt",
+    "latestRecheck": "verification/official-mcp-symbols-ipad-recheck.json"
   },
   "fallbackTestRun": {
     "status": "passed",
@@ -107,13 +108,15 @@
     "iPadExistingUDID": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA"
   },
   "acceptance": {
+    "status": "partial",
     "tool": "Apple official MCP RunSomeTests",
     "expectedFailures": 0,
-    "failed": 0,
+    "failed": 1,
     "notRun": 0,
-    "passed": 23,
+    "passed": 24,
     "skipped": 0,
-    "total": 23
+    "total": 25,
+    "remaining": "iPad two-window UI test: AX query timeout; not verified passing after final harness edits"
   },
   "initialMigrationSourceMatches": [
     {
@@ -256,8 +259,12 @@
       "sha256": "5db8258dc7bdbb6e25ad931a564cbf679995b153b0037441c9e83565fd4f3366"
     },
     {
+      "file": "UIKitLanguageDemo/Localization/AppText.swift",
+      "sha256": "d1087d1a8cc3f5ab715e6ce7b01979edd1a2ae337e8673ef319c02ff21161673"
+    },
+    {
       "file": "UIKitLanguageDemo/Localization/LanguageContext.swift",
-      "sha256": "a56e9ab0e989689067eb71a2d06e56d0694c37cdbf9fff9d73d23fbcfe9dbacd"
+      "sha256": "17ea1b8b61a493c6ba0b0b6868a843b2b8c220725b5ac22d6430074a09a82ab0"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LanguageService.swift",
@@ -277,11 +284,11 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedControllers.swift",
-      "sha256": "2224700a04506a6173ee939851b4153b76d655edaa6ce6b0552b8abb3d10bff4"
+      "sha256": "cae5061359cd06c118dc74d7efce34d2ef403978c1b7590e2987243876a8cf4e"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift",
-      "sha256": "7686b0e6cb753ca1383e32cabaf2bc052baa9af38dd6c474cc01a8362d0da4d4"
+      "sha256": "91cc6070764c0a58ed98f8f44fb885c531700ce9d4ddfbcd343db494ffdadec5"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift",
@@ -297,11 +304,11 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/SceneStateCoordinator.swift",
-      "sha256": "6e4aaa6d2d0f88f57cc266952bf3b154ea6d86a6075956c777c63c1f968b0c3b"
+      "sha256": "a1eb4dcbbfd57c528caf1b76898b9d6537f71d2a706112c06db25c4803111d2c"
     },
     {
       "file": "UIKitLanguageDemo/Localization/SceneWindowService.swift",
-      "sha256": "de584d6595e4cff3ab4006015073ae25725e9afcab2e9e0c9377acfbe9859710"
+      "sha256": "9c285b69b5483d78ed0c2dee501cf0e8ef7460acd67849f1969eca2d6f37d582"
     },
     {
       "file": "UIKitLanguageDemo/Localization/TextInputSnapshot.swift",
@@ -309,39 +316,43 @@
     },
     {
       "file": "UIKitLanguageDemo/SceneDelegate.swift",
-      "sha256": "bdbb5fc7f679f0eb15428682b11752896910fe17f1f28a445a5ff87d1a30c5ce"
+      "sha256": "8b128acb1eea960ba3061553dee52ba8a8c33515856274c2ec9bf64a64571430"
     },
     {
       "file": "UIKitLanguageDemo/Screens/CollectionDemoViewController.swift",
-      "sha256": "10fe02794a7b8292ff241bfeb140101844b967177d164f4f91228462cbd7643c"
+      "sha256": "738fe70a974d3efcdce6f892c561c8f3d38b5eb19b5887b1f705cbb580efe675"
     },
     {
       "file": "UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift",
-      "sha256": "3141f096b90a8804f3702dda1e119a9d6943ab9b80738702b7d82e5eb19cefa1"
+      "sha256": "fa792054a373ee43621c6bae640aa2f47daff72f29847324ad0263b2d824f5f2"
     },
     {
       "file": "UIKitLanguageDemo/Screens/ContainerDemos.swift",
-      "sha256": "688c2473791098a710e4daa7509e4bf304fecafa965846a00f524f165b398db5"
+      "sha256": "59d4f657be11322a7ec6a1f11d518b9a2ad886e86b1f5e0941ebde77e1ec59b5"
     },
     {
       "file": "UIKitLanguageDemo/Screens/DetailViewController.swift",
-      "sha256": "d757c411c4512b0ca66e4586fd4ff5a7b637bac72795cb01a57818a085b685c2"
+      "sha256": "7b80fed8724d16976ea0cdef613831b9626dd9e430963299a8ad3836a03f4797"
     },
     {
       "file": "UIKitLanguageDemo/Screens/HomeViewController.swift",
-      "sha256": "a5aa05f2214e1542cc34f0edb4ba36eebd238b7060a646cb0b62dad4f5ab1d5c"
+      "sha256": "ab738f7dfc55b15ccd7a0032d27a0e0714b82d0a5b6a2e7b923ebfa813732a02"
     },
     {
       "file": "UIKitLanguageDemo/Screens/LanguagePickerView.swift",
-      "sha256": "0140bde90bb5496ffd2859bb6f0e7f83ad7e9a7c62ad41e01de2b7e5dac9efc3"
+      "sha256": "ac9ee5656e000c0908d4d155c3950d3f20856d31d193f035e3b263dd2eb2f8bf"
     },
     {
       "file": "UIKitLanguageDemo/Screens/ListDemoContent.swift",
-      "sha256": "22a02dcfaaab760d33ee3332f4c171450fdd13ad3a045a7a45d28dc285d1be31"
+      "sha256": "43bf1b6c67a20693faa5f6a4d5759d3e002618714f9f709d28a272e1289b06b9"
     },
     {
       "file": "UIKitLanguageDemo/Screens/SettingsViewController.swift",
-      "sha256": "eb76de91ac8442509ba3f6c7fa167ad5ca9a84e67ade0ae7bfd33831042b6f73"
+      "sha256": "1f2425c9120dfa91d7a567b6159021821d8624d7ce28f4fbce44ef94da34277f"
+    },
+    {
+      "file": "UIKitLanguageDemoTests/GeneratedSymbolTests.swift",
+      "sha256": "a7fe3e952a3517fa8a333d92cae46455772c4bedaaeaf61d0321a207d7042eb8"
     },
     {
       "file": "UIKitLanguageDemoTests/IPadRestorationTests.swift",
@@ -349,15 +360,15 @@
     },
     {
       "file": "UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
-      "sha256": "df20d4f9f9c4c2649cf0e2003b12c5be390b4677f92005cfb9740a0f6457dfb6"
+      "sha256": "364bdfef48368054ae8aaaf593eea382c36dfcc8126e1dfbb71eda6519b59b3b"
     },
     {
       "file": "UIKitLanguageDemoUITests/IPadWindowUITests.swift",
-      "sha256": "0273b6b82923e11d6a831310a9b8d29b4c0451b37243b307f56a8bacb4cf2b4d"
+      "sha256": "00d5af12beb8b8d95813533212c1515e3727ea4c05e0fa68ff93bec152cb38f0"
     },
     {
       "file": "UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift",
-      "sha256": "353d5eaf0ebca42afb2365b6c26b5e6302a35c00b24ac53adea68f7c654a88da"
+      "sha256": "2e34741e0a17dd1a5a53edcae3b468670986b7315a27aff59f93a7c9f1a0fb37"
     }
   ],
   "compositionalExtension": {
@@ -467,5 +478,28 @@
       "physical iPad"
     ],
     "originalIPhoneFinalState": "Shutdown (not restarted by agent)"
+  },
+  "generatedLocalizationSymbols": {
+    "guide": "https://developer.apple.com/documentation/xcode/using-generated-localizable-symbols-in-your-code",
+    "catalogKeys": 38,
+    "api": "AppText bridges actual Xcode-generated LocalizedStringResource symbols on iOS 16+; centralized typed iOS 15 adapter",
+    "minimumAppOS": "15.0",
+    "fallback": "current language then explicit English; per-render locale, no translated string cache",
+    "generatedSourcesCommitted": false,
+    "newTestsPassed": 2,
+    "unitTestsPassed": 23,
+    "singleWindowUITestPassed": true,
+    "twoWindowUIRecheckPassed": false,
+    "actualRuntime": "iOS 26.5",
+    "iOS15RuntimeVerified": false,
+    "iOS15Evidence": [
+      "minimum deployment build",
+      "weak Foundation references",
+      "all 38 entries compare actual legacy adapter and generated resolver in three languages"
+    ],
+    "existingSimulatorUDID": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+    "newDevicesCreated": 0,
+    "deviceRestarts": 0,
+    "springBoardServiceRecoveries": 1
   }
 }

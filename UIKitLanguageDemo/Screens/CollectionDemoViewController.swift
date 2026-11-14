@@ -61,7 +61,7 @@ final class CollectionDemoViewController: LocalizedViewController, UICollectionV
     }
 
     override func applyLocalization(_ context: LanguageContext) {
-        title = context.text(axis == .vertical ? "collection.title" : "collection.horizontal")
+        title = context.text(axis == .vertical ? .collectionTitle : .collectionHorizontal)
         languagePicker.applyLocalization(context)
         LayoutDirection.applyBoundary(context, to: stack)
     }
@@ -94,11 +94,11 @@ final class CollectionDemoViewController: LocalizedViewController, UICollectionV
             return CGSize(width: context.isRTL ? 290 : 230, height: max(180, collectionView.bounds.height - 24))
         }
         let width = max(120, floor((collectionView.bounds.width - 12) / 2))
-        let heading = context.format("list.item", (id(at: path) ?? 0) + 1)
+        let heading = context.text(.listItem((id(at: path) ?? 0) + 1))
         let titleHeight = heading.boundingRect(with: CGSize(width: width - 24, height: .greatestFiniteMagnitude),
             options: [.usesLineFragmentOrigin, .usesFontLeading],
             attributes: [.font: UIFont.preferredFont(forTextStyle: .headline)], context: nil).height
-        let bodyHeight = context.text("list.description").boundingRect(with: CGSize(width: width - 24, height: .greatestFiniteMagnitude),
+        let bodyHeight = context.text(.listDescription).boundingRect(with: CGSize(width: width - 24, height: .greatestFiniteMagnitude),
             options: [.usesLineFragmentOrigin, .usesFontLeading],
             attributes: [.font: UIFont.preferredFont(forTextStyle: .body)], context: nil).height
         let inputHeight = max(36, UIFont.preferredFont(forTextStyle: .body).lineHeight + 12)

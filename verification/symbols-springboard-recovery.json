@@ -1,0 +1,11 @@
+{
+  "time": "2026-11-14T18:40:06.911421+08:00",
+  "simulatorUDID": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+  "launchdSimPID": 29144,
+  "oldSpringBoardPID": 30936,
+  "newSpringBoardPID": 39580,
+  "signal": "SIGTERM",
+  "scope": "iPad SpringBoard UI service only",
+  "deviceRestarted": false,
+  "deviceErased": false
+}
