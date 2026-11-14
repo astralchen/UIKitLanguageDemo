@@ -1,0 +1,26 @@
+[
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "3A5803FA-CC8D-4645-A351-E8F211C4A538.png",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Arabic input and LTR phone_0_A5993FF4-4ABD-4F2B-A535-EB0212F96D29.png",
+    "timestamp": 1794668566.036,
+    "publishedFileName": "arabic.png",
+    "testIdentifier": "NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+    "resultBundleName": "Test-UIKitLanguageDemo-2026.11.14_23-01-50-+0800.xcresult"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "560A3325-7BCE-4B83-86AA-0DCB6868CC0F.png",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "English input and LTR phone_0_A4831B2C-085B-4038-8B95-8FF98B464A5E.png",
+    "timestamp": 1794668562.545,
+    "publishedFileName": "english.png",
+    "testIdentifier": "NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+    "resultBundleName": "Test-UIKitLanguageDemo-2026.11.14_23-01-50-+0800.xcresult"
+  }
+]

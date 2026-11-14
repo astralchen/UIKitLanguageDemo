@@ -90,6 +90,7 @@ final class SplitMenuViewController: LocalizedViewController {
         title = context.text(column == .primary ? .splitTitle : .splitMiddle)
         draftField.placeholder = context.text(.detailPlaceholder)
         draftField.accessibilityLabel = context.text(.detailDraft)
+        LayoutDirection.applyTextField(context, to: draftField)
         middle.setTitle(context.text(.splitMiddle), for: .normal)
         push.setTitle(context.text(.splitPush), for: .normal)
         expand.setTitle(context.text(.splitToggle), for: .normal)
@@ -146,6 +147,8 @@ final class DemoPageViewController: LocalizedViewController {
         heading.text = context.text(.pagesNumber(number))
         heading.textAlignment = context.isRTL ? .right : .left
         draft.placeholder = context.text(.detailPlaceholder)
+        draft.accessibilityLabel = context.text(.detailDraft)
+        LayoutDirection.applyTextField(context, to: draft)
         previousButton.setTitle(context.text(.pagesPrevious), for: .normal)
         nextButton.setTitle(context.text(.pagesNext), for: .normal)
         previousButton.isEnabled = number > 1

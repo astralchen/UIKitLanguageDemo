@@ -1,0 +1,53 @@
+{
+  "status": "passed focused checks across two runs",
+  "scope": "5 unit tests passed in initial run plus 1 UI test passed on recheck; not a full 31-test run",
+  "tool": "Apple official MCP XcodeWrite / BuildProject / RunSomeTests",
+  "simulator": "iPhone 17 Pro / iOS 26.5",
+  "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+  "createdDevices": 0,
+  "deviceRestarts": 0,
+  "baseline": {
+    "expectedFailureReproduced": true,
+    "source": "official-mcp-text-direction-reproduction.json"
+  },
+  "initial": {
+    "counts": {
+      "expectedFailures": 0,
+      "failed": 1,
+      "notRun": 0,
+      "passed": 5,
+      "skipped": 0,
+      "total": 6
+    },
+    "source": "official-mcp-text-direction-initial-run.json"
+  },
+  "uiRecheck": {
+    "counts": {
+      "expectedFailures": 0,
+      "failed": 0,
+      "notRun": 0,
+      "passed": 1,
+      "skipped": 0,
+      "total": 1
+    },
+    "source": "official-mcp-text-direction-ui-recheck.json"
+  },
+  "uniqueChecksPassed": 6,
+  "checks": [
+    "Detail, split, pager and shared table/collection draft fields follow App leading alignment",
+    "Mixed Latin/Arabic draft text and UTF-16 selection offsets 3...7 survive language changes",
+    "Real UITextInput first responder retains marked Chinese composition across EN/AR switches",
+    "Empty caret geometry follows App leading edge",
+    "Phone aligns to App edge while LTR paragraph and CoreText offsets keep country code before final digit",
+    "Navigation state, native gestures, back titles and picker geometry regressions remain passing",
+    "Original English/Arabic XCTest screenshots visually inspected: placeholder and phone alignment correct"
+  ],
+  "focusFixture": "Real UITextField first responder with test-only custom inputView; no system keyboard UI verification claimed.",
+  "uiRetryReason": "Initial restart restored Home instead of Detail. UI fixture now waits for runningBackground before terminate; recheck passed. No production changes between initial and UI recheck.",
+  "screenshots": [
+    "text-direction-ui/english.png",
+    "text-direction-ui/arabic.png"
+  ],
+  "compatibility": "Only iOS 15-compatible APIs added; iOS 15 runtime was not executed.",
+  "historicalFailures": "Historical generated-symbol iPad AX failure remains recorded separately."
+}

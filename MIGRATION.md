@@ -1,5 +1,7 @@
 # Xcode 原生工程与官方 MCP 迁移记录
 
+最新输入方向修复：输入框按 App 起始边对齐，手机号按 App 对齐并保持 LTR 字符顺序。官方 MCP 构建成功，五项单元及 UI 单项复验通过，两个原始截图已核对。目录共 31 项，本轮未全量重跑，详见 verification/text-direction-verification.json。源码哈希已更新。
+
 最新返回标题修复：导航容器在不加载栈内前序页面的情况下刷新所有返回标题，覆盖恢复后直接进入详情。官方 MCP 构建及既有 iPhone 上四项定向回归全部通过；目录共 29 项，本轮未全量重跑。失败复现与最终通过证据见 verification/navigation-back-title-verification.json，源码哈希已更新。
 
 最新语言按钮修复：Apple 官方 MCP 写入与构建，既有 iPhone 17 Pro 上三项定向回归全部通过。旧实现的布局失败与最终通过记录均存于 verification/language-picker-alignment-verification.json；当前目录共 28 项，本轮未全量重跑。当前源码哈希已更新。

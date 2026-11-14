@@ -1,0 +1,1033 @@
+Test UIKitLanguageDemo
+  Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+      t =     0.01s Start Test at 2026-11-14 22:58:46.947
+      t =     0.26s Set Up
+      t =     0.31s Open com.example.UIKitLanguageDemo
+      t =     0.31s     Launch com.example.UIKitLanguageDemo
+      t =     3.16s         Setting up automation session
+      t =     8.29s         Wait for com.example.UIKitLanguageDemo to idle
+      t =    11.51s Waiting 20.0s for "home.openDetail" Button to exist
+      t =    12.53s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+      t =    12.53s         Checking existence of `"home.openDetail" Button`
+      t =    12.97s Tap "home.openDetail" Button
+      t =    12.97s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    12.99s     Find the "home.openDetail" Button
+      t =    13.38s     Check for interrupting elements affecting "home.openDetail" Button
+      t =    13.67s     Synthesize event
+      t =    14.08s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    15.17s Waiting 10.0s for "detail.draft" TextField to exist
+      t =    16.18s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    16.19s         Checking existence of `"detail.draft" TextField`
+      t =    16.59s Find the "language.system" Button
+      t =    16.91s Waiting 10.0s for "language.en" Button to exist
+      t =    17.93s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+      t =    17.93s         Checking existence of `"language.en" Button`
+      t =    18.26s Tap "language.zh-Hans" Button
+      t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    18.27s     Find the "language.zh-Hans" Button
+      t =    18.62s     Check for interrupting elements affecting "language.zh-Hans" Button
+      t =    19.00s     Synthesize event
+      t =    19.41s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    19.52s Waiting 5.0s for Button (First Match) to exist
+      t =    20.55s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+      t =    20.55s         Checking existence of `Button (First Match)`
+      t =    20.73s Pressing Home button
+      t =    21.20s Terminate com.example.UIKitLanguageDemo:46842
+      t =    22.24s Open com.example.UIKitLanguageDemo
+      t =    22.24s     Launch com.example.UIKitLanguageDemo
+      t =    23.10s         Setting up automation session
+      t =    26.91s         Wait for com.example.UIKitLanguageDemo to idle
+      t =    29.63s Waiting 20.0s for "detail.draft" TextField to exist
+      t =    30.65s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    30.65s         Checking existence of `"detail.draft" TextField`
+      t =    31.00s         Capturing element debug description
+      t =    31.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    31.72s         Checking existence of `"detail.draft" TextField`
+      t =    31.96s         Capturing element debug description
+      t =    32.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    32.69s         Checking existence of `"detail.draft" TextField`
+      t =    32.98s         Capturing element debug description
+      t =    33.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    33.70s         Checking existence of `"detail.draft" TextField`
+      t =    33.94s         Capturing element debug description
+      t =    34.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    34.69s         Checking existence of `"detail.draft" TextField`
+      t =    35.08s         Capturing element debug description
+      t =    35.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    35.72s         Checking existence of `"detail.draft" TextField`
+      t =    36.60s         Capturing element debug description
+      t =    36.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    36.70s         Checking existence of `"detail.draft" TextField`
+      t =    37.15s         Capturing element debug description
+      t =    37.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    37.69s         Checking existence of `"detail.draft" TextField`
+      t =    38.11s         Capturing element debug description
+      t =    38.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    38.64s         Checking existence of `"detail.draft" TextField`
+      t =    39.03s         Capturing element debug description
+      t =    39.66s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    39.67s         Checking existence of `"detail.draft" TextField`
+      t =    40.00s         Capturing element debug description
+      t =    40.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    40.64s         Checking existence of `"detail.draft" TextField`
+      t =    41.05s         Capturing element debug description
+      t =    41.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    41.68s         Checking existence of `"detail.draft" TextField`
+      t =    42.05s         Capturing element debug description
+      t =    42.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    42.69s         Checking existence of `"detail.draft" TextField`
+      t =    43.06s         Capturing element debug description
+      t =    43.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    43.69s         Checking existence of `"detail.draft" TextField`
+      t =    43.99s         Capturing element debug description
+      t =    44.71s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    44.71s         Checking existence of `"detail.draft" TextField`
+      t =    44.98s         Capturing element debug description
+      t =    45.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    45.64s         Checking existence of `"detail.draft" TextField`
+      t =    45.90s         Capturing element debug description
+      t =    46.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    46.64s         Checking existence of `"detail.draft" TextField`
+      t =    46.91s         Capturing element debug description
+      t =    47.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    47.64s         Checking existence of `"detail.draft" TextField`
+      t =    47.91s         Capturing element debug description
+      t =    48.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    48.65s         Checking existence of `"detail.draft" TextField`
+      t =    48.86s         Capturing element debug description
+      t =    49.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    49.64s         Checking existence of `"detail.draft" TextField`
+      t =    49.83s         Capturing element debug description
+      t =    49.84s     Checking existence of `"detail.draft" TextField`
+      t =    50.04s Collecting debug information to assist test failure triage
+      t =    50.04s     Requesting snapshot of accessibility hierarchy for app with pid 46853
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:34: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed
+      t =    50.52s Tear Down
+  Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (50.846 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+  Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.145 seconds).
+  Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+  Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.548 seconds).
+  Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+  Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.257 seconds).
+  Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' started.
+  Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' passed (1.144 seconds).
+  Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+  Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.529 seconds).
+
+  Launch actions
+    Launch UIKitLanguageDemoUITests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoUITests
+        notice:Launching com.example.UIKitLanguageDemoUITests.xctrunner
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoUITests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemoTests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoTests
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoTests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+  Generating coverage report
+    notice:Unable to load coverage tools for toolchain 'com.apple.dt.toolchain.Metal.32023.883': Error Domain=XCTHLLVMCoverageToolsErrorDomain Code=2 "libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain" UserInfo={NSLocalizedDescription=libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain}
+  
+    Downloading profiles from iPhone 17 Pro
+      notice:Downloading profiles for com.example.UIKitLanguageDemoUITests.xctrunner from 1 directory
+      notice:Downloading profiles for com.example.UIKitLanguageDemo from 3 directories
+    
+    Merging 4 profiles using llvm-profdata (2100.1.1.101.0)
+    
+    Pre-processing target built products
+    
+    Processing source file data
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneStateCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/AppDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/LanguagePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LayoutDirection.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneWindowService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/TextInputSnapshot.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/OrthogonalLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ContainerDemos.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/AppText.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedControllers.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/DetailViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageContext.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CollectionDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ListDemoContent.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListStateRestoration.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneState.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/SceneDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/HomeViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/SettingsViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift
+      
+    Generating target entries
+      notice:Generating entry for target UIKitLanguageDemo.app
+      notice:Generating entry for target UIKitLanguageDemoTests.xctest
+      notice:Generating entry for target UIKitLanguageDemoUITests.xctest
+    
+  Testing Configuration 1
+    Test target UIKitLanguageDemoUITests
+      UIKitLanguageDemoUITests-Runner (46834)
+        2026-11-14 22:58:43.061434+0800 UIKitLanguageDemoUITests-Runner[46834:1477108] [Default] Running tests...
+            t =      nans Interface orientation changed to Portrait
+        Test Suite 'Selected tests' started at 2026-11-14 22:58:46.936.
+        Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 22:58:46.939.
+        Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:58:46.940.
+        Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+            t =     0.01s Start Test at 2026-11-14 22:58:46.947
+            t =     0.26s Set Up
+            t =     0.31s Open com.example.UIKitLanguageDemo
+            t =     0.31s     Launch com.example.UIKitLanguageDemo
+            t =     3.16s         Setting up automation session
+            t =     8.29s         Wait for com.example.UIKitLanguageDemo to idle
+            t =    11.51s Waiting 20.0s for "home.openDetail" Button to exist
+            t =    12.53s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+            t =    12.53s         Checking existence of `"home.openDetail" Button`
+            t =    12.97s Tap "home.openDetail" Button
+            t =    12.97s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    12.99s     Find the "home.openDetail" Button
+            t =    13.38s     Check for interrupting elements affecting "home.openDetail" Button
+            t =    13.67s     Synthesize event
+            t =    14.08s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    15.17s Waiting 10.0s for "detail.draft" TextField to exist
+            t =    16.18s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    16.19s         Checking existence of `"detail.draft" TextField`
+            t =    16.59s Find the "language.system" Button
+            t =    16.91s Waiting 10.0s for "language.en" Button to exist
+            t =    17.93s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+            t =    17.93s         Checking existence of `"language.en" Button`
+            t =    18.26s Tap "language.zh-Hans" Button
+            t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    18.27s     Find the "language.zh-Hans" Button
+            t =    18.62s     Check for interrupting elements affecting "language.zh-Hans" Button
+            t =    19.00s     Synthesize event
+            t =    19.41s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    19.52s Waiting 5.0s for Button (First Match) to exist
+            t =    20.55s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+            t =    20.55s         Checking existence of `Button (First Match)`
+            t =    20.73s Pressing Home button
+            t =    21.20s Terminate com.example.UIKitLanguageDemo:46842
+            t =    22.24s Open com.example.UIKitLanguageDemo
+            t =    22.24s     Launch com.example.UIKitLanguageDemo
+            t =    23.10s         Setting up automation session
+            t =    26.91s         Wait for com.example.UIKitLanguageDemo to idle
+            t =    29.63s Waiting 20.0s for "detail.draft" TextField to exist
+            t =    30.65s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    30.65s         Checking existence of `"detail.draft" TextField`
+            t =    31.00s         Capturing element debug description
+            t =    31.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    31.72s         Checking existence of `"detail.draft" TextField`
+            t =    31.96s         Capturing element debug description
+            t =    32.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    32.69s         Checking existence of `"detail.draft" TextField`
+            t =    32.98s         Capturing element debug description
+            t =    33.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    33.70s         Checking existence of `"detail.draft" TextField`
+            t =    33.94s         Capturing element debug description
+            t =    34.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    34.69s         Checking existence of `"detail.draft" TextField`
+            t =    35.08s         Capturing element debug description
+            t =    35.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    35.72s         Checking existence of `"detail.draft" TextField`
+            t =    36.60s         Capturing element debug description
+            t =    36.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    36.70s         Checking existence of `"detail.draft" TextField`
+            t =    37.15s         Capturing element debug description
+            t =    37.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    37.69s         Checking existence of `"detail.draft" TextField`
+            t =    38.11s         Capturing element debug description
+            t =    38.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    38.64s         Checking existence of `"detail.draft" TextField`
+            t =    39.03s         Capturing element debug description
+            t =    39.66s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    39.67s         Checking existence of `"detail.draft" TextField`
+            t =    40.00s         Capturing element debug description
+            t =    40.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    40.64s         Checking existence of `"detail.draft" TextField`
+            t =    41.05s         Capturing element debug description
+            t =    41.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    41.68s         Checking existence of `"detail.draft" TextField`
+            t =    42.05s         Capturing element debug description
+            t =    42.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    42.69s         Checking existence of `"detail.draft" TextField`
+            t =    43.06s         Capturing element debug description
+            t =    43.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    43.69s         Checking existence of `"detail.draft" TextField`
+            t =    43.99s         Capturing element debug description
+            t =    44.71s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    44.71s         Checking existence of `"detail.draft" TextField`
+            t =    44.98s         Capturing element debug description
+            t =    45.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    45.64s         Checking existence of `"detail.draft" TextField`
+            t =    45.90s         Capturing element debug description
+            t =    46.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    46.64s         Checking existence of `"detail.draft" TextField`
+            t =    46.91s         Capturing element debug description
+            t =    47.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    47.64s         Checking existence of `"detail.draft" TextField`
+            t =    47.91s         Capturing element debug description
+            t =    48.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    48.65s         Checking existence of `"detail.draft" TextField`
+            t =    48.86s         Capturing element debug description
+            t =    49.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    49.64s         Checking existence of `"detail.draft" TextField`
+            t =    49.83s         Capturing element debug description
+            t =    49.84s     Checking existence of `"detail.draft" TextField`
+            t =    50.04s Collecting debug information to assist test failure triage
+            t =    50.04s     Requesting snapshot of accessibility hierarchy for app with pid 46853
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:34: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed
+            t =    50.52s Tear Down
+        Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (50.846 seconds).
+        Test Suite 'NavigationGestureUITests' failed at 2026-11-14 22:59:37.793.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.853) seconds
+        Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 22:59:37.797.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.858) seconds
+        Test Suite 'Selected tests' failed at 2026-11-14 22:59:37.799.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.863) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-58-31-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-3E6F4BE0-85B1-45DE-93CA-80CD81EA4B9F-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-93349867-3CA5-46C9-AAC1-AC25D63204F0/Session-UIKitLanguageDemoUITests-2026-11-14_225839-KYCczG.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-58-31-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-3E6F4BE0-85B1-45DE-93CA-80CD81EA4B9F-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-93349867-3CA5-46C9-AAC1-AC25D63204F0/Session-UIKitLanguageDemoUITests-2026-11-14_225839-KYCczG.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' failed at 2026-11-14 22:59:37.799.
+	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.863) seconds
+
+          2026-11-14 22:58:43.061434+0800 UIKitLanguageDemoUITests-Runner[46834:1477108] [Default] Running tests...
+              t =      nans Interface orientation changed to Portrait
+          Test Suite 'Selected tests' started at 2026-11-14 22:58:46.936.
+          Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 22:58:46.939.
+          Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:58:46.940.
+          Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+              t =     0.01s Start Test at 2026-11-14 22:58:46.947
+              t =     0.26s Set Up
+              t =     0.31s Open com.example.UIKitLanguageDemo
+              t =     0.31s     Launch com.example.UIKitLanguageDemo
+              t =     3.16s         Setting up automation session
+              t =     8.29s         Wait for com.example.UIKitLanguageDemo to idle
+              t =    11.51s Waiting 20.0s for "home.openDetail" Button to exist
+              t =    12.53s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+              t =    12.53s         Checking existence of `"home.openDetail" Button`
+              t =    12.97s Tap "home.openDetail" Button
+              t =    12.97s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    12.99s     Find the "home.openDetail" Button
+              t =    13.38s     Check for interrupting elements affecting "home.openDetail" Button
+              t =    13.67s     Synthesize event
+              t =    14.08s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    15.17s Waiting 10.0s for "detail.draft" TextField to exist
+              t =    16.18s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    16.19s         Checking existence of `"detail.draft" TextField`
+              t =    16.59s Find the "language.system" Button
+              t =    16.91s Waiting 10.0s for "language.en" Button to exist
+              t =    17.93s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+              t =    17.93s         Checking existence of `"language.en" Button`
+              t =    18.26s Tap "language.zh-Hans" Button
+              t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    18.27s     Find the "language.zh-Hans" Button
+              t =    18.62s     Check for interrupting elements affecting "language.zh-Hans" Button
+              t =    19.00s     Synthesize event
+              t =    19.41s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    19.52s Waiting 5.0s for Button (First Match) to exist
+              t =    20.55s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+              t =    20.55s         Checking existence of `Button (First Match)`
+              t =    20.73s Pressing Home button
+              t =    21.20s Terminate com.example.UIKitLanguageDemo:46842
+              t =    22.24s Open com.example.UIKitLanguageDemo
+              t =    22.24s     Launch com.example.UIKitLanguageDemo
+              t =    23.10s         Setting up automation session
+              t =    26.91s         Wait for com.example.UIKitLanguageDemo to idle
+              t =    29.63s Waiting 20.0s for "detail.draft" TextField to exist
+              t =    30.65s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    30.65s         Checking existence of `"detail.draft" TextField`
+              t =    31.00s         Capturing element debug description
+              t =    31.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    31.72s         Checking existence of `"detail.draft" TextField`
+              t =    31.96s         Capturing element debug description
+              t =    32.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    32.69s         Checking existence of `"detail.draft" TextField`
+              t =    32.98s         Capturing element debug description
+              t =    33.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    33.70s         Checking existence of `"detail.draft" TextField`
+              t =    33.94s         Capturing element debug description
+              t =    34.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    34.69s         Checking existence of `"detail.draft" TextField`
+              t =    35.08s         Capturing element debug description
+              t =    35.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    35.72s         Checking existence of `"detail.draft" TextField`
+              t =    36.60s         Capturing element debug description
+              t =    36.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    36.70s         Checking existence of `"detail.draft" TextField`
+              t =    37.15s         Capturing element debug description
+              t =    37.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    37.69s         Checking existence of `"detail.draft" TextField`
+              t =    38.11s         Capturing element debug description
+              t =    38.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    38.64s         Checking existence of `"detail.draft" TextField`
+              t =    39.03s         Capturing element debug description
+              t =    39.66s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    39.67s         Checking existence of `"detail.draft" TextField`
+              t =    40.00s         Capturing element debug description
+              t =    40.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    40.64s         Checking existence of `"detail.draft" TextField`
+              t =    41.05s         Capturing element debug description
+              t =    41.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    41.68s         Checking existence of `"detail.draft" TextField`
+              t =    42.05s         Capturing element debug description
+              t =    42.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    42.69s         Checking existence of `"detail.draft" TextField`
+              t =    43.06s         Capturing element debug description
+              t =    43.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    43.69s         Checking existence of `"detail.draft" TextField`
+              t =    43.99s         Capturing element debug description
+              t =    44.71s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    44.71s         Checking existence of `"detail.draft" TextField`
+              t =    44.98s         Capturing element debug description
+              t =    45.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    45.64s         Checking existence of `"detail.draft" TextField`
+              t =    45.90s         Capturing element debug description
+              t =    46.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    46.64s         Checking existence of `"detail.draft" TextField`
+              t =    46.91s         Capturing element debug description
+              t =    47.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    47.64s         Checking existence of `"detail.draft" TextField`
+              t =    47.91s         Capturing element debug description
+              t =    48.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    48.65s         Checking existence of `"detail.draft" TextField`
+              t =    48.86s         Capturing element debug description
+              t =    49.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    49.64s         Checking existence of `"detail.draft" TextField`
+              t =    49.83s         Capturing element debug description
+              t =    49.84s     Checking existence of `"detail.draft" TextField`
+              t =    50.04s Collecting debug information to assist test failure triage
+              t =    50.04s     Requesting snapshot of accessibility hierarchy for app with pid 46853
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:34: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed
+              t =    50.52s Tear Down
+          Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (50.846 seconds).
+          Test Suite 'NavigationGestureUITests' failed at 2026-11-14 22:59:37.793.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.853) seconds
+          Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 22:59:37.797.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.858) seconds
+          Test Suite 'Selected tests' failed at 2026-11-14 22:59:37.799.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.863) seconds
+        
+          Run test suite UIKitLanguageDemoUITests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 22:59:37.797.
+	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.858) seconds
+
+            Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 22:58:46.939.
+            Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:58:46.940.
+            Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+                t =     0.01s Start Test at 2026-11-14 22:58:46.947
+                t =     0.26s Set Up
+                t =     0.31s Open com.example.UIKitLanguageDemo
+                t =     0.31s     Launch com.example.UIKitLanguageDemo
+                t =     3.16s         Setting up automation session
+                t =     8.29s         Wait for com.example.UIKitLanguageDemo to idle
+                t =    11.51s Waiting 20.0s for "home.openDetail" Button to exist
+                t =    12.53s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                t =    12.53s         Checking existence of `"home.openDetail" Button`
+                t =    12.97s Tap "home.openDetail" Button
+                t =    12.97s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    12.99s     Find the "home.openDetail" Button
+                t =    13.38s     Check for interrupting elements affecting "home.openDetail" Button
+                t =    13.67s     Synthesize event
+                t =    14.08s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    15.17s Waiting 10.0s for "detail.draft" TextField to exist
+                t =    16.18s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    16.19s         Checking existence of `"detail.draft" TextField`
+                t =    16.59s Find the "language.system" Button
+                t =    16.91s Waiting 10.0s for "language.en" Button to exist
+                t =    17.93s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+                t =    17.93s         Checking existence of `"language.en" Button`
+                t =    18.26s Tap "language.zh-Hans" Button
+                t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    18.27s     Find the "language.zh-Hans" Button
+                t =    18.62s     Check for interrupting elements affecting "language.zh-Hans" Button
+                t =    19.00s     Synthesize event
+                t =    19.41s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    19.52s Waiting 5.0s for Button (First Match) to exist
+                t =    20.55s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                t =    20.55s         Checking existence of `Button (First Match)`
+                t =    20.73s Pressing Home button
+                t =    21.20s Terminate com.example.UIKitLanguageDemo:46842
+                t =    22.24s Open com.example.UIKitLanguageDemo
+                t =    22.24s     Launch com.example.UIKitLanguageDemo
+                t =    23.10s         Setting up automation session
+                t =    26.91s         Wait for com.example.UIKitLanguageDemo to idle
+                t =    29.63s Waiting 20.0s for "detail.draft" TextField to exist
+                t =    30.65s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    30.65s         Checking existence of `"detail.draft" TextField`
+                t =    31.00s         Capturing element debug description
+                t =    31.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    31.72s         Checking existence of `"detail.draft" TextField`
+                t =    31.96s         Capturing element debug description
+                t =    32.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    32.69s         Checking existence of `"detail.draft" TextField`
+                t =    32.98s         Capturing element debug description
+                t =    33.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    33.70s         Checking existence of `"detail.draft" TextField`
+                t =    33.94s         Capturing element debug description
+                t =    34.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    34.69s         Checking existence of `"detail.draft" TextField`
+                t =    35.08s         Capturing element debug description
+                t =    35.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    35.72s         Checking existence of `"detail.draft" TextField`
+                t =    36.60s         Capturing element debug description
+                t =    36.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    36.70s         Checking existence of `"detail.draft" TextField`
+                t =    37.15s         Capturing element debug description
+                t =    37.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    37.69s         Checking existence of `"detail.draft" TextField`
+                t =    38.11s         Capturing element debug description
+                t =    38.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    38.64s         Checking existence of `"detail.draft" TextField`
+                t =    39.03s         Capturing element debug description
+                t =    39.66s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    39.67s         Checking existence of `"detail.draft" TextField`
+                t =    40.00s         Capturing element debug description
+                t =    40.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    40.64s         Checking existence of `"detail.draft" TextField`
+                t =    41.05s         Capturing element debug description
+                t =    41.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    41.68s         Checking existence of `"detail.draft" TextField`
+                t =    42.05s         Capturing element debug description
+                t =    42.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    42.69s         Checking existence of `"detail.draft" TextField`
+                t =    43.06s         Capturing element debug description
+                t =    43.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    43.69s         Checking existence of `"detail.draft" TextField`
+                t =    43.99s         Capturing element debug description
+                t =    44.71s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    44.71s         Checking existence of `"detail.draft" TextField`
+                t =    44.98s         Capturing element debug description
+                t =    45.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    45.64s         Checking existence of `"detail.draft" TextField`
+                t =    45.90s         Capturing element debug description
+                t =    46.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    46.64s         Checking existence of `"detail.draft" TextField`
+                t =    46.91s         Capturing element debug description
+                t =    47.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    47.64s         Checking existence of `"detail.draft" TextField`
+                t =    47.91s         Capturing element debug description
+                t =    48.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    48.65s         Checking existence of `"detail.draft" TextField`
+                t =    48.86s         Capturing element debug description
+                t =    49.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    49.64s         Checking existence of `"detail.draft" TextField`
+                t =    49.83s         Capturing element debug description
+                t =    49.84s     Checking existence of `"detail.draft" TextField`
+                t =    50.04s Collecting debug information to assist test failure triage
+                t =    50.04s     Requesting snapshot of accessibility hierarchy for app with pid 46853
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:34: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed
+                t =    50.52s Tear Down
+            Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (50.846 seconds).
+            Test Suite 'NavigationGestureUITests' failed at 2026-11-14 22:59:37.793.
+            	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.853) seconds
+            Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 22:59:37.797.
+            	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.858) seconds
+          
+            Run test suite NavigationGestureUITests
+              Summary: Test Suite 'NavigationGestureUITests' failed at 2026-11-14 22:59:37.793.
+	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.853) seconds
+
+              Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:58:46.940.
+              Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+                  t =     0.01s Start Test at 2026-11-14 22:58:46.947
+                  t =     0.26s Set Up
+                  t =     0.31s Open com.example.UIKitLanguageDemo
+                  t =     0.31s     Launch com.example.UIKitLanguageDemo
+                  t =     3.16s         Setting up automation session
+                  t =     8.29s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =    11.51s Waiting 20.0s for "home.openDetail" Button to exist
+                  t =    12.53s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                  t =    12.53s         Checking existence of `"home.openDetail" Button`
+                  t =    12.97s Tap "home.openDetail" Button
+                  t =    12.97s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    12.99s     Find the "home.openDetail" Button
+                  t =    13.38s     Check for interrupting elements affecting "home.openDetail" Button
+                  t =    13.67s     Synthesize event
+                  t =    14.08s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    15.17s Waiting 10.0s for "detail.draft" TextField to exist
+                  t =    16.18s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    16.19s         Checking existence of `"detail.draft" TextField`
+                  t =    16.59s Find the "language.system" Button
+                  t =    16.91s Waiting 10.0s for "language.en" Button to exist
+                  t =    17.93s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+                  t =    17.93s         Checking existence of `"language.en" Button`
+                  t =    18.26s Tap "language.zh-Hans" Button
+                  t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    18.27s     Find the "language.zh-Hans" Button
+                  t =    18.62s     Check for interrupting elements affecting "language.zh-Hans" Button
+                  t =    19.00s     Synthesize event
+                  t =    19.41s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    19.52s Waiting 5.0s for Button (First Match) to exist
+                  t =    20.55s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                  t =    20.55s         Checking existence of `Button (First Match)`
+                  t =    20.73s Pressing Home button
+                  t =    21.20s Terminate com.example.UIKitLanguageDemo:46842
+                  t =    22.24s Open com.example.UIKitLanguageDemo
+                  t =    22.24s     Launch com.example.UIKitLanguageDemo
+                  t =    23.10s         Setting up automation session
+                  t =    26.91s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =    29.63s Waiting 20.0s for "detail.draft" TextField to exist
+                  t =    30.65s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    30.65s         Checking existence of `"detail.draft" TextField`
+                  t =    31.00s         Capturing element debug description
+                  t =    31.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    31.72s         Checking existence of `"detail.draft" TextField`
+                  t =    31.96s         Capturing element debug description
+                  t =    32.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    32.69s         Checking existence of `"detail.draft" TextField`
+                  t =    32.98s         Capturing element debug description
+                  t =    33.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    33.70s         Checking existence of `"detail.draft" TextField`
+                  t =    33.94s         Capturing element debug description
+                  t =    34.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    34.69s         Checking existence of `"detail.draft" TextField`
+                  t =    35.08s         Capturing element debug description
+                  t =    35.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    35.72s         Checking existence of `"detail.draft" TextField`
+                  t =    36.60s         Capturing element debug description
+                  t =    36.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    36.70s         Checking existence of `"detail.draft" TextField`
+                  t =    37.15s         Capturing element debug description
+                  t =    37.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    37.69s         Checking existence of `"detail.draft" TextField`
+                  t =    38.11s         Capturing element debug description
+                  t =    38.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    38.64s         Checking existence of `"detail.draft" TextField`
+                  t =    39.03s         Capturing element debug description
+                  t =    39.66s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    39.67s         Checking existence of `"detail.draft" TextField`
+                  t =    40.00s         Capturing element debug description
+                  t =    40.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    40.64s         Checking existence of `"detail.draft" TextField`
+                  t =    41.05s         Capturing element debug description
+                  t =    41.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    41.68s         Checking existence of `"detail.draft" TextField`
+                  t =    42.05s         Capturing element debug description
+                  t =    42.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    42.69s         Checking existence of `"detail.draft" TextField`
+                  t =    43.06s         Capturing element debug description
+                  t =    43.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    43.69s         Checking existence of `"detail.draft" TextField`
+                  t =    43.99s         Capturing element debug description
+                  t =    44.71s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    44.71s         Checking existence of `"detail.draft" TextField`
+                  t =    44.98s         Capturing element debug description
+                  t =    45.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    45.64s         Checking existence of `"detail.draft" TextField`
+                  t =    45.90s         Capturing element debug description
+                  t =    46.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    46.64s         Checking existence of `"detail.draft" TextField`
+                  t =    46.91s         Capturing element debug description
+                  t =    47.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    47.64s         Checking existence of `"detail.draft" TextField`
+                  t =    47.91s         Capturing element debug description
+                  t =    48.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    48.65s         Checking existence of `"detail.draft" TextField`
+                  t =    48.86s         Capturing element debug description
+                  t =    49.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    49.64s         Checking existence of `"detail.draft" TextField`
+                  t =    49.83s         Capturing element debug description
+                  t =    49.84s     Checking existence of `"detail.draft" TextField`
+                  t =    50.04s Collecting debug information to assist test failure triage
+                  t =    50.04s     Requesting snapshot of accessibility hierarchy for app with pid 46853
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:34: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed
+                  t =    50.52s Tear Down
+              Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (50.846 seconds).
+              Test Suite 'NavigationGestureUITests' failed at 2026-11-14 22:59:37.793.
+              	 Executed 1 test, with 1 failure (0 unexpected) in 50.846 (50.853) seconds
+            
+              Run test case testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()
+                Summary:     t =    50.52s Tear Down
+Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (50.846 seconds).
+
+                Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+                    t =     0.01s Start Test at 2026-11-14 22:58:46.947
+                    t =     0.26s Set Up
+                    t =     0.31s Open com.example.UIKitLanguageDemo
+                    t =     0.31s     Launch com.example.UIKitLanguageDemo
+                    t =     3.16s         Setting up automation session
+                    t =     8.29s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =    11.51s Waiting 20.0s for "home.openDetail" Button to exist
+                    t =    12.53s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                    t =    12.53s         Checking existence of `"home.openDetail" Button`
+                    t =    12.97s Tap "home.openDetail" Button
+                    t =    12.97s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    12.99s     Find the "home.openDetail" Button
+                    t =    13.38s     Check for interrupting elements affecting "home.openDetail" Button
+                    t =    13.67s     Synthesize event
+                    t =    14.08s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    15.17s Waiting 10.0s for "detail.draft" TextField to exist
+                    t =    16.18s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    16.19s         Checking existence of `"detail.draft" TextField`
+                    t =    16.59s Find the "language.system" Button
+                    t =    16.91s Waiting 10.0s for "language.en" Button to exist
+                    t =    17.93s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+                    t =    17.93s         Checking existence of `"language.en" Button`
+                    t =    18.26s Tap "language.zh-Hans" Button
+                    t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    18.27s     Find the "language.zh-Hans" Button
+                    t =    18.62s     Check for interrupting elements affecting "language.zh-Hans" Button
+                    t =    19.00s     Synthesize event
+                    t =    19.41s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    19.52s Waiting 5.0s for Button (First Match) to exist
+                    t =    20.55s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                    t =    20.55s         Checking existence of `Button (First Match)`
+                    t =    20.73s Pressing Home button
+                    t =    21.20s Terminate com.example.UIKitLanguageDemo:46842
+                    t =    22.24s Open com.example.UIKitLanguageDemo
+                    t =    22.24s     Launch com.example.UIKitLanguageDemo
+                    t =    23.10s         Setting up automation session
+                    t =    26.91s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =    29.63s Waiting 20.0s for "detail.draft" TextField to exist
+                    t =    30.65s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    30.65s         Checking existence of `"detail.draft" TextField`
+                    t =    31.00s         Capturing element debug description
+                    t =    31.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    31.72s         Checking existence of `"detail.draft" TextField`
+                    t =    31.96s         Capturing element debug description
+                    t =    32.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    32.69s         Checking existence of `"detail.draft" TextField`
+                    t =    32.98s         Capturing element debug description
+                    t =    33.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    33.70s         Checking existence of `"detail.draft" TextField`
+                    t =    33.94s         Capturing element debug description
+                    t =    34.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    34.69s         Checking existence of `"detail.draft" TextField`
+                    t =    35.08s         Capturing element debug description
+                    t =    35.72s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    35.72s         Checking existence of `"detail.draft" TextField`
+                    t =    36.60s         Capturing element debug description
+                    t =    36.70s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    36.70s         Checking existence of `"detail.draft" TextField`
+                    t =    37.15s         Capturing element debug description
+                    t =    37.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    37.69s         Checking existence of `"detail.draft" TextField`
+                    t =    38.11s         Capturing element debug description
+                    t =    38.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    38.64s         Checking existence of `"detail.draft" TextField`
+                    t =    39.03s         Capturing element debug description
+                    t =    39.66s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    39.67s         Checking existence of `"detail.draft" TextField`
+                    t =    40.00s         Capturing element debug description
+                    t =    40.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    40.64s         Checking existence of `"detail.draft" TextField`
+                    t =    41.05s         Capturing element debug description
+                    t =    41.68s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    41.68s         Checking existence of `"detail.draft" TextField`
+                    t =    42.05s         Capturing element debug description
+                    t =    42.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    42.69s         Checking existence of `"detail.draft" TextField`
+                    t =    43.06s         Capturing element debug description
+                    t =    43.69s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    43.69s         Checking existence of `"detail.draft" TextField`
+                    t =    43.99s         Capturing element debug description
+                    t =    44.71s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    44.71s         Checking existence of `"detail.draft" TextField`
+                    t =    44.98s         Capturing element debug description
+                    t =    45.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    45.64s         Checking existence of `"detail.draft" TextField`
+                    t =    45.90s         Capturing element debug description
+                    t =    46.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    46.64s         Checking existence of `"detail.draft" TextField`
+                    t =    46.91s         Capturing element debug description
+                    t =    47.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    47.64s         Checking existence of `"detail.draft" TextField`
+                    t =    47.91s         Capturing element debug description
+                    t =    48.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    48.65s         Checking existence of `"detail.draft" TextField`
+                    t =    48.86s         Capturing element debug description
+                    t =    49.64s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    49.64s         Checking existence of `"detail.draft" TextField`
+                    t =    49.83s         Capturing element debug description
+                    t =    49.84s     Checking existence of `"detail.draft" TextField`
+                    t =    50.04s Collecting debug information to assist test failure triage
+                    t =    50.04s     Requesting snapshot of accessibility hierarchy for app with pid 46853
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:34: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed
+                    t =    50.52s Tear Down
+                Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (50.846 seconds).
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:test failure:XCTAssertTrue failed
+              
+    Test target UIKitLanguageDemoTests
+      UIKitLanguageDemo (46917)
+        Test Suite 'Selected tests' started at 2026-11-14 22:59:42.711.
+        Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 22:59:42.713.
+        Test Suite 'LanguagePickerAlignmentTests' started at 2026-11-14 22:59:42.714.
+        Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+        Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.145 seconds).
+        Test Suite 'LanguagePickerAlignmentTests' passed at 2026-11-14 22:59:43.866.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 1.145 (1.152) seconds
+        Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:59:43.867.
+        Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+        Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.548 seconds).
+        Test Suite 'NavigationBackTitleTests' passed at 2026-11-14 22:59:45.417.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 1.548 (1.550) seconds
+        Test Suite 'NavigationDirectionTests' started at 2026-11-14 22:59:45.418.
+        Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+        Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.257 seconds).
+        Test Suite 'NavigationDirectionTests' passed at 2026-11-14 22:59:46.677.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 1.257 (1.259) seconds
+        Test Suite 'TextDirectionTests' started at 2026-11-14 22:59:46.678.
+        Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' started.
+        Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' passed (1.144 seconds).
+        Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+        Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.529 seconds).
+        Test Suite 'TextDirectionTests' passed at 2026-11-14 22:59:52.354.
+        	 Executed 2 tests, with 0 failures (0 unexpected) in 5.673 (5.676) seconds
+        Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 22:59:52.355.
+        	 Executed 5 tests, with 0 failures (0 unexpected) in 9.623 (9.641) seconds
+        Test Suite 'Selected tests' passed at 2026-11-14 22:59:52.356.
+        	 Executed 5 tests, with 0 failures (0 unexpected) in 9.623 (9.644) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-58-31-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-2CD057D8-8A85-48EA-9553-8E84822EEA73-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-09C63ADF-F3E8-4E23-96D0-96F46342B071/Session-UIKitLanguageDemoTests-2026-11-14_225938-UltUcn.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-58-31-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-2CD057D8-8A85-48EA-9553-8E84822EEA73-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-09C63ADF-F3E8-4E23-96D0-96F46342B071/Session-UIKitLanguageDemoTests-2026-11-14_225938-UltUcn.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' passed at 2026-11-14 22:59:52.356.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 9.623 (9.644) seconds
+
+          Test Suite 'Selected tests' started at 2026-11-14 22:59:42.711.
+          Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 22:59:42.713.
+          Test Suite 'LanguagePickerAlignmentTests' started at 2026-11-14 22:59:42.714.
+          Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+          Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.145 seconds).
+          Test Suite 'LanguagePickerAlignmentTests' passed at 2026-11-14 22:59:43.866.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 1.145 (1.152) seconds
+          Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:59:43.867.
+          Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+          Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.548 seconds).
+          Test Suite 'NavigationBackTitleTests' passed at 2026-11-14 22:59:45.417.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 1.548 (1.550) seconds
+          Test Suite 'NavigationDirectionTests' started at 2026-11-14 22:59:45.418.
+          Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+          Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.257 seconds).
+          Test Suite 'NavigationDirectionTests' passed at 2026-11-14 22:59:46.677.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 1.257 (1.259) seconds
+          Test Suite 'TextDirectionTests' started at 2026-11-14 22:59:46.678.
+          Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' started.
+          Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' passed (1.144 seconds).
+          Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+          Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.529 seconds).
+          Test Suite 'TextDirectionTests' passed at 2026-11-14 22:59:52.354.
+          	 Executed 2 tests, with 0 failures (0 unexpected) in 5.673 (5.676) seconds
+          Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 22:59:52.355.
+          	 Executed 5 tests, with 0 failures (0 unexpected) in 9.623 (9.641) seconds
+          Test Suite 'Selected tests' passed at 2026-11-14 22:59:52.356.
+          	 Executed 5 tests, with 0 failures (0 unexpected) in 9.623 (9.644) seconds
+        
+          Run test suite UIKitLanguageDemoTests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 22:59:52.355.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 9.623 (9.641) seconds
+
+            Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 22:59:42.713.
+            Test Suite 'LanguagePickerAlignmentTests' started at 2026-11-14 22:59:42.714.
+            Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+            Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.145 seconds).
+            Test Suite 'LanguagePickerAlignmentTests' passed at 2026-11-14 22:59:43.866.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 1.145 (1.152) seconds
+            Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:59:43.867.
+            Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+            Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.548 seconds).
+            Test Suite 'NavigationBackTitleTests' passed at 2026-11-14 22:59:45.417.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 1.548 (1.550) seconds
+            Test Suite 'NavigationDirectionTests' started at 2026-11-14 22:59:45.418.
+            Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+            Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.257 seconds).
+            Test Suite 'NavigationDirectionTests' passed at 2026-11-14 22:59:46.677.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 1.257 (1.259) seconds
+            Test Suite 'TextDirectionTests' started at 2026-11-14 22:59:46.678.
+            Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' started.
+            Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' passed (1.144 seconds).
+            Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+            Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.529 seconds).
+            Test Suite 'TextDirectionTests' passed at 2026-11-14 22:59:52.354.
+            	 Executed 2 tests, with 0 failures (0 unexpected) in 5.673 (5.676) seconds
+            Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 22:59:52.355.
+            	 Executed 5 tests, with 0 failures (0 unexpected) in 9.623 (9.641) seconds
+          
+            Run test suite LanguagePickerAlignmentTests
+              Summary: Test Suite 'LanguagePickerAlignmentTests' passed at 2026-11-14 22:59:43.866.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.145 (1.152) seconds
+
+              Test Suite 'LanguagePickerAlignmentTests' started at 2026-11-14 22:59:42.714.
+              Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+              Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.145 seconds).
+              Test Suite 'LanguagePickerAlignmentTests' passed at 2026-11-14 22:59:43.866.
+              	 Executed 1 test, with 0 failures (0 unexpected) in 1.145 (1.152) seconds
+            
+              Run test case testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.145 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+                Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.145 seconds).
+              
+            Run test suite NavigationBackTitleTests
+              Summary: Test Suite 'NavigationBackTitleTests' passed at 2026-11-14 22:59:45.417.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.548 (1.550) seconds
+
+              Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:59:43.867.
+              Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+              Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.548 seconds).
+              Test Suite 'NavigationBackTitleTests' passed at 2026-11-14 22:59:45.417.
+              	 Executed 1 test, with 0 failures (0 unexpected) in 1.548 (1.550) seconds
+            
+              Run test case testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews()
+                Summary: Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.548 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+                Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.548 seconds).
+              
+            Run test suite NavigationDirectionTests
+              Summary: Test Suite 'NavigationDirectionTests' passed at 2026-11-14 22:59:46.677.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.257 (1.259) seconds
+
+              Test Suite 'NavigationDirectionTests' started at 2026-11-14 22:59:45.418.
+              Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+              Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.257 seconds).
+              Test Suite 'NavigationDirectionTests' passed at 2026-11-14 22:59:46.677.
+              	 Executed 1 test, with 0 failures (0 unexpected) in 1.257 (1.259) seconds
+            
+              Run test case testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()
+                Summary: Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.257 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+                Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.257 seconds).
+              
+            Run test suite TextDirectionTests
+              Summary: Test Suite 'TextDirectionTests' passed at 2026-11-14 22:59:52.354.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 5.673 (5.676) seconds
+
+              Test Suite 'TextDirectionTests' started at 2026-11-14 22:59:46.678.
+              Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' started.
+              Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' passed (1.144 seconds).
+              Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+              Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.529 seconds).
+              Test Suite 'TextDirectionTests' passed at 2026-11-14 22:59:52.354.
+              	 Executed 2 tests, with 0 failures (0 unexpected) in 5.673 (5.676) seconds
+            
+              Run test case testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder()
+                Summary: Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' passed (1.144 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' started.
+                Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder]' passed (1.144 seconds).
+              
+              Run test case testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()
+                Summary: Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.529 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+                Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.529 seconds).
+              
+** TEST FINISHED **

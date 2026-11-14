@@ -18,7 +18,7 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 4. 验证详情页仍在、返回按钮仍可返回首页、草稿不变，中文/阿拉伯语切换时方向改变。
 5. 设置 Tab 演示可变行高 Table；首页可进入 FlowLayout 网格/横向列表，以及 Compositional 网格/正交分页分区，滚动、选择、编辑草稿后切换语言。
 6. 在任意示例页点击导航栏地球图标（“系统 App 语言设置”），在系统中选择语言并返回 App，验证当前位置、草稿和滚动位置恢复。该入口先切回“跟随系统”，以便新进程采用系统选择。
-7. 使用 Product → Test 运行随工程附带的二十九项 XCTest（26 项单元测试和 3 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
+7. 使用 Product → Test 运行随工程附带的三十一项 XCTest（28 项单元测试和 3 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
 
 测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
 
@@ -167,8 +167,8 @@ iOS 17+ 在 Scene 层设置 `traitOverrides.layoutDirection`，后续展示的�
 - Collection：刷新 Cell 与 Header 并使布局失效，业务数组保持不变，FlowLayout 使用自身的 RTL 排列；横向锚点使用逻辑起始边。详见 [列表接入说明](LIST_LOCALIZATION.md)。
 - 自定义布局：使用 leading/trailing、方向性边距；计算 frame 时读取 `effectiveUserInterfaceLayoutDirection`。
 - 语言按钮：四个语言名称统一按 App 起始边对齐（中文／英文靠左，阿拉伯语靠右），名称保留原文。切换方向时清除按钮旧配置，再应用新的 `.tinted()` 配置、显式语义方向与左右对齐；勾选图标保持逻辑 trailing。按钮与点击动作原地保留。
-- 标签：需要跟随 App 起始边的文字显式使用当前语言左右对齐。用户输入或多语言正文按内容处理，自然对齐不等于把 App 全局语言切换为目标语言。
-- 例外组件：电话/账号可保留 `.forceLeftToRight`，播放和物理方向组件保留 `.playback`/`.spatial`。示例不会递归覆盖这些标记。
+- 标签：需要跟随 App 起始边的文字显式使用当前语言左右对齐。草稿输入框显式按 App 起始边对齐，输入文字内部保留 Unicode 自然书写方向；多语言正文可独立按内容处理。
+- 例外组件：手机号跟随 App 左右对齐，同时使用 LTR 段落及 `.forceLeftToRight` 保持完整号码顺序；账号可按业务保留 LTR，播放和物理方向组件保留 `.playback`/`.spatial`。示例不会递归覆盖这些标记。
 - 图片：只镜像具有阅读/导航方向含义的图片；Logo、照片等按资源语义处理。
 - 格式化：示例将数字格式 Locale 绑定到所选 UI 语言。需要独立地区偏好的产品可单独注入区域规则。
 - 弹层：沿用现有弹层实例，应用自己提供的文案参与刷新。系统权限对话框、键盘及第三方 SDK 的内建文案不由此服务统一控制。
@@ -283,3 +283,15 @@ Apple 官方 MCP 构建通过；复用现有 iPhone 17 Pro / iOS 26.5，最终�
 UIKit 的返回标题来自栈中前一个 navigationItem，见 [Apple backButtonTitle 文档](https://developer.apple.com/documentation/uikit/uinavigationitem/backbuttontitle)。保留系统返回按钮与手势，不安装自定义 leftBarButtonItem。
 
 复用现有 iPhone 17 Pro / iOS 26.5，Apple 官方 MCP 构建及四项定向回归全部通过。UI 用例包含真实后台、终止、重启后直接恢复详情，再检查 Back／رجوع／返回及正确的返回手势；单元用例检查三层导航栈、未加载页面、草稿与实例保留。本轮未全量重跑 29 项，未运行 iOS 15 设备。原始失败复现与最终结果见 [返回标题验证记录](verification/navigation-back-title-verification.json)。
+
+## 输入框与手机号方向
+
+`LayoutDirection.applyTextField(context, to:)` 在每次本地化刷新时设置草稿框的显式语义方向和左右对齐：阿拉伯语靠右，中文／英文靠左；占位文字同步更新。详情、分栏、翻页和 Table／Collection 共用草稿视图均已接入。仅更新布局属性，不重写用户文本、选区或输入法 marked text；已有 TextInputSnapshot 继续负责焦点选区保留。
+
+对齐位置与文字书写顺序分别处理：手机号标签在 RTL 页面靠右，在 LTR 页面靠左，但 NSParagraphStyle.baseWritingDirection 始终为 leftToRight，保持 `+86 138 0000 0000` 完整顺序。普通草稿不强行覆盖字符书写方向。
+
+依据 [Apple UITextField.textAlignment](https://developer.apple.com/documentation/uikit/uitextfield/textalignment) 的占位文字对齐规则，以及 [Apple RTL 指南](https://developer.apple.com/design/human-interface-guidelines/right-to-left) 的数字顺序规则实现。
+
+复用现有 iPhone 17 Pro / iOS 26.5，官方 MCP 构建成功，五项单元测试通过，UI 用例单项复验通过。首次 UI 运行在重启后回到首页，夹具补充后台状态等待后复验成功；两次运行之间生产代码不变。焦点测试使用真实 UITextField first responder 和测试专用 inputView，覆盖空光标位置、混合文本选区及中文组词保留；未声称验证系统键盘 UI。本轮未全量重跑 31 项或执行 iOS 15 运行时。
+
+原始记录见 [输入方向验证](verification/text-direction-verification.json)；未修改的 XCTest 截图见 [英文页面](verification/text-direction-ui/english.png)、[阿拉伯语页面](verification/text-direction-ui/arabic.png)。

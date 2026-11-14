@@ -26,11 +26,10 @@ final class DetailViewController: LocalizedViewController {
         draftField.borderStyle = .roundedRect
         draftField.font = .preferredFont(forTextStyle: .body)
         draftField.adjustsFontForContentSizeCategory = true
-        draftField.textAlignment = .natural
         draftField.accessibilityIdentifier = "detail.draft"
         // A semantic exception: phone numbers retain LTR even inside an RTL page.
         phoneLabel.text = "+86 138 0000 0000"
-        phoneLabel.textAlignment = .left
+        phoneLabel.accessibilityIdentifier = "detail.phone"
         phoneLabel.semanticContentAttribute = .forceLeftToRight
         for item in [heading, draftLabel, draftField, numberLabel, languagePicker, phoneLabel] {
             stack.addArrangedSubview(item)
@@ -57,6 +56,7 @@ final class DetailViewController: LocalizedViewController {
         draftLabel.text = context.text(.detailDraft)
         draftField.placeholder = context.text(.detailPlaceholder)
         draftField.accessibilityLabel = context.text(.detailDraft)
+        LayoutDirection.applyTextField(context, to: draftField)
         // Never assign draftField.text here. The same input and VC instances survive.
         let formatter = NumberFormatter()
         formatter.locale = context.locale
@@ -66,6 +66,14 @@ final class DetailViewController: LocalizedViewController {
         for label in [heading, draftLabel, numberLabel] {
             label.textAlignment = context.isRTL ? .right : .left
         }
+        // Position follows the App, but the complete international number is
+        // one LTR paragraph so +86 and every digit keep their visual order.
+        let phoneParagraph = NSMutableParagraphStyle()
+        phoneParagraph.baseWritingDirection = .leftToRight
+        phoneParagraph.alignment = context.isRTL ? .right : .left
+        phoneLabel.textAlignment = phoneParagraph.alignment
+        phoneLabel.attributedText = NSAttributedString(string: "+86 138 0000 0000",
+            attributes: [.paragraphStyle: phoneParagraph])
         languagePicker.applyLocalization(context)
         LayoutDirection.applyBoundary(context, to: scrollView)
         LayoutDirection.applyBoundary(context, to: stack)

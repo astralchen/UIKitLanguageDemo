@@ -29,14 +29,18 @@ final class NavigationGestureUITests: XCTestCase {
         // Backgrounding checkpoints the stack; reusing the reset token preserves
         // that state so Home is restored below Detail without loading its view.
         XCUIDevice.shared.press(.home)
+        XCTAssertTrue(app.wait(for: .runningBackground, timeout: 10),
+            "Wait for scene backgrounding before terminating the restoration fixture")
         app.terminate()
         app.launch()
         XCTAssertTrue(detail.waitForExistence(timeout: 20))
         XCTAssertTrue(app.navigationBars["详情"].waitForExistence(timeout: 10))
         english.tap()
         expectBackTitle("Back", in: app)
+        captureDirection("English input and LTR phone", in: app)
         app.buttons["language.ar"].tap()
         expectBackTitle("رجوع", in: app)
+        captureDirection("Arabic input and LTR phone", in: app)
         XCTAssertTrue(app.navigationBars["التفاصيل"].waitForExistence(timeout: 5))
         drag(in: app, from: 0.003, to: 0.85)
         XCTAssertTrue(detail.exists, "Arabic must not pop from the physical left edge")
@@ -51,6 +55,15 @@ final class NavigationGestureUITests: XCTestCase {
         drag(in: app, from: 0.003, to: 0.85)
         expectPopped(detail)
         XCTAssertTrue(open.waitForExistence(timeout: 10))
+    }
+
+    @MainActor
+    private func captureDirection(_ name: String, in app: XCUIApplication) {
+        XCTAssertTrue(app.staticTexts["detail.phone"].exists)
+        let attachment = XCTAttachment(screenshot: app.screenshot())
+        attachment.name = name
+        attachment.lifetime = .keepAlways
+        add(attachment)
     }
 
     @MainActor

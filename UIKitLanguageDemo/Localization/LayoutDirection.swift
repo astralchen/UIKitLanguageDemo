@@ -23,6 +23,13 @@ enum LayoutDirection {
         if #available(iOS 17.0, *) { return }
         view.semanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
     }
+
+    /// Align the draft and its placeholder with the App. Keep the Unicode
+    /// writing direction of user content; never rewrite text or selection here.
+    static func applyTextField(_ context: LanguageContext, to field: UITextField) {
+        field.semanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
+        field.textAlignment = context.isRTL ? .right : .left
+    }
 }
 
 /// Installed once when creating a window; never replaced when changing language.

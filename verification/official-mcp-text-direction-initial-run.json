@@ -1,0 +1,63 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 1,
+    "notRun": 0,
+    "passed": 5,
+    "skipped": 0,
+    "total": 6
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T22-58-31+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/D9EC6043-C65A-40C4-AD86-5A4C3428E8D6.txt",
+  "results": [
+    {
+      "displayName": "testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:34 NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese(): XCTAssertTrue failed"
+      ],
+      "identifier": "NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder()",
+      "errorMessages": [],
+      "identifier": "TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()",
+      "errorMessages": [],
+      "identifier": "TextDirectionTests/testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews()",
+      "errorMessages": [],
+      "identifier": "NavigationBackTitleTests/testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()",
+      "errorMessages": [],
+      "identifier": "NavigationDirectionTests/testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()",
+      "errorMessages": [],
+      "identifier": "LanguagePickerAlignmentTests/testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "6 tests: 5 passed, 1 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 6,
+  "truncated": false
+}

@@ -1,0 +1,33 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 1,
+    "notRun": 0,
+    "passed": 0,
+    "skipped": 0,
+    "total": 1
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T22-57-24+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/AE6AEAB0-B341-4081-8D9D-C2E75C65137C.txt",
+  "message": "Some error messages were truncated to 5. Full logs available at /var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/AE6AEAB0-B341-4081-8D9D-C2E75C65137C.txt.",
+  "results": [
+    {
+      "displayName": "testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: (\"NSTextAlignment(rawValue: 4)\") is not equal to (\"NSTextAlignment(rawValue: 2)\")",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: (\"NSTextAlignment(rawValue: 4)\") is not equal to (\"NSTextAlignment(rawValue: 2)\")",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:30 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: (\"UIUserInterfaceLayoutDirection(rawValue: 0)\") is not equal to (\"UIUserInterfaceLayoutDirection(rawValue: 1)\")",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: (\"NSTextAlignment(rawValue: 4)\") is not equal to (\"NSTextAlignment(rawValue: 2)\")",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:30 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: (\"UIUserInterfaceLayoutDirection(rawValue: 0)\") is not equal to (\"UIUserInterfaceLayoutDirection(rawValue: 1)\")"
+      ],
+      "identifier": "TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoTests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "1 tests: 0 passed, 1 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 1,
+  "truncated": false
+}

@@ -35,13 +35,13 @@
   },
   "officialBuild": {
     "success": true,
-    "elapsedSeconds": 8.3,
+    "elapsedSeconds": 10.946,
     "errors": [],
     "tool": "Apple official MCP BuildProject",
-    "finalSourcesAlsoBuiltBy": "Apple official MCP focused restored back-title regression"
+    "finalSourcesAlsoBuiltBy": "Apple official MCP focused text-direction regression"
   },
   "officialTestDiscovery": {
-    "enabled": 29,
+    "enabled": 31,
     "disabled": 0
   },
   "officialTestRun": {
@@ -274,7 +274,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/LayoutDirection.swift",
-      "sha256": "39a6f561b5629c3f0b99a8bb3110cae481a33b45667ca6a9e66ce30a697588a9"
+      "sha256": "c71a7e85b54c4855184070a4ada08087d33ea7a198798ffab4c285e4d1ad593f"
     },
     {
       "file": "UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift",
@@ -330,11 +330,11 @@
     },
     {
       "file": "UIKitLanguageDemo/Screens/ContainerDemos.swift",
-      "sha256": "59d4f657be11322a7ec6a1f11d518b9a2ad886e86b1f5e0941ebde77e1ec59b5"
+      "sha256": "34362349fab5d8bae4b3763a367e46153ebb50d6d7734179214a9731058e7a3a"
     },
     {
       "file": "UIKitLanguageDemo/Screens/DetailViewController.swift",
-      "sha256": "7b80fed8724d16976ea0cdef613831b9626dd9e430963299a8ad3836a03f4797"
+      "sha256": "c08fac222f5ed6326e49ccdcff67c2f3b68746d179cc0fe6afdc9776791d3f8f"
     },
     {
       "file": "UIKitLanguageDemo/Screens/HomeViewController.swift",
@@ -346,7 +346,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Screens/ListDemoContent.swift",
-      "sha256": "43bf1b6c67a20693faa5f6a4d5759d3e002618714f9f709d28a272e1289b06b9"
+      "sha256": "ef18bfb582354b4fa314a10d3d29152244bab34985cba592b26981ba80d2f572"
     },
     {
       "file": "UIKitLanguageDemo/Screens/SettingsViewController.swift",
@@ -373,6 +373,10 @@
       "sha256": "4eca138adf5fb7b1273c530e890d4e297c5bec354dc37357cf9185699e187dd0"
     },
     {
+      "file": "UIKitLanguageDemoTests/TextDirectionTests.swift",
+      "sha256": "538efec7b7a02c3508c9ff6eef8b6934bf9b8ab3d55d47c0b7f01b469bc175bf"
+    },
+    {
       "file": "UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
       "sha256": "364bdfef48368054ae8aaaf593eea382c36dfcc8126e1dfbb71eda6519b59b3b"
     },
@@ -382,7 +386,7 @@
     },
     {
       "file": "UIKitLanguageDemoUITests/NavigationGestureUITests.swift",
-      "sha256": "bbe677add765b6955427ecc10f7efa1c7f25351c074e5b06deeadf4826d03a4f"
+      "sha256": "deb4c31f7f51668e0d3eb20aa615220ce0e4790a723eeca2cec44fdcbf1092ff"
     },
     {
       "file": "UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift",
@@ -634,6 +638,59 @@
     ],
     "implementation": "LocalizedNavigationController owns back-title metadata for its entire stack at initialization, push, setViewControllers, and language change, before the isViewLoaded guard. Page-local and restoration one-time assignments removed.",
     "compatibility": "Existing iOS 15-compatible navigation APIs; iOS 15 runtime was not executed.",
+    "historicalFailures": "Historical generated-symbol iPad AX failure remains recorded separately."
+  },
+  "textDirectionFix": {
+    "status": "passed focused checks across two runs",
+    "scope": "5 unit tests passed in initial run plus 1 UI test passed on recheck; not a full 31-test run",
+    "tool": "Apple official MCP XcodeWrite / BuildProject / RunSomeTests",
+    "simulator": "iPhone 17 Pro / iOS 26.5",
+    "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "createdDevices": 0,
+    "deviceRestarts": 0,
+    "baseline": {
+      "expectedFailureReproduced": true,
+      "source": "official-mcp-text-direction-reproduction.json"
+    },
+    "initial": {
+      "counts": {
+        "expectedFailures": 0,
+        "failed": 1,
+        "notRun": 0,
+        "passed": 5,
+        "skipped": 0,
+        "total": 6
+      },
+      "source": "official-mcp-text-direction-initial-run.json"
+    },
+    "uiRecheck": {
+      "counts": {
+        "expectedFailures": 0,
+        "failed": 0,
+        "notRun": 0,
+        "passed": 1,
+        "skipped": 0,
+        "total": 1
+      },
+      "source": "official-mcp-text-direction-ui-recheck.json"
+    },
+    "uniqueChecksPassed": 6,
+    "checks": [
+      "Detail, split, pager and shared table/collection draft fields follow App leading alignment",
+      "Mixed Latin/Arabic draft text and UTF-16 selection offsets 3...7 survive language changes",
+      "Real UITextInput first responder retains marked Chinese composition across EN/AR switches",
+      "Empty caret geometry follows App leading edge",
+      "Phone aligns to App edge while LTR paragraph and CoreText offsets keep country code before final digit",
+      "Navigation state, native gestures, back titles and picker geometry regressions remain passing",
+      "Original English/Arabic XCTest screenshots visually inspected: placeholder and phone alignment correct"
+    ],
+    "focusFixture": "Real UITextField first responder with test-only custom inputView; no system keyboard UI verification claimed.",
+    "uiRetryReason": "Initial restart restored Home instead of Detail. UI fixture now waits for runningBackground before terminate; recheck passed. No production changes between initial and UI recheck.",
+    "screenshots": [
+      "text-direction-ui/english.png",
+      "text-direction-ui/arabic.png"
+    ],
+    "compatibility": "Only iOS 15-compatible APIs added; iOS 15 runtime was not executed.",
     "historicalFailures": "Historical generated-symbol iPad AX failure remains recorded separately."
   }
 }

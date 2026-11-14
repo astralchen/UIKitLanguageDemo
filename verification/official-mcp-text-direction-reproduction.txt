@@ -1,0 +1,55 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-14T14:57:47Z
+Total Results: 1
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/1
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder()
+TEST_DISPLAY_NAME: testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder()
+TEST_STATE: Failed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift
+TEST_LINE_NUMBER: 7
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 30
+
+TEST_ISSUES:
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:30 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("UIUserInterfaceLayoutDirection(rawValue: 0)") is not equal to ("UIUserInterfaceLayoutDirection(rawValue: 1)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:30 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("UIUserInterfaceLayoutDirection(rawValue: 0)") is not equal to ("UIUserInterfaceLayoutDirection(rawValue: 1)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:30 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("UIUserInterfaceLayoutDirection(rawValue: 0)") is not equal to ("UIUserInterfaceLayoutDirection(rawValue: 1)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:34 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 0)") is not equal to ("NSTextAlignment(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:39 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSWritingDirection(rawValue: -1)") is not equal to ("NSWritingDirection(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:40 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 0)") is not equal to ("NSTextAlignment(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:39 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSWritingDirection(rawValue: -1)") is not equal to ("NSWritingDirection(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:39 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSWritingDirection(rawValue: -1)") is not equal to ("NSWritingDirection(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:30 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("UIUserInterfaceLayoutDirection(rawValue: 0)") is not equal to ("UIUserInterfaceLayoutDirection(rawValue: 1)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:30 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("UIUserInterfaceLayoutDirection(rawValue: 0)") is not equal to ("UIUserInterfaceLayoutDirection(rawValue: 1)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:29 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 4)") is not equal to ("NSTextAlignment(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:30 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("UIUserInterfaceLayoutDirection(rawValue: 0)") is not equal to ("UIUserInterfaceLayoutDirection(rawValue: 1)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:34 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 0)") is not equal to ("NSTextAlignment(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:39 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSWritingDirection(rawValue: -1)") is not equal to ("NSWritingDirection(rawValue: 0)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift:40 TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder(): XCTAssertEqual failed: ("NSTextAlignment(rawValue: 0)") is not equal to ("NSTextAlignment(rawValue: 2)")
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

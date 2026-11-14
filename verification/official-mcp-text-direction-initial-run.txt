@@ -1,0 +1,86 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-14T14:59:53Z
+Total Results: 6
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/6
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: TextDirectionTests/testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder()
+TEST_DISPLAY_NAME: testDraftsFollowAppEdgeAndPhoneKeepsLTRCharacterOrder()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift
+TEST_LINE_NUMBER: 7
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 2/6
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: TextDirectionTests/testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()
+TEST_DISPLAY_NAME: testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift
+TEST_LINE_NUMBER: 48
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 3/6
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: NavigationBackTitleTests/testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews()
+TEST_DISPLAY_NAME: testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift
+TEST_LINE_NUMBER: 6
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 4/6
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: NavigationDirectionTests/testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()
+TEST_DISPLAY_NAME: testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationDirectionTests.swift
+TEST_LINE_NUMBER: 6
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 5/6
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguagePickerAlignmentTests/testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()
+TEST_DISPLAY_NAME: testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift
+TEST_LINE_NUMBER: 6
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 6/6
+TEST_TARGET: UIKitLanguageDemoUITests
+TEST_IDENTIFIER: NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()
+TEST_DISPLAY_NAME: testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()
+TEST_STATE: Failed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift
+TEST_LINE_NUMBER: 4
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 1
+
+TEST_ISSUES:
+    UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:34 NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese(): XCTAssertTrue failed
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

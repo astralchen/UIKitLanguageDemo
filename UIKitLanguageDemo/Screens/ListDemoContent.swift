@@ -46,6 +46,7 @@ final class ListDemoContent: UIView {
         detail.text = context.text(.listDescription)
         draft.placeholder = context.text(.detailPlaceholder)
         draft.accessibilityLabel = context.text(.detailDraft)
+        LayoutDirection.applyTextField(context, to: draft)
         for label in [heading, detail] { label.textAlignment = context.isRTL ? .right : .left }
         // No assignment to draft.text during localization.
         LayoutDirection.applyBoundary(context, to: self)

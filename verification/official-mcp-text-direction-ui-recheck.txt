@@ -1,0 +1,23 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-14T15:03:13Z
+Total Results: 1
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/1
+TEST_TARGET: UIKitLanguageDemoUITests
+TEST_IDENTIFIER: NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()
+TEST_DISPLAY_NAME: testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift
+TEST_LINE_NUMBER: 4
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================
