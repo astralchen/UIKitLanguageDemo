@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "scope": "Focused 4-test regression; not a full 29-test run",
+  "tool": "Apple official MCP XcodeWrite / BuildProject / RunSomeTests",
+  "simulator": "iPhone 17 Pro / iOS 26.5",
+  "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+  "createdDevices": 0,
+  "deviceRestarts": 0,
+  "baseline": {
+    "expectedFailureReproduced": true,
+    "source": "official-mcp-back-title-reproduction.json",
+    "checks": [
+      "Restored unloaded predecessors retain Chinese title after English selection",
+      "Visible Back button fails the English title assertion after relaunch"
+    ]
+  },
+  "final": {
+    "counts": {
+      "expectedFailures": 0,
+      "failed": 0,
+      "notRun": 0,
+      "passed": 4,
+      "skipped": 0,
+      "total": 4
+    },
+    "source": "official-mcp-back-title-final-run.json"
+  },
+  "checks": [
+    "Restored three-controller stack refreshes every backButtonTitle in EN / AR / ZH / EN",
+    "Predecessor views stay unloaded; navigation stack identities and visible draft stay intact",
+    "Push and setViewControllers initialize localized Back titles",
+    "UI background / terminate / launch restores directly to Detail, then displays Back / رجوع / 返回",
+    "Arabic and Chinese correct-edge pop succeeds while opposite-edge drag stays on Detail",
+    "Language picker geometry and system gesture identity/delegate regressions pass"
+  ],
+  "implementation": "LocalizedNavigationController owns back-title metadata for its entire stack at initialization, push, setViewControllers, and language change, before the isViewLoaded guard. Page-local and restoration one-time assignments removed.",
+  "compatibility": "Existing iOS 15-compatible navigation APIs; iOS 15 runtime was not executed.",
+  "historicalFailures": "Historical generated-symbol iPad AX failure remains recorded separately."
+}

@@ -80,8 +80,6 @@ final class HomeViewController: LocalizedViewController {
 
     override func applyLocalization(_ context: LanguageContext) {
         title = context.text(.homeTitle)
-        // App-owned back title on the next screen; no reliance on the OS-generated "Back".
-        navigationItem.backButtonTitle = context.text(.commonBack)
         heading.text = context.text(.homeDescription)
         heading.textAlignment = context.isRTL ? .right : .left
         var config = openButton.configuration!

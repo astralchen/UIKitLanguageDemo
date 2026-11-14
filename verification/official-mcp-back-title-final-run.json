@@ -1,0 +1,47 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 0,
+    "passed": 4,
+    "skipped": 0,
+    "total": 4
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T22-50-12+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/5A2EF3A3-2AC8-4BCB-9EED-F11217C24DBD.txt",
+  "results": [
+    {
+      "displayName": "testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews()",
+      "errorMessages": [],
+      "identifier": "NavigationBackTitleTests/testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()",
+      "errorMessages": [],
+      "identifier": "NavigationDirectionTests/testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()",
+      "errorMessages": [],
+      "identifier": "LanguagePickerAlignmentTests/testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+      "errorMessages": [],
+      "identifier": "NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "4 tests: 4 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 4,
+  "truncated": false
+}

@@ -1,0 +1,808 @@
+Test UIKitLanguageDemo
+  Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+      t =     0.02s Start Test at 2026-11-14 22:49:02.830
+      t =     0.23s Set Up
+      t =     0.26s Open com.example.UIKitLanguageDemo
+      t =     0.26s     Launch com.example.UIKitLanguageDemo
+      t =     0.26s         Terminate com.example.UIKitLanguageDemo:45652
+      t =     3.93s         Setting up automation session
+      t =     7.92s         Wait for com.example.UIKitLanguageDemo to idle
+      t =    10.59s Waiting 20.0s for "home.openDetail" Button to exist
+      t =    11.60s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+      t =    11.60s         Checking existence of `"home.openDetail" Button`
+      t =    11.84s Tap "home.openDetail" Button
+      t =    11.84s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    11.85s     Find the "home.openDetail" Button
+      t =    11.99s     Check for interrupting elements affecting "home.openDetail" Button
+      t =    12.27s     Synthesize event
+      t =    12.64s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    13.60s Waiting 10.0s for "detail.draft" TextField to exist
+      t =    14.63s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    14.63s         Checking existence of `"detail.draft" TextField`
+      t =    14.85s Find the "language.system" Button
+      t =    15.07s Waiting 10.0s for "language.en" Button to exist
+      t =    16.08s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+      t =    16.08s         Checking existence of `"language.en" Button`
+      t =    16.29s Tap "language.zh-Hans" Button
+      t =    16.29s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    16.29s     Find the "language.zh-Hans" Button
+      t =    16.47s     Check for interrupting elements affecting "language.zh-Hans" Button
+      t =    16.64s     Synthesize event
+      t =    16.98s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    17.09s Waiting 5.0s for Button (First Match) to exist
+      t =    18.11s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+      t =    18.11s         Checking existence of `Button (First Match)`
+      t =    18.31s Pressing Home button
+      t =    18.79s Terminate com.example.UIKitLanguageDemo:45956
+      t =    19.81s Open com.example.UIKitLanguageDemo
+      t =    19.82s     Launch com.example.UIKitLanguageDemo
+      t =    20.25s         Setting up automation session
+      t =    23.53s         Wait for com.example.UIKitLanguageDemo to idle
+      t =    25.49s Waiting 20.0s for "detail.draft" TextField to exist
+      t =    26.51s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    26.51s         Checking existence of `"detail.draft" TextField`
+      t =    26.75s Waiting 10.0s for "详情" NavigationBar to exist
+      t =    27.77s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+      t =    27.78s         Checking existence of `"详情" NavigationBar`
+      t =    27.95s Tap "language.en" Button
+      t =    27.95s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    27.96s     Find the "language.en" Button
+      t =    28.12s     Check for interrupting elements affecting "language.en" Button
+      t =    28.29s     Synthesize event
+      t =    28.63s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    28.77s Waiting 5.0s for Button (First Match) to exist
+      t =    29.78s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+      t =    29.78s         Checking existence of `Button (First Match)`
+      t =    30.05s         Capturing element debug description
+      t =    30.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+      t =    30.77s         Checking existence of `Button (First Match)`
+      t =    30.93s         Capturing element debug description
+      t =    31.86s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+      t =    31.86s         Checking existence of `Button (First Match)`
+      t =    32.07s         Capturing element debug description
+      t =    32.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+      t =    32.78s         Checking existence of `Button (First Match)`
+      t =    32.94s         Capturing element debug description
+      t =    33.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+      t =    33.77s         Checking existence of `Button (First Match)`
+      t =    34.00s         Capturing element debug description
+      t =    34.01s     Checking existence of `Button (First Match)`
+      t =    34.24s Collecting debug information to assist test failure triage
+      t =    34.24s     Requesting snapshot of accessibility hierarchy for app with pid 45965
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:59: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed - Expected a visible localized Back title: Back
+      t =    34.75s Tear Down
+  Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (35.028 seconds).
+  Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:45: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("Back")")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:47: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:50: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("رجوع")")
+  Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' failed (1.651 seconds).
+
+  Launch actions
+    Launch UIKitLanguageDemoUITests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoUITests
+        notice:Launching com.example.UIKitLanguageDemoUITests.xctrunner
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoUITests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemoTests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoTests
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoTests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+  Generating coverage report
+    notice:Unable to load coverage tools for toolchain 'com.apple.dt.toolchain.Metal.32023.883': Error Domain=XCTHLLVMCoverageToolsErrorDomain Code=2 "libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain" UserInfo={NSLocalizedDescription=libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain}
+  
+    Downloading profiles from iPhone 17 Pro
+      notice:Downloading profiles for com.example.UIKitLanguageDemo from 3 directories
+      notice:Downloading profiles for com.example.UIKitLanguageDemoUITests.xctrunner from 1 directory
+    
+    Merging 4 profiles using llvm-profdata (2100.1.1.101.0)
+    
+    Pre-processing target built products
+    
+    Processing source file data
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageContext.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/AppDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ListDemoContent.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneWindowService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/LanguagePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/TextInputSnapshot.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CollectionDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/OrthogonalLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ContainerDemos.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedControllers.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/SceneDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListStateRestoration.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/AppText.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneState.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/HomeViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/SettingsViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneStateCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LayoutDirection.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/DetailViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift
+      
+    Generating target entries
+      notice:Generating entry for target UIKitLanguageDemo.app
+      notice:Generating entry for target UIKitLanguageDemoTests.xctest
+      notice:Generating entry for target UIKitLanguageDemoUITests.xctest
+    
+  Testing Configuration 1
+    Test target UIKitLanguageDemoUITests
+      UIKitLanguageDemoUITests-Runner (45948)
+        2026-11-14 22:48:59.021517+0800 UIKitLanguageDemoUITests-Runner[45948:1457321] [Default] Running tests...
+            t =      nans Interface orientation changed to Portrait
+        Test Suite 'Selected tests' started at 2026-11-14 22:49:02.806.
+        Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 22:49:02.809.
+        Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:49:02.811.
+        Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+            t =     0.02s Start Test at 2026-11-14 22:49:02.830
+            t =     0.23s Set Up
+            t =     0.26s Open com.example.UIKitLanguageDemo
+            t =     0.26s     Launch com.example.UIKitLanguageDemo
+            t =     0.26s         Terminate com.example.UIKitLanguageDemo:45652
+            t =     3.93s         Setting up automation session
+            t =     7.92s         Wait for com.example.UIKitLanguageDemo to idle
+            t =    10.59s Waiting 20.0s for "home.openDetail" Button to exist
+            t =    11.60s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+            t =    11.60s         Checking existence of `"home.openDetail" Button`
+            t =    11.84s Tap "home.openDetail" Button
+            t =    11.84s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    11.85s     Find the "home.openDetail" Button
+            t =    11.99s     Check for interrupting elements affecting "home.openDetail" Button
+            t =    12.27s     Synthesize event
+            t =    12.64s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    13.60s Waiting 10.0s for "detail.draft" TextField to exist
+            t =    14.63s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    14.63s         Checking existence of `"detail.draft" TextField`
+            t =    14.85s Find the "language.system" Button
+            t =    15.07s Waiting 10.0s for "language.en" Button to exist
+            t =    16.08s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+            t =    16.08s         Checking existence of `"language.en" Button`
+            t =    16.29s Tap "language.zh-Hans" Button
+            t =    16.29s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    16.29s     Find the "language.zh-Hans" Button
+            t =    16.47s     Check for interrupting elements affecting "language.zh-Hans" Button
+            t =    16.64s     Synthesize event
+            t =    16.98s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    17.09s Waiting 5.0s for Button (First Match) to exist
+            t =    18.11s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+            t =    18.11s         Checking existence of `Button (First Match)`
+            t =    18.31s Pressing Home button
+            t =    18.79s Terminate com.example.UIKitLanguageDemo:45956
+            t =    19.81s Open com.example.UIKitLanguageDemo
+            t =    19.82s     Launch com.example.UIKitLanguageDemo
+            t =    20.25s         Setting up automation session
+            t =    23.53s         Wait for com.example.UIKitLanguageDemo to idle
+            t =    25.49s Waiting 20.0s for "detail.draft" TextField to exist
+            t =    26.51s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    26.51s         Checking existence of `"detail.draft" TextField`
+            t =    26.75s Waiting 10.0s for "详情" NavigationBar to exist
+            t =    27.77s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+            t =    27.78s         Checking existence of `"详情" NavigationBar`
+            t =    27.95s Tap "language.en" Button
+            t =    27.95s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    27.96s     Find the "language.en" Button
+            t =    28.12s     Check for interrupting elements affecting "language.en" Button
+            t =    28.29s     Synthesize event
+            t =    28.63s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    28.77s Waiting 5.0s for Button (First Match) to exist
+            t =    29.78s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+            t =    29.78s         Checking existence of `Button (First Match)`
+            t =    30.05s         Capturing element debug description
+            t =    30.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+            t =    30.77s         Checking existence of `Button (First Match)`
+            t =    30.93s         Capturing element debug description
+            t =    31.86s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+            t =    31.86s         Checking existence of `Button (First Match)`
+            t =    32.07s         Capturing element debug description
+            t =    32.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+            t =    32.78s         Checking existence of `Button (First Match)`
+            t =    32.94s         Capturing element debug description
+            t =    33.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+            t =    33.77s         Checking existence of `Button (First Match)`
+            t =    34.00s         Capturing element debug description
+            t =    34.01s     Checking existence of `Button (First Match)`
+            t =    34.24s Collecting debug information to assist test failure triage
+            t =    34.24s     Requesting snapshot of accessibility hierarchy for app with pid 45965
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:59: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed - Expected a visible localized Back title: Back
+            t =    34.75s Tear Down
+        Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (35.028 seconds).
+        Test Suite 'NavigationGestureUITests' failed at 2026-11-14 22:49:37.857.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.046) seconds
+        Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 22:49:37.859.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.050) seconds
+        Test Suite 'Selected tests' failed at 2026-11-14 22:49:37.860.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.054) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-48-34-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-0481D2F5-FB0F-4095-8483-9343D7308A6D-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-635D191B-6812-4DA4-B0DA-E8155A8F4E06/Session-UIKitLanguageDemoUITests-2026-11-14_224856-o5hwso.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-48-34-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-0481D2F5-FB0F-4095-8483-9343D7308A6D-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-635D191B-6812-4DA4-B0DA-E8155A8F4E06/Session-UIKitLanguageDemoUITests-2026-11-14_224856-o5hwso.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' failed at 2026-11-14 22:49:37.860.
+	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.054) seconds
+
+          2026-11-14 22:48:59.021517+0800 UIKitLanguageDemoUITests-Runner[45948:1457321] [Default] Running tests...
+              t =      nans Interface orientation changed to Portrait
+          Test Suite 'Selected tests' started at 2026-11-14 22:49:02.806.
+          Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 22:49:02.809.
+          Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:49:02.811.
+          Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+              t =     0.02s Start Test at 2026-11-14 22:49:02.830
+              t =     0.23s Set Up
+              t =     0.26s Open com.example.UIKitLanguageDemo
+              t =     0.26s     Launch com.example.UIKitLanguageDemo
+              t =     0.26s         Terminate com.example.UIKitLanguageDemo:45652
+              t =     3.93s         Setting up automation session
+              t =     7.92s         Wait for com.example.UIKitLanguageDemo to idle
+              t =    10.59s Waiting 20.0s for "home.openDetail" Button to exist
+              t =    11.60s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+              t =    11.60s         Checking existence of `"home.openDetail" Button`
+              t =    11.84s Tap "home.openDetail" Button
+              t =    11.84s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    11.85s     Find the "home.openDetail" Button
+              t =    11.99s     Check for interrupting elements affecting "home.openDetail" Button
+              t =    12.27s     Synthesize event
+              t =    12.64s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    13.60s Waiting 10.0s for "detail.draft" TextField to exist
+              t =    14.63s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    14.63s         Checking existence of `"detail.draft" TextField`
+              t =    14.85s Find the "language.system" Button
+              t =    15.07s Waiting 10.0s for "language.en" Button to exist
+              t =    16.08s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+              t =    16.08s         Checking existence of `"language.en" Button`
+              t =    16.29s Tap "language.zh-Hans" Button
+              t =    16.29s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    16.29s     Find the "language.zh-Hans" Button
+              t =    16.47s     Check for interrupting elements affecting "language.zh-Hans" Button
+              t =    16.64s     Synthesize event
+              t =    16.98s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    17.09s Waiting 5.0s for Button (First Match) to exist
+              t =    18.11s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+              t =    18.11s         Checking existence of `Button (First Match)`
+              t =    18.31s Pressing Home button
+              t =    18.79s Terminate com.example.UIKitLanguageDemo:45956
+              t =    19.81s Open com.example.UIKitLanguageDemo
+              t =    19.82s     Launch com.example.UIKitLanguageDemo
+              t =    20.25s         Setting up automation session
+              t =    23.53s         Wait for com.example.UIKitLanguageDemo to idle
+              t =    25.49s Waiting 20.0s for "detail.draft" TextField to exist
+              t =    26.51s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    26.51s         Checking existence of `"detail.draft" TextField`
+              t =    26.75s Waiting 10.0s for "详情" NavigationBar to exist
+              t =    27.77s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+              t =    27.78s         Checking existence of `"详情" NavigationBar`
+              t =    27.95s Tap "language.en" Button
+              t =    27.95s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    27.96s     Find the "language.en" Button
+              t =    28.12s     Check for interrupting elements affecting "language.en" Button
+              t =    28.29s     Synthesize event
+              t =    28.63s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    28.77s Waiting 5.0s for Button (First Match) to exist
+              t =    29.78s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+              t =    29.78s         Checking existence of `Button (First Match)`
+              t =    30.05s         Capturing element debug description
+              t =    30.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+              t =    30.77s         Checking existence of `Button (First Match)`
+              t =    30.93s         Capturing element debug description
+              t =    31.86s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+              t =    31.86s         Checking existence of `Button (First Match)`
+              t =    32.07s         Capturing element debug description
+              t =    32.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+              t =    32.78s         Checking existence of `Button (First Match)`
+              t =    32.94s         Capturing element debug description
+              t =    33.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+              t =    33.77s         Checking existence of `Button (First Match)`
+              t =    34.00s         Capturing element debug description
+              t =    34.01s     Checking existence of `Button (First Match)`
+              t =    34.24s Collecting debug information to assist test failure triage
+              t =    34.24s     Requesting snapshot of accessibility hierarchy for app with pid 45965
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:59: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed - Expected a visible localized Back title: Back
+              t =    34.75s Tear Down
+          Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (35.028 seconds).
+          Test Suite 'NavigationGestureUITests' failed at 2026-11-14 22:49:37.857.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.046) seconds
+          Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 22:49:37.859.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.050) seconds
+          Test Suite 'Selected tests' failed at 2026-11-14 22:49:37.860.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.054) seconds
+        
+          Run test suite UIKitLanguageDemoUITests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 22:49:37.859.
+	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.050) seconds
+
+            Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 22:49:02.809.
+            Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:49:02.811.
+            Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+                t =     0.02s Start Test at 2026-11-14 22:49:02.830
+                t =     0.23s Set Up
+                t =     0.26s Open com.example.UIKitLanguageDemo
+                t =     0.26s     Launch com.example.UIKitLanguageDemo
+                t =     0.26s         Terminate com.example.UIKitLanguageDemo:45652
+                t =     3.93s         Setting up automation session
+                t =     7.92s         Wait for com.example.UIKitLanguageDemo to idle
+                t =    10.59s Waiting 20.0s for "home.openDetail" Button to exist
+                t =    11.60s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                t =    11.60s         Checking existence of `"home.openDetail" Button`
+                t =    11.84s Tap "home.openDetail" Button
+                t =    11.84s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    11.85s     Find the "home.openDetail" Button
+                t =    11.99s     Check for interrupting elements affecting "home.openDetail" Button
+                t =    12.27s     Synthesize event
+                t =    12.64s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    13.60s Waiting 10.0s for "detail.draft" TextField to exist
+                t =    14.63s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    14.63s         Checking existence of `"detail.draft" TextField`
+                t =    14.85s Find the "language.system" Button
+                t =    15.07s Waiting 10.0s for "language.en" Button to exist
+                t =    16.08s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+                t =    16.08s         Checking existence of `"language.en" Button`
+                t =    16.29s Tap "language.zh-Hans" Button
+                t =    16.29s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    16.29s     Find the "language.zh-Hans" Button
+                t =    16.47s     Check for interrupting elements affecting "language.zh-Hans" Button
+                t =    16.64s     Synthesize event
+                t =    16.98s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    17.09s Waiting 5.0s for Button (First Match) to exist
+                t =    18.11s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                t =    18.11s         Checking existence of `Button (First Match)`
+                t =    18.31s Pressing Home button
+                t =    18.79s Terminate com.example.UIKitLanguageDemo:45956
+                t =    19.81s Open com.example.UIKitLanguageDemo
+                t =    19.82s     Launch com.example.UIKitLanguageDemo
+                t =    20.25s         Setting up automation session
+                t =    23.53s         Wait for com.example.UIKitLanguageDemo to idle
+                t =    25.49s Waiting 20.0s for "detail.draft" TextField to exist
+                t =    26.51s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    26.51s         Checking existence of `"detail.draft" TextField`
+                t =    26.75s Waiting 10.0s for "详情" NavigationBar to exist
+                t =    27.77s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+                t =    27.78s         Checking existence of `"详情" NavigationBar`
+                t =    27.95s Tap "language.en" Button
+                t =    27.95s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    27.96s     Find the "language.en" Button
+                t =    28.12s     Check for interrupting elements affecting "language.en" Button
+                t =    28.29s     Synthesize event
+                t =    28.63s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    28.77s Waiting 5.0s for Button (First Match) to exist
+                t =    29.78s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                t =    29.78s         Checking existence of `Button (First Match)`
+                t =    30.05s         Capturing element debug description
+                t =    30.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                t =    30.77s         Checking existence of `Button (First Match)`
+                t =    30.93s         Capturing element debug description
+                t =    31.86s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                t =    31.86s         Checking existence of `Button (First Match)`
+                t =    32.07s         Capturing element debug description
+                t =    32.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                t =    32.78s         Checking existence of `Button (First Match)`
+                t =    32.94s         Capturing element debug description
+                t =    33.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                t =    33.77s         Checking existence of `Button (First Match)`
+                t =    34.00s         Capturing element debug description
+                t =    34.01s     Checking existence of `Button (First Match)`
+                t =    34.24s Collecting debug information to assist test failure triage
+                t =    34.24s     Requesting snapshot of accessibility hierarchy for app with pid 45965
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:59: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed - Expected a visible localized Back title: Back
+                t =    34.75s Tear Down
+            Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (35.028 seconds).
+            Test Suite 'NavigationGestureUITests' failed at 2026-11-14 22:49:37.857.
+            	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.046) seconds
+            Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 22:49:37.859.
+            	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.050) seconds
+          
+            Run test suite NavigationGestureUITests
+              Summary: Test Suite 'NavigationGestureUITests' failed at 2026-11-14 22:49:37.857.
+	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.046) seconds
+
+              Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:49:02.811.
+              Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+                  t =     0.02s Start Test at 2026-11-14 22:49:02.830
+                  t =     0.23s Set Up
+                  t =     0.26s Open com.example.UIKitLanguageDemo
+                  t =     0.26s     Launch com.example.UIKitLanguageDemo
+                  t =     0.26s         Terminate com.example.UIKitLanguageDemo:45652
+                  t =     3.93s         Setting up automation session
+                  t =     7.92s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =    10.59s Waiting 20.0s for "home.openDetail" Button to exist
+                  t =    11.60s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                  t =    11.60s         Checking existence of `"home.openDetail" Button`
+                  t =    11.84s Tap "home.openDetail" Button
+                  t =    11.84s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    11.85s     Find the "home.openDetail" Button
+                  t =    11.99s     Check for interrupting elements affecting "home.openDetail" Button
+                  t =    12.27s     Synthesize event
+                  t =    12.64s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    13.60s Waiting 10.0s for "detail.draft" TextField to exist
+                  t =    14.63s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    14.63s         Checking existence of `"detail.draft" TextField`
+                  t =    14.85s Find the "language.system" Button
+                  t =    15.07s Waiting 10.0s for "language.en" Button to exist
+                  t =    16.08s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+                  t =    16.08s         Checking existence of `"language.en" Button`
+                  t =    16.29s Tap "language.zh-Hans" Button
+                  t =    16.29s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    16.29s     Find the "language.zh-Hans" Button
+                  t =    16.47s     Check for interrupting elements affecting "language.zh-Hans" Button
+                  t =    16.64s     Synthesize event
+                  t =    16.98s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    17.09s Waiting 5.0s for Button (First Match) to exist
+                  t =    18.11s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                  t =    18.11s         Checking existence of `Button (First Match)`
+                  t =    18.31s Pressing Home button
+                  t =    18.79s Terminate com.example.UIKitLanguageDemo:45956
+                  t =    19.81s Open com.example.UIKitLanguageDemo
+                  t =    19.82s     Launch com.example.UIKitLanguageDemo
+                  t =    20.25s         Setting up automation session
+                  t =    23.53s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =    25.49s Waiting 20.0s for "detail.draft" TextField to exist
+                  t =    26.51s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    26.51s         Checking existence of `"detail.draft" TextField`
+                  t =    26.75s Waiting 10.0s for "详情" NavigationBar to exist
+                  t =    27.77s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+                  t =    27.78s         Checking existence of `"详情" NavigationBar`
+                  t =    27.95s Tap "language.en" Button
+                  t =    27.95s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    27.96s     Find the "language.en" Button
+                  t =    28.12s     Check for interrupting elements affecting "language.en" Button
+                  t =    28.29s     Synthesize event
+                  t =    28.63s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    28.77s Waiting 5.0s for Button (First Match) to exist
+                  t =    29.78s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                  t =    29.78s         Checking existence of `Button (First Match)`
+                  t =    30.05s         Capturing element debug description
+                  t =    30.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                  t =    30.77s         Checking existence of `Button (First Match)`
+                  t =    30.93s         Capturing element debug description
+                  t =    31.86s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                  t =    31.86s         Checking existence of `Button (First Match)`
+                  t =    32.07s         Capturing element debug description
+                  t =    32.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                  t =    32.78s         Checking existence of `Button (First Match)`
+                  t =    32.94s         Capturing element debug description
+                  t =    33.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                  t =    33.77s         Checking existence of `Button (First Match)`
+                  t =    34.00s         Capturing element debug description
+                  t =    34.01s     Checking existence of `Button (First Match)`
+                  t =    34.24s Collecting debug information to assist test failure triage
+                  t =    34.24s     Requesting snapshot of accessibility hierarchy for app with pid 45965
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:59: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed - Expected a visible localized Back title: Back
+                  t =    34.75s Tear Down
+              Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (35.028 seconds).
+              Test Suite 'NavigationGestureUITests' failed at 2026-11-14 22:49:37.857.
+              	 Executed 1 test, with 1 failure (0 unexpected) in 35.028 (35.046) seconds
+            
+              Run test case testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()
+                Summary:     t =    34.75s Tear Down
+Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (35.028 seconds).
+
+                Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+                    t =     0.02s Start Test at 2026-11-14 22:49:02.830
+                    t =     0.23s Set Up
+                    t =     0.26s Open com.example.UIKitLanguageDemo
+                    t =     0.26s     Launch com.example.UIKitLanguageDemo
+                    t =     0.26s         Terminate com.example.UIKitLanguageDemo:45652
+                    t =     3.93s         Setting up automation session
+                    t =     7.92s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =    10.59s Waiting 20.0s for "home.openDetail" Button to exist
+                    t =    11.60s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                    t =    11.60s         Checking existence of `"home.openDetail" Button`
+                    t =    11.84s Tap "home.openDetail" Button
+                    t =    11.84s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    11.85s     Find the "home.openDetail" Button
+                    t =    11.99s     Check for interrupting elements affecting "home.openDetail" Button
+                    t =    12.27s     Synthesize event
+                    t =    12.64s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    13.60s Waiting 10.0s for "detail.draft" TextField to exist
+                    t =    14.63s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    14.63s         Checking existence of `"detail.draft" TextField`
+                    t =    14.85s Find the "language.system" Button
+                    t =    15.07s Waiting 10.0s for "language.en" Button to exist
+                    t =    16.08s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+                    t =    16.08s         Checking existence of `"language.en" Button`
+                    t =    16.29s Tap "language.zh-Hans" Button
+                    t =    16.29s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    16.29s     Find the "language.zh-Hans" Button
+                    t =    16.47s     Check for interrupting elements affecting "language.zh-Hans" Button
+                    t =    16.64s     Synthesize event
+                    t =    16.98s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    17.09s Waiting 5.0s for Button (First Match) to exist
+                    t =    18.11s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                    t =    18.11s         Checking existence of `Button (First Match)`
+                    t =    18.31s Pressing Home button
+                    t =    18.79s Terminate com.example.UIKitLanguageDemo:45956
+                    t =    19.81s Open com.example.UIKitLanguageDemo
+                    t =    19.82s     Launch com.example.UIKitLanguageDemo
+                    t =    20.25s         Setting up automation session
+                    t =    23.53s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =    25.49s Waiting 20.0s for "detail.draft" TextField to exist
+                    t =    26.51s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    26.51s         Checking existence of `"detail.draft" TextField`
+                    t =    26.75s Waiting 10.0s for "详情" NavigationBar to exist
+                    t =    27.77s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+                    t =    27.78s         Checking existence of `"详情" NavigationBar`
+                    t =    27.95s Tap "language.en" Button
+                    t =    27.95s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    27.96s     Find the "language.en" Button
+                    t =    28.12s     Check for interrupting elements affecting "language.en" Button
+                    t =    28.29s     Synthesize event
+                    t =    28.63s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    28.77s Waiting 5.0s for Button (First Match) to exist
+                    t =    29.78s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                    t =    29.78s         Checking existence of `Button (First Match)`
+                    t =    30.05s         Capturing element debug description
+                    t =    30.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                    t =    30.77s         Checking existence of `Button (First Match)`
+                    t =    30.93s         Capturing element debug description
+                    t =    31.86s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                    t =    31.86s         Checking existence of `Button (First Match)`
+                    t =    32.07s         Capturing element debug description
+                    t =    32.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                    t =    32.78s         Checking existence of `Button (First Match)`
+                    t =    32.94s         Capturing element debug description
+                    t =    33.77s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                    t =    33.77s         Checking existence of `Button (First Match)`
+                    t =    34.00s         Capturing element debug description
+                    t =    34.01s     Checking existence of `Button (First Match)`
+                    t =    34.24s Collecting debug information to assist test failure triage
+                    t =    34.24s     Requesting snapshot of accessibility hierarchy for app with pid 45965
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:59: error: -[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese] : XCTAssertTrue failed - Expected a visible localized Back title: Back
+                    t =    34.75s Tear Down
+                Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' failed (35.028 seconds).
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:test failure:XCTAssertTrue failed - Expected a visible localized Back title: Back
+              
+    Test target UIKitLanguageDemoTests
+      UIKitLanguageDemo (45975)
+        Test Suite 'Selected tests' started at 2026-11-14 22:49:40.464.
+        Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 22:49:40.466.
+        Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:49:40.467.
+        Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:45: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("Back")")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:47: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:50: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("رجوع")")
+        Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' failed (1.651 seconds).
+        Test Suite 'NavigationBackTitleTests' failed at 2026-11-14 22:49:42.121.
+        	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.655) seconds
+        Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-14 22:49:42.122.
+        	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.657) seconds
+        Test Suite 'Selected tests' failed at 2026-11-14 22:49:42.123.
+        	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.659) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-48-34-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-C7CB1EA2-25C3-4F82-8060-9731F14B9567-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-C24372E8-F280-4674-BDDE-07A1F6D337EE/Session-UIKitLanguageDemoTests-2026-11-14_224938-a8rJyJ.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-48-34-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-C7CB1EA2-25C3-4F82-8060-9731F14B9567-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-C24372E8-F280-4674-BDDE-07A1F6D337EE/Session-UIKitLanguageDemoTests-2026-11-14_224938-a8rJyJ.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' failed at 2026-11-14 22:49:42.123.
+	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.659) seconds
+
+          Test Suite 'Selected tests' started at 2026-11-14 22:49:40.464.
+          Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 22:49:40.466.
+          Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:49:40.467.
+          Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:45: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("Back")")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:47: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:50: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("رجوع")")
+          Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' failed (1.651 seconds).
+          Test Suite 'NavigationBackTitleTests' failed at 2026-11-14 22:49:42.121.
+          	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.655) seconds
+          Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-14 22:49:42.122.
+          	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.657) seconds
+          Test Suite 'Selected tests' failed at 2026-11-14 22:49:42.123.
+          	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.659) seconds
+        
+          Run test suite UIKitLanguageDemoTests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-14 22:49:42.122.
+	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.657) seconds
+
+            Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 22:49:40.466.
+            Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:49:40.467.
+            Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:45: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("Back")")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:47: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:50: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("رجوع")")
+            Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' failed (1.651 seconds).
+            Test Suite 'NavigationBackTitleTests' failed at 2026-11-14 22:49:42.121.
+            	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.655) seconds
+            Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-14 22:49:42.122.
+            	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.657) seconds
+          
+            Run test suite NavigationBackTitleTests
+              Summary: Test Suite 'NavigationBackTitleTests' failed at 2026-11-14 22:49:42.121.
+	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.655) seconds
+
+              Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:49:40.467.
+              Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:45: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("Back")")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:47: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:50: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("رجوع")")
+              Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' failed (1.651 seconds).
+              Test Suite 'NavigationBackTitleTests' failed at 2026-11-14 22:49:42.121.
+              	 Executed 1 test, with 12 failures (0 unexpected) in 1.651 (1.655) seconds
+            
+              Run test case testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews()
+                Summary: Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' failed (1.651 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:45: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:47: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:50: error: -[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews] : XCTAssertEqual failed: ("nil") is not equal to ("Optional("رجوع")")
+                Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' failed (1.651 seconds).
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("nil") is not equal to ("Optional("Back")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("Optional("返回")") is not equal to ("Optional("رجوع")")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:test failure:XCTAssertEqual failed: ("nil") is not equal to ("Optional("رجوع")")
+              
+** TEST FINISHED **

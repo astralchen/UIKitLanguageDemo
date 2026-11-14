@@ -1,0 +1,1440 @@
+Test UIKitLanguageDemo
+  Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+      t =     0.03s Start Test at 2026-11-14 22:50:28.994
+      t =     0.37s Set Up
+      t =     0.42s Open com.example.UIKitLanguageDemo
+      t =     0.42s     Launch com.example.UIKitLanguageDemo
+      t =     3.01s         Setting up automation session
+      t =     8.38s         Wait for com.example.UIKitLanguageDemo to idle
+      t =    11.31s Waiting 20.0s for "home.openDetail" Button to exist
+      t =    12.33s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+      t =    12.33s         Checking existence of `"home.openDetail" Button`
+      t =    12.77s Tap "home.openDetail" Button
+      t =    12.77s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    12.79s     Find the "home.openDetail" Button
+      t =    13.09s     Check for interrupting elements affecting "home.openDetail" Button
+      t =    13.34s     Synthesize event
+      t =    13.72s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    14.81s Waiting 10.0s for "detail.draft" TextField to exist
+      t =    15.84s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    15.84s         Checking existence of `"detail.draft" TextField`
+      t =    16.17s Find the "language.system" Button
+      t =    16.52s Waiting 10.0s for "language.en" Button to exist
+      t =    17.54s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+      t =    17.55s         Checking existence of `"language.en" Button`
+      t =    17.85s Tap "language.zh-Hans" Button
+      t =    17.85s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    17.86s     Find the "language.zh-Hans" Button
+      t =    18.15s     Check for interrupting elements affecting "language.zh-Hans" Button
+      t =    18.44s     Synthesize event
+      t =    18.84s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    18.95s Waiting 5.0s for Button (First Match) to exist
+      t =    19.97s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+      t =    19.97s         Checking existence of `Button (First Match)`
+      t =    20.17s Pressing Home button
+      t =    20.64s Terminate com.example.UIKitLanguageDemo:46089
+      t =    21.73s Open com.example.UIKitLanguageDemo
+      t =    21.74s     Launch com.example.UIKitLanguageDemo
+      t =    22.58s         Setting up automation session
+      t =    26.44s         Wait for com.example.UIKitLanguageDemo to idle
+      t =    29.17s Waiting 20.0s for "detail.draft" TextField to exist
+      t =    30.19s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    30.19s         Checking existence of `"detail.draft" TextField`
+      t =    30.58s Waiting 10.0s for "详情" NavigationBar to exist
+      t =    31.60s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+      t =    31.60s         Checking existence of `"详情" NavigationBar`
+      t =    31.93s Tap "language.en" Button
+      t =    31.93s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    31.95s     Find the "language.en" Button
+      t =    32.28s     Check for interrupting elements affecting "language.en" Button
+      t =    32.63s     Synthesize event
+      t =    33.01s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    33.17s Waiting 5.0s for Button (First Match) to exist
+      t =    34.19s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+      t =    34.20s         Checking existence of `Button (First Match)`
+      t =    34.37s Tap "language.ar" Button
+      t =    34.37s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    34.39s     Find the "language.ar" Button
+      t =    34.68s     Check for interrupting elements affecting "language.ar" Button
+      t =    34.97s     Synthesize event
+      t =    35.34s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    35.56s Waiting 5.0s for Button (First Match) to exist
+      t =    36.57s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+      t =    36.57s         Checking existence of `Button (First Match)`
+      t =    36.72s Waiting 5.0s for "التفاصيل" NavigationBar to exist
+      t =    37.74s     Checking `Expect predicate `existsNoRetry == 1` for object "التفاصيل" NavigationBar`
+      t =    37.74s         Checking existence of `"التفاصيل" NavigationBar`
+      t =    38.04s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+      t =    38.04s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    38.05s     Find the Window (First Match)
+      t =    38.09s     Check for interrupting elements affecting "scene.window.2" Window
+      t =    38.45s     Synthesize event
+      t =    38.46s         Find the "scene.window.2" Window
+      t =    38.51s         Find the "scene.window.2" Window
+      t =    38.58s         Find the "scene.window.2" Window
+      t =    38.64s         Find the "scene.window.2" Window
+      t =    38.71s         Find the "scene.window.2" Window
+      t =    39.73s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    39.75s Checking existence of `"detail.draft" TextField`
+      t =    40.05s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+      t =    40.05s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    40.06s     Find the Window (First Match)
+      t =    40.10s     Check for interrupting elements affecting "scene.window.2" Window
+      t =    40.44s     Synthesize event
+      t =    40.44s         Find the "scene.window.2" Window
+      t =    40.49s         Find the "scene.window.2" Window
+      t =    40.54s         Find the "scene.window.2" Window
+      t =    40.60s         Find the "scene.window.2" Window
+      t =    40.68s         Find the "scene.window.2" Window
+      t =    41.70s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    43.50s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+      t =    43.50s     Checking existence of `"detail.draft" TextField`
+      t =    43.76s Waiting 10.0s for "home.openDetail" Button to exist
+      t =    44.77s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+      t =    44.77s         Checking existence of `"home.openDetail" Button`
+      t =    45.02s Tap "home.openDetail" Button
+      t =    45.02s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    45.03s     Find the "home.openDetail" Button
+      t =    45.29s     Check for interrupting elements affecting "home.openDetail" Button
+      t =    45.53s     Synthesize event
+      t =    45.90s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    46.81s Tap "language.zh-Hans" Button
+      t =    46.81s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    46.82s     Find the "language.zh-Hans" Button
+      t =    47.27s     Check for interrupting elements affecting "language.zh-Hans" Button
+      t =    47.60s     Synthesize event
+      t =    48.00s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    48.21s Waiting 5.0s for Button (First Match) to exist
+      t =    49.22s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+      t =    49.22s         Checking existence of `Button (First Match)`
+      t =    49.42s Waiting 5.0s for "详情" NavigationBar to exist
+      t =    50.43s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+      t =    50.43s         Checking existence of `"详情" NavigationBar`
+      t =    50.71s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+      t =    50.71s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    50.73s     Find the Window (First Match)
+      t =    50.78s     Check for interrupting elements affecting "scene.window.2" Window
+      t =    51.46s     Synthesize event
+      t =    51.46s         Find the "scene.window.2" Window
+      t =    51.52s         Find the "scene.window.2" Window
+      t =    51.62s         Find the "scene.window.2" Window
+      t =    51.72s         Find the "scene.window.2" Window
+      t =    51.84s         Find the "scene.window.2" Window
+      t =    52.88s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    52.90s Checking existence of `"detail.draft" TextField`
+      t =    53.19s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+      t =    53.19s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    53.21s     Find the Window (First Match)
+      t =    53.24s     Check for interrupting elements affecting "scene.window.2" Window
+      t =    53.53s     Synthesize event
+      t =    53.54s         Find the "scene.window.2" Window
+      t =    53.59s         Find the "scene.window.2" Window
+      t =    53.65s         Find the "scene.window.2" Window
+      t =    53.70s         Find the "scene.window.2" Window
+      t =    53.78s         Find the "scene.window.2" Window
+      t =    54.80s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    56.63s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+      t =    56.63s     Checking existence of `"detail.draft" TextField`
+      t =    56.86s Waiting 10.0s for "home.openDetail" Button to exist
+      t =    57.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+      t =    57.90s         Checking existence of `"home.openDetail" Button`
+      t =    58.36s Checking existence of `"detail.draft" TextField`
+      t =    58.67s Checking existence of `"home.openDetail" Button`
+      t =    58.89s Tap "home.openDetail" Button
+      t =    58.89s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    58.90s     Find the "home.openDetail" Button
+      t =    59.11s     Check for interrupting elements affecting "home.openDetail" Button
+      t =    59.34s     Synthesize event
+      t =    59.71s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    60.59s Checking existence of `"language.system" Button`
+      t =    61.36s Tap "language.system" Button
+      t =    61.36s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    61.38s     Find the "language.system" Button
+      t =    61.93s     Check for interrupting elements affecting "language.system" Button
+      t =    62.31s     Synthesize event
+      t =    62.78s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    62.89s Tear Down
+  Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' passed (63.254 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+  Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.046 seconds).
+  Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+  Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.432 seconds).
+  Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+  Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.116 seconds).
+
+  Launch actions
+    Launch UIKitLanguageDemoUITests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoUITests
+        notice:Launching com.example.UIKitLanguageDemoUITests.xctrunner
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoUITests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemoTests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoTests
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoTests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+  Generating coverage report
+    notice:Unable to load coverage tools for toolchain 'com.apple.dt.toolchain.Metal.32023.883': Error Domain=XCTHLLVMCoverageToolsErrorDomain Code=2 "libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain" UserInfo={NSLocalizedDescription=libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain}
+  
+    Downloading profiles from iPhone 17 Pro
+      notice:Downloading profiles for com.example.UIKitLanguageDemoUITests.xctrunner from 1 directory
+      notice:Downloading profiles for com.example.UIKitLanguageDemo from 3 directories
+    
+    Merging 4 profiles using llvm-profdata (2100.1.1.101.0)
+    
+    Pre-processing target built products
+    
+    Processing source file data
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneWindowService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageContext.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ListDemoContent.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/LanguagePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CollectionDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/AppDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/OrthogonalLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/TextInputSnapshot.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ContainerDemos.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedControllers.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/SceneDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListStateRestoration.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/AppText.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneState.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/HomeViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/SettingsViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneStateCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LayoutDirection.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/DetailViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift
+      
+    Generating target entries
+      notice:Generating entry for target UIKitLanguageDemo.app
+      notice:Generating entry for target UIKitLanguageDemoTests.xctest
+      notice:Generating entry for target UIKitLanguageDemoUITests.xctest
+    
+  Testing Configuration 1
+    Test target UIKitLanguageDemoUITests
+      UIKitLanguageDemoUITests-Runner (46081)
+        2026-11-14 22:50:24.817737+0800 UIKitLanguageDemoUITests-Runner[46081:1460789] [Default] Running tests...
+            t =      nans Interface orientation changed to Portrait
+        Test Suite 'Selected tests' started at 2026-11-14 22:50:28.965.
+        Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 22:50:28.967.
+        Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:50:28.968.
+        Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+            t =     0.03s Start Test at 2026-11-14 22:50:28.994
+            t =     0.37s Set Up
+            t =     0.42s Open com.example.UIKitLanguageDemo
+            t =     0.42s     Launch com.example.UIKitLanguageDemo
+            t =     3.01s         Setting up automation session
+            t =     8.38s         Wait for com.example.UIKitLanguageDemo to idle
+            t =    11.31s Waiting 20.0s for "home.openDetail" Button to exist
+            t =    12.33s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+            t =    12.33s         Checking existence of `"home.openDetail" Button`
+            t =    12.77s Tap "home.openDetail" Button
+            t =    12.77s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    12.79s     Find the "home.openDetail" Button
+            t =    13.09s     Check for interrupting elements affecting "home.openDetail" Button
+            t =    13.34s     Synthesize event
+            t =    13.72s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    14.81s Waiting 10.0s for "detail.draft" TextField to exist
+            t =    15.84s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    15.84s         Checking existence of `"detail.draft" TextField`
+            t =    16.17s Find the "language.system" Button
+            t =    16.52s Waiting 10.0s for "language.en" Button to exist
+            t =    17.54s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+            t =    17.55s         Checking existence of `"language.en" Button`
+            t =    17.85s Tap "language.zh-Hans" Button
+            t =    17.85s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    17.86s     Find the "language.zh-Hans" Button
+            t =    18.15s     Check for interrupting elements affecting "language.zh-Hans" Button
+            t =    18.44s     Synthesize event
+            t =    18.84s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    18.95s Waiting 5.0s for Button (First Match) to exist
+            t =    19.97s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+            t =    19.97s         Checking existence of `Button (First Match)`
+            t =    20.17s Pressing Home button
+            t =    20.64s Terminate com.example.UIKitLanguageDemo:46089
+            t =    21.73s Open com.example.UIKitLanguageDemo
+            t =    21.74s     Launch com.example.UIKitLanguageDemo
+            t =    22.58s         Setting up automation session
+            t =    26.44s         Wait for com.example.UIKitLanguageDemo to idle
+            t =    29.17s Waiting 20.0s for "detail.draft" TextField to exist
+            t =    30.19s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    30.19s         Checking existence of `"detail.draft" TextField`
+            t =    30.58s Waiting 10.0s for "详情" NavigationBar to exist
+            t =    31.60s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+            t =    31.60s         Checking existence of `"详情" NavigationBar`
+            t =    31.93s Tap "language.en" Button
+            t =    31.93s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    31.95s     Find the "language.en" Button
+            t =    32.28s     Check for interrupting elements affecting "language.en" Button
+            t =    32.63s     Synthesize event
+            t =    33.01s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    33.17s Waiting 5.0s for Button (First Match) to exist
+            t =    34.19s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+            t =    34.20s         Checking existence of `Button (First Match)`
+            t =    34.37s Tap "language.ar" Button
+            t =    34.37s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    34.39s     Find the "language.ar" Button
+            t =    34.68s     Check for interrupting elements affecting "language.ar" Button
+            t =    34.97s     Synthesize event
+            t =    35.34s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    35.56s Waiting 5.0s for Button (First Match) to exist
+            t =    36.57s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+            t =    36.57s         Checking existence of `Button (First Match)`
+            t =    36.72s Waiting 5.0s for "التفاصيل" NavigationBar to exist
+            t =    37.74s     Checking `Expect predicate `existsNoRetry == 1` for object "التفاصيل" NavigationBar`
+            t =    37.74s         Checking existence of `"التفاصيل" NavigationBar`
+            t =    38.04s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+            t =    38.04s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    38.05s     Find the Window (First Match)
+            t =    38.09s     Check for interrupting elements affecting "scene.window.2" Window
+            t =    38.45s     Synthesize event
+            t =    38.46s         Find the "scene.window.2" Window
+            t =    38.51s         Find the "scene.window.2" Window
+            t =    38.58s         Find the "scene.window.2" Window
+            t =    38.64s         Find the "scene.window.2" Window
+            t =    38.71s         Find the "scene.window.2" Window
+            t =    39.73s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    39.75s Checking existence of `"detail.draft" TextField`
+            t =    40.05s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+            t =    40.05s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    40.06s     Find the Window (First Match)
+            t =    40.10s     Check for interrupting elements affecting "scene.window.2" Window
+            t =    40.44s     Synthesize event
+            t =    40.44s         Find the "scene.window.2" Window
+            t =    40.49s         Find the "scene.window.2" Window
+            t =    40.54s         Find the "scene.window.2" Window
+            t =    40.60s         Find the "scene.window.2" Window
+            t =    40.68s         Find the "scene.window.2" Window
+            t =    41.70s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    43.50s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+            t =    43.50s     Checking existence of `"detail.draft" TextField`
+            t =    43.76s Waiting 10.0s for "home.openDetail" Button to exist
+            t =    44.77s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+            t =    44.77s         Checking existence of `"home.openDetail" Button`
+            t =    45.02s Tap "home.openDetail" Button
+            t =    45.02s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    45.03s     Find the "home.openDetail" Button
+            t =    45.29s     Check for interrupting elements affecting "home.openDetail" Button
+            t =    45.53s     Synthesize event
+            t =    45.90s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    46.81s Tap "language.zh-Hans" Button
+            t =    46.81s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    46.82s     Find the "language.zh-Hans" Button
+            t =    47.27s     Check for interrupting elements affecting "language.zh-Hans" Button
+            t =    47.60s     Synthesize event
+            t =    48.00s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    48.21s Waiting 5.0s for Button (First Match) to exist
+            t =    49.22s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+            t =    49.22s         Checking existence of `Button (First Match)`
+            t =    49.42s Waiting 5.0s for "详情" NavigationBar to exist
+            t =    50.43s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+            t =    50.43s         Checking existence of `"详情" NavigationBar`
+            t =    50.71s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+            t =    50.71s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    50.73s     Find the Window (First Match)
+            t =    50.78s     Check for interrupting elements affecting "scene.window.2" Window
+            t =    51.46s     Synthesize event
+            t =    51.46s         Find the "scene.window.2" Window
+            t =    51.52s         Find the "scene.window.2" Window
+            t =    51.62s         Find the "scene.window.2" Window
+            t =    51.72s         Find the "scene.window.2" Window
+            t =    51.84s         Find the "scene.window.2" Window
+            t =    52.88s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    52.90s Checking existence of `"detail.draft" TextField`
+            t =    53.19s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+            t =    53.19s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    53.21s     Find the Window (First Match)
+            t =    53.24s     Check for interrupting elements affecting "scene.window.2" Window
+            t =    53.53s     Synthesize event
+            t =    53.54s         Find the "scene.window.2" Window
+            t =    53.59s         Find the "scene.window.2" Window
+            t =    53.65s         Find the "scene.window.2" Window
+            t =    53.70s         Find the "scene.window.2" Window
+            t =    53.78s         Find the "scene.window.2" Window
+            t =    54.80s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    56.63s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+            t =    56.63s     Checking existence of `"detail.draft" TextField`
+            t =    56.86s Waiting 10.0s for "home.openDetail" Button to exist
+            t =    57.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+            t =    57.90s         Checking existence of `"home.openDetail" Button`
+            t =    58.36s Checking existence of `"detail.draft" TextField`
+            t =    58.67s Checking existence of `"home.openDetail" Button`
+            t =    58.89s Tap "home.openDetail" Button
+            t =    58.89s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    58.90s     Find the "home.openDetail" Button
+            t =    59.11s     Check for interrupting elements affecting "home.openDetail" Button
+            t =    59.34s     Synthesize event
+            t =    59.71s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    60.59s Checking existence of `"language.system" Button`
+            t =    61.36s Tap "language.system" Button
+            t =    61.36s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    61.38s     Find the "language.system" Button
+            t =    61.93s     Check for interrupting elements affecting "language.system" Button
+            t =    62.31s     Synthesize event
+            t =    62.78s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    62.89s Tear Down
+        Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' passed (63.254 seconds).
+        Test Suite 'NavigationGestureUITests' passed at 2026-11-14 22:51:32.246.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.278) seconds
+        Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-14 22:51:32.248.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.281) seconds
+        Test Suite 'Selected tests' passed at 2026-11-14 22:51:32.250.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.285) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-50-12-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-2C0148C1-9B30-45DE-BAE0-9F736AA72793-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-975D43DD-7B93-4853-A66B-59F9C31EB2AD/Session-UIKitLanguageDemoUITests-2026-11-14_225020-rOE6E2.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-50-12-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-2C0148C1-9B30-45DE-BAE0-9F736AA72793-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-975D43DD-7B93-4853-A66B-59F9C31EB2AD/Session-UIKitLanguageDemoUITests-2026-11-14_225020-rOE6E2.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' passed at 2026-11-14 22:51:32.250.
+	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.285) seconds
+
+          2026-11-14 22:50:24.817737+0800 UIKitLanguageDemoUITests-Runner[46081:1460789] [Default] Running tests...
+              t =      nans Interface orientation changed to Portrait
+          Test Suite 'Selected tests' started at 2026-11-14 22:50:28.965.
+          Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 22:50:28.967.
+          Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:50:28.968.
+          Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+              t =     0.03s Start Test at 2026-11-14 22:50:28.994
+              t =     0.37s Set Up
+              t =     0.42s Open com.example.UIKitLanguageDemo
+              t =     0.42s     Launch com.example.UIKitLanguageDemo
+              t =     3.01s         Setting up automation session
+              t =     8.38s         Wait for com.example.UIKitLanguageDemo to idle
+              t =    11.31s Waiting 20.0s for "home.openDetail" Button to exist
+              t =    12.33s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+              t =    12.33s         Checking existence of `"home.openDetail" Button`
+              t =    12.77s Tap "home.openDetail" Button
+              t =    12.77s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    12.79s     Find the "home.openDetail" Button
+              t =    13.09s     Check for interrupting elements affecting "home.openDetail" Button
+              t =    13.34s     Synthesize event
+              t =    13.72s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    14.81s Waiting 10.0s for "detail.draft" TextField to exist
+              t =    15.84s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    15.84s         Checking existence of `"detail.draft" TextField`
+              t =    16.17s Find the "language.system" Button
+              t =    16.52s Waiting 10.0s for "language.en" Button to exist
+              t =    17.54s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+              t =    17.55s         Checking existence of `"language.en" Button`
+              t =    17.85s Tap "language.zh-Hans" Button
+              t =    17.85s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    17.86s     Find the "language.zh-Hans" Button
+              t =    18.15s     Check for interrupting elements affecting "language.zh-Hans" Button
+              t =    18.44s     Synthesize event
+              t =    18.84s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    18.95s Waiting 5.0s for Button (First Match) to exist
+              t =    19.97s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+              t =    19.97s         Checking existence of `Button (First Match)`
+              t =    20.17s Pressing Home button
+              t =    20.64s Terminate com.example.UIKitLanguageDemo:46089
+              t =    21.73s Open com.example.UIKitLanguageDemo
+              t =    21.74s     Launch com.example.UIKitLanguageDemo
+              t =    22.58s         Setting up automation session
+              t =    26.44s         Wait for com.example.UIKitLanguageDemo to idle
+              t =    29.17s Waiting 20.0s for "detail.draft" TextField to exist
+              t =    30.19s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    30.19s         Checking existence of `"detail.draft" TextField`
+              t =    30.58s Waiting 10.0s for "详情" NavigationBar to exist
+              t =    31.60s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+              t =    31.60s         Checking existence of `"详情" NavigationBar`
+              t =    31.93s Tap "language.en" Button
+              t =    31.93s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    31.95s     Find the "language.en" Button
+              t =    32.28s     Check for interrupting elements affecting "language.en" Button
+              t =    32.63s     Synthesize event
+              t =    33.01s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    33.17s Waiting 5.0s for Button (First Match) to exist
+              t =    34.19s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+              t =    34.20s         Checking existence of `Button (First Match)`
+              t =    34.37s Tap "language.ar" Button
+              t =    34.37s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    34.39s     Find the "language.ar" Button
+              t =    34.68s     Check for interrupting elements affecting "language.ar" Button
+              t =    34.97s     Synthesize event
+              t =    35.34s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    35.56s Waiting 5.0s for Button (First Match) to exist
+              t =    36.57s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+              t =    36.57s         Checking existence of `Button (First Match)`
+              t =    36.72s Waiting 5.0s for "التفاصيل" NavigationBar to exist
+              t =    37.74s     Checking `Expect predicate `existsNoRetry == 1` for object "التفاصيل" NavigationBar`
+              t =    37.74s         Checking existence of `"التفاصيل" NavigationBar`
+              t =    38.04s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+              t =    38.04s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    38.05s     Find the Window (First Match)
+              t =    38.09s     Check for interrupting elements affecting "scene.window.2" Window
+              t =    38.45s     Synthesize event
+              t =    38.46s         Find the "scene.window.2" Window
+              t =    38.51s         Find the "scene.window.2" Window
+              t =    38.58s         Find the "scene.window.2" Window
+              t =    38.64s         Find the "scene.window.2" Window
+              t =    38.71s         Find the "scene.window.2" Window
+              t =    39.73s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    39.75s Checking existence of `"detail.draft" TextField`
+              t =    40.05s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+              t =    40.05s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    40.06s     Find the Window (First Match)
+              t =    40.10s     Check for interrupting elements affecting "scene.window.2" Window
+              t =    40.44s     Synthesize event
+              t =    40.44s         Find the "scene.window.2" Window
+              t =    40.49s         Find the "scene.window.2" Window
+              t =    40.54s         Find the "scene.window.2" Window
+              t =    40.60s         Find the "scene.window.2" Window
+              t =    40.68s         Find the "scene.window.2" Window
+              t =    41.70s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    43.50s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+              t =    43.50s     Checking existence of `"detail.draft" TextField`
+              t =    43.76s Waiting 10.0s for "home.openDetail" Button to exist
+              t =    44.77s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+              t =    44.77s         Checking existence of `"home.openDetail" Button`
+              t =    45.02s Tap "home.openDetail" Button
+              t =    45.02s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    45.03s     Find the "home.openDetail" Button
+              t =    45.29s     Check for interrupting elements affecting "home.openDetail" Button
+              t =    45.53s     Synthesize event
+              t =    45.90s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    46.81s Tap "language.zh-Hans" Button
+              t =    46.81s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    46.82s     Find the "language.zh-Hans" Button
+              t =    47.27s     Check for interrupting elements affecting "language.zh-Hans" Button
+              t =    47.60s     Synthesize event
+              t =    48.00s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    48.21s Waiting 5.0s for Button (First Match) to exist
+              t =    49.22s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+              t =    49.22s         Checking existence of `Button (First Match)`
+              t =    49.42s Waiting 5.0s for "详情" NavigationBar to exist
+              t =    50.43s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+              t =    50.43s         Checking existence of `"详情" NavigationBar`
+              t =    50.71s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+              t =    50.71s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    50.73s     Find the Window (First Match)
+              t =    50.78s     Check for interrupting elements affecting "scene.window.2" Window
+              t =    51.46s     Synthesize event
+              t =    51.46s         Find the "scene.window.2" Window
+              t =    51.52s         Find the "scene.window.2" Window
+              t =    51.62s         Find the "scene.window.2" Window
+              t =    51.72s         Find the "scene.window.2" Window
+              t =    51.84s         Find the "scene.window.2" Window
+              t =    52.88s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    52.90s Checking existence of `"detail.draft" TextField`
+              t =    53.19s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+              t =    53.19s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    53.21s     Find the Window (First Match)
+              t =    53.24s     Check for interrupting elements affecting "scene.window.2" Window
+              t =    53.53s     Synthesize event
+              t =    53.54s         Find the "scene.window.2" Window
+              t =    53.59s         Find the "scene.window.2" Window
+              t =    53.65s         Find the "scene.window.2" Window
+              t =    53.70s         Find the "scene.window.2" Window
+              t =    53.78s         Find the "scene.window.2" Window
+              t =    54.80s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    56.63s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+              t =    56.63s     Checking existence of `"detail.draft" TextField`
+              t =    56.86s Waiting 10.0s for "home.openDetail" Button to exist
+              t =    57.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+              t =    57.90s         Checking existence of `"home.openDetail" Button`
+              t =    58.36s Checking existence of `"detail.draft" TextField`
+              t =    58.67s Checking existence of `"home.openDetail" Button`
+              t =    58.89s Tap "home.openDetail" Button
+              t =    58.89s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    58.90s     Find the "home.openDetail" Button
+              t =    59.11s     Check for interrupting elements affecting "home.openDetail" Button
+              t =    59.34s     Synthesize event
+              t =    59.71s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    60.59s Checking existence of `"language.system" Button`
+              t =    61.36s Tap "language.system" Button
+              t =    61.36s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    61.38s     Find the "language.system" Button
+              t =    61.93s     Check for interrupting elements affecting "language.system" Button
+              t =    62.31s     Synthesize event
+              t =    62.78s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    62.89s Tear Down
+          Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' passed (63.254 seconds).
+          Test Suite 'NavigationGestureUITests' passed at 2026-11-14 22:51:32.246.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.278) seconds
+          Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-14 22:51:32.248.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.281) seconds
+          Test Suite 'Selected tests' passed at 2026-11-14 22:51:32.250.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.285) seconds
+        
+          Run test suite UIKitLanguageDemoUITests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-14 22:51:32.248.
+	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.281) seconds
+
+            Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 22:50:28.967.
+            Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:50:28.968.
+            Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+                t =     0.03s Start Test at 2026-11-14 22:50:28.994
+                t =     0.37s Set Up
+                t =     0.42s Open com.example.UIKitLanguageDemo
+                t =     0.42s     Launch com.example.UIKitLanguageDemo
+                t =     3.01s         Setting up automation session
+                t =     8.38s         Wait for com.example.UIKitLanguageDemo to idle
+                t =    11.31s Waiting 20.0s for "home.openDetail" Button to exist
+                t =    12.33s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                t =    12.33s         Checking existence of `"home.openDetail" Button`
+                t =    12.77s Tap "home.openDetail" Button
+                t =    12.77s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    12.79s     Find the "home.openDetail" Button
+                t =    13.09s     Check for interrupting elements affecting "home.openDetail" Button
+                t =    13.34s     Synthesize event
+                t =    13.72s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    14.81s Waiting 10.0s for "detail.draft" TextField to exist
+                t =    15.84s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    15.84s         Checking existence of `"detail.draft" TextField`
+                t =    16.17s Find the "language.system" Button
+                t =    16.52s Waiting 10.0s for "language.en" Button to exist
+                t =    17.54s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+                t =    17.55s         Checking existence of `"language.en" Button`
+                t =    17.85s Tap "language.zh-Hans" Button
+                t =    17.85s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    17.86s     Find the "language.zh-Hans" Button
+                t =    18.15s     Check for interrupting elements affecting "language.zh-Hans" Button
+                t =    18.44s     Synthesize event
+                t =    18.84s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    18.95s Waiting 5.0s for Button (First Match) to exist
+                t =    19.97s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                t =    19.97s         Checking existence of `Button (First Match)`
+                t =    20.17s Pressing Home button
+                t =    20.64s Terminate com.example.UIKitLanguageDemo:46089
+                t =    21.73s Open com.example.UIKitLanguageDemo
+                t =    21.74s     Launch com.example.UIKitLanguageDemo
+                t =    22.58s         Setting up automation session
+                t =    26.44s         Wait for com.example.UIKitLanguageDemo to idle
+                t =    29.17s Waiting 20.0s for "detail.draft" TextField to exist
+                t =    30.19s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    30.19s         Checking existence of `"detail.draft" TextField`
+                t =    30.58s Waiting 10.0s for "详情" NavigationBar to exist
+                t =    31.60s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+                t =    31.60s         Checking existence of `"详情" NavigationBar`
+                t =    31.93s Tap "language.en" Button
+                t =    31.93s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    31.95s     Find the "language.en" Button
+                t =    32.28s     Check for interrupting elements affecting "language.en" Button
+                t =    32.63s     Synthesize event
+                t =    33.01s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    33.17s Waiting 5.0s for Button (First Match) to exist
+                t =    34.19s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                t =    34.20s         Checking existence of `Button (First Match)`
+                t =    34.37s Tap "language.ar" Button
+                t =    34.37s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    34.39s     Find the "language.ar" Button
+                t =    34.68s     Check for interrupting elements affecting "language.ar" Button
+                t =    34.97s     Synthesize event
+                t =    35.34s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    35.56s Waiting 5.0s for Button (First Match) to exist
+                t =    36.57s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                t =    36.57s         Checking existence of `Button (First Match)`
+                t =    36.72s Waiting 5.0s for "التفاصيل" NavigationBar to exist
+                t =    37.74s     Checking `Expect predicate `existsNoRetry == 1` for object "التفاصيل" NavigationBar`
+                t =    37.74s         Checking existence of `"التفاصيل" NavigationBar`
+                t =    38.04s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                t =    38.04s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    38.05s     Find the Window (First Match)
+                t =    38.09s     Check for interrupting elements affecting "scene.window.2" Window
+                t =    38.45s     Synthesize event
+                t =    38.46s         Find the "scene.window.2" Window
+                t =    38.51s         Find the "scene.window.2" Window
+                t =    38.58s         Find the "scene.window.2" Window
+                t =    38.64s         Find the "scene.window.2" Window
+                t =    38.71s         Find the "scene.window.2" Window
+                t =    39.73s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    39.75s Checking existence of `"detail.draft" TextField`
+                t =    40.05s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                t =    40.05s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    40.06s     Find the Window (First Match)
+                t =    40.10s     Check for interrupting elements affecting "scene.window.2" Window
+                t =    40.44s     Synthesize event
+                t =    40.44s         Find the "scene.window.2" Window
+                t =    40.49s         Find the "scene.window.2" Window
+                t =    40.54s         Find the "scene.window.2" Window
+                t =    40.60s         Find the "scene.window.2" Window
+                t =    40.68s         Find the "scene.window.2" Window
+                t =    41.70s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    43.50s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+                t =    43.50s     Checking existence of `"detail.draft" TextField`
+                t =    43.76s Waiting 10.0s for "home.openDetail" Button to exist
+                t =    44.77s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                t =    44.77s         Checking existence of `"home.openDetail" Button`
+                t =    45.02s Tap "home.openDetail" Button
+                t =    45.02s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    45.03s     Find the "home.openDetail" Button
+                t =    45.29s     Check for interrupting elements affecting "home.openDetail" Button
+                t =    45.53s     Synthesize event
+                t =    45.90s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    46.81s Tap "language.zh-Hans" Button
+                t =    46.81s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    46.82s     Find the "language.zh-Hans" Button
+                t =    47.27s     Check for interrupting elements affecting "language.zh-Hans" Button
+                t =    47.60s     Synthesize event
+                t =    48.00s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    48.21s Waiting 5.0s for Button (First Match) to exist
+                t =    49.22s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                t =    49.22s         Checking existence of `Button (First Match)`
+                t =    49.42s Waiting 5.0s for "详情" NavigationBar to exist
+                t =    50.43s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+                t =    50.43s         Checking existence of `"详情" NavigationBar`
+                t =    50.71s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                t =    50.71s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    50.73s     Find the Window (First Match)
+                t =    50.78s     Check for interrupting elements affecting "scene.window.2" Window
+                t =    51.46s     Synthesize event
+                t =    51.46s         Find the "scene.window.2" Window
+                t =    51.52s         Find the "scene.window.2" Window
+                t =    51.62s         Find the "scene.window.2" Window
+                t =    51.72s         Find the "scene.window.2" Window
+                t =    51.84s         Find the "scene.window.2" Window
+                t =    52.88s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    52.90s Checking existence of `"detail.draft" TextField`
+                t =    53.19s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                t =    53.19s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    53.21s     Find the Window (First Match)
+                t =    53.24s     Check for interrupting elements affecting "scene.window.2" Window
+                t =    53.53s     Synthesize event
+                t =    53.54s         Find the "scene.window.2" Window
+                t =    53.59s         Find the "scene.window.2" Window
+                t =    53.65s         Find the "scene.window.2" Window
+                t =    53.70s         Find the "scene.window.2" Window
+                t =    53.78s         Find the "scene.window.2" Window
+                t =    54.80s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    56.63s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+                t =    56.63s     Checking existence of `"detail.draft" TextField`
+                t =    56.86s Waiting 10.0s for "home.openDetail" Button to exist
+                t =    57.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                t =    57.90s         Checking existence of `"home.openDetail" Button`
+                t =    58.36s Checking existence of `"detail.draft" TextField`
+                t =    58.67s Checking existence of `"home.openDetail" Button`
+                t =    58.89s Tap "home.openDetail" Button
+                t =    58.89s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    58.90s     Find the "home.openDetail" Button
+                t =    59.11s     Check for interrupting elements affecting "home.openDetail" Button
+                t =    59.34s     Synthesize event
+                t =    59.71s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    60.59s Checking existence of `"language.system" Button`
+                t =    61.36s Tap "language.system" Button
+                t =    61.36s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    61.38s     Find the "language.system" Button
+                t =    61.93s     Check for interrupting elements affecting "language.system" Button
+                t =    62.31s     Synthesize event
+                t =    62.78s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    62.89s Tear Down
+            Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' passed (63.254 seconds).
+            Test Suite 'NavigationGestureUITests' passed at 2026-11-14 22:51:32.246.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.278) seconds
+            Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-14 22:51:32.248.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.281) seconds
+          
+            Run test suite NavigationGestureUITests
+              Summary: Test Suite 'NavigationGestureUITests' passed at 2026-11-14 22:51:32.246.
+	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.278) seconds
+
+              Test Suite 'NavigationGestureUITests' started at 2026-11-14 22:50:28.968.
+              Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+                  t =     0.03s Start Test at 2026-11-14 22:50:28.994
+                  t =     0.37s Set Up
+                  t =     0.42s Open com.example.UIKitLanguageDemo
+                  t =     0.42s     Launch com.example.UIKitLanguageDemo
+                  t =     3.01s         Setting up automation session
+                  t =     8.38s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =    11.31s Waiting 20.0s for "home.openDetail" Button to exist
+                  t =    12.33s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                  t =    12.33s         Checking existence of `"home.openDetail" Button`
+                  t =    12.77s Tap "home.openDetail" Button
+                  t =    12.77s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    12.79s     Find the "home.openDetail" Button
+                  t =    13.09s     Check for interrupting elements affecting "home.openDetail" Button
+                  t =    13.34s     Synthesize event
+                  t =    13.72s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    14.81s Waiting 10.0s for "detail.draft" TextField to exist
+                  t =    15.84s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    15.84s         Checking existence of `"detail.draft" TextField`
+                  t =    16.17s Find the "language.system" Button
+                  t =    16.52s Waiting 10.0s for "language.en" Button to exist
+                  t =    17.54s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+                  t =    17.55s         Checking existence of `"language.en" Button`
+                  t =    17.85s Tap "language.zh-Hans" Button
+                  t =    17.85s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    17.86s     Find the "language.zh-Hans" Button
+                  t =    18.15s     Check for interrupting elements affecting "language.zh-Hans" Button
+                  t =    18.44s     Synthesize event
+                  t =    18.84s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    18.95s Waiting 5.0s for Button (First Match) to exist
+                  t =    19.97s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                  t =    19.97s         Checking existence of `Button (First Match)`
+                  t =    20.17s Pressing Home button
+                  t =    20.64s Terminate com.example.UIKitLanguageDemo:46089
+                  t =    21.73s Open com.example.UIKitLanguageDemo
+                  t =    21.74s     Launch com.example.UIKitLanguageDemo
+                  t =    22.58s         Setting up automation session
+                  t =    26.44s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =    29.17s Waiting 20.0s for "detail.draft" TextField to exist
+                  t =    30.19s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    30.19s         Checking existence of `"detail.draft" TextField`
+                  t =    30.58s Waiting 10.0s for "详情" NavigationBar to exist
+                  t =    31.60s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+                  t =    31.60s         Checking existence of `"详情" NavigationBar`
+                  t =    31.93s Tap "language.en" Button
+                  t =    31.93s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    31.95s     Find the "language.en" Button
+                  t =    32.28s     Check for interrupting elements affecting "language.en" Button
+                  t =    32.63s     Synthesize event
+                  t =    33.01s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    33.17s Waiting 5.0s for Button (First Match) to exist
+                  t =    34.19s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                  t =    34.20s         Checking existence of `Button (First Match)`
+                  t =    34.37s Tap "language.ar" Button
+                  t =    34.37s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    34.39s     Find the "language.ar" Button
+                  t =    34.68s     Check for interrupting elements affecting "language.ar" Button
+                  t =    34.97s     Synthesize event
+                  t =    35.34s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    35.56s Waiting 5.0s for Button (First Match) to exist
+                  t =    36.57s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                  t =    36.57s         Checking existence of `Button (First Match)`
+                  t =    36.72s Waiting 5.0s for "التفاصيل" NavigationBar to exist
+                  t =    37.74s     Checking `Expect predicate `existsNoRetry == 1` for object "التفاصيل" NavigationBar`
+                  t =    37.74s         Checking existence of `"التفاصيل" NavigationBar`
+                  t =    38.04s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                  t =    38.04s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    38.05s     Find the Window (First Match)
+                  t =    38.09s     Check for interrupting elements affecting "scene.window.2" Window
+                  t =    38.45s     Synthesize event
+                  t =    38.46s         Find the "scene.window.2" Window
+                  t =    38.51s         Find the "scene.window.2" Window
+                  t =    38.58s         Find the "scene.window.2" Window
+                  t =    38.64s         Find the "scene.window.2" Window
+                  t =    38.71s         Find the "scene.window.2" Window
+                  t =    39.73s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    39.75s Checking existence of `"detail.draft" TextField`
+                  t =    40.05s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                  t =    40.05s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    40.06s     Find the Window (First Match)
+                  t =    40.10s     Check for interrupting elements affecting "scene.window.2" Window
+                  t =    40.44s     Synthesize event
+                  t =    40.44s         Find the "scene.window.2" Window
+                  t =    40.49s         Find the "scene.window.2" Window
+                  t =    40.54s         Find the "scene.window.2" Window
+                  t =    40.60s         Find the "scene.window.2" Window
+                  t =    40.68s         Find the "scene.window.2" Window
+                  t =    41.70s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    43.50s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+                  t =    43.50s     Checking existence of `"detail.draft" TextField`
+                  t =    43.76s Waiting 10.0s for "home.openDetail" Button to exist
+                  t =    44.77s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                  t =    44.77s         Checking existence of `"home.openDetail" Button`
+                  t =    45.02s Tap "home.openDetail" Button
+                  t =    45.02s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    45.03s     Find the "home.openDetail" Button
+                  t =    45.29s     Check for interrupting elements affecting "home.openDetail" Button
+                  t =    45.53s     Synthesize event
+                  t =    45.90s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    46.81s Tap "language.zh-Hans" Button
+                  t =    46.81s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    46.82s     Find the "language.zh-Hans" Button
+                  t =    47.27s     Check for interrupting elements affecting "language.zh-Hans" Button
+                  t =    47.60s     Synthesize event
+                  t =    48.00s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    48.21s Waiting 5.0s for Button (First Match) to exist
+                  t =    49.22s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                  t =    49.22s         Checking existence of `Button (First Match)`
+                  t =    49.42s Waiting 5.0s for "详情" NavigationBar to exist
+                  t =    50.43s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+                  t =    50.43s         Checking existence of `"详情" NavigationBar`
+                  t =    50.71s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                  t =    50.71s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    50.73s     Find the Window (First Match)
+                  t =    50.78s     Check for interrupting elements affecting "scene.window.2" Window
+                  t =    51.46s     Synthesize event
+                  t =    51.46s         Find the "scene.window.2" Window
+                  t =    51.52s         Find the "scene.window.2" Window
+                  t =    51.62s         Find the "scene.window.2" Window
+                  t =    51.72s         Find the "scene.window.2" Window
+                  t =    51.84s         Find the "scene.window.2" Window
+                  t =    52.88s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    52.90s Checking existence of `"detail.draft" TextField`
+                  t =    53.19s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                  t =    53.19s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    53.21s     Find the Window (First Match)
+                  t =    53.24s     Check for interrupting elements affecting "scene.window.2" Window
+                  t =    53.53s     Synthesize event
+                  t =    53.54s         Find the "scene.window.2" Window
+                  t =    53.59s         Find the "scene.window.2" Window
+                  t =    53.65s         Find the "scene.window.2" Window
+                  t =    53.70s         Find the "scene.window.2" Window
+                  t =    53.78s         Find the "scene.window.2" Window
+                  t =    54.80s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    56.63s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+                  t =    56.63s     Checking existence of `"detail.draft" TextField`
+                  t =    56.86s Waiting 10.0s for "home.openDetail" Button to exist
+                  t =    57.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                  t =    57.90s         Checking existence of `"home.openDetail" Button`
+                  t =    58.36s Checking existence of `"detail.draft" TextField`
+                  t =    58.67s Checking existence of `"home.openDetail" Button`
+                  t =    58.89s Tap "home.openDetail" Button
+                  t =    58.89s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    58.90s     Find the "home.openDetail" Button
+                  t =    59.11s     Check for interrupting elements affecting "home.openDetail" Button
+                  t =    59.34s     Synthesize event
+                  t =    59.71s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    60.59s Checking existence of `"language.system" Button`
+                  t =    61.36s Tap "language.system" Button
+                  t =    61.36s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    61.38s     Find the "language.system" Button
+                  t =    61.93s     Check for interrupting elements affecting "language.system" Button
+                  t =    62.31s     Synthesize event
+                  t =    62.78s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    62.89s Tear Down
+              Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' passed (63.254 seconds).
+              Test Suite 'NavigationGestureUITests' passed at 2026-11-14 22:51:32.246.
+              	 Executed 1 test, with 0 failures (0 unexpected) in 63.254 (63.278) seconds
+            
+              Run test case testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()
+                Summary:     t =     0.03s Start Test at 2026-11-14 22:50:28.994
+    t =     0.37s Set Up
+    t =     0.42s Open com.example.UIKitLanguageDemo
+    t =     0.42s     Launch com.example.UIKitLanguageDemo
+    t =     3.01s         Setting up automation session
+    t =     8.38s         Wait for com.example.UIKitLanguageDemo to idle
+    t =    11.31s Waiting 20.0s for "home.openDetail" Button to exist
+    t =    12.33s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+    t =    12.33s         Checking existence of `"home.openDetail" Button`
+    t =    12.77s Tap "home.openDetail" Button
+    t =    12.77s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    12.79s     Find the "home.openDetail" Button
+    t =    13.09s     Check for interrupting elements affecting "home.openDetail" Button
+    t =    13.34s     Synthesize event
+    t =    13.72s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    14.81s Waiting 10.0s for "detail.draft" TextField to exist
+    t =    15.84s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+    t =    15.84s         Checking existence of `"detail.draft" TextField`
+    t =    16.17s Find the "language.system" Button
+    t =    16.52s Waiting 10.0s for "language.en" Button to exist
+    t =    17.54s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+    t =    17.55s         Checking existence of `"language.en" Button`
+    t =    17.85s Tap "language.zh-Hans" Button
+    t =    17.85s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    17.86s     Find the "language.zh-Hans" Button
+    t =    18.15s     Check for interrupting elements affecting "language.zh-Hans" Button
+    t =    18.44s     Synthesize event
+    t =    18.84s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    18.95s Waiting 5.0s for Button (First Match) to exist
+    t =    19.97s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    19.97s         Checking existence of `Button (First Match)`
+    t =    20.17s Pressing Home button
+    t =    20.64s Terminate com.example.UIKitLanguageDemo:46089
+    t =    21.73s Open com.example.UIKitLanguageDemo
+    t =    21.74s     Launch com.example.UIKitLanguageDemo
+    t =    22.58s         Setting up automation session
+    t =    26.44s         Wait for com.example.UIKitLanguageDemo to idle
+    t =    29.17s Waiting 20.0s for "detail.draft" TextField to exist
+    t =    30.19s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+    t =    30.19s         Checking existence of `"detail.draft" TextField`
+    t =    30.58s Waiting 10.0s for "详情" NavigationBar to exist
+    t =    31.60s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+    t =    31.60s         Checking existence of `"详情" NavigationBar`
+    t =    31.93s Tap "language.en" Button
+    t =    31.93s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    31.95s     Find the "language.en" Button
+    t =    32.28s     Check for interrupting elements affecting "language.en" Button
+    t =    32.63s     Synthesize event
+    t =    33.01s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    33.17s Waiting 5.0s for Button (First Match) to exist
+    t =    34.19s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    34.20s         Checking existence of `Button (First Match)`
+    t =    34.37s Tap "language.ar" Button
+    t =    34.37s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    34.39s     Find the "language.ar" Button
+    t =    34.68s     Check for interrupting elements affecting "language.ar" Button
+    t =    34.97s     Synthesize event
+    t =    35.34s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    35.56s Waiting 5.0s for Button (First Match) to exist
+    t =    36.57s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    36.57s         Checking existence of `Button (First Match)`
+    t =    36.72s Waiting 5.0s for "التفاصيل" NavigationBar to exist
+    t =    37.74s     Checking `Expect predicate `existsNoRetry == 1` for object "التفاصيل" NavigationBar`
+    t =    37.74s         Checking existence of `"التفاصيل" NavigationBar`
+    t =    38.04s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    38.04s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    38.05s     Find the Window (First Match)
+    t =    38.09s     Check for interrupting elements affecting "scene.window.2" Window
+    t =    38.45s     Synthesize event
+    t =    38.46s         Find the "scene.window.2" Window
+    t =    38.51s         Find the "scene.window.2" Window
+    t =    38.58s         Find the "scene.window.2" Window
+    t =    38.64s         Find the "scene.window.2" Window
+    t =    38.71s         Find the "scene.window.2" Window
+    t =    39.73s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    39.75s Checking existence of `"detail.draft" TextField`
+    t =    40.05s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    40.05s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    40.06s     Find the Window (First Match)
+    t =    40.10s     Check for interrupting elements affecting "scene.window.2" Window
+    t =    40.44s     Synthesize event
+    t =    40.44s         Find the "scene.window.2" Window
+    t =    40.49s         Find the "scene.window.2" Window
+    t =    40.54s         Find the "scene.window.2" Window
+    t =    40.60s         Find the "scene.window.2" Window
+    t =    40.68s         Find the "scene.window.2" Window
+    t =    41.70s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    43.50s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+    t =    43.50s     Checking existence of `"detail.draft" TextField`
+    t =    43.76s Waiting 10.0s for "home.openDetail" Button to exist
+    t =    44.77s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+    t =    44.77s         Checking existence of `"home.openDetail" Button`
+    t =    45.02s Tap "home.openDetail" Button
+    t =    45.02s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    45.03s     Find the "home.openDetail" Button
+    t =    45.29s     Check for interrupting elements affecting "home.openDetail" Button
+    t =    45.53s     Synthesize event
+    t =    45.90s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    46.81s Tap "language.zh-Hans" Button
+    t =    46.81s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    46.82s     Find the "language.zh-Hans" Button
+    t =    47.27s     Check for interrupting elements affecting "language.zh-Hans" Button
+    t =    47.60s     Synthesize event
+    t =    48.00s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    48.21s Waiting 5.0s for Button (First Match) to exist
+    t =    49.22s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+    t =    49.22s         Checking existence of `Button (First Match)`
+    t =    49.42s Waiting 5.0s for "详情" NavigationBar to exist
+    t =    50.43s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+    t =    50.43s         Checking existence of `"详情" NavigationBar`
+    t =    50.71s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    50.71s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    50.73s     Find the Window (First Match)
+    t =    50.78s     Check for interrupting elements affecting "scene.window.2" Window
+    t =    51.46s     Synthesize event
+    t =    51.46s         Find the "scene.window.2" Window
+    t =    51.52s         Find the "scene.window.2" Window
+    t =    51.62s         Find the "scene.window.2" Window
+    t =    51.72s         Find the "scene.window.2" Window
+    t =    51.84s         Find the "scene.window.2" Window
+    t =    52.88s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    52.90s Checking existence of `"detail.draft" TextField`
+    t =    53.19s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    53.19s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    53.21s     Find the Window (First Match)
+    t =    53.24s     Check for interrupting elements affecting "scene.window.2" Window
+    t =    53.53s     Synthesize event
+    t =    53.54s         Find the "scene.window.2" Window
+    t =    53.59s         Find the "scene.window.2" Window
+    t =    53.65s         Find the "scene.window.2" Window
+    t =    53.70s         Find the "scene.window.2" Window
+    t =    53.78s         Find the "scene.window.2" Window
+    t =    54.80s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    56.63s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+    t =    56.63s     Checking existence of `"detail.draft" TextField`
+    t =    56.86s Waiting 10.0s for "home.openDetail" Button to exist
+    t =    57.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+    t =    57.90s         Checking existence of `"home.openDetail" Button`
+    t =    58.36s Checking existence of `"detail.draft" TextField`
+    t =    58.67s Checking existence of `"home.openDetail" Button`
+    t =    58.89s Tap "home.openDetail" Button
+    t =    58.89s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    58.90s     Find the "home.openDetail" Button
+    t =    59.11s     Check for interrupting elements affecting "home.openDetail" Button
+    t =    59.34s     Synthesize event
+    t =    59.71s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    60.59s Checking existence of `"language.system" Button`
+    t =    61.36s Tap "language.system" Button
+    t =    61.36s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    61.38s     Find the "language.system" Button
+    t =    61.93s     Check for interrupting elements affecting "language.system" Button
+    t =    62.31s     Synthesize event
+    t =    62.78s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    62.89s Tear Down
+Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' passed (63.254 seconds).
+
+                Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' started.
+                    t =     0.03s Start Test at 2026-11-14 22:50:28.994
+                    t =     0.37s Set Up
+                    t =     0.42s Open com.example.UIKitLanguageDemo
+                    t =     0.42s     Launch com.example.UIKitLanguageDemo
+                    t =     3.01s         Setting up automation session
+                    t =     8.38s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =    11.31s Waiting 20.0s for "home.openDetail" Button to exist
+                    t =    12.33s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                    t =    12.33s         Checking existence of `"home.openDetail" Button`
+                    t =    12.77s Tap "home.openDetail" Button
+                    t =    12.77s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    12.79s     Find the "home.openDetail" Button
+                    t =    13.09s     Check for interrupting elements affecting "home.openDetail" Button
+                    t =    13.34s     Synthesize event
+                    t =    13.72s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    14.81s Waiting 10.0s for "detail.draft" TextField to exist
+                    t =    15.84s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    15.84s         Checking existence of `"detail.draft" TextField`
+                    t =    16.17s Find the "language.system" Button
+                    t =    16.52s Waiting 10.0s for "language.en" Button to exist
+                    t =    17.54s     Checking `Expect predicate `existsNoRetry == 1` for object "language.en" Button`
+                    t =    17.55s         Checking existence of `"language.en" Button`
+                    t =    17.85s Tap "language.zh-Hans" Button
+                    t =    17.85s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    17.86s     Find the "language.zh-Hans" Button
+                    t =    18.15s     Check for interrupting elements affecting "language.zh-Hans" Button
+                    t =    18.44s     Synthesize event
+                    t =    18.84s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    18.95s Waiting 5.0s for Button (First Match) to exist
+                    t =    19.97s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                    t =    19.97s         Checking existence of `Button (First Match)`
+                    t =    20.17s Pressing Home button
+                    t =    20.64s Terminate com.example.UIKitLanguageDemo:46089
+                    t =    21.73s Open com.example.UIKitLanguageDemo
+                    t =    21.74s     Launch com.example.UIKitLanguageDemo
+                    t =    22.58s         Setting up automation session
+                    t =    26.44s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =    29.17s Waiting 20.0s for "detail.draft" TextField to exist
+                    t =    30.19s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    30.19s         Checking existence of `"detail.draft" TextField`
+                    t =    30.58s Waiting 10.0s for "详情" NavigationBar to exist
+                    t =    31.60s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+                    t =    31.60s         Checking existence of `"详情" NavigationBar`
+                    t =    31.93s Tap "language.en" Button
+                    t =    31.93s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    31.95s     Find the "language.en" Button
+                    t =    32.28s     Check for interrupting elements affecting "language.en" Button
+                    t =    32.63s     Synthesize event
+                    t =    33.01s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    33.17s Waiting 5.0s for Button (First Match) to exist
+                    t =    34.19s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                    t =    34.20s         Checking existence of `Button (First Match)`
+                    t =    34.37s Tap "language.ar" Button
+                    t =    34.37s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    34.39s     Find the "language.ar" Button
+                    t =    34.68s     Check for interrupting elements affecting "language.ar" Button
+                    t =    34.97s     Synthesize event
+                    t =    35.34s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    35.56s Waiting 5.0s for Button (First Match) to exist
+                    t =    36.57s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                    t =    36.57s         Checking existence of `Button (First Match)`
+                    t =    36.72s Waiting 5.0s for "التفاصيل" NavigationBar to exist
+                    t =    37.74s     Checking `Expect predicate `existsNoRetry == 1` for object "التفاصيل" NavigationBar`
+                    t =    37.74s         Checking existence of `"التفاصيل" NavigationBar`
+                    t =    38.04s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                    t =    38.04s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    38.05s     Find the Window (First Match)
+                    t =    38.09s     Check for interrupting elements affecting "scene.window.2" Window
+                    t =    38.45s     Synthesize event
+                    t =    38.46s         Find the "scene.window.2" Window
+                    t =    38.51s         Find the "scene.window.2" Window
+                    t =    38.58s         Find the "scene.window.2" Window
+                    t =    38.64s         Find the "scene.window.2" Window
+                    t =    38.71s         Find the "scene.window.2" Window
+                    t =    39.73s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    39.75s Checking existence of `"detail.draft" TextField`
+                    t =    40.05s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                    t =    40.05s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    40.06s     Find the Window (First Match)
+                    t =    40.10s     Check for interrupting elements affecting "scene.window.2" Window
+                    t =    40.44s     Synthesize event
+                    t =    40.44s         Find the "scene.window.2" Window
+                    t =    40.49s         Find the "scene.window.2" Window
+                    t =    40.54s         Find the "scene.window.2" Window
+                    t =    40.60s         Find the "scene.window.2" Window
+                    t =    40.68s         Find the "scene.window.2" Window
+                    t =    41.70s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    43.50s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+                    t =    43.50s     Checking existence of `"detail.draft" TextField`
+                    t =    43.76s Waiting 10.0s for "home.openDetail" Button to exist
+                    t =    44.77s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                    t =    44.77s         Checking existence of `"home.openDetail" Button`
+                    t =    45.02s Tap "home.openDetail" Button
+                    t =    45.02s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    45.03s     Find the "home.openDetail" Button
+                    t =    45.29s     Check for interrupting elements affecting "home.openDetail" Button
+                    t =    45.53s     Synthesize event
+                    t =    45.90s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    46.81s Tap "language.zh-Hans" Button
+                    t =    46.81s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    46.82s     Find the "language.zh-Hans" Button
+                    t =    47.27s     Check for interrupting elements affecting "language.zh-Hans" Button
+                    t =    47.60s     Synthesize event
+                    t =    48.00s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    48.21s Waiting 5.0s for Button (First Match) to exist
+                    t =    49.22s     Checking `Expect predicate `existsNoRetry == 1` for object Button (First Match)`
+                    t =    49.22s         Checking existence of `Button (First Match)`
+                    t =    49.42s Waiting 5.0s for "详情" NavigationBar to exist
+                    t =    50.43s     Checking `Expect predicate `existsNoRetry == 1` for object "详情" NavigationBar`
+                    t =    50.43s         Checking existence of `"详情" NavigationBar`
+                    t =    50.71s Press Window (First Match)[1.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.15, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                    t =    50.71s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    50.73s     Find the Window (First Match)
+                    t =    50.78s     Check for interrupting elements affecting "scene.window.2" Window
+                    t =    51.46s     Synthesize event
+                    t =    51.46s         Find the "scene.window.2" Window
+                    t =    51.52s         Find the "scene.window.2" Window
+                    t =    51.62s         Find the "scene.window.2" Window
+                    t =    51.72s         Find the "scene.window.2" Window
+                    t =    51.84s         Find the "scene.window.2" Window
+                    t =    52.88s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    52.90s Checking existence of `"detail.draft" TextField`
+                    t =    53.19s Press Window (First Match)[0.00, 0.25] for 0.1 seconds, then drag to Window (First Match)[0.85, 0.25] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+                    t =    53.19s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    53.21s     Find the Window (First Match)
+                    t =    53.24s     Check for interrupting elements affecting "scene.window.2" Window
+                    t =    53.53s     Synthesize event
+                    t =    53.54s         Find the "scene.window.2" Window
+                    t =    53.59s         Find the "scene.window.2" Window
+                    t =    53.65s         Find the "scene.window.2" Window
+                    t =    53.70s         Find the "scene.window.2" Window
+                    t =    53.78s         Find the "scene.window.2" Window
+                    t =    54.80s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    56.63s Checking `Expect predicate `exists == 0` for object "detail.draft" TextField`
+                    t =    56.63s     Checking existence of `"detail.draft" TextField`
+                    t =    56.86s Waiting 10.0s for "home.openDetail" Button to exist
+                    t =    57.90s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                    t =    57.90s         Checking existence of `"home.openDetail" Button`
+                    t =    58.36s Checking existence of `"detail.draft" TextField`
+                    t =    58.67s Checking existence of `"home.openDetail" Button`
+                    t =    58.89s Tap "home.openDetail" Button
+                    t =    58.89s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    58.90s     Find the "home.openDetail" Button
+                    t =    59.11s     Check for interrupting elements affecting "home.openDetail" Button
+                    t =    59.34s     Synthesize event
+                    t =    59.71s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    60.59s Checking existence of `"language.system" Button`
+                    t =    61.36s Tap "language.system" Button
+                    t =    61.36s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    61.38s     Find the "language.system" Button
+                    t =    61.93s     Check for interrupting elements affecting "language.system" Button
+                    t =    62.31s     Synthesize event
+                    t =    62.78s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    62.89s Tear Down
+                Test Case '-[UIKitLanguageDemoUITests.NavigationGestureUITests testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese]' passed (63.254 seconds).
+              
+    Test target UIKitLanguageDemoTests
+      UIKitLanguageDemo (46166)
+        Test Suite 'Selected tests' started at 2026-11-14 22:51:34.765.
+        Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 22:51:34.766.
+        Test Suite 'LanguagePickerAlignmentTests' started at 2026-11-14 22:51:34.767.
+        Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+        Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.046 seconds).
+        Test Suite 'LanguagePickerAlignmentTests' passed at 2026-11-14 22:51:35.816.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 1.046 (1.049) seconds
+        Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:51:35.817.
+        Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+        Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.432 seconds).
+        Test Suite 'NavigationBackTitleTests' passed at 2026-11-14 22:51:37.251.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 1.432 (1.434) seconds
+        Test Suite 'NavigationDirectionTests' started at 2026-11-14 22:51:37.252.
+        Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+        Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.116 seconds).
+        Test Suite 'NavigationDirectionTests' passed at 2026-11-14 22:51:38.369.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 1.116 (1.117) seconds
+        Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 22:51:38.370.
+        	 Executed 3 tests, with 0 failures (0 unexpected) in 3.594 (3.604) seconds
+        Test Suite 'Selected tests' passed at 2026-11-14 22:51:38.371.
+        	 Executed 3 tests, with 0 failures (0 unexpected) in 3.594 (3.606) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-50-12-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-D8DACD52-3AA6-4026-8A39-E40DFC927E3B-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-73F423D7-2984-4AD4-AD1F-745938353CC0/Session-UIKitLanguageDemoTests-2026-11-14_225132-XpDcCU.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_22-50-12-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-D8DACD52-3AA6-4026-8A39-E40DFC927E3B-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-73F423D7-2984-4AD4-AD1F-745938353CC0/Session-UIKitLanguageDemoTests-2026-11-14_225132-XpDcCU.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' passed at 2026-11-14 22:51:38.371.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 3.594 (3.606) seconds
+
+          Test Suite 'Selected tests' started at 2026-11-14 22:51:34.765.
+          Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 22:51:34.766.
+          Test Suite 'LanguagePickerAlignmentTests' started at 2026-11-14 22:51:34.767.
+          Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+          Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.046 seconds).
+          Test Suite 'LanguagePickerAlignmentTests' passed at 2026-11-14 22:51:35.816.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 1.046 (1.049) seconds
+          Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:51:35.817.
+          Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+          Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.432 seconds).
+          Test Suite 'NavigationBackTitleTests' passed at 2026-11-14 22:51:37.251.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 1.432 (1.434) seconds
+          Test Suite 'NavigationDirectionTests' started at 2026-11-14 22:51:37.252.
+          Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+          Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.116 seconds).
+          Test Suite 'NavigationDirectionTests' passed at 2026-11-14 22:51:38.369.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 1.116 (1.117) seconds
+          Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 22:51:38.370.
+          	 Executed 3 tests, with 0 failures (0 unexpected) in 3.594 (3.604) seconds
+          Test Suite 'Selected tests' passed at 2026-11-14 22:51:38.371.
+          	 Executed 3 tests, with 0 failures (0 unexpected) in 3.594 (3.606) seconds
+        
+          Run test suite UIKitLanguageDemoTests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 22:51:38.370.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 3.594 (3.604) seconds
+
+            Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 22:51:34.766.
+            Test Suite 'LanguagePickerAlignmentTests' started at 2026-11-14 22:51:34.767.
+            Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+            Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.046 seconds).
+            Test Suite 'LanguagePickerAlignmentTests' passed at 2026-11-14 22:51:35.816.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 1.046 (1.049) seconds
+            Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:51:35.817.
+            Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+            Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.432 seconds).
+            Test Suite 'NavigationBackTitleTests' passed at 2026-11-14 22:51:37.251.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 1.432 (1.434) seconds
+            Test Suite 'NavigationDirectionTests' started at 2026-11-14 22:51:37.252.
+            Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+            Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.116 seconds).
+            Test Suite 'NavigationDirectionTests' passed at 2026-11-14 22:51:38.369.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 1.116 (1.117) seconds
+            Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 22:51:38.370.
+            	 Executed 3 tests, with 0 failures (0 unexpected) in 3.594 (3.604) seconds
+          
+            Run test suite LanguagePickerAlignmentTests
+              Summary: Test Suite 'LanguagePickerAlignmentTests' passed at 2026-11-14 22:51:35.816.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.046 (1.049) seconds
+
+              Test Suite 'LanguagePickerAlignmentTests' started at 2026-11-14 22:51:34.767.
+              Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+              Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.046 seconds).
+              Test Suite 'LanguagePickerAlignmentTests' passed at 2026-11-14 22:51:35.816.
+              	 Executed 1 test, with 0 failures (0 unexpected) in 1.046 (1.049) seconds
+            
+              Run test case testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.046 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' started.
+                Test Case '-[UIKitLanguageDemoTests.LanguagePickerAlignmentTests testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches]' passed (1.046 seconds).
+              
+            Run test suite NavigationBackTitleTests
+              Summary: Test Suite 'NavigationBackTitleTests' passed at 2026-11-14 22:51:37.251.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.432 (1.434) seconds
+
+              Test Suite 'NavigationBackTitleTests' started at 2026-11-14 22:51:35.817.
+              Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+              Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.432 seconds).
+              Test Suite 'NavigationBackTitleTests' passed at 2026-11-14 22:51:37.251.
+              	 Executed 1 test, with 0 failures (0 unexpected) in 1.432 (1.434) seconds
+            
+              Run test case testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews()
+                Summary: Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.432 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' started.
+                Test Case '-[UIKitLanguageDemoTests.NavigationBackTitleTests testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews]' passed (1.432 seconds).
+              
+            Run test suite NavigationDirectionTests
+              Summary: Test Suite 'NavigationDirectionTests' passed at 2026-11-14 22:51:38.369.
+	 Executed 1 test, with 0 failures (0 unexpected) in 1.116 (1.117) seconds
+
+              Test Suite 'NavigationDirectionTests' started at 2026-11-14 22:51:37.252.
+              Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+              Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.116 seconds).
+              Test Suite 'NavigationDirectionTests' passed at 2026-11-14 22:51:38.369.
+              	 Executed 1 test, with 0 failures (0 unexpected) in 1.116 (1.117) seconds
+            
+              Run test case testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()
+                Summary: Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.116 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+                Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (1.116 seconds).
+              
+** TEST FINISHED **

@@ -23,8 +23,20 @@ final class NavigationGestureUITests: XCTestCase {
             }
         }
         let english = app.buttons["language.en"]
-        XCTAssertTrue(english.waitForExistence(timeout: 10)); english.tap()
+        XCTAssertTrue(english.waitForExistence(timeout: 10))
+        app.buttons["language.zh-Hans"].tap()
+        expectBackTitle("返回", in: app)
+        // Backgrounding checkpoints the stack; reusing the reset token preserves
+        // that state so Home is restored below Detail without loading its view.
+        XCUIDevice.shared.press(.home)
+        app.terminate()
+        app.launch()
+        XCTAssertTrue(detail.waitForExistence(timeout: 20))
+        XCTAssertTrue(app.navigationBars["详情"].waitForExistence(timeout: 10))
+        english.tap()
+        expectBackTitle("Back", in: app)
         app.buttons["language.ar"].tap()
+        expectBackTitle("رجوع", in: app)
         XCTAssertTrue(app.navigationBars["التفاصيل"].waitForExistence(timeout: 5))
         drag(in: app, from: 0.003, to: 0.85)
         XCTAssertTrue(detail.exists, "Arabic must not pop from the physical left edge")
@@ -32,12 +44,19 @@ final class NavigationGestureUITests: XCTestCase {
         expectPopped(detail)
         XCTAssertTrue(open.waitForExistence(timeout: 10)); open.tap()
         app.buttons["language.zh-Hans"].tap()
+        expectBackTitle("返回", in: app)
         XCTAssertTrue(app.navigationBars["详情"].waitForExistence(timeout: 5))
         drag(in: app, from: 0.997, to: 0.15)
         XCTAssertTrue(detail.exists, "Chinese must not pop from the physical right edge")
         drag(in: app, from: 0.003, to: 0.85)
         expectPopped(detail)
         XCTAssertTrue(open.waitForExistence(timeout: 10))
+    }
+
+    @MainActor
+    private func expectBackTitle(_ title: String, in app: XCUIApplication) {
+        let button = app.navigationBars.buttons.matching(NSPredicate(format: "label == %@", title)).firstMatch
+        XCTAssertTrue(button.waitForExistence(timeout: 5), "Expected a visible localized Back title: \(title)")
     }
 
     @MainActor

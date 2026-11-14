@@ -148,7 +148,6 @@ final class SceneStateCoordinator {
             list.restorationDrafts = saved.drafts
             list.pendingListState = saved
         }
-        page.navigationItem.backButtonTitle = LanguageService.shared.context.text(.commonBack)
         return page
     }
 

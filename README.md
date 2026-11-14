@@ -18,7 +18,7 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 4. 验证详情页仍在、返回按钮仍可返回首页、草稿不变，中文/阿拉伯语切换时方向改变。
 5. 设置 Tab 演示可变行高 Table；首页可进入 FlowLayout 网格/横向列表，以及 Compositional 网格/正交分页分区，滚动、选择、编辑草稿后切换语言。
 6. 在任意示例页点击导航栏地球图标（“系统 App 语言设置”），在系统中选择语言并返回 App，验证当前位置、草稿和滚动位置恢复。该入口先切回“跟随系统”，以便新进程采用系统选择。
-7. 使用 Product → Test 运行随工程附带的二十八项 XCTest（25 项单元测试和 3 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
+7. 使用 Product → Test 运行随工程附带的二十九项 XCTest（26 项单元测试和 3 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
 
 测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
 
@@ -162,7 +162,7 @@ iOS 17+ 在 Scene 层设置 `traitOverrides.layoutDirection`，后续展示的�
 ## 状态保留与方向适配
 
 - 输入框：刷新 placeholder、accessibilityLabel 等静态文案，不重新赋用户输入的 `text`。选区恢复仅在仍为 first responder、文本未变且没有 marked text 时执行；有输入法组词中的内容时不主动改选区。
-- 导航：沿用当前导航栈和页面。导航视图、导航栏及工具栏在所有系统版本显式设置 `semanticContentAttribute`，使原生返回手势和转场跟随当前语言的起始边；iOS 17+ 的 Scene Trait 覆盖继续负责其余界面。应用自有返回标题用 `navigationItem.backButtonTitle` 刷新。
+- 导航：沿用当前导航栈和页面。导航视图、导航栏及工具栏在所有系统版本显式设置 `semanticContentAttribute`，使原生返回手势和转场跟随当前语言的起始边；iOS 17+ 的 Scene Trait 覆盖继续负责其余界面。返回标题由导航容器统一刷新整个栈的 `navigationItem.backButtonTitle`，包含尚未加载视图的恢复页面；初始化、push 和 setViewControllers 也应用当前语言。
 - Table：原地重新配置可见 Cell，复用时读取最新快照，按业务 ID 保留选择、草稿和顶部阅读锚点，并重新测量自动行高。
 - Collection：刷新 Cell 与 Header 并使布局失效，业务数组保持不变，FlowLayout 使用自身的 RTL 排列；横向锚点使用逻辑起始边。详见 [列表接入说明](LIST_LOCALIZATION.md)。
 - 自定义布局：使用 leading/trailing、方向性边距；计算 frame 时读取 `effectiveUserInterfaceLayoutDirection`。
@@ -275,3 +275,11 @@ iOS 15 兼容已进行最低部署构建、弱链接检查及生产旧路径测�
 修复热切换后 `English` 或未选中语言按钮仍停在旧边的问题。回归用例先在旧实现复现，再检查同一组按钮经 EN → AR → ZH → EN → AR 切换后的实际文字／图标 frame，并覆盖按下与松开状态。
 
 Apple 官方 MCP 构建通过；复用现有 iPhone 17 Pro / iOS 26.5，最终三项定向回归全部通过（按钮布局、导航状态、真实边缘返回手势）。本轮未重跑全部 28 项，未执行 iOS 15 运行时。原始结果与范围见 [按钮对齐验证记录](verification/language-picker-alignment-verification.json)。
+
+## 恢复后的返回标题
+
+修复英文界面仍显示“返回”的问题。恢复后直接显示详情页时，前一页可能尚未加载，页面级通知尚未注册；原来只在恢复时赋值的标题因而残留。现在由 LocalizedNavigationController 在每次语言切换时刷新整个栈的返回标题，并在初始化、push 和 setViewControllers 时设置当前语言，不触发前序页面加载。
+
+UIKit 的返回标题来自栈中前一个 navigationItem，见 [Apple backButtonTitle 文档](https://developer.apple.com/documentation/uikit/uinavigationitem/backbuttontitle)。保留系统返回按钮与手势，不安装自定义 leftBarButtonItem。
+
+复用现有 iPhone 17 Pro / iOS 26.5，Apple 官方 MCP 构建及四项定向回归全部通过。UI 用例包含真实后台、终止、重启后直接恢复详情，再检查 Back／رجوع／返回及正确的返回手势；单元用例检查三层导航栈、未加载页面、草稿与实例保留。本轮未全量重跑 29 项，未运行 iOS 15 设备。原始失败复现与最终结果见 [返回标题验证记录](verification/navigation-back-title-verification.json)。

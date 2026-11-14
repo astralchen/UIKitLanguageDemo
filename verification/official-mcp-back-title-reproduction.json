@@ -1,0 +1,42 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 2,
+    "notRun": 0,
+    "passed": 0,
+    "skipped": 0,
+    "total": 2
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T22-48-34+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/F7190322-978B-4D6B-9113-35D3AB77333C.txt",
+  "message": "Some error messages were truncated to 5. Full logs available at /var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/F7190322-978B-4D6B-9113-35D3AB77333C.txt.",
+  "results": [
+    {
+      "displayName": "testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37 NavigationBackTitleTests/testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews(): XCTAssertEqual failed: (\"Optional(\"返回\")\") is not equal to (\"Optional(\"Back\")\")",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37 NavigationBackTitleTests/testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews(): XCTAssertEqual failed: (\"Optional(\"返回\")\") is not equal to (\"Optional(\"Back\")\")",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37 NavigationBackTitleTests/testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews(): XCTAssertEqual failed: (\"Optional(\"返回\")\") is not equal to (\"Optional(\"Back\")\")",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37 NavigationBackTitleTests/testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews(): XCTAssertEqual failed: (\"Optional(\"返回\")\") is not equal to (\"Optional(\"رجوع\")\")",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift:37 NavigationBackTitleTests/testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews(): XCTAssertEqual failed: (\"Optional(\"返回\")\") is not equal to (\"Optional(\"رجوع\")\")"
+      ],
+      "identifier": "NavigationBackTitleTests/testRestoredUnloadedPredecessorsRefreshBackTitlesWithoutLoadingViews()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift:59 NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese(): XCTAssertTrue failed - Expected a visible localized Back title: Back"
+      ],
+      "identifier": "NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "2 tests: 0 passed, 2 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 2,
+  "truncated": false
+}

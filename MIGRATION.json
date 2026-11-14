@@ -35,13 +35,13 @@
   },
   "officialBuild": {
     "success": true,
-    "elapsedSeconds": 2.478,
+    "elapsedSeconds": 8.3,
     "errors": [],
     "tool": "Apple official MCP BuildProject",
-    "finalSourcesAlsoBuiltBy": "Apple official MCP focused language-picker regression"
+    "finalSourcesAlsoBuiltBy": "Apple official MCP focused restored back-title regression"
   },
   "officialTestDiscovery": {
-    "enabled": 28,
+    "enabled": 29,
     "disabled": 0
   },
   "officialTestRun": {
@@ -286,7 +286,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedControllers.swift",
-      "sha256": "2bf79bc4f0d7b7bf6dcc11882af8ff02bb83c1c1e3bacb1ad399e5dfd154130b"
+      "sha256": "872d6af138d027d2a5b3c4843a5ede86d2098783c967f6093b7104aede68b26e"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift",
@@ -306,7 +306,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/SceneStateCoordinator.swift",
-      "sha256": "a1eb4dcbbfd57c528caf1b76898b9d6537f71d2a706112c06db25c4803111d2c"
+      "sha256": "34476a59901621249ff0e06199d076b5f43376893d8bb129facacbb956160bca"
     },
     {
       "file": "UIKitLanguageDemo/Localization/SceneWindowService.swift",
@@ -338,7 +338,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Screens/HomeViewController.swift",
-      "sha256": "ab738f7dfc55b15ccd7a0032d27a0e0714b82d0a5b6a2e7b923ebfa813732a02"
+      "sha256": "e3ea1c51e6779afa75abc8a29fee597fe467ed44c1bb1ab948586c1db519aec6"
     },
     {
       "file": "UIKitLanguageDemo/Screens/LanguagePickerView.swift",
@@ -365,6 +365,10 @@
       "sha256": "4610879854d4616b06d05e4d040abd0611ba089543eeb517da1582fd045778fc"
     },
     {
+      "file": "UIKitLanguageDemoTests/NavigationBackTitleTests.swift",
+      "sha256": "c607a81bdbf1e3b9db2020087a456d4f37da77d8ee940e8058517b19529acdf5"
+    },
+    {
       "file": "UIKitLanguageDemoTests/NavigationDirectionTests.swift",
       "sha256": "4eca138adf5fb7b1273c530e890d4e297c5bec354dc37357cf9185699e187dd0"
     },
@@ -378,7 +382,7 @@
     },
     {
       "file": "UIKitLanguageDemoUITests/NavigationGestureUITests.swift",
-      "sha256": "ba071baccbab2cd21c1a216502c109a2c8b95951ddfd89047d6d35d8bfc04d6b"
+      "sha256": "bbe677add765b6955427ecc10f7efa1c7f25351c074e5b06deeadf4826d03a4f"
     },
     {
       "file": "UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift",
@@ -592,5 +596,44 @@
     "implementation": "Explicit direction and physical content alignment for picker-owned buttons; clear their configuration on direction changes before assigning a fresh tinted configuration. Preserve all UIButton instances.",
     "compatibility": "Only iOS 15+ UIKit APIs added. iOS 15 runtime is not installed and was not executed.",
     "historicalFailures": "The generated-symbol iPad AX failure remains recorded separately; this run does not replace that historical full-suite result."
+  },
+  "navigationBackTitleFix": {
+    "status": "passed",
+    "scope": "Focused 4-test regression; not a full 29-test run",
+    "tool": "Apple official MCP XcodeWrite / BuildProject / RunSomeTests",
+    "simulator": "iPhone 17 Pro / iOS 26.5",
+    "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "createdDevices": 0,
+    "deviceRestarts": 0,
+    "baseline": {
+      "expectedFailureReproduced": true,
+      "source": "official-mcp-back-title-reproduction.json",
+      "checks": [
+        "Restored unloaded predecessors retain Chinese title after English selection",
+        "Visible Back button fails the English title assertion after relaunch"
+      ]
+    },
+    "final": {
+      "counts": {
+        "expectedFailures": 0,
+        "failed": 0,
+        "notRun": 0,
+        "passed": 4,
+        "skipped": 0,
+        "total": 4
+      },
+      "source": "official-mcp-back-title-final-run.json"
+    },
+    "checks": [
+      "Restored three-controller stack refreshes every backButtonTitle in EN / AR / ZH / EN",
+      "Predecessor views stay unloaded; navigation stack identities and visible draft stay intact",
+      "Push and setViewControllers initialize localized Back titles",
+      "UI background / terminate / launch restores directly to Detail, then displays Back / رجوع / 返回",
+      "Arabic and Chinese correct-edge pop succeeds while opposite-edge drag stays on Detail",
+      "Language picker geometry and system gesture identity/delegate regressions pass"
+    ],
+    "implementation": "LocalizedNavigationController owns back-title metadata for its entire stack at initialization, push, setViewControllers, and language change, before the isViewLoaded guard. Page-local and restoration one-time assignments removed.",
+    "compatibility": "Existing iOS 15-compatible navigation APIs; iOS 15 runtime was not executed.",
+    "historicalFailures": "Historical generated-symbol iPad AX failure remains recorded separately."
   }
 }

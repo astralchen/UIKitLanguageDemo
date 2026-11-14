@@ -80,6 +80,7 @@ final class LocalizedNavigationController: UINavigationController {
         super.init(rootViewController: root)
         tabBarItem.image = UIImage(systemName: symbol)
         tabBarItem.title = LanguageService.shared.context.text(tabTitle)
+        applyBackTitles(to: viewControllers, context: LanguageService.shared.context)
         NotificationCenter.default.addObserver(self, selector: #selector(refresh),
                                               name: .appLanguageDidChange, object: LanguageService.shared)
     }
@@ -91,6 +92,24 @@ final class LocalizedNavigationController: UINavigationController {
     }
 
     override func viewDidLoad() { super.viewDidLoad(); refresh() }
+
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        applyBackTitles(to: viewControllers + [viewController], context: LanguageService.shared.context)
+        super.pushViewController(viewController, animated: animated)
+    }
+
+    override func setViewControllers(_ viewControllers: [UIViewController], animated: Bool) {
+        applyBackTitles(to: viewControllers, context: LanguageService.shared.context)
+        super.setViewControllers(viewControllers, animated: animated)
+    }
+
+    private func applyBackTitles(to controllers: [UIViewController], context: LanguageContext) {
+        // UIKit sources the visible Back title from the preceding navigation item.
+        // Restored predecessors can have unloaded views and no page observer yet.
+        // Updating navigation metadata must not force those views to load.
+        let title = context.text(.commonBack)
+        for controller in controllers { controller.navigationItem.backButtonTitle = title }
+    }
 
     private func applyNavigationDirection(_ context: LanguageContext) {
         // UIKit navigation uses the navigation view's semantic direction for back
@@ -107,6 +126,7 @@ final class LocalizedNavigationController: UINavigationController {
         // A retired navigation controller can outlive UIKit's tab view during scene restoration;
         // updating that bridged legacy item can dereference a released UIKit view provider.
         if #unavailable(iOS 18.0) { tabBarItem.title = context.text(tabTitle) }
+        applyBackTitles(to: viewControllers, context: context)
         guard isViewLoaded else { return }
         applyNavigationDirection(context)
         navigationBar.setNeedsLayout()
