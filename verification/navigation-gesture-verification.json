@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "scope": "Focused navigation-direction regression, not a full 27-test run",
+  "tool": "Apple official MCP BuildProject / RunSomeTests",
+  "simulator": "iPhone 17 Pro / iOS 26.5",
+  "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+  "createdDevices": 0,
+  "deviceStartedOnceFromShutdown": true,
+  "deviceRestarts": 0,
+  "unit": {
+    "passed": true,
+    "source": "official-mcp-gesture-unit-run.json",
+    "checks": [
+      "hot-switch navigation semantic direction",
+      "same navigation stack identities",
+      "same system gesture objects and delegate",
+      "draft retained",
+      "LTR child exception retained"
+    ]
+  },
+  "ui": {
+    "passed": true,
+    "source": "official-mcp-gesture-ui-run.json",
+    "checks": [
+      "Arabic left-edge rightward drag does not pop",
+      "Arabic right-edge leftward drag pops",
+      "Chinese right-edge leftward drag does not pop",
+      "Chinese left-edge rightward drag pops"
+    ]
+  },
+  "note": "First UI runner startup timed out waiting for AX loaded. A subsequent UI fixture erroneously looked for the language picker on Home; corrected to open Detail first. Final UI run passed."
+}

@@ -1,0 +1,26 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 0,
+    "passed": 1,
+    "skipped": 0,
+    "total": 1
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T22-00-41+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/B7424995-3DA1-4AC8-B9E8-9F6EA7A6E6AE.txt",
+  "results": [
+    {
+      "displayName": "testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+      "errorMessages": [],
+      "identifier": "NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "1 tests: 1 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 1,
+  "truncated": false
+}

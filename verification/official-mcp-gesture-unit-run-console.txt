@@ -1,0 +1,194 @@
+Test UIKitLanguageDemo
+  Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+  Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (16.661 seconds).
+
+  Launch actions
+    Launch UIKitLanguageDemoUITests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoUITests
+        notice:Launching com.example.UIKitLanguageDemoUITests.xctrunner
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoUITests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemoTests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoTests
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoTests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+  Generating coverage report
+    notice:Unable to load coverage tools for toolchain 'com.apple.dt.toolchain.Metal.32023.883': Error Domain=XCTHLLVMCoverageToolsErrorDomain Code=2 "libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain" UserInfo={NSLocalizedDescription=libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain}
+  
+    Downloading profiles from iPhone 17 Pro
+      notice:Downloading profiles for com.example.UIKitLanguageDemoUITests.xctrunner from 1 directory
+      notice:Downloading profiles for com.example.UIKitLanguageDemo from 1 directory
+    
+    Merging 2 profiles using llvm-profdata (2100.1.1.101.0)
+    
+    Pre-processing target built products
+    
+    Processing source file data
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageContext.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/AppDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ListDemoContent.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneWindowService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/LanguagePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/TextInputSnapshot.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CollectionDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/OrthogonalLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ContainerDemos.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedControllers.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/SceneDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListStateRestoration.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/AppText.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneState.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/HomeViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/SettingsViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneStateCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LayoutDirection.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/DetailViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift
+      
+    Generating target entries
+      notice:Generating entry for target UIKitLanguageDemo.app
+      notice:Generating entry for target UIKitLanguageDemoTests.xctest
+      notice:Generating entry for target UIKitLanguageDemoUITests.xctest
+    
+  Testing Configuration 1
+    Test target UIKitLanguageDemoUITests
+      UIKitLanguageDemoUITests-Runner (42560)
+        UIKitLanguageDemoUITests-Runner (42560) encountered an error (The test runner failed to initialize for UI testing. (Underlying Error: Timed out waiting for AX loaded notification))
+        error:UIKitLanguageDemoUITests-Runner (42560) encountered an error (The test runner failed to initialize for UI testing. (Underlying Error: Timed out waiting for AX loaded notification))
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_21-50-08-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-52F85595-5277-4E8C-9D92-B4DC2EF7D6E2-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-F3E6A44C-37E9-45F7-BA98-2AA1159A147A/Session-UIKitLanguageDemoUITests-2026-11-14_215023-EKMaIV.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_21-50-08-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-52F85595-5277-4E8C-9D92-B4DC2EF7D6E2-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-F3E6A44C-37E9-45F7-BA98-2AA1159A147A/Session-UIKitLanguageDemoUITests-2026-11-14_215023-EKMaIV.log
+        
+    Test target UIKitLanguageDemoTests
+      UIKitLanguageDemo (42634)
+        Test Suite 'Selected tests' started at 2026-11-14 21:55:12.392.
+        Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 21:55:12.394.
+        Test Suite 'NavigationDirectionTests' started at 2026-11-14 21:55:12.395.
+        Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+        Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (16.661 seconds).
+        Test Suite 'NavigationDirectionTests' passed at 2026-11-14 21:55:29.063.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.668) seconds
+        Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 21:55:29.066.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.672) seconds
+        Test Suite 'Selected tests' passed at 2026-11-14 21:55:29.068.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.676) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_21-50-08-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-D0D323CA-0BA2-4877-BB8E-E7F4A281605C-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-142D303E-405D-4815-96CA-B3388A655257/Session-UIKitLanguageDemoTests-2026-11-14_215358-bxrWlU.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_21-50-08-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-D0D323CA-0BA2-4877-BB8E-E7F4A281605C-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-142D303E-405D-4815-96CA-B3388A655257/Session-UIKitLanguageDemoTests-2026-11-14_215358-bxrWlU.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' passed at 2026-11-14 21:55:29.068.
+	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.676) seconds
+
+          Test Suite 'Selected tests' started at 2026-11-14 21:55:12.392.
+          Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 21:55:12.394.
+          Test Suite 'NavigationDirectionTests' started at 2026-11-14 21:55:12.395.
+          Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+          Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (16.661 seconds).
+          Test Suite 'NavigationDirectionTests' passed at 2026-11-14 21:55:29.063.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.668) seconds
+          Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 21:55:29.066.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.672) seconds
+          Test Suite 'Selected tests' passed at 2026-11-14 21:55:29.068.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.676) seconds
+        
+          Run test suite UIKitLanguageDemoTests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 21:55:29.066.
+	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.672) seconds
+
+            Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 21:55:12.394.
+            Test Suite 'NavigationDirectionTests' started at 2026-11-14 21:55:12.395.
+            Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+            Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (16.661 seconds).
+            Test Suite 'NavigationDirectionTests' passed at 2026-11-14 21:55:29.063.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.668) seconds
+            Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 21:55:29.066.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.672) seconds
+          
+            Run test suite NavigationDirectionTests
+              Summary: Test Suite 'NavigationDirectionTests' passed at 2026-11-14 21:55:29.063.
+	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.668) seconds
+
+              Test Suite 'NavigationDirectionTests' started at 2026-11-14 21:55:12.395.
+              Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+              Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (16.661 seconds).
+              Test Suite 'NavigationDirectionTests' passed at 2026-11-14 21:55:29.063.
+              	 Executed 1 test, with 0 failures (0 unexpected) in 16.661 (16.668) seconds
+            
+              Run test case testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()
+                Summary: Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (16.661 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' started.
+                Test Case '-[UIKitLanguageDemoTests.NavigationDirectionTests testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures]' passed (16.661 seconds).
+              
+** TEST FINISHED **

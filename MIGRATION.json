@@ -35,13 +35,13 @@
   },
   "officialBuild": {
     "success": true,
-    "elapsedSeconds": 6.742,
+    "elapsedSeconds": 22.194,
     "errors": [],
     "tool": "Apple official MCP BuildProject",
-    "finalSourcesAlsoBuiltBy": "Apple official MCP RunSomeTests (25 tests)"
+    "finalSourcesAlsoBuiltBy": "Apple official MCP focused gesture regression"
   },
   "officialTestDiscovery": {
-    "enabled": 25,
+    "enabled": 27,
     "disabled": 0
   },
   "officialTestRun": {
@@ -59,7 +59,8 @@
     "testPlan": "UIKitLanguageDemo",
     "evidence": "verification/official-mcp-tests.json",
     "summary": "verification/official-mcp-tests.txt",
-    "latestRecheck": "verification/official-mcp-symbols-ipad-recheck.json"
+    "latestRecheck": "verification/official-mcp-symbols-ipad-recheck.json",
+    "scope": "Historical generated-symbol full run before the navigation gesture fix"
   },
   "fallbackTestRun": {
     "status": "passed",
@@ -116,7 +117,8 @@
     "passed": 24,
     "skipped": 0,
     "total": 25,
-    "remaining": "iPad two-window UI test: AX query timeout; not verified passing after final harness edits"
+    "remaining": "iPad two-window UI test: AX query timeout; not verified passing after final harness edits",
+    "scope": "Historical generated-symbol baseline; see navigationGestureFix for current focused verification"
   },
   "initialMigrationSourceMatches": [
     {
@@ -284,7 +286,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedControllers.swift",
-      "sha256": "cae5061359cd06c118dc74d7efce34d2ef403978c1b7590e2987243876a8cf4e"
+      "sha256": "2bf79bc4f0d7b7bf6dcc11882af8ff02bb83c1c1e3bacb1ad399e5dfd154130b"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift",
@@ -359,12 +361,20 @@
       "sha256": "b6fe3f49667eeb379b5337d72a1f1d2a24a77619d765f9a3de0e945b317eb2f3"
     },
     {
+      "file": "UIKitLanguageDemoTests/NavigationDirectionTests.swift",
+      "sha256": "4eca138adf5fb7b1273c530e890d4e297c5bec354dc37357cf9185699e187dd0"
+    },
+    {
       "file": "UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
       "sha256": "364bdfef48368054ae8aaaf593eea382c36dfcc8126e1dfbb71eda6519b59b3b"
     },
     {
       "file": "UIKitLanguageDemoUITests/IPadWindowUITests.swift",
       "sha256": "00d5af12beb8b8d95813533212c1515e3727ea4c05e0fa68ff93bec152cb38f0"
+    },
+    {
+      "file": "UIKitLanguageDemoUITests/NavigationGestureUITests.swift",
+      "sha256": "ba071baccbab2cd21c1a216502c109a2c8b95951ddfd89047d6d35d8bfc04d6b"
     },
     {
       "file": "UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift",
@@ -501,5 +511,47 @@
     "newDevicesCreated": 0,
     "deviceRestarts": 0,
     "springBoardServiceRecoveries": 1
+  },
+  "navigationGestureFix": {
+    "sourceEditingTool": "Apple official MCP XcodeWrite",
+    "scope": "Explicit semantic direction on navigation view/bar/toolbar on every supported iOS version, including initial load",
+    "directionRules": {
+      "ar": "right edge toward left",
+      "en/zh-Hans": "left edge toward right"
+    },
+    "keepsUIKitRecognizersAndDelegates": true,
+    "keepsNavigationStackAndDrafts": true,
+    "verification": {
+      "status": "passed",
+      "scope": "Focused navigation-direction regression, not a full 27-test run",
+      "tool": "Apple official MCP BuildProject / RunSomeTests",
+      "simulator": "iPhone 17 Pro / iOS 26.5",
+      "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+      "createdDevices": 0,
+      "deviceStartedOnceFromShutdown": true,
+      "deviceRestarts": 0,
+      "unit": {
+        "passed": true,
+        "source": "official-mcp-gesture-unit-run.json",
+        "checks": [
+          "hot-switch navigation semantic direction",
+          "same navigation stack identities",
+          "same system gesture objects and delegate",
+          "draft retained",
+          "LTR child exception retained"
+        ]
+      },
+      "ui": {
+        "passed": true,
+        "source": "official-mcp-gesture-ui-run.json",
+        "checks": [
+          "Arabic left-edge rightward drag does not pop",
+          "Arabic right-edge leftward drag pops",
+          "Chinese right-edge leftward drag does not pop",
+          "Chinese left-edge rightward drag pops"
+        ]
+      },
+      "note": "First UI runner startup timed out waiting for AX loaded. A subsequent UI fixture erroneously looked for the language picker on Home; corrected to open Detail first. Final UI run passed."
+    }
   }
 }

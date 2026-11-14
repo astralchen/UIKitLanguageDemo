@@ -1,0 +1,33 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 1,
+    "passed": 1,
+    "skipped": 0,
+    "total": 2
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T21-50-08+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/6F1CC35A-33A7-46E6-BF9E-8E517AE79E5A.txt",
+  "results": [
+    {
+      "displayName": "testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+      "errorMessages": [],
+      "identifier": "NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()",
+      "state": "No result",
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()",
+      "errorMessages": [],
+      "identifier": "NavigationDirectionTests/testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "2 tests: 1 passed, 0 failed, 0 skipped, 0 expected failures, 1 not run",
+  "totalResults": 2,
+  "truncated": false
+}

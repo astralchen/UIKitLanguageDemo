@@ -85,7 +85,21 @@ final class LocalizedNavigationController: UINavigationController {
     }
     required init?(coder: NSCoder) { fatalError("Use init(root:tabTitle:symbol:)") }
 
+    override func loadView() {
+        super.loadView()
+        applyNavigationDirection(LanguageService.shared.context)
+    }
+
     override func viewDidLoad() { super.viewDidLoad(); refresh() }
+
+    private func applyNavigationDirection(_ context: LanguageContext) {
+        // UIKit navigation uses the navigation view's semantic direction for back
+        // gestures/transitions. A Scene layout-direction trait alone is insufficient.
+        let semantic: UISemanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
+        view.semanticContentAttribute = semantic
+        navigationBar.semanticContentAttribute = semantic
+        toolbar.semanticContentAttribute = semantic
+    }
 
     @objc private func refresh() {
         let context = LanguageService.shared.context
@@ -94,10 +108,9 @@ final class LocalizedNavigationController: UINavigationController {
         // updating that bridged legacy item can dereference a released UIKit view provider.
         if #unavailable(iOS 18.0) { tabBarItem.title = context.text(tabTitle) }
         guard isViewLoaded else { return }
-        LayoutDirection.applyBoundary(context, to: view)
-        LayoutDirection.applyBoundary(context, to: navigationBar)
-        LayoutDirection.applyBoundary(context, to: toolbar)
+        applyNavigationDirection(context)
         navigationBar.setNeedsLayout()
+        view.setNeedsLayout()
     }
 
     override var childForStatusBarStyle: UIViewController? { topViewController }

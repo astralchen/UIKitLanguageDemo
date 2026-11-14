@@ -1,5 +1,8 @@
 # Xcode 原生工程与官方 MCP 迁移记录
 
+最新返回手势修复：官方 MCP 构建成功，并完成方向／状态单元用例及真实边缘滑动 UI 用例的定向验证，均通过。当前测试目录共 27 项，本轮未全量重跑。定向验证覆盖热切换 AR → ZH、实际左右边缘滑动和原生手势对象保留，见 verification/navigation-gesture-verification.json。当前源码哈希已更新。
+
+
 当前生成符号迁移：38 项文案经 AppText 接入 Xcode 原生生成资源，保留 iOS 15 旧路径及英文回退。构建成功；25 项全量验收 24 passed / 1 failed，全部 23 项单元测试与单窗口 UI 用例通过，双窗口 UI 最新复验仍受 AX 超时阻塞。没有将本轮标记为全绿。源码均通过官方 XcodeWrite 写入；当前哈希见 MIGRATION.json。
 
 原始全量与复验见 verification/official-mcp-tests.json 和 official-mcp-symbols-ipad-recheck.json。iOS 15 仅完成最低部署、弱链接和旧路径检查，未在该运行时执行。
