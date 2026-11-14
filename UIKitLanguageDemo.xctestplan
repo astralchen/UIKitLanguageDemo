@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "id": "2650A9C2-0720-4398-A01F-92F9AF840458",
+      "name": "Configuration 1",
+      "options": {}
+    }
+  ],
+  "defaultOptions": {
+    "targetForVariableExpansion": {
+      "containerPath": "container:UIKitLanguageDemo.xcodeproj",
+      "identifier": "33E9D85030A7CB4B00AD1742",
+      "name": "UIKitLanguageDemo"
+    }
+  },
+  "testTargets": [
+    {
+      "parallelizable": false,
+      "target": {
+        "containerPath": "container:UIKitLanguageDemo.xcodeproj",
+        "identifier": "33E9D86630A7CB5200AD1742",
+        "name": "UIKitLanguageDemoTests"
+      }
+    }
+  ],
+  "version": 1
+}

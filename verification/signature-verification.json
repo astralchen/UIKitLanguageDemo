@@ -1,0 +1,27 @@
+[
+  {
+    "object": "unit test bundle",
+    "command": [
+      "/usr/bin/codesign",
+      "--verify",
+      "--strict",
+      "--verbose=2",
+      "/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Build/Products/Debug-iphonesimulator/UIKitLanguageDemo.app/PlugIns/UIKitLanguageDemoTests.xctest"
+    ],
+    "returnCode": 0,
+    "output": "/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Build/Products/Debug-iphonesimulator/UIKitLanguageDemo.app/PlugIns/UIKitLanguageDemoTests.xctest: valid on disk\n/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Build/Products/Debug-iphonesimulator/UIKitLanguageDemo.app/PlugIns/UIKitLanguageDemoTests.xctest: satisfies its Designated Requirement\n"
+  },
+  {
+    "object": "host application",
+    "command": [
+      "/usr/bin/codesign",
+      "--verify",
+      "--deep",
+      "--strict",
+      "--verbose=2",
+      "/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Build/Products/Debug-iphonesimulator/UIKitLanguageDemo.app"
+    ],
+    "returnCode": 0,
+    "output": "/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Build/Products/Debug-iphonesimulator/UIKitLanguageDemo.app: valid on disk\n/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Build/Products/Debug-iphonesimulator/UIKitLanguageDemo.app: satisfies its Designated Requirement\n"
+  }
+]

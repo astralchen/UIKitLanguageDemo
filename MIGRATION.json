@@ -1,0 +1,242 @@
+{
+  "createdAt": "2026-11-14",
+  "projectCreator": "Xcode native iOS App template via Xcode UI",
+  "officialMCP": {
+    "command": "xcrun mcpbridge",
+    "serverInfo": {
+      "name": "xcode-tools",
+      "version": "24939"
+    },
+    "toolsUsed": [
+      "XcodeListWindows",
+      "XcodeLS",
+      "XcodeMakeDir",
+      "XcodeWrite",
+      "XcodeRM",
+      "BuildProject",
+      "GetTestList",
+      "RunSomeTests",
+      "GetBuildLog"
+    ],
+    "projectCreationToolAvailable": false
+  },
+  "appMinimumOS": "15.0",
+  "testMinimumOS": "15.6",
+  "swiftVersion": "6.0",
+  "localization": {
+    "format": "String Catalog",
+    "path": "UIKitLanguageDemo/Localizable.xcstrings",
+    "languages": [
+      "en",
+      "zh-Hans",
+      "ar"
+    ],
+    "keyCount": 25
+  },
+  "officialBuild": {
+    "success": true,
+    "elapsedSeconds": 20.399,
+    "errors": []
+  },
+  "officialTestDiscovery": {
+    "enabled": 10,
+    "disabled": 0
+  },
+  "officialTestRun": {
+    "status": "passed",
+    "tool": "Apple official MCP RunSomeTests",
+    "counts": {
+      "expectedFailures": 0,
+      "failed": 0,
+      "notRun": 0,
+      "passed": 10,
+      "skipped": 0,
+      "total": 10
+    },
+    "scheme": "UIKitLanguageDemo",
+    "testPlan": "UIKitLanguageDemo",
+    "evidence": "verification/official-mcp-tests.json",
+    "summary": "verification/official-mcp-tests.txt"
+  },
+  "fallbackTestRun": {
+    "status": "passed",
+    "tool": "XcodeBuildMCP.test_sim",
+    "simulator": "iPhone 17 Pro / iOS 26.5",
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0,
+    "elapsedSeconds": 73.095,
+    "commandOnlyOverrides": [
+      "CODE_SIGNING_ALLOWED=NO",
+      "-parallel-testing-enabled NO"
+    ],
+    "projectSigningConfigurationModified": false,
+    "historicalOnly": true
+  },
+  "signingFix": {
+    "setting": "OTHER_CODE_SIGN_FLAGS",
+    "value": "--verbose=2",
+    "targets": [
+      "UIKitLanguageDemoTests",
+      "UIKitLanguageDemoUITests"
+    ],
+    "configurations": [
+      "Debug",
+      "Release"
+    ],
+    "reason": "Replace the empty codesign argument observed in this environment with a valid, non-empty signing flag. Empty-argument failure was independently reproduced.",
+    "signingRemainsEnabled": true,
+    "customEntitlementsAdded": false,
+    "applicationSourceChanges": false,
+    "evidence": [
+      "verification/signing-argument-repro.json",
+      "verification/codesign-build-evidence.txt",
+      "verification/signature-verification.json"
+    ],
+    "verifiedSignatures": [
+      "unit test bundle: strict passed",
+      "host application: deep/strict passed"
+    ]
+  },
+  "simulatorReusePreference": {
+    "name": "iPhone 17 Pro",
+    "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "policy": "Reuse this existing device; do not create or restart a simulator for redundant verification."
+  },
+  "acceptance": {
+    "tool": "Apple official MCP RunSomeTests",
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 0,
+    "passed": 10,
+    "skipped": 0,
+    "total": 10
+  },
+  "initialMigrationSourceMatches": [
+    {
+      "file": "UIKitLanguageDemo/AppDelegate.swift",
+      "sha256": "2a2e726cb9a0f0bc52e1279894711d4f496211da31b68c5bf39e6dda8d33054c"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/LanguageContext.swift",
+      "sha256": "a56e9ab0e989689067eb71a2d06e56d0694c37cdbf9fff9d73d23fbcfe9dbacd"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/LanguageService.swift",
+      "sha256": "5045ab31948b052fdc15a717eaa3fe93463d378b03d10d0c92fa2d440d65163b"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/LayoutDirection.swift",
+      "sha256": "39a6f561b5629c3f0b99a8bb3110cae481a33b45667ca6a9e66ce30a697588a9"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/LocalizedControllers.swift",
+      "sha256": "15a9bfeedd37c3823caa7270606a60db52851e0cfcc2e8250ab2cca41fdff3bf"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift",
+      "sha256": "7e0a53b78ef936fb4f2ce19d1af36e827b30e6af276a09043df51744d0ba8c52"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift",
+      "sha256": "a2d416bbb45ae419fc9a66443cbf4dc183c36ba6b6982375ba7b307bcb0556cb"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/TextInputSnapshot.swift",
+      "sha256": "547676530aa327e229c26af0109183bfa55678e4f3de2f08c7dc79c7271c1dff"
+    },
+    {
+      "file": "UIKitLanguageDemo/SceneDelegate.swift",
+      "sha256": "113f9f4e4d886e469c68a0584f7f5ff97b80da24e7a3a0ca5046b355d1e355e3"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/ContainerDemos.swift",
+      "sha256": "5b03ff63454da711a5cf52888ae50a69f57434edf14671a0cee6b76c9a9347a3"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/DetailViewController.swift",
+      "sha256": "d757c411c4512b0ca66e4586fd4ff5a7b637bac72795cb01a57818a085b685c2"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/HomeViewController.swift",
+      "sha256": "2b7c43954667ed035877e68e5fd28d8e69d7cef8e8fcad9c2b57ef14a39698f8"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/LanguagePickerView.swift",
+      "sha256": "0140bde90bb5496ffd2859bb6f0e7f83ad7e9a7c62ad41e01de2b7e5dac9efc3"
+    },
+    {
+      "file": "UIKitLanguageDemo/Screens/SettingsViewController.swift",
+      "sha256": "2e7aa94103815f80ec80fa1b77dd4abf31c29373cb1762eabd3c4a1ca9e1d40a"
+    },
+    {
+      "file": "UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "sha256": "c33d9ff5cada20c50bb6e3f981c8e3b7ffadf42affb71f4c2d8e0430b12e4613"
+    }
+  ],
+  "initialMigrationSourceMatchScope": "Historical pre-list-extension baseline; current files below include intentional changes.",
+  "listExtension": {
+    "sourceEditingTool": "Apple official MCP XcodeWrite",
+    "testTool": "Apple official MCP RunSomeTests",
+    "files": [
+      {
+        "file": "UIKitLanguageDemo/Localization/LanguageService.swift",
+        "sha256": "306eb89f111d2bbb089bf5105a970f0ba7d1aef2eb4eab11d38a35bd4f68d959"
+      },
+      {
+        "file": "UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift",
+        "sha256": "eaab599a1749da67ebc0bcb2ff1e4b7dffc65257006fc7c6189ee62875f0fe8c"
+      },
+      {
+        "file": "UIKitLanguageDemo/Screens/ListDemoContent.swift",
+        "sha256": "bad36aaf0662fc0d6f0246e47f0bbd8e6ad9168034d65633ba9ce94178b6c98e"
+      },
+      {
+        "file": "UIKitLanguageDemo/Screens/SettingsViewController.swift",
+        "sha256": "61aac86cf5039bdb1ff64dca208851ad87dab80d910a44166eab826368f237a2"
+      },
+      {
+        "file": "UIKitLanguageDemo/Screens/HomeViewController.swift",
+        "sha256": "6dcc48f212b4e2e84339110c76711b67230affc348a40a7fd4a593c828f64629"
+      },
+      {
+        "file": "UIKitLanguageDemo/Screens/CollectionDemoViewController.swift",
+        "sha256": "7d1369d41ede5ac12318a346e9afd67da7f06e2a4cd6cd2f59198cf91afcc713"
+      },
+      {
+        "file": "UIKitLanguageDemo/Localizable.xcstrings",
+        "sha256": "1cb6624764281698e3e1adda21bbdf2fda9c99b596812859a43cce25c63438e5"
+      },
+      {
+        "file": "UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+        "sha256": "3f46154908378caf34394a6e2bd094bf0e572fcf00c631825e816699f1c6871f"
+      },
+      {
+        "file": "UIKitLanguageDemo.xctestplan",
+        "sha256": "2621ed567dbb2be219fc2e07fa27eb450eee74d41d7eedea20047c134feb97ad"
+      },
+      {
+        "file": "UIKitLanguageDemo.xcodeproj/xcshareddata/xcschemes/UIKitLanguageDemo.xcscheme",
+        "sha256": "fda33cf146243ab697490eefa2f20903772a210e4fccb9838d2f9406593dbe22"
+      }
+    ],
+    "features": [
+      "Three-phase refresh notifications",
+      "Table automatic row heights and stable-ID anchors",
+      "Collection native FlowLayout RTL and metric invalidation",
+      "Vertical and logical-leading horizontal anchors",
+      "Selection and draft state by stable ID",
+      "Visible/reused/prefetched cells and supplementary text"
+    ]
+  },
+  "testExecutionConfiguration": {
+    "plan": "UIKitLanguageDemo.xctestplan",
+    "parallelizable": false,
+    "includedTargets": [
+      "UIKitLanguageDemoTests"
+    ],
+    "emptyUITestTargetRetainedInProject": true,
+    "debuggerAttached": false,
+    "reason": "Reuse selected existing simulator and avoid debugger attachment during acceptance. App Run debugging remains enabled."
+  }
+}

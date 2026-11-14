@@ -1,0 +1,2 @@
+/usr/bin/codesign --force --sign - --verbose\=2 --timestamp\=none --generate-entitlement-der /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Build/Products/Debug-iphonesimulator/UIKitLanguageDemo.app/PlugIns/UIKitLanguageDemoTests.xctest
+/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Build/Products/Debug-iphonesimulator/UIKitLanguageDemo.app/PlugIns/UIKitLanguageDemoTests.xctest: signed bundle with Mach-O thin (x86_64) [com.example.UIKitLanguageDemoTests]

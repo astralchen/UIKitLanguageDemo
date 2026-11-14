@@ -1,0 +1,56 @@
+import UIKit
+
+@MainActor
+final class LanguagePickerView: UIView, LocalizationUpdatable {
+    private let heading = UILabel()
+    private let stack = UIStackView()
+    private var buttons: [(LanguageSelection, UIButton)] = []
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        stack.axis = .vertical
+        stack.spacing = 8
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        heading.font = .preferredFont(forTextStyle: .headline)
+        heading.numberOfLines = 0
+        heading.adjustsFontForContentSizeCategory = true
+        stack.addArrangedSubview(heading)
+        for selection in LanguageSelection.allCases {
+            let button = UIButton(type: .system)
+            button.configuration = .tinted()
+            button.contentHorizontalAlignment = .leading
+            button.addAction(UIAction { _ in LanguageService.shared.setSelection(selection) }, for: .touchUpInside)
+            buttons.append((selection, button))
+            stack.addArrangedSubview(button)
+        }
+        addSubview(stack)
+        NSLayoutConstraint.activate([
+            stack.leadingAnchor.constraint(equalTo: leadingAnchor),
+            stack.trailingAnchor.constraint(equalTo: trailingAnchor),
+            stack.topAnchor.constraint(equalTo: topAnchor),
+            stack.bottomAnchor.constraint(equalTo: bottomAnchor)
+        ])
+        applyLocalization(LanguageService.shared.context)
+    }
+    required init?(coder: NSCoder) { fatalError("Use init(frame:)") }
+
+    func applyLocalization(_ context: LanguageContext) {
+        LayoutDirection.applyBoundary(context, to: self)
+        LayoutDirection.applyBoundary(context, to: stack)
+        heading.text = context.text("language.title")
+        heading.textAlignment = context.isRTL ? .right : .left
+        for (selection, button) in buttons {
+            let selected = LanguageService.shared.selection == selection
+            var config = button.configuration!
+            config.title = selection.explicitLanguage?.nativeName ?? context.text("language.system")
+            config.image = selected ? UIImage(systemName: "checkmark.circle.fill") : nil
+            config.imagePadding = 8
+            config.imagePlacement = .trailing
+            config.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16)
+            button.configuration = config
+            button.accessibilityTraits = selected ? [.button, .selected] : [.button]
+            button.accessibilityIdentifier = "language.\(selection.rawValue)"
+            LayoutDirection.applyBoundary(context, to: button)
+        }
+    }
+}

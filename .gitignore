@@ -1,0 +1,9 @@
+# Xcode local state and generated products
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+.swiftpm/

@@ -1,0 +1,14 @@
+[
+  {
+    "case": "empty_argument",
+    "returnCode": 1,
+    "stdout": "",
+    "stderr": "No such file or directory\n"
+  },
+  {
+    "case": "explicit_verbose",
+    "returnCode": 0,
+    "stdout": "",
+    "stderr": "SigningArgumentProbe.xctest: replacing existing signature\nSigningArgumentProbe.xctest: signed bundle with Mach-O thin (x86_64) [com.example.UIKitLanguageDemoTests]\n"
+  }
+]

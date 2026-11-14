@@ -1,0 +1,96 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 1,
+    "passed": 10,
+    "skipped": 0,
+    "total": 11
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/A892C0F0-74E1-4DE3-8917-D37FC53EB1C1/RunAllTests/test-console-log-2026-11-14T08-35-46+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/A892C0F0-74E1-4DE3-8917-D37FC53EB1C1/RunAllTests/952600B9-0EEA-4D9D-BC28-9C0241390D34.txt",
+  "results": [
+    {
+      "displayName": "UIKitLanguageDemoUITests",
+      "errorMessages": [],
+      "identifier": "UIKitLanguageDemoUITests",
+      "state": "No result",
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testLanguageSwitchPreservesNavigationAndDraft()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testLanguageSwitchPreservesNavigationAndDraft()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testSelectionPersistsAndMissingKeysHaveFallback()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testSelectionPersistsAndMissingKeysHaveFallback()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testExistingModalSurvivesSwitch()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testExistingModalSurvivesSwitch()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testSplitPreservesColumnsAndTheirNavigationStacks()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testSplitPreservesColumnsAndTheirNavigationStacks()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testPagerPreservesPageAndReversesPhysicalNeighbors()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testPagerPreservesPageAndReversesPhysicalNeighbors()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testTableKeepsReadingAnchorAndRefreshesReusedRows()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testTableKeepsReadingAnchorAndRefreshesReusedRows()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "11 tests: 10 passed, 0 failed, 0 skipped, 0 expected failures, 1 not run",
+  "totalResults": 11,
+  "truncated": false
+}

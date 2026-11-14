@@ -1,0 +1,83 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-13T23:32:20Z
+Total Results: 6
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/6
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testLanguageSwitchPreservesNavigationAndDraft()
+TEST_DISPLAY_NAME: testLanguageSwitchPreservesNavigationAndDraft()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 6
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 2/6
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testSelectionPersistsAndMissingKeysHaveFallback()
+TEST_DISPLAY_NAME: testSelectionPersistsAndMissingKeysHaveFallback()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 71
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 3/6
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testExistingModalSurvivesSwitch()
+TEST_DISPLAY_NAME: testExistingModalSurvivesSwitch()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 87
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 4/6
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testSplitPreservesColumnsAndTheirNavigationStacks()
+TEST_DISPLAY_NAME: testSplitPreservesColumnsAndTheirNavigationStacks()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 105
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 5/6
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testPagerPreservesPageAndReversesPhysicalNeighbors()
+TEST_DISPLAY_NAME: testPagerPreservesPageAndReversesPhysicalNeighbors()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 152
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 6/6
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()
+TEST_DISPLAY_NAME: testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 189
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

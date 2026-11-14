@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-11-14",
+  "results": [
+    {
+      "target": "UIKitLanguageDemo.app",
+      "flags": [
+        "--deep",
+        "--strict"
+      ],
+      "exitCode": 0
+    },
+    {
+      "target": "UIKitLanguageDemoTests.xctest",
+      "flags": [
+        "--strict"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "simulatorUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2"
+}

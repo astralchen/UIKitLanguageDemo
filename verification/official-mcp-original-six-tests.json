@@ -1,0 +1,67 @@
+{
+  "server": {
+    "name": "xcode-tools",
+    "version": "24939"
+  },
+  "method": "RunSomeTests",
+  "destination": "iPhone 17 Pro / iOS 26.5",
+  "result": {
+    "activeTestPlanName": "UIKitLanguageDemo",
+    "counts": {
+      "expectedFailures": 0,
+      "failed": 0,
+      "notRun": 0,
+      "passed": 6,
+      "skipped": 0,
+      "total": 6
+    },
+    "results": [
+      {
+        "displayName": "testLanguageSwitchPreservesNavigationAndDraft()",
+        "errorMessages": [],
+        "identifier": "LanguageTests/testLanguageSwitchPreservesNavigationAndDraft()",
+        "state": "Passed",
+        "targetName": "UIKitLanguageDemoTests"
+      },
+      {
+        "displayName": "testSelectionPersistsAndMissingKeysHaveFallback()",
+        "errorMessages": [],
+        "identifier": "LanguageTests/testSelectionPersistsAndMissingKeysHaveFallback()",
+        "state": "Passed",
+        "targetName": "UIKitLanguageDemoTests"
+      },
+      {
+        "displayName": "testExistingModalSurvivesSwitch()",
+        "errorMessages": [],
+        "identifier": "LanguageTests/testExistingModalSurvivesSwitch()",
+        "state": "Passed",
+        "targetName": "UIKitLanguageDemoTests"
+      },
+      {
+        "displayName": "testSplitPreservesColumnsAndTheirNavigationStacks()",
+        "errorMessages": [],
+        "identifier": "LanguageTests/testSplitPreservesColumnsAndTheirNavigationStacks()",
+        "state": "Passed",
+        "targetName": "UIKitLanguageDemoTests"
+      },
+      {
+        "displayName": "testPagerPreservesPageAndReversesPhysicalNeighbors()",
+        "errorMessages": [],
+        "identifier": "LanguageTests/testPagerPreservesPageAndReversesPhysicalNeighbors()",
+        "state": "Passed",
+        "targetName": "UIKitLanguageDemoTests"
+      },
+      {
+        "displayName": "testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()",
+        "errorMessages": [],
+        "identifier": "LanguageTests/testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()",
+        "state": "Passed",
+        "targetName": "UIKitLanguageDemoTests"
+      }
+    ],
+    "schemeName": "UIKitLanguageDemo",
+    "summary": "6 tests: 6 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+    "totalResults": 6,
+    "truncated": false
+  }
+}
