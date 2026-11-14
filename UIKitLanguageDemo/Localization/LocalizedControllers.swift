@@ -165,11 +165,27 @@ final class LocalizedTabBarController: UITabBarController {
         refresh()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        refresh()
+    }
+
     @objc private func refresh() {
         let context = LanguageService.shared.context
         if #available(iOS 18.0, *) {
             for (tab, navigation) in zip(tabs, navigationControllers) {
                 tab.title = context.text(navigation.tabTitle)
+                tab.accessibilityLabel = context.text(navigation.tabTitle)
+            }
+        }
+        // Keep rendered labels and stable accessibility IDs current on iOS 15+.
+        // Only touch items in this attached bar, never a retired navigation
+        // controller's bridged tabBarItem.
+        if viewIfLoaded?.window != nil {
+            for (item, navigation) in zip(tabBar.items ?? [], navigationControllers) {
+                item.title = context.text(navigation.tabTitle)
+                item.accessibilityLabel = context.text(navigation.tabTitle)
+                item.accessibilityIdentifier = "tab." + navigation.tabTitle.catalogKey
             }
         }
         LayoutDirection.applyBoundary(context, to: view)

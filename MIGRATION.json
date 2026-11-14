@@ -31,17 +31,17 @@
       "zh-Hans",
       "ar"
     ],
-    "keyCount": 38
+    "keyCount": 42
   },
   "officialBuild": {
     "success": true,
-    "elapsedSeconds": 10.946,
+    "elapsedSeconds": 38.855,
     "errors": [],
     "tool": "Apple official MCP BuildProject",
-    "finalSourcesAlsoBuiltBy": "Apple official MCP focused text-direction regression"
+    "finalSourcesAlsoBuiltBy": "Apple official MCP focused appearance tests"
   },
   "officialTestDiscovery": {
-    "enabled": 31,
+    "enabled": 36,
     "disabled": 0
   },
   "officialTestRun": {
@@ -257,12 +257,20 @@
       "sha256": "ff5540b6319d2572f7088ba63e29d580f7a1b38856a9cf696d0dab1305588a45"
     },
     {
+      "file": "UIKitLanguageDemo/Appearance/AppearancePickerView.swift",
+      "sha256": "d7ac75f5c800c44d08bf179c5c6ecc06a90fadd9547ad5ad0f77e143bac7b3a0"
+    },
+    {
+      "file": "UIKitLanguageDemo/Appearance/AppearanceService.swift",
+      "sha256": "8ea5d182e8be3c3af730a547d26b7e1c76dbfa2580567dcd299f92274818f854"
+    },
+    {
       "file": "UIKitLanguageDemo/Localizable.xcstrings",
-      "sha256": "5db8258dc7bdbb6e25ad931a564cbf679995b153b0037441c9e83565fd4f3366"
+      "sha256": "2b4cb1e31464bef67749ae0210e378729d668dc47640d6c08e729f4d48d2ab7b"
     },
     {
       "file": "UIKitLanguageDemo/Localization/AppText.swift",
-      "sha256": "d1087d1a8cc3f5ab715e6ce7b01979edd1a2ae337e8673ef319c02ff21161673"
+      "sha256": "6da49da349a7970a8b8c9a57428ed018c4bd3ba2c316106cc12269af72e46ff2"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LanguageContext.swift",
@@ -286,7 +294,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedControllers.swift",
-      "sha256": "872d6af138d027d2a5b3c4843a5ede86d2098783c967f6093b7104aede68b26e"
+      "sha256": "186cd6bdcadca82f1f0a681b5f182a942c6c4aac8ed50a84c047adc604c9dd1a"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift",
@@ -306,7 +314,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/SceneStateCoordinator.swift",
-      "sha256": "34476a59901621249ff0e06199d076b5f43376893d8bb129facacbb956160bca"
+      "sha256": "d4ffb274ee3e85fdd6e9e8c57de7b1070faba7de1fe25cdbface581a2355c21c"
     },
     {
       "file": "UIKitLanguageDemo/Localization/SceneWindowService.swift",
@@ -318,7 +326,7 @@
     },
     {
       "file": "UIKitLanguageDemo/SceneDelegate.swift",
-      "sha256": "8b128acb1eea960ba3061553dee52ba8a8c33515856274c2ec9bf64a64571430"
+      "sha256": "9bd90c03fbbf478c0b7ff16abc1ca2671d678c1113c4fb7c980dcfb64c0aa245"
     },
     {
       "file": "UIKitLanguageDemo/Screens/CollectionDemoViewController.swift",
@@ -346,19 +354,23 @@
     },
     {
       "file": "UIKitLanguageDemo/Screens/ListDemoContent.swift",
-      "sha256": "ef18bfb582354b4fa314a10d3d29152244bab34985cba592b26981ba80d2f572"
+      "sha256": "275f37bf4a4005104a515f0f44944d581681ec57ec4a62aa37589f804944886b"
     },
     {
       "file": "UIKitLanguageDemo/Screens/SettingsViewController.swift",
-      "sha256": "1f2425c9120dfa91d7a567b6159021821d8624d7ce28f4fbce44ef94da34277f"
+      "sha256": "eab836b2947724a853ea9f1120dbabe05ad9daf478ff8c75c645ca282cd91b0a"
+    },
+    {
+      "file": "UIKitLanguageDemoTests/AppearanceTests.swift",
+      "sha256": "9cb788f91b9163ec4da763003c376d92c7e1dac0bbb7b95f3bf2f9efda47ba6c"
     },
     {
       "file": "UIKitLanguageDemoTests/GeneratedSymbolTests.swift",
-      "sha256": "a7fe3e952a3517fa8a333d92cae46455772c4bedaaeaf61d0321a207d7042eb8"
+      "sha256": "1a0fca129dda45684c1d381d9148640e3d0f49b21d43312156118c927c4e37c5"
     },
     {
       "file": "UIKitLanguageDemoTests/IPadRestorationTests.swift",
-      "sha256": "b6fe3f49667eeb379b5337d72a1f1d2a24a77619d765f9a3de0e945b317eb2f3"
+      "sha256": "2bf624b11f89e85e53c35b396b65437d66e3cedeb0598c240a059d897e3cd8b2"
     },
     {
       "file": "UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift",
@@ -379,6 +391,10 @@
     {
       "file": "UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
       "sha256": "364bdfef48368054ae8aaaf593eea382c36dfcc8126e1dfbb71eda6519b59b3b"
+    },
+    {
+      "file": "UIKitLanguageDemoUITests/AppearanceUITests.swift",
+      "sha256": "d8a05f477c61314b96f098c074ff081d159fb928cd75433d8d14e0c6c053fd45"
     },
     {
       "file": "UIKitLanguageDemoUITests/IPadWindowUITests.swift",
@@ -692,5 +708,65 @@
     ],
     "compatibility": "Only iOS 15-compatible APIs added; iOS 15 runtime was not executed.",
     "historicalFailures": "Historical generated-symbol iPad AX failure remains recorded separately."
+  },
+  "appearanceSupport": {
+    "status": "passed focused checks across runs",
+    "scope": "9 unique targeted tests passed across iPhone runs and iPad recheck; not a full 36-test run",
+    "tool": "Apple official MCP XcodeWrite / BuildProject / RunSomeTests",
+    "passedTests": [
+      "AppearanceTests/testMultiplePickersAndRenderedTabsStaySynchronized()",
+      "AppearanceTests/testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation()",
+      "AppearanceTests/testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges()",
+      "AppearanceTests/testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()",
+      "AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()",
+      "GeneratedSymbolTests/testGeneratedResourcesUseExplicitLanguageAndEnglishFallback()",
+      "GeneratedSymbolTests/testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry()",
+      "IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently()",
+      "TextDirectionTests/testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()"
+    ],
+    "iPhone": {
+      "name": "iPhone 17 Pro / iOS 26.5",
+      "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+      "initial": "official-mcp-appearance-initial-run.json",
+      "final": "official-mcp-appearance-phone-recheck.json"
+    },
+    "iPad": {
+      "name": "iPad Pro 13-inch (M5) / iOS 26.5",
+      "existingUDID": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+      "initial": "official-mcp-appearance-ipad-initial-run.json",
+      "final": "official-mcp-appearance-ipad-recheck.json",
+      "checks": [
+        "Two real UIScene sessions share current appearance choice",
+        "New Scene inherits saved dark appearance",
+        "Both windows and their actual controller traits follow light/dark updates",
+        "Independent drafts and NSUserActivity restoration retained"
+      ]
+    },
+    "createdSimulators": 0,
+    "requestedSimulatorRestarts": 0,
+    "existingIPadStartedOnce": true,
+    "lastSourceRecheck": "official-mcp-appearance-final-source-check.json",
+    "appearanceChecks": [
+      "Choice persists across process restart",
+      "Registered and late windows synchronize",
+      "System choice clears override and inherits changing Scene environment",
+      "Multiple pickers and native Tab accessibility labels synchronize",
+      "Selected collection CGColor refreshes for color traits",
+      "42 generated messages match iOS 15 production adapter and English fallback",
+      "Focused draft, selection and composition retained",
+      "4 original UI screenshots exported and visually checked"
+    ],
+    "retryNotes": [
+      "Initial test fixture read an absent trait override; now checks contains before reading. A synchronous retry exposed the original Objective-C exception.",
+      "UI caught stale localized Tab accessibility labels; synchronize UITab and currently attached bar item accessibility labels/IDs.",
+      "Initial iPad check asserted child traits before propagation finished; recheck waits for both actual controller traits."
+    ],
+    "documentation": {
+      "officialMCPDocumentationSearch": "unsupportedArchitecture",
+      "sources": "Apple Developer web documentation and installed SDK headers; see APPEARANCE.md"
+    },
+    "screenshots": "appearance-ui/manifest.json",
+    "compatibility": "Deployment iOS 15.0 retained; availability-guarded iOS 17 trait observation; no iOS 15 runtime executed",
+    "historicalFailures": "Earlier generated-symbol iPad AX failure retained separately; no claim of full-suite completion"
   }
 }

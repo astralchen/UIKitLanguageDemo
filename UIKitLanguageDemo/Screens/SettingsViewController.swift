@@ -3,6 +3,7 @@ import UIKit
 @MainActor
 final class SettingsViewController: LocalizedViewController, UITableViewDataSource, UITableViewDelegate {
     private let languagePicker = LanguagePickerView()
+    private let appearancePicker = AppearancePickerView()
     let tableView = UITableView(frame: .zero, style: .plain)
     private let stack = UIStackView()
     let itemIDs = Array(0..<80)
@@ -24,6 +25,7 @@ final class SettingsViewController: LocalizedViewController, UITableViewDataSour
         stack.spacing = 12
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.addArrangedSubview(languagePicker)
+        stack.addArrangedSubview(appearancePicker)
         stack.addArrangedSubview(tableView)
         view.addSubview(stack)
         NSLayoutConstraint.activate([
@@ -50,6 +52,7 @@ final class SettingsViewController: LocalizedViewController, UITableViewDataSour
     override func applyLocalization(_ context: LanguageContext) {
         title = context.text(.settingsTitle)
         languagePicker.applyLocalization(context)
+        appearancePicker.applyLocalization(context)
         LayoutDirection.applyBoundary(context, to: stack)
         // Cells and scroll state are handled by the coordinator after window layout.
     }

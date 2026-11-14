@@ -1,0 +1,23 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-14T15:36:22Z
+Total Results: 1
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/1
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently()
+TEST_DISPLAY_NAME: testTwoRealSceneSessionsRestoreIndependently()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift
+TEST_LINE_NUMBER: 122
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

@@ -1,0 +1,104 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-14T15:17:55Z
+Total Results: 7
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/7
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: AppearanceTests/testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation()
+TEST_DISPLAY_NAME: testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/AppearanceTests.swift
+TEST_LINE_NUMBER: 6
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 2/7
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: AppearanceTests/testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()
+TEST_DISPLAY_NAME: testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()
+TEST_STATE: Failed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/AppearanceTests.swift
+TEST_LINE_NUMBER: 55
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 1
+
+TEST_ISSUES:
+    AppearanceTests/testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt(): Test crashed with signal abrt.
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 3/7
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: AppearanceTests/testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges()
+TEST_DISPLAY_NAME: testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/AppearanceTests.swift
+TEST_LINE_NUMBER: 83
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 4/7
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: GeneratedSymbolTests/testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry()
+TEST_DISPLAY_NAME: testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+TEST_LINE_NUMBER: 50
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 5/7
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: GeneratedSymbolTests/testGeneratedResourcesUseExplicitLanguageAndEnglishFallback()
+TEST_DISPLAY_NAME: testGeneratedResourcesUseExplicitLanguageAndEnglishFallback()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+TEST_LINE_NUMBER: 73
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 6/7
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: TextDirectionTests/testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()
+TEST_DISPLAY_NAME: testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift
+TEST_LINE_NUMBER: 48
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 7/7
+TEST_TARGET: UIKitLanguageDemoUITests
+TEST_IDENTIFIER: AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()
+TEST_DISPLAY_NAME: testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()
+TEST_STATE: Failed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift
+TEST_LINE_NUMBER: 4
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 1
+
+TEST_ISSUES:
+    UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift:19 AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail(): Failed to tap "Settings" Button: No matches found for Elements matching predicate '"Settings" IN identifiers' from input {(
+    Button, label: '首页', Selected,
+    Button, label: '设置'
+)}
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

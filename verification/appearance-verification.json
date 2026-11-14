@@ -1,0 +1,60 @@
+{
+  "status": "passed focused checks across runs",
+  "scope": "9 unique targeted tests passed across iPhone runs and iPad recheck; not a full 36-test run",
+  "tool": "Apple official MCP XcodeWrite / BuildProject / RunSomeTests",
+  "passedTests": [
+    "AppearanceTests/testMultiplePickersAndRenderedTabsStaySynchronized()",
+    "AppearanceTests/testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation()",
+    "AppearanceTests/testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges()",
+    "AppearanceTests/testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()",
+    "AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()",
+    "GeneratedSymbolTests/testGeneratedResourcesUseExplicitLanguageAndEnglishFallback()",
+    "GeneratedSymbolTests/testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry()",
+    "IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently()",
+    "TextDirectionTests/testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()"
+  ],
+  "iPhone": {
+    "name": "iPhone 17 Pro / iOS 26.5",
+    "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "initial": "official-mcp-appearance-initial-run.json",
+    "final": "official-mcp-appearance-phone-recheck.json"
+  },
+  "iPad": {
+    "name": "iPad Pro 13-inch (M5) / iOS 26.5",
+    "existingUDID": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+    "initial": "official-mcp-appearance-ipad-initial-run.json",
+    "final": "official-mcp-appearance-ipad-recheck.json",
+    "checks": [
+      "Two real UIScene sessions share current appearance choice",
+      "New Scene inherits saved dark appearance",
+      "Both windows and their actual controller traits follow light/dark updates",
+      "Independent drafts and NSUserActivity restoration retained"
+    ]
+  },
+  "createdSimulators": 0,
+  "requestedSimulatorRestarts": 0,
+  "existingIPadStartedOnce": true,
+  "lastSourceRecheck": "official-mcp-appearance-final-source-check.json",
+  "appearanceChecks": [
+    "Choice persists across process restart",
+    "Registered and late windows synchronize",
+    "System choice clears override and inherits changing Scene environment",
+    "Multiple pickers and native Tab accessibility labels synchronize",
+    "Selected collection CGColor refreshes for color traits",
+    "42 generated messages match iOS 15 production adapter and English fallback",
+    "Focused draft, selection and composition retained",
+    "4 original UI screenshots exported and visually checked"
+  ],
+  "retryNotes": [
+    "Initial test fixture read an absent trait override; now checks contains before reading. A synchronous retry exposed the original Objective-C exception.",
+    "UI caught stale localized Tab accessibility labels; synchronize UITab and currently attached bar item accessibility labels/IDs.",
+    "Initial iPad check asserted child traits before propagation finished; recheck waits for both actual controller traits."
+  ],
+  "documentation": {
+    "officialMCPDocumentationSearch": "unsupportedArchitecture",
+    "sources": "Apple Developer web documentation and installed SDK headers; see APPEARANCE.md"
+  },
+  "screenshots": "appearance-ui/manifest.json",
+  "compatibility": "Deployment iOS 15.0 retained; availability-guarded iOS 17 trait observation; no iOS 15 runtime executed",
+  "historicalFailures": "Earlier generated-symbol iPad AX failure retained separately; no claim of full-suite completion"
+}

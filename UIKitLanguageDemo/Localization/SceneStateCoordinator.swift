@@ -166,6 +166,7 @@ final class SceneStateCoordinator {
         tabs.selectedIndex = state?.selectedTab ?? 0
         window.rootViewController = LocalizationHostController(content: tabs)
         LanguageService.shared.register(window: window)
+        AppearanceService.shared.register(window: window)
         window.makeKeyAndVisible()
         window.layoutIfNeeded()
         if let saved = state?.split {

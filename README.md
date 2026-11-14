@@ -18,7 +18,7 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 4. 验证详情页仍在、返回按钮仍可返回首页、草稿不变，中文/阿拉伯语切换时方向改变。
 5. 设置 Tab 演示可变行高 Table；首页可进入 FlowLayout 网格/横向列表，以及 Compositional 网格/正交分页分区，滚动、选择、编辑草稿后切换语言。
 6. 在任意示例页点击导航栏地球图标（“系统 App 语言设置”），在系统中选择语言并返回 App，验证当前位置、草稿和滚动位置恢复。该入口先切回“跟随系统”，以便新进程采用系统选择。
-7. 使用 Product → Test 运行随工程附带的三十一项 XCTest（28 项单元测试和 3 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
+7. 使用 Product → Test 运行随工程附带的三十六项 XCTest（32 项单元测试和 4 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
 
 测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
 
@@ -51,7 +51,7 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 | `Localization/ListStateRestoration.swift` | 列表草稿、选择、逻辑阅读锚点及正交中心页的持久化桥接 |
 | `Localization/SceneWindowService.swift` | 新窗口副本、已有 session 激活、窗口关闭与全 Scene 检查点 |
 | `SceneDelegate.swift` | Scene 生命周期、NSUserActivity 保存与恢复、窗口注册 |
-| `UIKitLanguageDemoTests/GeneratedSymbolTests.swift` | 38 项生成符号、参数类型、即时语言选择与英文回退／旧路径一致性 |
+| `UIKitLanguageDemoTests/GeneratedSymbolTests.swift` | 42 项生成符号、参数类型、即时语言选择与英文回退／旧路径一致性 |
 | `UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift` | 热切换与新控制器图的恢复回归测试 |
 | `UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift` | 系统设置改语言、进程终止、导航和组合列表恢复 |
 
@@ -295,3 +295,15 @@ UIKit 的返回标题来自栈中前一个 navigationItem，见 [Apple backButto
 复用现有 iPhone 17 Pro / iOS 26.5，官方 MCP 构建成功，五项单元测试通过，UI 用例单项复验通过。首次 UI 运行在重启后回到首页，夹具补充后台状态等待后复验成功；两次运行之间生产代码不变。焦点测试使用真实 UITextField first responder 和测试专用 inputView，覆盖空光标位置、混合文本选区及中文组词保留；未声称验证系统键盘 UI。本轮未全量重跑 31 项或执行 iOS 15 运行时。
 
 原始记录见 [输入方向验证](verification/text-direction-verification.json)；未修改的 XCTest 截图见 [英文页面](verification/text-direction-ui/english.png)、[阿拉伯语页面](verification/text-direction-ui/arabic.png)。
+
+## 跟随系统／浅色／深色
+
+设置页新增外观分段选择，AppearanceService 独立保存 system／light／dark 并更新每个业务 UIWindow 的 overrideUserInterfaceStyle。跟随系统使用 unspecified，不固化当时的系统浅色／深色；新窗口和恢复窗口立即继承当前选择，已存在的窗口同步更新。切换不重建根控制器和导航栈，也不修改语言、RTL 或草稿。
+
+语义 UIColor 自动适配；Collection 选中边框的 CGColor 在颜色 Trait 变化时重新解析。iOS 17+ 使用 Trait 注册，iOS 15/16 使用旧回调。新增四项文案继续采用 Xcode 生成本地化符号、iOS 15 适配与英文回退。另补齐当前 Tab 标题的无障碍刷新和稳定标识。
+
+官方 API、系统监听、当前外观判断和窗口生命周期接入详见 [UIKit 外观实现说明](APPEARANCE.md)。当前页面的有效外观读取 view.traitCollection.userInterfaceStyle；窗口 overrideUserInterfaceStyle 表示覆盖选择，所在 Scene 的 Trait 表示环境外观。
+
+复用已有 iPhone 和 iPad，Apple 官方 MCP 构建成功；跨多次定向运行共有九项用例通过，包含两个真实 Scene 的外观同步、新 Scene 继承、偏好重启恢复、系统继承、生成符号回退、边框颜色和输入焦点。首轮夹具及无障碍问题和复验记录均保留。本轮未全量重跑 36 项，未执行 iOS 15 运行时。详见 [外观验证记录](verification/appearance-verification.json)。
+
+原始 XCTest 截图：[英文深色设置](verification/appearance-ui/english-dark-settings.png)、[阿拉伯语深色设置](verification/appearance-ui/arabic-dark-settings.png)、[阿拉伯语深色详情](verification/appearance-ui/arabic-dark-detail.png)、[阿拉伯语浅色详情](verification/appearance-ui/arabic-light-detail.png)。

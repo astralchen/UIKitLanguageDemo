@@ -1,0 +1,72 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 2,
+    "notRun": 0,
+    "passed": 5,
+    "skipped": 0,
+    "total": 7
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T23-16-04+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/3C777429-8625-47B8-BEDA-54461153DE05.txt",
+  "results": [
+    {
+      "displayName": "testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()",
+      "errorMessages": [
+        "AppearanceTests/testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt(): Test crashed with signal abrt."
+      ],
+      "identifier": "AppearanceTests/testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift:19 AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail(): Failed to tap \"Settings\" Button: No matches found for Elements matching predicate '\"Settings\" IN identifiers' from input {(\n    Button, label: '首页', Selected,\n    Button, label: '设置'\n)}"
+      ],
+      "identifier": "AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation()",
+      "errorMessages": [],
+      "identifier": "AppearanceTests/testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges()",
+      "errorMessages": [],
+      "identifier": "AppearanceTests/testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry()",
+      "errorMessages": [],
+      "identifier": "GeneratedSymbolTests/testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testGeneratedResourcesUseExplicitLanguageAndEnglishFallback()",
+      "errorMessages": [],
+      "identifier": "GeneratedSymbolTests/testGeneratedResourcesUseExplicitLanguageAndEnglishFallback()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()",
+      "errorMessages": [],
+      "identifier": "TextDirectionTests/testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "7 tests: 5 passed, 2 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 7,
+  "truncated": false
+}

@@ -14,6 +14,10 @@ enum AppText: Equatable {
     case detailNumber(String)
     case languageTitle
     case languageSystem
+    case appearanceTitle
+    case appearanceSystem
+    case appearanceLight
+    case appearanceDark
     case settingsTitle
     case settingsRow(Int)
     case fallbackExample
@@ -62,6 +66,10 @@ enum AppText: Equatable {
         case .detailNumber(let value): return .detailNumber(value)
         case .languageTitle: return .languageTitle
         case .languageSystem: return .languageSystem
+        case .appearanceTitle: return .appearanceTitle
+        case .appearanceSystem: return .appearanceSystem
+        case .appearanceLight: return .appearanceLight
+        case .appearanceDark: return .appearanceDark
         case .settingsTitle: return .settingsTitle
         case .settingsRow(let value): return .settingsRow(value)
         case .fallbackExample: return .fallbackExample
@@ -106,6 +114,10 @@ enum AppText: Equatable {
         case .detailNumber: return "detail.number"
         case .languageTitle: return "language.title"
         case .languageSystem: return "language.system"
+        case .appearanceTitle: return "appearance.title"
+        case .appearanceSystem: return "appearance.system"
+        case .appearanceLight: return "appearance.light"
+        case .appearanceDark: return "appearance.dark"
         case .settingsTitle: return "settings.title"
         case .settingsRow: return "settings.row"
         case .fallbackExample: return "fallback.example"

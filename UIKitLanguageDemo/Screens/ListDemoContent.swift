@@ -90,13 +90,35 @@ final class DemoCollectionCell: UICollectionViewCell {
             localizedContent.topAnchor.constraint(equalTo: contentView.topAnchor),
             localizedContent.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
+        if #available(iOS 17.0, *) {
+            registerForTraitChanges(UITraitCollection.systemTraitsAffectingColorAppearance) {
+                (cell: DemoCollectionCell, _: UITraitCollection) in cell.updateSelectionBorder()
+            }
+        }
+        updateSelectionBorder()
     }
     required init?(coder: NSCoder) { fatalError("Use init(frame:)") }
-    override var isSelected: Bool {
-        didSet {
-            contentView.layer.borderWidth = isSelected ? 2 : 0
-            contentView.layer.borderColor = UIColor.systemBlue.cgColor
+
+    override func didMoveToWindow() {
+        super.didMoveToWindow()
+        updateSelectionBorder()
+    }
+
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if #unavailable(iOS 17.0), traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+            updateSelectionBorder()
         }
+    }
+
+    override var isSelected: Bool {
+        didSet { updateSelectionBorder() }
+    }
+
+    private func updateSelectionBorder() {
+        contentView.layer.borderWidth = isSelected ? 2 : 0
+        // CALayer stores a static CGColor: resolve again for the cell's current traits.
+        contentView.layer.borderColor = UIColor.systemBlue.resolvedColor(with: traitCollection).cgColor
     }
 }
 

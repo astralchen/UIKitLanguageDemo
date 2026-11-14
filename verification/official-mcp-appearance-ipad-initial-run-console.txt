@@ -1,0 +1,194 @@
+Test UIKitLanguageDemo
+  Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' started.
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:166: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:167: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+  Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' failed (12.656 seconds).
+
+  Launch actions
+    Launch UIKitLanguageDemoTests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 0CE21EE5-82A1-4D1C-9554-7E17B54341DA
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPad Pro 13-inch (M5) (iPad17,4)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPad Pro 13-inch (M5)
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoTests
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoTests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+  Generating coverage report
+    notice:Unable to load coverage tools for toolchain 'com.apple.dt.toolchain.Metal.32023.883': Error Domain=XCTHLLVMCoverageToolsErrorDomain Code=2 "libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain" UserInfo={NSLocalizedDescription=libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain}
+  
+    Downloading profiles from iPad Pro 13-inch (M5)
+      notice:Downloading profiles for com.example.UIKitLanguageDemo from 1 directory
+    
+    Merging 1 profile using llvm-profdata (2100.1.1.101.0)
+    
+    Pre-processing target built products
+    
+    Processing source file data
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneStateCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/AppDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Appearance/AppearancePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/LanguagePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Appearance/AppearanceService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneWindowService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LayoutDirection.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/TextInputSnapshot.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ContainerDemos.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/AppText.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedControllers.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/OrthogonalLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageContext.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ListDemoContent.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/AppearanceTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CollectionDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/DetailViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListStateRestoration.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneState.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/SceneDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/HomeViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/SettingsViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift
+      
+    Generating target entries
+      notice:Generating entry for target UIKitLanguageDemo.app
+      notice:Generating entry for target UIKitLanguageDemoTests.xctest
+      notice:Generating entry for target UIKitLanguageDemoUITests.xctest
+    
+  Testing Configuration 1
+    Test target UIKitLanguageDemoTests
+      UIKitLanguageDemo (49534)
+        Test Suite 'Selected tests' started at 2026-11-14 23:33:36.209.
+        Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 23:33:36.212.
+        Test Suite 'IPadRestorationTests' started at 2026-11-14 23:33:36.213.
+        Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' started.
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:166: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:167: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+        Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' failed (12.656 seconds).
+        Test Suite 'IPadRestorationTests' failed at 2026-11-14 23:33:48.876.
+        	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.662) seconds
+        Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-14 23:33:48.885.
+        	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.672) seconds
+        Test Suite 'Selected tests' failed at 2026-11-14 23:33:48.891.
+        	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.682) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_23-29-56-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-E14422C2-AFE5-46DB-9416-E855C2B4A7F2-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-02FE0EBA-2A91-47D7-9F29-0C9D57E84A46/Session-UIKitLanguageDemoTests-2026-11-14_233008-0EgYoK.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_23-29-56-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-E14422C2-AFE5-46DB-9416-E855C2B4A7F2-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-02FE0EBA-2A91-47D7-9F29-0C9D57E84A46/Session-UIKitLanguageDemoTests-2026-11-14_233008-0EgYoK.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' failed at 2026-11-14 23:33:48.891.
+	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.682) seconds
+
+          Test Suite 'Selected tests' started at 2026-11-14 23:33:36.209.
+          Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 23:33:36.212.
+          Test Suite 'IPadRestorationTests' started at 2026-11-14 23:33:36.213.
+          Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' started.
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:166: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:167: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+          Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' failed (12.656 seconds).
+          Test Suite 'IPadRestorationTests' failed at 2026-11-14 23:33:48.876.
+          	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.662) seconds
+          Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-14 23:33:48.885.
+          	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.672) seconds
+          Test Suite 'Selected tests' failed at 2026-11-14 23:33:48.891.
+          	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.682) seconds
+        
+          Run test suite UIKitLanguageDemoTests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-14 23:33:48.885.
+	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.672) seconds
+
+            Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 23:33:36.212.
+            Test Suite 'IPadRestorationTests' started at 2026-11-14 23:33:36.213.
+            Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' started.
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:166: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:167: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+            Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' failed (12.656 seconds).
+            Test Suite 'IPadRestorationTests' failed at 2026-11-14 23:33:48.876.
+            	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.662) seconds
+            Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-14 23:33:48.885.
+            	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.672) seconds
+          
+            Run test suite IPadRestorationTests
+              Summary: Test Suite 'IPadRestorationTests' failed at 2026-11-14 23:33:48.876.
+	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.662) seconds
+
+              Test Suite 'IPadRestorationTests' started at 2026-11-14 23:33:36.213.
+              Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' started.
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:166: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:167: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+              Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' failed (12.656 seconds).
+              Test Suite 'IPadRestorationTests' failed at 2026-11-14 23:33:48.876.
+              	 Executed 1 test, with 2 failures (0 unexpected) in 12.656 (12.662) seconds
+            
+              Run test case testTwoRealSceneSessionsRestoreIndependently()
+                Summary: Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' failed (12.656 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' started.
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:166: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:167: error: -[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently] : XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+                Test Case '-[UIKitLanguageDemoTests.IPadRestorationTests testTwoRealSceneSessionsRestoreIndependently]' failed (12.656 seconds).
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:test failure:XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:test failure:XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+              
+** TEST FINISHED **

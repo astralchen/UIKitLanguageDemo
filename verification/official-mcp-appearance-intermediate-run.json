@@ -1,0 +1,44 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 2,
+    "notRun": 0,
+    "passed": 1,
+    "skipped": 0,
+    "total": 3
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T23-21-27+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/06DDF617-EFD6-4868-AFBC-292D5950D5EF.txt",
+  "results": [
+    {
+      "displayName": "testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/AppearanceTests.swift:61 AppearanceTests/testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt(): Can't return value for trait UserInterfaceStyle that has no override (NSInternalInconsistencyException)"
+      ],
+      "identifier": "AppearanceTests/testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift:20 AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail(): XCTAssertTrue failed"
+      ],
+      "identifier": "AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testMultiplePickersAndRenderedTabsStaySynchronized()",
+      "errorMessages": [],
+      "identifier": "AppearanceTests/testMultiplePickersAndRenderedTabsStaySynchronized()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "3 tests: 1 passed, 2 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 3,
+  "truncated": false
+}

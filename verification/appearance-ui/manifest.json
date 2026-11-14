@@ -1,0 +1,50 @@
+[
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "7956DD82-ACCB-481E-8FBA-B1D0974A67AE.png",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Arabic light detail_0_C33BE482-3181-4D96-87C0-F6EE0323777D.png",
+    "timestamp": 1794669976.018,
+    "publishedFileName": "arabic-light-detail.png",
+    "resultBundleName": "Test-UIKitLanguageDemo-2026.11.14_23-24-08-+0800.xcresult",
+    "testIdentifier": "AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "515B66C5-FC49-42D8-8DE7-8636DEE59651.png",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Arabic dark detail_0_2D88A7E7-C757-445B-8CFB-0C5769E6E7B6.png",
+    "timestamp": 1794669960.416,
+    "publishedFileName": "arabic-dark-detail.png",
+    "resultBundleName": "Test-UIKitLanguageDemo-2026.11.14_23-24-08-+0800.xcresult",
+    "testIdentifier": "AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "D89FE788-3B62-4045-B6C6-4B6BAA2E57F4.png",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Arabic dark settings_0_CC98AC94-81DE-454F-8811-132AF2F15690.png",
+    "timestamp": 1794669953.201,
+    "publishedFileName": "arabic-dark-settings.png",
+    "resultBundleName": "Test-UIKitLanguageDemo-2026.11.14_23-24-08-+0800.xcresult",
+    "testIdentifier": "AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "F9897B13-314E-4CBF-9A3C-B6B20189B451.png",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "English dark settings_0_59EBE7A9-D861-4936-929F-4AF659BF6A63.png",
+    "timestamp": 1794669919.216,
+    "publishedFileName": "english-dark-settings.png",
+    "resultBundleName": "Test-UIKitLanguageDemo-2026.11.14_23-24-08-+0800.xcresult",
+    "testIdentifier": "AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()"
+  }
+]

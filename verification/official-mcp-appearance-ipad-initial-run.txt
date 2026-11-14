@@ -1,0 +1,27 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-14T15:33:50Z
+Total Results: 1
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/1
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently()
+TEST_DISPLAY_NAME: testTwoRealSceneSessionsRestoreIndependently()
+TEST_STATE: Failed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift
+TEST_LINE_NUMBER: 122
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 2
+
+TEST_ISSUES:
+    UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:166 IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently(): XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+    UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:167 IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently(): XCTAssertEqual failed: ("UIUserInterfaceStyle(rawValue: 1)") is not equal to ("UIUserInterfaceStyle(rawValue: 2)")
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

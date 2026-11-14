@@ -1,0 +1,536 @@
+Test UIKitLanguageDemo
+  Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+      t =     0.01s Start Test at 2026-11-14 23:16:38.554
+      t =     0.31s Set Up
+      t =     0.38s Open com.example.UIKitLanguageDemo
+      t =     0.38s     Launch com.example.UIKitLanguageDemo
+      t =     3.93s         Setting up automation session
+      t =    11.29s         Wait for com.example.UIKitLanguageDemo to idle
+      t =    15.56s Waiting 20.0s for "home.openDetail" Button to exist
+      t =    16.59s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+      t =    16.60s         Checking existence of `"home.openDetail" Button`
+      t =    17.98s Tap "home.openDetail" Button
+      t =    17.98s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    18.00s     Find the "home.openDetail" Button
+      t =    18.52s     Check for interrupting elements affecting "home.openDetail" Button
+      t =    18.98s     Synthesize event
+      t =    19.44s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    19.84s Waiting 10.0s for "detail.draft" TextField to exist
+      t =    20.87s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    20.87s         Checking existence of `"detail.draft" TextField`
+      t =    21.62s Find the "language.system" Button
+      t =    22.14s Tap "language.en" Button
+      t =    22.15s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    22.19s     Find the "language.en" Button
+      t =    22.91s     Check for interrupting elements affecting "language.en" Button
+      t =    23.34s     Synthesize event
+      t =    23.79s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    24.04s Tap "Settings" Button
+      t =    24.05s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    24.08s     Find the "Settings" Button
+      t =    25.73s         Find the "Settings" Button (retry 1)
+      t =    27.18s         Find the "Settings" Button (retry 2)
+      t =    27.73s Requesting snapshot of accessibility hierarchy for app with pid 48260
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift:19: error: -[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail] : Failed to tap "Settings" Button: No matches found for Elements matching predicate '"Settings" IN identifiers' from input {(
+      Button, label: '首页', Selected,
+      Button, label: '设置'
+  )}
+      t =    28.89s Tear Down
+  Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' failed (29.398 seconds).
+  Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' started.
+  Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' passed (6.271 seconds).
+  Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' started.
+  Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' passed (0.151 seconds).
+  Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+  Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' started.
+  Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' passed (0.043 seconds).
+  Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' started.
+  Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' passed (0.122 seconds).
+  Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+  Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.240 seconds).
+
+  Launch actions
+    Launch UIKitLanguageDemoUITests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoUITests
+        notice:Launching com.example.UIKitLanguageDemoUITests.xctrunner
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoUITests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemoTests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoTests
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoTests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemoTests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoTests
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoTests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+  Generating coverage report
+    notice:Unable to load coverage tools for toolchain 'com.apple.dt.toolchain.Metal.32023.883': Error Domain=XCTHLLVMCoverageToolsErrorDomain Code=2 "libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain" UserInfo={NSLocalizedDescription=libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain}
+  
+    Downloading profiles from iPhone 17 Pro
+      notice:Downloading profiles for com.example.UIKitLanguageDemo from 3 directories
+      notice:Downloading profiles for com.example.UIKitLanguageDemoUITests.xctrunner from 1 directory
+    
+    Merging 4 profiles using llvm-profdata (2100.1.1.101.0)
+    
+  Testing Configuration 1
+    Test target UIKitLanguageDemoUITests
+      UIKitLanguageDemoUITests-Runner (48251)
+        2026-11-14 23:16:30.375874+0800 UIKitLanguageDemoUITests-Runner[48251:1511798] [Default] Running tests...
+            t =      nans Interface orientation changed to Portrait
+        Test Suite 'Selected tests' started at 2026-11-14 23:16:38.544.
+        Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 23:16:38.546.
+        Test Suite 'AppearanceUITests' started at 2026-11-14 23:16:38.547.
+        Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+            t =     0.01s Start Test at 2026-11-14 23:16:38.554
+            t =     0.31s Set Up
+            t =     0.38s Open com.example.UIKitLanguageDemo
+            t =     0.38s     Launch com.example.UIKitLanguageDemo
+            t =     3.93s         Setting up automation session
+            t =    11.29s         Wait for com.example.UIKitLanguageDemo to idle
+            t =    15.56s Waiting 20.0s for "home.openDetail" Button to exist
+            t =    16.59s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+            t =    16.60s         Checking existence of `"home.openDetail" Button`
+            t =    17.98s Tap "home.openDetail" Button
+            t =    17.98s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    18.00s     Find the "home.openDetail" Button
+            t =    18.52s     Check for interrupting elements affecting "home.openDetail" Button
+            t =    18.98s     Synthesize event
+            t =    19.44s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    19.84s Waiting 10.0s for "detail.draft" TextField to exist
+            t =    20.87s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    20.87s         Checking existence of `"detail.draft" TextField`
+            t =    21.62s Find the "language.system" Button
+            t =    22.14s Tap "language.en" Button
+            t =    22.15s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    22.19s     Find the "language.en" Button
+            t =    22.91s     Check for interrupting elements affecting "language.en" Button
+            t =    23.34s     Synthesize event
+            t =    23.79s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    24.04s Tap "Settings" Button
+            t =    24.05s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    24.08s     Find the "Settings" Button
+            t =    25.73s         Find the "Settings" Button (retry 1)
+            t =    27.18s         Find the "Settings" Button (retry 2)
+            t =    27.73s Requesting snapshot of accessibility hierarchy for app with pid 48260
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift:19: error: -[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail] : Failed to tap "Settings" Button: No matches found for Elements matching predicate '"Settings" IN identifiers' from input {(
+            Button, label: '首页', Selected,
+            Button, label: '设置'
+        )}
+            t =    28.89s Tear Down
+        Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' failed (29.398 seconds).
+        Test Suite 'AppearanceUITests' failed at 2026-11-14 23:17:07.953.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.406) seconds
+        Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 23:17:07.957.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.411) seconds
+        Test Suite 'Selected tests' failed at 2026-11-14 23:17:07.959.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.415) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_23-16-04-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-91E58426-A20B-4CA6-9850-5118000B3D8D-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-D4DA28F1-649D-4B21-93E5-EF2F968B588B/Session-UIKitLanguageDemoUITests-2026-11-14_231625-Vw4XP3.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_23-16-04-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-91E58426-A20B-4CA6-9850-5118000B3D8D-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-D4DA28F1-649D-4B21-93E5-EF2F968B588B/Session-UIKitLanguageDemoUITests-2026-11-14_231625-Vw4XP3.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' failed at 2026-11-14 23:17:07.959.
+	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.415) seconds
+
+          2026-11-14 23:16:30.375874+0800 UIKitLanguageDemoUITests-Runner[48251:1511798] [Default] Running tests...
+              t =      nans Interface orientation changed to Portrait
+          Test Suite 'Selected tests' started at 2026-11-14 23:16:38.544.
+          Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 23:16:38.546.
+          Test Suite 'AppearanceUITests' started at 2026-11-14 23:16:38.547.
+          Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+              t =     0.01s Start Test at 2026-11-14 23:16:38.554
+              t =     0.31s Set Up
+              t =     0.38s Open com.example.UIKitLanguageDemo
+              t =     0.38s     Launch com.example.UIKitLanguageDemo
+              t =     3.93s         Setting up automation session
+              t =    11.29s         Wait for com.example.UIKitLanguageDemo to idle
+              t =    15.56s Waiting 20.0s for "home.openDetail" Button to exist
+              t =    16.59s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+              t =    16.60s         Checking existence of `"home.openDetail" Button`
+              t =    17.98s Tap "home.openDetail" Button
+              t =    17.98s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    18.00s     Find the "home.openDetail" Button
+              t =    18.52s     Check for interrupting elements affecting "home.openDetail" Button
+              t =    18.98s     Synthesize event
+              t =    19.44s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    19.84s Waiting 10.0s for "detail.draft" TextField to exist
+              t =    20.87s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    20.87s         Checking existence of `"detail.draft" TextField`
+              t =    21.62s Find the "language.system" Button
+              t =    22.14s Tap "language.en" Button
+              t =    22.15s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    22.19s     Find the "language.en" Button
+              t =    22.91s     Check for interrupting elements affecting "language.en" Button
+              t =    23.34s     Synthesize event
+              t =    23.79s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    24.04s Tap "Settings" Button
+              t =    24.05s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    24.08s     Find the "Settings" Button
+              t =    25.73s         Find the "Settings" Button (retry 1)
+              t =    27.18s         Find the "Settings" Button (retry 2)
+              t =    27.73s Requesting snapshot of accessibility hierarchy for app with pid 48260
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift:19: error: -[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail] : Failed to tap "Settings" Button: No matches found for Elements matching predicate '"Settings" IN identifiers' from input {(
+              Button, label: '首页', Selected,
+              Button, label: '设置'
+          )}
+              t =    28.89s Tear Down
+          Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' failed (29.398 seconds).
+          Test Suite 'AppearanceUITests' failed at 2026-11-14 23:17:07.953.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.406) seconds
+          Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 23:17:07.957.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.411) seconds
+          Test Suite 'Selected tests' failed at 2026-11-14 23:17:07.959.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.415) seconds
+        
+          Run test suite UIKitLanguageDemoUITests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 23:17:07.957.
+	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.411) seconds
+
+            Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 23:16:38.546.
+            Test Suite 'AppearanceUITests' started at 2026-11-14 23:16:38.547.
+            Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+                t =     0.01s Start Test at 2026-11-14 23:16:38.554
+                t =     0.31s Set Up
+                t =     0.38s Open com.example.UIKitLanguageDemo
+                t =     0.38s     Launch com.example.UIKitLanguageDemo
+                t =     3.93s         Setting up automation session
+                t =    11.29s         Wait for com.example.UIKitLanguageDemo to idle
+                t =    15.56s Waiting 20.0s for "home.openDetail" Button to exist
+                t =    16.59s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                t =    16.60s         Checking existence of `"home.openDetail" Button`
+                t =    17.98s Tap "home.openDetail" Button
+                t =    17.98s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    18.00s     Find the "home.openDetail" Button
+                t =    18.52s     Check for interrupting elements affecting "home.openDetail" Button
+                t =    18.98s     Synthesize event
+                t =    19.44s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    19.84s Waiting 10.0s for "detail.draft" TextField to exist
+                t =    20.87s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    20.87s         Checking existence of `"detail.draft" TextField`
+                t =    21.62s Find the "language.system" Button
+                t =    22.14s Tap "language.en" Button
+                t =    22.15s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    22.19s     Find the "language.en" Button
+                t =    22.91s     Check for interrupting elements affecting "language.en" Button
+                t =    23.34s     Synthesize event
+                t =    23.79s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    24.04s Tap "Settings" Button
+                t =    24.05s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    24.08s     Find the "Settings" Button
+                t =    25.73s         Find the "Settings" Button (retry 1)
+                t =    27.18s         Find the "Settings" Button (retry 2)
+                t =    27.73s Requesting snapshot of accessibility hierarchy for app with pid 48260
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift:19: error: -[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail] : Failed to tap "Settings" Button: No matches found for Elements matching predicate '"Settings" IN identifiers' from input {(
+                Button, label: '首页', Selected,
+                Button, label: '设置'
+            )}
+                t =    28.89s Tear Down
+            Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' failed (29.398 seconds).
+            Test Suite 'AppearanceUITests' failed at 2026-11-14 23:17:07.953.
+            	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.406) seconds
+            Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-14 23:17:07.957.
+            	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.411) seconds
+          
+            Run test suite AppearanceUITests
+              Summary: Test Suite 'AppearanceUITests' failed at 2026-11-14 23:17:07.953.
+	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.406) seconds
+
+              Test Suite 'AppearanceUITests' started at 2026-11-14 23:16:38.547.
+              Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+                  t =     0.01s Start Test at 2026-11-14 23:16:38.554
+                  t =     0.31s Set Up
+                  t =     0.38s Open com.example.UIKitLanguageDemo
+                  t =     0.38s     Launch com.example.UIKitLanguageDemo
+                  t =     3.93s         Setting up automation session
+                  t =    11.29s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =    15.56s Waiting 20.0s for "home.openDetail" Button to exist
+                  t =    16.59s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                  t =    16.60s         Checking existence of `"home.openDetail" Button`
+                  t =    17.98s Tap "home.openDetail" Button
+                  t =    17.98s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    18.00s     Find the "home.openDetail" Button
+                  t =    18.52s     Check for interrupting elements affecting "home.openDetail" Button
+                  t =    18.98s     Synthesize event
+                  t =    19.44s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    19.84s Waiting 10.0s for "detail.draft" TextField to exist
+                  t =    20.87s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    20.87s         Checking existence of `"detail.draft" TextField`
+                  t =    21.62s Find the "language.system" Button
+                  t =    22.14s Tap "language.en" Button
+                  t =    22.15s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    22.19s     Find the "language.en" Button
+                  t =    22.91s     Check for interrupting elements affecting "language.en" Button
+                  t =    23.34s     Synthesize event
+                  t =    23.79s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    24.04s Tap "Settings" Button
+                  t =    24.05s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    24.08s     Find the "Settings" Button
+                  t =    25.73s         Find the "Settings" Button (retry 1)
+                  t =    27.18s         Find the "Settings" Button (retry 2)
+                  t =    27.73s Requesting snapshot of accessibility hierarchy for app with pid 48260
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift:19: error: -[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail] : Failed to tap "Settings" Button: No matches found for Elements matching predicate '"Settings" IN identifiers' from input {(
+                  Button, label: '首页', Selected,
+                  Button, label: '设置'
+              )}
+                  t =    28.89s Tear Down
+              Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' failed (29.398 seconds).
+              Test Suite 'AppearanceUITests' failed at 2026-11-14 23:17:07.953.
+              	 Executed 1 test, with 1 failure (0 unexpected) in 29.398 (29.406) seconds
+            
+              Run test case testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()
+                Summary:     t =    28.89s Tear Down
+Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' failed (29.398 seconds).
+
+                Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+                    t =     0.01s Start Test at 2026-11-14 23:16:38.554
+                    t =     0.31s Set Up
+                    t =     0.38s Open com.example.UIKitLanguageDemo
+                    t =     0.38s     Launch com.example.UIKitLanguageDemo
+                    t =     3.93s         Setting up automation session
+                    t =    11.29s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =    15.56s Waiting 20.0s for "home.openDetail" Button to exist
+                    t =    16.59s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                    t =    16.60s         Checking existence of `"home.openDetail" Button`
+                    t =    17.98s Tap "home.openDetail" Button
+                    t =    17.98s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    18.00s     Find the "home.openDetail" Button
+                    t =    18.52s     Check for interrupting elements affecting "home.openDetail" Button
+                    t =    18.98s     Synthesize event
+                    t =    19.44s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    19.84s Waiting 10.0s for "detail.draft" TextField to exist
+                    t =    20.87s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    20.87s         Checking existence of `"detail.draft" TextField`
+                    t =    21.62s Find the "language.system" Button
+                    t =    22.14s Tap "language.en" Button
+                    t =    22.15s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    22.19s     Find the "language.en" Button
+                    t =    22.91s     Check for interrupting elements affecting "language.en" Button
+                    t =    23.34s     Synthesize event
+                    t =    23.79s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    24.04s Tap "Settings" Button
+                    t =    24.05s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    24.08s     Find the "Settings" Button
+                    t =    25.73s         Find the "Settings" Button (retry 1)
+                    t =    27.18s         Find the "Settings" Button (retry 2)
+                    t =    27.73s Requesting snapshot of accessibility hierarchy for app with pid 48260
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift:19: error: -[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail] : Failed to tap "Settings" Button: No matches found for Elements matching predicate '"Settings" IN identifiers' from input {(
+                    Button, label: '首页', Selected,
+                    Button, label: '设置'
+                )}
+                    t =    28.89s Tear Down
+                Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' failed (29.398 seconds).
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift:test failure:Failed to tap "Settings" Button: No matches found for Elements matching predicate '"Settings" IN identifiers' from input {(
+              
+    Test target UIKitLanguageDemoTests
+      UIKitLanguageDemo (48337)
+        Test Suite 'Selected tests' started at 2026-11-14 23:17:20.755.
+        Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 23:17:20.757.
+        Test Suite 'AppearanceTests' started at 2026-11-14 23:17:20.758.
+        Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' started.
+        Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' passed (6.271 seconds).
+        Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' started.
+        Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' passed (0.151 seconds).
+        Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+        Test Suite 'GeneratedSymbolTests' started at 2026-11-14 23:17:50.906.
+        Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' started.
+        Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' passed (0.043 seconds).
+        Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' started.
+        Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' passed (0.122 seconds).
+        Test Suite 'GeneratedSymbolTests' passed at 2026-11-14 23:17:51.079.
+        	 Executed 2 tests, with 0 failures (0 unexpected) in 0.165 (0.173) seconds
+        Test Suite 'TextDirectionTests' started at 2026-11-14 23:17:51.081.
+        Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+        Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.240 seconds).
+        Test Suite 'TextDirectionTests' passed at 2026-11-14 23:17:55.323.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 4.240 (4.243) seconds
+        Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 23:17:55.324.
+        	 Executed 3 tests, with 0 failures (0 unexpected) in 4.406 (4.420) seconds
+        Test Suite 'Selected tests' passed at 2026-11-14 23:17:55.325.
+        	 Executed 3 tests, with 0 failures (0 unexpected) in 4.406 (4.422) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_23-16-04-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-B5502EBF-95DA-4AEB-8368-04FDD5D3BBF0-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-4DDE13AF-704E-4B7C-AF3B-778D1F04D9A6/Session-UIKitLanguageDemoTests-2026-11-14_231708-TJjqt7.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_23-16-04-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-B5502EBF-95DA-4AEB-8368-04FDD5D3BBF0-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-4DDE13AF-704E-4B7C-AF3B-778D1F04D9A6/Session-UIKitLanguageDemoTests-2026-11-14_231708-TJjqt7.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' passed at 2026-11-14 23:17:55.325.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 4.406 (4.422) seconds
+
+          Test Suite 'Selected tests' started at 2026-11-14 23:17:20.755.
+          Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 23:17:20.757.
+          Test Suite 'AppearanceTests' started at 2026-11-14 23:17:20.758.
+          Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' started.
+          Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' passed (6.271 seconds).
+          Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' started.
+          Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' passed (0.151 seconds).
+          Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+          Test Suite 'GeneratedSymbolTests' started at 2026-11-14 23:17:50.906.
+          Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' started.
+          Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' passed (0.043 seconds).
+          Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' started.
+          Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' passed (0.122 seconds).
+          Test Suite 'GeneratedSymbolTests' passed at 2026-11-14 23:17:51.079.
+          	 Executed 2 tests, with 0 failures (0 unexpected) in 0.165 (0.173) seconds
+          Test Suite 'TextDirectionTests' started at 2026-11-14 23:17:51.081.
+          Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+          Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.240 seconds).
+          Test Suite 'TextDirectionTests' passed at 2026-11-14 23:17:55.323.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 4.240 (4.243) seconds
+          Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 23:17:55.324.
+          	 Executed 3 tests, with 0 failures (0 unexpected) in 4.406 (4.420) seconds
+          Test Suite 'Selected tests' passed at 2026-11-14 23:17:55.325.
+          	 Executed 3 tests, with 0 failures (0 unexpected) in 4.406 (4.422) seconds
+        
+          Run test suite UIKitLanguageDemoTests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 23:17:55.324.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 4.406 (4.420) seconds
+
+            Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 23:17:20.757.
+            Test Suite 'AppearanceTests' started at 2026-11-14 23:17:20.758.
+            Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' started.
+            Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' passed (6.271 seconds).
+            Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' started.
+            Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' passed (0.151 seconds).
+            Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+            Test Suite 'GeneratedSymbolTests' started at 2026-11-14 23:17:50.906.
+            Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' started.
+            Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' passed (0.043 seconds).
+            Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' started.
+            Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' passed (0.122 seconds).
+            Test Suite 'GeneratedSymbolTests' passed at 2026-11-14 23:17:51.079.
+            	 Executed 2 tests, with 0 failures (0 unexpected) in 0.165 (0.173) seconds
+            Test Suite 'TextDirectionTests' started at 2026-11-14 23:17:51.081.
+            Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+            Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.240 seconds).
+            Test Suite 'TextDirectionTests' passed at 2026-11-14 23:17:55.323.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 4.240 (4.243) seconds
+            Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 23:17:55.324.
+            	 Executed 3 tests, with 0 failures (0 unexpected) in 4.406 (4.420) seconds
+          
+            Run test suite AppearanceTests
+              Test Suite 'AppearanceTests' started at 2026-11-14 23:17:20.758.
+              Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' started.
+              Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' passed (6.271 seconds).
+              Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' started.
+              Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' passed (0.151 seconds).
+              Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+            
+              Run test case testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation()
+                Summary: Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' passed (6.271 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' started.
+                Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSavedChoiceSyncsRegisteredAndLateWindowsWithoutChangingNavigation]' passed (6.271 seconds).
+              
+              Run test case testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges()
+                Summary: Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' passed (0.151 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' started.
+                Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSelectedCollectionBorderResolvesAgainWhenAppearanceChanges]' passed (0.151 seconds).
+              
+              Run test case testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()
+                Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+                :test failure:Test crashed with signal abrt.
+              
+            Run test suite GeneratedSymbolTests
+              Summary: Test Suite 'GeneratedSymbolTests' passed at 2026-11-14 23:17:51.079.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.165 (0.173) seconds
+
+              Test Suite 'GeneratedSymbolTests' started at 2026-11-14 23:17:50.906.
+              Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' started.
+              Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' passed (0.043 seconds).
+              Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' started.
+              Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' passed (0.122 seconds).
+              Test Suite 'GeneratedSymbolTests' passed at 2026-11-14 23:17:51.079.
+              	 Executed 2 tests, with 0 failures (0 unexpected) in 0.165 (0.173) seconds
+            
+              Run test case testGeneratedResourcesUseExplicitLanguageAndEnglishFallback()
+                Summary: Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' passed (0.043 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' started.
+                Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedResourcesUseExplicitLanguageAndEnglishFallback]' passed (0.043 seconds).
+              
+              Run test case testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry()
+                Summary: Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' passed (0.122 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' started.
+                Test Case '-[UIKitLanguageDemoTests.GeneratedSymbolTests testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry]' passed (0.122 seconds).
+              
+            Run test suite TextDirectionTests
+              Summary: Test Suite 'TextDirectionTests' passed at 2026-11-14 23:17:55.323.
+	 Executed 1 test, with 0 failures (0 unexpected) in 4.240 (4.243) seconds
+
+              Test Suite 'TextDirectionTests' started at 2026-11-14 23:17:51.081.
+              Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+              Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.240 seconds).
+              Test Suite 'TextDirectionTests' passed at 2026-11-14 23:17:55.323.
+              	 Executed 1 test, with 0 failures (0 unexpected) in 4.240 (4.243) seconds
+            
+              Run test case testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge()
+                Summary: Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.240 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' started.
+                Test Case '-[UIKitLanguageDemoTests.TextDirectionTests testFocusedDraftPreservesSelectionCompositionAndEmptyCaretEdge]' passed (4.240 seconds).
+              
+** TEST FINISHED WITH UNKNOWN OUTCOME **

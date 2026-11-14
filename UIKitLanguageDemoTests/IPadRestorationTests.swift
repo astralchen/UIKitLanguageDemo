@@ -126,6 +126,10 @@ final class IPadRestorationTests: XCTestCase {
         let first = try XCTUnwrap(app.connectedScenes.compactMap { $0 as? UIWindowScene }.first)
         let a = try XCTUnwrap(first.delegate as? SceneDelegate)
         let original = try XCTUnwrap(a.restoration.activity())
+        let appearance = AppearanceService.shared
+        let originalAppearance = appearance.selection
+        appearance.setSelection(.dark)
+        defer { appearance.setSelection(originalAppearance) }
         let window = try XCTUnwrap(a.window)
         let number = a.restoration.windowNumber
         let previousIDs = Set(app.openSessions.map(\.persistentIdentifier))
@@ -150,6 +154,24 @@ final class IPadRestorationTests: XCTestCase {
         let b = try XCTUnwrap(second.delegate as? SceneDelegate)
         XCTAssertEqual(b.restoration.restorationOrigin, "activation")
         let activityB = try XCTUnwrap(b.checkpoint(second))
+        let secondWindow = try XCTUnwrap(b.window)
+        XCTAssertEqual(window.overrideUserInterfaceStyle, .dark)
+        XCTAssertEqual(secondWindow.overrideUserInterfaceStyle, .dark, "New Scene must inherit the saved choice")
+        for choice in [AppearanceSelection.light, .dark, .system] {
+            appearance.setSelection(choice)
+            await Task.yield()
+            XCTAssertEqual(window.overrideUserInterfaceStyle, choice.style)
+            XCTAssertEqual(secondWindow.overrideUserInterfaceStyle, choice.style)
+            if choice != .system {
+                try await waitFor {
+                    window.layoutIfNeeded(); secondWindow.layoutIfNeeded()
+                    return a.restoration.tabs.traitCollection.userInterfaceStyle == choice.style
+                        && b.restoration.tabs.traitCollection.userInterfaceStyle == choice.style
+                }
+                XCTAssertEqual(a.restoration.tabs.traitCollection.userInterfaceStyle, choice.style)
+                XCTAssertEqual(b.restoration.tabs.traitCollection.userInterfaceStyle, choice.style)
+            }
+        }
         XCTAssertNotEqual(SceneStateCodec.decode(activityA)?.sceneSessionID, SceneStateCodec.decode(activityB)?.sceneSessionID)
         XCTAssertNotEqual(a.restoration.windowNumber, b.restoration.windowNumber)
         XCTAssertEqual(detail.draftField.text, "window A draft")

@@ -1,0 +1,29 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 1,
+    "notRun": 0,
+    "passed": 0,
+    "skipped": 0,
+    "total": 1
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T23-29-56+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/765A2707-D138-4648-B529-515A2B484B68.txt",
+  "results": [
+    {
+      "displayName": "testTwoRealSceneSessionsRestoreIndependently()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:166 IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently(): XCTAssertEqual failed: (\"UIUserInterfaceStyle(rawValue: 1)\") is not equal to (\"UIUserInterfaceStyle(rawValue: 2)\")",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift:167 IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently(): XCTAssertEqual failed: (\"UIUserInterfaceStyle(rawValue: 1)\") is not equal to (\"UIUserInterfaceStyle(rawValue: 2)\")"
+      ],
+      "identifier": "IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoTests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "1 tests: 0 passed, 1 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 1,
+  "truncated": false
+}

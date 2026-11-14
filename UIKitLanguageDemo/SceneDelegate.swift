@@ -9,6 +9,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = scene as? UIWindowScene else { return }
         let window = UIWindow(windowScene: scene)
         self.window = window
+        AppearanceService.shared.register(window: window)
         #if DEBUG
         let arguments = ProcessInfo.processInfo.arguments
         if let index = arguments.firstIndex(of: "-UITestResetRestoration"), index + 1 < arguments.count,
@@ -56,9 +57,15 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidEnterBackground(_ scene: UIScene) { checkpoint(scene) }
     func sceneDidDisconnect(_ scene: UIScene) {
         checkpoint(scene)
-        if let window { LanguageService.shared.unregister(window: window) }
+        if let window {
+            LanguageService.shared.unregister(window: window)
+            AppearanceService.shared.unregister(window: window)
+        }
     }
     func sceneWillEnterForeground(_ scene: UIScene) {
-        if let window { LanguageService.shared.register(window: window) }
+        if let window {
+            LanguageService.shared.register(window: window)
+            AppearanceService.shared.register(window: window)
+        }
     }
 }

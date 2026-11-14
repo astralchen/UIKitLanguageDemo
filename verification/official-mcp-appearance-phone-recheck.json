@@ -1,0 +1,40 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 0,
+    "passed": 3,
+    "skipped": 0,
+    "total": 3
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T23-24-08+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/0B38C4EA-84D1-4A42-82BF-ACBF43CD304F.txt",
+  "results": [
+    {
+      "displayName": "testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()",
+      "errorMessages": [],
+      "identifier": "AppearanceTests/testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testMultiplePickersAndRenderedTabsStaySynchronized()",
+      "errorMessages": [],
+      "identifier": "AppearanceTests/testMultiplePickersAndRenderedTabsStaySynchronized()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()",
+      "errorMessages": [],
+      "identifier": "AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "3 tests: 3 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 3,
+  "truncated": false
+}

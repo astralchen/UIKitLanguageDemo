@@ -15,6 +15,10 @@ final class GeneratedSymbolTests: XCTestCase {
         .detailNumber("123.45"),
         .languageTitle,
         .languageSystem,
+        .appearanceTitle,
+        .appearanceSystem,
+        .appearanceLight,
+        .appearanceDark,
         .settingsTitle,
         .settingsRow(7),
         .fallbackExample,
@@ -46,7 +50,7 @@ final class GeneratedSymbolTests: XCTestCase {
 
     func testGeneratedSymbolsMatchIOS15AdapterForEveryCatalogEntry() throws {
         let resources = LanguageResources.load(from: .main)
-        XCTAssertEqual(Set(messages.map(\.catalogKey)).count, 38)
+        XCTAssertEqual(Set(messages.map(\.catalogKey)).count, 42)
         for language in AppLanguage.allCases {
             let context = LanguageContext(language: language, bundle: try XCTUnwrap(resources[language]),
                                           fallbackBundle: try XCTUnwrap(resources[.english]), revision: 0)

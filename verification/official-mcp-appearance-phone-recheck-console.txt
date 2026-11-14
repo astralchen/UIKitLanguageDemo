@@ -1,0 +1,1169 @@
+Test UIKitLanguageDemo
+  Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+      t =     0.01s Start Test at 2026-11-14 23:24:27.564
+      t =     0.22s Set Up
+      t =     0.25s Open com.example.UIKitLanguageDemo
+      t =     0.25s     Launch com.example.UIKitLanguageDemo
+      t =     3.09s         Setting up automation session
+      t =     9.29s         Wait for com.example.UIKitLanguageDemo to idle
+      t =    12.84s Waiting 20.0s for "home.openDetail" Button to exist
+      t =    13.85s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+      t =    13.85s         Checking existence of `"home.openDetail" Button`
+      t =    14.23s Tap "home.openDetail" Button
+      t =    14.23s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    14.25s     Find the "home.openDetail" Button
+      t =    14.52s     Check for interrupting elements affecting "home.openDetail" Button
+      t =    14.87s     Synthesize event
+      t =    15.28s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    15.47s Waiting 10.0s for "detail.draft" TextField to exist
+      t =    16.49s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    16.49s         Checking existence of `"detail.draft" TextField`
+      t =    16.86s Find the "language.system" Button
+      t =    17.20s Tap "language.en" Button
+      t =    17.20s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    17.22s     Find the "language.en" Button
+      t =    17.55s     Check for interrupting elements affecting "language.en" Button
+      t =    17.88s     Synthesize event
+      t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    18.42s Waiting 10.0s for "Detail" NavigationBar to exist
+      t =    19.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Detail" NavigationBar`
+      t =    19.44s         Checking existence of `"Detail" NavigationBar`
+      t =    19.75s Waiting 10.0s for "tab.settings.title" Button to exist
+      t =    20.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+      t =    20.78s         Checking existence of `"tab.settings.title" Button`
+      t =    21.12s Tap "tab.settings.title" Button
+      t =    21.12s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    21.14s     Find the "tab.settings.title" Button
+      t =    21.45s     Check for interrupting elements affecting "tab.settings.title" Button
+      t =    21.76s     Synthesize event
+      t =    22.13s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    23.90s Waiting 10.0s for "appearance.selection" SegmentedControl to exist
+      t =    24.91s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+      t =    24.91s         Checking existence of `"appearance.selection" SegmentedControl`
+      t =    34.16s         Capturing element debug description
+      t =    34.16s     Checking existence of `"appearance.selection" SegmentedControl`
+      t =    41.23s Find the "System" Button
+      t =    43.15s Tap "Dark" Button
+      t =    43.15s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    43.16s     Find the "Dark" Button
+      t =    44.66s     Check for interrupting elements affecting "Dark" Button
+      t =    45.94s     Synthesize event
+      t =    46.31s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    47.70s Find the "Dark" Button
+      t =    49.82s Find the Target Application 'com.example.UIKitLanguageDemo'
+      t =    51.66s Added attachment named 'English dark settings'
+      t =    51.66s Pressing Home button
+      t =    52.13s Wait for com.example.UIKitLanguageDemo to become Running Background
+      t =    53.00s Terminate com.example.UIKitLanguageDemo:48936
+      t =    54.07s Open com.example.UIKitLanguageDemo
+      t =    54.07s     Launch com.example.UIKitLanguageDemo
+      t =    54.70s         Setting up automation session
+      t =    58.82s         Wait for com.example.UIKitLanguageDemo to idle
+      t =    61.81s Waiting 20.0s for "appearance.selection" SegmentedControl to exist
+      t =    62.82s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+      t =    62.83s         Checking existence of `"appearance.selection" SegmentedControl`
+      t =    77.55s Find the "Dark" Button
+      t =    79.34s Tap "language.ar" Button
+      t =    79.34s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    79.35s     Find the "language.ar" Button
+      t =    80.83s     Check for interrupting elements affecting "language.ar" Button
+      t =    82.27s     Synthesize event
+      t =    82.64s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    82.73s Find the "داكن" Button
+      t =    84.25s Find the Target Application 'com.example.UIKitLanguageDemo'
+      t =    85.64s Added attachment named 'Arabic dark settings'
+      t =    85.65s Tap "tab.home.title" Button
+      t =    85.65s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    85.66s     Find the "tab.home.title" Button
+      t =    87.47s     Check for interrupting elements affecting "tab.home.title" Button
+      t =    88.68s     Synthesize event
+      t =    89.09s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    90.83s Waiting 10.0s for "detail.draft" TextField to exist
+      t =    91.86s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =    91.86s         Checking existence of `"detail.draft" TextField`
+      t =    92.21s Find the Target Application 'com.example.UIKitLanguageDemo'
+      t =    92.86s Added attachment named 'Arabic dark detail'
+      t =    92.86s Tap "tab.settings.title" Button
+      t =    92.86s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    92.88s     Find the "tab.settings.title" Button
+      t =    93.24s     Check for interrupting elements affecting "tab.settings.title" Button
+      t =    93.55s     Synthesize event
+      t =    93.92s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    95.46s Tap "فاتح" Button
+      t =    95.47s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    95.49s     Find the "فاتح" Button
+      t =    97.26s     Check for interrupting elements affecting "فاتح" Button
+      t =    98.55s     Synthesize event
+      t =    98.96s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    99.99s Find the "فاتح" Button
+      t =   101.50s Tap "tab.home.title" Button
+      t =   101.50s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   101.51s     Find the "tab.home.title" Button
+      t =   103.09s     Check for interrupting elements affecting "tab.home.title" Button
+      t =   104.27s     Synthesize event
+      t =   104.68s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   106.41s Waiting 10.0s for "detail.draft" TextField to exist
+      t =   107.44s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+      t =   107.44s         Checking existence of `"detail.draft" TextField`
+      t =   107.84s Find the Target Application 'com.example.UIKitLanguageDemo'
+      t =   108.46s Added attachment named 'Arabic light detail'
+      t =   108.46s Tap "tab.settings.title" Button
+      t =   108.46s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   108.48s     Find the "tab.settings.title" Button
+      t =   108.81s     Check for interrupting elements affecting "tab.settings.title" Button
+      t =   109.22s     Synthesize event
+      t =   109.62s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   111.10s Checking existence of `"appearance.selection" SegmentedControl`
+      t =   112.55s Tap "language.en" Button
+      t =   112.55s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   112.56s     Find the "language.en" Button
+      t =   114.17s     Check for interrupting elements affecting "language.en" Button
+      t =   115.34s     Synthesize event
+      t =   115.71s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   115.97s Tap "System" Button
+      t =   115.97s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   115.98s     Find the "System" Button
+      t =   117.51s     Check for interrupting elements affecting "System" Button
+      t =   118.74s     Synthesize event
+      t =   119.12s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   120.17s Tap "language.system" Button
+      t =   120.17s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   120.18s     Find the "language.system" Button
+      t =   121.97s     Check for interrupting elements affecting "language.system" Button
+      t =   123.16s     Synthesize event
+      t =   123.54s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   123.71s Tear Down
+  Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' passed (124.088 seconds).
+  Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' started.
+  Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' passed (1.176 seconds).
+  Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+  Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' passed (0.092 seconds).
+
+  Launch actions
+    Launch UIKitLanguageDemoUITests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoUITests
+        notice:Launching com.example.UIKitLanguageDemoUITests.xctrunner
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoUITests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemoTests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoTests
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoTests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+  Generating coverage report
+    notice:Unable to load coverage tools for toolchain 'com.apple.dt.toolchain.Metal.32023.883': Error Domain=XCTHLLVMCoverageToolsErrorDomain Code=2 "libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain" UserInfo={NSLocalizedDescription=libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain}
+  
+    Downloading profiles from iPhone 17 Pro
+      notice:Downloading profiles for com.example.UIKitLanguageDemo from 3 directories
+      notice:Downloading profiles for com.example.UIKitLanguageDemoUITests.xctrunner from 1 directory
+    
+    Merging 4 profiles using llvm-profdata (2100.1.1.101.0)
+    
+  Testing Configuration 1
+    Test target UIKitLanguageDemoUITests
+      UIKitLanguageDemoUITests-Runner (48930)
+        2026-11-14 23:24:22.693244+0800 UIKitLanguageDemoUITests-Runner[48930:1528318] [Default] Running tests...
+            t =      nans Interface orientation changed to Portrait
+        Test Suite 'Selected tests' started at 2026-11-14 23:24:27.554.
+        Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 23:24:27.556.
+        Test Suite 'AppearanceUITests' started at 2026-11-14 23:24:27.557.
+        Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+            t =     0.01s Start Test at 2026-11-14 23:24:27.564
+            t =     0.22s Set Up
+            t =     0.25s Open com.example.UIKitLanguageDemo
+            t =     0.25s     Launch com.example.UIKitLanguageDemo
+            t =     3.09s         Setting up automation session
+            t =     9.29s         Wait for com.example.UIKitLanguageDemo to idle
+            t =    12.84s Waiting 20.0s for "home.openDetail" Button to exist
+            t =    13.85s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+            t =    13.85s         Checking existence of `"home.openDetail" Button`
+            t =    14.23s Tap "home.openDetail" Button
+            t =    14.23s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    14.25s     Find the "home.openDetail" Button
+            t =    14.52s     Check for interrupting elements affecting "home.openDetail" Button
+            t =    14.87s     Synthesize event
+            t =    15.28s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    15.47s Waiting 10.0s for "detail.draft" TextField to exist
+            t =    16.49s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    16.49s         Checking existence of `"detail.draft" TextField`
+            t =    16.86s Find the "language.system" Button
+            t =    17.20s Tap "language.en" Button
+            t =    17.20s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    17.22s     Find the "language.en" Button
+            t =    17.55s     Check for interrupting elements affecting "language.en" Button
+            t =    17.88s     Synthesize event
+            t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    18.42s Waiting 10.0s for "Detail" NavigationBar to exist
+            t =    19.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Detail" NavigationBar`
+            t =    19.44s         Checking existence of `"Detail" NavigationBar`
+            t =    19.75s Waiting 10.0s for "tab.settings.title" Button to exist
+            t =    20.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+            t =    20.78s         Checking existence of `"tab.settings.title" Button`
+            t =    21.12s Tap "tab.settings.title" Button
+            t =    21.12s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    21.14s     Find the "tab.settings.title" Button
+            t =    21.45s     Check for interrupting elements affecting "tab.settings.title" Button
+            t =    21.76s     Synthesize event
+            t =    22.13s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    23.90s Waiting 10.0s for "appearance.selection" SegmentedControl to exist
+            t =    24.91s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+            t =    24.91s         Checking existence of `"appearance.selection" SegmentedControl`
+            t =    34.16s         Capturing element debug description
+            t =    34.16s     Checking existence of `"appearance.selection" SegmentedControl`
+            t =    41.23s Find the "System" Button
+            t =    43.15s Tap "Dark" Button
+            t =    43.15s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    43.16s     Find the "Dark" Button
+            t =    44.66s     Check for interrupting elements affecting "Dark" Button
+            t =    45.94s     Synthesize event
+            t =    46.31s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    47.70s Find the "Dark" Button
+            t =    49.82s Find the Target Application 'com.example.UIKitLanguageDemo'
+            t =    51.66s Added attachment named 'English dark settings'
+            t =    51.66s Pressing Home button
+            t =    52.13s Wait for com.example.UIKitLanguageDemo to become Running Background
+            t =    53.00s Terminate com.example.UIKitLanguageDemo:48936
+            t =    54.07s Open com.example.UIKitLanguageDemo
+            t =    54.07s     Launch com.example.UIKitLanguageDemo
+            t =    54.70s         Setting up automation session
+            t =    58.82s         Wait for com.example.UIKitLanguageDemo to idle
+            t =    61.81s Waiting 20.0s for "appearance.selection" SegmentedControl to exist
+            t =    62.82s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+            t =    62.83s         Checking existence of `"appearance.selection" SegmentedControl`
+            t =    77.55s Find the "Dark" Button
+            t =    79.34s Tap "language.ar" Button
+            t =    79.34s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    79.35s     Find the "language.ar" Button
+            t =    80.83s     Check for interrupting elements affecting "language.ar" Button
+            t =    82.27s     Synthesize event
+            t =    82.64s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    82.73s Find the "داكن" Button
+            t =    84.25s Find the Target Application 'com.example.UIKitLanguageDemo'
+            t =    85.64s Added attachment named 'Arabic dark settings'
+            t =    85.65s Tap "tab.home.title" Button
+            t =    85.65s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    85.66s     Find the "tab.home.title" Button
+            t =    87.47s     Check for interrupting elements affecting "tab.home.title" Button
+            t =    88.68s     Synthesize event
+            t =    89.09s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    90.83s Waiting 10.0s for "detail.draft" TextField to exist
+            t =    91.86s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =    91.86s         Checking existence of `"detail.draft" TextField`
+            t =    92.21s Find the Target Application 'com.example.UIKitLanguageDemo'
+            t =    92.86s Added attachment named 'Arabic dark detail'
+            t =    92.86s Tap "tab.settings.title" Button
+            t =    92.86s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    92.88s     Find the "tab.settings.title" Button
+            t =    93.24s     Check for interrupting elements affecting "tab.settings.title" Button
+            t =    93.55s     Synthesize event
+            t =    93.92s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    95.46s Tap "فاتح" Button
+            t =    95.47s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    95.49s     Find the "فاتح" Button
+            t =    97.26s     Check for interrupting elements affecting "فاتح" Button
+            t =    98.55s     Synthesize event
+            t =    98.96s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    99.99s Find the "فاتح" Button
+            t =   101.50s Tap "tab.home.title" Button
+            t =   101.50s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   101.51s     Find the "tab.home.title" Button
+            t =   103.09s     Check for interrupting elements affecting "tab.home.title" Button
+            t =   104.27s     Synthesize event
+            t =   104.68s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   106.41s Waiting 10.0s for "detail.draft" TextField to exist
+            t =   107.44s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+            t =   107.44s         Checking existence of `"detail.draft" TextField`
+            t =   107.84s Find the Target Application 'com.example.UIKitLanguageDemo'
+            t =   108.46s Added attachment named 'Arabic light detail'
+            t =   108.46s Tap "tab.settings.title" Button
+            t =   108.46s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   108.48s     Find the "tab.settings.title" Button
+            t =   108.81s     Check for interrupting elements affecting "tab.settings.title" Button
+            t =   109.22s     Synthesize event
+            t =   109.62s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   111.10s Checking existence of `"appearance.selection" SegmentedControl`
+            t =   112.55s Tap "language.en" Button
+            t =   112.55s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   112.56s     Find the "language.en" Button
+            t =   114.17s     Check for interrupting elements affecting "language.en" Button
+            t =   115.34s     Synthesize event
+            t =   115.71s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   115.97s Tap "System" Button
+            t =   115.97s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   115.98s     Find the "System" Button
+            t =   117.51s     Check for interrupting elements affecting "System" Button
+            t =   118.74s     Synthesize event
+            t =   119.12s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   120.17s Tap "language.system" Button
+            t =   120.17s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   120.18s     Find the "language.system" Button
+            t =   121.97s     Check for interrupting elements affecting "language.system" Button
+            t =   123.16s     Synthesize event
+            t =   123.54s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   123.71s Tear Down
+        Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' passed (124.088 seconds).
+        Test Suite 'AppearanceUITests' passed at 2026-11-14 23:26:31.652.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.095) seconds
+        Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-14 23:26:31.654.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.097) seconds
+        Test Suite 'Selected tests' passed at 2026-11-14 23:26:31.655.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.101) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_23-24-08-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-BF3877BB-D876-49CF-912A-B6BD61E9336A-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-79D3FCD4-A5AA-4320-B2D3-6AEEB84F761F/Session-UIKitLanguageDemoUITests-2026-11-14_232419-jYwsgc.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_23-24-08-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-BF3877BB-D876-49CF-912A-B6BD61E9336A-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-79D3FCD4-A5AA-4320-B2D3-6AEEB84F761F/Session-UIKitLanguageDemoUITests-2026-11-14_232419-jYwsgc.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' passed at 2026-11-14 23:26:31.655.
+	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.101) seconds
+
+          2026-11-14 23:24:22.693244+0800 UIKitLanguageDemoUITests-Runner[48930:1528318] [Default] Running tests...
+              t =      nans Interface orientation changed to Portrait
+          Test Suite 'Selected tests' started at 2026-11-14 23:24:27.554.
+          Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 23:24:27.556.
+          Test Suite 'AppearanceUITests' started at 2026-11-14 23:24:27.557.
+          Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+              t =     0.01s Start Test at 2026-11-14 23:24:27.564
+              t =     0.22s Set Up
+              t =     0.25s Open com.example.UIKitLanguageDemo
+              t =     0.25s     Launch com.example.UIKitLanguageDemo
+              t =     3.09s         Setting up automation session
+              t =     9.29s         Wait for com.example.UIKitLanguageDemo to idle
+              t =    12.84s Waiting 20.0s for "home.openDetail" Button to exist
+              t =    13.85s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+              t =    13.85s         Checking existence of `"home.openDetail" Button`
+              t =    14.23s Tap "home.openDetail" Button
+              t =    14.23s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    14.25s     Find the "home.openDetail" Button
+              t =    14.52s     Check for interrupting elements affecting "home.openDetail" Button
+              t =    14.87s     Synthesize event
+              t =    15.28s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    15.47s Waiting 10.0s for "detail.draft" TextField to exist
+              t =    16.49s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    16.49s         Checking existence of `"detail.draft" TextField`
+              t =    16.86s Find the "language.system" Button
+              t =    17.20s Tap "language.en" Button
+              t =    17.20s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    17.22s     Find the "language.en" Button
+              t =    17.55s     Check for interrupting elements affecting "language.en" Button
+              t =    17.88s     Synthesize event
+              t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    18.42s Waiting 10.0s for "Detail" NavigationBar to exist
+              t =    19.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Detail" NavigationBar`
+              t =    19.44s         Checking existence of `"Detail" NavigationBar`
+              t =    19.75s Waiting 10.0s for "tab.settings.title" Button to exist
+              t =    20.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+              t =    20.78s         Checking existence of `"tab.settings.title" Button`
+              t =    21.12s Tap "tab.settings.title" Button
+              t =    21.12s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    21.14s     Find the "tab.settings.title" Button
+              t =    21.45s     Check for interrupting elements affecting "tab.settings.title" Button
+              t =    21.76s     Synthesize event
+              t =    22.13s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    23.90s Waiting 10.0s for "appearance.selection" SegmentedControl to exist
+              t =    24.91s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+              t =    24.91s         Checking existence of `"appearance.selection" SegmentedControl`
+              t =    34.16s         Capturing element debug description
+              t =    34.16s     Checking existence of `"appearance.selection" SegmentedControl`
+              t =    41.23s Find the "System" Button
+              t =    43.15s Tap "Dark" Button
+              t =    43.15s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    43.16s     Find the "Dark" Button
+              t =    44.66s     Check for interrupting elements affecting "Dark" Button
+              t =    45.94s     Synthesize event
+              t =    46.31s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    47.70s Find the "Dark" Button
+              t =    49.82s Find the Target Application 'com.example.UIKitLanguageDemo'
+              t =    51.66s Added attachment named 'English dark settings'
+              t =    51.66s Pressing Home button
+              t =    52.13s Wait for com.example.UIKitLanguageDemo to become Running Background
+              t =    53.00s Terminate com.example.UIKitLanguageDemo:48936
+              t =    54.07s Open com.example.UIKitLanguageDemo
+              t =    54.07s     Launch com.example.UIKitLanguageDemo
+              t =    54.70s         Setting up automation session
+              t =    58.82s         Wait for com.example.UIKitLanguageDemo to idle
+              t =    61.81s Waiting 20.0s for "appearance.selection" SegmentedControl to exist
+              t =    62.82s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+              t =    62.83s         Checking existence of `"appearance.selection" SegmentedControl`
+              t =    77.55s Find the "Dark" Button
+              t =    79.34s Tap "language.ar" Button
+              t =    79.34s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    79.35s     Find the "language.ar" Button
+              t =    80.83s     Check for interrupting elements affecting "language.ar" Button
+              t =    82.27s     Synthesize event
+              t =    82.64s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    82.73s Find the "داكن" Button
+              t =    84.25s Find the Target Application 'com.example.UIKitLanguageDemo'
+              t =    85.64s Added attachment named 'Arabic dark settings'
+              t =    85.65s Tap "tab.home.title" Button
+              t =    85.65s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    85.66s     Find the "tab.home.title" Button
+              t =    87.47s     Check for interrupting elements affecting "tab.home.title" Button
+              t =    88.68s     Synthesize event
+              t =    89.09s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    90.83s Waiting 10.0s for "detail.draft" TextField to exist
+              t =    91.86s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =    91.86s         Checking existence of `"detail.draft" TextField`
+              t =    92.21s Find the Target Application 'com.example.UIKitLanguageDemo'
+              t =    92.86s Added attachment named 'Arabic dark detail'
+              t =    92.86s Tap "tab.settings.title" Button
+              t =    92.86s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    92.88s     Find the "tab.settings.title" Button
+              t =    93.24s     Check for interrupting elements affecting "tab.settings.title" Button
+              t =    93.55s     Synthesize event
+              t =    93.92s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    95.46s Tap "فاتح" Button
+              t =    95.47s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    95.49s     Find the "فاتح" Button
+              t =    97.26s     Check for interrupting elements affecting "فاتح" Button
+              t =    98.55s     Synthesize event
+              t =    98.96s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    99.99s Find the "فاتح" Button
+              t =   101.50s Tap "tab.home.title" Button
+              t =   101.50s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   101.51s     Find the "tab.home.title" Button
+              t =   103.09s     Check for interrupting elements affecting "tab.home.title" Button
+              t =   104.27s     Synthesize event
+              t =   104.68s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   106.41s Waiting 10.0s for "detail.draft" TextField to exist
+              t =   107.44s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+              t =   107.44s         Checking existence of `"detail.draft" TextField`
+              t =   107.84s Find the Target Application 'com.example.UIKitLanguageDemo'
+              t =   108.46s Added attachment named 'Arabic light detail'
+              t =   108.46s Tap "tab.settings.title" Button
+              t =   108.46s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   108.48s     Find the "tab.settings.title" Button
+              t =   108.81s     Check for interrupting elements affecting "tab.settings.title" Button
+              t =   109.22s     Synthesize event
+              t =   109.62s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   111.10s Checking existence of `"appearance.selection" SegmentedControl`
+              t =   112.55s Tap "language.en" Button
+              t =   112.55s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   112.56s     Find the "language.en" Button
+              t =   114.17s     Check for interrupting elements affecting "language.en" Button
+              t =   115.34s     Synthesize event
+              t =   115.71s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   115.97s Tap "System" Button
+              t =   115.97s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   115.98s     Find the "System" Button
+              t =   117.51s     Check for interrupting elements affecting "System" Button
+              t =   118.74s     Synthesize event
+              t =   119.12s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   120.17s Tap "language.system" Button
+              t =   120.17s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   120.18s     Find the "language.system" Button
+              t =   121.97s     Check for interrupting elements affecting "language.system" Button
+              t =   123.16s     Synthesize event
+              t =   123.54s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   123.71s Tear Down
+          Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' passed (124.088 seconds).
+          Test Suite 'AppearanceUITests' passed at 2026-11-14 23:26:31.652.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.095) seconds
+          Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-14 23:26:31.654.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.097) seconds
+          Test Suite 'Selected tests' passed at 2026-11-14 23:26:31.655.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.101) seconds
+        
+          Run test suite UIKitLanguageDemoUITests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-14 23:26:31.654.
+	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.097) seconds
+
+            Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-14 23:24:27.556.
+            Test Suite 'AppearanceUITests' started at 2026-11-14 23:24:27.557.
+            Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+                t =     0.01s Start Test at 2026-11-14 23:24:27.564
+                t =     0.22s Set Up
+                t =     0.25s Open com.example.UIKitLanguageDemo
+                t =     0.25s     Launch com.example.UIKitLanguageDemo
+                t =     3.09s         Setting up automation session
+                t =     9.29s         Wait for com.example.UIKitLanguageDemo to idle
+                t =    12.84s Waiting 20.0s for "home.openDetail" Button to exist
+                t =    13.85s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                t =    13.85s         Checking existence of `"home.openDetail" Button`
+                t =    14.23s Tap "home.openDetail" Button
+                t =    14.23s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    14.25s     Find the "home.openDetail" Button
+                t =    14.52s     Check for interrupting elements affecting "home.openDetail" Button
+                t =    14.87s     Synthesize event
+                t =    15.28s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    15.47s Waiting 10.0s for "detail.draft" TextField to exist
+                t =    16.49s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    16.49s         Checking existence of `"detail.draft" TextField`
+                t =    16.86s Find the "language.system" Button
+                t =    17.20s Tap "language.en" Button
+                t =    17.20s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    17.22s     Find the "language.en" Button
+                t =    17.55s     Check for interrupting elements affecting "language.en" Button
+                t =    17.88s     Synthesize event
+                t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    18.42s Waiting 10.0s for "Detail" NavigationBar to exist
+                t =    19.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Detail" NavigationBar`
+                t =    19.44s         Checking existence of `"Detail" NavigationBar`
+                t =    19.75s Waiting 10.0s for "tab.settings.title" Button to exist
+                t =    20.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+                t =    20.78s         Checking existence of `"tab.settings.title" Button`
+                t =    21.12s Tap "tab.settings.title" Button
+                t =    21.12s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    21.14s     Find the "tab.settings.title" Button
+                t =    21.45s     Check for interrupting elements affecting "tab.settings.title" Button
+                t =    21.76s     Synthesize event
+                t =    22.13s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    23.90s Waiting 10.0s for "appearance.selection" SegmentedControl to exist
+                t =    24.91s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+                t =    24.91s         Checking existence of `"appearance.selection" SegmentedControl`
+                t =    34.16s         Capturing element debug description
+                t =    34.16s     Checking existence of `"appearance.selection" SegmentedControl`
+                t =    41.23s Find the "System" Button
+                t =    43.15s Tap "Dark" Button
+                t =    43.15s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    43.16s     Find the "Dark" Button
+                t =    44.66s     Check for interrupting elements affecting "Dark" Button
+                t =    45.94s     Synthesize event
+                t =    46.31s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    47.70s Find the "Dark" Button
+                t =    49.82s Find the Target Application 'com.example.UIKitLanguageDemo'
+                t =    51.66s Added attachment named 'English dark settings'
+                t =    51.66s Pressing Home button
+                t =    52.13s Wait for com.example.UIKitLanguageDemo to become Running Background
+                t =    53.00s Terminate com.example.UIKitLanguageDemo:48936
+                t =    54.07s Open com.example.UIKitLanguageDemo
+                t =    54.07s     Launch com.example.UIKitLanguageDemo
+                t =    54.70s         Setting up automation session
+                t =    58.82s         Wait for com.example.UIKitLanguageDemo to idle
+                t =    61.81s Waiting 20.0s for "appearance.selection" SegmentedControl to exist
+                t =    62.82s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+                t =    62.83s         Checking existence of `"appearance.selection" SegmentedControl`
+                t =    77.55s Find the "Dark" Button
+                t =    79.34s Tap "language.ar" Button
+                t =    79.34s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    79.35s     Find the "language.ar" Button
+                t =    80.83s     Check for interrupting elements affecting "language.ar" Button
+                t =    82.27s     Synthesize event
+                t =    82.64s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    82.73s Find the "داكن" Button
+                t =    84.25s Find the Target Application 'com.example.UIKitLanguageDemo'
+                t =    85.64s Added attachment named 'Arabic dark settings'
+                t =    85.65s Tap "tab.home.title" Button
+                t =    85.65s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    85.66s     Find the "tab.home.title" Button
+                t =    87.47s     Check for interrupting elements affecting "tab.home.title" Button
+                t =    88.68s     Synthesize event
+                t =    89.09s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    90.83s Waiting 10.0s for "detail.draft" TextField to exist
+                t =    91.86s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =    91.86s         Checking existence of `"detail.draft" TextField`
+                t =    92.21s Find the Target Application 'com.example.UIKitLanguageDemo'
+                t =    92.86s Added attachment named 'Arabic dark detail'
+                t =    92.86s Tap "tab.settings.title" Button
+                t =    92.86s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    92.88s     Find the "tab.settings.title" Button
+                t =    93.24s     Check for interrupting elements affecting "tab.settings.title" Button
+                t =    93.55s     Synthesize event
+                t =    93.92s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    95.46s Tap "فاتح" Button
+                t =    95.47s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    95.49s     Find the "فاتح" Button
+                t =    97.26s     Check for interrupting elements affecting "فاتح" Button
+                t =    98.55s     Synthesize event
+                t =    98.96s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    99.99s Find the "فاتح" Button
+                t =   101.50s Tap "tab.home.title" Button
+                t =   101.50s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   101.51s     Find the "tab.home.title" Button
+                t =   103.09s     Check for interrupting elements affecting "tab.home.title" Button
+                t =   104.27s     Synthesize event
+                t =   104.68s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   106.41s Waiting 10.0s for "detail.draft" TextField to exist
+                t =   107.44s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                t =   107.44s         Checking existence of `"detail.draft" TextField`
+                t =   107.84s Find the Target Application 'com.example.UIKitLanguageDemo'
+                t =   108.46s Added attachment named 'Arabic light detail'
+                t =   108.46s Tap "tab.settings.title" Button
+                t =   108.46s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   108.48s     Find the "tab.settings.title" Button
+                t =   108.81s     Check for interrupting elements affecting "tab.settings.title" Button
+                t =   109.22s     Synthesize event
+                t =   109.62s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   111.10s Checking existence of `"appearance.selection" SegmentedControl`
+                t =   112.55s Tap "language.en" Button
+                t =   112.55s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   112.56s     Find the "language.en" Button
+                t =   114.17s     Check for interrupting elements affecting "language.en" Button
+                t =   115.34s     Synthesize event
+                t =   115.71s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   115.97s Tap "System" Button
+                t =   115.97s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   115.98s     Find the "System" Button
+                t =   117.51s     Check for interrupting elements affecting "System" Button
+                t =   118.74s     Synthesize event
+                t =   119.12s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   120.17s Tap "language.system" Button
+                t =   120.17s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   120.18s     Find the "language.system" Button
+                t =   121.97s     Check for interrupting elements affecting "language.system" Button
+                t =   123.16s     Synthesize event
+                t =   123.54s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   123.71s Tear Down
+            Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' passed (124.088 seconds).
+            Test Suite 'AppearanceUITests' passed at 2026-11-14 23:26:31.652.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.095) seconds
+            Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-14 23:26:31.654.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.097) seconds
+          
+            Run test suite AppearanceUITests
+              Summary: Test Suite 'AppearanceUITests' passed at 2026-11-14 23:26:31.652.
+	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.095) seconds
+
+              Test Suite 'AppearanceUITests' started at 2026-11-14 23:24:27.557.
+              Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+                  t =     0.01s Start Test at 2026-11-14 23:24:27.564
+                  t =     0.22s Set Up
+                  t =     0.25s Open com.example.UIKitLanguageDemo
+                  t =     0.25s     Launch com.example.UIKitLanguageDemo
+                  t =     3.09s         Setting up automation session
+                  t =     9.29s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =    12.84s Waiting 20.0s for "home.openDetail" Button to exist
+                  t =    13.85s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                  t =    13.85s         Checking existence of `"home.openDetail" Button`
+                  t =    14.23s Tap "home.openDetail" Button
+                  t =    14.23s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    14.25s     Find the "home.openDetail" Button
+                  t =    14.52s     Check for interrupting elements affecting "home.openDetail" Button
+                  t =    14.87s     Synthesize event
+                  t =    15.28s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    15.47s Waiting 10.0s for "detail.draft" TextField to exist
+                  t =    16.49s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    16.49s         Checking existence of `"detail.draft" TextField`
+                  t =    16.86s Find the "language.system" Button
+                  t =    17.20s Tap "language.en" Button
+                  t =    17.20s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    17.22s     Find the "language.en" Button
+                  t =    17.55s     Check for interrupting elements affecting "language.en" Button
+                  t =    17.88s     Synthesize event
+                  t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    18.42s Waiting 10.0s for "Detail" NavigationBar to exist
+                  t =    19.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Detail" NavigationBar`
+                  t =    19.44s         Checking existence of `"Detail" NavigationBar`
+                  t =    19.75s Waiting 10.0s for "tab.settings.title" Button to exist
+                  t =    20.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+                  t =    20.78s         Checking existence of `"tab.settings.title" Button`
+                  t =    21.12s Tap "tab.settings.title" Button
+                  t =    21.12s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    21.14s     Find the "tab.settings.title" Button
+                  t =    21.45s     Check for interrupting elements affecting "tab.settings.title" Button
+                  t =    21.76s     Synthesize event
+                  t =    22.13s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    23.90s Waiting 10.0s for "appearance.selection" SegmentedControl to exist
+                  t =    24.91s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+                  t =    24.91s         Checking existence of `"appearance.selection" SegmentedControl`
+                  t =    34.16s         Capturing element debug description
+                  t =    34.16s     Checking existence of `"appearance.selection" SegmentedControl`
+                  t =    41.23s Find the "System" Button
+                  t =    43.15s Tap "Dark" Button
+                  t =    43.15s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    43.16s     Find the "Dark" Button
+                  t =    44.66s     Check for interrupting elements affecting "Dark" Button
+                  t =    45.94s     Synthesize event
+                  t =    46.31s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    47.70s Find the "Dark" Button
+                  t =    49.82s Find the Target Application 'com.example.UIKitLanguageDemo'
+                  t =    51.66s Added attachment named 'English dark settings'
+                  t =    51.66s Pressing Home button
+                  t =    52.13s Wait for com.example.UIKitLanguageDemo to become Running Background
+                  t =    53.00s Terminate com.example.UIKitLanguageDemo:48936
+                  t =    54.07s Open com.example.UIKitLanguageDemo
+                  t =    54.07s     Launch com.example.UIKitLanguageDemo
+                  t =    54.70s         Setting up automation session
+                  t =    58.82s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =    61.81s Waiting 20.0s for "appearance.selection" SegmentedControl to exist
+                  t =    62.82s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+                  t =    62.83s         Checking existence of `"appearance.selection" SegmentedControl`
+                  t =    77.55s Find the "Dark" Button
+                  t =    79.34s Tap "language.ar" Button
+                  t =    79.34s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    79.35s     Find the "language.ar" Button
+                  t =    80.83s     Check for interrupting elements affecting "language.ar" Button
+                  t =    82.27s     Synthesize event
+                  t =    82.64s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    82.73s Find the "داكن" Button
+                  t =    84.25s Find the Target Application 'com.example.UIKitLanguageDemo'
+                  t =    85.64s Added attachment named 'Arabic dark settings'
+                  t =    85.65s Tap "tab.home.title" Button
+                  t =    85.65s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    85.66s     Find the "tab.home.title" Button
+                  t =    87.47s     Check for interrupting elements affecting "tab.home.title" Button
+                  t =    88.68s     Synthesize event
+                  t =    89.09s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    90.83s Waiting 10.0s for "detail.draft" TextField to exist
+                  t =    91.86s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =    91.86s         Checking existence of `"detail.draft" TextField`
+                  t =    92.21s Find the Target Application 'com.example.UIKitLanguageDemo'
+                  t =    92.86s Added attachment named 'Arabic dark detail'
+                  t =    92.86s Tap "tab.settings.title" Button
+                  t =    92.86s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    92.88s     Find the "tab.settings.title" Button
+                  t =    93.24s     Check for interrupting elements affecting "tab.settings.title" Button
+                  t =    93.55s     Synthesize event
+                  t =    93.92s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    95.46s Tap "فاتح" Button
+                  t =    95.47s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    95.49s     Find the "فاتح" Button
+                  t =    97.26s     Check for interrupting elements affecting "فاتح" Button
+                  t =    98.55s     Synthesize event
+                  t =    98.96s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    99.99s Find the "فاتح" Button
+                  t =   101.50s Tap "tab.home.title" Button
+                  t =   101.50s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   101.51s     Find the "tab.home.title" Button
+                  t =   103.09s     Check for interrupting elements affecting "tab.home.title" Button
+                  t =   104.27s     Synthesize event
+                  t =   104.68s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   106.41s Waiting 10.0s for "detail.draft" TextField to exist
+                  t =   107.44s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                  t =   107.44s         Checking existence of `"detail.draft" TextField`
+                  t =   107.84s Find the Target Application 'com.example.UIKitLanguageDemo'
+                  t =   108.46s Added attachment named 'Arabic light detail'
+                  t =   108.46s Tap "tab.settings.title" Button
+                  t =   108.46s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   108.48s     Find the "tab.settings.title" Button
+                  t =   108.81s     Check for interrupting elements affecting "tab.settings.title" Button
+                  t =   109.22s     Synthesize event
+                  t =   109.62s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   111.10s Checking existence of `"appearance.selection" SegmentedControl`
+                  t =   112.55s Tap "language.en" Button
+                  t =   112.55s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   112.56s     Find the "language.en" Button
+                  t =   114.17s     Check for interrupting elements affecting "language.en" Button
+                  t =   115.34s     Synthesize event
+                  t =   115.71s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   115.97s Tap "System" Button
+                  t =   115.97s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   115.98s     Find the "System" Button
+                  t =   117.51s     Check for interrupting elements affecting "System" Button
+                  t =   118.74s     Synthesize event
+                  t =   119.12s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   120.17s Tap "language.system" Button
+                  t =   120.17s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   120.18s     Find the "language.system" Button
+                  t =   121.97s     Check for interrupting elements affecting "language.system" Button
+                  t =   123.16s     Synthesize event
+                  t =   123.54s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   123.71s Tear Down
+              Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' passed (124.088 seconds).
+              Test Suite 'AppearanceUITests' passed at 2026-11-14 23:26:31.652.
+              	 Executed 1 test, with 0 failures (0 unexpected) in 124.088 (124.095) seconds
+            
+              Run test case testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()
+                Summary:     t =     0.01s Start Test at 2026-11-14 23:24:27.564
+    t =     0.22s Set Up
+    t =     0.25s Open com.example.UIKitLanguageDemo
+    t =     0.25s     Launch com.example.UIKitLanguageDemo
+    t =     3.09s         Setting up automation session
+    t =     9.29s         Wait for com.example.UIKitLanguageDemo to idle
+    t =    12.84s Waiting 20.0s for "home.openDetail" Button to exist
+    t =    13.85s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+    t =    13.85s         Checking existence of `"home.openDetail" Button`
+    t =    14.23s Tap "home.openDetail" Button
+    t =    14.23s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    14.25s     Find the "home.openDetail" Button
+    t =    14.52s     Check for interrupting elements affecting "home.openDetail" Button
+    t =    14.87s     Synthesize event
+    t =    15.28s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    15.47s Waiting 10.0s for "detail.draft" TextField to exist
+    t =    16.49s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+    t =    16.49s         Checking existence of `"detail.draft" TextField`
+    t =    16.86s Find the "language.system" Button
+    t =    17.20s Tap "language.en" Button
+    t =    17.20s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    17.22s     Find the "language.en" Button
+    t =    17.55s     Check for interrupting elements affecting "language.en" Button
+    t =    17.88s     Synthesize event
+    t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    18.42s Waiting 10.0s for "Detail" NavigationBar to exist
+    t =    19.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Detail" NavigationBar`
+    t =    19.44s         Checking existence of `"Detail" NavigationBar`
+    t =    19.75s Waiting 10.0s for "tab.settings.title" Button to exist
+    t =    20.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+    t =    20.78s         Checking existence of `"tab.settings.title" Button`
+    t =    21.12s Tap "tab.settings.title" Button
+    t =    21.12s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    21.14s     Find the "tab.settings.title" Button
+    t =    21.45s     Check for interrupting elements affecting "tab.settings.title" Button
+    t =    21.76s     Synthesize event
+    t =    22.13s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    23.90s Waiting 10.0s for "appearance.selection" SegmentedControl to exist
+    t =    24.91s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+    t =    24.91s         Checking existence of `"appearance.selection" SegmentedControl`
+    t =    34.16s         Capturing element debug description
+    t =    34.16s     Checking existence of `"appearance.selection" SegmentedControl`
+    t =    41.23s Find the "System" Button
+    t =    43.15s Tap "Dark" Button
+    t =    43.15s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    43.16s     Find the "Dark" Button
+    t =    44.66s     Check for interrupting elements affecting "Dark" Button
+    t =    45.94s     Synthesize event
+    t =    46.31s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    47.70s Find the "Dark" Button
+    t =    49.82s Find the Target Application 'com.example.UIKitLanguageDemo'
+    t =    51.66s Added attachment named 'English dark settings'
+    t =    51.66s Pressing Home button
+    t =    52.13s Wait for com.example.UIKitLanguageDemo to become Running Background
+    t =    53.00s Terminate com.example.UIKitLanguageDemo:48936
+    t =    54.07s Open com.example.UIKitLanguageDemo
+    t =    54.07s     Launch com.example.UIKitLanguageDemo
+    t =    54.70s         Setting up automation session
+    t =    58.82s         Wait for com.example.UIKitLanguageDemo to idle
+    t =    61.81s Waiting 20.0s for "appearance.selection" SegmentedControl to exist
+    t =    62.82s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+    t =    62.83s         Checking existence of `"appearance.selection" SegmentedControl`
+    t =    77.55s Find the "Dark" Button
+    t =    79.34s Tap "language.ar" Button
+    t =    79.34s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    79.35s     Find the "language.ar" Button
+    t =    80.83s     Check for interrupting elements affecting "language.ar" Button
+    t =    82.27s     Synthesize event
+    t =    82.64s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    82.73s Find the "داكن" Button
+    t =    84.25s Find the Target Application 'com.example.UIKitLanguageDemo'
+    t =    85.64s Added attachment named 'Arabic dark settings'
+    t =    85.65s Tap "tab.home.title" Button
+    t =    85.65s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    85.66s     Find the "tab.home.title" Button
+    t =    87.47s     Check for interrupting elements affecting "tab.home.title" Button
+    t =    88.68s     Synthesize event
+    t =    89.09s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    90.83s Waiting 10.0s for "detail.draft" TextField to exist
+    t =    91.86s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+    t =    91.86s         Checking existence of `"detail.draft" TextField`
+    t =    92.21s Find the Target Application 'com.example.UIKitLanguageDemo'
+    t =    92.86s Added attachment named 'Arabic dark detail'
+    t =    92.86s Tap "tab.settings.title" Button
+    t =    92.86s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    92.88s     Find the "tab.settings.title" Button
+    t =    93.24s     Check for interrupting elements affecting "tab.settings.title" Button
+    t =    93.55s     Synthesize event
+    t =    93.92s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    95.46s Tap "فاتح" Button
+    t =    95.47s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    95.49s     Find the "فاتح" Button
+    t =    97.26s     Check for interrupting elements affecting "فاتح" Button
+    t =    98.55s     Synthesize event
+    t =    98.96s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    99.99s Find the "فاتح" Button
+    t =   101.50s Tap "tab.home.title" Button
+    t =   101.50s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   101.51s     Find the "tab.home.title" Button
+    t =   103.09s     Check for interrupting elements affecting "tab.home.title" Button
+    t =   104.27s     Synthesize event
+    t =   104.68s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   106.41s Waiting 10.0s for "detail.draft" TextField to exist
+    t =   107.44s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+    t =   107.44s         Checking existence of `"detail.draft" TextField`
+    t =   107.84s Find the Target Application 'com.example.UIKitLanguageDemo'
+    t =   108.46s Added attachment named 'Arabic light detail'
+    t =   108.46s Tap "tab.settings.title" Button
+    t =   108.46s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   108.48s     Find the "tab.settings.title" Button
+    t =   108.81s     Check for interrupting elements affecting "tab.settings.title" Button
+    t =   109.22s     Synthesize event
+    t =   109.62s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   111.10s Checking existence of `"appearance.selection" SegmentedControl`
+    t =   112.55s Tap "language.en" Button
+    t =   112.55s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   112.56s     Find the "language.en" Button
+    t =   114.17s     Check for interrupting elements affecting "language.en" Button
+    t =   115.34s     Synthesize event
+    t =   115.71s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   115.97s Tap "System" Button
+    t =   115.97s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   115.98s     Find the "System" Button
+    t =   117.51s     Check for interrupting elements affecting "System" Button
+    t =   118.74s     Synthesize event
+    t =   119.12s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   120.17s Tap "language.system" Button
+    t =   120.17s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   120.18s     Find the "language.system" Button
+    t =   121.97s     Check for interrupting elements affecting "language.system" Button
+    t =   123.16s     Synthesize event
+    t =   123.54s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   123.71s Tear Down
+Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' passed (124.088 seconds).
+
+                Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' started.
+                    t =     0.01s Start Test at 2026-11-14 23:24:27.564
+                    t =     0.22s Set Up
+                    t =     0.25s Open com.example.UIKitLanguageDemo
+                    t =     0.25s     Launch com.example.UIKitLanguageDemo
+                    t =     3.09s         Setting up automation session
+                    t =     9.29s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =    12.84s Waiting 20.0s for "home.openDetail" Button to exist
+                    t =    13.85s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openDetail" Button`
+                    t =    13.85s         Checking existence of `"home.openDetail" Button`
+                    t =    14.23s Tap "home.openDetail" Button
+                    t =    14.23s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    14.25s     Find the "home.openDetail" Button
+                    t =    14.52s     Check for interrupting elements affecting "home.openDetail" Button
+                    t =    14.87s     Synthesize event
+                    t =    15.28s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    15.47s Waiting 10.0s for "detail.draft" TextField to exist
+                    t =    16.49s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    16.49s         Checking existence of `"detail.draft" TextField`
+                    t =    16.86s Find the "language.system" Button
+                    t =    17.20s Tap "language.en" Button
+                    t =    17.20s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    17.22s     Find the "language.en" Button
+                    t =    17.55s     Check for interrupting elements affecting "language.en" Button
+                    t =    17.88s     Synthesize event
+                    t =    18.26s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    18.42s Waiting 10.0s for "Detail" NavigationBar to exist
+                    t =    19.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Detail" NavigationBar`
+                    t =    19.44s         Checking existence of `"Detail" NavigationBar`
+                    t =    19.75s Waiting 10.0s for "tab.settings.title" Button to exist
+                    t =    20.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+                    t =    20.78s         Checking existence of `"tab.settings.title" Button`
+                    t =    21.12s Tap "tab.settings.title" Button
+                    t =    21.12s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    21.14s     Find the "tab.settings.title" Button
+                    t =    21.45s     Check for interrupting elements affecting "tab.settings.title" Button
+                    t =    21.76s     Synthesize event
+                    t =    22.13s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    23.90s Waiting 10.0s for "appearance.selection" SegmentedControl to exist
+                    t =    24.91s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+                    t =    24.91s         Checking existence of `"appearance.selection" SegmentedControl`
+                    t =    34.16s         Capturing element debug description
+                    t =    34.16s     Checking existence of `"appearance.selection" SegmentedControl`
+                    t =    41.23s Find the "System" Button
+                    t =    43.15s Tap "Dark" Button
+                    t =    43.15s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    43.16s     Find the "Dark" Button
+                    t =    44.66s     Check for interrupting elements affecting "Dark" Button
+                    t =    45.94s     Synthesize event
+                    t =    46.31s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    47.70s Find the "Dark" Button
+                    t =    49.82s Find the Target Application 'com.example.UIKitLanguageDemo'
+                    t =    51.66s Added attachment named 'English dark settings'
+                    t =    51.66s Pressing Home button
+                    t =    52.13s Wait for com.example.UIKitLanguageDemo to become Running Background
+                    t =    53.00s Terminate com.example.UIKitLanguageDemo:48936
+                    t =    54.07s Open com.example.UIKitLanguageDemo
+                    t =    54.07s     Launch com.example.UIKitLanguageDemo
+                    t =    54.70s         Setting up automation session
+                    t =    58.82s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =    61.81s Waiting 20.0s for "appearance.selection" SegmentedControl to exist
+                    t =    62.82s     Checking `Expect predicate `existsNoRetry == 1` for object "appearance.selection" SegmentedControl`
+                    t =    62.83s         Checking existence of `"appearance.selection" SegmentedControl`
+                    t =    77.55s Find the "Dark" Button
+                    t =    79.34s Tap "language.ar" Button
+                    t =    79.34s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    79.35s     Find the "language.ar" Button
+                    t =    80.83s     Check for interrupting elements affecting "language.ar" Button
+                    t =    82.27s     Synthesize event
+                    t =    82.64s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    82.73s Find the "داكن" Button
+                    t =    84.25s Find the Target Application 'com.example.UIKitLanguageDemo'
+                    t =    85.64s Added attachment named 'Arabic dark settings'
+                    t =    85.65s Tap "tab.home.title" Button
+                    t =    85.65s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    85.66s     Find the "tab.home.title" Button
+                    t =    87.47s     Check for interrupting elements affecting "tab.home.title" Button
+                    t =    88.68s     Synthesize event
+                    t =    89.09s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    90.83s Waiting 10.0s for "detail.draft" TextField to exist
+                    t =    91.86s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =    91.86s         Checking existence of `"detail.draft" TextField`
+                    t =    92.21s Find the Target Application 'com.example.UIKitLanguageDemo'
+                    t =    92.86s Added attachment named 'Arabic dark detail'
+                    t =    92.86s Tap "tab.settings.title" Button
+                    t =    92.86s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    92.88s     Find the "tab.settings.title" Button
+                    t =    93.24s     Check for interrupting elements affecting "tab.settings.title" Button
+                    t =    93.55s     Synthesize event
+                    t =    93.92s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    95.46s Tap "فاتح" Button
+                    t =    95.47s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    95.49s     Find the "فاتح" Button
+                    t =    97.26s     Check for interrupting elements affecting "فاتح" Button
+                    t =    98.55s     Synthesize event
+                    t =    98.96s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    99.99s Find the "فاتح" Button
+                    t =   101.50s Tap "tab.home.title" Button
+                    t =   101.50s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   101.51s     Find the "tab.home.title" Button
+                    t =   103.09s     Check for interrupting elements affecting "tab.home.title" Button
+                    t =   104.27s     Synthesize event
+                    t =   104.68s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   106.41s Waiting 10.0s for "detail.draft" TextField to exist
+                    t =   107.44s     Checking `Expect predicate `existsNoRetry == 1` for object "detail.draft" TextField`
+                    t =   107.44s         Checking existence of `"detail.draft" TextField`
+                    t =   107.84s Find the Target Application 'com.example.UIKitLanguageDemo'
+                    t =   108.46s Added attachment named 'Arabic light detail'
+                    t =   108.46s Tap "tab.settings.title" Button
+                    t =   108.46s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   108.48s     Find the "tab.settings.title" Button
+                    t =   108.81s     Check for interrupting elements affecting "tab.settings.title" Button
+                    t =   109.22s     Synthesize event
+                    t =   109.62s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   111.10s Checking existence of `"appearance.selection" SegmentedControl`
+                    t =   112.55s Tap "language.en" Button
+                    t =   112.55s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   112.56s     Find the "language.en" Button
+                    t =   114.17s     Check for interrupting elements affecting "language.en" Button
+                    t =   115.34s     Synthesize event
+                    t =   115.71s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   115.97s Tap "System" Button
+                    t =   115.97s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   115.98s     Find the "System" Button
+                    t =   117.51s     Check for interrupting elements affecting "System" Button
+                    t =   118.74s     Synthesize event
+                    t =   119.12s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   120.17s Tap "language.system" Button
+                    t =   120.17s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   120.18s     Find the "language.system" Button
+                    t =   121.97s     Check for interrupting elements affecting "language.system" Button
+                    t =   123.16s     Synthesize event
+                    t =   123.54s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   123.71s Tear Down
+                Test Case '-[UIKitLanguageDemoUITests.AppearanceUITests testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail]' passed (124.088 seconds).
+              
+    Test target UIKitLanguageDemoTests
+      UIKitLanguageDemo (49022)
+        Test Suite 'Selected tests' started at 2026-11-14 23:26:35.545.
+        Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 23:26:35.548.
+        Test Suite 'AppearanceTests' started at 2026-11-14 23:26:35.550.
+        Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' started.
+        Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' passed (1.176 seconds).
+        Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+        Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' passed (0.092 seconds).
+        Test Suite 'AppearanceTests' passed at 2026-11-14 23:26:36.824.
+        	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.274) seconds
+        Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 23:26:36.826.
+        	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.278) seconds
+        Test Suite 'Selected tests' passed at 2026-11-14 23:26:36.827.
+        	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.283) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_23-24-08-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-4E3C5450-9D61-4050-8858-C83B5FB24D7E-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-3AC55A63-EFA7-49E6-9E1D-917F2C5A728D/Session-UIKitLanguageDemoTests-2026-11-14_232632-vkeQP9.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.14_23-24-08-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-4E3C5450-9D61-4050-8858-C83B5FB24D7E-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-3AC55A63-EFA7-49E6-9E1D-917F2C5A728D/Session-UIKitLanguageDemoTests-2026-11-14_232632-vkeQP9.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' passed at 2026-11-14 23:26:36.827.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.283) seconds
+
+          Test Suite 'Selected tests' started at 2026-11-14 23:26:35.545.
+          Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 23:26:35.548.
+          Test Suite 'AppearanceTests' started at 2026-11-14 23:26:35.550.
+          Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' started.
+          Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' passed (1.176 seconds).
+          Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+          Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' passed (0.092 seconds).
+          Test Suite 'AppearanceTests' passed at 2026-11-14 23:26:36.824.
+          	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.274) seconds
+          Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 23:26:36.826.
+          	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.278) seconds
+          Test Suite 'Selected tests' passed at 2026-11-14 23:26:36.827.
+          	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.283) seconds
+        
+          Run test suite UIKitLanguageDemoTests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 23:26:36.826.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.278) seconds
+
+            Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-14 23:26:35.548.
+            Test Suite 'AppearanceTests' started at 2026-11-14 23:26:35.550.
+            Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' started.
+            Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' passed (1.176 seconds).
+            Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+            Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' passed (0.092 seconds).
+            Test Suite 'AppearanceTests' passed at 2026-11-14 23:26:36.824.
+            	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.274) seconds
+            Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-14 23:26:36.826.
+            	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.278) seconds
+          
+            Run test suite AppearanceTests
+              Summary: Test Suite 'AppearanceTests' passed at 2026-11-14 23:26:36.824.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.274) seconds
+
+              Test Suite 'AppearanceTests' started at 2026-11-14 23:26:35.550.
+              Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' started.
+              Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' passed (1.176 seconds).
+              Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+              Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' passed (0.092 seconds).
+              Test Suite 'AppearanceTests' passed at 2026-11-14 23:26:36.824.
+              	 Executed 2 tests, with 0 failures (0 unexpected) in 1.268 (1.274) seconds
+            
+              Run test case testMultiplePickersAndRenderedTabsStaySynchronized()
+                Summary: Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' passed (1.176 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' started.
+                Test Case '-[UIKitLanguageDemoTests.AppearanceTests testMultiplePickersAndRenderedTabsStaySynchronized]' passed (1.176 seconds).
+              
+              Run test case testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()
+                Summary: Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' passed (0.092 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' started.
+                Test Case '-[UIKitLanguageDemoTests.AppearanceTests testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt]' passed (0.092 seconds).
+              
+** TEST FINISHED WITH UNKNOWN OUTCOME **

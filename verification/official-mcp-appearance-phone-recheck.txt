@@ -1,0 +1,47 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-14T15:26:37Z
+Total Results: 3
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/3
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: AppearanceTests/testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()
+TEST_DISPLAY_NAME: testSystemChoiceTracksInheritedAppearanceAndExplicitChoiceOverridesIt()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/AppearanceTests.swift
+TEST_LINE_NUMBER: 55
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 2/3
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: AppearanceTests/testMultiplePickersAndRenderedTabsStaySynchronized()
+TEST_DISPLAY_NAME: testMultiplePickersAndRenderedTabsStaySynchronized()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/AppearanceTests.swift
+TEST_LINE_NUMBER: 105
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 3/3
+TEST_TARGET: UIKitLanguageDemoUITests
+TEST_IDENTIFIER: AppearanceUITests/testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()
+TEST_DISPLAY_NAME: testAppearanceChoiceSurvivesRelaunchAndArabicSwitchWithoutLosingDetail()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift
+TEST_LINE_NUMBER: 4
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================
