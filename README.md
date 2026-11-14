@@ -18,7 +18,7 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 4. 验证详情页仍在、返回按钮仍可返回首页、草稿不变，中文/阿拉伯语切换时方向改变。
 5. 设置 Tab 演示可变行高 Table；首页可进入 FlowLayout 网格/横向列表，以及 Compositional 网格/正交分页分区，滚动、选择、编辑草稿后切换语言。
 6. 在任意示例页点击导航栏地球图标（“系统 App 语言设置”），在系统中选择语言并返回 App，验证当前位置、草稿和滚动位置恢复。该入口先切回“跟随系统”，以便新进程采用系统选择。
-7. 使用 Product → Test 运行随工程附带的二十七项 XCTest（24 项单元测试和 3 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
+7. 使用 Product → Test 运行随工程附带的二十八项 XCTest（25 项单元测试和 3 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
 
 测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
 
@@ -166,6 +166,7 @@ iOS 17+ 在 Scene 层设置 `traitOverrides.layoutDirection`，后续展示的�
 - Table：原地重新配置可见 Cell，复用时读取最新快照，按业务 ID 保留选择、草稿和顶部阅读锚点，并重新测量自动行高。
 - Collection：刷新 Cell 与 Header 并使布局失效，业务数组保持不变，FlowLayout 使用自身的 RTL 排列；横向锚点使用逻辑起始边。详见 [列表接入说明](LIST_LOCALIZATION.md)。
 - 自定义布局：使用 leading/trailing、方向性边距；计算 frame 时读取 `effectiveUserInterfaceLayoutDirection`。
+- 语言按钮：四个语言名称统一按 App 起始边对齐（中文／英文靠左，阿拉伯语靠右），名称保留原文。切换方向时清除按钮旧配置，再应用新的 `.tinted()` 配置、显式语义方向与左右对齐；勾选图标保持逻辑 trailing。按钮与点击动作原地保留。
 - 标签：需要跟随 App 起始边的文字显式使用当前语言左右对齐。用户输入或多语言正文按内容处理，自然对齐不等于把 App 全局语言切换为目标语言。
 - 例外组件：电话/账号可保留 `.forceLeftToRight`，播放和物理方向组件保留 `.playback`/`.spatial`。示例不会递归覆盖这些标记。
 - 图片：只镜像具有阅读/导航方向含义的图片；Logo、照片等按资源语义处理。
@@ -268,3 +269,9 @@ iOS 15 兼容已进行最低部署构建、弱链接检查及生产旧路径测�
 手动复验：在详情页切到阿拉伯语，左边缘向右滑动应留在详情页，右边缘向左滑动应返回首页；再次打开详情，切回中文，右边缘向左不应返回，左边缘向右应返回。
 
 本次返回手势修复已通过 Apple 官方 MCP 定向验证：方向与状态保留单元用例通过，真实左右边缘滑动 UI 用例通过；复用已有 iPhone 17 Pro / iOS 26.5。原始运行与范围说明见 [返回手势验证记录](verification/navigation-gesture-verification.json)。本次未重跑全部 27 项，前述生成符号阶段的 iPad AX 阻塞记录保留。
+
+## 语言按钮对齐修复
+
+修复热切换后 `English` 或未选中语言按钮仍停在旧边的问题。回归用例先在旧实现复现，再检查同一组按钮经 EN → AR → ZH → EN → AR 切换后的实际文字／图标 frame，并覆盖按下与松开状态。
+
+Apple 官方 MCP 构建通过；复用现有 iPhone 17 Pro / iOS 26.5，最终三项定向回归全部通过（按钮布局、导航状态、真实边缘返回手势）。本轮未重跑全部 28 项，未执行 iOS 15 运行时。原始结果与范围见 [按钮对齐验证记录](verification/language-picker-alignment-verification.json)。

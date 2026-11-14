@@ -1,5 +1,7 @@
 # Xcode 原生工程与官方 MCP 迁移记录
 
+最新语言按钮修复：Apple 官方 MCP 写入与构建，既有 iPhone 17 Pro 上三项定向回归全部通过。旧实现的布局失败与最终通过记录均存于 verification/language-picker-alignment-verification.json；当前目录共 28 项，本轮未全量重跑。当前源码哈希已更新。
+
 最新返回手势修复：官方 MCP 构建成功，并完成方向／状态单元用例及真实边缘滑动 UI 用例的定向验证，均通过。当前测试目录共 27 项，本轮未全量重跑。定向验证覆盖热切换 AR → ZH、实际左右边缘滑动和原生手势对象保留，见 verification/navigation-gesture-verification.json。当前源码哈希已更新。
 
 

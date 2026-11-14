@@ -1,0 +1,47 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-14T14:41:54Z
+Total Results: 3
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/3
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguagePickerAlignmentTests/testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()
+TEST_DISPLAY_NAME: testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift
+TEST_LINE_NUMBER: 6
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 2/3
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: NavigationDirectionTests/testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()
+TEST_DISPLAY_NAME: testHotSwitchUpdatesNavigationSemanticsAndPreservesSystemGestures()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationDirectionTests.swift
+TEST_LINE_NUMBER: 6
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 3/3
+TEST_TARGET: UIKitLanguageDemoUITests
+TEST_IDENTIFIER: NavigationGestureUITests/testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()
+TEST_DISPLAY_NAME: testBackGestureChangesFromRightEdgeInArabicToLeftEdgeInChinese()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift
+TEST_LINE_NUMBER: 4
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

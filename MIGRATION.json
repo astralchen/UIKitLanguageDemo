@@ -35,13 +35,13 @@
   },
   "officialBuild": {
     "success": true,
-    "elapsedSeconds": 22.194,
+    "elapsedSeconds": 2.478,
     "errors": [],
     "tool": "Apple official MCP BuildProject",
-    "finalSourcesAlsoBuiltBy": "Apple official MCP focused gesture regression"
+    "finalSourcesAlsoBuiltBy": "Apple official MCP focused language-picker regression"
   },
   "officialTestDiscovery": {
-    "enabled": 27,
+    "enabled": 28,
     "disabled": 0
   },
   "officialTestRun": {
@@ -342,7 +342,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Screens/LanguagePickerView.swift",
-      "sha256": "ac9ee5656e000c0908d4d155c3950d3f20856d31d193f035e3b263dd2eb2f8bf"
+      "sha256": "ec6d32186226be87333cc1533e5a40ba4884914e444a0e134eab8fc43108b6bc"
     },
     {
       "file": "UIKitLanguageDemo/Screens/ListDemoContent.swift",
@@ -359,6 +359,10 @@
     {
       "file": "UIKitLanguageDemoTests/IPadRestorationTests.swift",
       "sha256": "b6fe3f49667eeb379b5337d72a1f1d2a24a77619d765f9a3de0e945b317eb2f3"
+    },
+    {
+      "file": "UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift",
+      "sha256": "4610879854d4616b06d05e4d040abd0611ba089543eeb517da1582fd045778fc"
     },
     {
       "file": "UIKitLanguageDemoTests/NavigationDirectionTests.swift",
@@ -553,5 +557,40 @@
       },
       "note": "First UI runner startup timed out waiting for AX loaded. A subsequent UI fixture erroneously looked for the language picker on Home; corrected to open Detail first. Final UI run passed."
     }
+  },
+  "languagePickerAlignmentFix": {
+    "status": "passed",
+    "scope": "Focused 3-test regression; not a full 28-test run",
+    "tool": "Apple official MCP XcodeWrite / BuildProject / RunSomeTests",
+    "simulator": "iPhone 17 Pro / iOS 26.5",
+    "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "createdDevices": 0,
+    "deviceRestarts": 0,
+    "baseline": {
+      "expectedFailureReproduced": true,
+      "source": "official-mcp-picker-reproduction.json"
+    },
+    "final": {
+      "counts": {
+        "expectedFailures": 0,
+        "failed": 0,
+        "notRun": 0,
+        "passed": 3,
+        "skipped": 0,
+        "total": 3
+      },
+      "source": "official-mcp-picker-final-run.json"
+    },
+    "checks": [
+      "All four button content frames align to the App leading inset (16pt) after EN / AR / ZH / EN / AR switches",
+      "Selected checkmark stays on the logical trailing side of its title",
+      "Normal / highlighted / normal states retain alignment",
+      "Same button instances and actions remain after switching",
+      "Navigation stack, draft, UIKit recognizers and delegates are retained",
+      "Arabic right-edge pop and Chinese left-edge pop work; opposite edges do not pop"
+    ],
+    "implementation": "Explicit direction and physical content alignment for picker-owned buttons; clear their configuration on direction changes before assigning a fresh tinted configuration. Preserve all UIButton instances.",
+    "compatibility": "Only iOS 15+ UIKit APIs added. iOS 15 runtime is not installed and was not executed.",
+    "historicalFailures": "The generated-symbol iPad AX failure remains recorded separately; this run does not replace that historical full-suite result."
   }
 }

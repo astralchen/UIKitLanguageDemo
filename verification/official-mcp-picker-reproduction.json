@@ -1,0 +1,33 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 1,
+    "notRun": 0,
+    "passed": 0,
+    "skipped": 0,
+    "total": 1
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T22-35-15+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/0B5310CE-A145-41AF-85D7-9A7120BBACB3.txt",
+  "message": "Some error messages were truncated to 5. Full logs available at /var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/0B5310CE-A145-41AF-85D7-9A7120BBACB3.txt.",
+  "results": [
+    {
+      "displayName": "testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift:60 LanguagePickerAlignmentTests/testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches(): XCTAssertEqualWithAccuracy failed: (\"278.3333333333333\") is not equal to (\"16.0\") +/- (\"2.0\") - ar: language.zh-Hans highlighted=false, frame=(16.0, 11.999999999999998, 67.66666666666667, 20.33333333333333)",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift:60 LanguagePickerAlignmentTests/testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches(): XCTAssertEqualWithAccuracy failed: (\"278.3333333333333\") is not equal to (\"16.0\") +/- (\"2.0\") - ar: language.zh-Hans highlighted=true, frame=(16.0, 11.999999999999998, 67.66666666666667, 20.33333333333333)",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift:60 LanguagePickerAlignmentTests/testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches(): XCTAssertEqualWithAccuracy failed: (\"278.3333333333333\") is not equal to (\"16.0\") +/- (\"2.0\") - ar: language.zh-Hans highlighted=false, frame=(16.0, 11.999999999999998, 67.66666666666667, 20.33333333333333)",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift:60 LanguagePickerAlignmentTests/testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches(): XCTAssertEqualWithAccuracy failed: (\"291.0\") is not equal to (\"16.0\") +/- (\"2.0\") - zh-Hans: language.en highlighted=false, frame=(291.0, 11.999999999999998, 55.0, 20.33333333333333)",
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift:60 LanguagePickerAlignmentTests/testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches(): XCTAssertEqualWithAccuracy failed: (\"291.0\") is not equal to (\"16.0\") +/- (\"2.0\") - zh-Hans: language.en highlighted=true, frame=(291.0, 11.999999999999998, 55.0, 20.33333333333333)"
+      ],
+      "identifier": "LanguagePickerAlignmentTests/testEveryLanguageRowFollowsAppLeadingEdgeAfterRepeatedSwitches()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoTests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "1 tests: 0 passed, 1 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 1,
+  "truncated": false
+}
