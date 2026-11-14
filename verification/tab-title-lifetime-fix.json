@@ -1,0 +1,17 @@
+{
+  "platform": "iPad Pro 13-inch (M5) / iOS 26.5",
+  "observedException": "EXC_CRASH / SIGABRT",
+  "diagnosticFile": "UIKitLanguageDemo-2026-11-14-125151.ips",
+  "symbolChain": [
+    "swift::swift_abortRetainUnowned",
+    "swift_unknownObjectUnownedLoadStrong",
+    "UITabBarItem._updateViewAndPositionItems",
+    "UITabBarItem._setInternalTitle",
+    "LocalizedNavigationController.refresh",
+    "LanguageService.apply",
+    "LanguageTests.testExistingModalSurvivesSwitch"
+  ],
+  "trigger": "Language refresh after scene/controller replacement while an older navigation controller is still alive",
+  "fix": "On iOS 18+, update stable UITab titles through LocalizedTabBarController; update legacy tabBarItem titles only before iOS 18",
+  "verification": "See official-mcp-tests.json for the final complete acceptance result"
+}

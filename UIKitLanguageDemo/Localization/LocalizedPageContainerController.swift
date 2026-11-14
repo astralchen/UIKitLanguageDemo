@@ -94,18 +94,27 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
         else { updatePagingDirection(context) }
     }
 
+    @objc private func showWindows() { SceneWindowService.presentSwitcher(from: self) }
+
     @objc private func openSystemSettings() { SystemLanguageSettings.open(from: self) }
 
     func applyLocalization(_ context: LanguageContext) {
         if navigationItem.rightBarButtonItem == nil {
-            let item = UIBarButtonItem(title: context.text("system.settings"), style: .plain,
+            let item = UIBarButtonItem(image: UIImage(systemName: "globe"), style: .plain,
                 target: self, action: #selector(openSystemSettings))
             item.accessibilityIdentifier = "system.language.settings"
+            item.accessibilityLabel = context.text("system.settings")
             navigationItem.rightBarButtonItem = item
         }
         if navigationItem.rightBarButtonItem?.accessibilityIdentifier == "system.language.settings" {
-            navigationItem.rightBarButtonItem?.title = context.text("system.settings")
+            navigationItem.rightBarButtonItem?.accessibilityLabel = context.text("system.settings")
         }
+        if navigationItem.rightBarButtonItems?.contains(where: { $0.accessibilityIdentifier == "scene.windows" }) != true {
+            let windows = UIBarButtonItem(image: UIImage(systemName: "macwindow.on.rectangle"), style: .plain, target: self, action: #selector(showWindows))
+            windows.accessibilityIdentifier = "scene.windows"
+            navigationItem.rightBarButtonItems = (navigationItem.rightBarButtonItems ?? []) + [windows]
+        }
+        navigationItem.rightBarButtonItems?.first(where: { $0.accessibilityIdentifier == "scene.windows" })?.accessibilityLabel = context.text("window.menu")
         if let titleKey { title = context.text(titleKey) }
     }
 

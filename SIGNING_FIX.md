@@ -1,6 +1,6 @@
 # 签名修复与官方 MCP 验收
 
-> 六项签名验收为历史记录；列表扩展后的最新验收为官方 MCP RunSomeTests 18/18（含真实系统设置 UI 重启测试），见 verification/official-mcp-tests.json。
+> 六项签名验收为历史记录；列表扩展后的最新验收为官方 MCP RunSomeTests 23/23（含 iPad 双窗口三列系统重启测试），见 verification/official-mcp-tests.json。
 
 2026-11-14（Asia/Shanghai）。
 
@@ -29,7 +29,7 @@ OTHER_CODE_SIGN_FLAGS = --verbose=2
 
 ## 验证证据
 
-- `verification/official-mcp-original-six-tests.json`：最初六项签名修复验收；`official-mcp-tests.json` 为最新 18 项结果。
+- `verification/official-mcp-original-six-tests.json`：最初六项签名修复验收；`official-mcp-tests.json` 为最新 23 项结果。
 - `verification/official-mcp-original-six-tests.txt`：最初六项摘要；`official-mcp-tests.txt` 为最新摘要。
 - `verification/codesign-build-evidence.txt`：官方测试构建实际执行的签名命令与签名成功输出。
 - `verification/signature-verification.json`：测试 bundle 严格签名校验，以及宿主应用 deep / strict 校验，退出码均为 0。
@@ -44,3 +44,5 @@ OTHER_CODE_SIGN_FLAGS = --verbose=2
 本次环境为 iOS 26.5 Simulator。真机及 iOS 15/16 未在本轮运行验证。键盘焦点检查仍为可选模式，默认六项回归不主动唤起系统键盘。
 
 最新状态恢复验收继续保留签名，App、单元测试包和 UI Runner 的严格校验见 `verification/restoration-signature-verification.json`。本机 UI Runner 的 `lib_TestingInterop.dylib` 查找路径修正仅放在测试计划中，说明见 `STATE_RESTORATION.md`。
+
+iPad 扩展的 App、单元测试包与 UI Runner 严格签名校验见 `verification/ipad-signature-verification.json`，测试计划继续启用签名并关闭并行克隆。

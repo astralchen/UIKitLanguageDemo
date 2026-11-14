@@ -4,6 +4,7 @@ import UIKit
 final class HomeViewController: LocalizedViewController {
     private let heading = UILabel()
     private let openButton = UIButton(type: .system)
+    private let tripleButton = UIButton(type: .system)
     private let splitButton = UIButton(type: .system)
     private let collectionButton = UIButton(type: .system)
     private let horizontalButton = UIButton(type: .system)
@@ -24,6 +25,11 @@ final class HomeViewController: LocalizedViewController {
         splitButton.accessibilityIdentifier = "home.openSplit"
         splitButton.addAction(UIAction { [weak self] _ in
             self?.present(ContainerDemos.makeSplit(), animated: true)
+        }, for: .touchUpInside)
+        tripleButton.configuration = .tinted()
+        tripleButton.accessibilityIdentifier = "home.openTripleSplit"
+        tripleButton.addAction(UIAction { [weak self] _ in
+            self?.present(ContainerDemos.makeSplit(style: .tripleColumn), animated: true)
         }, for: .touchUpInside)
         pageButton.configuration = .tinted()
         pageButton.accessibilityIdentifier = "home.openPager"
@@ -50,7 +56,7 @@ final class HomeViewController: LocalizedViewController {
         orthogonalButton.addAction(UIAction { [weak self] _ in
             self?.navigationController?.pushViewController(CompositionalDemoViewController(mode: .orthogonal), animated: true)
         }, for: .touchUpInside)
-        let stack = UIStackView(arrangedSubviews: [heading, openButton, splitButton, pageButton,
+        let stack = UIStackView(arrangedSubviews: [heading, openButton, splitButton, tripleButton, pageButton,
             collectionButton, horizontalButton, compositionalButton, orthogonalButton])
         stack.axis = .vertical
         stack.spacing = 16
@@ -81,6 +87,7 @@ final class HomeViewController: LocalizedViewController {
         var config = openButton.configuration!
         config.title = context.text("home.open_detail")
         openButton.configuration = config
+        tripleButton.setTitle(context.text("split.triple"), for: .normal)
         splitButton.setTitle(context.text("split.title"), for: .normal)
         pageButton.setTitle(context.text("pages.title"), for: .normal)
         collectionButton.setTitle(context.text("collection.title"), for: .normal)

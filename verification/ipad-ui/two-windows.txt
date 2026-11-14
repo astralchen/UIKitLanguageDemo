@@ -1,0 +1,1 @@
+Two native scene sessions restored after OS language termination: scene.window.1=primary A/middle A/detail A, scene.window.10=detail B; both sources activity|ar

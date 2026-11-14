@@ -1,17 +1,17 @@
 # Xcode 原生工程与官方 MCP 迁移记录
 
-2026-11-14 最新验收：Apple 官方 `xcrun mcpbridge` / `xcode-tools 24939` 的 `BuildProject` 构建成功；`GetTestList` 发现 18 项、全部启用；`RunSomeTests` 使用这 18 个实际 ID，18 passed、0 failed、0 skipped、0 expected failures、0 not run。结果见 `verification/official-mcp-tests.json`、`.txt` 和 `official-mcp-console.txt`。
+2026-11-14 最新验收：Apple 官方 `xcrun mcpbridge` / `xcode-tools 24939` 的 `BuildProject` 构建成功，`GetTestList` 发现 23 项且全部启用，`RunSomeTests` 按这 23 个 ID 完整执行：23 passed、0 failed、0 skipped、0 expected failures、0 not run。原始结果见 verification/official-mcp-tests.json / .txt 和 official-mcp-console.txt。
 
-工程最初由 Xcode 原生 iOS App 模板创建（Storyboard / Swift / XCTest）。该版本官方 MCP 无创建工程工具，因此创建使用 Xcode 原生 UI；随后全部业务源码、资源与测试通过官方 MCP 写入。没有复制旧工程的手写 project.pbxproj。应用最低 iOS 15.0，测试目标 iOS 15.6，Swift 6 / MainActor。
+本轮复用已有 iPad Pro 13-inch (M5) / iOS 26.5（0CE21EE5-82A1-4D1C-9554-7E17B54341DA）。该设备原为关机状态，由 Xcode 启动一次；未新建设备；结束清点时该 iPad 仍处于 Booted，原 iPhone 17 Pro 为 Shutdown，未由本轮操作重启。首次 UI 测试的强制方向切换遇到 SpringBoard AX 超时；恢复该 iPad 的 SpringBoard 界面服务后，测试移除不必要的强制旋转并继续复用同一设备。未重启或擦除模拟器。
 
-初始 14 个应用 Swift 文件与六项 XCTest 文件的逐字节迁移哈希保留在 `MIGRATION.json.initialMigrationSourceMatches`。之后依次加入 Table/Flow、Compositional、Bundle App 语言偏好与 Scene 状态恢复。当前全部 Swift 与 String Catalog 的 SHA-256 位于 `currentSourceFiles`；配置哈希在 `currentProjectConfigurationFiles`。String Catalog 当前为 30 个 key，支持 en、zh-Hans、ar。
+工程最初由 Xcode 原生 iOS App 模板创建（Storyboard / Swift / XCTest）。该版本官方 MCP 无创建工程工具，创建使用 Xcode 原生 UI；源码、资源及测试均通过官方 XcodeWrite 迁入。没有复制旧工程的手写 project.pbxproj。应用最低 iOS 15.0，测试目标 iOS 15.6，Swift 6 / MainActor。
 
-当前 17 项单元测试包含最初六项、四项 Table/Flow、两项 Compositional、一项 Bundle 偏好、四项 NSUserActivity 恢复；另有一项真实系统 Settings UI 测试。新恢复测试重新创建 UIWindow 与页面，覆盖两个导航栈、Tab、Page、Split、草稿、选择和列表位置，并检查无效数据、分 Scene 检查点、迟到／重复交付。UI 测试实际改变 App 系统语言、断言旧进程终止，然后验证系统交回 activity 后的详情与组合列表恢复，最后还原原语言选项。截图和文本附件保存在 `verification/restoration-ui/`。
+初始 14 个应用 Swift 文件和六项 XCTest 的迁移哈希保留在 MIGRATION.json.initialMigrationSourceMatches。当前 Swift 与 String Catalog 哈希见 currentSourceFiles，配置哈希见 currentProjectConfigurationFiles。String Catalog 当前为 38 个 key（en、zh-Hans、ar）。
 
-测试计划包含单元与 UI 两个目标，禁用并行，不附加测试调试器。复用现有 iPhone 17 Pro / iOS 26.5（07EFF63F-CD81-40CE-B872-428175F5D3C2），没有为本次验证创建或重启模拟器。App Run 的 LLDB 配置保留。
+当前 21 项单元测试保留此前 17 项，并新增旧数据迁移与 session 归属、三列栈与列表、UIKit 实际展开／折叠和两个真实 UISceneSession 的独立恢复。Trait 覆盖测试使用 iPadOS 17+ 公共 API，本轮 iPadOS 26.5 无跳过。另有两项 UI 测试：原详情／组合列表系统语言重启，以及双窗口三列不同草稿的系统语言重启。截图与文本附件见 verification/ipad-ui/。
 
-两个测试目标 Debug/Release 的四项 `OTHER_CODE_SIGN_FLAGS=--verbose=2` 继续保留，未关闭签名。UI Runner 的本机 SDK 动态库缺失通过测试环境的 `DYLD_LIBRARY_PATH=$(PLATFORM_DIR)/Developer/usr/lib` 处理，没有修改生产 App 路径。签名校验见 `verification/restoration-signature-verification.json`。
+快照版本 2 兼容版本 1 的双列数据。三列 primary、supplementary、secondary 业务导航栈、紧凑当前列和展开显示模式均可恢复。新的窗口副本使用独立 activation activity，连接后绑定新的 session；普通恢复不能覆盖其它绑定 session。详细规则见 IPAD_MULTIWINDOW_RESTORATION.md。
 
-历史六项、十项、十二项、十三项官方结果分别保存在 `verification/official-mcp-original-six-tests.*`、`official-mcp-list-ten-tests.*`、`official-mcp-compositional-twelve-tests.*` 和 `official-mcp-system-thirteen-tests.*`。历史空 UI 目标的 RunAllTests 输出不是本次验收结果。
+测试计划包含单元及 UI 两个目标，禁用并行，不附加测试调试器。两个测试目标 Debug/Release 的四项 OTHER_CODE_SIGN_FLAGS=--verbose=2 保留，签名保持启用。UI Runner 的 SDK TestingInterop 查找路径仅放在测试计划中。最新严格签名校验见 verification/ipad-signature-verification.json。
 
-本次运行平台为 iPhone 17 Pro / iOS 26.5。真机、iOS 15/16 和 iPad 展开分栏未在本轮验证；Page 仅横向单页 scroll，状态恢复支持示例的双列 Split 和一项一组的正交分页。详细范围见 [STATE_RESTORATION.md](STATE_RESTORATION.md)、[LIST_LOCALIZATION.md](LIST_LOCALIZATION.md)、[COMPOSITIONAL_LAYOUT.md](COMPOSITIONAL_LAYOUT.md) 与 [SYSTEM_LANGUAGE.md](SYSTEM_LANGUAGE.md)。
+历史六项、十项、十二项、十三项和十八项验收分别单独保存在 verification/ 中。最新 iPhone 18 项记录为 official-mcp-restoration-eighteen-tests.*，本轮完整 iPad 23 项使用 official-mcp-tests.*。iOS 15/16 和真机未在本轮运行。

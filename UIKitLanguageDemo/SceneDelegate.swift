@@ -5,7 +5,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     let restoration = SceneStateCoordinator()
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options: UIScene.ConnectionOptions) {
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = scene as? UIWindowScene else { return }
         let window = UIWindow(windowScene: scene)
         self.window = window
@@ -20,9 +20,20 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             LanguageService.shared.setSelection(.system)
         }
         #endif
+        let fallback = SceneCheckpointStore.shared.load(sceneID: session.persistentIdentifier)
+        let savedNumber = session.userInfo?["windowNumber"] as? Int
+            ?? session.stateRestorationActivity.flatMap(SceneStateCodec.decode)?.windowNumber
+            ?? fallback.flatMap(SceneStateCodec.decode)?.windowNumber
+        let number = savedNumber ?? SceneWindowService.allocateWindowNumber()
+        var metadata = session.userInfo ?? [:]
+        metadata["windowNumber"] = number
+        session.userInfo = metadata
+        scene.title = LanguageService.shared.context.format("window.name", number)
         // Each Scene owns independent state; no UI language or translated string is restored.
         restoration.connect(window: window, activity: session.stateRestorationActivity,
-            fallback: SceneCheckpointStore.shared.load(sceneID: session.persistentIdentifier))
+            fallback: fallback,
+            sessionID: session.persistentIdentifier,
+            activation: connectionOptions.userActivities.first(where: { $0.activityType == SceneStateCodec.activationType }), number: number)
     }
 
     @discardableResult
@@ -36,6 +47,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func stateRestorationActivity(for scene: UIScene) -> NSUserActivity? { checkpoint(scene) }
     func scene(_ scene: UIScene, restoreInteractionStateWith stateRestorationActivity: NSUserActivity) {
         restoration.restoreInteractionState(stateRestorationActivity)
+        checkpoint(scene)
     }
     func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
         restoration.restoreInteractionState(userActivity)

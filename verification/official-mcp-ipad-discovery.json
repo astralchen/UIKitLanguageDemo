@@ -1,0 +1,199 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "disabled": 0,
+    "enabled": 23,
+    "total": 23
+  },
+  "fullTestListPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/GetTestList/2BB0817C-53A4-409F-842F-846A83A564A4.txt",
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "23 tests (23 enabled, 0 disabled)",
+  "tests": [
+    {
+      "displayName": "testVersionOneMigrationAndSessionOwnership()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift",
+      "identifier": "IPadRestorationTests/testVersionOneMigrationAndSessionOwnership()",
+      "isEnabled": true,
+      "lineNumber": 7,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testTripleColumnRestoresAllStacksAndPendingLists()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift",
+      "identifier": "IPadRestorationTests/testTripleColumnRestoresAllStacksAndPendingLists()",
+      "isEnabled": true,
+      "lineNumber": 37,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testSplitActuallyCollapsesExpandsAndRestoresSidebarMode()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift",
+      "identifier": "IPadRestorationTests/testSplitActuallyCollapsesExpandsAndRestoresSidebarMode()",
+      "isEnabled": true,
+      "lineNumber": 81,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testTwoRealSceneSessionsRestoreIndependently()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift",
+      "identifier": "IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently()",
+      "isEnabled": true,
+      "lineNumber": 123,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testLanguageSwitchPreservesNavigationAndDraft()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testLanguageSwitchPreservesNavigationAndDraft()",
+      "isEnabled": true,
+      "lineNumber": 7,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testSelectionPersistsAndMissingKeysHaveFallback()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testSelectionPersistsAndMissingKeysHaveFallback()",
+      "isEnabled": true,
+      "lineNumber": 72,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testExistingModalSurvivesSwitch()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testExistingModalSurvivesSwitch()",
+      "isEnabled": true,
+      "lineNumber": 88,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testSplitPreservesColumnsAndTheirNavigationStacks()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testSplitPreservesColumnsAndTheirNavigationStacks()",
+      "isEnabled": true,
+      "lineNumber": 106,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testPagerPreservesPageAndReversesPhysicalNeighbors()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testPagerPreservesPageAndReversesPhysicalNeighbors()",
+      "isEnabled": true,
+      "lineNumber": 153,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testPagerDefersAdjacencyChangeUntilCancelledSwipeEnds()",
+      "isEnabled": true,
+      "lineNumber": 190,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testTableRefreshPreservesCellDraftSelectionAndUpdatesHeight()",
+      "isEnabled": true,
+      "lineNumber": 213,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testTableKeepsReadingAnchorAndRefreshesReusedRows()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testTableKeepsReadingAnchorAndRefreshesReusedRows()",
+      "isEnabled": true,
+      "lineNumber": 239,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()",
+      "isEnabled": true,
+      "lineNumber": 273,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()",
+      "isEnabled": true,
+      "lineNumber": 311,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "isEnabled": true,
+      "lineNumber": 342,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "isEnabled": true,
+      "lineNumber": 390,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testSystemSelectionUsesAppBundlePreferences()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testSystemSelectionUsesAppBundlePreferences()",
+      "isEnabled": true,
+      "lineNumber": 440,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testActivityRestoresNavigationPagerDraftsAndTableAnchor()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testActivityRestoresNavigationPagerDraftsAndTableAnchor()",
+      "isEnabled": true,
+      "lineNumber": 467,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testActivityRestoresAllCollectionLayouts()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testActivityRestoresAllCollectionLayouts()",
+      "isEnabled": true,
+      "lineNumber": 524,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testSceneActivityValidationIsolationAndLateDelivery()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testSceneActivityValidationIsolationAndLateDelivery()",
+      "isEnabled": true,
+      "lineNumber": 582,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testActivityRestoresSplitColumnsAndDrafts()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
+      "identifier": "LanguageTests/testActivityRestoresSplitColumnsAndDrafts()",
+      "isEnabled": true,
+      "lineNumber": 625,
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift",
+      "identifier": "IPadWindowUITests/testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()",
+      "isEnabled": true,
+      "lineNumber": 5,
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft()",
+      "filePath": "UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift",
+      "identifier": "UIKitLanguageDemoUITests/testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft()",
+      "isEnabled": true,
+      "lineNumber": 5,
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "totalTests": 23,
+  "truncated": false
+}

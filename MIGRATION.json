@@ -31,17 +31,17 @@
       "zh-Hans",
       "ar"
     ],
-    "keyCount": 30
+    "keyCount": 38
   },
   "officialBuild": {
     "success": true,
-    "elapsedSeconds": 1.664,
+    "elapsedSeconds": 7.434,
     "errors": [],
     "tool": "Apple official MCP BuildProject",
-    "finalSourcesAlsoBuiltBy": "Apple official MCP RunSomeTests (18 tests)"
+    "finalSourcesAlsoBuiltBy": "Apple official MCP RunSomeTests (23 tests)"
   },
   "officialTestDiscovery": {
-    "enabled": 18,
+    "enabled": 23,
     "disabled": 0
   },
   "officialTestRun": {
@@ -51,9 +51,9 @@
       "expectedFailures": 0,
       "failed": 0,
       "notRun": 0,
-      "passed": 18,
+      "passed": 23,
       "skipped": 0,
-      "total": 18
+      "total": 23
     },
     "scheme": "UIKitLanguageDemo",
     "testPlan": "UIKitLanguageDemo",
@@ -103,16 +103,17 @@
   "simulatorReusePreference": {
     "name": "iPhone 17 Pro",
     "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
-    "policy": "Reuse this existing device; do not create or restart a simulator for redundant verification."
+    "policy": "Reuse this existing device; do not create or restart a simulator for redundant verification.",
+    "iPadExistingUDID": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA"
   },
   "acceptance": {
     "tool": "Apple official MCP RunSomeTests",
     "expectedFailures": 0,
     "failed": 0,
     "notRun": 0,
-    "passed": 18,
+    "passed": 23,
     "skipped": 0,
-    "total": 18
+    "total": 23
   },
   "initialMigrationSourceMatches": [
     {
@@ -252,7 +253,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Localizable.xcstrings",
-      "sha256": "e3f55a6b9f210530fc727c9e654a7e00c6adf9c7d8de0399c4b45d753a3f5492"
+      "sha256": "5db8258dc7bdbb6e25ad931a564cbf679995b153b0037441c9e83565fd4f3366"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LanguageContext.swift",
@@ -276,15 +277,15 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedControllers.swift",
-      "sha256": "19d55a1eec3635e39bcf9e86cde2bc3657090a4884c7368857d0810227e4470e"
+      "sha256": "2224700a04506a6173ee939851b4153b76d655edaa6ce6b0552b8abb3d10bff4"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift",
-      "sha256": "fc99fd07878126572f458bc4eaa3230cfee72ab1afb3c4d3a956b71838f7a5f0"
+      "sha256": "7686b0e6cb753ca1383e32cabaf2bc052baa9af38dd6c474cc01a8362d0da4d4"
     },
     {
       "file": "UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift",
-      "sha256": "5836bde100c49ef0a0ac72135a454d12ab2bd7f481dd9c66a85568d8277578c5"
+      "sha256": "779b167befbd6fc7f43c3da4794186bea69767eb5c327f7c1d8ed31b411722d1"
     },
     {
       "file": "UIKitLanguageDemo/Localization/OrthogonalLocalizationCoordinator.swift",
@@ -292,11 +293,15 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/SceneState.swift",
-      "sha256": "17c71935867f171dca29470b33aaeab95c7a538f662293975e41fef7d25ab1cf"
+      "sha256": "e99c57b1fe6d8cdc909f24f378cd894a2df63c02405ae3018f50f28fa17830dd"
     },
     {
       "file": "UIKitLanguageDemo/Localization/SceneStateCoordinator.swift",
-      "sha256": "ea951a47a3068636ce17c44740431ffe2f24600c684b840a1f7663141fb40e77"
+      "sha256": "6e4aaa6d2d0f88f57cc266952bf3b154ea6d86a6075956c777c63c1f968b0c3b"
+    },
+    {
+      "file": "UIKitLanguageDemo/Localization/SceneWindowService.swift",
+      "sha256": "de584d6595e4cff3ab4006015073ae25725e9afcab2e9e0c9377acfbe9859710"
     },
     {
       "file": "UIKitLanguageDemo/Localization/TextInputSnapshot.swift",
@@ -304,7 +309,7 @@
     },
     {
       "file": "UIKitLanguageDemo/SceneDelegate.swift",
-      "sha256": "ab6d53ab55d052895193b9b00305a18d48b4fde5ad034657c8599819ed9076fb"
+      "sha256": "bdbb5fc7f679f0eb15428682b11752896910fe17f1f28a445a5ff87d1a30c5ce"
     },
     {
       "file": "UIKitLanguageDemo/Screens/CollectionDemoViewController.swift",
@@ -316,7 +321,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Screens/ContainerDemos.swift",
-      "sha256": "4b3684f8c58a259aa3b12a93b97cf1003fb974ff168286d77e556c91ff9ef4e6"
+      "sha256": "688c2473791098a710e4daa7509e4bf304fecafa965846a00f524f165b398db5"
     },
     {
       "file": "UIKitLanguageDemo/Screens/DetailViewController.swift",
@@ -324,7 +329,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Screens/HomeViewController.swift",
-      "sha256": "ae4325db8da9ec7f4539b37fb590ce5b81c141e866fcd4370a9638c18de576f9"
+      "sha256": "a5aa05f2214e1542cc34f0edb4ba36eebd238b7060a646cb0b62dad4f5ab1d5c"
     },
     {
       "file": "UIKitLanguageDemo/Screens/LanguagePickerView.swift",
@@ -339,12 +344,20 @@
       "sha256": "eb76de91ac8442509ba3f6c7fa167ad5ca9a84e67ade0ae7bfd33831042b6f73"
     },
     {
+      "file": "UIKitLanguageDemoTests/IPadRestorationTests.swift",
+      "sha256": "b6fe3f49667eeb379b5337d72a1f1d2a24a77619d765f9a3de0e945b317eb2f3"
+    },
+    {
       "file": "UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift",
-      "sha256": "cb739e650b3710c3af31b88502e6146d65d90ad0202da66d3b870a2acf0fbcef"
+      "sha256": "df20d4f9f9c4c2649cf0e2003b12c5be390b4677f92005cfb9740a0f6457dfb6"
+    },
+    {
+      "file": "UIKitLanguageDemoUITests/IPadWindowUITests.swift",
+      "sha256": "0273b6b82923e11d6a831310a9b8d29b4c0451b37243b307f56a8bacb4cf2b4d"
     },
     {
       "file": "UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift",
-      "sha256": "60b74c4854db545b3a4f88b314cfc9dc4dc1f72869bd34c14ea849a859f3c41a"
+      "sha256": "353d5eaf0ebca42afb2365b6c26b5e6302a35c00b24ac53adea68f7c654a88da"
     }
   ],
   "compositionalExtension": {
@@ -371,7 +384,7 @@
   "currentProjectConfigurationFiles": [
     {
       "file": "UIKitLanguageDemo/Info.plist",
-      "sha256": "03d5bbc8beb7bef5ff6b1f1fd8a54e4429006c35971ec593953545c64ae4ffa2"
+      "sha256": "a587362e428d6720417431deb2567590f34d33631ba1e2190cb01bbd69bde111"
     },
     {
       "file": "UIKitLanguageDemo.xctestplan",
@@ -390,7 +403,7 @@
     "sourceEditingTool": "Apple official MCP XcodeWrite",
     "docs": "STATE_RESTORATION.md",
     "activityType": "com.example.UIKitLanguageDemo.scene",
-    "version": 1,
+    "version": 2,
     "routes": "whitelisted business routes",
     "savedState": [
       "both navigation stacks",
@@ -400,7 +413,11 @@
       "detail/list drafts",
       "selection IDs",
       "vertical and logical-leading horizontal reading anchors",
-      "orthogonal center IDs and outer scroll position"
+      "orthogonal center IDs and outer scroll position",
+      "supplementary business navigation stack",
+      "compact business column across resize",
+      "expanded sidebar display mode",
+      "per-session ownership and distinct window number"
     ],
     "sourcePriority": [
       "UISceneSession.stateRestorationActivity",
@@ -413,12 +430,42 @@
       "activity|ar",
       "activity|en"
     ],
-    "simulatorUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "simulatorUDID": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
     "simulatorCreatedOrRestarted": false,
     "tests": {
-      "unit": 17,
-      "ui": 1,
-      "passed": 18
-    }
+      "unit": 21,
+      "ui": 2,
+      "passed": 23
+    },
+    "backwardCompatibleVersions": [
+      1
+    ],
+    "payloadKey": "sceneState.v1"
+  },
+  "iPadMultiwindowRestoration": {
+    "docs": "IPAD_MULTIWINDOW_RESTORATION.md",
+    "sourceEditingTool": "Apple official MCP XcodeWrite",
+    "testTool": "Apple official MCP RunSomeTests",
+    "simulatorName": "iPad Pro 13-inch (M5)",
+    "runtime": "iOS 26.5",
+    "existingUDID": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+    "existingDeviceStartedOnce": true,
+    "newDevicesCreated": 0,
+    "deviceRestarts": 0,
+    "springBoardServiceRecovery": 1,
+    "tests": [
+      "IPadRestorationTests/testVersionOneMigrationAndSessionOwnership()",
+      "IPadRestorationTests/testTripleColumnRestoresAllStacksAndPendingLists()",
+      "IPadRestorationTests/testSplitActuallyCollapsesExpandsAndRestoresSidebarMode()",
+      "IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently()",
+      "IPadWindowUITests/testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()"
+    ],
+    "activationActivityType": "com.example.UIKitLanguageDemo.scene.copy",
+    "restorationScopedBy": "UISceneSession.persistentIdentifier",
+    "runtimeCompatibilityNotYetVerified": [
+      "iOS 15/16",
+      "physical iPad"
+    ],
+    "originalIPhoneFinalState": "Shutdown (not restarted by agent)"
   }
 }

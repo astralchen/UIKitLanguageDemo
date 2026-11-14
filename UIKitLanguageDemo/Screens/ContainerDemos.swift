@@ -2,17 +2,28 @@ import UIKit
 
 @MainActor
 enum ContainerDemos {
-    static func makeSplit() -> LocalizedSplitViewController {
-        let split = LocalizedSplitViewController(style: .doubleColumn)
+    static func makeSplit(style: UISplitViewController.Style = .doubleColumn) -> LocalizedSplitViewController {
+        let split = LocalizedSplitViewController(style: style)
         let primary = LocalizedNavigationController(root: SplitMenuViewController(),
                                                     tabTitleKey: "split.title", symbol: "sidebar.leading")
         let secondary = LocalizedNavigationController(root: DetailViewController(),
                                                       tabTitleKey: "detail.title", symbol: "doc.text")
         split.restorationPrimary = primary
         split.restorationSecondary = secondary
+        if style == .tripleColumn {
+            let middle = LocalizedNavigationController(root: SplitMenuViewController(column: .supplementary),
+                tabTitleKey: "split.middle", symbol: "list.bullet")
+            split.restorationSupplementary = middle
+            split.setViewController(middle, for: .supplementary)
+            split.minimumPrimaryColumnWidth = 220
+            split.maximumPrimaryColumnWidth = 280
+            split.minimumSupplementaryColumnWidth = 240
+            split.maximumSupplementaryColumnWidth = 300
+        }
         split.setViewController(primary, for: .primary)
         split.setViewController(secondary, for: .secondary)
-        split.preferredDisplayMode = .oneBesideSecondary
+        split.setExpandedMode(style == .tripleColumn ? .twoBesideSecondary : .oneBesideSecondary)
+        split.installDemoRestorationPolicy()
         split.modalPresentationStyle = .fullScreen
         return split
     }
@@ -26,9 +37,16 @@ enum ContainerDemos {
 
 @MainActor
 final class SplitMenuViewController: LocalizedViewController {
+    let column: SavedSplitColumn
+    let draftField = UITextField()
+    init(column: SavedSplitColumn = .primary) { self.column = column; super.init(nibName: nil, bundle: nil) }
+    required init?(coder: NSCoder) { fatalError("Use init(column:)") }
     private let picker = LanguagePickerView()
     private let showDetail = UIButton(type: .system)
     private let close = UIButton(type: .system)
+    private let middle = UIButton(type: .system)
+    private let push = UIButton(type: .system)
+    private let expand = UIButton(type: .system)
     private let stack = UIStackView()
 
     override func buildUI() {
@@ -37,12 +55,29 @@ final class SplitMenuViewController: LocalizedViewController {
         stack.translatesAutoresizingMaskIntoConstraints = false
         showDetail.configuration = .filled()
         showDetail.addAction(UIAction { [weak self] _ in
-            (self?.splitViewController as? LocalizedSplitViewController)?.restorationShowsSecondary = true
-            self?.splitViewController?.show(.secondary)
+            (self?.splitViewController as? LocalizedSplitViewController)?.selectColumn(.secondary)
         }, for: .touchUpInside)
         close.configuration = .tinted()
         close.addAction(UIAction { [weak self] _ in self?.splitViewController?.dismiss(animated: true) }, for: .touchUpInside)
-        [picker, showDetail, close].forEach(stack.addArrangedSubview)
+        draftField.borderStyle = .roundedRect
+        draftField.accessibilityIdentifier = "split.\(column.rawValue).draft"
+        middle.configuration = .tinted()
+        middle.accessibilityIdentifier = "split.\(column.rawValue).middle"
+        middle.addAction(UIAction { [weak self] _ in (self?.splitViewController as? LocalizedSplitViewController)?.selectColumn(.supplementary) }, for: .touchUpInside)
+        middle.isHidden = splitViewController?.style != .tripleColumn
+        push.configuration = .tinted()
+        push.accessibilityIdentifier = "split.\(column.rawValue).push"
+        push.addAction(UIAction { [weak self] _ in self?.navigationController?.pushViewController(DetailViewController(), animated: true) }, for: .touchUpInside)
+        expand.configuration = .tinted()
+        expand.accessibilityIdentifier = "split.\(column.rawValue).toggle"
+        expand.addAction(UIAction { [weak self] _ in
+            guard let split = self?.splitViewController as? LocalizedSplitViewController else { return }
+            split.setExpandedMode(split.restorationExpandedMode == .secondaryOnly
+                ? (split.style == .tripleColumn ? .twoBesideSecondary : .oneBesideSecondary) : .secondaryOnly)
+        }, for: .touchUpInside)
+        showDetail.accessibilityIdentifier = "split.\(column.rawValue).detail"
+        close.accessibilityIdentifier = "split.\(column.rawValue).close"
+        [picker, draftField, showDetail, middle, push, expand, close].forEach(stack.addArrangedSubview)
         view.addSubview(stack)
         NSLayoutConstraint.activate([
             stack.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
@@ -52,7 +87,12 @@ final class SplitMenuViewController: LocalizedViewController {
     }
 
     override func applyLocalization(_ context: LanguageContext) {
-        title = context.text("split.title")
+        title = context.text(column == .primary ? "split.title" : "split.middle")
+        draftField.placeholder = context.text("detail.placeholder")
+        draftField.accessibilityLabel = context.text("detail.draft")
+        middle.setTitle(context.text("split.middle"), for: .normal)
+        push.setTitle(context.text("split.push"), for: .normal)
+        expand.setTitle(context.text("split.toggle"), for: .normal)
         picker.applyLocalization(context)
         showDetail.setTitle(context.text("home.open_detail"), for: .normal)
         close.setTitle(context.text("common.close"), for: .normal)

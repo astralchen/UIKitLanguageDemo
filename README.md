@@ -6,7 +6,7 @@ App 内热切换沿用现有 UIWindow、根控制器、UITab、导航控制器�
 
 ## 系统 App 语言与热切换边界
 
-Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/403/) 推荐通过系统设置切换单 App 语言，并配合重新启动后的状态恢复。本工程为满足 App 内即时刷新要求，提供应用自有 UI 的内容语言热切换；它不改变系统单 App 语言设置，也不统一控制系统或第三方内建文案。现已提供 `NSUserActivity` 的跨进程状态恢复，重新建立导航栈、当前 Tab／Page／Split、草稿和列表阅读位置。
+Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/403/) 推荐通过系统设置切换单 App 语言，并配合重新启动后的状态恢复。本工程为满足 App 内即时刷新要求，提供应用自有 UI 的内容语言热切换；它不改变系统单 App 语言设置，也不统一控制系统或第三方内建文案。现已提供 `NSUserActivity` 的跨进程状态恢复，重新建立导航栈、当前 Tab／Page／双列或三列 Split、草稿和列表阅读位置。
 
 “跟随系统”现在读取资源 Bundle 的 preferredLocalizations（默认 Bundle.main），尊重系统为 App 匹配的语言；不再以 Locale.preferredLanguages 代替当前 App 语言。完整说明见 [系统语言与热切换](SYSTEM_LANGUAGE.md)。
 
@@ -17,8 +17,8 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 3. 首页点击“打开详情”，输入草稿，再点击详情页中的语言按钮。
 4. 验证详情页仍在、返回按钮仍可返回首页、草稿不变，中文/阿拉伯语切换时方向改变。
 5. 设置 Tab 演示可变行高 Table；首页可进入 FlowLayout 网格/横向列表，以及 Compositional 网格/正交分页分区，滚动、选择、编辑草稿后切换语言。
-6. 在任意示例页点击导航栏“系统 App 语言设置”，在系统中选择语言并返回 App，验证当前位置、草稿和滚动位置恢复。该入口先切回“跟随系统”，以便新进程采用系统选择。
-7. 使用 Product → Test 运行随工程附带的十八项 XCTest（17 项单元测试和 1 项真实系统设置重启 UI 测试）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
+6. 在任意示例页点击导航栏地球图标（“系统 App 语言设置”），在系统中选择语言并返回 App，验证当前位置、草稿和滚动位置恢复。该入口先切回“跟随系统”，以便新进程采用系统选择。
+7. 使用 Product → Test 运行随工程附带的二十三项 XCTest（21 项单元测试和 2 项真实系统设置重启 UI 测试）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
 
 测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
 
@@ -48,6 +48,7 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 | `Localization/SceneState.swift` | 版本化业务 DTO、NSUserActivity 编解码与输入校验 |
 | `Localization/SceneStateCoordinator.swift` | 重建导航／Page／Split、按 Scene 隔离的持久化检查点、系统设置入口 |
 | `Localization/ListStateRestoration.swift` | 列表草稿、选择、逻辑阅读锚点及正交中心页的持久化桥接 |
+| `Localization/SceneWindowService.swift` | 新窗口副本、已有 session 激活、窗口关闭与全 Scene 检查点 |
 | `SceneDelegate.swift` | Scene 生命周期、NSUserActivity 保存与恢复、窗口注册 |
 | `UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift` | 热切换与新控制器图的恢复回归测试 |
 | `UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift` | 系统设置改语言、进程终止、导航和组合列表恢复 |
@@ -213,13 +214,21 @@ pager.previousPage()
 
 每个 Scene 另有原子、文件保护的本地检查点，作为系统未交回 activity 时的降级。迟到或重复的 activity 不覆盖已恢复状态或用户新操作。完整生命周期、接入方式和已测边界见 [NSUserActivity 状态恢复](STATE_RESTORATION.md)。
 
+## iPad 三列与多窗口
+
+首页“三列分栏”演示三列独立导航和草稿；“显示或隐藏边栏”切换展开模式。窗口变窄时由 UIKit 折叠到保存的业务列，变宽后恢复边栏模式。导航栏窗口图标支持复制当前页面到新窗口、切回已有窗口及关闭当前窗口；每个 session 的导航栈、Page、草稿和列表位置独立恢复。
+
+新窗口使用独立 activation activity 接收副本；普通恢复快照绑定自己的 session ID，不能覆盖其它窗口。详细实现与已有业务 delegate 的接入方式见 [iPad 与多窗口恢复](IPAD_MULTIWINDOW_RESTORATION.md)。
+
 ## 工程创建与迁移记录
 
 当前 Apple 官方 MCP 服务器未提供创建新工程的工具，因此创建步骤使用 Xcode 原生 iOS App 模板（Storyboard / Swift / XCTest）；分组、源码、Info.plist、String Catalog 和测试通过官方 MCP 写入。工程文件由 Xcode 创建与维护，没有复制旧工程的手写 project.pbxproj。
 
-官方 MCP `BuildProject` 已构建成功，`RunSomeTests` 已执行全部十八项测试：18 passed、0 failed、0 skipped、0 not run。原十三项测试保留，新增四项状态恢复单元测试和一项真实系统语言重启 UI 测试；结果保存在 `verification/official-mcp-tests.json`。测试签名问题已修复，详情见 `SIGNING_FIX.md` 和 `verification/`；源码一致性见 `MIGRATION.json`。
+官方 MCP `BuildProject` 已构建成功，`RunSomeTests` 已执行全部二十三项测试：23 passed、0 failed、0 skipped、0 not run。保留此前十八项测试，新增四项 iPad／多窗口单元测试和一项双窗口三列系统重启 UI 测试；结果保存在 `verification/official-mcp-tests.json`。测试签名问题已修复，详情见 `SIGNING_FIX.md` 和 `verification/`；源码一致性见 `MIGRATION.json`。
 
 本机 Xcode 的 UI Runner 曾缺少 SDK 自带的 `lib_TestingInterop.dylib`；测试计划用 `$(PLATFORM_DIR)/Developer/usr/lib` 补充测试进程的动态库路径，保持签名启用，详见状态恢复文档。
+
+最新完整验收复用已有 iPad Pro 13-inch (M5) / iOS 26.5，23/23 通过；此前 iPhone 18 项结果保留为历史记录。
 
 本机已确认新构建产物包含 en、zh-Hans、ar 三套本地化文件。iOS 15/16 兼容分支尚未在对应系统版本运行。
 

@@ -30,7 +30,7 @@ final class UIKitLanguageDemoUITests: XCTestCase {
         openSettings.tap()
         XCTAssertTrue(settings.wait(for: .runningForeground, timeout: 10))
         openLanguageList(in: settings)
-        let selected = settings.cells.allElementsBoundByIndex.first { $0.isSelected }
+        let selected = settings.cells.matching(NSPredicate(format: "identifier IN %@", ["English", "简体中文", "العربية"])).allElementsBoundByIndex.first { $0.isSelected }
         originalPreference = selected?.identifier
         XCTAssertNotNil(originalPreference, settings.debugDescription)
         selectLanguage(in: settings, names: ["English"], requireTerminationOf: nil)
@@ -132,6 +132,10 @@ final class UIKitLanguageDemoUITests: XCTestCase {
     @MainActor
     private func openLanguageList(in settings: XCUIApplication) {
         if settings.cells["العربية"].firstMatch.exists { return }
+        // iPadOS may open the Apps directory before the app-specific preferences page.
+        let appEntry = settings.buttons["com.example.UIKitLanguageDemo"].firstMatch
+        let currentLanguageRow = settings.staticTexts.matching(NSPredicate(format: "label IN %@", ["Language", "语言", "اللغة"])).firstMatch
+        if !currentLanguageRow.exists, appEntry.waitForExistence(timeout: 3), appEntry.isHittable { appEntry.tap() }
         let language = settings.staticTexts.matching(NSPredicate(format: "label IN %@", ["Language", "语言", "اللغة"])).firstMatch
         XCTAssertTrue(language.waitForExistence(timeout: 12), settings.debugDescription)
         language.tap()

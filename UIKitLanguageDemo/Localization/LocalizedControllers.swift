@@ -28,13 +28,12 @@ class LocalizedViewController: UIViewController, LocalizationUpdatable {
         super.viewDidAppear(animated)
         // Observe the demo's business columns without replacing the split delegate.
         // This also records the native compact Back gesture returning to primary.
-        if let split = splitViewController as? LocalizedSplitViewController, split.isCollapsed {
-            if navigationController === split.restorationPrimary { split.restorationShowsSecondary = false }
-            if navigationController === split.restorationSecondary { split.restorationShowsSecondary = true }
-        }
+        (splitViewController as? LocalizedSplitViewController)?.recordVisibleBusinessPage(self)
     }
 
     @objc private func openSystemSettings() { SystemLanguageSettings.open(from: self) }
+
+    @objc private func showWindows() { SceneWindowService.presentSwitcher(from: self) }
 
     func buildUI() {}
     func applyLocalization(_ context: LanguageContext) {}
@@ -47,14 +46,23 @@ class LocalizedViewController: UIViewController, LocalizationUpdatable {
         guard context.revision != renderedRevision else { return }
         renderedRevision = context.revision
         if navigationItem.rightBarButtonItem == nil {
-            let item = UIBarButtonItem(title: context.text("system.settings"), style: .plain,
+            let item = UIBarButtonItem(image: UIImage(systemName: "globe"), style: .plain,
                 target: self, action: #selector(openSystemSettings))
             item.accessibilityIdentifier = "system.language.settings"
+            item.accessibilityLabel = context.text("system.settings")
             navigationItem.rightBarButtonItem = item
         }
         if navigationItem.rightBarButtonItem?.accessibilityIdentifier == "system.language.settings" {
-            navigationItem.rightBarButtonItem?.title = context.text("system.settings")
+            navigationItem.rightBarButtonItem?.accessibilityLabel = context.text("system.settings")
         }
+        if navigationItem.rightBarButtonItems?.contains(where: { $0.accessibilityIdentifier == "scene.windows" }) != true {
+            let windows = UIBarButtonItem(image: UIImage(systemName: "macwindow.on.rectangle"), style: .plain,
+                target: self, action: #selector(showWindows))
+            windows.accessibilityIdentifier = "scene.windows"
+            windows.accessibilityLabel = context.text("window.menu")
+            navigationItem.rightBarButtonItems = (navigationItem.rightBarButtonItems ?? []) + [windows]
+        }
+        navigationItem.rightBarButtonItems?.first(where: { $0.accessibilityIdentifier == "scene.windows" })?.accessibilityLabel = context.text("window.menu")
         LayoutDirection.applyBoundary(context, to: view)
         applyLocalization(context)
         view.setNeedsLayout()
@@ -81,7 +89,10 @@ final class LocalizedNavigationController: UINavigationController {
 
     @objc private func refresh() {
         let context = LanguageService.shared.context
-        tabBarItem.title = context.text(tabTitleKey)
+        // iOS 18+ titles belong to the stable UITab models in LocalizedTabBarController.
+        // A retired navigation controller can outlive UIKit's tab view during scene restoration;
+        // updating that bridged legacy item can dereference a released UIKit view provider.
+        if #unavailable(iOS 18.0) { tabBarItem.title = context.text(tabTitleKey) }
         guard isViewLoaded else { return }
         LayoutDirection.applyBoundary(context, to: view)
         LayoutDirection.applyBoundary(context, to: navigationBar)

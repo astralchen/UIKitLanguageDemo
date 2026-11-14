@@ -15,7 +15,8 @@ final class SceneCheckpointStore {
         return directory.appendingPathComponent(digest).appendingPathExtension("json")
     }
     func save(_ activity: NSUserActivity, sceneID: String) {
-        guard SceneStateCodec.decode(activity) != nil,
+        guard let state = SceneStateCodec.decode(activity),
+              state.sceneSessionID == nil || state.sceneSessionID == sceneID,
               let data = activity.userInfo?[SceneStateCodec.payloadKey] as? Data else { return }
         do {
             try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
@@ -23,7 +24,8 @@ final class SceneCheckpointStore {
         } catch { NSLog("Scene checkpoint save failed: %@", String(describing: error)) }
     }
     func load(sceneID: String) -> NSUserActivity? {
-        guard let data = try? Data(contentsOf: url(sceneID)), let state = SceneStateCodec.decode(data) else { return nil }
+        guard let data = try? Data(contentsOf: url(sceneID)), let state = SceneStateCodec.decode(data),
+              state.sceneSessionID == nil || state.sceneSessionID == sceneID else { return nil }
         return SceneStateCodec.activity(for: state)
     }
     func remove(sceneID: String) { try? FileManager.default.removeItem(at: url(sceneID)) }
@@ -35,24 +37,30 @@ final class SceneStateCoordinator {
     private(set) var appliedActivityID: String?
     private(set) var restorationOrigin = "fresh"
     private weak var window: UIWindow?
+    private(set) var sceneSessionID: String?
+    private(set) var windowNumber: Int?
     private var launchBaseline: SavedSceneState?
 
-    func connect(window: UIWindow, activity: NSUserActivity?, fallback: NSUserActivity? = nil) {
+    func connect(window: UIWindow, activity: NSUserActivity?, fallback: NSUserActivity? = nil, sessionID: String? = nil, activation: NSUserActivity? = nil, number: Int? = nil) {
         self.window = window
-        if let state = activity.flatMap(SceneStateCodec.decode) {
+        self.sceneSessionID = sessionID
+        self.windowNumber = number
+        if let state = activity.flatMap(ownedState) {
             install(state, in: window); appliedActivityID = state.identifier; restorationOrigin = "activity"
-        } else if let state = fallback.flatMap(SceneStateCodec.decode) {
+        } else if let state = fallback.flatMap(ownedState) {
             install(state, in: window); appliedActivityID = state.identifier; restorationOrigin = "checkpoint"
+        } else if let state = activation.flatMap(SceneStateCodec.decodeActivation) {
+            install(state, in: window); appliedActivityID = state.identifier; restorationOrigin = "activation"
         } else { install(nil, in: window) }
         launchBaseline = capture()
-        window.accessibilityIdentifier = "scene.window"
+        window.accessibilityIdentifier = windowNumber.map { "scene.window.\($0)" } ?? "scene.window"
         window.accessibilityValue = "\(restorationOrigin)|\(LanguageService.shared.context.language.rawValue)"
     }
 
     /// Handles encrypted restoration data that UIKit delivers after connection.
     @discardableResult
     func restoreInteractionState(_ activity: NSUserActivity) -> Bool {
-        guard let state = SceneStateCodec.decode(activity), state.identifier != appliedActivityID,
+        guard let state = ownedState(activity), state.identifier != appliedActivityID,
               appliedActivityID == nil, let window,
               let baseline = launchBaseline, let current = capture(),
               current.stacks == baseline.stacks, current.selectedTab == baseline.selectedTab,
@@ -64,6 +72,12 @@ final class SceneStateCoordinator {
         return true
     }
 
+    private func ownedState(_ activity: NSUserActivity) -> SavedSceneState? {
+        guard let state = SceneStateCodec.decode(activity),
+              state.sceneSessionID == nil || sceneSessionID == nil || state.sceneSessionID == sceneSessionID else { return nil }
+        return state
+    }
+
     func activity() -> NSUserActivity? { capture().flatMap(SceneStateCodec.activity) }
 
     func capture() -> SavedSceneState? {
@@ -73,15 +87,17 @@ final class SceneStateCoordinator {
         let split = topPresentedSplit(from: tabs).flatMap { split -> SavedSplitState? in
             guard let primary = split.restorationPrimary, let secondary = split.restorationSecondary else { return nil }
             return SavedSplitState(primary: primary.viewControllers.compactMap(capturePage),
-                secondary: secondary.viewControllers.compactMap(capturePage), showsSecondary: split.restorationShowsSecondary)
+                secondary: secondary.viewControllers.compactMap(capturePage), showsSecondary: split.restorationShowsSecondary,
+                style: split.style == .tripleColumn ? .tripleColumn : .doubleColumn,
+                supplementary: split.restorationSupplementary?.viewControllers.compactMap(capturePage),
+                compactColumn: split.restorationCompactColumn, expandedMode: split.restorationExpandedMode)
         }
-        return SavedSceneState(selectedTab: tabs.selectedIndex, stacks: stacks, split: split)
+        return SavedSceneState(sceneSessionID: sceneSessionID, windowNumber: windowNumber, selectedTab: tabs.selectedIndex, stacks: stacks, split: split)
     }
 
     private func topPresentedSplit(from controller: UIViewController) -> LocalizedSplitViewController? {
-        var current: UIViewController? = controller
-        while let presented = current?.presentedViewController { current = presented }
-        if let split = current as? LocalizedSplitViewController { return split }
+        if let split = controller as? LocalizedSplitViewController { return split }
+        if let presented = controller.presentedViewController, let split = topPresentedSplit(from: presented) { return split }
         return controller.selectedOrVisibleChild.flatMap { topPresentedSplit(from: $0) }
     }
 
@@ -100,7 +116,8 @@ final class SceneStateCoordinator {
                 pageDrafts: Dictionary(uniqueKeysWithValues: pager.restorationPages.compactMap { page in
                     (page.controller as? DemoPageViewController).map { (page.id, $0.draft.text ?? "") }
                 }))
-        case is SplitMenuViewController: state = SavedPageState(route: .splitMenu)
+        case let menu as SplitMenuViewController:
+            state = SavedPageState(route: menu.column == .supplementary ? .splitSupplementary : .splitMenu, draft: menu.draftField.text ?? "")
         default: return nil // UIKit's own collapse/transition controllers are never serialized.
         }
         return state
@@ -123,7 +140,9 @@ final class SceneStateCoordinator {
                 (item.controller as? DemoPageViewController)?.draft.text = state.pageDrafts[item.id]
             }
             page = pager
-        case .splitMenu: page = SplitMenuViewController()
+        case .splitMenu, .splitSupplementary:
+            let menu = SplitMenuViewController(column: state.route == .splitMenu ? .primary : .supplementary)
+            menu.draftField.text = state.draft; page = menu
         }
         if let list = page as? any ListStateRestorable, let saved = state.list {
             list.restorationDrafts = saved.drafts
@@ -134,6 +153,7 @@ final class SceneStateCoordinator {
     }
 
     private func install(_ state: SavedSceneState?, in window: UIWindow) {
+        if let number = state?.windowNumber, windowNumber == nil { windowNumber = number }
         let defaults = [[SavedPageState(route: .home)], [SavedPageState(route: .settings)]]
         let stacks = state?.stacks ?? defaults
         let navigations = stacks.enumerated().map { index, stack in
@@ -150,12 +170,14 @@ final class SceneStateCoordinator {
         window.makeKeyAndVisible()
         window.layoutIfNeeded()
         if let saved = state?.split {
-            let split = ContainerDemos.makeSplit()
+            let split = ContainerDemos.makeSplit(style: saved.style == .tripleColumn ? .tripleColumn : .doubleColumn)
             split.restorationPrimary?.setViewControllers(saved.primary.map(makePage), animated: false)
             split.restorationSecondary?.setViewControllers(saved.secondary.map(makePage), animated: false)
-            split.restorationShowsSecondary = saved.showsSecondary
+            split.restorationSupplementary?.setViewControllers((saved.supplementary ?? []).map(makePage), animated: false)
+            split.restorationCompactColumn = saved.compactColumn
+            split.setExpandedMode(saved.expandedMode)
             tabs.present(split, animated: false) {
-                if split.isCollapsed { split.show(saved.showsSecondary ? .secondary : .primary) }
+                if split.isCollapsed { split.selectColumn(saved.compactColumn) }
                 window.layoutIfNeeded()
             }
         }
@@ -175,10 +197,10 @@ private extension UIViewController {
 enum SystemLanguageSettings {
     static func open(from controller: UIViewController) {
         guard let scene = controller.view.window?.windowScene,
-              let delegate = scene.delegate as? SceneDelegate,
+              scene.delegate is SceneDelegate,
               let url = URL(string: UIApplication.openSettingsURLString) else { return }
         LanguageService.shared.setSelection(.system)
-        delegate.checkpoint(scene)
+        SceneWindowService.checkpointAll()
         UIApplication.shared.open(url)
     }
 }

@@ -87,19 +87,17 @@ final class LanguageTests: XCTestCase {
     @MainActor
     func testExistingModalSurvivesSwitch() throws {
         let service = LanguageService.shared
-        let original = service.selection
-        let scene = try XCTUnwrap(UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first)
-        let window = try XCTUnwrap(scene.windows.first(where: \.isKeyWindow))
-        let host = try XCTUnwrap(window.rootViewController)
+        // Own the presentation host; a restored real scene may already show a split.
+        let fixture = try ContainerTestWindow(content: HomeViewController())
+        let host = try XCTUnwrap(fixture.window.rootViewController)
         let sheet = LocalizedTestSheet()
+        defer { sheet.dismiss(animated: false); fixture.close() }
         let presented = expectation(description: "sheet presented")
         host.present(sheet, animated: false) { presented.fulfill() }
         wait(for: [presented], timeout: 5)
         service.setSelection(.arabic)
         XCTAssertTrue(host.presentedViewController === sheet)
         XCTAssertEqual(sheet.title, service.context.text("detail.title"))
-        sheet.dismiss(animated: false)
-        service.setSelection(original)
     }
 
     @MainActor
@@ -218,6 +216,7 @@ final class LanguageTests: XCTestCase {
         table.layoutIfNeeded()
         let path = IndexPath(row: 0, section: 0)
         let cell = try XCTUnwrap(table.cellForRow(at: path) as? DemoTableCell)
+        XCTAssertLessThanOrEqual(table.bounds.width, 390)
         let oldHeight = table.rectForRow(at: path).height
         cell.localizedContent.draft.text = "table draft survives"
         cell.localizedContent.draft.sendActions(for: .editingChanged)
@@ -631,14 +630,14 @@ final class LanguageTests: XCTestCase {
         (split.restorationSecondary?.topViewController as? DetailViewController)?.draftField.text = "secondary draft"
         old.coordinator.tabs.present(split, animated: false)
         old.window.layoutIfNeeded()
-        split.show(.secondary)
+        split.selectColumn(.secondary)
         old.window.layoutIfNeeded()
         XCTAssertTrue(split.restorationShowsSecondary)
         if split.isCollapsed {
-            split.show(.primary)
+            split.selectColumn(.primary)
             old.window.layoutIfNeeded()
             XCTAssertFalse(split.restorationShowsSecondary)
-            split.show(.secondary)
+            split.selectColumn(.secondary)
             old.window.layoutIfNeeded()
             XCTAssertTrue(split.restorationShowsSecondary)
         }
@@ -669,6 +668,11 @@ private final class ContainerTestWindow {
         let scene = try XCTUnwrap(UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first)
         previousKeyWindow = scene.windows.first(where: \.isKeyWindow)
         window = UIWindow(windowScene: scene)
+        // This row-height regression needs a bounded reading width on both phone and iPad.
+        if content is SettingsViewController {
+            window.frame = CGRect(origin: scene.coordinateSpace.bounds.origin,
+                size: CGSize(width: min(390, scene.coordinateSpace.bounds.width), height: scene.coordinateSpace.bounds.height))
+        }
         window.rootViewController = LocalizationHostController(content: content)
         LanguageService.shared.register(window: window)
         window.makeKeyAndVisible()

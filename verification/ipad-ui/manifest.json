@@ -1,0 +1,90 @@
+[
+  {
+    "attachments": [
+      {
+        "configurationName": "Configuration 1",
+        "deviceId": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+        "deviceName": "iPad Pro 13-inch (M5)",
+        "exportedFileName": "EE6BAABE-A5CF-451D-AE7F-EB78E395C524.txt",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "public.plain-text_0_1A9A8D7C-B3F5-4E26-A934-3B61E5344694.txt",
+        "timestamp": 1794632893.315,
+        "publishedFileName": "native-scenes.txt"
+      }
+    ],
+    "testIdentifier": "IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently()",
+    "testIdentifierURL": "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests/testTwoRealSceneSessionsRestoreIndependently"
+  },
+  {
+    "attachments": [
+      {
+        "configurationName": "Configuration 1",
+        "deviceId": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+        "deviceName": "iPad Pro 13-inch (M5)",
+        "exportedFileName": "65BD38D0-ADC1-4093-B551-E49B79DFD819.txt",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "public.plain-text_0_95893CA7-0F76-4625-80B5-244EC6F48D1F.txt",
+        "timestamp": 1794633139.802,
+        "publishedFileName": "two-windows.txt"
+      },
+      {
+        "configurationName": "Configuration 1",
+        "deviceId": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+        "deviceName": "iPad Pro 13-inch (M5)",
+        "exportedFileName": "0E5D7F4A-D6CA-46F7-BD8B-E0969FCA4626.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "iPad three columns and independent windows after native language restart_0_0BFB9223-5E96-4003-BC6D-64466F06F494.png",
+        "timestamp": 1794633139.798,
+        "publishedFileName": "ipad-three-columns.png"
+      }
+    ],
+    "testIdentifier": "IPadWindowUITests/testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart()",
+    "testIdentifierURL": "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests/testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart"
+  },
+  {
+    "attachments": [
+      {
+        "configurationName": "Configuration 1",
+        "deviceId": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+        "deviceName": "iPad Pro 13-inch (M5)",
+        "exportedFileName": "A150D749-D879-4BE3-AE53-2757CA46835C.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "Compositional grid after system-language restart_0_D9037B8F-1943-4A3A-A011-C93A905ECE23.png",
+        "timestamp": 1794633425.635,
+        "publishedFileName": "english-compositional-grid.png"
+      },
+      {
+        "configurationName": "Configuration 1",
+        "deviceId": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+        "deviceName": "iPad Pro 13-inch (M5)",
+        "exportedFileName": "A53301EC-ECAF-4C29-A0A9-EC73A53C0A8F.txt",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "public.plain-text_0_ED22706D-0C1B-4665-A7AB-670CE174A8A8.txt",
+        "timestamp": 1794633424.427,
+        "publishedFileName": "list-anchor.txt"
+      },
+      {
+        "configurationName": "Configuration 1",
+        "deviceId": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+        "deviceName": "iPad Pro 13-inch (M5)",
+        "exportedFileName": "EAE8B6D1-FC5B-49E0-9AD5-1D2B7AC3EB3A.png",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "Arabic detail after system-language restart_0_8BC45AF5-BCCD-4712-9D05-E787720C81F2.png",
+        "timestamp": 1794633315.843,
+        "publishedFileName": "arabic-detail.png"
+      },
+      {
+        "configurationName": "Configuration 1",
+        "deviceId": "0CE21EE5-82A1-4D1C-9554-7E17B54341DA",
+        "deviceName": "iPad Pro 13-inch (M5)",
+        "exportedFileName": "4082BABF-A8D1-4294-AF92-7475FCF06AA4.txt",
+        "isAssociatedWithFailure": false,
+        "suggestedHumanReadableName": "public.plain-text_0_A553C1B9-F018-44B8-BB52-AF2537EFB49E.txt",
+        "timestamp": 1794633314.869,
+        "publishedFileName": "activity-source.txt"
+      }
+    ],
+    "testIdentifier": "UIKitLanguageDemoUITests/testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft()",
+    "testIdentifierURL": "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests/testSystemSettingsLanguageRelaunchRestoresNavigationAndDraft"
+  }
+]

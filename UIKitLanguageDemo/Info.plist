@@ -57,6 +57,7 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>com.example.UIKitLanguageDemo.scene</string>
+		<string>com.example.UIKitLanguageDemo.scene.copy</string>
 	</array>
 </dict>
 </plist>
