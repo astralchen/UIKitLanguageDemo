@@ -54,7 +54,7 @@ localization = CollectionLocalizationCoordinator(
 
 可运行版本见 `CollectionDemoViewController.swift`。`LocalizedCollectionFlowLayout` 直接继承系统 FlowLayout 的 RTL 排列，不额外启用自动镜像、变换或反转业务数组。切换时通过 `UICollectionViewFlowLayoutInvalidationContext` 同时使 delegate metrics 和 attributes 失效，重新查询翻译后的尺寸。纵向列表保持顶部业务项；横向列表保持逻辑起始边的业务项和距离，LTR 为左边、RTL 为右边。选中项按 ID 映射回新 IndexPath。
 
-示例使用 delegate 依据当前翻译测量卡片高度，横向示例还故意在 RTL 改变卡片宽度，用于检验锚点恢复。自定义 Layout、Compositional Layout、estimated self-sizing、正交滚动 section 需要按其实际滚动容器和测量策略接入，并补对应几何测试；本工程没有把这些布局作为已验收范围。
+示例使用 delegate 依据当前翻译测量卡片高度，横向示例还故意在 RTL 改变卡片宽度，用于检验锚点恢复。本工程现已增加 Compositional 的 estimated 自适应网格和每组一项的 groupPagingCentered 正交分区，见 [组合布局接入说明](COMPOSITIONAL_LAYOUT.md)。任意自定义 Layout、多项 group 和 continuous 正交偏移不在验收范围。
 
 ## 复用、Header 和输入状态
 
@@ -71,3 +71,5 @@ localization = CollectionLocalizationCoordinator(
 ## 回归测试
 
 新增四项 XCTest：Table 同一 Cell 的草稿/选择和自动行高；Table 多次切换后的阅读锚点与复用草稿；Collection 网格 RTL 镜像、Header、草稿/选择及滚动锚点；横向 Collection 改变卡片宽度后的逻辑起始项保留。原六项容器、导航、资源测试保留。实际官方 MCP 结果见 verification/。
+
+组合布局扩展：新增两项 XCTest，当前共十二项；Compositional 默认 reconfigure 分支使用普通数据源，Diffable 需自行通过 snapshot 刷新，详见 COMPOSITIONAL_LAYOUT.md。

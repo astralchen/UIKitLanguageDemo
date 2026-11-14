@@ -10,8 +10,8 @@
 2. 选择 `UIKitLanguageDemo` Scheme 和一个 iOS 模拟器，Run。
 3. 首页点击“打开详情”，输入草稿，再点击详情页中的语言按钮。
 4. 验证详情页仍在、返回按钮仍可返回首页、草稿不变，中文/阿拉伯语切换时方向改变。
-5. 设置 Tab 演示可变行高 Table；首页还可进入网格和横向 Collection，滚动、选择、编辑草稿后切换语言。
-6. 使用 Product → Test 运行随工程附带的十项 XCTest。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
+5. 设置 Tab 演示可变行高 Table；首页可进入 FlowLayout 网格/横向列表，以及 Compositional 网格/正交分页分区，滚动、选择、编辑草稿后切换语言。
+6. 使用 Product → Test 运行随工程附带的十二项 XCTest。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
 
 测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
 
@@ -38,6 +38,8 @@
 | `Screens/SettingsViewController.swift` | 可变行高 Table、Header、复用与草稿 |
 | `Screens/CollectionDemoViewController.swift` | 两列网格与横向卡片列表 |
 | `Screens/ListDemoContent.swift` | Cell 内容、草稿绑定和 supplementary 示例 |
+| `Screens/CompositionalDemoViewController.swift` | 自适应组合网格、正交分页分区及运行时镜像 |
+| `Localization/OrthogonalLocalizationCoordinator.swift` | 正交 section 中心业务页与外层阅读位置保留 |
 | `SceneDelegate.swift` | 创建并注册每个 Scene 的窗口 |
 | `UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift` | 导航栈、草稿、选区、弹层、持久化、回退和方向回归测试 |
 
@@ -190,11 +192,17 @@ pager.previousPage()
 
 本实现不支持 `.pageCurl`、竖向翻页和双面书页；`.pageCurl` 需要另行管理 `spineLocation`、`isDoubleSided` 与可见页组合，不能直接套用这套相邻页刷新逻辑。页数量较大时，可在同一状态模型上添加按 ID 缓存/回收页面的策略。
 
+## UICollectionViewCompositionalLayout 接入
+
+首页新增组合网格与 `.groupPagingCentered` 混合分区，item/group 使用 estimated 高度，翻译改变后重新测量。跨 LTR/RTL 时仅更新布局对象，保留 CollectionView、数据源、业务 ID、页面和导航栈。正交 section 通过公开可见项回调和 scrollToItem 恢复中心业务页，外层按独立锚点保留阅读位置。
+
+完整实现与边界见 [Compositional Layout 接入说明](COMPOSITIONAL_LAYOUT.md)。本例使用普通数据源；正交恢复范围为每组一项的居中分页，不承诺连续滚动的小数偏移。
+
 ## 工程创建与迁移记录
 
 当前 Apple 官方 MCP 服务器未提供创建新工程的工具，因此创建步骤使用 Xcode 原生 iOS App 模板（Storyboard / Swift / XCTest）；分组、源码、Info.plist、String Catalog 和测试通过官方 MCP 写入。工程文件由 Xcode 创建与维护，没有复制旧工程的手写 project.pbxproj。
 
-官方 MCP `BuildProject` 已构建成功，`RunSomeTests` 已执行全部十项测试：10 passed、0 failed、0 skipped、0 not run。原六项测试保留，并新增四项列表回归测试；结果保存在 `verification/official-mcp-tests.json`。测试签名问题已修复，详情见 `SIGNING_FIX.md` 和 `verification/`；源码一致性见 `MIGRATION.json`。
+官方 MCP `BuildProject` 已构建成功，`RunSomeTests` 已执行全部十二项测试：12 passed、0 failed、0 skipped、0 not run。原十项测试保留，并新增两项组合布局回归测试；结果保存在 `verification/official-mcp-tests.json`。测试签名问题已修复，详情见 `SIGNING_FIX.md` 和 `verification/`；源码一致性见 `MIGRATION.json`。
 
 本机已确认新构建产物包含 en、zh-Hans、ar 三套本地化文件。iOS 15/16 兼容分支尚未在对应系统版本运行。
 

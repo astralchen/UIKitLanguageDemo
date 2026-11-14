@@ -1,6 +1,6 @@
 import UIKit
 
-/// Stable business IDs work with regular and diffable data sources.
+/// Stable business IDs decouple scroll and selection state from index paths.
 typealias LocalizationItemID = AnyHashable
 
 @MainActor
@@ -130,20 +130,24 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
     enum Axis { case vertical, horizontal }
     private weak var collectionView: UICollectionView?
     private let axis: Axis
+    private let anchorFilter: (IndexPath) -> Bool
     private let itemID: (IndexPath) -> LocalizationItemID?
     private let indexPath: (LocalizationItemID) -> IndexPath?
     private let renderCell: (UICollectionViewCell, IndexPath, LanguageContext) -> Void
     private let renderSupplementary: (LanguageContext) -> Void
     private var readingState: ListReadingState?
     private var needsMeasurement = false
+    private var fallbackOffset: CGPoint?
 
     init(collectionView: UICollectionView, axis: Axis,
          itemID: @escaping (IndexPath) -> LocalizationItemID?,
          indexPath: @escaping (LocalizationItemID) -> IndexPath?,
          renderCell: @escaping (UICollectionViewCell, IndexPath, LanguageContext) -> Void,
-         renderSupplementary: @escaping (LanguageContext) -> Void = { _ in }) {
+         renderSupplementary: @escaping (LanguageContext) -> Void = { _ in },
+         anchorFilter: @escaping (IndexPath) -> Bool = { _ in true }) {
         self.collectionView = collectionView
         self.axis = axis
+        self.anchorFilter = anchorFilter
         self.itemID = itemID
         self.indexPath = indexPath
         self.renderCell = renderCell
@@ -155,9 +159,11 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
         guard let collectionView else { return }
         let rtl = collectionView.effectiveUserInterfaceLayoutDirection == .rightToLeft
         let viewport = collectionView.bounds.inset(by: collectionView.adjustedContentInset)
-        let visible = collectionView.indexPathsForVisibleItems.compactMap { path -> (IndexPath, CGRect)? in
-            guard let cell = collectionView.cellForItem(at: path), cell.frame.intersects(viewport) else { return nil }
-            return (path, cell.frame)
+        let visible = collectionView.indexPathsForVisibleItems.filter(anchorFilter).compactMap { path -> (IndexPath, CGRect)? in
+            guard let cell = collectionView.cellForItem(at: path) else { return nil }
+            let frame = cell.convert(cell.bounds, to: collectionView)
+            guard frame.intersects(viewport) else { return nil }
+            return (path, frame)
         }.sorted { a, b in
             if axis == .vertical, abs(a.1.minY - b.1.minY) > 0.5 { return a.1.minY < b.1.minY }
             if abs(a.1.minX - b.1.minX) > 0.5 { return rtl ? a.1.maxX > b.1.maxX : a.1.minX < b.1.minX }
@@ -165,6 +171,7 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
         }
         let canAnchor = !collectionView.isTracking && !collectionView.isDragging && !collectionView.isDecelerating
         let first = canAnchor ? visible.first : nil
+        fallbackOffset = canAnchor && first == nil ? collectionView.contentOffset : nil
         let distance: CGFloat
         if let frame = first?.1 {
             distance = axis == .vertical ? frame.minY - viewport.minY
@@ -178,6 +185,10 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
     override func updateContent(_ context: LanguageContext) {
         guard let collectionView else { return }
         LayoutDirection.applyBoundary(context, to: collectionView)
+        if collectionView.collectionViewLayout is UICollectionViewCompositionalLayout {
+            // Signal runtime changes explicitly so UIKit updates its mirrored coordinate surface.
+            collectionView.semanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
+        }
         for path in collectionView.indexPathsForVisibleItems {
             if let cell = collectionView.cellForItem(at: path) { renderCell(cell, path, context) }
         }
@@ -187,6 +198,10 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
             invalidation.invalidateFlowLayoutDelegateMetrics = true
             invalidation.invalidateFlowLayoutAttributes = true
             flow.invalidateLayout(with: invalidation)
+        } else if let compositional = collectionView.collectionViewLayout as? UICollectionViewCompositionalLayout {
+            // Reconfigure retains cells while requesting fresh self-sizing measurements.
+            collectionView.reconfigureItems(at: collectionView.indexPathsForVisibleItems)
+            compositional.invalidateLayout()
         } else {
             collectionView.collectionViewLayout.invalidateLayout()
         }
@@ -204,10 +219,16 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
                 if let id = state.anchorID, let path = indexPath(id), valid(path, in: collectionView),
                    !collectionView.isTracking && !collectionView.isDragging && !collectionView.isDecelerating {
                     restoreAnchor(path, distance: state.distanceFromLeadingEdge, in: collectionView)
+                } else if let fallbackOffset,
+                          !collectionView.isTracking && !collectionView.isDragging && !collectionView.isDecelerating {
+                    collectionView.setContentOffset(ListGeometry.clamp(fallbackOffset, in: collectionView), animated: false)
+                    collectionView.setNeedsLayout()
+                    collectionView.layoutIfNeeded()
                 }
             }
         }
         readingState = nil
+        fallbackOffset = nil
         needsMeasurement = false
     }
 

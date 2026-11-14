@@ -4,12 +4,12 @@
     "expectedFailures": 0,
     "failed": 0,
     "notRun": 0,
-    "passed": 10,
+    "passed": 12,
     "skipped": 0,
-    "total": 10
+    "total": 12
   },
-  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/A892C0F0-74E1-4DE3-8917-D37FC53EB1C1/RunSomeTests/test-console-log-2026-11-14T08-36-54+08-00.txt",
-  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/A892C0F0-74E1-4DE3-8917-D37FC53EB1C1/RunSomeTests/A3D17BF9-FD03-4DC8-BB4C-A5BA916F7DDA.txt",
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-14T09-16-08+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/84A0F902-87A6-42E0-8C7A-783B6EE0C2CA.txt",
   "results": [
     {
       "displayName": "testLanguageSwitchPreservesNavigationAndDraft()",
@@ -80,10 +80,24 @@
       "identifier": "LanguageTests/testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()",
       "state": "Passed",
       "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
     }
   ],
   "schemeName": "UIKitLanguageDemo",
-  "summary": "10 tests: 10 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
-  "totalResults": 10,
+  "summary": "12 tests: 12 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 12,
   "truncated": false
 }

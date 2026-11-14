@@ -7,6 +7,8 @@ final class HomeViewController: LocalizedViewController {
     private let splitButton = UIButton(type: .system)
     private let collectionButton = UIButton(type: .system)
     private let horizontalButton = UIButton(type: .system)
+    private let compositionalButton = UIButton(type: .system)
+    private let orthogonalButton = UIButton(type: .system)
     private let pageButton = UIButton(type: .system)
 
     override func buildUI() {
@@ -38,15 +40,35 @@ final class HomeViewController: LocalizedViewController {
         horizontalButton.addAction(UIAction { [weak self] _ in
             self?.navigationController?.pushViewController(CollectionDemoViewController(axis: .horizontal), animated: true)
         }, for: .touchUpInside)
-        let stack = UIStackView(arrangedSubviews: [heading, openButton, splitButton, pageButton, collectionButton, horizontalButton])
+        compositionalButton.configuration = .tinted()
+        compositionalButton.accessibilityIdentifier = "home.openCompositional"
+        compositionalButton.addAction(UIAction { [weak self] _ in
+            self?.navigationController?.pushViewController(CompositionalDemoViewController(), animated: true)
+        }, for: .touchUpInside)
+        orthogonalButton.configuration = .tinted()
+        orthogonalButton.accessibilityIdentifier = "home.openOrthogonal"
+        orthogonalButton.addAction(UIAction { [weak self] _ in
+            self?.navigationController?.pushViewController(CompositionalDemoViewController(mode: .orthogonal), animated: true)
+        }, for: .touchUpInside)
+        let stack = UIStackView(arrangedSubviews: [heading, openButton, splitButton, pageButton,
+            collectionButton, horizontalButton, compositionalButton, orthogonalButton])
         stack.axis = .vertical
         stack.spacing = 16
         stack.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(stack)
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(scrollView)
+        scrollView.addSubview(stack)
         NSLayoutConstraint.activate([
-            stack.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
-            stack.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
-            stack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 32)
+            scrollView.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            stack.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor),
+            stack.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor),
+            stack.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor, constant: 16),
+            stack.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor, constant: -16),
+            stack.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor)
         ])
     }
 
@@ -63,5 +85,7 @@ final class HomeViewController: LocalizedViewController {
         pageButton.setTitle(context.text("pages.title"), for: .normal)
         collectionButton.setTitle(context.text("collection.title"), for: .normal)
         horizontalButton.setTitle(context.text("collection.horizontal"), for: .normal)
+        compositionalButton.setTitle(context.text("compositional.title"), for: .normal)
+        orthogonalButton.setTitle(context.text("compositional.orthogonal"), for: .normal)
     }
 }

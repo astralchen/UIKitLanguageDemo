@@ -338,6 +338,103 @@ final class LanguageTests: XCTestCase {
         }
     }
 
+    @MainActor
+    func testCompositionalGridPreservesDraftSelectionAndReadingAnchor() throws {
+        let page = CompositionalDemoViewController()
+        let previous = UIViewController()
+        let navigation = UINavigationController(rootViewController: previous)
+        navigation.pushViewController(page, animated: false)
+        let fixture = try ContainerTestWindow(content: navigation)
+        defer { fixture.close() }
+        let collection = page.collectionView
+        let layout = collection.collectionViewLayout
+        XCTAssertTrue(layout is UICollectionViewCompositionalLayout)
+        let path = IndexPath(item: 30, section: 0)
+        collection.scrollToItem(at: path, at: .top, animated: false)
+        collection.layoutIfNeeded()
+        let first = try XCTUnwrap(collection.cellForItem(at: path) as? DemoCollectionCell)
+        first.localizedContent.draft.text = "compositional draft"
+        first.localizedContent.draft.sendActions(for: .editingChanged)
+        collection.selectItem(at: path, animated: false, scrollPosition: [])
+        let englishHeight = first.frame.height
+        let distance = first.frame.minY - collection.contentOffset.y - collection.adjustedContentInset.top
+        for language in [LanguageSelection.arabic, .simplifiedChinese, .english] {
+            LanguageService.shared.setSelection(language)
+            fixture.window.layoutIfNeeded()
+            let cell = try XCTUnwrap(collection.cellForItem(at: path) as? DemoCollectionCell)
+            XCTAssertEqual(cell.localizedContent.draft.text, "compositional draft")
+            XCTAssertEqual(cell.localizedContent.heading.text, LanguageService.shared.context.format("list.item", 31))
+            XCTAssertTrue(collection.indexPathsForSelectedItems?.contains(path) == true)
+            XCTAssertEqual(cell.frame.minY - collection.contentOffset.y - collection.adjustedContentInset.top, distance, accuracy: 2)
+            let other = try XCTUnwrap(collection.cellForItem(at: IndexPath(item: 31, section: 0)))
+            if LanguageService.shared.context.isRTL {
+                XCTAssertGreaterThan(cell.convert(cell.bounds, to: fixture.window).minX, other.convert(other.bounds, to: fixture.window).minX)
+                XCTAssertGreaterThan(cell.frame.height, englishHeight)
+            }
+            else { XCTAssertLessThan(cell.convert(cell.bounds, to: fixture.window).minX, other.convert(other.bounds, to: fixture.window).minX) }
+            XCTAssertTrue(collection.collectionViewLayout is UICollectionViewCompositionalLayout)
+            XCTAssertTrue(page.collectionView === collection)
+            XCTAssertTrue(navigation.topViewController === page)
+            XCTAssertTrue(navigation.viewControllers.first === previous)
+            XCTAssertEqual(navigation.viewControllers.count, 2)
+        }
+        collection.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: false)
+        collection.layoutIfNeeded()
+        collection.setContentOffset(CGPoint(x: 0, y: -collection.adjustedContentInset.top), animated: false)
+        collection.layoutIfNeeded()
+        let header = try XCTUnwrap(collection.visibleSupplementaryViews(ofKind: UICollectionView.elementKindSectionHeader).first as? DemoCollectionHeader)
+        XCTAssertEqual(header.label.text, LanguageService.shared.context.text("compositional.grid_section"))
+    }
+
+    @MainActor
+    func testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor() throws {
+        let page = CompositionalDemoViewController(mode: .orthogonal)
+        let fixture = try ContainerTestWindow(content: page)
+        defer { fixture.close() }
+        let collection = page.collectionView
+        let carouselPath = IndexPath(item: 12, section: 0)
+        collection.scrollToItem(at: carouselPath, at: .centeredHorizontally, animated: false)
+        collection.layoutIfNeeded()
+        let first = try XCTUnwrap(collection.cellForItem(at: carouselPath) as? DemoCollectionCell)
+        first.localizedContent.draft.text = "carousel draft"
+        first.localizedContent.draft.sendActions(for: .editingChanged)
+        collection.selectItem(at: carouselPath, animated: false, scrollPosition: [])
+        for language in [LanguageSelection.arabic, .simplifiedChinese, .english] {
+            LanguageService.shared.setSelection(language)
+            fixture.window.layoutIfNeeded()
+            let cell = try XCTUnwrap(collection.cellForItem(at: carouselPath) as? DemoCollectionCell)
+            let frame = cell.convert(cell.bounds, to: collection)
+            XCTAssertEqual(frame.midX, collection.bounds.midX, accuracy: 2)
+            let neighbor = try XCTUnwrap(collection.cellForItem(at: IndexPath(item: 13, section: 0)))
+            let nextX = neighbor.convert(neighbor.bounds, to: fixture.window).midX
+            let currentX = cell.convert(cell.bounds, to: fixture.window).midX
+            if LanguageService.shared.context.isRTL { XCTAssertLessThan(nextX, currentX) }
+            else { XCTAssertGreaterThan(nextX, currentX) }
+            XCTAssertEqual(page.orthogonalLocalization?.observedCenters[0], AnyHashable(12))
+            XCTAssertEqual(cell.localizedContent.draft.text, "carousel draft")
+            XCTAssertEqual(cell.localizedContent.heading.text, LanguageService.shared.context.format("list.item", 13))
+            XCTAssertTrue(collection.indexPathsForSelectedItems?.contains(carouselPath) == true)
+            XCTAssertEqual(collection.contentOffset.y, 0, accuracy: 2)
+            XCTAssertTrue(collection.collectionViewLayout is UICollectionViewCompositionalLayout)
+            XCTAssertTrue(page.collectionView === collection)
+        }
+        // A hidden orthogonal section must not pull the outer grid back to the top.
+        let gridPath = IndexPath(item: 30, section: 1)
+        collection.scrollToItem(at: gridPath, at: .top, animated: false)
+        collection.layoutIfNeeded()
+        let gridCell = try XCTUnwrap(collection.cellForItem(at: gridPath))
+        let distance = gridCell.frame.minY - collection.contentOffset.y - collection.adjustedContentInset.top
+        LanguageService.shared.setSelection(.arabic)
+        fixture.window.layoutIfNeeded()
+        let restored = try XCTUnwrap(collection.cellForItem(at: gridPath))
+        XCTAssertEqual(restored.frame.minY - collection.contentOffset.y - collection.adjustedContentInset.top, distance, accuracy: 2)
+        collection.setContentOffset(.zero, animated: false)
+        collection.layoutIfNeeded()
+        let returned = try XCTUnwrap(collection.cellForItem(at: carouselPath) as? DemoCollectionCell)
+        XCTAssertEqual(returned.convert(returned.bounds, to: collection).midX, collection.bounds.midX, accuracy: 2)
+        XCTAssertEqual(returned.localizedContent.draft.text, "carousel draft")
+    }
+
 }
 
 @MainActor

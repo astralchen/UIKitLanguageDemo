@@ -1,6 +1,6 @@
 # 签名修复与官方 MCP 验收
 
-> 六项签名验收为历史记录；列表扩展后的最新验收为官方 MCP RunSomeTests 10/10，见 verification/official-mcp-tests.json。
+> 六项签名验收为历史记录；列表扩展后的最新验收为官方 MCP RunSomeTests 12/12，见 verification/official-mcp-tests.json。
 
 2026-11-14（Asia/Shanghai）。
 

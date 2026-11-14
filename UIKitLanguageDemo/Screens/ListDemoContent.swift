@@ -114,8 +114,8 @@ final class DemoCollectionHeader: UICollectionReusableView {
         ])
     }
     required init?(coder: NSCoder) { fatalError("Use init(frame:)") }
-    func render(_ context: LanguageContext) {
-        label.text = context.text("list.section")
+    func render(_ context: LanguageContext, titleKey: String = "list.section") {
+        label.text = context.text(titleKey)
         label.textAlignment = context.isRTL ? .right : .left
         LayoutDirection.applyBoundary(context, to: self)
     }
