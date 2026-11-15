@@ -1,0 +1,59 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-15T15:47:51Z
+Total Results: 4
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/4
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
+TEST_DISPLAY_NAME: testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 347
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 2/4
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
+TEST_DISPLAY_NAME: testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 395
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 3/4
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: ScrollDirectionTests/testOwnedScrollBoundariesRefreshWithoutChangingIndicatorPolicyOrPagerEngine()
+TEST_DISPLAY_NAME: testOwnedScrollBoundariesRefreshWithoutChangingIndicatorPolicyOrPagerEngine()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/ScrollDirectionTests.swift
+TEST_LINE_NUMBER: 6
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 4/4
+TEST_TARGET: UIKitLanguageDemoUITests
+TEST_IDENTIFIER: ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()
+TEST_DISPLAY_NAME: testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift
+TEST_LINE_NUMBER: 35
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

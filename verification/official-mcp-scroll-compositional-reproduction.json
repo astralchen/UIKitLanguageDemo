@@ -1,0 +1,28 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 1,
+    "notRun": 0,
+    "passed": 0,
+    "skipped": 0,
+    "total": 1
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-15T23-28-43+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/53AA863F-8EFD-4B67-8A46-D21F1CCC31A7.txt",
+  "results": [
+    {
+      "displayName": "testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift:90 ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch(): XCTAssertLessThan failed: (\"395.0\") is not less than (\"201.0\") - RTL indicator should be on the physical left: (380.0, 369.66666666666674, 30.0, 421.3333333333336)"
+      ],
+      "identifier": "ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "1 tests: 0 passed, 1 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 1,
+  "truncated": false
+}

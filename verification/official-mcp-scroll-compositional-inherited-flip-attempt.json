@@ -1,0 +1,42 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 1,
+    "notRun": 0,
+    "passed": 2,
+    "skipped": 0,
+    "total": 3
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-15T23-30-47+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/72852408-2752-4349-AC42-BB3D946DBAF3.txt",
+  "results": [
+    {
+      "displayName": "testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift:90 ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch(): XCTAssertLessThan failed: (\"395.0\") is not less than (\"201.0\") - RTL indicator should be on the physical left: (380.0, 369.66666666666674, 30.0, 421.3333333333336)"
+      ],
+      "identifier": "ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "3 tests: 2 passed, 1 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 3,
+  "truncated": false
+}

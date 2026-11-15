@@ -1,0 +1,777 @@
+Test UIKitLanguageDemo
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (2.934 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+  2026-11-15 23:31:12.792552+0800 UIKitLanguageDemo[62102:1502288] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (4.763 seconds).
+  Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' started.
+      t =     0.05s Start Test at 2026-11-15 23:31:31.940
+      t =     0.37s Set Up
+      t =     0.41s Open com.example.UIKitLanguageDemo
+      t =     0.42s     Launch com.example.UIKitLanguageDemo
+      t =     1.38s         Setting up automation session
+      t =     9.24s         Wait for com.example.UIKitLanguageDemo to idle
+      t =    13.37s Waiting 20.0s for "home.openOrthogonal" Button to exist
+      t =    14.41s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openOrthogonal" Button`
+      t =    14.42s         Checking existence of `"home.openOrthogonal" Button`
+      t =    15.66s Tap "home.openOrthogonal" Button
+      t =    15.66s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    15.68s     Find the "home.openOrthogonal" Button
+      t =    16.29s     Check for interrupting elements affecting "home.openOrthogonal" Button
+      t =    16.79s     Synthesize event
+      t =    17.27s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    17.86s Waiting 10.0s for CollectionView (First Match) to exist
+      t =    18.89s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+      t =    18.89s         Checking existence of `CollectionView (First Match)`
+      t =    19.62s Find the "language.system" Button
+      t =    20.31s Tap "language.en" Button
+      t =    20.31s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    20.34s     Find the "language.en" Button
+      t =    20.99s     Check for interrupting elements affecting "language.en" Button
+      t =    21.58s     Synthesize event
+      t =    22.04s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    22.10s Swipe up CollectionView (First Match)
+      t =    22.10s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    22.33s     Find the CollectionView (First Match)
+      t =    22.81s     Check for interrupting elements affecting CollectionView
+      t =    23.48s     Synthesize event
+      t =    24.36s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    26.60s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+      t =    27.44s Find the Any (Element at index 0)
+      t =    28.27s Find the "垂直滚动条, 21页" Other
+      t =    29.04s Find the "垂直滚动条, 21页" Other
+      t =    29.75s Find the "垂直滚动条, 21页" Other
+      t =    30.42s Find the "垂直滚动条, 21页" Other
+      t =    31.17s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+      t =    31.65s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+      t =    32.08s Find the "垂直滚动条, 21页" Other
+      t =    32.73s Added attachment named 'Scroll indicator geometry en'
+      t =    32.73s Find the Target Application 'com.example.UIKitLanguageDemo'
+      t =    33.80s Added attachment named 'Scroll indicator en'
+      t =    33.82s Tap "language.ar" Button
+      t =    33.82s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    33.85s     Find the "language.ar" Button
+      t =    34.70s     Check for interrupting elements affecting "language.ar" Button
+      t =    35.51s     Synthesize event
+      t =    36.01s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    36.61s Swipe up CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+      t =    36.62s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    36.79s     Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+      t =    37.28s     Check for interrupting elements affecting CollectionView
+      t =    37.92s     Synthesize event
+      t =    38.72s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    40.88s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+      t =    41.52s Find the Any (Element at index 0)
+      t =    42.10s Find the "垂直滚动条, 24页" Other
+      t =    42.67s Find the "垂直滚动条, 24页" Other
+      t =    43.31s Find the "垂直滚动条, 24页" Other
+      t =    43.90s Find the "垂直滚动条, 24页" Other
+      t =    44.50s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift:90: error: -[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch] : XCTAssertLessThan failed: ("395.0") is not less than ("201.0") - RTL indicator should be on the physical left: (380.0, 369.66666666666674, 30.0, 421.3333333333336)
+      t =    45.08s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+      t =    45.45s Find the "垂直滚动条, 24页" Other
+      t =    45.95s Added attachment named 'Scroll indicator geometry ar'
+      t =    45.95s Find the Target Application 'com.example.UIKitLanguageDemo'
+      t =    47.20s Added attachment named 'Scroll indicator ar'
+      t =    47.21s Tap "language.system" Button
+      t =    47.22s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    47.24s     Find the "language.system" Button
+      t =    48.31s     Check for interrupting elements affecting "language.system" Button
+      t =    48.97s     Synthesize event
+      t =    49.47s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    49.90s Tear Down
+  Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' failed (50.205 seconds).
+
+  Launch actions
+    Launch UIKitLanguageDemoTests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoTests
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoTests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemoUITests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoUITests
+        notice:Launching com.example.UIKitLanguageDemoUITests.xctrunner
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoUITests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+  Generating coverage report
+    notice:Unable to load coverage tools for toolchain 'com.apple.dt.toolchain.Metal.32023.883': Error Domain=XCTHLLVMCoverageToolsErrorDomain Code=2 "libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain" UserInfo={NSLocalizedDescription=libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain}
+  
+    Downloading profiles from iPhone 17 Pro
+      notice:Downloading profiles for com.example.UIKitLanguageDemo from 2 directories
+      notice:Downloading profiles for com.example.UIKitLanguageDemoUITests.xctrunner from 1 directory
+    
+    Merging 3 profiles using llvm-profdata (2100.1.1.101.0)
+    
+    Pre-processing target built products
+    
+    Processing source file data
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Appearance/AppearanceService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/LanguagePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/AppDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Appearance/AppearancePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneWindowService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/OrthogonalLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneStateCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ContainerDemos.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LayoutDirection.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/TextInputSnapshot.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/AppText.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedControllers.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/DetailViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageContext.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CollectionDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ListDemoContent.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/AppearanceTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneState.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListStateRestoration.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/SceneDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/HomeViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/ScrollDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/SettingsViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift
+      
+    Generating target entries
+      notice:Generating entry for target UIKitLanguageDemo.app
+      notice:Generating entry for target UIKitLanguageDemoTests.xctest
+      notice:Generating entry for target UIKitLanguageDemoUITests.xctest
+    
+  Testing Configuration 1
+    Test target UIKitLanguageDemoTests
+      UIKitLanguageDemo (62102)
+        Test Suite 'Selected tests' started at 2026-11-15 23:31:09.568.
+        Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-15 23:31:09.571.
+        Test Suite 'LanguageTests' started at 2026-11-15 23:31:09.574.
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (2.934 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+        2026-11-15 23:31:12.792552+0800 UIKitLanguageDemo[62102:1502288] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (4.763 seconds).
+        Test Suite 'LanguageTests' passed at 2026-11-15 23:31:17.280.
+        	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.706) seconds
+        Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-15 23:31:17.282.
+        	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.711) seconds
+        Test Suite 'Selected tests' passed at 2026-11-15 23:31:17.284.
+        	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.715) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.15_23-30-47-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-0064E4C0-5929-48AF-A7B0-B0A56810BB26-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-616AFF5D-1648-4A7D-B4C7-9B6C3E80C157/Session-UIKitLanguageDemoTests-2026-11-15_233101-XdaMiy.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.15_23-30-47-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-0064E4C0-5929-48AF-A7B0-B0A56810BB26-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-616AFF5D-1648-4A7D-B4C7-9B6C3E80C157/Session-UIKitLanguageDemoTests-2026-11-15_233101-XdaMiy.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' passed at 2026-11-15 23:31:17.284.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.715) seconds
+
+          Test Suite 'Selected tests' started at 2026-11-15 23:31:09.568.
+          Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-15 23:31:09.571.
+          Test Suite 'LanguageTests' started at 2026-11-15 23:31:09.574.
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (2.934 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+          2026-11-15 23:31:12.792552+0800 UIKitLanguageDemo[62102:1502288] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (4.763 seconds).
+          Test Suite 'LanguageTests' passed at 2026-11-15 23:31:17.280.
+          	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.706) seconds
+          Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-15 23:31:17.282.
+          	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.711) seconds
+          Test Suite 'Selected tests' passed at 2026-11-15 23:31:17.284.
+          	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.715) seconds
+        
+          Run test suite UIKitLanguageDemoTests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-15 23:31:17.282.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.711) seconds
+
+            Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-15 23:31:09.571.
+            Test Suite 'LanguageTests' started at 2026-11-15 23:31:09.574.
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (2.934 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+            2026-11-15 23:31:12.792552+0800 UIKitLanguageDemo[62102:1502288] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (4.763 seconds).
+            Test Suite 'LanguageTests' passed at 2026-11-15 23:31:17.280.
+            	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.706) seconds
+            Test Suite 'UIKitLanguageDemoTests.xctest' passed at 2026-11-15 23:31:17.282.
+            	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.711) seconds
+          
+            Run test suite LanguageTests
+              Summary: Test Suite 'LanguageTests' passed at 2026-11-15 23:31:17.280.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.706) seconds
+
+              Test Suite 'LanguageTests' started at 2026-11-15 23:31:09.574.
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (2.934 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+              2026-11-15 23:31:12.792552+0800 UIKitLanguageDemo[62102:1502288] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (4.763 seconds).
+              Test Suite 'LanguageTests' passed at 2026-11-15 23:31:17.280.
+              	 Executed 2 tests, with 0 failures (0 unexpected) in 7.697 (7.706) seconds
+            
+              Run test case testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (2.934 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' passed (2.934 seconds).
+              
+              Run test case testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
+                Summary: 2026-11-15 23:31:12.792552+0800 UIKitLanguageDemo[62102:1502288] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (4.763 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+                2026-11-15 23:31:12.792552+0800 UIKitLanguageDemo[62102:1502288] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' passed (4.763 seconds).
+              
+    Test target UIKitLanguageDemoUITests
+      UIKitLanguageDemoUITests-Runner (62121)
+        2026-11-15 23:31:23.723664+0800 UIKitLanguageDemoUITests-Runner[62121:1503092] [Default] Running tests...
+            t =      nans Interface orientation changed to Portrait
+        Test Suite 'Selected tests' started at 2026-11-15 23:31:31.880.
+        Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-15 23:31:31.888.
+        Test Suite 'ScrollIndicatorUITests' started at 2026-11-15 23:31:31.890.
+        Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' started.
+            t =     0.05s Start Test at 2026-11-15 23:31:31.940
+            t =     0.37s Set Up
+            t =     0.41s Open com.example.UIKitLanguageDemo
+            t =     0.42s     Launch com.example.UIKitLanguageDemo
+            t =     1.38s         Setting up automation session
+            t =     9.24s         Wait for com.example.UIKitLanguageDemo to idle
+            t =    13.37s Waiting 20.0s for "home.openOrthogonal" Button to exist
+            t =    14.41s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openOrthogonal" Button`
+            t =    14.42s         Checking existence of `"home.openOrthogonal" Button`
+            t =    15.66s Tap "home.openOrthogonal" Button
+            t =    15.66s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    15.68s     Find the "home.openOrthogonal" Button
+            t =    16.29s     Check for interrupting elements affecting "home.openOrthogonal" Button
+            t =    16.79s     Synthesize event
+            t =    17.27s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    17.86s Waiting 10.0s for CollectionView (First Match) to exist
+            t =    18.89s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+            t =    18.89s         Checking existence of `CollectionView (First Match)`
+            t =    19.62s Find the "language.system" Button
+            t =    20.31s Tap "language.en" Button
+            t =    20.31s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    20.34s     Find the "language.en" Button
+            t =    20.99s     Check for interrupting elements affecting "language.en" Button
+            t =    21.58s     Synthesize event
+            t =    22.04s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    22.10s Swipe up CollectionView (First Match)
+            t =    22.10s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    22.33s     Find the CollectionView (First Match)
+            t =    22.81s     Check for interrupting elements affecting CollectionView
+            t =    23.48s     Synthesize event
+            t =    24.36s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    26.60s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+            t =    27.44s Find the Any (Element at index 0)
+            t =    28.27s Find the "垂直滚动条, 21页" Other
+            t =    29.04s Find the "垂直滚动条, 21页" Other
+            t =    29.75s Find the "垂直滚动条, 21页" Other
+            t =    30.42s Find the "垂直滚动条, 21页" Other
+            t =    31.17s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+            t =    31.65s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+            t =    32.08s Find the "垂直滚动条, 21页" Other
+            t =    32.73s Added attachment named 'Scroll indicator geometry en'
+            t =    32.73s Find the Target Application 'com.example.UIKitLanguageDemo'
+            t =    33.80s Added attachment named 'Scroll indicator en'
+            t =    33.82s Tap "language.ar" Button
+            t =    33.82s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    33.85s     Find the "language.ar" Button
+            t =    34.70s     Check for interrupting elements affecting "language.ar" Button
+            t =    35.51s     Synthesize event
+            t =    36.01s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    36.61s Swipe up CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+            t =    36.62s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    36.79s     Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+            t =    37.28s     Check for interrupting elements affecting CollectionView
+            t =    37.92s     Synthesize event
+            t =    38.72s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    40.88s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+            t =    41.52s Find the Any (Element at index 0)
+            t =    42.10s Find the "垂直滚动条, 24页" Other
+            t =    42.67s Find the "垂直滚动条, 24页" Other
+            t =    43.31s Find the "垂直滚动条, 24页" Other
+            t =    43.90s Find the "垂直滚动条, 24页" Other
+            t =    44.50s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift:90: error: -[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch] : XCTAssertLessThan failed: ("395.0") is not less than ("201.0") - RTL indicator should be on the physical left: (380.0, 369.66666666666674, 30.0, 421.3333333333336)
+            t =    45.08s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+            t =    45.45s Find the "垂直滚动条, 24页" Other
+            t =    45.95s Added attachment named 'Scroll indicator geometry ar'
+            t =    45.95s Find the Target Application 'com.example.UIKitLanguageDemo'
+            t =    47.20s Added attachment named 'Scroll indicator ar'
+            t =    47.21s Tap "language.system" Button
+            t =    47.22s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    47.24s     Find the "language.system" Button
+            t =    48.31s     Check for interrupting elements affecting "language.system" Button
+            t =    48.97s     Synthesize event
+            t =    49.47s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    49.90s Tear Down
+        Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' failed (50.205 seconds).
+        Test Suite 'ScrollIndicatorUITests' failed at 2026-11-15 23:32:22.141.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.251) seconds
+        Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-15 23:32:22.143.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.255) seconds
+        Test Suite 'Selected tests' failed at 2026-11-15 23:32:22.145.
+        	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.264) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.15_23-30-47-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-29E26439-5C85-4066-81CE-6B7849618337-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-E04E0786-01BD-4D79-AAD1-2CF128338953/Session-UIKitLanguageDemoUITests-2026-11-15_233117-Hl2pre.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.15_23-30-47-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-29E26439-5C85-4066-81CE-6B7849618337-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-E04E0786-01BD-4D79-AAD1-2CF128338953/Session-UIKitLanguageDemoUITests-2026-11-15_233117-Hl2pre.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' failed at 2026-11-15 23:32:22.145.
+	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.264) seconds
+
+          2026-11-15 23:31:23.723664+0800 UIKitLanguageDemoUITests-Runner[62121:1503092] [Default] Running tests...
+              t =      nans Interface orientation changed to Portrait
+          Test Suite 'Selected tests' started at 2026-11-15 23:31:31.880.
+          Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-15 23:31:31.888.
+          Test Suite 'ScrollIndicatorUITests' started at 2026-11-15 23:31:31.890.
+          Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' started.
+              t =     0.05s Start Test at 2026-11-15 23:31:31.940
+              t =     0.37s Set Up
+              t =     0.41s Open com.example.UIKitLanguageDemo
+              t =     0.42s     Launch com.example.UIKitLanguageDemo
+              t =     1.38s         Setting up automation session
+              t =     9.24s         Wait for com.example.UIKitLanguageDemo to idle
+              t =    13.37s Waiting 20.0s for "home.openOrthogonal" Button to exist
+              t =    14.41s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openOrthogonal" Button`
+              t =    14.42s         Checking existence of `"home.openOrthogonal" Button`
+              t =    15.66s Tap "home.openOrthogonal" Button
+              t =    15.66s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    15.68s     Find the "home.openOrthogonal" Button
+              t =    16.29s     Check for interrupting elements affecting "home.openOrthogonal" Button
+              t =    16.79s     Synthesize event
+              t =    17.27s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    17.86s Waiting 10.0s for CollectionView (First Match) to exist
+              t =    18.89s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+              t =    18.89s         Checking existence of `CollectionView (First Match)`
+              t =    19.62s Find the "language.system" Button
+              t =    20.31s Tap "language.en" Button
+              t =    20.31s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    20.34s     Find the "language.en" Button
+              t =    20.99s     Check for interrupting elements affecting "language.en" Button
+              t =    21.58s     Synthesize event
+              t =    22.04s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    22.10s Swipe up CollectionView (First Match)
+              t =    22.10s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    22.33s     Find the CollectionView (First Match)
+              t =    22.81s     Check for interrupting elements affecting CollectionView
+              t =    23.48s     Synthesize event
+              t =    24.36s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    26.60s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+              t =    27.44s Find the Any (Element at index 0)
+              t =    28.27s Find the "垂直滚动条, 21页" Other
+              t =    29.04s Find the "垂直滚动条, 21页" Other
+              t =    29.75s Find the "垂直滚动条, 21页" Other
+              t =    30.42s Find the "垂直滚动条, 21页" Other
+              t =    31.17s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+              t =    31.65s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+              t =    32.08s Find the "垂直滚动条, 21页" Other
+              t =    32.73s Added attachment named 'Scroll indicator geometry en'
+              t =    32.73s Find the Target Application 'com.example.UIKitLanguageDemo'
+              t =    33.80s Added attachment named 'Scroll indicator en'
+              t =    33.82s Tap "language.ar" Button
+              t =    33.82s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    33.85s     Find the "language.ar" Button
+              t =    34.70s     Check for interrupting elements affecting "language.ar" Button
+              t =    35.51s     Synthesize event
+              t =    36.01s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    36.61s Swipe up CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+              t =    36.62s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    36.79s     Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+              t =    37.28s     Check for interrupting elements affecting CollectionView
+              t =    37.92s     Synthesize event
+              t =    38.72s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    40.88s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+              t =    41.52s Find the Any (Element at index 0)
+              t =    42.10s Find the "垂直滚动条, 24页" Other
+              t =    42.67s Find the "垂直滚动条, 24页" Other
+              t =    43.31s Find the "垂直滚动条, 24页" Other
+              t =    43.90s Find the "垂直滚动条, 24页" Other
+              t =    44.50s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift:90: error: -[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch] : XCTAssertLessThan failed: ("395.0") is not less than ("201.0") - RTL indicator should be on the physical left: (380.0, 369.66666666666674, 30.0, 421.3333333333336)
+              t =    45.08s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+              t =    45.45s Find the "垂直滚动条, 24页" Other
+              t =    45.95s Added attachment named 'Scroll indicator geometry ar'
+              t =    45.95s Find the Target Application 'com.example.UIKitLanguageDemo'
+              t =    47.20s Added attachment named 'Scroll indicator ar'
+              t =    47.21s Tap "language.system" Button
+              t =    47.22s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    47.24s     Find the "language.system" Button
+              t =    48.31s     Check for interrupting elements affecting "language.system" Button
+              t =    48.97s     Synthesize event
+              t =    49.47s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    49.90s Tear Down
+          Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' failed (50.205 seconds).
+          Test Suite 'ScrollIndicatorUITests' failed at 2026-11-15 23:32:22.141.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.251) seconds
+          Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-15 23:32:22.143.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.255) seconds
+          Test Suite 'Selected tests' failed at 2026-11-15 23:32:22.145.
+          	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.264) seconds
+        
+          Run test suite UIKitLanguageDemoUITests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-15 23:32:22.143.
+	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.255) seconds
+
+            Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-15 23:31:31.888.
+            Test Suite 'ScrollIndicatorUITests' started at 2026-11-15 23:31:31.890.
+            Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' started.
+                t =     0.05s Start Test at 2026-11-15 23:31:31.940
+                t =     0.37s Set Up
+                t =     0.41s Open com.example.UIKitLanguageDemo
+                t =     0.42s     Launch com.example.UIKitLanguageDemo
+                t =     1.38s         Setting up automation session
+                t =     9.24s         Wait for com.example.UIKitLanguageDemo to idle
+                t =    13.37s Waiting 20.0s for "home.openOrthogonal" Button to exist
+                t =    14.41s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openOrthogonal" Button`
+                t =    14.42s         Checking existence of `"home.openOrthogonal" Button`
+                t =    15.66s Tap "home.openOrthogonal" Button
+                t =    15.66s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    15.68s     Find the "home.openOrthogonal" Button
+                t =    16.29s     Check for interrupting elements affecting "home.openOrthogonal" Button
+                t =    16.79s     Synthesize event
+                t =    17.27s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    17.86s Waiting 10.0s for CollectionView (First Match) to exist
+                t =    18.89s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+                t =    18.89s         Checking existence of `CollectionView (First Match)`
+                t =    19.62s Find the "language.system" Button
+                t =    20.31s Tap "language.en" Button
+                t =    20.31s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    20.34s     Find the "language.en" Button
+                t =    20.99s     Check for interrupting elements affecting "language.en" Button
+                t =    21.58s     Synthesize event
+                t =    22.04s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    22.10s Swipe up CollectionView (First Match)
+                t =    22.10s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    22.33s     Find the CollectionView (First Match)
+                t =    22.81s     Check for interrupting elements affecting CollectionView
+                t =    23.48s     Synthesize event
+                t =    24.36s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    26.60s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                t =    27.44s Find the Any (Element at index 0)
+                t =    28.27s Find the "垂直滚动条, 21页" Other
+                t =    29.04s Find the "垂直滚动条, 21页" Other
+                t =    29.75s Find the "垂直滚动条, 21页" Other
+                t =    30.42s Find the "垂直滚动条, 21页" Other
+                t =    31.17s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                t =    31.65s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                t =    32.08s Find the "垂直滚动条, 21页" Other
+                t =    32.73s Added attachment named 'Scroll indicator geometry en'
+                t =    32.73s Find the Target Application 'com.example.UIKitLanguageDemo'
+                t =    33.80s Added attachment named 'Scroll indicator en'
+                t =    33.82s Tap "language.ar" Button
+                t =    33.82s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    33.85s     Find the "language.ar" Button
+                t =    34.70s     Check for interrupting elements affecting "language.ar" Button
+                t =    35.51s     Synthesize event
+                t =    36.01s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    36.61s Swipe up CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                t =    36.62s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    36.79s     Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                t =    37.28s     Check for interrupting elements affecting CollectionView
+                t =    37.92s     Synthesize event
+                t =    38.72s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    40.88s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                t =    41.52s Find the Any (Element at index 0)
+                t =    42.10s Find the "垂直滚动条, 24页" Other
+                t =    42.67s Find the "垂直滚动条, 24页" Other
+                t =    43.31s Find the "垂直滚动条, 24页" Other
+                t =    43.90s Find the "垂直滚动条, 24页" Other
+                t =    44.50s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift:90: error: -[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch] : XCTAssertLessThan failed: ("395.0") is not less than ("201.0") - RTL indicator should be on the physical left: (380.0, 369.66666666666674, 30.0, 421.3333333333336)
+                t =    45.08s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                t =    45.45s Find the "垂直滚动条, 24页" Other
+                t =    45.95s Added attachment named 'Scroll indicator geometry ar'
+                t =    45.95s Find the Target Application 'com.example.UIKitLanguageDemo'
+                t =    47.20s Added attachment named 'Scroll indicator ar'
+                t =    47.21s Tap "language.system" Button
+                t =    47.22s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    47.24s     Find the "language.system" Button
+                t =    48.31s     Check for interrupting elements affecting "language.system" Button
+                t =    48.97s     Synthesize event
+                t =    49.47s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    49.90s Tear Down
+            Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' failed (50.205 seconds).
+            Test Suite 'ScrollIndicatorUITests' failed at 2026-11-15 23:32:22.141.
+            	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.251) seconds
+            Test Suite 'UIKitLanguageDemoUITests.xctest' failed at 2026-11-15 23:32:22.143.
+            	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.255) seconds
+          
+            Run test suite ScrollIndicatorUITests
+              Summary: Test Suite 'ScrollIndicatorUITests' failed at 2026-11-15 23:32:22.141.
+	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.251) seconds
+
+              Test Suite 'ScrollIndicatorUITests' started at 2026-11-15 23:31:31.890.
+              Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' started.
+                  t =     0.05s Start Test at 2026-11-15 23:31:31.940
+                  t =     0.37s Set Up
+                  t =     0.41s Open com.example.UIKitLanguageDemo
+                  t =     0.42s     Launch com.example.UIKitLanguageDemo
+                  t =     1.38s         Setting up automation session
+                  t =     9.24s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =    13.37s Waiting 20.0s for "home.openOrthogonal" Button to exist
+                  t =    14.41s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openOrthogonal" Button`
+                  t =    14.42s         Checking existence of `"home.openOrthogonal" Button`
+                  t =    15.66s Tap "home.openOrthogonal" Button
+                  t =    15.66s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    15.68s     Find the "home.openOrthogonal" Button
+                  t =    16.29s     Check for interrupting elements affecting "home.openOrthogonal" Button
+                  t =    16.79s     Synthesize event
+                  t =    17.27s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    17.86s Waiting 10.0s for CollectionView (First Match) to exist
+                  t =    18.89s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+                  t =    18.89s         Checking existence of `CollectionView (First Match)`
+                  t =    19.62s Find the "language.system" Button
+                  t =    20.31s Tap "language.en" Button
+                  t =    20.31s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    20.34s     Find the "language.en" Button
+                  t =    20.99s     Check for interrupting elements affecting "language.en" Button
+                  t =    21.58s     Synthesize event
+                  t =    22.04s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    22.10s Swipe up CollectionView (First Match)
+                  t =    22.10s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    22.33s     Find the CollectionView (First Match)
+                  t =    22.81s     Check for interrupting elements affecting CollectionView
+                  t =    23.48s     Synthesize event
+                  t =    24.36s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    26.60s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                  t =    27.44s Find the Any (Element at index 0)
+                  t =    28.27s Find the "垂直滚动条, 21页" Other
+                  t =    29.04s Find the "垂直滚动条, 21页" Other
+                  t =    29.75s Find the "垂直滚动条, 21页" Other
+                  t =    30.42s Find the "垂直滚动条, 21页" Other
+                  t =    31.17s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                  t =    31.65s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                  t =    32.08s Find the "垂直滚动条, 21页" Other
+                  t =    32.73s Added attachment named 'Scroll indicator geometry en'
+                  t =    32.73s Find the Target Application 'com.example.UIKitLanguageDemo'
+                  t =    33.80s Added attachment named 'Scroll indicator en'
+                  t =    33.82s Tap "language.ar" Button
+                  t =    33.82s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    33.85s     Find the "language.ar" Button
+                  t =    34.70s     Check for interrupting elements affecting "language.ar" Button
+                  t =    35.51s     Synthesize event
+                  t =    36.01s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    36.61s Swipe up CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                  t =    36.62s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    36.79s     Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                  t =    37.28s     Check for interrupting elements affecting CollectionView
+                  t =    37.92s     Synthesize event
+                  t =    38.72s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    40.88s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                  t =    41.52s Find the Any (Element at index 0)
+                  t =    42.10s Find the "垂直滚动条, 24页" Other
+                  t =    42.67s Find the "垂直滚动条, 24页" Other
+                  t =    43.31s Find the "垂直滚动条, 24页" Other
+                  t =    43.90s Find the "垂直滚动条, 24页" Other
+                  t =    44.50s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift:90: error: -[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch] : XCTAssertLessThan failed: ("395.0") is not less than ("201.0") - RTL indicator should be on the physical left: (380.0, 369.66666666666674, 30.0, 421.3333333333336)
+                  t =    45.08s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                  t =    45.45s Find the "垂直滚动条, 24页" Other
+                  t =    45.95s Added attachment named 'Scroll indicator geometry ar'
+                  t =    45.95s Find the Target Application 'com.example.UIKitLanguageDemo'
+                  t =    47.20s Added attachment named 'Scroll indicator ar'
+                  t =    47.21s Tap "language.system" Button
+                  t =    47.22s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    47.24s     Find the "language.system" Button
+                  t =    48.31s     Check for interrupting elements affecting "language.system" Button
+                  t =    48.97s     Synthesize event
+                  t =    49.47s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    49.90s Tear Down
+              Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' failed (50.205 seconds).
+              Test Suite 'ScrollIndicatorUITests' failed at 2026-11-15 23:32:22.141.
+              	 Executed 1 test, with 1 failure (0 unexpected) in 50.205 (50.251) seconds
+            
+              Run test case testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()
+                Summary:     t =    45.08s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+    t =    45.45s Find the "垂直滚动条, 24页" Other
+    t =    45.95s Added attachment named 'Scroll indicator geometry ar'
+    t =    45.95s Find the Target Application 'com.example.UIKitLanguageDemo'
+    t =    47.20s Added attachment named 'Scroll indicator ar'
+    t =    47.21s Tap "language.system" Button
+    t =    47.22s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    47.24s     Find the "language.system" Button
+    t =    48.31s     Check for interrupting elements affecting "language.system" Button
+    t =    48.97s     Synthesize event
+    t =    49.47s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    49.90s Tear Down
+Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' failed (50.205 seconds).
+
+                Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' started.
+                    t =     0.05s Start Test at 2026-11-15 23:31:31.940
+                    t =     0.37s Set Up
+                    t =     0.41s Open com.example.UIKitLanguageDemo
+                    t =     0.42s     Launch com.example.UIKitLanguageDemo
+                    t =     1.38s         Setting up automation session
+                    t =     9.24s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =    13.37s Waiting 20.0s for "home.openOrthogonal" Button to exist
+                    t =    14.41s     Checking `Expect predicate `existsNoRetry == 1` for object "home.openOrthogonal" Button`
+                    t =    14.42s         Checking existence of `"home.openOrthogonal" Button`
+                    t =    15.66s Tap "home.openOrthogonal" Button
+                    t =    15.66s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    15.68s     Find the "home.openOrthogonal" Button
+                    t =    16.29s     Check for interrupting elements affecting "home.openOrthogonal" Button
+                    t =    16.79s     Synthesize event
+                    t =    17.27s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    17.86s Waiting 10.0s for CollectionView (First Match) to exist
+                    t =    18.89s     Checking `Expect predicate `existsNoRetry == 1` for object CollectionView (First Match)`
+                    t =    18.89s         Checking existence of `CollectionView (First Match)`
+                    t =    19.62s Find the "language.system" Button
+                    t =    20.31s Tap "language.en" Button
+                    t =    20.31s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    20.34s     Find the "language.en" Button
+                    t =    20.99s     Check for interrupting elements affecting "language.en" Button
+                    t =    21.58s     Synthesize event
+                    t =    22.04s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    22.10s Swipe up CollectionView (First Match)
+                    t =    22.10s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    22.33s     Find the CollectionView (First Match)
+                    t =    22.81s     Check for interrupting elements affecting CollectionView
+                    t =    23.48s     Synthesize event
+                    t =    24.36s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    26.60s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                    t =    27.44s Find the Any (Element at index 0)
+                    t =    28.27s Find the "垂直滚动条, 21页" Other
+                    t =    29.04s Find the "垂直滚动条, 21页" Other
+                    t =    29.75s Find the "垂直滚动条, 21页" Other
+                    t =    30.42s Find the "垂直滚动条, 21页" Other
+                    t =    31.17s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                    t =    31.65s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                    t =    32.08s Find the "垂直滚动条, 21页" Other
+                    t =    32.73s Added attachment named 'Scroll indicator geometry en'
+                    t =    32.73s Find the Target Application 'com.example.UIKitLanguageDemo'
+                    t =    33.80s Added attachment named 'Scroll indicator en'
+                    t =    33.82s Tap "language.ar" Button
+                    t =    33.82s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    33.85s     Find the "language.ar" Button
+                    t =    34.70s     Check for interrupting elements affecting "language.ar" Button
+                    t =    35.51s     Synthesize event
+                    t =    36.01s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    36.61s Swipe up CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                    t =    36.62s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    36.79s     Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                    t =    37.28s     Check for interrupting elements affecting CollectionView
+                    t =    37.92s     Synthesize event
+                    t =    38.72s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    40.88s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                    t =    41.52s Find the Any (Element at index 0)
+                    t =    42.10s Find the "垂直滚动条, 24页" Other
+                    t =    42.67s Find the "垂直滚动条, 24页" Other
+                    t =    43.31s Find the "垂直滚动条, 24页" Other
+                    t =    43.90s Find the "垂直滚动条, 24页" Other
+                    t =    44.50s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift:90: error: -[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch] : XCTAssertLessThan failed: ("395.0") is not less than ("201.0") - RTL indicator should be on the physical left: (380.0, 369.66666666666674, 30.0, 421.3333333333336)
+                    t =    45.08s Find the CollectionView at {{16.0, 369.7}, {370.0, 421.3}}
+                    t =    45.45s Find the "垂直滚动条, 24页" Other
+                    t =    45.95s Added attachment named 'Scroll indicator geometry ar'
+                    t =    45.95s Find the Target Application 'com.example.UIKitLanguageDemo'
+                    t =    47.20s Added attachment named 'Scroll indicator ar'
+                    t =    47.21s Tap "language.system" Button
+                    t =    47.22s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    47.24s     Find the "language.system" Button
+                    t =    48.31s     Check for interrupting elements affecting "language.system" Button
+                    t =    48.97s     Synthesize event
+                    t =    49.47s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    49.90s Tear Down
+                Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testCompositionalOrthogonalOuterIndicatorAfterHotSwitch]' failed (50.205 seconds).
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift:test failure:XCTAssertLessThan failed: ("395.0") is not less than ("201.0") - RTL indicator should be on the physical left: (380.0, 369.66666666666674, 30.0, 421.3333333333336)
+              
+** TEST FINISHED **

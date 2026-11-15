@@ -34,13 +34,24 @@ final class ScrollDirectionTests: XCTestCase {
         let engine = try XCTUnwrap(pager.children.compactMap { $0 as? UIPageViewController }.first)
         for choice in [LanguageSelection.arabic, .english, .simplifiedChinese, .arabic] {
             service.setSelection(choice)
+            for page in pages { page.view.setNeedsLayout(); page.view.layoutIfNeeded() }
             for scroll in scrolls {
                 XCTAssertEqual(scroll.semanticContentAttribute, service.context.isRTL ? .forceRightToLeft : .forceLeftToRight)
                 XCTAssertFalse(scroll.showsVerticalScrollIndicator)
                 XCTAssertFalse(scroll.showsHorizontalScrollIndicator)
                 XCTAssertEqual(scroll.indicatorStyle, .white)
                 XCTAssertFalse(scroll.automaticallyAdjustsScrollIndicatorInsets)
-                XCTAssertEqual(scroll.verticalScrollIndicatorInsets, customInsets)
+                if let collection = scroll as? UICollectionView,
+                   collection.collectionViewLayout is UICollectionViewCompositionalLayout {
+                    // This demo owns the left inset to compensate its mirrored
+                    // indicator track. Other caller-supplied edges are retained.
+                    XCTAssertEqual(scroll.verticalScrollIndicatorInsets.top, customInsets.top)
+                    XCTAssertEqual(scroll.verticalScrollIndicatorInsets.bottom, customInsets.bottom)
+                    XCTAssertEqual(scroll.verticalScrollIndicatorInsets.right, customInsets.right)
+                    XCTAssertGreaterThanOrEqual(scroll.verticalScrollIndicatorInsets.left, 0)
+                } else {
+                    XCTAssertEqual(scroll.verticalScrollIndicatorInsets, customInsets)
+                }
                 XCTAssertEqual(scroll.transform, .identity)
             }
             XCTAssertEqual(engine.view.semanticContentAttribute, .forceLeftToRight)

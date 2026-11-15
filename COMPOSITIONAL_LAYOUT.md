@@ -53,3 +53,11 @@ Cell 创建和 willDisplay 始终读取最新 context；Header 也在创建、wi
 ## 系统语言重启恢复
 
 新增 `NSUserActivity` 桥接：保存稳定业务项、相对阅读距离、选择、草稿；正交分区还保存中心业务项 ID。重启后的新列表在进入窗口并完成测量后应用 pending 状态。接入和已测范围见 [STATE_RESTORATION.md](STATE_RESTORATION.md)。
+
+## 原生竖向滚动指示器
+
+保留前述内容坐标与 RTL 规则。组合布局的原生竖向指示器在 RTL 下仍可能出现在物理右侧，本工程已在横向分区页通过 UI 测试复现。不要仅关闭 flipsHorizontallyInOppositeLayoutDirection 或强制 CollectionView 为 LTR：前者未修复指示器，后者破坏业务卡片 RTL 顺序。
+
+页面在 viewDidLayoutSubviews 使用公开的 verticalScrollIndicatorInsets.left 做非负视口宽度补偿，预留边缘间距；RTL 移到左侧，LTR 恢复零补偿，窗口尺寸改变后重新计算。该页面拥有左侧指示器边距，保留其它边距、样式、显示策略与 UIKit 原生指示器交互。水平指示器及内部正交滚动容器不修改。普通 Flow／Table 不应用此补偿。
+
+最终官方 MCP 四项定向回归通过，含原生位置、网格与正交中心业务页／外层锚点／草稿状态。仅在复用的 iPhone 17 Pro / iOS 26.5 验证，iPad、iOS 15/16 和新增系统版本需另行运行。原始证据见 [验证记录](verification/scroll-indicator-verification.json)。

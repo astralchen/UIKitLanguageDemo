@@ -1,0 +1,23 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-15T15:44:34Z
+Total Results: 1
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/1
+TEST_TARGET: UIKitLanguageDemoUITests
+TEST_IDENTIFIER: ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()
+TEST_DISPLAY_NAME: testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift
+TEST_LINE_NUMBER: 35
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

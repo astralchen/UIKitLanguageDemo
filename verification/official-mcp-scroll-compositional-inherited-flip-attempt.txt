@@ -1,0 +1,50 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-15T15:32:23Z
+Total Results: 3
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/3
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
+TEST_DISPLAY_NAME: testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 347
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 2/3
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
+TEST_DISPLAY_NAME: testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 395
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 3/3
+TEST_TARGET: UIKitLanguageDemoUITests
+TEST_IDENTIFIER: ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()
+TEST_DISPLAY_NAME: testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()
+TEST_STATE: Failed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift
+TEST_LINE_NUMBER: 35
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 1
+
+TEST_ISSUES:
+    UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift:90 ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch(): XCTAssertLessThan failed: ("395.0") is not less than ("201.0") - RTL indicator should be on the physical left: (380.0, 369.66666666666674, 30.0, 421.3333333333336)
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

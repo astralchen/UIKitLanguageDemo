@@ -1,0 +1,220 @@
+Test UIKitLanguageDemo
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:377: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor] : XCTAssertGreaterThan failed: ("16.0") is not greater than ("207.0")
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' failed (3.544 seconds).
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+  2026-11-15 23:41:51.744750+0800 UIKitLanguageDemo[62669:1523347] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+  /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:417: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor] : XCTAssertLessThan failed: ("546.166666666667") is not less than ("201.16666666666697")
+  Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' failed (4.881 seconds).
+
+  Launch actions
+    Launch UIKitLanguageDemoTests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoTests
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoTests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+  Generating coverage report
+    notice:Unable to load coverage tools for toolchain 'com.apple.dt.toolchain.Metal.32023.883': Error Domain=XCTHLLVMCoverageToolsErrorDomain Code=2 "libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain" UserInfo={NSLocalizedDescription=libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain}
+  
+    Downloading profiles from iPhone 17 Pro
+      notice:Downloading profiles for com.example.UIKitLanguageDemo from 1 directory
+    
+    Merging 1 profile using llvm-profdata (2100.1.1.101.0)
+    
+    Pre-processing target built products
+    
+    Processing source file data
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneStateCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Appearance/AppearanceService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/AppDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Appearance/AppearancePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneWindowService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/LanguagePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LayoutDirection.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/TextInputSnapshot.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/OrthogonalLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ContainerDemos.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/AppText.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedControllers.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/DetailViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageContext.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ListDemoContent.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CollectionDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/AppearanceTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListStateRestoration.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneState.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/ScrollDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/SettingsViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/HomeViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/SceneDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift
+      
+    Generating target entries
+      notice:Generating entry for target UIKitLanguageDemo.app
+      notice:Generating entry for target UIKitLanguageDemoTests.xctest
+      notice:Generating entry for target UIKitLanguageDemoUITests.xctest
+    
+  Testing Configuration 1
+    Test target UIKitLanguageDemoTests
+      UIKitLanguageDemo (62669)
+        Test Suite 'Selected tests' started at 2026-11-15 23:41:47.898.
+        Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-15 23:41:47.899.
+        Test Suite 'LanguageTests' started at 2026-11-15 23:41:47.900.
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:377: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor] : XCTAssertGreaterThan failed: ("16.0") is not greater than ("207.0")
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' failed (3.544 seconds).
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+        2026-11-15 23:41:51.744750+0800 UIKitLanguageDemo[62669:1523347] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+        /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:417: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor] : XCTAssertLessThan failed: ("546.166666666667") is not less than ("201.16666666666697")
+        Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' failed (4.881 seconds).
+        Test Suite 'LanguageTests' failed at 2026-11-15 23:41:56.333.
+        	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.433) seconds
+        Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-15 23:41:56.335.
+        	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.436) seconds
+        Test Suite 'Selected tests' failed at 2026-11-15 23:41:56.340.
+        	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.443) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.15_23-41-24-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-25676CFE-2756-4CD1-A2D9-C2E72E7E0A54-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-47B839A2-5129-465A-83A0-A0E95C6AAAA1/Session-UIKitLanguageDemoTests-2026-11-15_234139-wYGllY.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.15_23-41-24-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoTests-25676CFE-2756-4CD1-A2D9-C2E72E7E0A54-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoTests-47B839A2-5129-465A-83A0-A0E95C6AAAA1/Session-UIKitLanguageDemoTests-2026-11-15_234139-wYGllY.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' failed at 2026-11-15 23:41:56.340.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.443) seconds
+
+          Test Suite 'Selected tests' started at 2026-11-15 23:41:47.898.
+          Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-15 23:41:47.899.
+          Test Suite 'LanguageTests' started at 2026-11-15 23:41:47.900.
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:377: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor] : XCTAssertGreaterThan failed: ("16.0") is not greater than ("207.0")
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' failed (3.544 seconds).
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+          2026-11-15 23:41:51.744750+0800 UIKitLanguageDemo[62669:1523347] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+          /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:417: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor] : XCTAssertLessThan failed: ("546.166666666667") is not less than ("201.16666666666697")
+          Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' failed (4.881 seconds).
+          Test Suite 'LanguageTests' failed at 2026-11-15 23:41:56.333.
+          	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.433) seconds
+          Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-15 23:41:56.335.
+          	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.436) seconds
+          Test Suite 'Selected tests' failed at 2026-11-15 23:41:56.340.
+          	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.443) seconds
+        
+          Run test suite UIKitLanguageDemoTests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-15 23:41:56.335.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.436) seconds
+
+            Test Suite 'UIKitLanguageDemoTests.xctest' started at 2026-11-15 23:41:47.899.
+            Test Suite 'LanguageTests' started at 2026-11-15 23:41:47.900.
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:377: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor] : XCTAssertGreaterThan failed: ("16.0") is not greater than ("207.0")
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' failed (3.544 seconds).
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+            2026-11-15 23:41:51.744750+0800 UIKitLanguageDemo[62669:1523347] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+            /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:417: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor] : XCTAssertLessThan failed: ("546.166666666667") is not less than ("201.16666666666697")
+            Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' failed (4.881 seconds).
+            Test Suite 'LanguageTests' failed at 2026-11-15 23:41:56.333.
+            	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.433) seconds
+            Test Suite 'UIKitLanguageDemoTests.xctest' failed at 2026-11-15 23:41:56.335.
+            	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.436) seconds
+          
+            Run test suite LanguageTests
+              Summary: Test Suite 'LanguageTests' failed at 2026-11-15 23:41:56.333.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.433) seconds
+
+              Test Suite 'LanguageTests' started at 2026-11-15 23:41:47.900.
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:377: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor] : XCTAssertGreaterThan failed: ("16.0") is not greater than ("207.0")
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' failed (3.544 seconds).
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+              2026-11-15 23:41:51.744750+0800 UIKitLanguageDemo[62669:1523347] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+              /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:417: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor] : XCTAssertLessThan failed: ("546.166666666667") is not less than ("201.16666666666697")
+              Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' failed (4.881 seconds).
+              Test Suite 'LanguageTests' failed at 2026-11-15 23:41:56.333.
+              	 Executed 2 tests, with 2 failures (0 unexpected) in 8.425 (8.433) seconds
+            
+              Run test case testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' failed (3.544 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' started.
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:377: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor] : XCTAssertGreaterThan failed: ("16.0") is not greater than ("207.0")
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalGridPreservesDraftSelectionAndReadingAnchor]' failed (3.544 seconds).
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:test failure:XCTAssertGreaterThan failed: ("16.0") is not greater than ("207.0")
+              
+              Run test case testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
+                Summary: Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' failed (4.881 seconds).
+
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' started.
+                2026-11-15 23:41:51.744750+0800 UIKitLanguageDemo[62669:1523347] [UICompositionalLayout] note: the section invalidation handler cannot currently mutate visible items for layouts containing estimated items. Please file an enhancement request on UICollectionView.
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:417: error: -[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor] : XCTAssertLessThan failed: ("546.166666666667") is not less than ("201.16666666666697")
+                Test Case '-[UIKitLanguageDemoTests.LanguageTests testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor]' failed (4.881 seconds).
+                /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:test failure:XCTAssertLessThan failed: ("546.166666666667") is not less than ("201.16666666666697")
+              
+** TEST FINISHED **

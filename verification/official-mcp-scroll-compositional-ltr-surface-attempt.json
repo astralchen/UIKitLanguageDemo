@@ -1,0 +1,37 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 2,
+    "notRun": 0,
+    "passed": 0,
+    "skipped": 0,
+    "total": 2
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-15T23-41-24+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/DBF7D2D5-A1C1-4852-BA32-3D71C22F09EA.txt",
+  "results": [
+    {
+      "displayName": "testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:377 LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor(): XCTAssertGreaterThan failed: (\"16.0\") is not greater than (\"207.0\")"
+      ],
+      "identifier": "LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:417 LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor(): XCTAssertLessThan failed: (\"546.166666666667\") is not less than (\"201.16666666666697\")"
+      ],
+      "identifier": "LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoTests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "2 tests: 0 passed, 2 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 2,
+  "truncated": false
+}

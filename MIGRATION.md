@@ -1,6 +1,6 @@
 # Xcode 原生工程与官方 MCP 迁移记录
 
-最新滚动指示器接入：所有业务滚动视图显式设置 RTL/LTR，原生指示器及列表状态保留。官方 MCP 构建及既有 iPhone 上八项定向测试通过；目录共 41 项，未全量重跑或执行 iOS 15。修改前三项热切换测试未复现用户报告，保留其原始通过记录。详见 verification/scroll-indicator-verification.json。
+最新滚动指示器修复：用户截图确认组合布局横向分区页，官方 MCP 复现 RTL 原生指示器在物理右侧。保留原有 RTL 内容布局，改用公开竖向指示器左边距进行非负补偿并随视口重算。最终四项定向回归通过，跨运行九项不同用例通过；目录 42 项，未全量重跑或执行 iPad／iOS 15。详见 verification/scroll-indicator-verification.json，原始失败与中间尝试均保留。
 
 最新外观接入：窗口级三态选择、持久化及多 Scene 同步，iOS 15 部署保持不变。官方 MCP 构建成功，九项定向用例在已有 iPhone／iPad 上通过，包含两个真实 Scene；当前目录 36 项，本轮未全量重跑。文档见 APPEARANCE.md，原始记录见 verification/appearance-verification.json。
 

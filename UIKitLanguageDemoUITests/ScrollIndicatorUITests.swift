@@ -33,6 +33,11 @@ final class ScrollIndicatorUITests: XCTestCase {
     }
 
     @MainActor
+    func testCompositionalOrthogonalOuterIndicatorAfterHotSwitch() throws {
+        try verifyPage(openID: "home.openOrthogonal", collection: true)
+    }
+
+    @MainActor
     private func verifyPage(openID: String, collection: Bool) throws {
         let app = XCUIApplication()
         if let path = ProcessInfo.processInfo.environment["DYLD_LIBRARY_PATH"] { app.launchEnvironment["DYLD_LIBRARY_PATH"] = path }

@@ -1,0 +1,33 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 0,
+    "passed": 2,
+    "skipped": 0,
+    "total": 2
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-15T23-33-10+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/989AC849-27C2-41FD-BD6B-293C9FD6E8DA.txt",
+  "results": [
+    {
+      "displayName": "testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "2 tests: 2 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 2,
+  "truncated": false
+}

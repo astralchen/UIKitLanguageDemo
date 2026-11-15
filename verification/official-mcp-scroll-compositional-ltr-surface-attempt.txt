@@ -1,0 +1,41 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-15T15:41:57Z
+Total Results: 2
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/2
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
+TEST_DISPLAY_NAME: testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
+TEST_STATE: Failed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 347
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 1
+
+TEST_ISSUES:
+    UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:377 LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor(): XCTAssertGreaterThan failed: ("16.0") is not greater than ("207.0")
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 2/2
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
+TEST_DISPLAY_NAME: testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
+TEST_STATE: Failed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 395
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 1
+
+TEST_ISSUES:
+    UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift:417 LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor(): XCTAssertLessThan failed: ("546.166666666667") is not less than ("201.16666666666697")
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

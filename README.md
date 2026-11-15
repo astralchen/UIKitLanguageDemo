@@ -18,7 +18,7 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 4. 验证详情页仍在、返回按钮仍可返回首页、草稿不变，中文/阿拉伯语切换时方向改变。
 5. 设置 Tab 演示可变行高 Table；首页可进入 FlowLayout 网格/横向列表，以及 Compositional 网格/正交分页分区，滚动、选择、编辑草稿后切换语言。
 6. 在任意示例页点击导航栏地球图标（“系统 App 语言设置”），在系统中选择语言并返回 App，验证当前位置、草稿和滚动位置恢复。该入口先切回“跟随系统”，以便新进程采用系统选择。
-7. 使用 Product → Test 运行随工程附带的四十一项 XCTest（33 项单元测试和 8 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
+7. 使用 Product → Test 运行随工程附带的四十二项 XCTest（33 项单元测试和 9 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
 
 测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
 
@@ -310,16 +310,14 @@ UIKit 的返回标题来自栈中前一个 navigationItem，见 [Apple backButto
 
 ## 滚动指示器方向
 
-业务 UIScrollView、UITableView 和 UICollectionView 在首次加载及语言刷新时统一调用 `LayoutDirection.applyScrollView(context, to:)`，在 iOS 15+ 显式设置 semanticContentAttribute。阿拉伯语使用 forceRightToLeft，中文／英文使用 forceLeftToRight；原生竖向滚动指示器应在 RTL 左侧、LTR 右侧。
+业务 UIScrollView、UITableView 和 UICollectionView 在首次加载及语言刷新时统一调用 `LayoutDirection.applyScrollView(context, to:)`，在 iOS 15+ 显式设置语义方向。普通竖向指示器在阿拉伯语下位于左侧，中文／英文下位于右侧。
 
-保留现有滚动视图、原生指示器、显示开关、颜色样式和安全区／indicator insets。没有通过负边距、transform、私有子视图或 KVC 移动指示器；不递归修改 UIPageViewController 内部滚动引擎及 Compositional 正交分区内部视图。列表继续按既有通知事务保留业务锚点、草稿和选择。
+组合布局需要额外处理：其内容镜像坐标下，仅设置语义方向仍会出现原生竖向指示器在物理右侧。截图对应的“组合布局横向分区”页已通过原生 AX 位置断言复现。`CompositionalDemoViewController.viewDidLayoutSubviews()` 采用公开的 `verticalScrollIndicatorInsets.left` 非负补偿，将 RTL 指示器轨道移到物理左侧，并按当前视口宽度重算；LTR 清除该补偿，保留原有卡片 RTL 顺序、正交分页和阅读锚点。该页面明确管理左侧指示器边距，顶部／底部／右侧及水平指示器边距保留。不要把这项组合布局补偿照搬到普通 Table 或 Flow。
 
-复用现有 iPhone 17 Pro / iOS 26.5，通过 Apple 官方 MCP 构建及八项定向测试：原生 Table 指示器 EN → AR → ZH → AR 的物理位置、阿拉伯语详情重启恢复后的指示器，以及 Table／Flow／Compositional 的列表状态。另检查显式方向更新不会改掉业务自定义的指示器样式／边距或翻页引擎方向。本轮未全量运行 41 项，未执行 iOS 15 运行时。
+保留现有滚动视图、原生指示器、显示开关、颜色样式、自动安全区调整及原生交互。不使用负边距、transform、私有子视图或 KVC，不递归修改 UIPageViewController 或 Compositional 内部滚动容器。
 
-复现边界：修改前的三项热切换测试在这台模拟器上均已通过，原生 Table、详情及 Flow 指示器在阿拉伯语下位于左侧；没有声称复现了用户报告的旧行为。本次补齐业务滚动边界，覆盖初次加载和重启恢复，并保留修改前及最终的原始记录，详见 [滚动指示器验证](verification/scroll-indicator-verification.json)。
+复用现有 iPhone 17 Pro / iOS 26.5，Apple 官方 MCP 构建通过。跨运行共九项不同定向用例通过；最终四项覆盖组合网格与正交分区的 RTL 顺序、选择／草稿、中心业务页与外层阅读锚点、滚动条样式／边距策略及截图对应页的原生指示器左右位置。另有 Table 连续 EN → AR → ZH → AR、阿拉伯语详情重启恢复与 Flow 列表状态验证。本轮未全量运行 42 项，未执行 iPad 或 iOS 15 运行时。
 
-公开 API：[UIView.semanticContentAttribute](https://developer.apple.com/documentation/uikit/uiview/semanticcontentattribute)、[UIScrollView.verticalScrollIndicatorInsets](https://developer.apple.com/documentation/uikit/uiscrollview/verticalscrollindicatorinsets)。指示器左右位置以本工程真实 XCTest 原生 AX 几何断言为验证证据。
+最初 Table、详情及 Flow 的检查未复现问题；收到用户截图后才定位到组合布局。删除布局覆盖或显式关闭布局翻转均未修复滚动条，固定承载面 LTR 又破坏卡片顺序，均已撤回。原始失败、中间尝试与最终通过结果见 [滚动指示器验证](verification/scroll-indicator-verification.json)。截图和几何附件见 [原始附件清单](verification/scroll-indicator-ui/manifest.json) 与 [组合布局附件](verification/scroll-compositional-ui/manifest.json)。AX 命中区域可能超出视图边缘，断言比较其物理中心位置。
 
-最终运行的原始 XCTest 截图与几何附件见 [附件清单](verification/scroll-indicator-ui/manifest.json)，其中 AX 滚动条命中区域可能超出视图边缘；断言比较其物理中心位置。
-
-重启用例的清理步骤会还原测试前语言；修正清理夹具后，该 UI 单项在同一模拟器再次通过，生产代码未变。
+公开 API：[UIView.semanticContentAttribute](https://developer.apple.com/documentation/uikit/uiview/semanticcontentattribute)、[UIScrollView.verticalScrollIndicatorInsets](https://developer.apple.com/documentation/uikit/uiscrollview/verticalscrollindicatorinsets)。补偿值针对当前组合布局的镜像行为，由真实 UI 几何测试约束；新增系统版本时应重跑该回归。

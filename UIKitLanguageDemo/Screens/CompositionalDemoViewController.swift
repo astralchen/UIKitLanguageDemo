@@ -89,6 +89,20 @@ final class CompositionalDemoViewController: LocalizedViewController, UICollecti
         ListStateRestoration.applyIfNeeded(self)
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        // Compositional Layout mirrors its scrolling coordinate surface. Use
+        // the public inset API to place the native vertical track at the App's
+        // physical trailing edge without changing cells or gesture handling.
+        let edgeSpacing: CGFloat = 4
+        var inset = collectionView.verticalScrollIndicatorInsets
+        inset.left = LanguageService.shared.context.isRTL
+            ? max(0, collectionView.bounds.width - 2 * edgeSpacing) : 0
+        if collectionView.verticalScrollIndicatorInsets != inset {
+            collectionView.verticalScrollIndicatorInsets = inset
+        }
+    }
+
     private func makeLayout() -> UICollectionViewCompositionalLayout {
         let configuration = UICollectionViewCompositionalLayoutConfiguration()
         configuration.contentInsetsReference = .none

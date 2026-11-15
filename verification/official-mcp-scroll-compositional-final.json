@@ -1,0 +1,47 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 0,
+    "passed": 4,
+    "skipped": 0,
+    "total": 4
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-15T23-46-02+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/BA395272-3348-424D-9FAE-B4149A8FE081.txt",
+  "results": [
+    {
+      "displayName": "testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testOwnedScrollBoundariesRefreshWithoutChangingIndicatorPolicyOrPagerEngine()",
+      "errorMessages": [],
+      "identifier": "ScrollDirectionTests/testOwnedScrollBoundariesRefreshWithoutChangingIndicatorPolicyOrPagerEngine()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "errorMessages": [],
+      "identifier": "ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "4 tests: 4 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 4,
+  "truncated": false
+}
