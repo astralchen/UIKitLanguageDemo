@@ -24,6 +24,14 @@ enum LayoutDirection {
         view.semanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
     }
 
+    /// Give app-owned scrolling surfaces an explicit direction on every supported
+    /// OS at initial load and on each language refresh, including native chrome.
+    /// Only call for app-owned scroll views, never recursively for UIKit engines.
+    static func applyScrollView(_ context: LanguageContext, to scrollView: UIScrollView) {
+        scrollView.semanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
+        scrollView.setNeedsLayout()
+    }
+
     /// Align the draft and its placeholder with the App. Keep the Unicode
     /// writing direction of user content; never rewrite text or selection here.
     static func applyTextField(_ context: LanguageContext, to field: UITextField) {

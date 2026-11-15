@@ -1,0 +1,26 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 0,
+    "passed": 1,
+    "skipped": 0,
+    "total": 1
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-15T23-24-50+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/96833080-68EC-4A20-B00C-702BF5495F8F.txt",
+  "results": [
+    {
+      "displayName": "testRestoredArabicDetailIndicatorOnLaunch()",
+      "errorMessages": [],
+      "identifier": "ScrollIndicatorUITests/testRestoredArabicDetailIndicatorOnLaunch()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "1 tests: 1 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 1,
+  "truncated": false
+}

@@ -75,7 +75,7 @@ final class CompositionalDemoViewController: LocalizedViewController, UICollecti
         title = context.text(mode == .grid ? .compositionalTitle : .compositionalOrthogonal)
         languagePicker.applyLocalization(context)
         LayoutDirection.applyBoundary(context, to: stack)
-        collectionView.semanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
+        LayoutDirection.applyScrollView(context, to: collectionView)
         // Recreate only layout geometry to refresh mirroring on both direction transitions.
         if renderedRTL != context.isRTL {
             renderedRTL = context.isRTL

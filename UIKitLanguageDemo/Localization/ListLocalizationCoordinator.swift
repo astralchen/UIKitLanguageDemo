@@ -68,7 +68,7 @@ final class TableLocalizationCoordinator: ListLocalizationObserver {
 
     override func updateContent(_ context: LanguageContext) {
         guard let tableView else { return }
-        LayoutDirection.applyBoundary(context, to: tableView)
+        LayoutDirection.applyScrollView(context, to: tableView)
         for path in tableView.indexPathsForVisibleRows ?? [] {
             if let cell = tableView.cellForRow(at: path) { renderCell(cell, path, context) }
         }
@@ -200,11 +200,7 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
 
     override func updateContent(_ context: LanguageContext) {
         guard let collectionView else { return }
-        LayoutDirection.applyBoundary(context, to: collectionView)
-        if collectionView.collectionViewLayout is UICollectionViewCompositionalLayout {
-            // Signal runtime changes explicitly so UIKit updates its mirrored coordinate surface.
-            collectionView.semanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
-        }
+        LayoutDirection.applyScrollView(context, to: collectionView)
         for path in collectionView.indexPathsForVisibleItems {
             if let cell = collectionView.cellForItem(at: path) { renderCell(cell, path, context) }
         }

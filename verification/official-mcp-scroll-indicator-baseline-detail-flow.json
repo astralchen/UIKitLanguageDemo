@@ -1,0 +1,33 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 0,
+    "passed": 2,
+    "skipped": 0,
+    "total": 2
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-15T23-09-38+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/46081BFB-E4B8-4916-B248-E86E7329A988.txt",
+  "results": [
+    {
+      "displayName": "testDetailIndicatorAfterHotSwitch()",
+      "errorMessages": [],
+      "identifier": "ScrollIndicatorUITests/testDetailIndicatorAfterHotSwitch()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testFlowCollectionIndicatorAfterHotSwitch()",
+      "errorMessages": [],
+      "identifier": "ScrollIndicatorUITests/testFlowCollectionIndicatorAfterHotSwitch()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "2 tests: 2 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 2,
+  "truncated": false
+}

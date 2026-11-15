@@ -1,0 +1,107 @@
+================================================================================
+TEST RESULTS SUMMARY
+================================================================================
+Generated: 2026-11-15T15:23:41Z
+Total Results: 8
+================================================================================
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 1/8
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: ScrollDirectionTests/testOwnedScrollBoundariesRefreshWithoutChangingIndicatorPolicyOrPagerEngine()
+TEST_DISPLAY_NAME: testOwnedScrollBoundariesRefreshWithoutChangingIndicatorPolicyOrPagerEngine()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/ScrollDirectionTests.swift
+TEST_LINE_NUMBER: 6
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 2/8
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testTableKeepsReadingAnchorAndRefreshesReusedRows()
+TEST_DISPLAY_NAME: testTableKeepsReadingAnchorAndRefreshesReusedRows()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 244
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 3/8
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()
+TEST_DISPLAY_NAME: testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 278
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 4/8
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()
+TEST_DISPLAY_NAME: testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 316
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 5/8
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
+TEST_DISPLAY_NAME: testCompositionalGridPreservesDraftSelectionAndReadingAnchor()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 347
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 6/8
+TEST_TARGET: UIKitLanguageDemoTests
+TEST_IDENTIFIER: LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
+TEST_DISPLAY_NAME: testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+TEST_LINE_NUMBER: 395
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 7/8
+TEST_TARGET: UIKitLanguageDemoUITests
+TEST_IDENTIFIER: ScrollIndicatorUITests/testRestoredArabicDetailIndicatorOnLaunch()
+TEST_DISPLAY_NAME: testRestoredArabicDetailIndicatorOnLaunch()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift
+TEST_LINE_NUMBER: 54
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+--------------------------------------------------------------------------------
+TEST_RESULT_INDEX: 8/8
+TEST_TARGET: UIKitLanguageDemoUITests
+TEST_IDENTIFIER: ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()
+TEST_DISPLAY_NAME: testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()
+TEST_STATE: Passed
+TEST_FILE_PATH: UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift
+TEST_LINE_NUMBER: 4
+TEST_TAGS: (none)
+
+TEST_ISSUE_COUNT: 0
+
+
+================================================================================
+END OF TEST RESULTS SUMMARY
+================================================================================

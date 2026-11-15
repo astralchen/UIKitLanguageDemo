@@ -18,7 +18,7 @@ Apple 在 [WWDC19 Session 403](https://developer.apple.com/videos/play/wwdc2019/
 4. 验证详情页仍在、返回按钮仍可返回首页、草稿不变，中文/阿拉伯语切换时方向改变。
 5. 设置 Tab 演示可变行高 Table；首页可进入 FlowLayout 网格/横向列表，以及 Compositional 网格/正交分页分区，滚动、选择、编辑草稿后切换语言。
 6. 在任意示例页点击导航栏地球图标（“系统 App 语言设置”），在系统中选择语言并返回 App，验证当前位置、草稿和滚动位置恢复。该入口先切回“跟随系统”，以便新进程采用系统选择。
-7. 使用 Product → Test 运行随工程附带的三十六项 XCTest（32 项单元测试和 4 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
+7. 使用 Product → Test 运行随工程附带的四十一项 XCTest（33 项单元测试和 8 项 UI 测试，含返回手势与系统设置重启）。UI 测试会暂改此 App 的语言，结束后还原原选项；不会修改模拟器全局语言。默认测试不主动唤起系统键盘；如需额外验证焦点与光标，在 Scheme 的 Test 环境变量中设置 `VERIFY_KEYBOARD_FOCUS=1`。
 
 测试计划已禁用并行执行，复用选中的现有模拟器；Test 不附加调试器，App Run 仍可正常调试。
 
@@ -307,3 +307,19 @@ UIKit 的返回标题来自栈中前一个 navigationItem，见 [Apple backButto
 复用已有 iPhone 和 iPad，Apple 官方 MCP 构建成功；跨多次定向运行共有九项用例通过，包含两个真实 Scene 的外观同步、新 Scene 继承、偏好重启恢复、系统继承、生成符号回退、边框颜色和输入焦点。首轮夹具及无障碍问题和复验记录均保留。本轮未全量重跑 36 项，未执行 iOS 15 运行时。详见 [外观验证记录](verification/appearance-verification.json)。
 
 原始 XCTest 截图：[英文深色设置](verification/appearance-ui/english-dark-settings.png)、[阿拉伯语深色设置](verification/appearance-ui/arabic-dark-settings.png)、[阿拉伯语深色详情](verification/appearance-ui/arabic-dark-detail.png)、[阿拉伯语浅色详情](verification/appearance-ui/arabic-light-detail.png)。
+
+## 滚动指示器方向
+
+业务 UIScrollView、UITableView 和 UICollectionView 在首次加载及语言刷新时统一调用 `LayoutDirection.applyScrollView(context, to:)`，在 iOS 15+ 显式设置 semanticContentAttribute。阿拉伯语使用 forceRightToLeft，中文／英文使用 forceLeftToRight；原生竖向滚动指示器应在 RTL 左侧、LTR 右侧。
+
+保留现有滚动视图、原生指示器、显示开关、颜色样式和安全区／indicator insets。没有通过负边距、transform、私有子视图或 KVC 移动指示器；不递归修改 UIPageViewController 内部滚动引擎及 Compositional 正交分区内部视图。列表继续按既有通知事务保留业务锚点、草稿和选择。
+
+复用现有 iPhone 17 Pro / iOS 26.5，通过 Apple 官方 MCP 构建及八项定向测试：原生 Table 指示器 EN → AR → ZH → AR 的物理位置、阿拉伯语详情重启恢复后的指示器，以及 Table／Flow／Compositional 的列表状态。另检查显式方向更新不会改掉业务自定义的指示器样式／边距或翻页引擎方向。本轮未全量运行 41 项，未执行 iOS 15 运行时。
+
+复现边界：修改前的三项热切换测试在这台模拟器上均已通过，原生 Table、详情及 Flow 指示器在阿拉伯语下位于左侧；没有声称复现了用户报告的旧行为。本次补齐业务滚动边界，覆盖初次加载和重启恢复，并保留修改前及最终的原始记录，详见 [滚动指示器验证](verification/scroll-indicator-verification.json)。
+
+公开 API：[UIView.semanticContentAttribute](https://developer.apple.com/documentation/uikit/uiview/semanticcontentattribute)、[UIScrollView.verticalScrollIndicatorInsets](https://developer.apple.com/documentation/uikit/uiscrollview/verticalscrollindicatorinsets)。指示器左右位置以本工程真实 XCTest 原生 AX 几何断言为验证证据。
+
+最终运行的原始 XCTest 截图与几何附件见 [附件清单](verification/scroll-indicator-ui/manifest.json)，其中 AX 滚动条命中区域可能超出视图边缘；断言比较其物理中心位置。
+
+重启用例的清理步骤会还原测试前语言；修正清理夹具后，该 UI 单项在同一模拟器再次通过，生产代码未变。

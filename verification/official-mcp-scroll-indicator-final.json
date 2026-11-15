@@ -1,0 +1,75 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 0,
+    "passed": 8,
+    "skipped": 0,
+    "total": 8
+  },
+  "fullConsoleLogsPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-15T23-19-32+08-00.txt",
+  "fullSummaryPath": "/var/folders/g9/3cx0n6_164v6fy3kgdbgcll80000gn/T/ActionArtifacts/default/RunSomeTests/644C98AA-3256-44FD-BE4F-CE3082664D1C.txt",
+  "results": [
+    {
+      "displayName": "testOwnedScrollBoundariesRefreshWithoutChangingIndicatorPolicyOrPagerEngine()",
+      "errorMessages": [],
+      "identifier": "ScrollDirectionTests/testOwnedScrollBoundariesRefreshWithoutChangingIndicatorPolicyOrPagerEngine()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testTableKeepsReadingAnchorAndRefreshesReusedRows()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testTableKeepsReadingAnchorAndRefreshesReusedRows()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testRestoredArabicDetailIndicatorOnLaunch()",
+      "errorMessages": [],
+      "identifier": "ScrollIndicatorUITests/testRestoredArabicDetailIndicatorOnLaunch()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()",
+      "errorMessages": [],
+      "identifier": "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "8 tests: 8 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 8,
+  "truncated": false
+}

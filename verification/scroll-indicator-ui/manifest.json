@@ -1,0 +1,102 @@
+[
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "3F95206B-6DAB-42DF-81CB-054C8B4DB28B.png",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Scroll indicator ar-restored_0_B292051C-8B75-4076-B5C6-0A62D0CCD8E8.png",
+    "timestamp": 1794756067.953,
+    "testIdentifier": "ScrollIndicatorUITests/testRestoredArabicDetailIndicatorOnLaunch()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "74247C93-4910-47AD-9736-40B0F7B195FF.txt",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Scroll indicator geometry ar-restored_0_F977E05C-CF7B-4087-86F9-57E2F5A28CBC.txt",
+    "timestamp": 1794756067.234,
+    "testIdentifier": "ScrollIndicatorUITests/testRestoredArabicDetailIndicatorOnLaunch()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "669F3103-B879-4C5C-BA95-56EFE3DD9CC6.png",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Scroll indicator ar_0_9B48774F-DE07-4408-9B70-71EDDD29EA07.png",
+    "timestamp": 1794756215.822,
+    "testIdentifier": "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "DA1544E6-5F03-48C1-AB5A-7F0EF4D5EF18.txt",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Scroll indicator geometry ar_0_4EB755CD-5D65-4538-B0BD-12502F148285.txt",
+    "timestamp": 1794756213.199,
+    "testIdentifier": "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "E0EBB241-6F02-4058-837E-A1ACE2BA8207.png",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Scroll indicator zh-Hans_0_CAC356A8-3A11-4343-AF34-D872DCF96D2C.png",
+    "timestamp": 1794756185.041,
+    "testIdentifier": "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "D492B5DB-E377-4FF8-B127-849F5B673803.txt",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Scroll indicator geometry zh-Hans_0_7BE5DBF9-E38A-4CA0-8ECE-FF2958AD3E5A.txt",
+    "timestamp": 1794756183.162,
+    "testIdentifier": "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "1676E2A4-981A-410E-9D56-99215FBF9DA7.png",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Scroll indicator ar_0_7D09D82D-EC83-40E0-874A-604BBFBAFB20.png",
+    "timestamp": 1794756156.74,
+    "testIdentifier": "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "6CE1A036-04D8-49C4-A4A7-8ED74D9223EB.txt",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Scroll indicator geometry ar_0_816F7EB9-29F3-43B3-B649-C52BEA2C8DE5.txt",
+    "timestamp": 1794756153.995,
+    "testIdentifier": "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "322183E5-9D55-46B5-8673-893EB9B5421D.png",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Scroll indicator en_0_09FE042F-A514-436E-9481-DED5E242B3F6.png",
+    "timestamp": 1794756128.098,
+    "testIdentifier": "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()"
+  },
+  {
+    "configurationName": "Configuration 1",
+    "deviceId": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+    "deviceName": "iPhone 17 Pro",
+    "exportedFileName": "CCBB6584-23FD-469B-AB52-3C6D5A2F6774.txt",
+    "isAssociatedWithFailure": false,
+    "suggestedHumanReadableName": "Scroll indicator geometry en_0_C5B7BE27-87C4-402B-991F-2E33A8121F0A.txt",
+    "timestamp": 1794756125.747,
+    "testIdentifier": "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()"
+  }
+]

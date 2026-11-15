@@ -1,0 +1,1064 @@
+Test UIKitLanguageDemo
+  Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' started.
+      t =     0.01s Start Test at 2026-11-15 23:04:22.172
+      t =     1.55s Set Up
+      t =     1.60s Open com.example.UIKitLanguageDemo
+      t =     1.60s     Launch com.example.UIKitLanguageDemo
+      t =     4.16s         Setting up automation session
+      t =    10.21s         Wait for com.example.UIKitLanguageDemo to idle
+      t =    14.74s Waiting 20.0s for "tab.settings.title" Button to exist
+      t =    15.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+      t =    15.78s         Checking existence of `"tab.settings.title" Button`
+      t =    16.31s Tap "tab.settings.title" Button
+      t =    16.31s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    16.33s     Find the "tab.settings.title" Button
+      t =    16.76s     Check for interrupting elements affecting "tab.settings.title" Button
+      t =    17.21s     Synthesize event
+      t =    17.75s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    19.94s Waiting 10.0s for Table (First Match) to exist
+      t =    20.96s     Checking `Expect predicate `existsNoRetry == 1` for object Table (First Match)`
+      t =    20.96s         Checking existence of `Table (First Match)`
+      t =    21.35s Find the "language.system" Button
+      t =    36.70s Tap "language.en" Button
+      t =    36.70s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    36.72s     Find the "language.en" Button
+      t =    39.04s     Check for interrupting elements affecting "language.en" Button
+      t =    40.52s     Synthesize event
+      t =    40.93s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    41.15s Swipe up Table (First Match)
+      t =    41.15s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    41.17s     Find the Table (First Match)
+      t =    41.46s     Check for interrupting elements affecting Table
+      t =    43.15s     Synthesize event
+      t =    43.91s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    46.04s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+      t =    48.96s Find the Any (Element at index 0)
+      t =    51.08s Find the "垂直滚动条, 40页" Other
+      t =    52.86s Find the "垂直滚动条, 40页" Other
+      t =    54.93s Find the "垂直滚动条, 40页" Other
+      t =    59.01s Find the "垂直滚动条, 40页" Other
+      t =    60.87s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =    61.27s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =    61.63s Find the "垂直滚动条, 40页" Other
+      t =    63.26s Added attachment named 'Scroll indicator geometry en'
+      t =    63.27s Find the Target Application 'com.example.UIKitLanguageDemo'
+      t =    66.47s Added attachment named 'Scroll indicator en'
+      t =    66.47s Tap "language.ar" Button
+      t =    66.47s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    66.48s     Find the "language.ar" Button
+      t =    67.84s     Check for interrupting elements affecting "language.ar" Button
+      t =    69.29s     Synthesize event
+      t =    69.69s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    69.84s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =    69.84s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    70.04s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =    70.32s     Check for interrupting elements affecting Table
+      t =    71.62s     Synthesize event
+      t =    72.28s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    74.39s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+      t =    78.40s Find the Any (Element at index 0)
+      t =    80.11s Find the "垂直滚动条, 41页" Other
+      t =    81.93s Find the "垂直滚动条, 41页" Other
+      t =    84.07s Find the "垂直滚动条, 41页" Other
+      t =    86.54s Find the "垂直滚动条, 41页" Other
+      t =    88.48s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =    88.81s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =    89.27s Find the "垂直滚动条, 41页" Other
+      t =    91.83s Added attachment named 'Scroll indicator geometry ar'
+      t =    91.83s Find the Target Application 'com.example.UIKitLanguageDemo'
+      t =    95.67s Added attachment named 'Scroll indicator ar'
+      t =    95.68s Tap "language.zh-Hans" Button
+      t =    95.68s     Wait for com.example.UIKitLanguageDemo to idle
+      t =    95.70s     Find the "language.zh-Hans" Button
+      t =    98.63s     Check for interrupting elements affecting "language.zh-Hans" Button
+      t =   100.82s     Synthesize event
+      t =   101.25s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   101.42s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =   101.42s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   101.62s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =   102.09s     Check for interrupting elements affecting Table
+      t =   103.99s     Synthesize event
+      t =   104.66s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   106.80s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+      t =   110.55s Find the Any (Element at index 0)
+      t =   112.04s Find the "垂直滚动条, 40页" Other
+      t =   113.80s Find the "垂直滚动条, 40页" Other
+      t =   115.77s Find the "垂直滚动条, 40页" Other
+      t =   117.80s Find the "垂直滚动条, 40页" Other
+      t =   119.33s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =   119.63s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =   119.87s Find the "垂直滚动条, 40页" Other
+      t =   121.45s Added attachment named 'Scroll indicator geometry zh-Hans'
+      t =   121.45s Find the Target Application 'com.example.UIKitLanguageDemo'
+      t =   123.78s Added attachment named 'Scroll indicator zh-Hans'
+      t =   123.78s Tap "language.ar" Button
+      t =   123.78s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   123.80s     Find the "language.ar" Button
+      t =   125.72s     Check for interrupting elements affecting "language.ar" Button
+      t =   127.22s     Synthesize event
+      t =   127.65s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   127.73s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =   127.73s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   127.94s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =   128.21s     Check for interrupting elements affecting Table
+      t =   130.00s     Synthesize event
+      t =   130.73s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   133.13s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+      t =   137.01s Find the Any (Element at index 0)
+      t =   138.90s Find the "垂直滚动条, 41页" Other
+      t =   140.50s Find the "垂直滚动条, 41页" Other
+      t =   142.11s Find the "垂直滚动条, 41页" Other
+      t =   143.74s Find the "垂直滚动条, 41页" Other
+      t =   145.47s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =   145.79s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+      t =   146.10s Find the "垂直滚动条, 41页" Other
+      t =   147.95s Added attachment named 'Scroll indicator geometry ar'
+      t =   147.96s Find the Target Application 'com.example.UIKitLanguageDemo'
+      t =   150.20s Added attachment named 'Scroll indicator ar'
+      t =   150.20s Tap "language.system" Button
+      t =   150.20s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   150.22s     Find the "language.system" Button
+      t =   151.59s     Check for interrupting elements affecting "language.system" Button
+      t =   152.71s     Synthesize event
+      t =   153.09s     Wait for com.example.UIKitLanguageDemo to idle
+      t =   153.36s Tear Down
+  Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' passed (154.489 seconds).
+
+  Launch actions
+    Launch UIKitLanguageDemoUITests
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemoUITests
+        notice:Launching com.example.UIKitLanguageDemoUITests.xctrunner
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemoUITests
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+    Launch UIKitLanguageDemo
+      notice:Platform: iOS Simulator
+      notice:Device Identifier: 07EFF63F-CD81-40CE-B872-428175F5D3C2
+      notice:Operating System Version: 26.5 (23F77)
+      notice:Model: iPhone 17 Pro (iPhone18,1)
+      notice:Target Architecture: x86_64
+    
+      Install Actions
+        notice:Installing on iPhone 17 Pro
+        notice:Successfully installed
+      
+      Launch UIKitLanguageDemo
+        notice:Launching com.example.UIKitLanguageDemo
+        notice:Launching suspended and the launcher is responsible for resuming.
+        notice:Successfully launched UIKitLanguageDemo
+        notice:Console logging policy: Synchronously obtain os_logs via libLogRedirect, and read stdio from File Descriptors
+        notice:Resumed target process.
+        notice:Logging system initialized.
+      
+  Generating coverage report
+    notice:Unable to load coverage tools for toolchain 'com.apple.dt.toolchain.Metal.32023.883': Error Domain=XCTHLLVMCoverageToolsErrorDomain Code=2 "libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain" UserInfo={NSLocalizedDescription=libLTO.dylib is not present in the toolchain at path /Users/chenchen/Library/Developer/DVTDownloads/MetalToolchain/mounts/656653e63a393644d316d4c630af4cccd68d1d2f/Metal.xctoolchain}
+  
+    Downloading profiles from iPhone 17 Pro
+      notice:Downloading profiles for com.example.UIKitLanguageDemo from 1 directory
+      notice:Downloading profiles for com.example.UIKitLanguageDemoUITests.xctrunner from 1 directory
+    
+    Merging 2 profiles using llvm-profdata (2100.1.1.101.0)
+    
+    Pre-processing target built products
+    
+    Processing source file data
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneStateCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/AppDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Appearance/AppearanceService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/GeneratedSymbolTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationBackTitleTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Appearance/AppearancePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/TextDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/LanguagePickerView.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/UIKitLanguageDemoTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LayoutDirection.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/IPadWindowUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneWindowService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/TextInputSnapshot.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/OrthogonalLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedPageContainerController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ContainerDemos.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/AppText.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedControllers.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/DetailViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/AppearanceUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageContext.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CollectionDemoViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/ListDemoContent.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/AppearanceTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/LanguagePickerAlignmentTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListStateRestoration.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LocalizedSplitViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/IPadRestorationTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/SceneDelegate.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/SceneState.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/LanguageService.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/HomeViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/SettingsViewController.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoUITests/NavigationGestureUITests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemoTests/NavigationDirectionTests.swift
+      
+      Processing file /Users/chenchen/Documents/Codex/2026-11-14/app/outputs/NativeUIKitProject/UIKitLanguageDemo/UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift
+      
+    Generating target entries
+      notice:Generating entry for target UIKitLanguageDemo.app
+      notice:Generating entry for target UIKitLanguageDemoTests.xctest
+      notice:Generating entry for target UIKitLanguageDemoUITests.xctest
+    
+  Testing Configuration 1
+    Test target UIKitLanguageDemoUITests
+      UIKitLanguageDemoUITests-Runner (60245)
+        2026-11-15 23:04:20.155643+0800 UIKitLanguageDemoUITests-Runner[60245:1451753] [Default] Running tests...
+        2026-11-15 23:04:21.399389+0800 UIKitLanguageDemoUITests-Runner[60245:1451811] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+        2026-11-15 23:04:21.470854+0800 UIKitLanguageDemoUITests-Runner[60245:1451825] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+            t =      nans Interface orientation changed to Portrait
+        Test Suite 'Selected tests' started at 2026-11-15 23:04:22.158.
+        Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-15 23:04:22.162.
+        Test Suite 'ScrollIndicatorUITests' started at 2026-11-15 23:04:22.164.
+        Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' started.
+            t =     0.01s Start Test at 2026-11-15 23:04:22.172
+            t =     1.55s Set Up
+            t =     1.60s Open com.example.UIKitLanguageDemo
+            t =     1.60s     Launch com.example.UIKitLanguageDemo
+            t =     4.16s         Setting up automation session
+            t =    10.21s         Wait for com.example.UIKitLanguageDemo to idle
+            t =    14.74s Waiting 20.0s for "tab.settings.title" Button to exist
+            t =    15.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+            t =    15.78s         Checking existence of `"tab.settings.title" Button`
+            t =    16.31s Tap "tab.settings.title" Button
+            t =    16.31s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    16.33s     Find the "tab.settings.title" Button
+            t =    16.76s     Check for interrupting elements affecting "tab.settings.title" Button
+            t =    17.21s     Synthesize event
+            t =    17.75s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    19.94s Waiting 10.0s for Table (First Match) to exist
+            t =    20.96s     Checking `Expect predicate `existsNoRetry == 1` for object Table (First Match)`
+            t =    20.96s         Checking existence of `Table (First Match)`
+            t =    21.35s Find the "language.system" Button
+            t =    36.70s Tap "language.en" Button
+            t =    36.70s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    36.72s     Find the "language.en" Button
+            t =    39.04s     Check for interrupting elements affecting "language.en" Button
+            t =    40.52s     Synthesize event
+            t =    40.93s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    41.15s Swipe up Table (First Match)
+            t =    41.15s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    41.17s     Find the Table (First Match)
+            t =    41.46s     Check for interrupting elements affecting Table
+            t =    43.15s     Synthesize event
+            t =    43.91s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    46.04s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+            t =    48.96s Find the Any (Element at index 0)
+            t =    51.08s Find the "垂直滚动条, 40页" Other
+            t =    52.86s Find the "垂直滚动条, 40页" Other
+            t =    54.93s Find the "垂直滚动条, 40页" Other
+            t =    59.01s Find the "垂直滚动条, 40页" Other
+            t =    60.87s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =    61.27s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =    61.63s Find the "垂直滚动条, 40页" Other
+            t =    63.26s Added attachment named 'Scroll indicator geometry en'
+            t =    63.27s Find the Target Application 'com.example.UIKitLanguageDemo'
+            t =    66.47s Added attachment named 'Scroll indicator en'
+            t =    66.47s Tap "language.ar" Button
+            t =    66.47s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    66.48s     Find the "language.ar" Button
+            t =    67.84s     Check for interrupting elements affecting "language.ar" Button
+            t =    69.29s     Synthesize event
+            t =    69.69s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    69.84s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =    69.84s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    70.04s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =    70.32s     Check for interrupting elements affecting Table
+            t =    71.62s     Synthesize event
+            t =    72.28s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    74.39s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+            t =    78.40s Find the Any (Element at index 0)
+            t =    80.11s Find the "垂直滚动条, 41页" Other
+            t =    81.93s Find the "垂直滚动条, 41页" Other
+            t =    84.07s Find the "垂直滚动条, 41页" Other
+            t =    86.54s Find the "垂直滚动条, 41页" Other
+            t =    88.48s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =    88.81s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =    89.27s Find the "垂直滚动条, 41页" Other
+            t =    91.83s Added attachment named 'Scroll indicator geometry ar'
+            t =    91.83s Find the Target Application 'com.example.UIKitLanguageDemo'
+            t =    95.67s Added attachment named 'Scroll indicator ar'
+            t =    95.68s Tap "language.zh-Hans" Button
+            t =    95.68s     Wait for com.example.UIKitLanguageDemo to idle
+            t =    95.70s     Find the "language.zh-Hans" Button
+            t =    98.63s     Check for interrupting elements affecting "language.zh-Hans" Button
+            t =   100.82s     Synthesize event
+            t =   101.25s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   101.42s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =   101.42s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   101.62s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =   102.09s     Check for interrupting elements affecting Table
+            t =   103.99s     Synthesize event
+            t =   104.66s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   106.80s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+            t =   110.55s Find the Any (Element at index 0)
+            t =   112.04s Find the "垂直滚动条, 40页" Other
+            t =   113.80s Find the "垂直滚动条, 40页" Other
+            t =   115.77s Find the "垂直滚动条, 40页" Other
+            t =   117.80s Find the "垂直滚动条, 40页" Other
+            t =   119.33s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =   119.63s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =   119.87s Find the "垂直滚动条, 40页" Other
+            t =   121.45s Added attachment named 'Scroll indicator geometry zh-Hans'
+            t =   121.45s Find the Target Application 'com.example.UIKitLanguageDemo'
+            t =   123.78s Added attachment named 'Scroll indicator zh-Hans'
+            t =   123.78s Tap "language.ar" Button
+            t =   123.78s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   123.80s     Find the "language.ar" Button
+            t =   125.72s     Check for interrupting elements affecting "language.ar" Button
+            t =   127.22s     Synthesize event
+            t =   127.65s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   127.73s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =   127.73s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   127.94s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =   128.21s     Check for interrupting elements affecting Table
+            t =   130.00s     Synthesize event
+            t =   130.73s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   133.13s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+            t =   137.01s Find the Any (Element at index 0)
+            t =   138.90s Find the "垂直滚动条, 41页" Other
+            t =   140.50s Find the "垂直滚动条, 41页" Other
+            t =   142.11s Find the "垂直滚动条, 41页" Other
+            t =   143.74s Find the "垂直滚动条, 41页" Other
+            t =   145.47s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =   145.79s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+            t =   146.10s Find the "垂直滚动条, 41页" Other
+            t =   147.95s Added attachment named 'Scroll indicator geometry ar'
+            t =   147.96s Find the Target Application 'com.example.UIKitLanguageDemo'
+            t =   150.20s Added attachment named 'Scroll indicator ar'
+            t =   150.20s Tap "language.system" Button
+            t =   150.20s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   150.22s     Find the "language.system" Button
+            t =   151.59s     Check for interrupting elements affecting "language.system" Button
+            t =   152.71s     Synthesize event
+            t =   153.09s     Wait for com.example.UIKitLanguageDemo to idle
+            t =   153.36s Tear Down
+        Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' passed (154.489 seconds).
+        Test Suite 'ScrollIndicatorUITests' passed at 2026-11-15 23:06:56.660.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.495) seconds
+        Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-15 23:06:56.662.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.500) seconds
+        Test Suite 'Selected tests' passed at 2026-11-15 23:06:56.665.
+        	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.507) seconds
+      
+        Writing diagnostic log for test runner launch.
+          /Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.15_23-03-39-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-DB732EDA-C9F6-4882-B231-17B546EA9061-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-19139969-92B5-448A-BDB9-AC1E872926E6/Session-UIKitLanguageDemoUITests-2026-11-15_230408-P6q6uY.log:notice:/Users/chenchen/Library/Developer/Xcode/DerivedData/UIKitLanguageDemo-bwabsphwzruxwzezpcvuisujjsjc/Logs/Test/Test-UIKitLanguageDemo-2026.11.15_23-03-39-+0800.xcresult/Staging/1_Test/Diagnostics/UIKitLanguageDemoUITests-DB732EDA-C9F6-4882-B231-17B546EA9061-Configuration-Configuration 1-Iteration-1/UIKitLanguageDemoUITests-19139969-92B5-448A-BDB9-AC1E872926E6/Session-UIKitLanguageDemoUITests-2026-11-15_230408-P6q6uY.log
+        
+        Run test suite Selected tests
+          Summary: Test Suite 'Selected tests' passed at 2026-11-15 23:06:56.665.
+	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.507) seconds
+
+          2026-11-15 23:04:20.155643+0800 UIKitLanguageDemoUITests-Runner[60245:1451753] [Default] Running tests...
+          2026-11-15 23:04:21.399389+0800 UIKitLanguageDemoUITests-Runner[60245:1451811] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+          2026-11-15 23:04:21.470854+0800 UIKitLanguageDemoUITests-Runner[60245:1451825] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+              t =      nans Interface orientation changed to Portrait
+          Test Suite 'Selected tests' started at 2026-11-15 23:04:22.158.
+          Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-15 23:04:22.162.
+          Test Suite 'ScrollIndicatorUITests' started at 2026-11-15 23:04:22.164.
+          Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' started.
+              t =     0.01s Start Test at 2026-11-15 23:04:22.172
+              t =     1.55s Set Up
+              t =     1.60s Open com.example.UIKitLanguageDemo
+              t =     1.60s     Launch com.example.UIKitLanguageDemo
+              t =     4.16s         Setting up automation session
+              t =    10.21s         Wait for com.example.UIKitLanguageDemo to idle
+              t =    14.74s Waiting 20.0s for "tab.settings.title" Button to exist
+              t =    15.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+              t =    15.78s         Checking existence of `"tab.settings.title" Button`
+              t =    16.31s Tap "tab.settings.title" Button
+              t =    16.31s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    16.33s     Find the "tab.settings.title" Button
+              t =    16.76s     Check for interrupting elements affecting "tab.settings.title" Button
+              t =    17.21s     Synthesize event
+              t =    17.75s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    19.94s Waiting 10.0s for Table (First Match) to exist
+              t =    20.96s     Checking `Expect predicate `existsNoRetry == 1` for object Table (First Match)`
+              t =    20.96s         Checking existence of `Table (First Match)`
+              t =    21.35s Find the "language.system" Button
+              t =    36.70s Tap "language.en" Button
+              t =    36.70s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    36.72s     Find the "language.en" Button
+              t =    39.04s     Check for interrupting elements affecting "language.en" Button
+              t =    40.52s     Synthesize event
+              t =    40.93s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    41.15s Swipe up Table (First Match)
+              t =    41.15s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    41.17s     Find the Table (First Match)
+              t =    41.46s     Check for interrupting elements affecting Table
+              t =    43.15s     Synthesize event
+              t =    43.91s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    46.04s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+              t =    48.96s Find the Any (Element at index 0)
+              t =    51.08s Find the "垂直滚动条, 40页" Other
+              t =    52.86s Find the "垂直滚动条, 40页" Other
+              t =    54.93s Find the "垂直滚动条, 40页" Other
+              t =    59.01s Find the "垂直滚动条, 40页" Other
+              t =    60.87s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =    61.27s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =    61.63s Find the "垂直滚动条, 40页" Other
+              t =    63.26s Added attachment named 'Scroll indicator geometry en'
+              t =    63.27s Find the Target Application 'com.example.UIKitLanguageDemo'
+              t =    66.47s Added attachment named 'Scroll indicator en'
+              t =    66.47s Tap "language.ar" Button
+              t =    66.47s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    66.48s     Find the "language.ar" Button
+              t =    67.84s     Check for interrupting elements affecting "language.ar" Button
+              t =    69.29s     Synthesize event
+              t =    69.69s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    69.84s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =    69.84s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    70.04s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =    70.32s     Check for interrupting elements affecting Table
+              t =    71.62s     Synthesize event
+              t =    72.28s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    74.39s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+              t =    78.40s Find the Any (Element at index 0)
+              t =    80.11s Find the "垂直滚动条, 41页" Other
+              t =    81.93s Find the "垂直滚动条, 41页" Other
+              t =    84.07s Find the "垂直滚动条, 41页" Other
+              t =    86.54s Find the "垂直滚动条, 41页" Other
+              t =    88.48s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =    88.81s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =    89.27s Find the "垂直滚动条, 41页" Other
+              t =    91.83s Added attachment named 'Scroll indicator geometry ar'
+              t =    91.83s Find the Target Application 'com.example.UIKitLanguageDemo'
+              t =    95.67s Added attachment named 'Scroll indicator ar'
+              t =    95.68s Tap "language.zh-Hans" Button
+              t =    95.68s     Wait for com.example.UIKitLanguageDemo to idle
+              t =    95.70s     Find the "language.zh-Hans" Button
+              t =    98.63s     Check for interrupting elements affecting "language.zh-Hans" Button
+              t =   100.82s     Synthesize event
+              t =   101.25s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   101.42s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =   101.42s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   101.62s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =   102.09s     Check for interrupting elements affecting Table
+              t =   103.99s     Synthesize event
+              t =   104.66s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   106.80s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+              t =   110.55s Find the Any (Element at index 0)
+              t =   112.04s Find the "垂直滚动条, 40页" Other
+              t =   113.80s Find the "垂直滚动条, 40页" Other
+              t =   115.77s Find the "垂直滚动条, 40页" Other
+              t =   117.80s Find the "垂直滚动条, 40页" Other
+              t =   119.33s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =   119.63s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =   119.87s Find the "垂直滚动条, 40页" Other
+              t =   121.45s Added attachment named 'Scroll indicator geometry zh-Hans'
+              t =   121.45s Find the Target Application 'com.example.UIKitLanguageDemo'
+              t =   123.78s Added attachment named 'Scroll indicator zh-Hans'
+              t =   123.78s Tap "language.ar" Button
+              t =   123.78s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   123.80s     Find the "language.ar" Button
+              t =   125.72s     Check for interrupting elements affecting "language.ar" Button
+              t =   127.22s     Synthesize event
+              t =   127.65s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   127.73s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =   127.73s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   127.94s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =   128.21s     Check for interrupting elements affecting Table
+              t =   130.00s     Synthesize event
+              t =   130.73s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   133.13s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+              t =   137.01s Find the Any (Element at index 0)
+              t =   138.90s Find the "垂直滚动条, 41页" Other
+              t =   140.50s Find the "垂直滚动条, 41页" Other
+              t =   142.11s Find the "垂直滚动条, 41页" Other
+              t =   143.74s Find the "垂直滚动条, 41页" Other
+              t =   145.47s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =   145.79s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+              t =   146.10s Find the "垂直滚动条, 41页" Other
+              t =   147.95s Added attachment named 'Scroll indicator geometry ar'
+              t =   147.96s Find the Target Application 'com.example.UIKitLanguageDemo'
+              t =   150.20s Added attachment named 'Scroll indicator ar'
+              t =   150.20s Tap "language.system" Button
+              t =   150.20s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   150.22s     Find the "language.system" Button
+              t =   151.59s     Check for interrupting elements affecting "language.system" Button
+              t =   152.71s     Synthesize event
+              t =   153.09s     Wait for com.example.UIKitLanguageDemo to idle
+              t =   153.36s Tear Down
+          Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' passed (154.489 seconds).
+          Test Suite 'ScrollIndicatorUITests' passed at 2026-11-15 23:06:56.660.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.495) seconds
+          Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-15 23:06:56.662.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.500) seconds
+          Test Suite 'Selected tests' passed at 2026-11-15 23:06:56.665.
+          	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.507) seconds
+        
+          Run test suite UIKitLanguageDemoUITests.xctest
+            Summary: Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-15 23:06:56.662.
+	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.500) seconds
+
+            Test Suite 'UIKitLanguageDemoUITests.xctest' started at 2026-11-15 23:04:22.162.
+            Test Suite 'ScrollIndicatorUITests' started at 2026-11-15 23:04:22.164.
+            Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' started.
+                t =     0.01s Start Test at 2026-11-15 23:04:22.172
+                t =     1.55s Set Up
+                t =     1.60s Open com.example.UIKitLanguageDemo
+                t =     1.60s     Launch com.example.UIKitLanguageDemo
+                t =     4.16s         Setting up automation session
+                t =    10.21s         Wait for com.example.UIKitLanguageDemo to idle
+                t =    14.74s Waiting 20.0s for "tab.settings.title" Button to exist
+                t =    15.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+                t =    15.78s         Checking existence of `"tab.settings.title" Button`
+                t =    16.31s Tap "tab.settings.title" Button
+                t =    16.31s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    16.33s     Find the "tab.settings.title" Button
+                t =    16.76s     Check for interrupting elements affecting "tab.settings.title" Button
+                t =    17.21s     Synthesize event
+                t =    17.75s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    19.94s Waiting 10.0s for Table (First Match) to exist
+                t =    20.96s     Checking `Expect predicate `existsNoRetry == 1` for object Table (First Match)`
+                t =    20.96s         Checking existence of `Table (First Match)`
+                t =    21.35s Find the "language.system" Button
+                t =    36.70s Tap "language.en" Button
+                t =    36.70s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    36.72s     Find the "language.en" Button
+                t =    39.04s     Check for interrupting elements affecting "language.en" Button
+                t =    40.52s     Synthesize event
+                t =    40.93s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    41.15s Swipe up Table (First Match)
+                t =    41.15s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    41.17s     Find the Table (First Match)
+                t =    41.46s     Check for interrupting elements affecting Table
+                t =    43.15s     Synthesize event
+                t =    43.91s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    46.04s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                t =    48.96s Find the Any (Element at index 0)
+                t =    51.08s Find the "垂直滚动条, 40页" Other
+                t =    52.86s Find the "垂直滚动条, 40页" Other
+                t =    54.93s Find the "垂直滚动条, 40页" Other
+                t =    59.01s Find the "垂直滚动条, 40页" Other
+                t =    60.87s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =    61.27s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =    61.63s Find the "垂直滚动条, 40页" Other
+                t =    63.26s Added attachment named 'Scroll indicator geometry en'
+                t =    63.27s Find the Target Application 'com.example.UIKitLanguageDemo'
+                t =    66.47s Added attachment named 'Scroll indicator en'
+                t =    66.47s Tap "language.ar" Button
+                t =    66.47s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    66.48s     Find the "language.ar" Button
+                t =    67.84s     Check for interrupting elements affecting "language.ar" Button
+                t =    69.29s     Synthesize event
+                t =    69.69s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    69.84s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =    69.84s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    70.04s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =    70.32s     Check for interrupting elements affecting Table
+                t =    71.62s     Synthesize event
+                t =    72.28s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    74.39s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                t =    78.40s Find the Any (Element at index 0)
+                t =    80.11s Find the "垂直滚动条, 41页" Other
+                t =    81.93s Find the "垂直滚动条, 41页" Other
+                t =    84.07s Find the "垂直滚动条, 41页" Other
+                t =    86.54s Find the "垂直滚动条, 41页" Other
+                t =    88.48s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =    88.81s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =    89.27s Find the "垂直滚动条, 41页" Other
+                t =    91.83s Added attachment named 'Scroll indicator geometry ar'
+                t =    91.83s Find the Target Application 'com.example.UIKitLanguageDemo'
+                t =    95.67s Added attachment named 'Scroll indicator ar'
+                t =    95.68s Tap "language.zh-Hans" Button
+                t =    95.68s     Wait for com.example.UIKitLanguageDemo to idle
+                t =    95.70s     Find the "language.zh-Hans" Button
+                t =    98.63s     Check for interrupting elements affecting "language.zh-Hans" Button
+                t =   100.82s     Synthesize event
+                t =   101.25s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   101.42s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =   101.42s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   101.62s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =   102.09s     Check for interrupting elements affecting Table
+                t =   103.99s     Synthesize event
+                t =   104.66s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   106.80s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                t =   110.55s Find the Any (Element at index 0)
+                t =   112.04s Find the "垂直滚动条, 40页" Other
+                t =   113.80s Find the "垂直滚动条, 40页" Other
+                t =   115.77s Find the "垂直滚动条, 40页" Other
+                t =   117.80s Find the "垂直滚动条, 40页" Other
+                t =   119.33s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =   119.63s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =   119.87s Find the "垂直滚动条, 40页" Other
+                t =   121.45s Added attachment named 'Scroll indicator geometry zh-Hans'
+                t =   121.45s Find the Target Application 'com.example.UIKitLanguageDemo'
+                t =   123.78s Added attachment named 'Scroll indicator zh-Hans'
+                t =   123.78s Tap "language.ar" Button
+                t =   123.78s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   123.80s     Find the "language.ar" Button
+                t =   125.72s     Check for interrupting elements affecting "language.ar" Button
+                t =   127.22s     Synthesize event
+                t =   127.65s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   127.73s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =   127.73s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   127.94s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =   128.21s     Check for interrupting elements affecting Table
+                t =   130.00s     Synthesize event
+                t =   130.73s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   133.13s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                t =   137.01s Find the Any (Element at index 0)
+                t =   138.90s Find the "垂直滚动条, 41页" Other
+                t =   140.50s Find the "垂直滚动条, 41页" Other
+                t =   142.11s Find the "垂直滚动条, 41页" Other
+                t =   143.74s Find the "垂直滚动条, 41页" Other
+                t =   145.47s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =   145.79s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                t =   146.10s Find the "垂直滚动条, 41页" Other
+                t =   147.95s Added attachment named 'Scroll indicator geometry ar'
+                t =   147.96s Find the Target Application 'com.example.UIKitLanguageDemo'
+                t =   150.20s Added attachment named 'Scroll indicator ar'
+                t =   150.20s Tap "language.system" Button
+                t =   150.20s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   150.22s     Find the "language.system" Button
+                t =   151.59s     Check for interrupting elements affecting "language.system" Button
+                t =   152.71s     Synthesize event
+                t =   153.09s     Wait for com.example.UIKitLanguageDemo to idle
+                t =   153.36s Tear Down
+            Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' passed (154.489 seconds).
+            Test Suite 'ScrollIndicatorUITests' passed at 2026-11-15 23:06:56.660.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.495) seconds
+            Test Suite 'UIKitLanguageDemoUITests.xctest' passed at 2026-11-15 23:06:56.662.
+            	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.500) seconds
+          
+            Run test suite ScrollIndicatorUITests
+              Summary: Test Suite 'ScrollIndicatorUITests' passed at 2026-11-15 23:06:56.660.
+	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.495) seconds
+
+              Test Suite 'ScrollIndicatorUITests' started at 2026-11-15 23:04:22.164.
+              Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' started.
+                  t =     0.01s Start Test at 2026-11-15 23:04:22.172
+                  t =     1.55s Set Up
+                  t =     1.60s Open com.example.UIKitLanguageDemo
+                  t =     1.60s     Launch com.example.UIKitLanguageDemo
+                  t =     4.16s         Setting up automation session
+                  t =    10.21s         Wait for com.example.UIKitLanguageDemo to idle
+                  t =    14.74s Waiting 20.0s for "tab.settings.title" Button to exist
+                  t =    15.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+                  t =    15.78s         Checking existence of `"tab.settings.title" Button`
+                  t =    16.31s Tap "tab.settings.title" Button
+                  t =    16.31s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    16.33s     Find the "tab.settings.title" Button
+                  t =    16.76s     Check for interrupting elements affecting "tab.settings.title" Button
+                  t =    17.21s     Synthesize event
+                  t =    17.75s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    19.94s Waiting 10.0s for Table (First Match) to exist
+                  t =    20.96s     Checking `Expect predicate `existsNoRetry == 1` for object Table (First Match)`
+                  t =    20.96s         Checking existence of `Table (First Match)`
+                  t =    21.35s Find the "language.system" Button
+                  t =    36.70s Tap "language.en" Button
+                  t =    36.70s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    36.72s     Find the "language.en" Button
+                  t =    39.04s     Check for interrupting elements affecting "language.en" Button
+                  t =    40.52s     Synthesize event
+                  t =    40.93s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    41.15s Swipe up Table (First Match)
+                  t =    41.15s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    41.17s     Find the Table (First Match)
+                  t =    41.46s     Check for interrupting elements affecting Table
+                  t =    43.15s     Synthesize event
+                  t =    43.91s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    46.04s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                  t =    48.96s Find the Any (Element at index 0)
+                  t =    51.08s Find the "垂直滚动条, 40页" Other
+                  t =    52.86s Find the "垂直滚动条, 40页" Other
+                  t =    54.93s Find the "垂直滚动条, 40页" Other
+                  t =    59.01s Find the "垂直滚动条, 40页" Other
+                  t =    60.87s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =    61.27s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =    61.63s Find the "垂直滚动条, 40页" Other
+                  t =    63.26s Added attachment named 'Scroll indicator geometry en'
+                  t =    63.27s Find the Target Application 'com.example.UIKitLanguageDemo'
+                  t =    66.47s Added attachment named 'Scroll indicator en'
+                  t =    66.47s Tap "language.ar" Button
+                  t =    66.47s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    66.48s     Find the "language.ar" Button
+                  t =    67.84s     Check for interrupting elements affecting "language.ar" Button
+                  t =    69.29s     Synthesize event
+                  t =    69.69s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    69.84s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =    69.84s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    70.04s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =    70.32s     Check for interrupting elements affecting Table
+                  t =    71.62s     Synthesize event
+                  t =    72.28s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    74.39s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                  t =    78.40s Find the Any (Element at index 0)
+                  t =    80.11s Find the "垂直滚动条, 41页" Other
+                  t =    81.93s Find the "垂直滚动条, 41页" Other
+                  t =    84.07s Find the "垂直滚动条, 41页" Other
+                  t =    86.54s Find the "垂直滚动条, 41页" Other
+                  t =    88.48s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =    88.81s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =    89.27s Find the "垂直滚动条, 41页" Other
+                  t =    91.83s Added attachment named 'Scroll indicator geometry ar'
+                  t =    91.83s Find the Target Application 'com.example.UIKitLanguageDemo'
+                  t =    95.67s Added attachment named 'Scroll indicator ar'
+                  t =    95.68s Tap "language.zh-Hans" Button
+                  t =    95.68s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =    95.70s     Find the "language.zh-Hans" Button
+                  t =    98.63s     Check for interrupting elements affecting "language.zh-Hans" Button
+                  t =   100.82s     Synthesize event
+                  t =   101.25s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   101.42s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =   101.42s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   101.62s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =   102.09s     Check for interrupting elements affecting Table
+                  t =   103.99s     Synthesize event
+                  t =   104.66s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   106.80s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                  t =   110.55s Find the Any (Element at index 0)
+                  t =   112.04s Find the "垂直滚动条, 40页" Other
+                  t =   113.80s Find the "垂直滚动条, 40页" Other
+                  t =   115.77s Find the "垂直滚动条, 40页" Other
+                  t =   117.80s Find the "垂直滚动条, 40页" Other
+                  t =   119.33s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =   119.63s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =   119.87s Find the "垂直滚动条, 40页" Other
+                  t =   121.45s Added attachment named 'Scroll indicator geometry zh-Hans'
+                  t =   121.45s Find the Target Application 'com.example.UIKitLanguageDemo'
+                  t =   123.78s Added attachment named 'Scroll indicator zh-Hans'
+                  t =   123.78s Tap "language.ar" Button
+                  t =   123.78s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   123.80s     Find the "language.ar" Button
+                  t =   125.72s     Check for interrupting elements affecting "language.ar" Button
+                  t =   127.22s     Synthesize event
+                  t =   127.65s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   127.73s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =   127.73s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   127.94s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =   128.21s     Check for interrupting elements affecting Table
+                  t =   130.00s     Synthesize event
+                  t =   130.73s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   133.13s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                  t =   137.01s Find the Any (Element at index 0)
+                  t =   138.90s Find the "垂直滚动条, 41页" Other
+                  t =   140.50s Find the "垂直滚动条, 41页" Other
+                  t =   142.11s Find the "垂直滚动条, 41页" Other
+                  t =   143.74s Find the "垂直滚动条, 41页" Other
+                  t =   145.47s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =   145.79s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                  t =   146.10s Find the "垂直滚动条, 41页" Other
+                  t =   147.95s Added attachment named 'Scroll indicator geometry ar'
+                  t =   147.96s Find the Target Application 'com.example.UIKitLanguageDemo'
+                  t =   150.20s Added attachment named 'Scroll indicator ar'
+                  t =   150.20s Tap "language.system" Button
+                  t =   150.20s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   150.22s     Find the "language.system" Button
+                  t =   151.59s     Check for interrupting elements affecting "language.system" Button
+                  t =   152.71s     Synthesize event
+                  t =   153.09s     Wait for com.example.UIKitLanguageDemo to idle
+                  t =   153.36s Tear Down
+              Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' passed (154.489 seconds).
+              Test Suite 'ScrollIndicatorUITests' passed at 2026-11-15 23:06:56.660.
+              	 Executed 1 test, with 0 failures (0 unexpected) in 154.489 (154.495) seconds
+            
+              Run test case testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()
+                Summary:     t =     0.01s Start Test at 2026-11-15 23:04:22.172
+    t =     1.55s Set Up
+    t =     1.60s Open com.example.UIKitLanguageDemo
+    t =     1.60s     Launch com.example.UIKitLanguageDemo
+    t =     4.16s         Setting up automation session
+    t =    10.21s         Wait for com.example.UIKitLanguageDemo to idle
+    t =    14.74s Waiting 20.0s for "tab.settings.title" Button to exist
+    t =    15.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+    t =    15.78s         Checking existence of `"tab.settings.title" Button`
+    t =    16.31s Tap "tab.settings.title" Button
+    t =    16.31s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    16.33s     Find the "tab.settings.title" Button
+    t =    16.76s     Check for interrupting elements affecting "tab.settings.title" Button
+    t =    17.21s     Synthesize event
+    t =    17.75s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    19.94s Waiting 10.0s for Table (First Match) to exist
+    t =    20.96s     Checking `Expect predicate `existsNoRetry == 1` for object Table (First Match)`
+    t =    20.96s         Checking existence of `Table (First Match)`
+    t =    21.35s Find the "language.system" Button
+    t =    36.70s Tap "language.en" Button
+    t =    36.70s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    36.72s     Find the "language.en" Button
+    t =    39.04s     Check for interrupting elements affecting "language.en" Button
+    t =    40.52s     Synthesize event
+    t =    40.93s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    41.15s Swipe up Table (First Match)
+    t =    41.15s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    41.17s     Find the Table (First Match)
+    t =    41.46s     Check for interrupting elements affecting Table
+    t =    43.15s     Synthesize event
+    t =    43.91s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    46.04s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+    t =    48.96s Find the Any (Element at index 0)
+    t =    51.08s Find the "垂直滚动条, 40页" Other
+    t =    52.86s Find the "垂直滚动条, 40页" Other
+    t =    54.93s Find the "垂直滚动条, 40页" Other
+    t =    59.01s Find the "垂直滚动条, 40页" Other
+    t =    60.87s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =    61.27s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =    61.63s Find the "垂直滚动条, 40页" Other
+    t =    63.26s Added attachment named 'Scroll indicator geometry en'
+    t =    63.27s Find the Target Application 'com.example.UIKitLanguageDemo'
+    t =    66.47s Added attachment named 'Scroll indicator en'
+    t =    66.47s Tap "language.ar" Button
+    t =    66.47s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    66.48s     Find the "language.ar" Button
+    t =    67.84s     Check for interrupting elements affecting "language.ar" Button
+    t =    69.29s     Synthesize event
+    t =    69.69s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    69.84s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =    69.84s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    70.04s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =    70.32s     Check for interrupting elements affecting Table
+    t =    71.62s     Synthesize event
+    t =    72.28s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    74.39s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+    t =    78.40s Find the Any (Element at index 0)
+    t =    80.11s Find the "垂直滚动条, 41页" Other
+    t =    81.93s Find the "垂直滚动条, 41页" Other
+    t =    84.07s Find the "垂直滚动条, 41页" Other
+    t =    86.54s Find the "垂直滚动条, 41页" Other
+    t =    88.48s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =    88.81s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =    89.27s Find the "垂直滚动条, 41页" Other
+    t =    91.83s Added attachment named 'Scroll indicator geometry ar'
+    t =    91.83s Find the Target Application 'com.example.UIKitLanguageDemo'
+    t =    95.67s Added attachment named 'Scroll indicator ar'
+    t =    95.68s Tap "language.zh-Hans" Button
+    t =    95.68s     Wait for com.example.UIKitLanguageDemo to idle
+    t =    95.70s     Find the "language.zh-Hans" Button
+    t =    98.63s     Check for interrupting elements affecting "language.zh-Hans" Button
+    t =   100.82s     Synthesize event
+    t =   101.25s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   101.42s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =   101.42s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   101.62s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =   102.09s     Check for interrupting elements affecting Table
+    t =   103.99s     Synthesize event
+    t =   104.66s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   106.80s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+    t =   110.55s Find the Any (Element at index 0)
+    t =   112.04s Find the "垂直滚动条, 40页" Other
+    t =   113.80s Find the "垂直滚动条, 40页" Other
+    t =   115.77s Find the "垂直滚动条, 40页" Other
+    t =   117.80s Find the "垂直滚动条, 40页" Other
+    t =   119.33s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =   119.63s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =   119.87s Find the "垂直滚动条, 40页" Other
+    t =   121.45s Added attachment named 'Scroll indicator geometry zh-Hans'
+    t =   121.45s Find the Target Application 'com.example.UIKitLanguageDemo'
+    t =   123.78s Added attachment named 'Scroll indicator zh-Hans'
+    t =   123.78s Tap "language.ar" Button
+    t =   123.78s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   123.80s     Find the "language.ar" Button
+    t =   125.72s     Check for interrupting elements affecting "language.ar" Button
+    t =   127.22s     Synthesize event
+    t =   127.65s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   127.73s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =   127.73s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   127.94s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =   128.21s     Check for interrupting elements affecting Table
+    t =   130.00s     Synthesize event
+    t =   130.73s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   133.13s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+    t =   137.01s Find the Any (Element at index 0)
+    t =   138.90s Find the "垂直滚动条, 41页" Other
+    t =   140.50s Find the "垂直滚动条, 41页" Other
+    t =   142.11s Find the "垂直滚动条, 41页" Other
+    t =   143.74s Find the "垂直滚动条, 41页" Other
+    t =   145.47s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =   145.79s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+    t =   146.10s Find the "垂直滚动条, 41页" Other
+    t =   147.95s Added attachment named 'Scroll indicator geometry ar'
+    t =   147.96s Find the Target Application 'com.example.UIKitLanguageDemo'
+    t =   150.20s Added attachment named 'Scroll indicator ar'
+    t =   150.20s Tap "language.system" Button
+    t =   150.20s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   150.22s     Find the "language.system" Button
+    t =   151.59s     Check for interrupting elements affecting "language.system" Button
+    t =   152.71s     Synthesize event
+    t =   153.09s     Wait for com.example.UIKitLanguageDemo to idle
+    t =   153.36s Tear Down
+Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' passed (154.489 seconds).
+
+                Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' started.
+                    t =     0.01s Start Test at 2026-11-15 23:04:22.172
+                    t =     1.55s Set Up
+                    t =     1.60s Open com.example.UIKitLanguageDemo
+                    t =     1.60s     Launch com.example.UIKitLanguageDemo
+                    t =     4.16s         Setting up automation session
+                    t =    10.21s         Wait for com.example.UIKitLanguageDemo to idle
+                    t =    14.74s Waiting 20.0s for "tab.settings.title" Button to exist
+                    t =    15.78s     Checking `Expect predicate `existsNoRetry == 1` for object "tab.settings.title" Button`
+                    t =    15.78s         Checking existence of `"tab.settings.title" Button`
+                    t =    16.31s Tap "tab.settings.title" Button
+                    t =    16.31s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    16.33s     Find the "tab.settings.title" Button
+                    t =    16.76s     Check for interrupting elements affecting "tab.settings.title" Button
+                    t =    17.21s     Synthesize event
+                    t =    17.75s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    19.94s Waiting 10.0s for Table (First Match) to exist
+                    t =    20.96s     Checking `Expect predicate `existsNoRetry == 1` for object Table (First Match)`
+                    t =    20.96s         Checking existence of `Table (First Match)`
+                    t =    21.35s Find the "language.system" Button
+                    t =    36.70s Tap "language.en" Button
+                    t =    36.70s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    36.72s     Find the "language.en" Button
+                    t =    39.04s     Check for interrupting elements affecting "language.en" Button
+                    t =    40.52s     Synthesize event
+                    t =    40.93s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    41.15s Swipe up Table (First Match)
+                    t =    41.15s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    41.17s     Find the Table (First Match)
+                    t =    41.46s     Check for interrupting elements affecting Table
+                    t =    43.15s     Synthesize event
+                    t =    43.91s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    46.04s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                    t =    48.96s Find the Any (Element at index 0)
+                    t =    51.08s Find the "垂直滚动条, 40页" Other
+                    t =    52.86s Find the "垂直滚动条, 40页" Other
+                    t =    54.93s Find the "垂直滚动条, 40页" Other
+                    t =    59.01s Find the "垂直滚动条, 40页" Other
+                    t =    60.87s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =    61.27s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =    61.63s Find the "垂直滚动条, 40页" Other
+                    t =    63.26s Added attachment named 'Scroll indicator geometry en'
+                    t =    63.27s Find the Target Application 'com.example.UIKitLanguageDemo'
+                    t =    66.47s Added attachment named 'Scroll indicator en'
+                    t =    66.47s Tap "language.ar" Button
+                    t =    66.47s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    66.48s     Find the "language.ar" Button
+                    t =    67.84s     Check for interrupting elements affecting "language.ar" Button
+                    t =    69.29s     Synthesize event
+                    t =    69.69s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    69.84s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =    69.84s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    70.04s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =    70.32s     Check for interrupting elements affecting Table
+                    t =    71.62s     Synthesize event
+                    t =    72.28s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    74.39s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                    t =    78.40s Find the Any (Element at index 0)
+                    t =    80.11s Find the "垂直滚动条, 41页" Other
+                    t =    81.93s Find the "垂直滚动条, 41页" Other
+                    t =    84.07s Find the "垂直滚动条, 41页" Other
+                    t =    86.54s Find the "垂直滚动条, 41页" Other
+                    t =    88.48s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =    88.81s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =    89.27s Find the "垂直滚动条, 41页" Other
+                    t =    91.83s Added attachment named 'Scroll indicator geometry ar'
+                    t =    91.83s Find the Target Application 'com.example.UIKitLanguageDemo'
+                    t =    95.67s Added attachment named 'Scroll indicator ar'
+                    t =    95.68s Tap "language.zh-Hans" Button
+                    t =    95.68s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =    95.70s     Find the "language.zh-Hans" Button
+                    t =    98.63s     Check for interrupting elements affecting "language.zh-Hans" Button
+                    t =   100.82s     Synthesize event
+                    t =   101.25s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   101.42s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =   101.42s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   101.62s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =   102.09s     Check for interrupting elements affecting Table
+                    t =   103.99s     Synthesize event
+                    t =   104.66s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   106.80s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                    t =   110.55s Find the Any (Element at index 0)
+                    t =   112.04s Find the "垂直滚动条, 40页" Other
+                    t =   113.80s Find the "垂直滚动条, 40页" Other
+                    t =   115.77s Find the "垂直滚动条, 40页" Other
+                    t =   117.80s Find the "垂直滚动条, 40页" Other
+                    t =   119.33s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =   119.63s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =   119.87s Find the "垂直滚动条, 40页" Other
+                    t =   121.45s Added attachment named 'Scroll indicator geometry zh-Hans'
+                    t =   121.45s Find the Target Application 'com.example.UIKitLanguageDemo'
+                    t =   123.78s Added attachment named 'Scroll indicator zh-Hans'
+                    t =   123.78s Tap "language.ar" Button
+                    t =   123.78s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   123.80s     Find the "language.ar" Button
+                    t =   125.72s     Check for interrupting elements affecting "language.ar" Button
+                    t =   127.22s     Synthesize event
+                    t =   127.65s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   127.73s Swipe up Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =   127.73s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   127.94s     Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =   128.21s     Check for interrupting elements affecting Table
+                    t =   130.00s     Synthesize event
+                    t =   130.73s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   133.13s Get all elements bound by index for: Elements matching predicate 'label CONTAINS[c] "scroll bar" OR label CONTAINS "滚动条" OR label CONTAINS "شريط التمرير"'
+                    t =   137.01s Find the Any (Element at index 0)
+                    t =   138.90s Find the "垂直滚动条, 41页" Other
+                    t =   140.50s Find the "垂直滚动条, 41页" Other
+                    t =   142.11s Find the "垂直滚动条, 41页" Other
+                    t =   143.74s Find the "垂直滚动条, 41页" Other
+                    t =   145.47s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =   145.79s Find the Table at {{16.0, 441.0}, {370.0, 350.0}}
+                    t =   146.10s Find the "垂直滚动条, 41页" Other
+                    t =   147.95s Added attachment named 'Scroll indicator geometry ar'
+                    t =   147.96s Find the Target Application 'com.example.UIKitLanguageDemo'
+                    t =   150.20s Added attachment named 'Scroll indicator ar'
+                    t =   150.20s Tap "language.system" Button
+                    t =   150.20s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   150.22s     Find the "language.system" Button
+                    t =   151.59s     Check for interrupting elements affecting "language.system" Button
+                    t =   152.71s     Synthesize event
+                    t =   153.09s     Wait for com.example.UIKitLanguageDemo to idle
+                    t =   153.36s Tear Down
+                Test Case '-[UIKitLanguageDemoUITests.ScrollIndicatorUITests testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch]' passed (154.489 seconds).
+              
+** TEST FINISHED **

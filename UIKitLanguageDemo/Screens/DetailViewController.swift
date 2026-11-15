@@ -75,7 +75,7 @@ final class DetailViewController: LocalizedViewController {
         phoneLabel.attributedText = NSAttributedString(string: "+86 138 0000 0000",
             attributes: [.paragraphStyle: phoneParagraph])
         languagePicker.applyLocalization(context)
-        LayoutDirection.applyBoundary(context, to: scrollView)
+        LayoutDirection.applyScrollView(context, to: scrollView)
         LayoutDirection.applyBoundary(context, to: stack)
     }
 }

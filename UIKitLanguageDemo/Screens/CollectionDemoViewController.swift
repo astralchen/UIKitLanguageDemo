@@ -63,6 +63,7 @@ final class CollectionDemoViewController: LocalizedViewController, UICollectionV
     override func applyLocalization(_ context: LanguageContext) {
         title = context.text(axis == .vertical ? .collectionTitle : .collectionHorizontal)
         languagePicker.applyLocalization(context)
+        LayoutDirection.applyScrollView(context, to: collectionView)
         LayoutDirection.applyBoundary(context, to: stack)
     }
 

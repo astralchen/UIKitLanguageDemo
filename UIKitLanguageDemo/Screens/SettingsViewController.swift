@@ -52,6 +52,7 @@ final class SettingsViewController: LocalizedViewController, UITableViewDataSour
     override func applyLocalization(_ context: LanguageContext) {
         title = context.text(.settingsTitle)
         languagePicker.applyLocalization(context)
+        LayoutDirection.applyScrollView(context, to: tableView)
         appearancePicker.applyLocalization(context)
         LayoutDirection.applyBoundary(context, to: stack)
         // Cells and scroll state are handled by the coordinator after window layout.

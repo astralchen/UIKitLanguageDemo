@@ -3,6 +3,7 @@ import UIKit
 @MainActor
 final class HomeViewController: LocalizedViewController {
     private let heading = UILabel()
+    private let scrollView = UIScrollView()
     private let openButton = UIButton(type: .system)
     private let tripleButton = UIButton(type: .system)
     private let splitButton = UIButton(type: .system)
@@ -61,7 +62,6 @@ final class HomeViewController: LocalizedViewController {
         stack.axis = .vertical
         stack.spacing = 16
         stack.translatesAutoresizingMaskIntoConstraints = false
-        let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(scrollView)
         scrollView.addSubview(stack)
@@ -80,6 +80,7 @@ final class HomeViewController: LocalizedViewController {
 
     override func applyLocalization(_ context: LanguageContext) {
         title = context.text(.homeTitle)
+        LayoutDirection.applyScrollView(context, to: scrollView)
         heading.text = context.text(.homeDescription)
         heading.textAlignment = context.isRTL ? .right : .left
         var config = openButton.configuration!

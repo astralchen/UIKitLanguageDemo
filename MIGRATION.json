@@ -35,13 +35,13 @@
   },
   "officialBuild": {
     "success": true,
-    "elapsedSeconds": 38.855,
+    "elapsedSeconds": 28.704,
     "errors": [],
     "tool": "Apple official MCP BuildProject",
-    "finalSourcesAlsoBuiltBy": "Apple official MCP focused appearance tests"
+    "finalSourcesAlsoBuiltBy": "Apple official MCP focused scroll-indicator tests"
   },
   "officialTestDiscovery": {
-    "enabled": 36,
+    "enabled": 41,
     "disabled": 0
   },
   "officialTestRun": {
@@ -282,11 +282,11 @@
     },
     {
       "file": "UIKitLanguageDemo/Localization/LayoutDirection.swift",
-      "sha256": "c71a7e85b54c4855184070a4ada08087d33ea7a198798ffab4c285e4d1ad593f"
+      "sha256": "fbdb74e348ce58c50662909cad16665d7b0c247629ad8c664bb39880a601e450"
     },
     {
       "file": "UIKitLanguageDemo/Localization/ListLocalizationCoordinator.swift",
-      "sha256": "06030592fd3ce7636b77d39ca0b0e3feaf2b44e6a656b36829bec3997cf50ff1"
+      "sha256": "6a9fb4034a346e02399b8770b6d14de4d9cd7d536c0bd6b29d9a6a98b0089e71"
     },
     {
       "file": "UIKitLanguageDemo/Localization/ListStateRestoration.swift",
@@ -330,11 +330,11 @@
     },
     {
       "file": "UIKitLanguageDemo/Screens/CollectionDemoViewController.swift",
-      "sha256": "738fe70a974d3efcdce6f892c561c8f3d38b5eb19b5887b1f705cbb580efe675"
+      "sha256": "e25e9963a20da418e7fe62c137d1a3b4ec4f64ad46358bf17788a88e21eb6ff2"
     },
     {
       "file": "UIKitLanguageDemo/Screens/CompositionalDemoViewController.swift",
-      "sha256": "fa792054a373ee43621c6bae640aa2f47daff72f29847324ad0263b2d824f5f2"
+      "sha256": "dcbede13832abb5ba8e05304082a72911dd55d52f575c4c02c8cc58ffffd019c"
     },
     {
       "file": "UIKitLanguageDemo/Screens/ContainerDemos.swift",
@@ -342,11 +342,11 @@
     },
     {
       "file": "UIKitLanguageDemo/Screens/DetailViewController.swift",
-      "sha256": "c08fac222f5ed6326e49ccdcff67c2f3b68746d179cc0fe6afdc9776791d3f8f"
+      "sha256": "b02153c5314e1125cc331ddaf0763c2c588456602571287248a790b15123f771"
     },
     {
       "file": "UIKitLanguageDemo/Screens/HomeViewController.swift",
-      "sha256": "e3ea1c51e6779afa75abc8a29fee597fe467ed44c1bb1ab948586c1db519aec6"
+      "sha256": "7d7e7c63080bce6e728a86ecca590857f15a7776bf92ab05a6571aa840657454"
     },
     {
       "file": "UIKitLanguageDemo/Screens/LanguagePickerView.swift",
@@ -358,7 +358,7 @@
     },
     {
       "file": "UIKitLanguageDemo/Screens/SettingsViewController.swift",
-      "sha256": "eab836b2947724a853ea9f1120dbabe05ad9daf478ff8c75c645ca282cd91b0a"
+      "sha256": "782f57763d00770fffd8e465bc6624d47e7f5b98889f479436223ed366299c0f"
     },
     {
       "file": "UIKitLanguageDemoTests/AppearanceTests.swift",
@@ -385,6 +385,10 @@
       "sha256": "4eca138adf5fb7b1273c530e890d4e297c5bec354dc37357cf9185699e187dd0"
     },
     {
+      "file": "UIKitLanguageDemoTests/ScrollDirectionTests.swift",
+      "sha256": "291de9d68cb252911a63db2adee46a33cc95076bc2fb7363581db18d4d4705eb"
+    },
+    {
       "file": "UIKitLanguageDemoTests/TextDirectionTests.swift",
       "sha256": "538efec7b7a02c3508c9ff6eef8b6934bf9b8ab3d55d47c0b7f01b469bc175bf"
     },
@@ -403,6 +407,10 @@
     {
       "file": "UIKitLanguageDemoUITests/NavigationGestureUITests.swift",
       "sha256": "deb4c31f7f51668e0d3eb20aa615220ce0e4790a723eeca2cec44fdcbf1092ff"
+    },
+    {
+      "file": "UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift",
+      "sha256": "73b23b0731b81a95fcb7d15066679fad8bc4fdb360cce54604401f486fd9b598"
     },
     {
       "file": "UIKitLanguageDemoUITests/UIKitLanguageDemoUITests.swift",
@@ -768,5 +776,57 @@
     "screenshots": "appearance-ui/manifest.json",
     "compatibility": "Deployment iOS 15.0 retained; availability-guarded iOS 17 trait observation; no iOS 15 runtime executed",
     "historicalFailures": "Earlier generated-symbol iPad AX failure retained separately; no claim of full-suite completion"
+  },
+  "scrollIndicatorDirection": {
+    "status": "passed focused checks",
+    "scope": "8 targeted tests after explicit scroll boundaries; not a full 41-test run",
+    "reportedIssue": "Vertical indicator remains on physical right after switching to Arabic",
+    "baseline": "Not reproduced on existing iPhone hot-switch paths: Table, Detail and Flow native AX indicator geometry already changed to left in Arabic before the code change. No confirmed baseline cause claimed.",
+    "change": "Explicit semanticContentAttribute at app-owned UIScrollView, UITableView and UICollectionView boundaries on initial load and every language refresh, all supported OS versions",
+    "nativeBehavior": "No private indicator access, negative insets, transforms, replacement controllers, or recursive changes to UIKit paging/orthogonal engines",
+    "tool": "Apple official MCP XcodeWrite / BuildProject / GetTestList / RunSomeTests",
+    "simulator": {
+      "name": "iPhone 17 Pro / iOS 26.5",
+      "existingUDID": "07EFF63F-CD81-40CE-B872-428175F5D3C2",
+      "created": 0,
+      "requestedRestarts": 0
+    },
+    "passedTests": [
+      "ScrollDirectionTests/testOwnedScrollBoundariesRefreshWithoutChangingIndicatorPolicyOrPagerEngine()",
+      "LanguageTests/testTableKeepsReadingAnchorAndRefreshesReusedRows()",
+      "LanguageTests/testCollectionGridMirrorsAndPreservesSelectionDraftAndAnchor()",
+      "LanguageTests/testHorizontalCollectionKeepsLogicalLeadingItemAcrossRTL()",
+      "LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "ScrollIndicatorUITests/testRestoredArabicDetailIndicatorOnLaunch()",
+      "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()"
+    ],
+    "nativeUIChecks": [
+      "Table indicator physical right in EN/ZH and left in AR through repeated hot switches",
+      "Arabic Detail restored after background, process termination and relaunch; native indicator physical left"
+    ],
+    "stateChecks": [
+      "Table reading anchor",
+      "Flow grid selection, draft and anchor",
+      "Horizontal Flow logical leading item",
+      "Compositional grid draft, selection and anchor",
+      "Compositional orthogonal business page and outer anchor",
+      "Custom indicator visibility/style/insets untouched",
+      "UIPageViewController physical LTR engine untouched"
+    ],
+    "evidence": {
+      "baselineTable": "official-mcp-scroll-indicator-baseline-table.json",
+      "baselineDetailFlow": "official-mcp-scroll-indicator-baseline-detail-flow.json",
+      "final": "official-mcp-scroll-indicator-final.json",
+      "build": "official-mcp-scroll-indicator-build.json"
+    },
+    "compatibility": "iOS 15 deployment unchanged; only iOS 26.5 simulator runtime executed",
+    "limitation": "The exact user-reported page was unspecified; initial hot-switch checks did not reproduce it. No claim of a reproduced pre-fix failure or full-suite completion.",
+    "attachments": "scroll-indicator-ui/manifest.json",
+    "finalSourceRecheck": {
+      "evidence": "official-mcp-scroll-indicator-final-source-recheck.json",
+      "passed": 1,
+      "change": "Test cleanup now restores its initial language choice; production source unchanged"
+    }
   }
 }

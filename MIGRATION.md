@@ -1,5 +1,7 @@
 # Xcode 原生工程与官方 MCP 迁移记录
 
+最新滚动指示器接入：所有业务滚动视图显式设置 RTL/LTR，原生指示器及列表状态保留。官方 MCP 构建及既有 iPhone 上八项定向测试通过；目录共 41 项，未全量重跑或执行 iOS 15。修改前三项热切换测试未复现用户报告，保留其原始通过记录。详见 verification/scroll-indicator-verification.json。
+
 最新外观接入：窗口级三态选择、持久化及多 Scene 同步，iOS 15 部署保持不变。官方 MCP 构建成功，九项定向用例在已有 iPhone／iPad 上通过，包含两个真实 Scene；当前目录 36 项，本轮未全量重跑。文档见 APPEARANCE.md，原始记录见 verification/appearance-verification.json。
 
 最新输入方向修复：输入框按 App 起始边对齐，手机号按 App 对齐并保持 LTR 字符顺序。官方 MCP 构建成功，五项单元及 UI 单项复验通过，两个原始截图已核对。目录共 31 项，本轮未全量重跑，详见 verification/text-direction-verification.json。源码哈希已更新。
