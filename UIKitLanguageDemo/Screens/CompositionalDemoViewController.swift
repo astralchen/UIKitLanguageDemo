@@ -17,7 +17,7 @@ final class CompositionalDemoViewController: LocalizedViewController, UICollecti
     init(mode: Mode = .grid) {
         self.mode = mode
         itemIDsBySection = mode == .grid ? [Array(0..<80)] : [Array(0..<30), Array(100..<180)]
-        // Install the section provider after self has been initialized.
+        // 在 self 初始化完成后安装 section provider。
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         super.init(nibName: nil, bundle: nil)
         collectionView.setCollectionViewLayout(makeLayout(), animated: false)
@@ -76,7 +76,7 @@ final class CompositionalDemoViewController: LocalizedViewController, UICollecti
         languagePicker.applyLocalization(context)
         LayoutDirection.applyBoundary(context, to: stack)
         LayoutDirection.applyScrollView(context, to: collectionView)
-        // Recreate only layout geometry to refresh mirroring on both direction transitions.
+        // 只重建布局几何信息，使两个方向的切换都能刷新镜像布局。
         if renderedRTL != context.isRTL {
             renderedRTL = context.isRTL
             collectionView.setCollectionViewLayout(makeLayout(), animated: false)
@@ -91,13 +91,18 @@ final class CompositionalDemoViewController: LocalizedViewController, UICollecti
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        // Compositional Layout mirrors its scrolling coordinate surface. Use
-        // the public inset API to place the native vertical track at the App's
-        // physical trailing edge without changing cells or gesture handling.
+        // iOS 26+ 会镜像 Compositional Layout 指示器的坐标系：
+        // 其 RTL 轨道需要通过左侧 inset 补偿移到物理左侧。
+        // iOS 18 已将原生 RTL 轨道放在物理左侧，同样的补偿
+        // 反而会把它推回右侧（已在 XR 上验证）。
         let edgeSpacing: CGFloat = 4
         var inset = collectionView.verticalScrollIndicatorInsets
-        inset.left = LanguageService.shared.context.isRTL
-            ? max(0, collectionView.bounds.width - 2 * edgeSpacing) : 0
+        if #available(iOS 26.0, *) {
+            inset.left = LanguageService.shared.context.isRTL
+                ? max(0, collectionView.bounds.width - 2 * edgeSpacing) : 0
+        } else {
+            inset.left = 0
+        }
         if collectionView.verticalScrollIndicatorInsets != inset {
             collectionView.verticalScrollIndicatorInsets = inset
         }
@@ -182,7 +187,7 @@ final class CompositionalDemoViewController: LocalizedViewController, UICollecti
     }
 }
 
-/// Use a fixed LTR development baseline; UIKit mirrors it for the current view direction.
+/// 使用固定的 LTR 开发布局基准；UIKit 根据当前视图方向进行镜像。
 final class LocalizedCompositionalLayout: UICollectionViewCompositionalLayout {
     override var developmentLayoutDirection: UIUserInterfaceLayoutDirection { .leftToRight }
     override var flipsHorizontallyInOppositeLayoutDirection: Bool { true }

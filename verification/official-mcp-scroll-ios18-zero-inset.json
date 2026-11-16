@@ -1,0 +1,34 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 0,
+    "passed": 2,
+    "skipped": 0,
+    "total": 2
+  },
+  "fullConsoleLogsPath": "/var/folders/_b/4kvsp2_s0ss21dbxf2_s7bnh0000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-16T11-16-37+08-00.txt",
+  "fullSummaryPath": "/var/folders/_b/4kvsp2_s0ss21dbxf2_s7bnh0000gn/T/ActionArtifacts/default/RunSomeTests/2EA17B43-0D9C-4D0F-BBB3-2705C53C634E.txt",
+  "results": [
+    {
+      "displayName": "testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "errorMessages": [],
+      "identifier": "ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()",
+      "errorMessages": [],
+      "identifier": "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "2 tests: 2 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 2,
+  "truncated": false,
+  "xcresultBundlePath": "/var/folders/_b/4kvsp2_s0ss21dbxf2_s7bnh0000gn/T/ActionArtifacts/default/RunSomeTests/Test-UIKitLanguageDemo-2026.11.16_11-16-37-+0800.xcresult"
+}

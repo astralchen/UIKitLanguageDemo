@@ -1,0 +1,158 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "F8E0360F-42A9-472F-ABF7-3322559BD52A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_C73BD2AA-E7BA-431A-B86B-17432DCEB328.png",
+        "timestamp" : 1794799451.593
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "49FBC8AD-1FE0-48E9-ABE2-DF5FEF00501E.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_EC52B4F6-E65B-40DE-A23F-136ED4C0AB3A.txt",
+        "timestamp" : 1794799451.394
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "332CE409-D892-4E6E-9C23-84C010DAC230.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator zh-Hans_0_7906CD6D-BFCF-4BAA-8631-A4671A2C26D5.png",
+        "timestamp" : 1794799445.205
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "5BD71DA9-E5D9-43BB-AE56-2E26FA69ADFA.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry zh-Hans_0_E2793BE7-0331-40BA-A43F-41E8BAB3EB5E.txt",
+        "timestamp" : 1794799443.979
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "9A9C2C62-2B02-4749-8EDA-56FBECCA17BF.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_5F951195-D18E-411B-9016-A4549ABAECD1.png",
+        "timestamp" : 1794799437.071
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "113F9FE6-E7F0-4887-BCB8-0B35DD0D3B0C.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_F2EC5AF0-4D42-4FEE-A8A9-429FA357AE54.txt",
+        "timestamp" : 1794799436.415
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "D88C15E9-F8E6-47D8-9545-F4CE473161B1.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator en_0_8E18DAA3-C079-4527-BD4A-A8BA0D893957.png",
+        "timestamp" : 1794799431.004
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "F501524A-BB8D-4BD6-9D75-6A8C6FCE7B74.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry en_0_8D9BF67C-CFA4-404E-91B8-7BC8A5423768.txt",
+        "timestamp" : 1794799430.717
+      }
+    ],
+    "testIdentifier" : "ScrollIndicatorUITests/testCompositionalGridIndicatorAfterHotSwitch()",
+    "testIdentifierURL" : "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests/testCompositionalGridIndicatorAfterHotSwitch"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "CD793FCA-3CC7-4BAA-AE51-6B8D1AE715B7.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_8BBB8E32-60AB-4F1C-B4A3-DD8FDEA228F9.png",
+        "timestamp" : 1794799489.004
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "822D08D5-EAE5-4B25-8EFB-DF124F8D150E.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_003D3167-C4AD-4803-A256-5C8ED6101DC9.txt",
+        "timestamp" : 1794799488.803
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "059C9B3B-38AD-468D-B209-A1416C45B756.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator zh-Hans_0_FA44F4A3-5655-4718-B136-F8452599DC84.png",
+        "timestamp" : 1794799484.585
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "6363A279-C2EB-4D17-A1E3-BA791BA7D126.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry zh-Hans_0_7654BC4A-6E87-493D-9D11-56D9F82D933D.txt",
+        "timestamp" : 1794799484.377
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "ABEBEA3E-EC81-4BFF-BFDE-2B10E845A04F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_AF195419-C250-4DF8-95E0-8B1C61E68074.png",
+        "timestamp" : 1794799479.947
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "66D2ECD9-6DA8-4E5F-B168-78F0264AC077.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_A78D5B18-A5CA-44AB-96A5-44D138116A24.txt",
+        "timestamp" : 1794799479.693
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "F8A57C94-DAA2-4357-ACE2-FDFAAB054DD3.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator en_0_0D48E008-5181-419B-B8B4-0104409CB032.png",
+        "timestamp" : 1794799474.518
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "7C69D9E6-2CD5-476D-8ED8-4D00503B9AAE",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "FAFB90B5-9B25-4A4F-A086-3A2BB2BDC82F.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry en_0_1605315D-7B80-4EF6-8B02-83328E9C5BF8.txt",
+        "timestamp" : 1794799474.211
+      }
+    ],
+    "testIdentifier" : "ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+    "testIdentifierURL" : "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch"
+  }
+]

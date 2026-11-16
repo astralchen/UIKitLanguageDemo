@@ -1,0 +1,416 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "89E8F378-04BA-4FEB-8D46-05A55D38B0DC.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_5320C8C8-6726-426D-8121-3CCE3E98C7C6.png",
+        "timestamp" : 1794799151.694
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "AB8CB407-A09F-43E2-ADFA-233B694E56CA.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_831DB73C-4A40-4042-9CD9-483284F07434.txt",
+        "timestamp" : 1794799151.558
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "3A347C46-ED03-4851-9DF8-08E9C2A1FCF7.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator zh-Hans_0_251DBB91-922B-4CDE-97CD-E110D41E10DA.png",
+        "timestamp" : 1794799147.711
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "092A60C5-6670-4FF4-8605-4B170B1CB9A2.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry zh-Hans_0_0E772074-A9C1-4A0D-B7B4-BDBECF9BD268.txt",
+        "timestamp" : 1794799147.565
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "EFA080F5-2896-4784-B7EB-E4BE17711769.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_934FA00C-7006-4CD7-B1B2-08D37A730D13.png",
+        "timestamp" : 1794799143.755
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "CBFEB0A4-B845-48C1-8E05-24297F1DD0BB.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_27B47D2A-ACFE-4226-A44E-8263B8BC240F.txt",
+        "timestamp" : 1794799143.628
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "332BA8BE-F94F-4596-94C1-D4B65063AC1D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator en_0_26622C33-2388-48F0-A586-D157921FD840.png",
+        "timestamp" : 1794799139.901
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "071F6AAC-DB31-42DA-8E83-71C64C987085.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry en_0_2C65C805-421D-407F-BBBC-1D4C2E8048DE.txt",
+        "timestamp" : 1794799139.768
+      }
+    ],
+    "testIdentifier" : "ScrollIndicatorUITests/testCompositionalGridIndicatorAfterHotSwitch()",
+    "testIdentifierURL" : "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests/testCompositionalGridIndicatorAfterHotSwitch"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "08879610-98E9-417B-834F-A816DE170203.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_36B3F1AA-E9DD-4391-A25D-134B3CCF96FF.png",
+        "timestamp" : 1794799174.214
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "878400F3-CB17-4F91-BD83-FD5F7FD26E8C.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_0354BCDA-8C91-45B5-A537-14A8BC505713.txt",
+        "timestamp" : 1794799174.078
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "DB17DA5A-FC96-4143-A77F-1ABA3527A5EB.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator zh-Hans_0_1274D6B7-6600-48F8-8B83-D486F9099345.png",
+        "timestamp" : 1794799170.285
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "F011ED97-BE98-425F-B5E0-25BDC1BF4429.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry zh-Hans_0_0FA249D5-E491-4B76-BE3C-B195538E2FEF.txt",
+        "timestamp" : 1794799170.144
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "FAA60BCE-3DE1-44EE-8596-20A3C53ED6B9.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_1E308F0D-06CA-4653-89AB-661BB908338F.png",
+        "timestamp" : 1794799166.34
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "78511B0D-D3D1-4F05-A6E2-4828A24E8C75.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_C9B3BACC-52A4-443D-9186-319822D4B639.txt",
+        "timestamp" : 1794799166.204
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "6FBB376D-96DE-4A26-84E0-1E24B7680C0E.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator en_0_6D811C4F-6A77-45A9-A41F-95A23C165AFD.png",
+        "timestamp" : 1794799162.244
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "853F36B6-7C40-4754-9F47-2BC006B6B826.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry en_0_44D051CE-110C-49A2-B624-3375B1BCA0B7.txt",
+        "timestamp" : 1794799162.099
+      }
+    ],
+    "testIdentifier" : "ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+    "testIdentifierURL" : "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "A7C4BA27-0169-4D29-B59B-87EAE5BFB7F3.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_C1A73274-49AF-41B6-BB63-FA35EEBBA0C9.png",
+        "timestamp" : 1794799188.666
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "8CB8D660-C5C0-4AC1-8058-CCA733CEDE95.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_E61D8CCC-7F89-4BE0-95AC-44E50DFD9D57.txt",
+        "timestamp" : 1794799188.552
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "3D977705-9F12-4A28-BDBD-35420248D54D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator zh-Hans_0_2B13A017-B4B4-4C54-B7A8-6C77D0C16860.png",
+        "timestamp" : 1794799186.226
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "343904BA-F7D2-4756-B8CF-B1C61E61128C.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry zh-Hans_0_1C5E8736-8958-4BC2-A80F-E6E72CABD337.txt",
+        "timestamp" : 1794799186.119
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "AE782E16-8FA4-4B6A-9DD5-F305549FA06B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_7850E3A1-F5FC-4380-9F38-47631657B744.png",
+        "timestamp" : 1794799184.299
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "5C626726-EA01-4C7E-AE92-50BB1BD63EDD.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_CFB33964-8748-45B1-9288-CEB226AC658F.txt",
+        "timestamp" : 1794799184.193
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "3AE26297-B609-4185-BDB7-BD70C2D8A3EA.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator en_0_05F96617-2670-4BE4-8F54-F888C2216562.png",
+        "timestamp" : 1794799182.404
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "B408C2FB-2900-414D-8E1B-24524FD65E89.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry en_0_4FDF4BB4-F879-4119-AC5D-C6A6E48FA1E6.txt",
+        "timestamp" : 1794799182.303
+      }
+    ],
+    "testIdentifier" : "ScrollIndicatorUITests/testDetailIndicatorAfterHotSwitch()",
+    "testIdentifierURL" : "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests/testDetailIndicatorAfterHotSwitch"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "0232878C-697B-44F5-98FE-F7B885B2AC8F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_85A524D3-9DFA-47FA-A9CB-5A213E4CB31C.png",
+        "timestamp" : 1794799211.721
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "43164CE5-51DF-42C4-81EE-309C06D9E0B0.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_886D89B8-64B2-4171-A2F2-8E9F6A8F18EB.txt",
+        "timestamp" : 1794799211.59
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "6CDE3156-AE45-4DD5-AF8E-91E298A526D9.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator zh-Hans_0_6C39DB7A-EEBD-4BA9-A087-EAE346B64B20.png",
+        "timestamp" : 1794799207.866
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "70BCA1AF-BEB4-4898-9C58-BDC8CF1B85B6.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry zh-Hans_0_17DF4DC4-484B-4258-A33B-A07CDB5E46E0.txt",
+        "timestamp" : 1794799207.736
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "90321A48-9792-4682-82E6-78C45CFFE302.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_B9B40417-2DDA-4ACE-9F0B-352282504D2F.png",
+        "timestamp" : 1794799203.821
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "C01A65B5-1818-494F-B723-E07ED16D8343.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_F1F994A6-A7DC-48A8-84E2-8A58846F4044.txt",
+        "timestamp" : 1794799203.691
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "96FA883A-FE3D-4683-8C49-5335D7A7A3E8.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator en_0_E79F138C-10F9-429C-8237-9072B1F0B93E.png",
+        "timestamp" : 1794799200.007
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "A1E2D13C-3FE2-4C96-9696-633AC0478F29.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry en_0_B05388A2-06A0-4073-AC21-216F9CD2E80C.txt",
+        "timestamp" : 1794799199.854
+      }
+    ],
+    "testIdentifier" : "ScrollIndicatorUITests/testFlowCollectionIndicatorAfterHotSwitch()",
+    "testIdentifierURL" : "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests/testFlowCollectionIndicatorAfterHotSwitch"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "F7DEA26D-810D-47DC-AF28-90C338FDCC9A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar-restored_0_E62D6C86-F87D-44DC-96F0-CCC4A6BA6495.png",
+        "timestamp" : 1794799225.026
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "6B96AE94-3CE5-42A2-801C-3EC41746266C.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar-restored_0_03049F56-A237-42B4-A13A-6C504EF44A6E.txt",
+        "timestamp" : 1794799224.917
+      }
+    ],
+    "testIdentifier" : "ScrollIndicatorUITests/testRestoredArabicDetailIndicatorOnLaunch()",
+    "testIdentifierURL" : "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests/testRestoredArabicDetailIndicatorOnLaunch"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "D9DA2D9E-26C6-42AA-AD50-0AB65AB8845D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_F455B19A-12C8-4239-8388-EC18415F2014.png",
+        "timestamp" : 1794799263.262
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "C13B4707-433D-4C85-8397-B9122A00DC32.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_0EF466A3-1C59-4263-8D2E-042E14C6E906.txt",
+        "timestamp" : 1794799262.949
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "8E45EC4D-DECF-4A75-804C-C4F1DE556D47.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator zh-Hans_0_2E214053-EC07-47FC-84DC-0581C29F0078.png",
+        "timestamp" : 1794799255.677
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "0B9343DD-2C90-4A90-8A0E-0465B8C62605.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry zh-Hans_0_2E912129-4C85-4FEF-8576-240CA269D66E.txt",
+        "timestamp" : 1794799255.365
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "702A962F-15AB-4C2A-9167-2916FFFDB044.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator ar_0_657A3B44-883F-42A4-80B4-9BC833ABE105.png",
+        "timestamp" : 1794799248.77
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "96955F98-843A-47BC-A25A-75CE0C812E94.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry ar_0_C86B23FE-7373-4609-A65B-8585BE485FC4.txt",
+        "timestamp" : 1794799248.455
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "F02B77E2-2502-4216-AE8B-21353C15BC14.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator en_0_F35A10F3-948B-4D89-8A53-9CDFC0B2CB5F.png",
+        "timestamp" : 1794799241.771
+      },
+      {
+        "configurationName" : "Configuration 1",
+        "deviceId" : "00008020-001C58A63411002E",
+        "deviceName" : "iPhone Xr.",
+        "exportedFileName" : "312B74AC-7F5C-48D3-8BCE-1CDDF42E2FAB.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Scroll indicator geometry en_0_CA00564C-BD50-424A-B03F-F22AC57ACBAC.txt",
+        "timestamp" : 1794799241.467
+      }
+    ],
+    "testIdentifier" : "ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch()",
+    "testIdentifierURL" : "test://com.apple.xcode/UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests/testVerticalIndicatorFollowsInterfaceTrailingEdgeAfterHotSwitch"
+  }
+]

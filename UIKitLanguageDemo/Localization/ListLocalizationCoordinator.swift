@@ -1,6 +1,6 @@
 import UIKit
 
-/// Stable business IDs decouple scroll and selection state from index paths.
+/// 使用稳定的业务 ID，将滚动和选中状态与 IndexPath 解耦。
 typealias LocalizationItemID = AnyHashable
 
 @MainActor
@@ -80,7 +80,7 @@ final class TableLocalizationCoordinator: ListLocalizationObserver {
     override func finishLayout() {
         guard needsMeasurement, let tableView, tableView.window != nil,
               !tableView.hasUncommittedUpdates else { return }
-        // Re-measure self-sizing rows without recreating cells or editing controls.
+        // 重新测量 self-sizing 行，不重建 cell 或编辑控件。
         UIView.performWithoutAnimation {
             tableView.beginUpdates()
             tableView.endUpdates()
@@ -106,7 +106,7 @@ final class TableLocalizationCoordinator: ListLocalizationObserver {
 
     func readingStateForRestoration() -> ListReadingState? {
         if needsMeasurement, let readingState { return readingState }
-        // A restart snapshot reads the current viewport even during deceleration; it never scrolls the live view.
+        // 重启快照始终读取当前视口，即使正在减速滚动，也不滚动当前视图。
         captureState(allowMoving: true)
         return readingState
     }
@@ -116,7 +116,7 @@ final class TableLocalizationCoordinator: ListLocalizationObserver {
         finishLayout()
     }
 
-    /// Call after reappearing, or after a business-owned batch update finishes.
+    /// 页面重新显示后，或业务批量更新完成后调用。
     func refreshAfterAppearance() {
         if readingState == nil { captureState() }
         updateContent(LanguageService.shared.context)
@@ -211,7 +211,7 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
             invalidation.invalidateFlowLayoutAttributes = true
             flow.invalidateLayout(with: invalidation)
         } else if let compositional = collectionView.collectionViewLayout as? UICollectionViewCompositionalLayout {
-            // Reconfigure retains cells while requesting fresh self-sizing measurements.
+            // Reconfigure 保留现有 cell，同时请求重新进行 self-sizing 测量。
             collectionView.reconfigureItems(at: collectionView.indexPathsForVisibleItems)
             compositional.invalidateLayout()
         } else {
@@ -246,7 +246,7 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
 
     func readingStateForRestoration() -> ListReadingState? {
         if needsMeasurement, let readingState { return readingState }
-        // A restart snapshot reads the current viewport even during deceleration; it never scrolls the live view.
+        // 重启快照始终读取当前视口，即使正在减速滚动，也不滚动当前视图。
         captureState(allowMoving: true)
         return readingState
     }
@@ -273,8 +273,8 @@ final class CollectionLocalizationCoordinator: ListLocalizationObserver {
             collection.scrollToItem(at: path, at: position, animated: false)
             collection.layoutIfNeeded()
         }
-        // Existing cells may still carry their pre-invalidation frame. Query the
-        // layout's newly measured attributes instead of that stale view geometry.
+        // 现有 cell 的 frame 可能仍是布局失效前的旧值。
+        // 应查询布局新测量的 attributes，避免使用过期的视图几何信息。
         guard let frame = collection.collectionViewLayout.layoutAttributesForItem(at: path)?.frame else { return }
         var offset = collection.contentOffset
         if axis == .vertical {
@@ -314,5 +314,5 @@ private enum ListGeometry {
     }
 }
 
-/// FlowLayout handles RTL internally; do not add a second automatic flip or transform.
+/// FlowLayout 在内部处理 RTL，不要再次添加自动翻转或 transform。
 final class LocalizedCollectionFlowLayout: UICollectionViewFlowLayout {}

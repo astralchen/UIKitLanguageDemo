@@ -21,7 +21,7 @@ enum AppearanceSelection: String, CaseIterable {
 }
 
 extension Notification.Name {
-    /// The saved choice changed. System appearance changes propagate as UIKit traits.
+    /// 已保存的外观选项发生变化。系统外观变化通过 UIKit traits 传递。
     static let appAppearanceDidChange = Notification.Name("UIKitLanguageDemo.appAppearanceDidChange")
 }
 
@@ -39,7 +39,7 @@ final class AppearanceService {
             .flatMap(AppearanceSelection.init(rawValue:)) ?? .system
     }
 
-    /// Register each app-owned window, including newly created scenes/overlays.
+    /// 注册每个由 App 管理的窗口，包括新建的 Scene 和浮层窗口。
     func register(window: UIWindow) {
         windows.add(window)
         window.overrideUserInterfaceStyle = selection.style

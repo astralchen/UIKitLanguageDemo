@@ -5,7 +5,7 @@ final class IPadWindowUITests: XCTestCase {
     @MainActor
     func testIPadTwoWindowsRestoreThreeColumnsAfterSystemLanguageRestart() throws {
         continueAfterFailure = false
-        // Device capability is available in the runner before the app's AX server starts.
+        // App 的 AX 服务启动前，测试 runner 就可以查询设备能力。
         guard UIDevice.current.userInterfaceIdiom == .pad else {
             throw XCTSkip("Run on the existing iPad simulator")
         }
@@ -20,7 +20,7 @@ final class IPadWindowUITests: XCTestCase {
         var otherNumber: Int?
         defer {
             app.activate()
-            // Close only the disposable window this test created, preserving the original scene.
+            // 只关闭本测试创建的临时窗口，保留原有 Scene。
             let active = app.windows.matching(NSPredicate(format: "identifier BEGINSWITH %@", "scene.window.")).allElementsBoundByIndex.first { $0.buttons["scene.windows"].firstMatch.isHittable }
             if let active, let otherNumber {
                 windowButton("scene.windows", in: active).tap()
@@ -122,7 +122,7 @@ final class IPadWindowUITests: XCTestCase {
         }
         XCTAssertNotNil(target, settings.debugDescription)
         target?.tap()
-        // One scoped query avoids ten separate full AX snapshots when no alert is shown.
+        // 使用一次限定范围的查询，避免未显示弹窗时分别生成十次完整 AX 快照。
         let confirmation = settings.alerts.buttons.matching(
             NSPredicate(format: "label IN %@", ["Change to Arabic", "Use Arabic", "Change to English", "Use English", "Continue", "更改为阿拉伯语", "使用阿拉伯语", "更改为英语", "使用英语", "继续"])).firstMatch
         if confirmation.exists { confirmation.tap() }
@@ -135,11 +135,11 @@ final class IPadWindowUITests: XCTestCase {
     @MainActor
     private func openLanguageList(in settings: XCUIApplication) {
         if settings.cells["العربية"].firstMatch.exists { return }
-        // iPadOS may open the Apps directory before the app-specific preferences page.
+        // iPadOS 可能先打开 Apps 目录，再进入 App 专属的偏好设置页面。
         let appEntry = settings.buttons["com.example.UIKitLanguageDemo"].firstMatch
         let currentLanguageRow = settings.staticTexts.matching(NSPredicate(format: "label IN %@", ["Language", "语言", "اللغة"])).firstMatch
-        // The Apps directory is populated asynchronously. Wait for either destination,
-        // instead of assuming its app entry is ready within three seconds.
+        // Apps 目录会异步加载。等待任一目标页面出现，
+        // 不要假设 App 入口会在三秒内准备就绪。
         let destination = settings.descendants(matching: .any).matching(NSPredicate(
             format: "identifier == %@ OR label IN %@", "com.example.UIKitLanguageDemo",
             ["Language", "语言", "اللغة"])).firstMatch

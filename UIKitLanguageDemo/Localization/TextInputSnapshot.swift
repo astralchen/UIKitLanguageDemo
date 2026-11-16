@@ -1,7 +1,7 @@
 import UIKit
 
-/// Preserve a focused text input's selection without resigning first responder,
-/// assigning its text, or interrupting an active IME composition.
+/// 保留已聚焦文本输入控件的选区，不让其放弃 first responder，
+/// 不重新赋值文本，也不打断正在进行的 IME composition。
 @MainActor
 struct TextInputSnapshot {
     private let view: UIView

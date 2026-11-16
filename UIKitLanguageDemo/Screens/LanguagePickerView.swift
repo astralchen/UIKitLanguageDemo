@@ -34,8 +34,8 @@ final class LanguagePickerView: UIView, LocalizationUpdatable {
     required init?(coder: NSCoder) { fatalError("Use init(frame:)") }
 
     func applyLocalization(_ context: LanguageContext) {
-        // These rows follow the App's leading edge, regardless of the endonym's
-        // script. Refresh explicit semantics before rebuilding configured content.
+        // 这些行始终对齐 App 的 leading 边缘，不受语言自称所用文字的影响。
+        // 重建配置内容前，先刷新显式语义方向。
         let semantic: UISemanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
         semanticContentAttribute = semantic
         stack.semanticContentAttribute = semantic
@@ -43,9 +43,9 @@ final class LanguagePickerView: UIView, LocalizationUpdatable {
         heading.textAlignment = context.isRTL ? .right : .left
         for (selection, button) in buttons {
             let selected = LanguageService.shared.selection == selection
-            // UIKit may retain the configured content layout when an unchanged
-            // endonym moves between LTR/RTL. Clear that configuration on a
-            // direction change, keeping the UIButton and its actions intact.
+            // 同一语言自称在 LTR/RTL 之间切换时，UIKit 可能保留原有的配置内容布局。
+            // 因此在方向变化时清除该配置，
+            // 同时保留 UIButton 及其 actions。
             if button.semanticContentAttribute != semantic {
                 button.configuration = nil
             }

@@ -1,7 +1,7 @@
 import UIKit
 
-/// Supports the double/triple-column APIs. Install column controllers once.
-/// Language changes never call setViewController, show/hide, or change display mode.
+/// 支持双栏和三栏 API，栏控制器只安装一次。
+/// 切换语言时不调用 setViewController、show/hide，也不改变显示模式。
 @MainActor
 class LocalizedSplitViewController: UISplitViewController, LocalizationUpdatable {
     var restorationPrimary: LocalizedNavigationController?
@@ -38,19 +38,19 @@ class LocalizedSplitViewController: UISplitViewController, LocalizationUpdatable
     override init(style: UISplitViewController.Style) {
         precondition(style != .unspecified, "Use doubleColumn or tripleColumn")
         super.init(style: style)
-        // This is a logical edge: right in RTL, left in LTR. Never invert it again.
+        // 此处使用逻辑边缘：RTL 为右侧，LTR 为左侧，不要再次反转。
         primaryEdge = .leading
     }
     required init?(coder: NSCoder) { fatalError("Use init(style:)") }
 
-    /// Business intent is separate from UIKit's internal show calls while rearranging sidebars.
+    /// 将业务意图与 UIKit 重排侧边栏时内部触发的 show 调用分开处理。
     func selectColumn(_ column: SavedSplitColumn) {
         super.show(column.uiKit)
         restorationCompactColumn = column
     }
 
     override func show(_ column: UISplitViewController.Column) {
-        // Persist the requested business column even before UIKit completes a transition.
+        // 即使 UIKit 尚未完成转场，也先持久化业务请求的目标栏。
         super.show(column)
         if isCollapsed, traitCollection.horizontalSizeClass == .compact, restorationPolicy?.adapting != true,
            let column = SavedSplitColumn(column) { restorationCompactColumn = column }
@@ -78,11 +78,11 @@ class LocalizedSplitViewController: UISplitViewController, LocalizationUpdatable
         view.setNeedsLayout()
     }
 
-    /// Override for app-owned split chrome. Column pages use their own refresh hooks.
+    /// 由子类重写，以刷新 App 管理的分栏界面元素；各栏页面使用自身的刷新钩子。
     func applyLocalization(_ context: LanguageContext) {}
 }
 
-/// The demo owns this delegate. General LocalizedSplitViewController never replaces a business delegate.
+/// 此 delegate 由 Demo 管理；通用的 LocalizedSplitViewController 不替换业务 delegate。
 @MainActor
 private final class SplitRestorationPolicy: NSObject, UISplitViewControllerDelegate {
     weak var owner: LocalizedSplitViewController?

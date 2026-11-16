@@ -50,8 +50,8 @@ final class TextDirectionTests: XCTestCase {
         let detail = DetailViewController()
         let fixture = try TextDirectionWindow(content: detail)
         let field = detail.draftField
-        // Exercise the real UITextInput responder/selection without starting
-        // a system keyboard during the simulator regression.
+        // 验证真实 UITextInput 的 responder 和选区行为，
+        // 同时避免在模拟器回归测试中启动系统键盘。
         field.inputView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
         defer { field.resignFirstResponder(); fixture.close() }
         field.text = "Draft مسودة 123"

@@ -26,8 +26,8 @@ final class NavigationGestureUITests: XCTestCase {
         XCTAssertTrue(english.waitForExistence(timeout: 10))
         app.buttons["language.zh-Hans"].tap()
         expectBackTitle("返回", in: app)
-        // Backgrounding checkpoints the stack; reusing the reset token preserves
-        // that state so Home is restored below Detail without loading its view.
+        // 进入后台时会对导航栈创建 Checkpoint；复用 reset token 可保留该状态，
+        // 从而在 Detail 下方恢复 Home，且不加载 Home 的视图。
         XCUIDevice.shared.press(.home)
         XCTAssertTrue(app.wait(for: .runningBackground, timeout: 10),
             "Wait for scene backgrounding before terminating the restoration fixture")

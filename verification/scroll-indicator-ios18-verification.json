@@ -1,0 +1,50 @@
+{
+  "status": "passed focused XR iOS 18 and iOS 27 regressions",
+  "date": "2026-11-16",
+  "reportedIssue": "Native vertical indicator on the wrong side in Arabic on iPhone XR / iOS 18; iOS 27 reported normal",
+  "rootCause": "Unconditional Compositional left-inset compensation breaks iOS 18 native RTL indicator placement. XR baseline fails at indicator center x=404, viewport midpoint x=207. Removing the compensation yields native indicator center x=38 near viewport left x=20.",
+  "change": "Apply Compositional RTL left-inset compensation only on iOS 26+. Earlier runtimes set the page-owned left inset to zero. Retain top/bottom/right and horizontal insets, visibility, style, automatic inset adjustment and native gestures.",
+  "versionBoundaryEvidence": "iOS 18.7.12 device and iOS 27.2 simulator verified this run; original repo evidence covers iOS 26.5. No runtime verification for iOS 15-17.",
+  "xr": {
+    "name": "iPhone Xr.",
+    "model": "iPhone XR",
+    "os": "18.7.12",
+    "baseline": {
+      "passed": 0,
+      "failed": 1,
+      "evidence": "official-mcp-scroll-ios18-baseline.json"
+    },
+    "zeroInsetControl": {
+      "passed": 2,
+      "failed": 0,
+      "evidence": "official-mcp-scroll-ios18-zero-inset.json"
+    },
+    "final": {
+      "passed": 9,
+      "failed": 0,
+      "skipped": 0,
+      "evidence": "official-mcp-scroll-ios18-final.json",
+      "attachments": "scroll-ios18-final-ui/manifest.json"
+    }
+  },
+  "coverage": [
+    "Real swipe plus native AX edge geometry on Table, Detail, Flow, Compositional grid and orthogonal pages through EN → AR → ZH → AR",
+    "Arabic Detail background/terminate/relaunch indicator placement",
+    "Compositional draft, selection, reading anchor and orthogonal business page preservation",
+    "Scroll indicator visibility, style, automatic inset policy and pager engine preservation"
+  ],
+  "limitation": "Focused checks only; no full 43-test run, iPad or rotation coverage. iOS 15-17 not executed.",
+  "toolingNote": "RunSomeTests returned an incomplete-result error for the final XR run before Xcode finished writing the bundle. The completed DerivedData bundle was subsequently read with xcresulttool and confirms all 9 selected tests passed.",
+  "ios27": {
+    "name": "iPhone 18 Pro",
+    "type": "simulator",
+    "os": "27.2",
+    "final": {
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "evidence": "official-mcp-scroll-ios27-final.json",
+      "attachments": "scroll-ios27-final-ui/manifest.json"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import Foundation
 
-/// Deployment-safe messages. iOS 16+ resolves the actual Xcode-generated resource.
-/// Only the iOS 15 adapter owns raw keys and CVarArg formatting.
+/// 兼容最低部署版本的消息定义。iOS 16+ 解析 Xcode 实际生成的资源。
+/// 仅 iOS 15 适配层管理原始 key 和 CVarArg 格式化。
 enum AppText: Equatable {
     case homeTitle
     case homeDescription
@@ -46,7 +46,7 @@ enum AppText: Equatable {
     case windowClose
     case windowName(Int32)
 
-    /// Stable identifiers retain the existing keys across state restoration.
+    /// 使用稳定标识符，使状态恢复前后沿用相同的 key。
     var catalogKey: String {
         if #available(iOS 16.0, *) { return resource.key }
         return legacyKey
@@ -100,7 +100,7 @@ enum AppText: Equatable {
         }
     }
 
-    // Kept in one place for systems without LocalizedStringResource.
+    // 为不支持 LocalizedStringResource 的系统集中维护。
     var legacyKey: String {
         switch self {
         case .homeTitle: return "home.title"

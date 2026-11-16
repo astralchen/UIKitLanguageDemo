@@ -24,7 +24,7 @@ final class UIKitLanguageDemoUITests: XCTestCase {
                 }
             }
         }
-        // Normalize this app's preference only; never change the simulator system language.
+        // 仅统一此 App 的偏好设置，不修改模拟器的系统语言。
         let openSettings = app.buttons["system.language.settings"]
         XCTAssertTrue(openSettings.waitForExistence(timeout: 15))
         openSettings.tap()
@@ -63,7 +63,7 @@ final class UIKitLanguageDemoUITests: XCTestCase {
         back.tap()
         XCTAssertTrue(openDetail.waitForExistence(timeout: 10), "Back must return to the restored Home controller")
 
-        // Verify an actual process restart from a scrolled self-sizing compositional grid.
+        // 从已滚动的 self-sizing Compositional Layout 网格验证真实进程重启。
         let openGrid = app.buttons["home.openCompositional"]
         if !openGrid.isHittable { app.scrollViews.firstMatch.swipeUp() }
         XCTAssertTrue(openGrid.waitForExistence(timeout: 5))
@@ -81,7 +81,7 @@ final class UIKitLanguageDemoUITests: XCTestCase {
         let visible = list.cells.allElementsBoundByIndex.filter { $0.frame.intersects(viewport) }
         let anchor = try XCTUnwrap(visible.sorted {
             if abs($0.frame.minY - $1.frame.minY) > 0.5 { return $0.frame.minY < $1.frame.minY }
-            return $0.frame.maxX > $1.frame.maxX // Arabic logical leading edge.
+            return $0.frame.maxX > $1.frame.maxX // 阿拉伯语的逻辑 leading 边缘。
         }.first)
         let anchorID = anchor.identifier
         XCTAssertTrue(anchorID.hasPrefix("list.cell."))
@@ -119,7 +119,7 @@ final class UIKitLanguageDemoUITests: XCTestCase {
         }
         XCTAssertNotNil(target, settings.debugDescription)
         target?.tap()
-        // One scoped query avoids ten separate full AX snapshots when no alert is shown.
+        // 使用一次限定范围的查询，避免未显示弹窗时分别生成十次完整 AX 快照。
         let confirmation = settings.alerts.buttons.matching(
             NSPredicate(format: "label IN %@", ["Change to Arabic", "Use Arabic", "Change to English", "Use English", "Continue", "更改为阿拉伯语", "使用阿拉伯语", "更改为英语", "使用英语", "继续"])).firstMatch
         if confirmation.exists { confirmation.tap() }
@@ -132,7 +132,7 @@ final class UIKitLanguageDemoUITests: XCTestCase {
     @MainActor
     private func openLanguageList(in settings: XCUIApplication) {
         if settings.cells["العربية"].firstMatch.exists { return }
-        // iPadOS may open the Apps directory before the app-specific preferences page.
+        // iPadOS 可能先打开 Apps 目录，再进入 App 专属的偏好设置页面。
         let appEntry = settings.buttons["com.example.UIKitLanguageDemo"].firstMatch
         let currentLanguageRow = settings.staticTexts.matching(NSPredicate(format: "label IN %@", ["Language", "语言", "اللغة"])).firstMatch
         if !currentLanguageRow.exists, appEntry.waitForExistence(timeout: 3), appEntry.isHittable { appEntry.tap() }

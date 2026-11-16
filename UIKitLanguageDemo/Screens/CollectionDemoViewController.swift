@@ -74,7 +74,7 @@ final class CollectionDemoViewController: LocalizedViewController, UICollectionV
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt path: IndexPath) {
-        // Prefetched cells also use the latest language immediately before display.
+        // 预取的 cell 也要在显示前应用最新语言。
         render(cell, at: path, context: LanguageService.shared.context)
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String,

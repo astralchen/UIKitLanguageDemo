@@ -312,7 +312,7 @@ UIKit 的返回标题来自栈中前一个 navigationItem，见 [Apple backButto
 
 业务 UIScrollView、UITableView 和 UICollectionView 在首次加载及语言刷新时统一调用 `LayoutDirection.applyScrollView(context, to:)`，在 iOS 15+ 显式设置语义方向。普通竖向指示器在阿拉伯语下位于左侧，中文／英文下位于右侧。
 
-组合布局需要额外处理：其内容镜像坐标下，仅设置语义方向仍会出现原生竖向指示器在物理右侧。截图对应的“组合布局横向分区”页已通过原生 AX 位置断言复现。`CompositionalDemoViewController.viewDidLayoutSubviews()` 采用公开的 `verticalScrollIndicatorInsets.left` 非负补偿，将 RTL 指示器轨道移到物理左侧，并按当前视口宽度重算；LTR 清除该补偿，保留原有卡片 RTL 顺序、正交分页和阅读锚点。该页面明确管理左侧指示器边距，顶部／底部／右侧及水平指示器边距保留。不要把这项组合布局补偿照搬到普通 Table 或 Flow。
+组合布局需要按系统版本处理：iOS 26+ 的内容镜像坐标下，仅设置语义方向仍会出现原生竖向指示器在物理右侧。`CompositionalDemoViewController.viewDidLayoutSubviews()` 在 iOS 26+ 采用公开的 `verticalScrollIndicatorInsets.left` 非负补偿，将 RTL 指示器轨道移到物理左侧，并按当前视口宽度重算；LTR 清除该补偿。iOS 18 的原生 RTL 位置已经正确，额外补偿反而会把指示器推回右侧，因此更早系统保持该左边距为零。该差异已在 iPhone XR / iOS 18.7.12 真机通过原实现失败、零补偿通过的对照复现。保留原有卡片 RTL 顺序、正交分页和阅读锚点。该页面明确管理左侧指示器边距，顶部／底部／右侧及水平指示器边距保留。不要把这项组合布局补偿照搬到普通 Table 或 Flow。
 
 保留现有滚动视图、原生指示器、显示开关、颜色样式、自动安全区调整及原生交互。不使用负边距、transform、私有子视图或 KVC，不递归修改 UIPageViewController 或 Compositional 内部滚动容器。
 
@@ -321,3 +321,5 @@ UIKit 的返回标题来自栈中前一个 navigationItem，见 [Apple backButto
 最初 Table、详情及 Flow 的检查未复现问题；收到用户截图后才定位到组合布局。删除布局覆盖或显式关闭布局翻转均未修复滚动条，固定承载面 LTR 又破坏卡片顺序，均已撤回。原始失败、中间尝试与最终通过结果见 [滚动指示器验证](verification/scroll-indicator-verification.json)。截图和几何附件见 [原始附件清单](verification/scroll-indicator-ui/manifest.json) 与 [组合布局附件](verification/scroll-compositional-ui/manifest.json)。AX 命中区域可能超出视图边缘，断言比较其物理中心位置。
 
 公开 API：[UIView.semanticContentAttribute](https://developer.apple.com/documentation/uikit/uiview/semanticcontentattribute)、[UIScrollView.verticalScrollIndicatorInsets](https://developer.apple.com/documentation/uikit/uiscrollview/verticalscrollindicatorinsets)。补偿值针对当前组合布局的镜像行为，由真实 UI 几何测试约束；新增系统版本时应重跑该回归。
+
+2026-11-16 兼容性修复：iPhone XR / iOS 18.7.12 真机最终 9 项定向测试通过（6 项真实滑动 UI、3 项状态与策略检查），iPhone 18 Pro / iOS 27.2 模拟器 5 项通过。组合网格和横向分区均覆盖 EN → AR → ZH → AR；位置断言收紧到原生 AX 中心距目标物理边缘 25pt 内，并保留截图与几何附件。未运行完整 43 项、iPad、旋转或 iOS 15–17。详见 [iOS 18 修复验证](verification/scroll-indicator-ios18-verification.json)、[XR 最终附件](verification/scroll-ios18-final-ui/manifest.json) 与 [iOS 27 最终附件](verification/scroll-ios27-final-ui/manifest.json)。

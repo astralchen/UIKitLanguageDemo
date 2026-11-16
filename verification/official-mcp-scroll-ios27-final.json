@@ -1,0 +1,55 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 0,
+    "notRun": 0,
+    "passed": 5,
+    "skipped": 0,
+    "total": 5
+  },
+  "fullConsoleLogsPath": "/var/folders/_b/4kvsp2_s0ss21dbxf2_s7bnh0000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-16T11-22-42+08-00.txt",
+  "fullSummaryPath": "/var/folders/_b/4kvsp2_s0ss21dbxf2_s7bnh0000gn/T/ActionArtifacts/default/RunSomeTests/37F5CBEC-BF59-4DA7-B1E7-87A28BFE0B0A.txt",
+  "results": [
+    {
+      "displayName": "testOwnedScrollBoundariesRefreshWithoutChangingIndicatorPolicyOrPagerEngine()",
+      "errorMessages": [],
+      "identifier": "ScrollDirectionTests/testOwnedScrollBoundariesRefreshWithoutChangingIndicatorPolicyOrPagerEngine()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalGridPreservesDraftSelectionAndReadingAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "errorMessages": [],
+      "identifier": "LanguageTests/testCompositionalOrthogonalSectionPreservesBusinessPageAndOuterAnchor()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoTests"
+    },
+    {
+      "displayName": "testCompositionalGridIndicatorAfterHotSwitch()",
+      "errorMessages": [],
+      "identifier": "ScrollIndicatorUITests/testCompositionalGridIndicatorAfterHotSwitch()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    },
+    {
+      "displayName": "testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "errorMessages": [],
+      "identifier": "ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "state": "Passed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "5 tests: 5 passed, 0 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 5,
+  "truncated": false,
+  "xcresultBundlePath": "/var/folders/_b/4kvsp2_s0ss21dbxf2_s7bnh0000gn/T/ActionArtifacts/default/RunSomeTests/Test-UIKitLanguageDemo-2026.11.16_11-22-42-+0800.xcresult"
+}

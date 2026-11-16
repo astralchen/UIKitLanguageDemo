@@ -55,7 +55,7 @@ final class SettingsViewController: LocalizedViewController, UITableViewDataSour
         LayoutDirection.applyScrollView(context, to: tableView)
         appearancePicker.applyLocalization(context)
         LayoutDirection.applyBoundary(context, to: stack)
-        // Cells and scroll state are handled by the coordinator after window layout.
+        // 窗口布局完成后，由协调器处理 cell 和滚动状态。
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { itemIDs.count }

@@ -27,8 +27,8 @@ final class LanguageTests: XCTestCase {
         navigation.pushViewController(detail, animated: false)
         detail.loadViewIfNeeded()
         detail.draftField.text = "Draft remains 123"
-        // Keyboard startup can block in unattended simulator sessions. Enable
-        // VERIFY_KEYBOARD_FOCUS=1 in the test Scheme for the focused-input run.
+        // 无人值守的模拟器会话可能在启动键盘时阻塞。
+        // 验证输入聚焦时，在测试 Scheme 中启用 VERIFY_KEYBOARD_FOCUS=1。
         let hadFocus = ProcessInfo.processInfo.environment["VERIFY_KEYBOARD_FOCUS"] == "1"
             && detail.draftField.becomeFirstResponder()
         window.layoutIfNeeded()
@@ -87,15 +87,15 @@ final class LanguageTests: XCTestCase {
     @MainActor
     func testExistingModalSurvivesSwitch() async throws {
         let service = LanguageService.shared
-        // Own the presentation host; a restored real scene may already show a split.
+        // 由测试自行管理 present 宿主；恢复后的真实 Scene 可能已经显示分栏。
         let fixture = try ContainerTestWindow(content: HomeViewController())
         let host = try XCTUnwrap(fixture.window.rootViewController)
         let sheet = LocalizedTestSheet()
         defer { sheet.dismiss(animated: false); fixture.close() }
         var presentationFinished = false
         host.present(sheet, animated: false) { presentationFinished = true }
-        // Release MainActor while UIKit finishes presentation. A synchronous XCTest
-        // wait can delay UIKit's actor-isolated completion on current systems.
+        // 等待 UIKit 完成 present 时让出 MainActor。当前系统中，
+        // 同步 XCTest 等待可能延迟 UIKit 受 actor 隔离的完成回调。
         let deadline = Date().addingTimeInterval(30)
         while !presentationFinished && Date() < deadline {
             try await Task.sleep(nanoseconds: 50_000_000)
@@ -201,7 +201,7 @@ final class LanguageTests: XCTestCase {
         let engine = pager.pageViewController
         let visible = try XCTUnwrap(engine.viewControllers?.first)
         let pending = try XCTUnwrap(engine.dataSource?.pageViewController(engine, viewControllerAfter: visible))
-        // Exercise the same delegate path as an interactive swipe cancellation.
+        // 验证与取消交互式滑动相同的 delegate 调用路径。
         pager.pageViewController(engine, willTransitionTo: [pending])
         LanguageService.shared.setSelection(.arabic)
         LanguageService.shared.setSelection(.simplifiedChinese)
@@ -424,7 +424,7 @@ final class LanguageTests: XCTestCase {
             XCTAssertTrue(collection.collectionViewLayout is UICollectionViewCompositionalLayout)
             XCTAssertTrue(page.collectionView === collection)
         }
-        // A hidden orthogonal section must not pull the outer grid back to the top.
+        // 隐藏的正交 section 不得将外层网格拉回顶部。
         let gridPath = IndexPath(item: 30, section: 1)
         collection.scrollToItem(at: gridPath, at: .top, animated: false)
         collection.layoutIfNeeded()
@@ -673,11 +673,11 @@ private final class ContainerTestWindow {
         originalSelection = LanguageService.shared.selection
         LanguageService.shared.setSelection(.english)
         let scenes = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }
-        // A restored background scene cannot reliably finish modal presentation.
+        // 恢复的后台 Scene 无法可靠地完成模态 present。
         let scene = try XCTUnwrap(scenes.first { $0.activationState == .foregroundActive } ?? scenes.first)
         previousKeyWindow = scene.windows.first(where: \.isKeyWindow)
         window = UIWindow(windowScene: scene)
-        // This row-height regression needs a bounded reading width on both phone and iPad.
+        // 此行高回归测试在 iPhone 和 iPad 上都需要限定阅读宽度。
         if content is SettingsViewController {
             window.frame = CGRect(origin: scene.coordinateSpace.bounds.origin,
                 size: CGSize(width: min(390, scene.coordinateSpace.bounds.width), height: scene.coordinateSpace.bounds.height))

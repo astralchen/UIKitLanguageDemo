@@ -1,0 +1,29 @@
+{
+  "activeTestPlanName": "UIKitLanguageDemo",
+  "counts": {
+    "expectedFailures": 0,
+    "failed": 1,
+    "notRun": 0,
+    "passed": 0,
+    "skipped": 0,
+    "total": 1
+  },
+  "fullConsoleLogsPath": "/var/folders/_b/4kvsp2_s0ss21dbxf2_s7bnh0000gn/T/ActionArtifacts/default/RunSomeTests/test-console-log-2026-11-16T11-15-38+08-00.txt",
+  "fullSummaryPath": "/var/folders/_b/4kvsp2_s0ss21dbxf2_s7bnh0000gn/T/ActionArtifacts/default/RunSomeTests/759D8FB5-A705-4956-B63C-9C317AE320ED.txt",
+  "results": [
+    {
+      "displayName": "testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "errorMessages": [
+        "UIKitLanguageDemo/UIKitLanguageDemoUITests/ScrollIndicatorUITests.swift:90 ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch(): XCTAssertLessThan failed: (\"404.0\") is not less than (\"207.0\") - RTL indicator should be on the physical left: (389.0, 341.5, 30.0, 471.5)"
+      ],
+      "identifier": "ScrollIndicatorUITests/testCompositionalOrthogonalOuterIndicatorAfterHotSwitch()",
+      "state": "Failed",
+      "targetName": "UIKitLanguageDemoUITests"
+    }
+  ],
+  "schemeName": "UIKitLanguageDemo",
+  "summary": "1 tests: 0 passed, 1 failed, 0 skipped, 0 expected failures, 0 not run",
+  "totalResults": 1,
+  "truncated": false,
+  "xcresultBundlePath": "/var/folders/_b/4kvsp2_s0ss21dbxf2_s7bnh0000gn/T/ActionArtifacts/default/RunSomeTests/Test-UIKitLanguageDemo-2026.11.16_11-15-38-+0800.xcresult"
+}

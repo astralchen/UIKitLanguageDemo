@@ -12,7 +12,7 @@ class LocalizedViewController: UIViewController, LocalizationUpdatable {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        // Set up controls before the first localization pass.
+        // 首次执行本地化前，先完成控件配置。
         buildUI()
         NotificationCenter.default.addObserver(self, selector: #selector(languageChanged),
                                               name: .appLanguageDidChange, object: LanguageService.shared)
@@ -26,8 +26,8 @@ class LocalizedViewController: UIViewController, LocalizationUpdatable {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        // Observe the demo's business columns without replacing the split delegate.
-        // This also records the native compact Back gesture returning to primary.
+        // 观察 Demo 的业务栏状态，不替换分栏 delegate。
+        // 同时记录 compact 布局下通过原生返回手势回到 primary 栏的操作。
         (splitViewController as? LocalizedSplitViewController)?.recordVisibleBusinessPage(self)
     }
 
@@ -67,8 +67,8 @@ class LocalizedViewController: UIViewController, LocalizationUpdatable {
         applyLocalization(context)
         view.setNeedsLayout()
     }
-    // Selector-based NotificationCenter observers are automatically cleaned up
-    // on deallocation on the supported OS versions (no closure retain cycle).
+    // 在支持的系统版本上，基于 Selector 的 NotificationCenter 观察者
+    // 会在对象释放时自动清理，不会形成闭包循环引用。
 }
 
 @MainActor
@@ -104,16 +104,16 @@ final class LocalizedNavigationController: UINavigationController {
     }
 
     private func applyBackTitles(to controllers: [UIViewController], context: LanguageContext) {
-        // UIKit sources the visible Back title from the preceding navigation item.
-        // Restored predecessors can have unloaded views and no page observer yet.
-        // Updating navigation metadata must not force those views to load.
+        // UIKit 使用前一个 navigation item 提供当前可见的返回标题。
+        // 恢复的前置控制器可能尚未加载视图，也尚未注册页面观察者。
+        // 更新导航元数据时，不得强制加载这些视图。
         let title = context.text(.commonBack)
         for controller in controllers { controller.navigationItem.backButtonTitle = title }
     }
 
     private func applyNavigationDirection(_ context: LanguageContext) {
-        // UIKit navigation uses the navigation view's semantic direction for back
-        // gestures/transitions. A Scene layout-direction trait alone is insufficient.
+        // UIKit 根据导航视图的语义方向处理返回手势和转场；
+        // 仅设置 Scene 的布局方向 trait 并不足够。
         let semantic: UISemanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
         view.semanticContentAttribute = semantic
         navigationBar.semanticContentAttribute = semantic
@@ -122,9 +122,9 @@ final class LocalizedNavigationController: UINavigationController {
 
     @objc private func refresh() {
         let context = LanguageService.shared.context
-        // iOS 18+ titles belong to the stable UITab models in LocalizedTabBarController.
-        // A retired navigation controller can outlive UIKit's tab view during scene restoration;
-        // updating that bridged legacy item can dereference a released UIKit view provider.
+        // iOS 18+ 的标题由 LocalizedTabBarController 中稳定的 UITab 模型管理。
+        // Scene 恢复期间，已退出使用的导航控制器可能比 UIKit 的 tab 视图存活更久；
+        // 更新该控制器桥接的旧 item，可能访问已释放的 UIKit view provider。
         if #unavailable(iOS 18.0) { tabBarItem.title = context.text(tabTitle) }
         applyBackTitles(to: viewControllers, context: context)
         guard isViewLoaded else { return }
@@ -145,8 +145,8 @@ final class LocalizedTabBarController: UITabBarController {
         self.navigationControllers = navigationControllers
         super.init(nibName: nil, bundle: nil)
         if #available(iOS 18.0, *) {
-            // Keep stable UITab objects too. Updating only tabBarItem can leave
-            // the new tab/sidebar model with an old title on recent systems.
+            // UITab 对象也要保持稳定。较新系统上若仅更新 tabBarItem，
+            // 新的 tab 或侧边栏模型可能仍保留旧标题。
             tabs = navigationControllers.map { navigation in
                 UITab(title: LanguageService.shared.context.text(navigation.tabTitle),
                       image: navigation.tabBarItem.image,
@@ -178,9 +178,9 @@ final class LocalizedTabBarController: UITabBarController {
                 tab.accessibilityLabel = context.text(navigation.tabTitle)
             }
         }
-        // Keep rendered labels and stable accessibility IDs current on iOS 15+.
-        // Only touch items in this attached bar, never a retired navigation
-        // controller's bridged tabBarItem.
+        // 在 iOS 15+ 上同步刷新显示文本和稳定的 accessibility ID。
+        // 只更新当前已关联 tab bar 中的 item，
+        // 不操作已退出使用的导航控制器桥接的 tabBarItem。
         if viewIfLoaded?.window != nil {
             for (item, navigation) in zip(tabBar.items ?? [], navigationControllers) {
                 item.title = context.text(navigation.tabTitle)

@@ -1,7 +1,7 @@
 import UIKit
 
-/// For one-item-per-group, groupPagingCentered compositional sections.
-/// Retains a business page ID; it does not expose a private orthogonal scroll view.
+/// 适用于每个 group 仅含一个 item、使用 groupPagingCentered 的 Compositional Layout section。
+/// 保留业务页面 ID，不暴露私有的正交滚动视图。
 @MainActor
 final class OrthogonalLocalizationCoordinator: ListLocalizationObserver {
     private weak var collectionView: UICollectionView?
@@ -19,7 +19,7 @@ final class OrthogonalLocalizationCoordinator: ListLocalizationObserver {
         super.init(languageService: .shared)
     }
 
-    /// Call from each orthogonal section's visibleItemsInvalidationHandler.
+    /// 在每个正交 section 的 visibleItemsInvalidationHandler 中调用。
     func record(section: Int, items: [any NSCollectionLayoutVisibleItem],
                 offset: CGPoint, environment: any NSCollectionLayoutEnvironment) {
         let center = offset.x + environment.container.effectiveContentSize.width / 2
@@ -41,7 +41,7 @@ final class OrthogonalLocalizationCoordinator: ListLocalizationObserver {
                 collectionView.scrollToItem(at: path, at: .centeredHorizontally, animated: false)
                 collectionView.layoutIfNeeded()
             }
-            // Scrolling an orthogonal item must not move the outer reading position.
+            // 滚动正交 item 时，不得改变外层阅读位置。
             collectionView.setContentOffset(outerOffset, animated: false)
             collectionView.setNeedsLayout()
             collectionView.layoutIfNeeded()

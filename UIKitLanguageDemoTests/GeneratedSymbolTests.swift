@@ -61,7 +61,7 @@ final class GeneratedSymbolTests: XCTestCase {
                 XCTAssertEqual(context.text(message), context.legacyText(message),
                                "\(language.rawValue): \(message.catalogKey)")
             }
-            // Keep CVarArg width and negative/large values correct on 64-bit iOS 15 too.
+            // 在 64 位 iOS 15 上也要确保 CVarArg 位宽以及负值和大数值处理正确。
             for number in [-1, 0, Int.max] {
                 XCTAssertEqual(context.text(.listItem(number)), context.legacyText(.listItem(number)))
             }
@@ -75,7 +75,7 @@ final class GeneratedSymbolTests: XCTestCase {
         let name = "UIKitLanguageDemo.symbols.\(UUID().uuidString)"
         let defaults = try XCTUnwrap(UserDefaults(suiteName: name))
         defer { defaults.removePersistentDomain(forName: name) }
-        // Deliberately disagree with the explicit selection to catch process-language lookup.
+        // 故意使进程语言与显式选择的语言不同，以检测是否错误地按进程语言查找资源。
         let service = LanguageService(defaults: defaults, preferredLocalizations: { ["zh-Hans"] })
         let retainedMessage = AppText.homeTitle
         for (selection, expected) in [(LanguageSelection.english, "Home"), (.arabic, "الرئيسية"),

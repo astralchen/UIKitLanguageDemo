@@ -30,7 +30,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         metadata["windowNumber"] = number
         session.userInfo = metadata
         scene.title = LanguageService.shared.context.text(.windowName(Int32(clamping: number)))
-        // Each Scene owns independent state; no UI language or translated string is restored.
+        // 每个 Scene 独立管理状态；恢复时不还原 UI 语言或已翻译的字符串。
         restoration.connect(window: window, activity: session.stateRestorationActivity,
             fallback: fallback,
             sessionID: session.persistentIdentifier,

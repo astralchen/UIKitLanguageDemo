@@ -43,12 +43,15 @@ final class ScrollDirectionTests: XCTestCase {
                 XCTAssertFalse(scroll.automaticallyAdjustsScrollIndicatorInsets)
                 if let collection = scroll as? UICollectionView,
                    collection.collectionViewLayout is UICollectionViewCompositionalLayout {
-                    // This demo owns the left inset to compensate its mirrored
-                    // indicator track. Other caller-supplied edges are retained.
+                    // 此 Demo 管理左侧 inset，以补偿 iOS 26+ 的镜像轨道。
+                    // 更早系统使用原生 RTL 位置。
                     XCTAssertEqual(scroll.verticalScrollIndicatorInsets.top, customInsets.top)
                     XCTAssertEqual(scroll.verticalScrollIndicatorInsets.bottom, customInsets.bottom)
                     XCTAssertEqual(scroll.verticalScrollIndicatorInsets.right, customInsets.right)
                     XCTAssertGreaterThanOrEqual(scroll.verticalScrollIndicatorInsets.left, 0)
+                    if #unavailable(iOS 26.0) {
+                        XCTAssertEqual(scroll.verticalScrollIndicatorInsets.left, 0)
+                    }
                 } else {
                     XCTAssertEqual(scroll.verticalScrollIndicatorInsets, customInsets)
                 }

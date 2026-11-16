@@ -1,7 +1,7 @@
 import UIKit
 
-/// A stable UIPageViewController plus stable content controllers.
-/// Scope: horizontal, single-page, scroll transitions (not pageCurl).
+/// 保持 UIPageViewController 及内容控制器实例稳定。
+/// 适用范围：水平、单页、scroll 转场（不包含 pageCurl）。
 @MainActor
 class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
                                         UIPageViewControllerDataSource, UIPageViewControllerDelegate {
@@ -47,8 +47,8 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         addChild(pageViewController)
-        // A fixed physical LTR paging surface makes before/after unambiguous.
-        // Each content host restores the selected app direction independently.
+        // 固定物理方向为 LTR 的分页承载面，明确 before/after 的含义。
+        // 每个内容宿主独立恢复 App 所选的布局方向。
         if #available(iOS 17.0, *) {
             pageViewController.traitOverrides.layoutDirection = .leftToRight
         } else {
@@ -59,8 +59,8 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
         pageViewController.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(pageViewController.view)
         NSLayoutConstraint.activate([
-            // This boundary intentionally joins opposite directions; physical
-            // edges avoid equating an RTL leading edge to an LTR leading edge.
+            // 此边界需要连接方向相反的布局；使用物理边缘约束，
+            // 避免将 RTL 的 leading 边缘与 LTR 的 leading 边缘等同。
             pageViewController.view.leftAnchor.constraint(equalTo: view.leftAnchor),
             pageViewController.view.rightAnchor.constraint(equalTo: view.rightAnchor),
             pageViewController.view.topAnchor.constraint(equalTo: view.topAnchor),
@@ -88,8 +88,8 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
         LayoutDirection.applyBoundary(context, to: view)
         for host in hosts { host.apply(context) }
         applyLocalization(context)
-        // Keep the adjacency contract stable until an interactive/programmatic
-        // transition finishes, even when multiple language changes arrive.
+        // 在交互式或程序触发的转场结束前，保持相邻页面关系稳定，
+        // 即使期间收到多次语言切换请求也不改变。
         if isTransitioning { pendingContext = context }
         else { updatePagingDirection(context) }
     }
@@ -121,7 +121,7 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
     private func updatePagingDirection(_ context: LanguageContext) {
         guard pagingIsRTL != context.isRTL else { return }
         pagingIsRTL = context.isRTL
-        // Re-query adjacent pages while retaining the exact currently shown host.
+        // 重新查询相邻页面，同时保留当前显示的宿主实例。
         guard let visible = pageViewController.viewControllers, !visible.isEmpty else { return }
         pageViewController.dataSource = nil
         pageViewController.setViewControllers(visible, direction: .forward, animated: false)
@@ -140,8 +140,8 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
             pendingContext = nil
             updatePagingDirection(context)
         }
-        // Business callbacks may navigate or change language again. First finish
-        // this transaction so they cannot be overwritten by an older context.
+        // 业务回调可能再次导航或切换语言。先完成本次事务，
+        // 避免旧的 context 覆盖业务回调产生的新状态。
         if let changedID { onCurrentPageChanged?(changedID) }
     }
 
@@ -193,12 +193,12 @@ class LocalizedPageContainerController: UIViewController, LocalizationUpdatable,
 
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool,
                             previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        // Also flush when a swipe is cancelled; current ID follows the visible VC.
+        // 滑动取消时也要提交待处理状态；当前 ID 以可见 VC 为准。
         finishTransition()
     }
 }
 
-/// Separates page content direction from the pager's fixed physical surface.
+/// 将页面内容方向与 pager 固定的物理承载面分离。
 @MainActor
 private final class LocalizedPageContentHost: UIViewController {
     let id: String

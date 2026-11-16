@@ -13,8 +13,8 @@ protocol ListStateRestorable: UIViewController {
 @MainActor
 enum ListStateRestoration {
     static func capture(_ page: any ListStateRestorable) -> SavedListState {
-        // A hidden page can already have loaded its view without having appeared.
-        // Preserve its saved geometry until the first attached-window application.
+        // 隐藏页面可能已加载视图，但尚未显示。
+        // 在首次关联窗口并应用恢复状态前，保留其已保存的几何信息。
         if let pending = page.pendingListState { return pending }
         guard page.isViewLoaded else { return SavedListState(drafts: page.restorationDrafts) }
         let scroll = page.restorationScrollView

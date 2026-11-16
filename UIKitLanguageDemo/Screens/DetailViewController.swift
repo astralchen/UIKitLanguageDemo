@@ -27,7 +27,7 @@ final class DetailViewController: LocalizedViewController {
         draftField.font = .preferredFont(forTextStyle: .body)
         draftField.adjustsFontForContentSizeCategory = true
         draftField.accessibilityIdentifier = "detail.draft"
-        // A semantic exception: phone numbers retain LTR even inside an RTL page.
+        // 语义方向的例外：电话号码即使位于 RTL 页面中，也保持 LTR。
         phoneLabel.text = "+86 138 0000 0000"
         phoneLabel.accessibilityIdentifier = "detail.phone"
         phoneLabel.semanticContentAttribute = .forceLeftToRight
@@ -57,7 +57,7 @@ final class DetailViewController: LocalizedViewController {
         draftField.placeholder = context.text(.detailPlaceholder)
         draftField.accessibilityLabel = context.text(.detailDraft)
         LayoutDirection.applyTextField(context, to: draftField)
-        // Never assign draftField.text here. The same input and VC instances survive.
+        // 此处不得给 draftField.text 赋值，以保留原有输入控件和 VC 实例。
         let formatter = NumberFormatter()
         formatter.locale = context.locale
         formatter.numberStyle = .decimal
@@ -66,8 +66,8 @@ final class DetailViewController: LocalizedViewController {
         for label in [heading, draftLabel, numberLabel] {
             label.textAlignment = context.isRTL ? .right : .left
         }
-        // Position follows the App, but the complete international number is
-        // one LTR paragraph so +86 and every digit keep their visual order.
+        // 位置跟随 App 方向，但完整的国际电话号码作为一个 LTR 段落处理，
+        // 确保 +86 和所有数字保持正确的视觉顺序。
         let phoneParagraph = NSMutableParagraphStyle()
         phoneParagraph.baseWritingDirection = .leftToRight
         phoneParagraph.alignment = context.isRTL ? .right : .left

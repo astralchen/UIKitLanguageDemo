@@ -30,8 +30,8 @@ final class LanguagePickerAlignmentTests: XCTestCase {
             .filter { $0.accessibilityIdentifier?.hasPrefix("language.") == true }
         XCTAssertEqual(buttons.count, 4)
         let identities = buttons.map(ObjectIdentifier.init)
-        // Use the same actions as a tap; every endonym must align to the App's
-        // leading edge even when its script differs from the selected language.
+        // 触发与点击相同的 actions；即使语言自称的文字与所选语言不同，
+        // 也必须对齐 App 的 leading 边缘。
         for selection in [LanguageSelection.english, .arabic, .simplifiedChinese, .english, .arabic] {
             let selected = try XCTUnwrap(buttons.first { $0.accessibilityIdentifier == "language.\(selection.rawValue)" })
             selected.sendActions(for: .touchUpInside)

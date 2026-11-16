@@ -24,8 +24,8 @@ final class LanguageService: NSObject {
     init(resourceBundle: Bundle = .main, defaults: UserDefaults = .standard,
          preferredLocalizations: (() -> [String])? = nil) {
         self.defaults = defaults
-        // Bundle preferences include the system's per-app language matching.
-        // Locale.preferredLanguages is not the running application's language.
+        // Bundle 的语言偏好包含系统对单个 App 的语言匹配结果。
+        // Locale.preferredLanguages 不代表当前运行的 App 语言。
         let provider = preferredLocalizations ?? { resourceBundle.preferredLocalizations }
         self.preferredLocalizationsProvider = provider
         let resources = LanguageResources.load(from: resourceBundle)
@@ -43,7 +43,7 @@ final class LanguageService: NSObject {
                                               name: NSLocale.currentLocaleDidChangeNotification, object: nil)
     }
 
-    /// Call for every app-owned window, including secondary scenes/overlay windows.
+    /// 为每个由 App 管理的窗口调用，包括次级 Scene 和浮层窗口。
     func register(window: UIWindow) {
         windows.add(window)
         LayoutDirection.apply(context, to: window)
@@ -52,18 +52,18 @@ final class LanguageService: NSObject {
     func unregister(window: UIWindow) { windows.remove(window) }
 
     func setSelection(_ newSelection: LanguageSelection) {
-        // An observer may request another language; defer it until this transaction finishes.
+        // 观察者可能请求切换到另一种语言；将该请求延迟到本次事务完成后处理。
         if isApplying { deferredSelection = newSelection; return }
         apply(newSelection, force: false)
     }
 
     @objc nonisolated private func environmentChanged() {
-        // Foundation notifications can arrive on the posting thread.
+        // Foundation 通知可能在发送通知的线程上回调。
         Task { @MainActor [weak self] in self?.refreshSystemSelection() }
     }
 
     private func refreshSystemSelection() {
-        // In explicit-language mode, system locale changes don't change UI language.
+        // 显式选择语言时，系统 locale 的变化不影响 UI 语言。
         guard selection == .system else { return }
         if isApplying { return }
         apply(.system, force: true)
@@ -74,7 +74,7 @@ final class LanguageService: NSObject {
         guard force || selection != newSelection || context.language != language else { return }
         isApplying = true
         let previous = context
-        // Capture list anchors while the old direction and old row sizes still apply.
+        // 在旧布局方向和旧行尺寸仍然生效时，捕获列表阅读锚点。
         NotificationCenter.default.post(name: .appLanguageWillChange, object: self, userInfo: [
             "oldLanguageID": previous.language.rawValue,
             "newLanguageID": language.rawValue,
@@ -86,7 +86,7 @@ final class LanguageService: NSObject {
         defaults.set(newSelection.rawValue, forKey: Self.preferenceKey)
 
         UIView.performWithoutAnimation {
-            // Direction changes happen before text observers run.
+            // 先更新方向，再执行文本观察者的回调。
             let registeredWindows = windows.allObjects
             let inputSnapshots = registeredWindows.compactMap { TextInputSnapshot.capture(in: $0) }
             for window in registeredWindows { LayoutDirection.apply(context, to: window) }
@@ -100,10 +100,10 @@ final class LanguageService: NSObject {
                 window.setNeedsLayout()
                 window.layoutIfNeeded()
             }
-            // List coordinators restore stable-ID anchors after every page has
-            // updated its chrome and window layout has settled.
+            // 所有页面更新完界面元素且窗口布局稳定后，
+            // 列表协调器再根据稳定 ID 恢复阅读锚点。
             NotificationCenter.default.post(name: .appLanguageDidApplyLayout, object: self)
-            // UIKit may move the caret when the input's inherited direction changes.
+            // 输入控件继承的方向变化时，UIKit 可能移动插入光标。
             for snapshot in inputSnapshots { snapshot.restoreIfUnchanged() }
         }
         isApplying = false

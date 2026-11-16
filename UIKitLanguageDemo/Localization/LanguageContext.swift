@@ -20,7 +20,7 @@ enum LanguageSelection: String, CaseIterable {
     var explicitLanguage: AppLanguage? { AppLanguage(rawValue: rawValue) }
 }
 
-/// Immutable resource snapshot. No global translated-string cache.
+/// 不可变的资源快照，不使用全局已翻译字符串缓存。
 struct LanguageContext {
     let language: AppLanguage
     let bundle: Bundle
@@ -28,25 +28,25 @@ struct LanguageContext {
     let revision: Int
 
     var isRTL: Bool { language.isRTL }
-    // Demo policy: UI language also determines number/date formatting.
-    // A production app can inject a separate regional preference here.
+    // Demo 策略：UI 语言同时决定数字和日期的格式。
+    // 实际 App 可在此注入独立的地区偏好。
     var locale: Locale { Locale(identifier: language.rawValue) }
 
     func text(_ message: AppText) -> String {
         if #available(iOS 16.0, *) {
-            // Generated resources are values; never cache a rendered string or mutate a shared one.
+            // 生成的资源具有值语义；不要缓存已渲染的字符串，也不要修改共享字符串。
             var resource = message.resource
             let missing = "__UIKitLanguageDemo_missing_translation_22C356C7__"
             let selected = bundle.localizedString(forKey: resource.key, value: missing, table: resource.table)
-            // Foundation returns the key for absent generated translations. Select English
-            // explicitly instead of falling through to the process's preferred language.
+            // 生成的翻译缺失时，Foundation 会返回 key。
+            // 应显式选择英语回退，避免使用进程的首选语言。
             resource.locale = selected == missing ? Locale(identifier: "en") : locale
             return String(localized: resource)
         }
         return legacyText(message)
     }
 
-    /// Shared with tests so the exact iOS 15 path is exercised on the current simulator too.
+    /// 与测试共享，使当前模拟器也能验证完全相同的 iOS 15 兼容路径。
     func legacyText(_ message: AppText) -> String {
         let value = legacyLookup(message.legacyKey)
         let arguments = message.legacyArguments

@@ -1,7 +1,7 @@
 import UIKit
 import CryptoKit
 
-/// Checkpoint fallback is isolated by UISceneSession.persistentIdentifier.
+/// Checkpoint 回退按 UISceneSession.persistentIdentifier 隔离。
 @MainActor
 final class SceneCheckpointStore {
     static let shared = SceneCheckpointStore()
@@ -57,7 +57,7 @@ final class SceneStateCoordinator {
         window.accessibilityValue = "\(restorationOrigin)|\(LanguageService.shared.context.language.rawValue)"
     }
 
-    /// Handles encrypted restoration data that UIKit delivers after connection.
+    /// 处理 UIKit 在 Scene 连接后才交付的加密恢复数据。
     @discardableResult
     func restoreInteractionState(_ activity: NSUserActivity) -> Bool {
         guard let state = ownedState(activity), state.identifier != appliedActivityID,
@@ -118,7 +118,7 @@ final class SceneStateCoordinator {
                 }))
         case let menu as SplitMenuViewController:
             state = SavedPageState(route: menu.column == .supplementary ? .splitSupplementary : .splitMenu, draft: menu.draftField.text ?? "")
-        default: return nil // UIKit's own collapse/transition controllers are never serialized.
+        default: return nil // 不序列化 UIKit 内部的折叠或转场控制器。
         }
         return state
     }

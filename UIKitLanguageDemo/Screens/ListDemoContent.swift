@@ -48,7 +48,7 @@ final class ListDemoContent: UIView {
         draft.accessibilityLabel = context.text(.detailDraft)
         LayoutDirection.applyTextField(context, to: draft)
         for label in [heading, detail] { label.textAlignment = context.isRTL ? .right : .left }
-        // No assignment to draft.text during localization.
+        // 本地化过程中不对 draft.text 赋值。
         LayoutDirection.applyBoundary(context, to: self)
         LayoutDirection.applyBoundary(context, to: stack)
     }
@@ -117,7 +117,7 @@ final class DemoCollectionCell: UICollectionViewCell {
 
     private func updateSelectionBorder() {
         contentView.layer.borderWidth = isSelected ? 2 : 0
-        // CALayer stores a static CGColor: resolve again for the cell's current traits.
+        // CALayer 保存的是静态 CGColor，需要根据 cell 当前的 traits 重新解析。
         contentView.layer.borderColor = UIColor.systemBlue.resolvedColor(with: traitCollection).cgColor
     }
 }

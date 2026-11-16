@@ -100,7 +100,7 @@ struct SavedSceneState: Codable, Equatable {
     var split: SavedSplitState?
 }
 
-/// Only property-list-compatible Data travels through NSUserActivity.
+/// 只通过 NSUserActivity 传递兼容 property list 的 Data。
 enum SceneStateCodec {
     static let activityType = "com.example.UIKitLanguageDemo.scene"
     static let activationType = "com.example.UIKitLanguageDemo.scene.copy"

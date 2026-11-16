@@ -4,7 +4,7 @@ import UIKit
 enum LayoutDirection {
     static func apply(_ context: LanguageContext, to window: UIWindow) {
         if #available(iOS 17.0, *) {
-            // Scene scope also covers view controllers presented later.
+            // Scene 作用域也覆盖后续通过 present 显示的视图控制器。
             if let scene = window.windowScene {
                 scene.traitOverrides.layoutDirection = context.isRTL ? .rightToLeft : .leftToRight
             } else {
@@ -17,30 +17,30 @@ enum LayoutDirection {
         window.setNeedsLayout()
     }
 
-    /// Compatibility boundary for app-owned views on iOS 15/16.
-    /// Do not recursively overwrite children: playback/spatial/LTR exceptions must survive.
+    /// 用于 iOS 15/16 中由 App 管理的视图的兼容边界。
+    /// 不要递归覆盖子视图，以保留 playback、spatial 和 LTR 等语义例外。
     static func applyBoundary(_ context: LanguageContext, to view: UIView) {
         if #available(iOS 17.0, *) { return }
         view.semanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
     }
 
-    /// Give app-owned scrolling surfaces an explicit direction on every supported
-    /// OS at initial load and on each language refresh, including native chrome.
-    /// Only call for app-owned scroll views, never recursively for UIKit engines.
+    /// 在所有支持的系统上，为 App 管理的滚动视图及其原生界面元素显式指定方向，
+    /// 首次加载和每次语言刷新时都要应用。
+    /// 仅对 App 管理的滚动视图调用，不递归修改 UIKit 内部的滚动引擎。
     static func applyScrollView(_ context: LanguageContext, to scrollView: UIScrollView) {
         scrollView.semanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
         scrollView.setNeedsLayout()
     }
 
-    /// Align the draft and its placeholder with the App. Keep the Unicode
-    /// writing direction of user content; never rewrite text or selection here.
+    /// 让草稿及其 placeholder 的对齐方向跟随 App，同时保留用户内容的 Unicode 书写方向。
+    /// 此处不改写文本或选区。
     static func applyTextField(_ context: LanguageContext, to field: UITextField) {
         field.semanticContentAttribute = context.isRTL ? .forceRightToLeft : .forceLeftToRight
         field.textAlignment = context.isRTL ? .right : .left
     }
 }
 
-/// Installed once when creating a window; never replaced when changing language.
+/// 创建窗口时仅安装一次，切换语言时不替换。
 @MainActor
 final class LocalizationHostController: UIViewController {
     let content: UIViewController
@@ -67,10 +67,10 @@ final class LocalizationHostController: UIViewController {
     }
 
     func apply(_ context: LanguageContext) {
-        // register(window:) can run before the host has installed its child.
+        // register(window:) 可能在宿主安装子控制器之前执行。
         guard isViewLoaded, content.parent === self else { return }
         if #available(iOS 17.0, *) {
-            // Scene supplies the inherited direction.
+            // 继承的布局方向由 Scene 提供。
         } else {
             setOverrideTraitCollection(UITraitCollection(layoutDirection:
                 context.isRTL ? .rightToLeft : .leftToRight), forChild: content)
